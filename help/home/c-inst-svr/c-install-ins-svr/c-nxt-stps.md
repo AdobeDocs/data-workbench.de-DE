@@ -1,0 +1,26 @@
+---
+description: Anweisungen zum Abschluss der Installation der Adobe-Anwendung.
+solution: Insight
+title: Nächste Schritte
+uuid: 9707adc2-0618-4e94-baed-80b076d60f29
+translation-type: tm+mt
+source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+
+---
+
+
+# Nächste Schritte{#next-steps}
+
+Anweisungen zum Abschluss der Installation der Adobe-Anwendung.
+
+* Installieren Sie mindestens eine Kopie von [!DNL Insight] , wie im * [!DNL Insight] Benutzerhandbuch* beschrieben.
+
+* Wenn Sie den Cluster [!DNL Insight Server] in einer Clusterkonfiguration ausführen möchten, richten Sie ihn wie unter [Insight Server-Cluster](../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-abt-ins-svr-clsters.md)beschrieben ein.
+
+* Installieren Sie auf den Servern, von denen Sie Daten erfassen möchten, [!DNL Sensors] wie im * [!DNL Insight] [!DNL Sensor] Handbuch* beschrieben.
+
+* Wenn Sie eine Lizenz besitzen, finden Sie unter [!DNL Transform]Transform [Anweisungen zur Installation auf einem](../../../home/c-inst-svr/c-tfm/c-tfm.md#concept-2da4db2b6f444e93ace22d3b3aecb4f2) [!DNL Insight Server] FSU.
+
+* Wenn Sie den Replizierungsdienst für einrichten möchten, [!DNL Insight Server]finden Sie unter [Installieren des Replizierungsdiensts](../../../home/c-inst-svr/c-ins-svr-rep-svc/c-inst-rep-svc.md#concept-4743b6621f394ee39cf0635230996925) Anweisungen zur Installation des Dienstes auf einem [!DNL Insight Server] FSU.
+
+* Wenn Sie eine Lizenz besitzen, finden Sie Installationsanweisungen unter [!DNL Repeater]Wiederholungsfunktion [](../../../home/c-inst-svr/c-rptr-fntly/c-rptr-fntly.md) .
