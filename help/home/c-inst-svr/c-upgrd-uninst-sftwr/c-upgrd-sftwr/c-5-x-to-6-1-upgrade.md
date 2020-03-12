@@ -180,8 +180,7 @@ Die Installation des Berichtsservers ist jetzt abgeschlossen.
    >
    >Wenn Sie beispielsweise vereinfachtes Chinesisch starten möchten, erstellen Sie eine Verknüpfung, die in der Befehlszeileneinstellung vorkommt.
    >
-   >
-   ```
+   >```
    >Insight.exe -zh-cn
    >```
    >
