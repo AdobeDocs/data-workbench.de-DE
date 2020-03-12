@@ -1,7 +1,7 @@
 ---
 description: Jede Registerkarte oder Unterregisterkarte in der Arbeitsfläche entspricht einem bestimmten Informationstyp, z. B. Dashboards, Aktivität, Akquise usw.
 solution: Analytics
-title: 'Anpassen der Registerkarte "Arbeitsfläche"'
+title: Anpassen der Registerkarte Arbeitsfläche
 topic: Data workbench
 uuid: f1f557c8-f4cb-4789-8162-39cc7c52c943
 translation-type: tm+mt
