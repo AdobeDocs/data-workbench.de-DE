@@ -53,8 +53,7 @@ Um die Exportkonfiguration festzulegen, wurden zwei neue Exportkonfigurationsdat
    >
    >Beispiel zum Generieren von SSH-Schlüsseln mit Keygen:
    >
-   >
-   ```
+   >```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
