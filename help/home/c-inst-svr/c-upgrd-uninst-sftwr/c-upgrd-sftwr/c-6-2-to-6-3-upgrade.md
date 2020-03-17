@@ -3,7 +3,7 @@ description: Aktualisieren von Serverkomponenten für Data Workbench 6.3
 title: DWB Server-Upgrade 6.2 auf 6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 79d5a2f44ade88f25f7621a4738d14c43777fc9f
 
 ---
 
@@ -14,36 +14,37 @@ Aktualisieren von Serverkomponenten für Data Workbench 6.3
 
 **Upgrade-Server**
 
-Wenn Sie benutzerdefinierte Profile haben, die Vorrang vor den im [!DNL Base] Paket bereitgestellten Standarddateien haben, müssen Sie diese benutzerdefinierten Dateien aktualisieren:
+Wenn Sie über benutzerdefinierte Profil verfügen, die Vorrang vor den im [!DNL Base] Paket bereitgestellten Standarddateien haben, müssen Sie diese benutzerspezifischen Dateien aktualisieren:
 
-* **Aktualisieren Sie die Datei** Meta.cfg ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]um eine aktualisierte Kennwortverschlüsselung für die Dateisystemeinheit (FSU-Server) festzulegen und Einträge für die Namenswertpaare-Transformationen hinzuzufügen, um die [Abfragezeichenfolgengruppierungen](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0)zu nutzen.
+* **Aktualisieren Sie die Datei** Meta.cfg ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]um eine aktualisierte Kennwortverschlüsselung für die Dateisystemeinheit (FSU-Server) festzulegen und Einträge für die Namenswertpaare-Transformationen hinzuzufügen, um die [Zeichenfolgengruppierungen](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0)zu nutzen.
 
    1. Öffnen Sie die [!DNL meta.cfg] Datei im FSU.
    1. Ändern Sie den Datentyp für **[!UICONTROL Proxy Password]** von &quot; [!DNL string"] in &quot; [!DNL EncryptedString]&quot;im Abschnitt *Workstation-Konfiguration* .
 
       ```
-      Proxy User Name = string: 
-      Proxy Password = EncryptedString:   ( 
-      
-<i>from Proxy Password = String</i>)Use Address File = bool: true&quot;
+        Proxy User Name = string: 
+        Proxy Password = EncryptedString:   ( 
+        from Proxy Password = String) 
+        Use Address File = bool: true
+      ```
 
-    1. Fügen Sie neue Einträge hinzu, um die neuen Seitenwerttransformationen zu aktivieren: *BuildNameValuePair* und *ExtractNameValuePairs*.
-    
-    Öffnen Sie einen Arbeitsbereich und klicken Sie mit der rechten Maustaste auf **Admin* > **Profile Manager**.
-    
-    Klicken Sie unter **Context** auf die Datei **meta.cfg** in der Spalte **Base* und dann auf **Make Local**. Klicken Sie in der Spalte Benutzertabelle mit der rechten Maustaste und wählen Sie **Öffnen* > **in Workstation**.
-    
-    ![](assets/meta_cfg.png)
-    
-    * Klicken Sie im neuen Fenster auf **metadata** und fügen Sie akzeptable untergeordnete Vorlagen hinzu.
-    
-    ![](assets/meta_cfg_child.png)
-    
-    * Öffnen Sie **transformation** und fügen Sie neue Vorlagen hinzu.
-    
-    ![](assets/meta_cfg_template.png)
+   1. Hinzufügen Sie neue Einträge, um die neuen Namenswertpaartransformationen zu aktivieren: *BuildNameValuePair* und *ExtractNameValuePairs*.
 
-* **Aktualisierung für schnelle Zusammenführung**. Fügen Sie den folgenden Konfigurationsdateien Parameter hinzu oder ändern Sie Werte, um die Geschwindigkeitsverbesserungen in Data Workbench während einer Transformation zu nutzen.
+      Öffnen Sie eine Arbeitsfläche und klicken Sie mit der rechten Maustaste auf **Admin** > **Profil-Manager**.
+
+      Klicken Sie unter &quot; **Kontext**&quot;in der Spalte &quot; **Basis** &quot;auf die Datei &quot; **meta.cfg** &quot;und dann auf &quot;Lokal **machen&quot;**. Klicken Sie in der Spalte Benutzertabelle mit der rechten Maustaste und wählen Sie **Öffnen** > **in Workstation**.
+
+      ![](assets/meta_cfg.png)
+
+      * Klicken Sie im neuen Fenster auf **Metadaten** und fügen Sie akzeptable untergeordnete Vorlagen hinzu.
+
+         ![](assets/meta_cfg_child.png)
+
+      * Öffnen Sie die **Transformation** und fügen Sie neue Vorlagen hinzu.
+
+         ![](assets/meta_cfg_template.png)
+
+* **Aktualisierung für schnelle Zusammenführung**. Hinzufügen Sie Parameter oder ändern Sie Werte in die folgenden Konfigurationsdateien, um die Geschwindigkeitsverbesserungen in Data Workbench während einer Transformation zu nutzen.
 
    * **Communications.cfg** ( [!DNL E:\Server\Components\Communications.cfg])
 
@@ -92,9 +93,9 @@ Wenn Sie benutzerdefinierte Profile haben, die Vorrang vor den im [!DNL Base] Pa
    >
    >Um die Verbesserungen der schnellen Zusammenführung zu nutzen, stellen Sie sicher, dass Sie mindestens 8 GB RAM pro DPU haben.
 
-* **Aktualisierung** von Adobe Target mit DWB-Integration. Eine neue Exportdatei ersetzt [!DNL ExportIntegration.exe]die vorhandene [!DNL TnTSend.exe] Datei auf dem Insight Server (`E:\Server\Scripts\TnTSend.exe`). Diese neue Exportdatei unterstützt sowohl die Integration von [Adobe Target](https://www.adobe.com/marketing/target.html) als auch die Koordination mit dem neuen Master-Marketing-Profil (MMP) und [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html).
+* **Adobe-Zielgruppe mit DWB-Integrationsaktualisierung**. Eine neue Exportdatei ersetzt [!DNL ExportIntegration.exe]die vorhandene [!DNL TnTSend.exe] Datei auf dem Insight Server (`E:\Server\Scripts\TnTSend.exe`). Diese neue Exportdatei unterstützt sowohl die [Adobe Zielgruppe](https://www.adobe.com/marketing/target.html) -Integration als auch die Koordination mit dem neuen Master Marketing Profil (MMP) und [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html).
 
-   Sie müssen die folgenden Befehle für Adobe Target-Exporte aktualisieren.
+   Sie müssen die folgenden Befehle für Adobe-Zielgruppen-Exporte aktualisieren.
 
    `Command = string: TnTSend.exe`
 
@@ -112,14 +113,14 @@ Wenn Sie benutzerdefinierte Profile haben, die Vorrang vor den im [!DNL Base] Pa
 
    Sie können auch Folgendes versuchen, um den alten Exportvorgang zu verwenden:
 
-   * Erstellen Sie einen neuen Test- und Target-Export auf der Workstation.
-   * Ändern Sie den alten Test- und Target-Export unter [!DNL Server/Profiles/`<your profile>`/Export.]
+   * Erstellen Sie einen neuen Test- und Zielgruppen-Export auf der Workstation.
+   * Ändern Sie den alten Test- und Zielgruppe-Export, der in [!DNL Server/Profiles/`<your profile>`/Export gefunden wurde.]
 
 * **Aktualisieren Sie das Adobe SC-Profil.** Änderungen an der [!DNL Exclude Hit.cfg] Datei erfordern, dass ein Feld in der zugehörigen [!DNL Decoding Instructions.cfg] Datei deklariert wird.
 
    >[!NOTE]
    >
-   >Wenn Ihr Adobe SC-Profil eine angepasste [!DNL Decoding Instructions.cfg] Datei enthält, müssen Sie einen [!DNL DelimitedDecoder] Parameter in Ihre benutzerdefinierte Datei einfügen.
+   >Wenn Ihr Adobe SC-Profil eine benutzerdefinierte [!DNL Decoding Instructions.cfg] Datei enthält, müssen Sie einen [!DNL DelimitedDecoder] Parameter in Ihre benutzerdefinierte Datei einfügen.
 
    ```
    0 = DelimitedDecoder: 
