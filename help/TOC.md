@@ -323,7 +323,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [Profilmanager und Server-Dateimanager anpassen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-cstm-prof-files-mgrs.md)
          + [Profilmanager erstellen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-prof-mgrs.md)
          + [Server Files Manager erstellen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md)
-      + Anpassen der Registerkarte Arbeitsfläche {#cstm-wktp-tabs}
+      + Anpassen der Registerkarte ""Arbeitsfläche"" {#cstm-wktp-tabs}
          + [Anpassen der Registerkarte &quot;Arbeitsfläche&quot;](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)
          + [Hinzufügen einer Registerkarte zur Arbeitsfläche](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-add-tabs.md)
          + [Ändern der Tab-Reihenfolge](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-chg-ordr-tabs.md)
