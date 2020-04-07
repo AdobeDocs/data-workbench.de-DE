@@ -1,20 +1,20 @@
 ---
 description: Schritte zum Speichern und Laden von Filtern.
 solution: Analytics
-title: Filter speichern und laden
+title: Speichern und Laden von Filtern
 topic: Data workbench
 uuid: 5312b9c4-0193-4d45-af54-e8f6d2706bf2
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 3e8f2c01b913afb25fe5f6bde1c7ec5145059266
 
 ---
 
 
-# Filter speichern und laden{#save-and-load-filters}
+# Speichern und Laden von Filtern{#save-and-load-filters}
 
 Schritte zum Speichern und Laden von Filtern.
 
-1. Klicken Sie mit der rechten Maustaste auf den Namen des Filters (oder **[!UICONTROL[noname]]** , wenn der Filter neu ist) und klicken Sie auf **[!UICONTROL Save Filter]**.
+1. Klicken Sie mit der rechten Maustaste auf den Namen des Filters (oder **\[[!UICONTROL noname]\]** , wenn der Filter neu ist) und klicken Sie auf **[!UICONTROL Save Filter]**.
 1. Geben Sie den gewünschten Namen für den Filter in die **[!UICONTROL Save As]** Beschriftung ein.
 
    ![Schritt-Info](assets/vis_FilterEditor_SaveFilter.png)
@@ -25,7 +25,7 @@ Schritte zum Speichern und Laden von Filtern.
 
    >[!NOTE]
    >
-   >Wenn Sie möchten, dass alle Benutzer eines Profils die gespeicherten Filter verwenden, müssen Sie sie mit dem [!DNL Profile Manager]Filter in das entsprechende Profil hochladen. Siehe [Veröffentlichen von Dateien in Ihrem Arbeitsprofil](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
+   >Wenn Sie möchten, dass alle Benutzer eines Profils die von Ihnen gespeicherten Filter verwenden, müssen Sie sie mit der [!DNL Profile Manager]Schaltfläche in das entsprechende Profil hochladen. Siehe [Veröffentlichen von Dateien in Ihrem Profil](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
 
 **So laden Sie einen vorhandenen Filter**
 
