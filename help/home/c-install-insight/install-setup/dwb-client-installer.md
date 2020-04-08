@@ -3,7 +3,7 @@ description: Data Workbench bietet einen Assistenten zum Einrichten der Workstat
 title: Workstation-Setup-Assistent
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -16,8 +16,8 @@ Data Workbench bietet einen Assistenten zum Einrichten der Workstation-Anwendung
 
 Starten Sie die ausführbare Datei des Installationsassistenten und gehen Sie durch jeden Schritt, um das Client-Programm der Workstation zu installieren. Nach der Installation der Workstation können Sie eine Verbindung zu Servern und Profilen herstellen.
 
-1. Doppelklicken Sie auf die ausführbare Datei des Workstation-Installationsprogramms.
-1. Klicken Sie auf **Ja** , damit das Programm unter Windows installiert werden kann.
+1. Klicken Sie mit der Dublette auf die ausführbare Datei des Workstation-Installationsprogramms.
+1. Klicken Sie auf **Ja** , um die Installation des Programms unter Windows zuzulassen.
 1. Wählen Sie eine **Sprache** für den Einrichtungsassistenten aus.
 
    Der Assistent wird geöffnet:
@@ -36,13 +36,13 @@ Starten Sie die ausführbare Datei des Installationsassistenten und gehen Sie du
 
    **Normalerweise** wird ein Standardordner und ein Standardspeicherort installiert.
 
-   * Programmdateien werden standardmäßig gespeichert auf:
+   * Programm-Dateien werden standardmäßig wie folgt gespeichert:
 
       ```
       C:\Program Files\Adobe\Adobe Analytics\Data Workbench
       ```
 
-   * Datendateien (Profile, Zertifikate, Ablaufverfolgungsprotokolle und Benutzerdateien) werden standardmäßig wie folgt gespeichert:
+   * Datendateien (Profile, Zertifikate, Ablaufverfolgungsprotokolle und Benutzerdateien) werden standardmäßig gespeichert in:
 
       ```
       C:\Users\<username>\AppData\Local\Adobe\Adobe Analytics\Data Workbench\
@@ -52,12 +52,12 @@ Starten Sie die ausführbare Datei des Installationsassistenten und gehen Sie du
       >
       >Eine generische ***Insight.cfg*** -Datei ohne Serverdetails wird zunächst installiert. Es wird empfohlen, die neu installierte ***Insight.cfg*** -Datei zu verwenden und anzupassen, anstatt eine Datei aus einer vorherigen Installation zu verschieben. Da sich der Pfad zum Installieren der Workstation geändert hat, wird empfohlen, Schriftarten hinzuzufügen, den *Benutzerordner* zu entfernen und die *TraceFileComponent * zu entfernen.
 
-1. (Optional) Wählen Sie** Benutzerdefiniert** aus, um das Sprachpaket und den Speicherort der Programm- und Datendateien auszuwählen.
-1. Wählen Sie die Position für **Tastaturbefehle im Startmenü**.
+1. (Optional) Wählen Sie &quot; **Benutzerdefiniert** &quot;, um das Sprachpaket und den Speicherort der Programm- und Datendateien auszuwählen.
+1. Wählen Sie im Menü &quot;Beginn&quot;die Position für **Tastaturbefehle** aus.
 
    ![](assets/6_4_workstation_wizard_folder.png)
 
-   Klicken Sie auf **Erstellen Sie keinen Startmenü-Ordner** , um keine Tastenkombination im Windows-Startmenü zu installieren.
+   Klicken Sie auf **Erstellen Sie keinen Beginn-Menüordner** , um keine Verknüpfung im Menü Windows-Beginn zu installieren.
 
 1. Klicken Sie auf **Weiter.** Eine Zusammenfassung der ausgewählten Dateispeicherorte und Sprachen wird angezeigt. Click **Install.**
 
@@ -77,7 +77,7 @@ Starten Sie die ausführbare Datei des Installationsassistenten und gehen Sie du
 
 1. **Konfigurieren Sie Verbindungen** zu Servern in der **[!DNL Insight.cfg]** Datei.
 
-   Nach der Installation der Workstation wird der Enhanced Workstation Configuration Experience Workspace mit zusätzlichen Informationen zur [Eingabe von Serververbindungsinformationen](/help/home/c-get-started/c-insght-config-param.md) in die Datei *Insight.cfg* und einer Option zur Auswahl eines Profils aus der Dropdown-Liste geöffnet. Sie können auch den Verbindungsstatus zu Ihren Servern anzeigen.
+   Nach der Installation der Workstation wird der Enhanced Workstation Configuration Experience Workspace mit zusätzlichen Informationen zur [Eingabe von Serververbindungsinformationen](/help/home/c-get-started/c-insght-config-param.md) in die Datei *Insight.cfg* und einer Option zur Auswahl eines Profils aus der Dropdown-Liste geöffnet. Sie können den Verbindungsstatus auch an Ihre Server Ansicht haben.
 
    ![](assets/6_4_workstation_install_conf_conn.png)
 
@@ -85,7 +85,7 @@ Starten Sie die ausführbare Datei des Installationsassistenten und gehen Sie du
 
 Die Ordnerstruktur von Data Workbench umfasst zwei Installationsspeicherorte:
 
-* **Programmdateien** Die **Insight.exe** und die zugehörigen Clientdateien (**Insight.ini**) befinden sich jetzt standardmäßig unter
+* **Programm-Dateien** Die **Insight.exe** und die zugehörigen Clientdateien (**Insight.ini**) befinden sich jetzt standardmäßig unter
 
    ```
    C:\Program Files\Adobe\Analytics\DataWorkbench
@@ -115,4 +115,4 @@ Starten Sie die Data Workbench Workstation-Dateien und führen Sie die Schritte 
 
 >[!NOTE]
 >
->Sie können die ausführbare Datei &quot; **unins000.exe** &quot;aus dem Ordner starten, indem Sie die Verknüpfung &quot;Data Workbench **deinstallieren** &quot;aus dem Startmenü oder über **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]** verwenden.
+>Sie können die ausführbare Datei &quot; **unins000.exe** &quot;aus dem Beginn über die Verknüpfung zum **Deinstallieren von Data Workbench** über das Menü &quot;&quot;oder über **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]** starten.
