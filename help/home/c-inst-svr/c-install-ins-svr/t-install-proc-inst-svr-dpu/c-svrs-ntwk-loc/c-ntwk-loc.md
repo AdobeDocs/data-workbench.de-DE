@@ -1,17 +1,17 @@
 ---
-description: Die Adressdatei erfüllt grundsätzlich denselben Zweck wie die Datei ETC\HOSTS auf einem vernetzten Computer.
+description: Die Adressdatei erfüllt grundsätzlich denselben Zweck wie die ETC&bsol;HOSTS-Datei auf einem vernetzten Computer.
 solution: Insight
 title: Netzwerkspeicherorte
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
+source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
 
 ---
 
 
 # Netzwerkspeicherorte{#network-locations}
 
-Die Adressdatei erfüllt grundsätzlich denselben Zweck wie die Datei ETC\HOSTS auf einem vernetzten Computer.
+Die Adressdatei erfüllt grundsätzlich denselben Zweck wie die ETC&amp;bsol;HOSTS-Datei auf einem vernetzten Computer.
 
 Im Gegensatz zur HOSTS-Datei, die eine einzelne Namenssammlung beschreibt, enthält die Adressdatei jedoch mehrere Namenssammlungen, die als Netzwerkspeicherorte bezeichnet werden.
 
