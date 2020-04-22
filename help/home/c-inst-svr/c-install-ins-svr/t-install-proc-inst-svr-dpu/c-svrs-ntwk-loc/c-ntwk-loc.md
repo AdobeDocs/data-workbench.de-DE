@@ -1,5 +1,5 @@
 ---
-description: 'Die Adressdatei erfüllt grundsätzlich denselben Zweck wie die Datei ETC\HOSTS auf einem vernetzten Computer.'
+description: Die Adressdatei erfüllt grundsätzlich denselben Zweck wie die Datei ETC\HOSTS auf einem vernetzten Computer.
 solution: Insight
 title: Netzwerkspeicherorte
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
