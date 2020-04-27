@@ -3,7 +3,7 @@ description: Neue Funktionen und Fehlerbehebungen in Data Workbench 6.73.
 title: Data Workbench 6.73 - Versionshinweise
 uuid: bba63a8c-9cb7-4334-b66a-22db92153066
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
 
 ---
 
@@ -12,11 +12,7 @@ source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
 
 Neue Funktionen und Fehlerbehebungen in Data Workbench 6.73.
 
-## Data Workbench 6.73 Release Notes {#topic-7655534554ac4a4b816af1bd73b06aad56757}
-
-Neue Funktionen und Fehlerbehebungen in Data Workbench 6.73.
-
-## Fehlerkorrekturen {#section-160baf6ea04c45a993777ee4260691ed}
+## Fehlerbehebungen {#section-160baf6ea04c45a993777ee4260691ed}
 
 * Es wurde ein Workstation-Problem behoben, durch das sich die Benutzer nicht bei einigen Hardwarekomponenten mit hoher Auflösung und hoher DPI-Einstellung anmelden konnten.
 * Es wurde ein Problem auf dem Server behoben, bei dem E-Mail in Archivdateinamen fehlte, wenn die IMS-Anmeldung verwendet wurde.
@@ -37,7 +33,7 @@ Neue Funktionen und Fehlerbehebungen in Data Workbench 6.73.
 
 * Data Workbench Workstation Version 6.73 stellt keine Verbindung zu Data Workbench Server Version 6.61 und älter her. Der Grund dafür ist, dass ältere Serverversionen eine schwache Form von Chiffern verwenden, die in Version 6.73 nicht unterstützt wird. So aktivieren Sie die Unterstützung für ältere Versionen
 
-   1. Überschreibt die standardmäßige SSL-Ciphers-Liste auf dem Server mit einer starken, von OpenSSL Version 1.0.1h unterstützten Chipliste. Um diese Funktion zu überschreiben, fügen Sie die Schlüsseldateien &quot;SSL Ciphers&quot;in den Ordnern &quot;Communications.cfg&quot;in den Ordnern &quot;Komponenten&quot;und &quot;Komponenten für Verarbeitungsserver&quot;hinzu. Beispiel: `SSL Ciphers = string: !aNULL:AESGCM`
+   1. Überschreibt die standardmäßige SSL-Ciphers-Liste auf dem Server mit einer starken cipher-Liste, die von OpenSSL Version 1.0.1h unterstützt wird. Um diese Funktion zu überschreiben, fügen Sie die Schlüsseldateien &quot;SSL Ciphers&quot;in den Ordnern &quot;Communications.cfg&quot;in den Ordnern &quot;Komponenten&quot;und &quot;Komponenten für Verarbeitungsserver&quot;hinzu. Beispiel: `SSL Ciphers = string: !aNULL:AESGCM`
 
       >[!NOTE]
       >
