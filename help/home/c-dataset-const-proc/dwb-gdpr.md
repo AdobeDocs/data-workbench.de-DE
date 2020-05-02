@@ -4,7 +4,7 @@ solution: Analytics
 title: Data Workbench-Unterstützung für GDPR
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
 
 ---
 
@@ -21,7 +21,7 @@ In der GDPR-Verordnung werden die Rollen und Pflichten der verschiedenen für di
 * Adobe fungiert als **Datenverarbeiter** , der die Software und Dienste bereitstellt, um GDPR-Anforderungen auf der Grundlage Ihrer Vereinbarung mit Adobe zu implementieren.
 * Nach der Integration von Data Workbench mit dem GDPR-Dienst und gemäß GDPR-Standards können Besucher einer Site (die **betroffenen Personen**) ihr &quot;Recht auf Vergessenheit&quot;von Adobe, dem Datenprozessor, ausüben. Um das Recht zu vergessen, können Sie als Datencontroller herausfordernde Besucher-IDs von einer Benutzeroberfläche oder API zu Adobe hochladen. Weitere Informationen finden Sie in der Dokumentation zum [Adobe Analytics GDPR-Workflow](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) , einschließlich des Abschnitts zum [Senden und Löschen von Anforderungen](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) .
 
->[!Note]
+>[!NOTE]
 >
 >Bei anderen Datenquellen ist Ihr Unternehmen dafür verantwortlich, herausfordernde Besucher-IDs aus anderen Protokollquellen wie CRM, POS, IVR und anderen Rohdatenquellen zu bereinigen. Es werden Pakete für benutzerdefinierte Dienste bereitgestellt, um Organisationen zu unterstützen, indem für jede Datenquelle _oder andere benutzerdefinierte Optionen ein vollständiger Dateisatz_ bereitgestellt wird.
 
