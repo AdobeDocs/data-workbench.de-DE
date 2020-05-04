@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Data Workbench-Hilfe
 translation-type: tm+mt
-source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
+source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [Data Workbench 6.2 - Versionshinweise](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Data Workbench-Version 6.11](home/c-release-notes-insight/c-6-1-1.md)
    + [Aktualisierung von Datenfeeds für April MR 2014](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
-   + [Data Workbench 6.2 - Versionshinweise](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
+   + [Data Workbench 6.1 - Versionshinweise](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
    + [Versionshinweise zu Data Workbench 6.0 und 6.0.4](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + Installation {#install}
    + [Anforderungen an Workstations](home/c-install-insight/c-data-workbench-client-install.md)
@@ -966,6 +966,6 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [Konfigurationsänderungen für neues Schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Einstellungen für abgeleitete Dimensionen](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Abfrage-API](https://www.adobe.io/)
-+ [Data Workbench mit dem Analytics Data Feed](https://marketing.adobe.com/resources/help/en_US/insight/insight_sc_implementation.pdf)
++ [Data Workbench mit dem Analytics Data Feed](home/assets/insight_sc_implementation.pdf)
 + [Data Workbench-Integration mit Adobe Zielgruppe](home/dwb-adobe-target.md)
 + [Data Workbench-Glossar](dwb-glossary.md)
