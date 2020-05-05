@@ -1,16 +1,16 @@
 ---
-description: Erläuterung von Countable in DataWorkbench (DWB) zum Entwerfen und Implementieren des Schemas.
-title: Schemadesignzählbare Strukturen
+description: Erläuterung von Countables in DataWorkbench (DWB) zum Entwerfen und Implementieren des Schemas.
+title: Tabellenstrukturen für Schema-Design
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
 translation-type: tm+mt
-source-git-commit: 6443bdf8856ba51252685fa0c1ed65f831142956
+source-git-commit: 8b0e9c8855a7c7228393dfab4bf78645f1953794
 
 ---
 
 
-# Schemadesignzählbare Strukturen{#schema-design-countable-structures}
+# Tabellenstrukturen für Schema-Design{#schema-design-countable-structures}
 
-Erläuterung von Countable in DataWorkbench (DWB) zum Entwerfen und Implementieren des Schemas.
+Erläuterung von Countables in DataWorkbench (DWB) zum Entwerfen und Implementieren des Schemas.
 
 ## Grundlagen zur Zählung in Data Workbench {#section-6e6b8d1c17634d669e62c91a80a0bc62}
 
@@ -51,7 +51,7 @@ Zählbare Dimensionen werden durch die folgenden Parameter definiert:
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bedingung </p> </td> 
-   <td colname="col2"> <p>Die Bedingungen, unter denen das Eingabefeld zur Erstellung der zählbaren Dimension beiträgt. Wenn eine Bedingung angegeben ist, beschränkt sie die Gruppe der Protokolleinträge, die für die Dimension und alle untergeordneten Elemente im Datensatzschema sichtbar sind. </p> </td> 
+   <td colname="col2"> <p>Die Bedingungen, unter denen das Eingabefeld zur Erstellung der zählbaren Dimension beiträgt. Wenn eine Bedingung angegeben ist, beschränkt sie den Satz der Protokolleinträge, die für die Dimension und alle untergeordneten Elemente im DataSet-Schema sichtbar sind. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -66,29 +66,29 @@ Zählbare Dimensionen werden durch die folgenden Parameter definiert:
   </tr> 
   <tr> 
    <td colname="col1"> Übergeordnet </td> 
-   <td colname="col2"> <p> Der Name der übergeordneten Dimension. Jede zählbare Dimension kann eine übergeordnete Dimension sein. Um eine Dimension zur Dimension der obersten Ebene im Schema des Datensatzes zu machen, setzen Sie den Parameter auf "root". Die definierte Dimension wird zur zählbaren Dimension für den Dataset. Wenn Sie beispielsweise mit Site arbeiten, ist die Besucherdimension die zählbare Dimension für Ihren Datensatz. </p> <p>Hinweis: Obwohl Ihre zählbare Dimension für den Stammordner nicht mit den Tracking-IDs in den Daten verknüpft werden muss, empfiehlt Adobe, die zählbare Dimension für den Stammordner des Datensatzes zu konfigurieren, um das Verfolgungs-ID-Feld (x-trackingid) als Schlüssel zu verwenden. Daher wird jedes Element der Stamm-Zählung mit dem eindeutigen Wert x-trackingid verknüpft und alle Daten zu jedem Element werden gruppiert. Wenden Sie sich an Adobe, wenn Sie Ihren Datensatz anders konfigurieren möchten. </p> </td> 
+   <td colname="col2"> <p> Der Name der übergeordneten Dimension. Jede zählbare Dimension kann eine übergeordnete Dimension sein. Um eine Dimension zur Dimension der obersten Ebene im Schema des Datensatzes zu machen, setzen Sie den Parameter auf "root". Die definierte Dimension wird zur zählbaren Dimension für den Dataset. Wenn Sie beispielsweise mit Site arbeiten, ist die Dimension "Besucher"die zählbare Dimension für Ihren Datensatz. </p> <p>Hinweis: Obwohl Ihre zählbare Dimension für den Stammordner nicht mit den Tracking-IDs in den Daten verknüpft werden muss, empfiehlt Adobe, die zählbare Dimension für den Stammordner des Datensatzes zu konfigurieren, um das Verfolgungs-ID-Feld (x-trackingid) als Schlüssel zu verwenden. Daher wird jedes Element der Stamm-Zählung mit dem eindeutigen Wert x-trackingid verknüpft und alle Daten zu jedem Element werden gruppiert. Wenden Sie sich an Adobe, wenn Sie Ihren Datensatz anders konfigurieren möchten. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-In diesem Beispiel wird die Definition einer zählbaren Dimension anhand von Ereignisdaten veranschaulicht, die aus dem Website-Traffic erfasst wurden. Die zählbare Dimension zählt die Webkampagnenereignisse innerhalb einer bestimmten Sitzung. Es wird davon ausgegangen, dass alle E-Mail-Kampagnenressourcen vom Webserver mit &quot;email=&quot;als Teil der cs-uri-Abfrage angefordert werden. In diesem Beispiel ist die Häufigkeit, mit der der Besucher während einer bestimmten Sitzung auf eine E-Mail-Kampagne reagiert, von Interesse, nicht der tatsächliche Wert des Felds cs-uri-query(email).
+In diesem Beispiel wird die Definition einer zählbaren Dimension anhand von Ereignis-Daten veranschaulicht, die aus dem Website-Traffic erfasst wurden. Die zählbare Dimension zählt die Ereignis der Web-Kampagne innerhalb einer bestimmten Sitzung. Es wird davon ausgegangen, dass alle E-Mail-Kampagnen vom Webserver mit &quot;email=&quot;als Teil der cs-uri-Abfrage angefordert werden. In diesem Beispiel ist die Anzahl der Male, die der Besucher während einer bestimmten Sitzung auf eine E-Mail-Kampagne antwortet, von Interesse, nicht der tatsächliche Wert des Felds &quot;cs-uri-Abfrage (E-Mail)&quot;.
 
 ![](assets/dwb_impl_arch_1.png)
 
-Die zweite wichtige Funktion von Countables ist, dass sie das Rückgrat Ihrer Datensatzschemastruktur bilden. Ihr Datenschema und alle anderen Dimensionen sind so organisiert, dass sie unter einer Zählung gruppiert werden und zu einer Zählung gehören. Mit anderen Worten, wenn wir Dimensionen als &quot;Kategorien&quot;betrachten, dann sind Zähler die Art und Weise, wie wir diese &quot;Kategorien&quot;in Gruppen organisieren.
-Wenn Dimensionen unter einer zählbaren Dimension gruppiert werden, werden sie als &quot;Ebene&quot;der zählbaren Dimension bezeichnet. In der folgenden Abbildung sehen Sie beispielsweise, dass &quot;E-Mail-Adresse&quot;auf Besucherebene und &quot;Browser&quot;auf Besuchsebene liegt. &quot;Übergeordnet&quot;und &quot;untergeordnet&quot;beziehen sich auf die Beziehung zwischen der zählbaren und den darunter gruppierten Dimensionen. Der Besucher ist beispielsweise ein &quot;übergeordnetes&quot;Element der E-Mail-Adresse. Umgekehrt ist die E-Mail-Adresse ein untergeordnetes Element des Besuchers. ![](assets/dwb_impl_arch_2.png) ![](assets/dwb_impl_arch_3.png)
+Die zweite wichtige Funktion von Countables ist, dass sie das Rückgrat Ihrer DataSet-Schema-Struktur bilden. Ihr Schema und alle anderen Dimensionen sind gruppiert und gehören zu einer zählbaren Tabelle. Mit anderen Worten, wenn wir Dimensionen als &quot;Kategorien&quot;betrachten, dann sind Zähler die Art und Weise, wie wir diese &quot;Kategorien&quot;in Gruppen organisieren.
+Wenn Dimensionen unter einer zählbaren Dimension gruppiert werden, werden sie als &quot;Ebene&quot;der zählbaren Dimension bezeichnet. In der folgenden Abbildung sehen Sie beispielsweise, dass &quot;E-Mail-Adresse&quot;auf der Ebene des Besuchers und &quot;Browser&quot;auf der Ebene des Besuchs liegt. &quot;Übergeordnet&quot;und &quot;untergeordnet&quot;beziehen sich auf die Beziehung zwischen der zählbaren und den darunter gruppierten Dimensionen. Besucher ist beispielsweise ein &quot;übergeordnetes&quot;Element der E-Mail-Adresse. Umgekehrt ist die E-Mail-Adresse ein untergeordnetes Element des Besuchers. ![](assets/dwb_impl_arch_2.png) ![](assets/dwb_impl_arch_3.png)
 
 ## Erstellen von zählbaren Elementen in Data Workbench {#section-491f3e8e4fbc429e95d6c97f012a208e}
 
 Führen Sie die folgenden Schritte aus, um die Tabelle in DataWorkbench zu erstellen:
 
-1. Profile Manager öffnen
+1. Profil-Manager öffnen
 1. Erstellen Sie unter &quot;Transformation&quot;eine Konfigurationsdatei und öffnen Sie sie auf der Workstation.
-1. Klicken Sie unter Erweiterte Dimensionen mit der rechten Maustaste und wählen Sie Neue hinzufügen -> Zählbar wie unten dargestellt: ![](assets/dwb_impl_arch_4.png)
+1. Klicken Sie unter Erweiterte Dimensionen mit der rechten Maustaste und wählen Sie Hinzufügen neue -> Zählbar wie unten dargestellt: ![](assets/dwb_impl_arch_4.png)
 
 1. Geben Sie den Namen für die neue Tabelle Zählung ein. Im folgenden Beispiel wird die Kundenzählung definiert. Wenn es die höchste Zählungsebene ist, schreiben Sie im übergeordneten Stammordner. ![](assets/dwb_impl_arch_5.png)
 
    Wenn die Tabelle &quot;Zählbar&quot;nicht die oberste Ebene ist, geben Sie im übergeordneten Feld den Namen der übergeordneten Zählung an. Im folgenden Beispiel wird die &quot;Interaktionszählung&quot;erstellt und die übergeordnete Komponente für diese zählbare Tabelle ist &quot;Kunde&quot;. ![](assets/dwb_impl_arch_5.png)
 
-Weitere Informationen zur Data Workbench-Architektur für Schemadesign, zählbare Strukturen und Offline-Data Feed-Konfigurationen finden Sie in der [DataSet-Schemaschnittstelle](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html) und der Referenz zu [Dimensionen und Metriken](../../assets/insight_sc_implementation.pdf).
+Weitere Informationen zur Data Workbench-Architektur für Schema-Design, zählbare Strukturen und Offline-Data Feed-Konfigurationen finden Sie in der Benutzeroberfläche des [DataSet-Schemas](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).
