@@ -4,7 +4,10 @@ solution: Analytics
 title: Data Workbench-Unterstützung für GDPR
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
+source-git-commit: 279e71f3da3f0ebc29091e88b87666a22a36a8d6
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ In der GDPR-Verordnung werden die Rollen und Pflichten der verschiedenen für di
 
 >[!NOTE]
 >
->Bei anderen Datenquellen ist Ihr Unternehmen dafür verantwortlich, herausfordernde Besucher-IDs aus anderen Protokollquellen wie CRM, POS, IVR und anderen Rohdatenquellen zu bereinigen. Es werden Pakete für benutzerdefinierte Dienste bereitgestellt, um Organisationen zu unterstützen, indem für jede Datenquelle _oder andere benutzerdefinierte Optionen ein vollständiger Dateisatz_ bereitgestellt wird.
+>Bei anderen Datenquellen ist Ihr Unternehmen dafür verantwortlich, herausfordernde Besucher-IDs aus anderen Protokollquellen wie CRM, POS, IVR und anderen Rohdatenquellen zu bereinigen. Für Unternehmen stehen angepasste Dienstleistungspakete zur Verfügung, indem für jede Datenquelle _, für die fortlaufende Service-Reservierungen erforderlich sind, ein vollständiger Ersatz-Satz von Dateien_ bereitgestellt wird.
 
 ## Aktualisieren von DWB für die GDPR-Implementierung
 
@@ -31,7 +34,7 @@ Consulting berät Sie beim passenden Dienstleistungspaket, um bestehende Impleme
 
 Falls erforderlich:
 
-* [Aktualisieren Sie auf die neueste Version](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html) von Data Workbench. Für höchste Sicherheit wurden in den DWB 6.7-Versionen, die für die GDPR-Integration erforderlich sind, neue Zertifikate und Sicherheitsfunktionen hinzugefügt.
+* [Aktualisieren Sie auf die neueste Version](https://docs.adobe.com/content/help/de-DE/data-workbench/using/release-notes/release-notes.html) von Data Workbench. Für höchste Sicherheit wurden in den DWB 6.7-Versionen, die für die GDPR-Integration erforderlich sind, neue Zertifikate und Sicherheitsfunktionen hinzugefügt.
 * Wenn Sie ältere TSV Analytics-Ereignis-Protokolle verwenden, aktualisieren Sie auf den [Avro-Datenfeed](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/log-proc-config-file/c-log-sources.html#section-9a824b4c3d5549e7952a7111232035b2).
 * Wenn Sie einen veralteten UCP (Unified Customer Process) mit Transform verwenden, um vorhandene Protokolle zu aktualisieren, aktualisieren Sie auf den aktuellen Prozess. Der aktualisierte Vorgang generiert direkt eine Master-Lookup-Datei, um Besucher-IDs über mehrere Quellen hinweg zuzuordnen.
 * Standardisieren Sie den Datenfluss, um den GDPR-Dienst aufzunehmen.
