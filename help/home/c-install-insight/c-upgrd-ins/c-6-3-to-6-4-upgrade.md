@@ -3,7 +3,10 @@ description: Führen Sie die folgenden Schritte aus, um auf Data Workbench v6.4 
 title: Upgrade von 6.3 auf 6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 0%
 
 ---
 
@@ -20,21 +23,21 @@ Befolgen Sie diese Anforderungen und Empfehlungen bei der Aktualisierung auf Dat
 >
 >Es wird empfohlen, die neu installierten Standardkonfigurationsdateien zu verwenden und sie anzupassen, anstatt Dateien aus einer vorherigen Installation zu verschieben - mit folgenden Ausnahmen:
 
-* **Fügen Sie** ***Ausgeschlossene Prozesse*** für den *MS System Center-Endpunktschutz in Windows 2012-Servern* für die folgenden ausführbaren Dateien hinzu:
+* **Hinzufügen** ***Ausgeschlossene Prozesse*** für den *MS System Center-Endpunktschutz in Windows 2012-Servern* für die folgenden ausführbaren Dateien:
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   Dies erlaubt die Berechtigung &quot;Weiße Liste&quot;für diese miteinander verbundenen ausführbaren Dateien.
+   Dadurch werden die zulässigen Rechte für diese miteinander verbundenen ausführbaren Dateien aktiviert.
 
 * **Aktualisieren Sie das *Trust_ca_cert.pem*-Zertifikat auf den Servern**.
-* **Reorganisation der Zuordnungsprofile**.
+* **Reorganisation der Attribution-Profile**.
 
-   * Der Ordner *Attribution* wurde in ***Attribution - Premium*** umbenannt (in der Standardinstallation unter *Profiles*\*Attribution - Premium* enthalten).
+   * Der *Ordner &quot;Attribution* &quot;wurde in &quot; ***Attribution - Premium*** &quot;umbenannt (in der Standardinstallation bei *Profilen*\*Attribution - Premium* gefunden).
 
-   * Das *Premium* -Profil wurde entfernt und der Arbeitsbereich wurde in den neuen Ordner ***Attribution - Premium*** verschoben.
+   * Das *Premium* -Profil wurde entfernt und der Arbeitsbereich wurde in den neuen ***Ordner Attribution - Premium*** verschoben.
 
-* **Aktualisieren Sie *die Einstellungen*Attribution-Premium**. Wenn Sie benutzerdefinierte Profile mit Parametereinstellungen haben, die das Standard- *Adobe SC* -Profil außer Kraft setzen, müssen Sie die benutzerdefinierten Felder in den folgenden Konfigurationsdateien aktualisieren:
+* **Aktualisieren Sie *die Einstellungen*Attribution-Premium**. Wenn Sie benutzerdefinierte Profil mit Parametereinstellungen haben, die das Standard- *Adobe SC* -Profil außer Kraft setzen, müssen Sie die benutzerdefinierten Felder in den Konfigurationsdateien aktualisieren:
 
    * **[!DNL Decoding Instructions.cfg]**
    * **[!DNL SC Fields.cfg]**
@@ -73,7 +76,7 @@ Befolgen Sie diese Anforderungen und Empfehlungen bei der Aktualisierung auf Dat
 
    Die **[!DNL Meta.cfg]** Dateien in **[!DNL Base\Context and AdobeSC\Context]** Ordnern wurden in dieser Version aktualisiert.
 
-   Wenn Sie die Datei &quot; **meta.cfg** &quot;während der Installation außer Kraft setzen, muss Ihre Profilkopie mit den folgenden Parametern aktualisiert werden und der **Metadatenvektor** entsprechend eingegeben werden:
+   Wenn Sie die **Datei &quot;meta.cfg** &quot;während der Installation außer Kraft setzen, muss Ihre Profil-Kopie mit den folgenden Parametern aktualisiert werden und der **Metadatenvektor** entsprechend eingegeben werden:
 
    ```
    94 = meta: 
@@ -113,7 +116,7 @@ Befolgen Sie diese Anforderungen und Empfehlungen bei der Aktualisierung auf Dat
 
    1. Weisen Sie &quot;SYSTEM&quot;als Eigentümer für diese Ordner zu.
 
-* **Fügen Sie dem Berichtsserver Schriftarten hinzu.** Fügen Sie in der Datei **[!DNL ReportServer.cfg]**die folgenden Schriftarten hinzu (für alle Sprachen):
+* **Hinzufügen Schriftarten auf dem Berichtsserver.** Fügen Sie in der Datei **[!DNL ReportServer.cfg]**die folgenden Schriftarten hinzu (für alle Sprachen):
 
    ```
    Fonts = vector: 3 items 
@@ -131,7 +134,7 @@ Befolgen Sie diese Anforderungen und Empfehlungen bei der Aktualisierung auf Dat
 
    Installieren Sie die neue Version der Workstation (Client), indem Sie ***InsightSetup.exe*** herunterladen und starten und die Installationsanweisungen durchlaufen. Der Setup-Assistent installiert Ihre Dateien standardmäßig an einem neuen Speicherort:
 
-   Programmdateien werden jetzt standardmäßig gespeichert auf:
+   Programm-Dateien werden jetzt standardmäßig wie folgt gespeichert:
 
    ```
    C:\Program Files\Adobe\Adobe Analytics\Data Workbench
@@ -143,7 +146,7 @@ Befolgen Sie diese Anforderungen und Empfehlungen bei der Aktualisierung auf Dat
    C:\Users\<username>\AppData\Local\Adobe\Adobe Analytics\Data Workbench\
    ```
 
-* **Fügen Sie der Workstation** Schriftarten hinzu.
+* **Hinzufügen Schriftarten auf der Workstation**.
 
    Fügen Sie der **[!DNL Insight.cfg]** Datei die folgenden Schriftarten hinzu (für alle Sprachen):
 
