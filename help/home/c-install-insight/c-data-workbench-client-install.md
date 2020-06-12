@@ -5,7 +5,10 @@ title: Anforderungen an Workstations
 topic: Data workbench
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 1%
 
 ---
 
@@ -24,14 +27,14 @@ Weitere Informationen zu den Systemanforderungen für Data Workbench finden Sie 
 
 Vergewissern Sie sich, dass Sie die folgenden Aufgaben abgeschlossen haben, bevor Sie die Data Workstation (Client) installieren:
 
-* **Fügen Sie** ***Ausgeschlossene Prozesse*** für den *MS System Center-Endpunktschutz in Windows 2012-Servern* für die folgenden ausführbaren Dateien hinzu:
+* **Hinzufügen** ***Ausgeschlossene Prozesse*** für den *MS System Center-Endpunktschutz in Windows 2012-Servern* für die folgenden ausführbaren Dateien:
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   Dies erlaubt die Berechtigung &quot;Weiße Liste&quot;für diese miteinander verbundenen ausführbaren Dateien.
+   Dadurch werden die zulässigen Rechte für diese miteinander verbundenen ausführbaren Dateien aktiviert.
 
-* **Installieren Sie Microsoft Excel, um Analysedaten zu exportieren.** Um Daten aus Arbeitsbereichen als Microsoft Excel-Dateien ( [!DNL .xls] oder [!DNL .xlsx]) zu exportieren, muss Excel auf dem Computer, auf dem Sie Data Workbench installieren, installiert und registriert sein. Wenn Excel nicht registriert wurde und Data Workbench versucht, zum ersten Mal darauf zuzugreifen, zeigt Excel ein Registrierungsdialogfeld an. Wenn Sie nicht sicher sind, ob die Kopie registriert ist, starten Sie Excel manuell und führen Sie im Falle eines Registrierungsdialogfelds den Registrierungsprozess durch.
+* **Installieren Sie Microsoft Excel, um Analysen zu exportieren.** Um Daten aus Arbeitsbereichen als Microsoft Excel-Dateien ( [!DNL .xls] oder [!DNL .xlsx]) zu exportieren, muss Excel auf dem Computer, auf dem Sie Data Workbench installieren, installiert und registriert sein. Wenn Excel nicht registriert wurde und Data Workbench versucht, zum ersten Mal darauf zuzugreifen, zeigt Excel ein Registrierungsdialogfeld an. Wenn Sie nicht sicher sind, ob die Kopie registriert ist, Excel manuell erstellen und ein Dialogfeld zur Registrierung angezeigt wird, führen Sie den Registrierungsprozess durch.
 
    >[!NOTE]
    >
@@ -40,7 +43,7 @@ Vergewissern Sie sich, dass Sie die folgenden Aufgaben abgeschlossen haben, bevo
 * **Installieren von Adobe[!DNL Acrobat]zum Drucken von skalierten Arbeitsbereichen als PDF.** Um skalierte Arbeitsbereiche auf das Adobe PDF-Format zu drucken, muss Adobe auf dem Computer, auf dem Data Workbench installiert ist, installiert [!DNL Acrobat] sein.
 
 * **Zugriff auf einen Drucker zum Drucken von Arbeitsbereichen.** Zum Drucken von Arbeitsbereichen aus Data Workbench muss der Computer, auf dem Sie Data Workbench installieren, Zugriff auf einen Drucker haben. Data Workbench kann Arbeitsflächen auf Farb- oder Schwarzweißdruckern drucken und benötigt keine PostScript- oder andere erweiterte Druckerfunktionen. Um optimale Ergebnisse zu erzielen, empfiehlt Adobe, Arbeitsbereiche farbig zu drucken.
-* **Durchführung von Sicherheitsmaßnahmen.** Sie sollten die normalen Unternehmenssicherheitsrichtlinien für Data Workbench-Computer befolgen. Zur Erfüllung ihrer Hauptaufgaben erfordert Data Workbench nur die Möglichkeit, eine Verbindung zu einem Server (über die Ports 80 und 443) und zu allen Servern, die Daten erfassen, herzustellen. Sie können die Data Workbench-Hardware für jeden anderen Zweck verwenden, solange Sie die Data Workbench-Software verwalten und mindestens 10 GB Speicherplatz für Data Workbench zuweisen.
+* **Durchführung von Sicherheitsmaßnahmen.** Sie sollten die für Ihre Firma geltenden Richtlinien zur Unternehmenssicherheit für Data Workbench-Computer befolgen. Zur Erfüllung ihrer Hauptaufgaben erfordert Data Workbench nur die Möglichkeit, eine Verbindung zu einem Server (über die Ports 80 und 443) und zu allen Servern, die Daten erfassen, herzustellen. Sie können die Data Workbench-Hardware für jeden anderen Zweck verwenden, solange Sie die Data Workbench-Software verwalten und mindestens 10 GB Datenspeicherung für Data Workbench zuweisen.
 * Zur korrekten Darstellung der Visualisierungen muss auf dem Computer, auf dem Sie die Workbench installieren, ein entsprechender **Grafikadapter** installiert sein (siehe Anforderungen für Grafikadapter unten).
 
 **Data Workbench-Client-Anforderungen**
@@ -84,7 +87,7 @@ Vergewissern Sie sich, dass Sie die folgenden Aufgaben abgeschlossen haben, bevo
 
 NTFS
 
-**Festplattenspeicher**
+**Disk-Datenspeicherung**
 
 Mindestens zehn (10) GB freier Festplattenspeicherplatz
 
@@ -95,6 +98,6 @@ Druckerzugriff (Drucker mit Farb- oder Graustufen) für den Druck von Arbeitsber
 **Sonstige**
 
 * Dedizierte Maus
-* Niedriglage Arbeitsumgebung
+* Umgebung für Arbeitskräfte mit niedrigem Blinddruck
 * Matte-Surface-Monitor
 
