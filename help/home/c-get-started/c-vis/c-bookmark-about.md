@@ -1,16 +1,19 @@
 ---
 description: Sie können wichtige Arbeitsbereiche mit einem Lesezeichen versehen, um schnell zwischen Visualisierungen und Berichten zu wechseln, die in Ihrem Arbeitsablauf verwendet werden.
 solution: Analytics
-title: Lesezeichen hinzufügen
+title: Hinzufügen von Lesezeichen
 topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
 
-# Lesezeichen hinzufügen{#add-a-bookmarks}
+# Hinzufügen von Lesezeichen{#add-a-bookmarks}
 
 Sie können wichtige Arbeitsbereiche mit einem Lesezeichen versehen, um schnell zwischen Visualisierungen und Berichten zu wechseln, die in Ihrem Arbeitsablauf verwendet werden.
 
@@ -18,7 +21,7 @@ Sie können wichtige Arbeitsbereiche mit einem Lesezeichen versehen, um schnell 
 
    Bevor Sie einen Arbeitsbereich mit einem Lesezeichen versehen haben, wird dieses Symbol nur als Buch angezeigt. Das Lesezeichensymbol wird zu einem Buch mit einer markierten Seite, sobald ein Arbeitsbereich mit einem Lesezeichen versehen wurde.
 
-1. Klicken Sie auf **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** , um eine Liste der Lesezeichen zu öffnen.
+1. Klicken Sie auf **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** , um eine Liste von Lesezeichen zu öffnen.
 
    ![](assets/bookmarks_panel.png)
 
@@ -32,13 +35,10 @@ Sie können wichtige Arbeitsbereiche mit einem Lesezeichen versehen, um schnell 
 
 * Klicken Sie im Lesezeichenbedienfeld mit der rechten Maustaste und wählen Sie **[!UICONTROL Entfernen<bookmark title>]**zum Löschen eines ausgewählten Lesezeichens oder zum Löschen aller Lesezeichen **[!UICONTROL Clear All Bookmarks]**auswählen.
 
-* Sie können auch mit der rechten Maustaste auf den Arbeitsbereich in der Miniaturansicht auf der Arbeitsfläche klicken und **[!UICONTROL Clear Bookmark]** die Option auswählen.
+* Sie können auch mit der rechten Maustaste auf den Arbeitsbereich in der Miniaturansicht-Ansicht auf der Arbeitsfläche klicken und **[!UICONTROL Clear Bookmark]** auswählen.
 
 >[!IMPORTANT]
 >
 >* 25 Lesezeichen können gespeichert werden.
 >* Wenn Sie ein Lesezeichen hinzufügen und dann die Position der Arbeitsfläche verschieben, ist das Lesezeichen ungültig und muss aus dem Lesezeichenbedienfeld gelöscht und zurückgesetzt werden.
->
-
-
 
