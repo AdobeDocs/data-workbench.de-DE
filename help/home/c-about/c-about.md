@@ -1,36 +1,39 @@
 ---
-description: Metriken, Dimensionen und Filter bieten ein Framework, in dem Berechnungen zu den zu einem Data Workbench-Datensatz verarbeiteten Daten vorgenommen werden.
+description: Metriken, Dimensionen und Filter bieten ein Framework für die Durchführung von Berechnungen zu den in einem Data Workbench-Datensatz verarbeiteten Daten.
 solution: Analytics
-title: Data Workbench-Metriken, -Dimensionen und -Filter
+title: Metriken, Dimensionen und Filter in Data Workbench
 topic: Data workbench
 uuid: 3c0300a0-ae19-4817-aab8-7294e0eabdd9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+workflow-type: ht
+source-wordcount: '827'
+ht-degree: 100%
 
 ---
 
 
-# Data Workbench-Metriken, -Dimensionen und -Filter{#data-workbench-metrics-dimensions-and-filters}
+# Metriken, Dimensionen und Filter in Data Workbench {#data-workbench-metrics-dimensions-and-filters}
 
-Metriken, Dimensionen und Filter bieten ein Framework, in dem Berechnungen zu den zu einem Data Workbench-Datensatz verarbeiteten Daten vorgenommen werden.
+Metriken, Dimensionen und Filter bieten ein Framework für die Durchführung von Berechnungen zu den in einem Data Workbench-Datensatz verarbeiteten Daten.
 
-Die Ergebnisse der mit diesem Framework definierten Berechnungen werden in Arbeitsbereichen, Dashboards, Berichten oder anderen Ausgaben angezeigt. Kurz gesagt, eine beliebige Zahl, die Sie in oder von einer Anwendung sehen, ist das Ergebnis einer Abfrage eines Datensatzes, die eine Metrik, eine Dimension und einen Filter enthält.
+Die Ergebnisse der anhand dieses Frameworks definierten Berechnungen in Arbeitsbereichen, Dashboards, Berichten oder anderen Ausgaben angezeigt. Oder kurz gesagt: Jede Zahl, die in oder von einem Programm ausgegeben wird, ist das Ergebnis einer Abfrage eines Datensatzes und umfasst eine Metrik, eine Dimension und einen Filter.
 
-Auf der grundlegendsten Ebene beschreibt eine Metrik, was aus und über den Datensatz berechnet wird, eine Dimension unterteilt die Daten im Datensatz in Kategorien und ein Filter beschreibt einen ausgewählten Teil oder eine Untergruppe der Daten im Datensatz.
+Grundsätzlich betrachtet beschreibt eine Metrik, was aus und über den Datensatz berechnet wird. Eine Dimension wiederum unterteilt die Daten im Datensatz in Kategorien, während ein Filter eine bestimmte Auswahl bzw. Untergruppe der Daten im Datensatz beschreibt.
 
-Wenn der Data Workbench-Server Daten verarbeitet, um ein Dataset zu erstellen, werden Dimensionen der Daten erstellt und dann kontinuierlich aktualisiert, wenn neue Daten vom Server gelesen und verarbeitet werden. Metriken und Filter werden anhand dieser Datendimensionen berechnet.
+Bei der Verarbeitung von Daten durch den Data Workbench-Server wird ein Datensatz sowie Dimensionen der darin enthaltenen Daten erstellt, die der Server dann mit neuen Daten, die er liest und verarbeitet, laufend aktualisiert. Anhand dieser Datendimensionen werden schließlich Metriken und Filter berechnet.
 
 >[!CAUTION]
 >
->Wenn Sie eine interne Metrik neu definieren, verhält sich das System aufgrund des falschen Werts unerwartet. Ihre Berichte werden nur generiert, wenn eine Metrik 100 % liest. Es wird empfohlen, die Metrikdefinitionen nicht zu ändern.
+>Das Ändern der Definition einer internen Metrik hat aufgrund des daraus resultierenden falschen Werts ein unerwartetes Verhalten des Systems zur Folge. Ihre Berichte werden nur generiert, wenn eine Metrik zu 100 % gelesen werden kann. Daher wird empfohlen, die Metrikdefinitionen nicht zu ändern.
 
 ## Beispiel {#section-ecc465d1a5e34d559c1983e96fa409ec}
 
-Stellen Sie sich einen Datensatz vor, der Informationen über alle Menschen auf der Welt enthält. Dieser Datensatz enthält mindestens alle Menschen auf der Welt und ihr Alter. Eine nützliche Metrik, die aus diesem Datensatz errechnet werden kann, wäre das Durchschnittsalter. Die Auswertung dieser Metrik würde zu einer Zahl führen: Durchschnittsalter der Weltbevölkerung.
+Angenommen, wir haben einen Datensatz mit Informationen über alle Menschen auf der Welt. Darin enthalten sind mindestens Daten zum Alter jedes Menschen auf der Welt. Eine sinnvolle aus diesem Datensatz zu berechnende Metrik wäre das Durchschnittsalter. Die Berechnung dieser Metrik würde eine Zahl liefern, nämlich das Durchschnittsalter der Weltbevölkerung.
 
-Durch Hinzufügen einer Dimension zum Datensatz werden diese Informationen nützlicher und leichter zu handhaben. Wenn der Datensatz auch das Land des Wohnsitzes jeder Person enthält, könnte die Definition der Dimension &quot;Land&quot;eine Möglichkeit bieten, die Menschen für jedes Land der Welt in Gruppen zu unterteilen. Die Bewertung der Metrik &quot;Durchschnittsalter&quot;über die Dimension &quot;Land&quot;würde zu einer Liste von Zahlen führen, eine für jedes Land, die das Durchschnittsalter der Personen in diesem Land repräsentieren.
+Durch Ergänzen einer Dimension zum Datensatz werden diese Informationen nützlicher und leichter zu handhaben. Enthält der Datensatz etwa auch für jede Person das Land, in dem diese lebt, ließen sich durch die Definition der Dimension „Land“ die Menschen für jedes Land der Welt in Gruppen unterteilen. Die Berechnung der Metrik „Durchschnittsalter“ über die Dimension „Land“ würde dann eine Liste mit Zahlen zu jedem einzelnen Land liefern, nämlich die des Durchschnittsalters der Menschen des jeweiligen Landes.
 
-Die Anwendung eines Filters (oder Auswahlfilters) in einer Metrikformel kann detailliertere Informationen liefern oder die Definition einer neuen Metrik auf der Grundlage vorhandener Metriken und Dimensionen ermöglichen. Die Bewertung der Metrik &quot;Durchschnittsalter&quot;mit einem Filter von &quot;wobei Land gleich Schweden&quot;ergibt eine Zahl: Durchschnittsalter der Menschen in Schweden. Eine auf diesem Filter basierende Metrik könnte das schwedische Durchschnittsalter sein.
+Durch die Anwendung eines Filters (oder Auswahlfilters) in einer Metrikformel können noch detailliertere Informationen ermittelt oder eine neue Metrik auf Grundlage vorhandener Metriken und Dimensionen definiert werden. Die Berechnung der Metrik „Durchschnittsalter“ mit einem Filter für „Land ist gleich Schweden“ ergibt eine Zahl, nämlich das Durchschnittsalter der Menschen in Schweden. Eine auf diesem Filter basierende Metrik auf Basis dieses Filters wäre dann das Durchschnittsalter der schwedischen Bevölkerung.
 
 Beispiel:
 
@@ -38,17 +41,17 @@ Beispiel:
 Swedish_Average_Age=Average_Age[country = ‘Sweden’]
 ```
 
-## Beziehung von Metriken, Dimensionen und Filtern {#section-28622596124140b280e6b993b174ef84}
+## Zusammenhang zwischen Metriken, Dimensionen und Filtern {#section-28622596124140b280e6b993b174ef84}
 
-Im Allgemeinen führt die Bewertung einer Metrik über eine Dimension dazu, dass diese Metrik für jedes Dimensionselement (oder Element) ausgewertet wird. Im obigen Beispiel hat die Dimension &quot;Land&quot;ein Element für jedes Land der Welt. Die Bewertung des Durchschnittsalters über das Land würde das Durchschnittsalter für jedes Element (Länder) einschließlich des Elements Schweden erbringen.
+Im Allgemeinen liefert eine Metrik, die über eine Dimension berechnet wird, die Werte für jedes Dimensionselement (oder Element). Im obigen Beispiel umfasst die Dimension „Land“ jeweils ein Element für die einzelnen Länder der Welt. Die Ermittlung des Durchschnittsalters über das Land würde das Durchschnittsalter für jedes dieser Elemente (bzw. Länder) liefern, somit also auch für das Element „Schweden“.
 
-Beachten Sie, dass Sie beim Auswerten einer Metrik über eine Dimension dasselbe numerische Ergebnis für ein bestimmtes Dimensionselement erhalten, unabhängig davon, ob Sie diese Metrik für die gesamte Dimension auswerten oder einen Filter definieren, der diesem spezifischen Dimensionselement entspricht. Wenn man das vorangegangene Beispiel verwendet, würde eine der folgenden Methoden bei der Suche nach dem Durchschnittsalter der Menschen in Schweden identische Ergebnisse liefern:
+Hierbei gilt zu beachten: Die Ermittlung einer Metrik über eine Dimension liefert für ein spezifisches Dimensionselement immer dasselbe numerische Ergebnis, unabhängig davon, ob Sie diese Metrik für die gesamte Dimension berechnen oder einen Filter für dieses spezifische Dimensionselement definieren. So würden im vorherigen Beispiel beide der folgenden Methoden für die Ermittlung des Durchschnittsalters der Menschen in Schweden dasselbe Ergebnisse liefern:
 
-* Bewerten Sie die Metrik &quot;Durchschnittsalter&quot;über die Dimension &quot;Land&quot;und sehen Sie sich dann die Zahl für das Dimensionselement Schweden an.
-* Bewerten Sie die Metrik für das durchschnittliche Alter mit einem Filter von &quot;Personen in Schweden&quot;(ausgedrückt als [!DNL Average_[AgeCountry=&#39;Sweden&#39;]]).
+* Berechnung der Metrik „Durchschnittsalter“ über die Dimension „Land“ und anschließende Anzeige der Zahl für das Dimensionselement „Schweden“.
+* Berechnung der Metrik „Durchschnittsalter“ mit einem Filter für „Personen in Schweden“ (ausgedrückt als [!DNL Average_Age[Country=&#39;Sweden&#39;]]).
 
-Filter sind syntaktische Ausdrücke, die auf eine oder mehrere Dimensionen und Dimensionselemente verweisen. Wie Sie im obigen Beispiel gesehen haben, ist die Verwendung des Ausdrucks [!DNL [dimension=element]] eine einfache Möglichkeit, einen Filter anzugeben.
+Filter sind syntaktische Ausdrücke, die auf eine oder mehrere Dimensionen und Dimensionselemente verweisen. Wie im Beispiel oben gezeigt, lässt sich über den Ausdruck [!DNL [dimension=element]] auf einfache Weise ein Filter bestimmen.
 
-Ebenso einfach ist es, einen solchen Filter anzuwenden, um eine neue Metrik mit einem Ausdruck wie [!DNL New_Metric=[MetricFilter]] zu definieren. Ein solcher Filter kann verwendet werden, um eine neue Metrik basierend auf einem bestimmten Dimensionselement zu definieren. Um das obige Beispiel zu verwenden, gibt [!DNL Average_[AgeCountry=&#39;Sweden&#39;]] eine Metrik für das Durchschnittsalter von Menschen in Schweden an. Wenn wir dieser Metrik einen Namen geben würden, z. B. Swedish_Average_Age, könnten wir sie in anderen Berechnungen als Metrik verwenden. Die Auswertung [!DNL Swedish_Average_Age/Average_Age] würde zum Beispiel zu einer einzigen Zahl führen: das Verhältnis zwischen dem Durchschnittsalter der Menschen in Schweden und dem der Menschen in der übrigen Welt.
+Ebenso einfach gestaltet sich die Anwendung eines solchen Filters, um eine neue Metrik unter Verwendung eines Ausdrucks wie [!DNL New_Metric=Metric[Filter]] zu definieren. Mit einem solchen Filter lässt sich eine neue Metrik auf Grundlage eines spezifischen Dimensionselements definieren. So definiert im Beispiel oben [!DNL Average_Age[Country=&#39;Sweden&#39;]] eine Metrik für das Durchschnittsalter der Menschen in Schweden. Würden wir diese Metrik mit einem Namen versehen, z. B. „Swedish_Average_Age“, könnten wir sie in anderen Berechnungen als Metrik verwenden. So würde etwa die Ermittlung von [!DNL Swedish_Average_Age/Average_Age] eine einzelne Zahl liefern, nämlich das Durchschnittsalter der Menschen in Schweden im Verhältnis zu dem der Menschen im Rest der Welt.
 
-Wenn der Datensatz mit Informationen über alle Menschen in der Welt auch die Dimension &quot;Augenfarbe&quot;enthält, würde der Ausdruck [!DNL Swedish_Average_[AgeEye_Color=&#39;green&#39;]] zum Durchschnittsalter von Schweden mit grünen Augen führen. Sie können dasselbe Ergebnis auch ohne Verwendung einer Zwischenmetrikdefinition erhalten, indem Sie einen anderen Filter anwenden: [!DNL Average_[AgeCountry=&#39;Sweden&#39; AND Eye_Color=&#39;green&#39;]]. In diesem Fall gibt der [!DNL AND] Operator einen Filterausdruck mit zwei weiteren einfachen Filterausdrücken an.
+Enthält der Datensatz mit Informationen über alle Menschen der Welt etwa auch die Dimension „Augenfarbe“, würde der Ausdruck [!DNL Swedish_Average_Age[Eye_Color=&#39;green&#39;]] das Durchschnittsalter der Schweden liefern, deren Augen grün sind. Dasselbe Ergebnis erhalten Sie auch ohne die Definition einer Zwischenmetrik, indem Sie einen anderen Filter anwenden: [!DNL Average_Age[Country=&#39;Sweden&#39; AND Eye_Color=&#39;green&#39;]]. Darin definiert der [!DNL AND]-Operator einen Filterausdruck, der zwei weitere einfache Filterausdrücke verwendet.
