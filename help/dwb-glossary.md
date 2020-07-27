@@ -2,33 +2,36 @@
 description: 'null'
 title: Data Workbench-Glossar
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+workflow-type: ht
+source-wordcount: '4199'
+ht-degree: 100%
 
 ---
 
 
-# Data Workbench-Glossar{#data-workbench-glossary}
+# Data Workbench-Glossar {#data-workbench-glossary}
 
 **Warnhinweis**
 
-In Data Workbench eine Meldung oder einen Bericht, die/der automatisch ausgelöst wird, wenn eine Metrik innerhalb eines bestimmten Zeitraums einen definierten Schwellenwert erreicht. Beispielsweise könnte eine Warnung erstellt werden, die eine E-Mail ausgibt, wenn die Anzahl der Seitenansichten während eines Zeitraums von 24 Stunden über oder unter einer bestimmten Menge liegt.
+Eine Meldung oder ein Bericht in Data Workbench, die bzw. der automatisch ausgelöst wird, wenn eine Metrik innerhalb eines bestimmten Zeitraums einen festgelegten Schwellenwert erreicht. So könnte beispielsweise ein Warnhinweis erstellt werden, der eine E-Mail ausgibt, wenn die Anzahl der Seitenansichten innerhalb eines Zeitraums von 24 Stunden über oder unter einem bestimmten Wert liegt.
 
 **Analyst**
 
-Eine Person, die eine Analyse durchführt, Berichte definiert oder anderweitig Data Workbench verwendet.
+Eine Person, die Analysen durchführt, Berichte definiert oder anderweitig mit Data Workbench arbeitet.
 
 **Architekt**
 
-Eine Person, die bestimmt, wie Daten erfasst, verarbeitet und für die Analyse und Berichterstellung organisiert werden. Diese Person verfügt im Allgemeinen über erhebliche Kenntnisse bei der Konfiguration der Adobe®-Plattform für die Verwendung durch Analysten.
+Eine Person, die bestimmt, wie Daten erfasst, verarbeitet und für Analysen und Berichte organisiert werden. Diese Person verfügt im Allgemeinen über umfangreiche Kenntnisse dazu, wie die Adobe®-Plattform für die Verwendung durch Analysten konfiguriert werden muss.
 
 **Balkendiagramm**
 
-Eine Form von Diagramm, die rechteckige Balken unterschiedlicher Größe verwendet, um Vergleiche zwischen zwei oder mehr Elementen anzuzeigen.
+Ein Diagrammtyp, der Vergleiche zwischen zwei oder mehr Elementen anhand von rechteckigen Balken unterschiedlicher Größe darstellt.
 
 **Benchmark**
 
-Eine Maßeinheit oder Norm, die als Bezugspunkt dient, an dem andere gemessen oder bewertet werden können. In Data Workbench veranschaulicht eine Benchmark den Vergleich zwischen dem Wert, der einer Auswahl zugeordnet ist (eine ausgewählte Untergruppe), und dem Wert, der angezeigt wird, wenn die Auswahl nicht getroffen wurde.
+Eine Messgröße oder ein Standard, die bzw. der als Referenzwert für die Messung oder Bewertung anderer Werte dient. In Data Workbench veranschaulicht ein Benchmark den Vergleich zwischen dem Wert, der einer Auswahl (d. h. einer ausgewählten Untergruppe) zugeordnet ist, und dem Wert, der angezeigt wird, wenn die Auswahl nicht getroffen wurde.
 
 **Kardinalität**
 
@@ -36,324 +39,324 @@ Die Anzahl der Elemente in einem Satz. Die Anzahl der Elemente in einer Adobe-Da
 
 **Checkpoint**
 
-Der Zeitpunkt, zu dem eine Kopie eines Adobe-Datensatzes zu Sicherungs- oder Wiederherstellungszwecken geschrieben wurde. Der Begriff bezieht sich auch auf den Datensatz, der während eines Checkpoint-Vorgangs geschrieben wird.
+Die Zeit, zu der eine Kopie eines Adobe-Datensatzes zu Sicherungs- oder Wiederherstellungszwecken geschrieben wurde. Der Begriff bezieht sich außerdem auf den Datensatz, der während eines Checkpoint-Vorgangs geschrieben wird.
 
 **Chi-Quadrat**
 
-Ein statistischer Test zur Bestimmung der Wahrscheinlichkeit, dass eine beobachtete Abweichung vom erwarteten Ereignis oder Ergebnis zufällig eintrat. In Data Workbench liegt das näher an Chi-Quadrat bei 100%, je geringer die Wahrscheinlichkeit, dass die Abweichung nur zufällig auftrat.
+Ein statistischer Test zur Bestimmung der Wahrscheinlichkeit für das zufällige Eintreten einer beobachteten Abweichung vom erwarteten Ereignis oder Ergebnis. In Data Workbench liegt Chi-Quadrat umso näher an 100 %, je geringer die Wahrscheinlichkeit ist, dass die Abweichung nur zufällig auftrat.
 
 **Clickstream**
 
-Ein informeller Begriff, der sich auf die Folge von Seiten bezieht, die ein Benutzer beim Durchsuchen einer Website anfordert. Clickstream-Informationen können Site-Inhabern dabei helfen, zu verstehen, wie Besucher ihre Site verwenden und welche Seiten sie am häufigsten anfordern. Site-Eigentümer können die Clickstreams der Besucher auf ihren Sites erfassen, jedoch keine Clickstreams außerhalb ihrer Site erfassen (außer durch Verwendung von Drittanbieter-Cookies oder Seiten-Tags), da diese Anforderungen von externen Webservern protokolliert werden.
+Eine informelle Bezeichnung für die Sequenz von Seiten, die ein Benutzer beim Surfen auf einer Website anfordert. Anhand von Clickstream-Informationen können Website-Betreiber nachvollziehen, wie Besucher ihre Website verwenden und welche Seiten sie am häufigsten aufrufen. Website-Betreiber können die Clickstreams der Besucher ihrer Website erfassen, jedoch keine Clickstreams außerhalb von ihr, da diese Anfragen von externen Webservern protokolliert werden. (Für diese ist die Verwendung von Drittanbieter-Cookies oder Seiten-Tags erforderlich.)
 
 **Farblegende**
 
-Eine Legende in Data Workbench, die den Farbrampf für eine ausgewählte Metrik anzeigt. Farblegenden ermöglichen die Farbcodierung von Visualisierungen durch verschiedene Metriken. Mit Farbkodierungs-Visualisierungen lassen sich Anomalien, Ausnahmen und Trends leichter erkennen.
+Eine Legende in Data Workbench, die die Farbrampe einer ausgewählten Metrik anzeigt. Mithilfe von Farblegenden lassen sich die Visualisierungen verschiedener Metriken farblich voneinander abgrenzen. Diese farbcodierten Visualisierungen erleichtern die Erkennung von Anomalien, Ausnahmen und Trends.
 
-**Farbverlauf**
+**Farbrampe**
 
-In einer Farblegende wird der Farbbereich angegeben, mit dem der Bereich der möglichen Werte für eine Metrik dargestellt wird. Wenn eine Farblegende auf eine Visualisierung angewendet wird, werden grafische Elemente in der Visualisierung (z. B. Balken in einem Balkendiagramm) farbkodiert entsprechend den Werten, die von der Farbanzeige dargestellt werden.
+Der in einer Farblegende verwendete Farbbereich, anhand dessen der für eine Metrik mögliche Wertebereich dargestellt wird. Bei Anwendung einer Farblegende auf eine Visualisierung werden grafische Elemente in der Visualisierung (z. B. Balken in einem Balkendiagramm) entsprechend den von der Farbrampe dargestellten Werten farbcodiert.
 
 **Gemeinsamer Schlüssel**
 
-Eine allgemeine Variable, die eine Beziehung zwischen den Zeilen in zwei tabellarischen Datensätzen bildet. Beispielsweise kann eine Produkt-ID als gemeinsamer Schlüssel zwischen einer Tabelle mit Abfragezeichenfolgen-Variablen und einer Tabelle mit Produktdaten aus einem Lagerbestandsverwaltungssystem dienen.
+Eine Variable, die eine gemeinsame Beziehung zwischen den Zeilen in zwei tabellarischen Datensätzen bildet. Beispielsweise kann eine Produkt-ID als gemeinsamer Schlüssel zwischen einer Tabelle mit Abfrage-Zeichenfolge-Variablen und einer Tabelle mit Produktdaten aus einem System für das Bestandsmanagement dienen.
 
 **Konfidenzintervall**
 
-Ein Wertebereich mit einer bestimmten Wahrscheinlichkeit, die die Rate oder den Trend enthält. Die Konfidenzintervalle 80 % (p-Wert = 0,20), 95 % (p-Wert = 0,05) und 99 % (p-Wert = 0,01) sind die am häufigsten verwendeten Intervalle. (Quelle: `http://www.nci.nih.gov/statistics/glossary`)
+Ein Wertebereich, in dem eine Rate oder ein Trend mit einer bestimmten Wahrscheinlichkeit auftritt. Am häufigsten werden Konfidenzintervalle von 80 % (p-Wert = 0,20), 95 % (p-Wert = 0,05) und 99 % (p-Wert = 0,01) verwendet. (Quelle: `http://www.nci.nih.gov/statistics/glossary`)
 
 **Konfidenzniveau**
 
-Die Wahrscheinlichkeit, dass der Stichprobenfehler in einem Umfrageergebnis in einen bestimmten Bereich fällt, der normalerweise in Standardfehlern ausgedrückt wird (z. B. 1 Standardfehler gleich 68 % Wahrscheinlichkeit, 2 Standardfehler gleich 95,4 % Wahrscheinlichkeit). (Quelle: `http://www.magazine.org/research/3410.cfm`)
+Die Wahrscheinlichkeit, dass der Sampling-Fehler in einem Umfrageergebnis innerhalb eines bestimmten Bereichs liegt. Ausgedrückt wird dieser in der Regel anhand von Standardfehlern (z. B. 1 Standardfehler ist gleich einer Wahrscheinlichkeit von 68 %, 2 Standardfehler sind gleich einer Wahrscheinlichkeit von 95,4 %). (Quelle: `http://www.magazine.org/research/3410.cfm`)
 
-**Umrechnungskarte**
+**Konversionskarte**
 
-In Data Workbench eine Art der Visualisierung, bei der Elemente auf der X-Achse gemäß dem Wert der Konversionsmetrik dargestellt werden.
+Eine Visualisierung in Data Workbench, in der Elemente auf der x-Achse entsprechend dem Wert der Konversionsmetrik abgebildet werden.
 
 **Konversionsrate**
 
-In Data Workbench der Prozentsatz der Sitzungen, während denen ein Wertereignis aufgetreten ist. Die Konversionsrate wird berechnet, indem die Anzahl der Sitzungen, in denen ein Wertereignis aufgetreten ist, durch die Gesamtanzahl der Sitzungen geteilt wird.
+In Data Workbench wird damit der Prozentsatz der Sitzungen angegeben, während denen ein Wert-Ereignis eingetreten ist. Berechnet wird die Konversionsrate über den Quotienten aus der Anzahl der Sitzungen, in denen ein Wert-Ereignis eintrat, und der Gesamtanzahl der Sitzungen.
 
 **Korrelation**
 
-Eine numerische Maßeinheit für die Stärke einer linearen Beziehung zwischen zwei Zufallsvariablen. Variablen, die dazu neigen, sich zusammen nach oben oder unten zu bewegen, werden positiv korreliert, Variablen, die dazu neigen, sich in entgegengesetzte Richtungen zu bewegen, werden negativ korreliert. Siehe auch Korrelationskoeffizient.
+Eine numerische Maßzahl für die Stärke einer linearen Beziehung zwischen zwei Zufallsvariablen. Variablen, die beide zu einer Bewegung nach oben oder unten tendieren, weisen eine positive Korrelation auf. Variablen, die zur Bewegung in eine voneinander entgegengesetzte Richtung tendieren, weisen dagegen eine negative Korrelation auf. Siehe hierzu auch Korrelationskoeffizient.
 
 **Korrelationskoeffizient**
 
-Der numerische Wert, der die Stärke einer linearen Beziehung zwischen zwei Zufallsvariablen angibt. Siehe auch Korrelation.
+Ein numerischer Wert für die Stärke einer linearen Beziehung zwischen zwei Zufallsvariablen. Siehe hierzu auch Korrelation.
 
 **Zählbare Dimension**
 
-Eine Dimension, bei der die Anzahl der Elemente, die die Dimension enthält, diskret gezählt werden kann. Zählbare Dimensionen können untergeordnete Dimensionen der folgenden Typen aufweisen: Zählbare, numerische, einfache, Viele-zu-viele- und denormale Variablen.
+Eine Dimension, bei der die Anzahl der in ihr enthaltenen Elemente diskret zählbar sind. Zählbare Dimensionen können untergeordnete Dimensionen der Typen zählbar, numerisch, einfach, Viele-zu-viele und denormal beinhalten.
 
-**CrossRows Transformation**
+**CrossRows-Umwandlung**
 
-In Data Workbench-Server eine Datenumwandlung, die es ermöglicht, Daten aus mehreren Ereignisdatensätzen eines Besuchers (die zu unterschiedlichen Zeiten vorgenommen wurden) in eine Berechnung einzubeziehen.
+Eine im Data Workbench-Server durchgeführte Datenumwandlung, mittels derer Daten aus mehreren, zu unterschiedlichen Zeitpunkten für einen Besucher erfassten Ereignisdatensätzen in eine Berechnung einbezogen werden können.
 
 **Crosstab**
 
-In Data Workbench eine tabellarische Visualisierung, die die Metriken anzeigt, die mit den Schnittpunkten zweier Dimensionen verbunden sind.
+Eine tabellarische Visualisierung in Data Workbench, die die mit den Schnittpunkten zweier Dimensionen verbundenen Metriken darstellt.
 
-**Cube**
+**Würfel**
 
-Eine mehrdimensionale Datenstruktur oder eine Gruppe von Datenzellen, die nach den Dimensionen der Daten angeordnet sind. Eine Tabelle beispielsweise veranschaulicht ein zweidimensionales Array mit Daten, die in Zeilen und Spalten angeordnet sind. In einer Tabelle ist jede Zeile oder Spalte eine Dimension. Ein dreidimensionales Array kann als Würfel visualisiert werden, wobei jede Dimension eine Seite des Würfels bildet, einschließlich eines beliebigen Segments parallel zu dieser Seite. Höhere dimensionale Arrays haben keine physische Metapher, können jedoch verwendet werden, um Daten auf eine Weise zu organisieren, die Benutzer über ihr Unternehmen denken. Auch als Hypercube, multidimensionales Array oder mehrdimensionale Datenbank bezeichnet.
+Eine mehrdimensionale Datenstruktur oder eine Gruppe von Datenzellen, die entsprechend den Dimensionen der Daten angeordnet ist. So bildet etwa eine Tabelle ein zweidimensionales Array ab, indem die Daten in Zeilen und Spalten festgehalten werden. Die einzelnen Zeilen oder Spalten einer Tabelle stellen dabei eine Dimension dar. Dreidimensionale Arrays lassen sich als Würfel darstellen, wobei die einzelnen Seiten des Würfels jeweils eine Dimension einschließlich eines parallel zur jeweiligen Seite liegenden Teilelements abbilden. Arrays mit mehr als drei Dimensionen können physisch nicht dargestellt werden, jedoch lassen sich mit ihrer Hilfe Daten in einer Weise organisieren, wie Benutzer über ihr Unternehmen denken. Weitere Bezeichnungen hierfür sind Hyperwürfel, mehrdimensionales Array oder mehrdimensionale Datenbank.
 
 **Dashboard**
 
-Ein Arbeitsbereich, der für die Anzeige und nicht für die Interaktion erstellt wird. Dashboards bieten einen Überblick über den Status, indem wichtige Leistungsindikatoren angezeigt werden, die für einen bestimmten Manager oder Betreiber geeignet sind, der ein oder mehrere Geschäftsziele überwacht. Siehe auch Arbeitsbereich.
+Ein Arbeitsbereich, der nicht für die Interaktion, sondern für die Illustration von etwas erstellt wird. Dashboards bieten bestimmten Führungskräften oder Verantwortlichen einen aktuellen Überblick über KPIs, die für die von ihnen überwachten Geschäftsziele von Bedeutung sind. Siehe hierzu auch Arbeitsbereich.
 
-**Datenverarbeitung**
+**Data-Mining**
 
-Die nicht verwendete oder interaktive Anwendung einer Sammlung mathematischer Verfahren auf historische Geschäftsdaten, um Erkenntnisse in Form von Korrelationen und anderen statistischen Beziehungen zu erhalten.
+Ein Prozess, bei dem verschiedene mathematische Verfahren entweder ohne Benutzereingriffe oder interaktiv auf historische Geschäftsdaten angewendet werden, um Erkenntnisse in Form von Korrelationen und anderen statistischen Beziehungen zu gewinnen.
 
 **Datenuntergruppe**
 
-Eine Funktion, die es Benutzern ermöglicht, eine Untergruppe eines Datensatzes zur Verwendung in der Online- oder Offline-Analyse einfach auszuwählen. (Eine Datenuntergruppe ist ein auf einem Filter basierender Teil des Datensatzes.)
+Eine Funktion, über die Benutzer auf einfache Weise eine Untergruppe eines Datensatzes für die Verwendung in einer Online- oder Offline-Analyse auswählen können. (Eine Datenuntergruppe ist ein Teilelement eines Datensatzes, das auf Grundlage eines Filters aus diesem entnommen wurde.)
 
 **Data Warehouse**
 
-Eine Datenbank zur Unterstützung der Entscheidungsfindung in Organisationen. Ein Data Warehouse enthält im Allgemeinen eine große Menge an themenorientierten, zeitvarianten, nicht flüchtigen Daten, die für schnelle, Online-Abfragen und Management-Zusammenfassungen strukturiert sind.
+Eine Datenbank, die Unternehmen bei der Entscheidungsfindung unterstützt. In einem Data Warehouse werden im Allgemeinen großen Mengen an subjektorientierten, temporalen, nichtflüchtigen Daten gespeichert, die so strukturiert sind, dass sie schnell für Online-Abfragen oder Management-Übersichten abgerufen werden können.
 
 **Datenverarbeitungseinheit**
 
-Eine Art Data Workbench-Server, der Daten aus einem Adobe-Datensatz verarbeitet, speichert und bereitstellt. Eine DPU kann optional die VSL-Protokolldateien speichern, die die Quelldaten enthalten, aus denen der Datensatz erstellt wird, oder diese Daten von einer Data Workbench Server File Server Unit (FSU) empfangen. Eine DPU ist der Typ des Data Workbench-Servers, mit dem Data Workbench- und Report®-Clients direkt interagieren.
+Ein Server für Data Workbench, der Daten aus einem Adobe-Datensatz verarbeitet, speichert und bereitstellt. Eine DPU bietet die Option, die VSL-Protokolldateien zu speichern, die die für die Erstellung des Datensatzes verwendeten Quelldaten enthalten, oder diese Daten von einer für Data Workbench verwendeten File Server Unit (FSU) zu empfangen. Eine DPU ist der Typ von Data Workbench-Server, mit dem Data Workbench- und Report®-Clients direkt interagieren.
 
 **Datensatz**
 
-Die vom Data Workbench-Server geladenen und verarbeiteten Daten. Der Datensatz stellt die Daten dar, die zu Analyse-, Berichterstellungs- und Warnungszwecken an die Data Workbench oder an den Bericht übermittelt werden können. Der Datensatz befindet sich physisch in der Datei &quot;temp.db&quot;. Jeder Data Workbench-Server-Computer (oder Data Workbench-Servercluster) verwaltet einen Datensatz.
+Die Daten, die vom Data Workbench-Server geladen und verarbeitet werden. Der Datensatz stellt die Daten dar, die zur Verwendung für Analysen, Berichte oder Warnmeldungen an Data Workbench oder Report übermittelt werden können. Der Datensatz wird physisch in der Datei „temp.db“ gespeichert. Jeder für Data Workbench verwendete Server-Computer (oder Server-Cluster) verwaltet einen Datensatz.
 
-**Datenbestand**
+**Datensatzdaten**
 
-Die in einem Data Workbench-Server-Datensatz erstellten und gespeicherten Daten. Er enthält die Ereignisdaten und Integrationsdaten, die für den Datensatz zugelassen oder im Datensatz erstellt werden. Er enthält außerdem alle Informationen, die aus den Daten abgeleitet werden, die von den Konfigurationsdateien, die diesen Datensatz definieren, bestimmt werden. Die Datensatzdaten können neu erstellt werden, indem die Ereignis- und Integrationsdaten mit denselben oder anderen Konfigurationsdateien erneut verarbeitet werden. (Konfigurationsdateien sind Systemdateien, die als Teil eines Adobe-Profils verwaltet werden.)
+Die in einem von einem Data Workbench-Server verwendeten Datensatz erstellten und gespeicherten Daten. Dies umfasst die Ereignis- und Integrationsdaten, die im Datensatz aufgenommen oder in ihm erstellt werden. Ebenfalls enthalten sind Informationen, die entsprechend den Konfigurationsdateien, die den jeweiligen Datensatz definieren, aus den Daten abgeleitet werden. Datensatzdaten können erneut erstellt werden, indem die Ereignis- und Integrationsdaten unter Verwendung derselben oder anderen Konfigurationsdateien wiederaufbereitet werden. (Konfigurationsdateien sind Systemdateien, die als Teil eines Adobe-Profils verwaltet werden.)
 
-**Datensatzdatensätze**
+**Datensatzaufzeichnungen**
 
-Diese Ereignisdatensätze, die in einen Adobe-Datensatz aufgenommen wurden, nachdem die gesamte Filterung und andere Verarbeitung durchgeführt wurde. Auch als verarbeitete Protokolleinträge bezeichnet.
+Die in einen Adobe-Datensatz aufgenommenen Aufzeichnungen von Ereignisdaten, nachdem alle Filter- und andere Verarbeitungsvorgänge auf sie angewendet wurden. Sie werden auch als verarbeitete Protokolleinträge bezeichnet.
 
-**Datenaset-Schema**
+**Datensatzschema**
 
-Eine Visualisierung in Data Workbench, die das Schema des Datensatzes anzeigt, das das aktuell ausgewählte Profil unterstützt.
+Eine Visualisierung in Data Workbench, die das Schema des dem aktuell ausgewählten Profil zugrunde liegenden Datensatzes abbildet.
 
-**Datenspeicher**
+**Datensatz-Speicherplatz**
 
-Die Datenmenge (in Byte), die in einem Adobe-Datensatz eingegeben oder erstellt wurde. Diese Daten werden vom Dataset in einer Datei namens Temp.db auf einem Datenbasis-Servercomputer gespeichert. Die Daten in Temp.db sind vorübergehend und können durch die Wiederaufbereitung der Quelldaten (d.h. Ereignisdaten und Integrationsdaten) mit den entsprechenden Konfigurationsdateien neu erstellt werden.
+Die Menge an Daten (in Byte), die in einem Adobe-Datensatz eingegeben oder erstellt wurde. Diese Daten werden vom Datensatz in einer Datei namens „Temp.db“ gespeichert, die auf einem für Data Workbench verwendeten Server-Computer abgelegt wird. Die in „Temp.db“ enthaltenen Daten sind transient (werden also temporär gespeichert) und können durch Wiederaufbereitung der Quelldaten (d. h., der Ereignis- und Integrationsdaten) mithilfe der entsprechenden Konfigurationsdateien neu erstellt werden.
 
 **Decoder**
 
-Die Komponente im Data Workbench-Server, die Ereignisdaten aus verschiedenen Quellen liest und Daten generiert, die zur Erzeugung des Datensatzes verwendet werden. Ausgabe von einem Decoder kann als Eingabe für jede der &quot;Protokollverarbeitungsfunktionen&quot;-Funktionen im Data Workbench-Server verwendet werden. Zu den Decoder-Typen gehören der Sensor-Decoder (zum Laden von Daten aus verschiedenen Versionen des Sensors), der Regular Expression-Decoder (zum Laden von Daten aus getrennten flachen Dateien) und der ODBC-Decoder (zum Laden von Daten aus ODBC-Datenquellen).
+Die Komponente im Data Workbench-Server, die Ereignisdaten aus verschiedenen Quellen liest und Daten generiert, die zur Erstellung des Datensatzes verwendet werden. Die Ausgabe eines Decoders kann als Eingabe für beliebige Funktionen zur Protokollverarbeitung im Data Workbench-Server verwendet werden. Zu den Typen von Decodern gehören der Sensor-Decoder, der zum Laden von Daten aus verschiedenen Versionen des Sensors verwendet wird, der Decoder für reguläre Ausdrücke, über den Daten aus getrennten Flat Files geladen werden, und der ODBC-Decoder, der Daten aus ODBC-Datenquellen lädt.
 
 **Dimension**
 
-Eine Reihe von Elementen, die alle von einem ähnlichen Typ in der Wahrnehmung des Benutzers sind. Die Elemente definieren einen Satz von Kategorien, in die Daten gruppiert werden können. Die Elemente Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag und Sonntag bilden beispielsweise die Dimension &quot;Wochentag&quot;.
+Ein Satz von Elementen, die vom Benutzer aus betrachtet alle von ähnlichem Typ sind. Die Elemente definieren einen Satz von Kategorien, in die Daten gruppiert werden können. So bilden etwa die Elemente „Montag“, „Dienstag“, „Mittwoch“, „Donnerstag“, „Freitag“, „Samstag“ und „Sonntag“ die Dimension „Wochentag“.
 
 **Dimensionselement**
 
-Eine einzelne Kategorie innerhalb einer Dimension. Beispielsweise enthält die Dimension &quot;Wochentag&quot;die einzelnen Elemente Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag und Sonntag.
+Eine einzelne Kategorie innerhalb einer Dimension. Beispielsweise enthält die Dimension „Wochentag“ die einzelnen Elemente „Montag“, „Dienstag“, „Mittwoch“, „Donnerstag“, „Freitag“, „Samstag“ und „Sonntag“.
 
 **Dimensionslegende**
 
-In Data Workbench wird die Legende mit den Dimensionen aufgeführt, die im Datensatz definiert wurden (oder von ihm abgeleitet wurden). Wenn eine Auswahl in einer Visualisierung vorgenommen wird, identifiziert die Dimensionslegende die Dimensionen, deren Werte sich um einen statistisch signifikanten Betrag vom Benchmark unterscheiden.
+Die Legende, in der in Data Workbench die im Datensatz definierten (oder aus ihm abgeleiteten) Dimensionen auflistet werden. Wird eine Auswahl in einer Visualisierung vorgenommen, identifiziert die Dimensionslegende diejenigen Dimensionen, deren Werte um einen statistisch signifikanten Wert vom Benchmark abweichen.
 
-**Drilldown**
+**Drillup/Drilldown**
 
-Eine spezielle Analysetechnik, bei der der Benutzer zwischen Datenebenen navigiert, die von den am meisten zusammengefassten (bis) bis hin zu den detailliertesten (unten) reicht. Wenn Sie z. B. Verkaufsdaten für Nordamerika anzeigen, zeigt ein Drilldown-Vorgang in der Dimension Region möglicherweise Kanada, die USA und Mexiko an. Ein weiterer Drilldown in Kanada könnte Toronto, Vancouver, Montreal usw. anzeigen.
+Eine spezielle Analysetechnik, bei der Datenebenen unterschiedlicher Detailebene dargestellt werden: von den allgemeinsten (Drillup) zu den detailliertesten (Drilldown). So würden bei der Darstellung von Daten zum Absatzvolumen für Nordamerika über einen Drilldown der Dimension „Region“ etwa Kanada, die USA und Mexiko angezeigt werden. Durch einen weiteren Drilldown etwa in Kanada würde die Ansicht dann auf Toronto, Vancouver, Montreal usw. spezifiziert.
 
 **Ereignisdaten**
 
-Die von Sensoren oder anderen Mitteln erfassten Daten (z. B. eine Webserver-Protokolldatei), die die primäre Eingabe für den Data Workbench-Server darstellt. Jeder Ereignisdatensatz stellt einen Transaktionsdatensatz oder eine einzelne Instanz eines Ereignisses dar.
+Die Daten, die anhand von Sensoren oder anderweitig (z. B. über eine Webserver-Protokolldatei) erfasst werden und die primäre Eingabe für den Data Workbench-Server darstellen. Jeder Satz von Ereignisdaten stellt einen Transaktionsdatensatz oder eine einzelne Instanz eines Ereignisses dar.
 
 **Erweiterte Dimension**
 
-Eine Dimension, die auf erweiterten Daten basiert. Bei erweiterten Daten handelt es sich um Daten, die über das für die Erstellung eines gültigen Ereignisdatensatzes erforderliche Minimum hinausgehen. Erweiterte Daten können einem Ereignisdatensatz hinzugefügt werden, wenn das ursprüngliche Ereignis erfasst wird, oder sie können aus anderen Quellen integriert und dem Ereignisdatensatz als Integrationsdaten hinzugefügt werden. Jede Dimension, die auf diesen zusätzlichen Daten basiert, gilt als &quot;erweitert&quot;.
+Eine Dimension, die auf erweiterten Daten basiert. Bei erweiterten Daten handelt es sich um Daten, die über das für die Aufzeichnung eines gültigen Ereignisdatensatzes erforderliche Minimum hinausgehen. Erweiterte Daten können einem Ereignisdatensatz bei der Erfassung des ursprünglichen Ereignisses oder aus anderen Quellen in Form von Integrationsdaten hinzugefügt werden. Jede Dimension, die auf zusätzlichen Daten dieser Art basiert, gilt als „erweitert“.
 
-**Dateiservereinheit (FSU)**
+**File Server Unit (FSU)**
 
-Eine Art Data Workbench-Server, deren Funktion ausschließlich darin besteht, Ereignisdaten von einem oder mehreren Sensoren oder Repeater-Servern zu empfangen und Daten an einen oder mehrere Data Workbench-Server Data Processing Units (DPUs) für deren Verwendung beim Erstellen von Adobe-Datensätzen bereitzustellen. FSUs optimieren die Übertragung von Ereignisdaten an die DPUs und sind deutlich schneller als normale Dateiserver. Die Verwendung eines FSU senkt die Hardwarekosten, da Protokolldaten auf kostengünstigerer Speicherhardware gespeichert werden können und dadurch die administrative Komplexität verringert wird, da mehrere Sensoren auf einen einzigen Data Workbench-Server verweisen können.
+Ein Typ von Data Workbench-Server, dessen Funktion ausschließlich darin besteht, Ereignisdaten von einem oder mehreren Sensoren oder Repeater-Servern zu empfangen und Daten zur Erstellung von Adobe-Datensätzen an einen oder mehrere als Datenverarbeitungseinheiten (DPUs) verwendete Data Workbench-Server zu übermitteln. FSUs optimieren die Übertragung von Ereignisdaten an die DPUs und sind deutlich schneller als klassische Datei-Server. Der Einsatz von FSUs senkt die Hardware-Kosten, da sie es ermöglichen, Protokolldaten auf kostengünstigeren Datenspeichern abzulegen, was wiederum die Verwaltung vereinfacht, da eine Vielzahl von Sensoren einem einzelnen Data Workbench-Server zugeordnet werden können.
 
-**Inkrementelle Abfragebewertung**
+**Inkrementelle Abfragenauswertung**
 
-Der patentierte Prozess, bei dem der Data Workbench-Server einem Benutzer auf der Grundlage eines projizierten Zufallsstichprobe der Gesamtpopulation sofortige Abfrageergebnisse liefert. Bei diesem Prozess optimiert der Server die Genauigkeit der Abfrage inkrementell, indem er mehr Daten berücksichtigt, bis alle Daten berücksichtigt wurden und eine genaue Anzahl erreicht wurde.
+Ein patentiertes Verfahren, das es dem Data Workbench-Server ermöglicht, auf Grundlage einer vorausgesagten zufälligen Stichprobe der Gesamtpopulation direkt Ergebnisse für eine Abfrage zu liefern. Der Server erhöht dabei schrittweise die Genauigkeit der Abfrage, indem er die Menge an einbezogenen Daten so lange inkrementell erhöht, bis alle Daten einbezogen und dadurch eine genauere Anzahl erzielt wurde.
 
 **Integrationsdaten**
 
-Integrationsdaten sind externe Daten aus Unternehmensdatenbanken oder Nachschlagedateien, die Sie mit Ereignisdaten kombinieren können, um den Datensatz zu erstellen. Im Allgemeinen verwenden Sie Integrationsdaten, um die von Sensor erfassten Ereignisdaten zu erweitern. (Grundsätzlich können Sie sich vorstellen, mit den Integrationsdaten Ereignisdatensätze mit zusätzlichen Informationsspalten zu füllen.)
+Dabei handelt es sich um externe Daten aus Unternehmensdatenbanken oder Lookup-Dateien, die zur Erstellung des Datensatzes mit Ereignisdaten kombiniert werden können. Im Allgemeinen werden Integrationsdaten zur Erweiterung der vom Sensor erfassten Ereignisdaten verwendet. (Aus konzeptioneller Sicht dienen Integrationsdaten dazu, Ereignisdatensätze mit zusätzlichen Informationsspalten zu füllen.)
 
 **Legende**
 
-Ein Fenster in der Data Workbench, das erklärende Details zu den Visualisierungen enthält, die im Arbeitsbereich angezeigt werden. Zu den Legenden gehören Farblegenden, Dimensionslegenden und metrische Legenden. Wie alle Fenster in Data Workbench können auch Legend-Fenster von Report erstellt und verteilt werden.
+Ein Fenster in Data Workbench, das Details zu den im Arbeitsbereich angezeigten Visualisierungen enthält. Die verschiedenen Typen von Legenden umfassen Farblegenden, Dimensionslegenden und Metriklegenden. Legendenfenster können so wie alle Fenster in Data Workbench von Report erstellt und bereitgestellt werden.
 
-**Liniendiagramm**
+**Kantengraph**
 
-Eine Art der Visualisierung in Data Workbench, die Metriken für eine bestimmte Dimension als aufeinander folgende Punkte auf der X-Achse eines Diagramms anzeigt und dann die Punkte mit Linien verbindet. Ein Liniendiagramm ist eine besonders effektive Möglichkeit, eine Metrik über eine zeitbasierte Dimension zu visualisieren.
+Eine Art der Visualisierung in Data Workbench, bei der für eine bestimmte Dimension ermittelte Metriken als aufeinander folgende Punkte auf der x-Achse eines Diagramms abgebildet und dann die Punkte mit Linien verbunden werden. Kantengraphen sind besonders effektiv, wenn eine Metrik über eine zeitbasierte Dimension visualisiert werden soll.
 
-**Protokolleinstiegsbedingung**
+**Protokolleintragsbedingung**
 
-Eine Bedingung, die bestimmt, ob ein Ereignisdatensatz (ein Protokolleintrag) in den Datensatz aufgenommen wird. Beispielsweise kann eine Protokolleintragungsbedingung festlegen, dass nur Ereignisdatensätze, die mit einer bestimmten Website verbunden sind, in den Datensatz aufgenommen werden sollen. Protokolleintragungsbedingungen werden in der Konfigurationsdatei für die Protokollverarbeitung auf dem Data Workbench-Server angegeben.
+Eine Bedingung, die bestimmt, ob ein Ereignisdatensatz (d. h. ein Protokolleintrag) in den Datensatz aufgenommen wird. Beispielsweise kann eine Protokolleintragsbedingung festlegen, dass nur mit einer bestimmten Website verbundene Ereignisdatensätze in den Datensatz aufgenommen werden sollen. Protokolleintragsbedingungen werden in der auf dem Data Workbench-Server gespeicherten Konfigurationsdatei für die Protokollverarbeitung definiert.
 
 **Viele-zu-viele-Dimension**
 
-In der Adobe-Plattform eine Dimension, die eine Viele-zu-viele-Beziehung mit einer übergeordneten zählbaren Dimension hat. Eine Viele-zu-viele-Dimension stellt einen Satz von Werten für jedes Element seiner übergeordneten Dimension dar. In Site hat die Dimension &quot;Suchbegriff&quot;beispielsweise eine Viele-zu-viele-Beziehung zu ihrer übergeordneten Dimension, der Dimension &quot;Sitzung&quot;(d. h. eine Sitzung kann eine beliebige Anzahl von Suchbegriffen haben, und ein Suchbegriff kann eine beliebige Anzahl von Sitzungen haben).
+In der Adobe-Plattform ist dies eine Dimension, die eine Viele-zu-viele-Beziehung mit einer übergeordneten zählbaren Dimension aufweist. Eine Viele-zu-viele-Dimension stellt einen Satz von Werten für jedes Element seiner übergeordneten Dimension dar. In Site weist etwa die Dimension für den Suchbegriff eine Viele-zu-viele-Beziehung zur Dimension für die Sitzung auf, die ersterer übergeordnet ist. Eine Sitzung kann also eine beliebige Anzahl von Suchbegriffen aufweisen, ein Suchbegriff wiederum eine beliebige Anzahl von Sitzungen.
 
 **Maskieren**
 
-Eine Funktion in Data Workbench, mit der Analysten vorübergehend Elemente ausblenden können, die sie nicht in eine Analyse einbeziehen möchten.
+Eine Funktion in Data Workbench, mit der Analysten Elemente. die sie nicht in eine Analyse aufnehmen möchten, vorübergehend ausblenden können.
 
 **Mittel**
 
-Der arithmetische Durchschnitt einer Reihe von Zahlen. Die Summe der Daten geteilt durch die Stichprobengröße.
+Der arithmetische Durchschnitt eines Zahlensatzes, berechnet über die Summe der Daten geteilt durch die Stichprobengröße.
 
-**Mittelwert**
+**Median**
 
-Eine Zahl, die die höchste Hälfte einer Probe, eine Population oder eine Wahrscheinlichkeitsverteilung von der niedrigsten Hälfte trennt. Die Hälfte der Bevölkerung hat Werte, die kleiner oder gleich dem Median sind, und die Hälfte der Bevölkerung hat Werte, die dem Median entsprechen oder größer sind.
+Die Zahl, die in der Mitte der höchsten und niedrigsten Werte einer Stichprobe, Population oder Wahrscheinlichkeitsverteilung liegt. Die eine Hälfte der Population weist Werte auf, die kleiner oder gleich dem Median sind, bei der anderen Hälfte der Population sind die Werte größer oder gleich dem Median.
 
 **Metrik**
 
-In Adobe gibt es eine benannte Formel, die beschreibt, wie ein quantitativer Wert aus den Daten im Datensatz berechnet wird. In der Site beispielsweise stellt die Metrik &quot;Sitzungen pro Besucher&quot;eine Formel dar, die die Anzahl der Sitzungen durch die Anzahl der Besucher dividiert.
+Bei Adobe die Bezeichnung für eine benannte Formel, nach der ein quantitativer Wert aus den Daten im Datensatz berechnet wird. So stellt in Site etwa die Metrik für Sitzungen pro Besucher eine Formel für den Quotienten aus der Anzahl der Sitzungen und der Anzahl der Besucher dar.
 
 **Metriklegende**
 
-Ein Fenster in der Data Workbench, in dem die vom aktiven Profil definierten Metriken angezeigt werden. Eine Metriklegende zeigt den Wert jeder Metrik, berechnet aus dem Datensatz oder der aktuellen Auswahl an (wenn eine Auswahl im Arbeitsbereich aktiv ist, zeigt die Metriklegende die Werte für die ausgewählte Untergruppe anstelle des gesamten Datensatzes an.) Wie alle Fenster in der Data Workbench können Metriklegenden durch Bericht generiert und verteilt werden.
+Ein Fenster in Data Workbench, in dem die vom aktiven Profil definierten Metriken angezeigt werden. Eine Metriklegende gibt für jede Metrik den aus dem Datensatz oder der aktuellen Auswahl berechneten Wert an. (Wenn eine Auswahl im Arbeitsbereich aktiv ist, gibt die Metriklegende die Werte für die ausgewählte Untergruppe und nicht die des gesamten Datensatzes an.) Metriklegenden können so wie alle Fenster in Data Workbench von Report erstellt und bereitgestellt werden.
 
 **Metrik-Arbeitsblatt**
 
-Ein Fenster in Data Workbench, in dem Analysten ihre eigenen Metriken für einen Datensatz definieren können. Ein Metrikarbeitsblatt ähnelt einer Tabelle. Analysten können mithilfe der Syntax der Data Workbench-Formel Ausdrücke eingeben, die die quantitativen Werte beschreiben, die sie aus dem Datensatz ableiten möchten. Ein Analyst könnte beispielsweise eine Metrik definieren, die den Prozentsatz der Besucher anzeigt, die eine Seite aus einer bestimmten Domäne angesehen haben. Wie reguläre Metriken funktionieren Formeln in einem Metrikarbeitsblatt mit der ausgewählten Untergruppe, wenn eine Auswahl im Arbeitsbereich aktiv ist. Wie alle Fenster in der Data Workbench können Metrikarbeitsblätter nach Bericht erstellt und verteilt werden.
+Ein Fenster in Data Workbench, in dem Analysten für einen Datensatz ihre eigenen Metriken definieren können. Metrik-Arbeitsblätter sind mit Tabellen vergleichbar. Analysten können unter Verwendung der Formelsyntax von Data Workbench Ausdrücke angeben, die die quantitativen Werte beschreiben, die sie aus dem Datensatz ableiten möchten. So kann ein Analyst etwa eine Metrik definieren, die den Prozentsatz der Besucher abbildet, die eine Seite aus einer bestimmten Domäne geöffnet haben. In einem Metrik-Arbeitsblatt festgelegte Formeln werden genauso wie Standardmetriken auf die ausgewählte Untergruppe angewendet, wenn eine Auswahl im Arbeitsbereich aktiv ist. Metrik-Arbeitsblätter können so wie alle Fenster in Data Workbench von Report erstellt und bereitgestellt werden.
 
-**Neue Besucherbedingung**
+**Bedingung für neuen Besucher**
 
-Die Bedingung, die bestimmt, ob eine neue Tracking-ID erstellt wird, wenn dem Data Workbench-Server ein Ereignisdatensatz angezeigt wird.
+Die Bedingung, die bestimmt, ob eine neue Tracking-ID erstellt wird, wenn der Data Workbench-Server einen Ereignisdatensatz erhält.
 
 **Knoten**
 
-Eine Gruppierung eines oder mehrerer diskreter Elemente zu einer einzigen logischen Entität. In einer Konfigurationsdatei (.cfg) ist ein Knoten ein Element, das zugehörige Parameter enthält. Siehe auch Parameter und Vector. In Data Workbench stellt ein Knoten auf einer Process Map eine einzelne Seite oder eine definierte Seitengruppe dar.
+Eine Gruppierung, die diskrete Elemente (eines oder mehrere) in einer logischen Entität zusammenfasst. In einer Konfigurationsdatei (.cfg) ist ein Knoten ein Element, das einander zugehörige Parameter enthält. Siehe hierzu auch Parameter und Vektor. Ein Knoten auf einer Prozesskarte stellt in Data Workbench eine einzelne Seite oder eine definierte Gruppe von Seiten dar.
 
 **Numerische Dimension**
 
-In der Adobe-Plattform ist eine Dimension mit geordneten numerischen Werten und einer Eins-zu-viele-Beziehung zu einer übergeordneten zählbaren Dimension vorhanden. Im Allgemeinen stellt eine numerische Dimension eine numerische Eigenschaft der Elemente der übergeordneten Dimension dar. Nummerische Dimensionen werden häufig zur Definition von Summenmetriken verwendet.
+In der Adobe-Plattform ist dies eine Dimension, die geordnete, numerische Werte umfasst und eine Eins-zu-viele-Beziehung mit einer übergeordneten zählbaren Dimension aufweist. Im Allgemeinen stellt eine numerische Dimension eine numerische Eigenschaft der Elemente der übergeordneten Dimension dar. Numerische Dimensionen werden häufig zur Definition von Summenmetriken verwendet.
 
 **Eins-zu-viele-Beziehung**
 
-Eine Beziehung zwischen zwei Datendimensionen, bei der ein einzelnes Element in einer Dimension mit einem oder mehreren Elementen in der anderen Dimension in Beziehung steht (oder stehen kann).
+Eine Beziehung zwischen zwei Datendimensionen, bei der ein einzelnes Element in der einen Dimension mit einem oder mehreren Elementen in der anderen Dimension in Beziehung steht (oder stehen kann).
 
-**Ordinell**
+**Ordinal**
 
-Eine numerische Reihenfolge in einer Reihe sein oder benennen. (Quelle: `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Wenn eine Dimension in Data Workbench ordentlich sortiert wird, werden die Elemente der Dimension in der Reihenfolge angezeigt, in der sie intern dargestellt werden.
+Das Vorhandensein oder die Notierung einer numerischen Reihenfolge in einer Reihe. (Quelle: `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Bei einer in Data Workbench ordinal sortierten Dimension werden ihre Elemente in der Reihenfolge angezeigt, in der sie intern dargestellt werden.
 
 **Ausreißer**
 
-In einem Satz von Daten, einen Wert, der so weit entfernt von anderen Werten in der Verteilung, dass sein Vorhandensein nicht auf die zufällige Kombination von Zufall Ursachen zurückzuführen ist.
+Ein Wert in einem Satz von Daten, der so weit entfernt von anderen Werten in der Verteilung liegt, dass sein Auftreten nicht auf die Kombination zufälliger Ursachen zurückzuführen sein kann.
 
 **Seitenüberlagerung**
 
-Eine Art der Visualisierung in Data Workbench, die die Links auf einem Bild einer Webseite entsprechend einer bestimmten Metrik farbkodiert. Mit einer Visualisierung der Seitenüberlagerung können Sie schnell identifizieren, welche Links auf einer Seite Besucher anziehen (und zu anderen Seiten Ihrer Site führen) und welche nicht. Sie können es auch verwenden, um den &quot;Wert&quot;(gemessen durch Wertereignisse) zu verstehen, den die verschiedenen Links auf einer Seite für Ihre Site generieren.
+Eine Visualisierung in Data Workbench, bei der die Links auf einem Bild einer Web-Seite entsprechend einer bestimmten Metrik farbcodiert werden. Über eine Visualisierung der Seitenüberlagerung lässt sich schnell erkennen, welche Links auf einer Seite die Aufmerksamkeit der Besucher auf sich ziehen (und sie zu anderen Seiten auf Ihrer Website führen) und welche nicht. Über sie können Sie auch den „Wert“ (gemessen anhand von Wert-Ereignissen) nachvollziehen, den die verschiedenen Links auf einer Seite für Ihre Website generieren.
 
-**Seitenansichtsbedingung**
+**Seitenansicht-Bedingung**
 
-Eine Option in einer Data Workbench-Servertransformation, mit der Ereignisdatensätze je nach Inhaltstyp oder tatsächlichem Inhalt als Seitenansichten eingeschlossen oder ausgeschlossen werden können. Mit dieser Option können Sie beispielsweise Ereignisdatensätze ausschließen, die sich auf nicht erfolgreiche HTTP-Anforderungen beziehen (z. B. solche, die einen 404-Statuscode erzeugt haben), oder Anforderungen, die bestimmte Inhaltstypen zurückgeben (z. B. Bildanforderungen). Wenn ein HTTP-Ereignisdatensatz nicht durch die Option &quot;Seitenansichtsbedingung&quot;herausgefiltert wird, stellt dieser Ereignisdatensatz eine Seitenansicht im Datensatz dar.
+Eine Option für eine auf einem Data Workbench-Server durchgeführten Umwandlung, mit der Ereignisdatensätze abhängig vom Typ des Contents oder dem tatsächlichen Inhalt als Seitenansichten aufgenommen oder ausgeschlossen werden. Sie können diese Option beispielsweise verwenden, um Ereignisdatensätze auszuschließen, die sich auf fehlgeschlagene HTTP-Anfragen (z. B. aufgrund von Statuscode 404) oder auf solche Anfragen beziehen, die bestimmte Content-Typen zurückgeben (z. B. Bildanfragen). Wenn ein HTTP-Ereignisdatensatz nicht durch die Option für die Seitenansicht-Bedingung herausgefiltert wird, stellt dieser im Datensatz eine Seitenansicht dar.
 
-**Pfadbrowser-Visualisierung**
+**Pfad-Browser-Visualisierung**
 
-Eine Art der Visualisierung in Data Workbench, die es einem Analysten ermöglicht, interaktiv eine Reihe von Ereignissen (z. B. Seitenansichten) in einer Besuchersitzung oder über mehrere Besuchersitzungen hinweg zu untersuchen.
+Eine Visualisierung in Data Workbench, die es Analysten ermöglicht, eine Sequenz von Ereignissen (z. B. Seitenansichten) innerhalb einer Besuchersitzung oder über mehrere Besuchersitzungen hinweg interaktiv zu untersuchen.
 
-**Primärserver**
+**Primärer Server**
 
-In einem Data Workbench-Servercluster der Data Workbench-Server, der die Kommunikation zwischen Clients (z. B. Data Workbench und Report) und den anderen Servern im Cluster unterbricht. Der primäre Server fungiert auch als administrativer Brennpunkt für den Cluster. Mithilfe der Profilsynchronisierungsfunktionen des Data Workbench-Servers werden Änderungen, die ein Administrator an den primären Server vornimmt, automatisch an die anderen Server im Cluster übertragen. Ein primärer Server ist eine Data Workbench-Server-DPU.
+Der Server in einem Data Workbench-Servercluster, der die Kommunikation zwischen Clients (z. B. Data Workbench und Report) und den anderen Servern im Cluster handhabt. Außerdem erfolgt über den primären Server die Administration des Clusters. Mithilfe der Funktionen zur Profilsynchronisierung des Data Workbench-Servers werden Änderungen, die ein Administrator am primären Server vornimmt, automatisch an die anderen Server im Cluster übertragen. Ein primärer Server ist eine Data Workbench Server-DPU.
 
-**Process Map**
+**Prozesskarte**
 
-Eine Art der Visualisierung in Data Workbench, die es einem Analysten ermöglicht, den Traffic zwischen Seiten oder Knoten auf einer Website zu verstehen. Eine Prozesszuordnung zeigt Informationen zu bestimmten Seiten (z. B. die Anzahl der Sitzungen, während denen die Seiten angezeigt wurden) sowie das Traffic-Volumen zwischen Seiten oder Knoten an.
+Eine Visualisierung in Data Workbench, über die Analysten den Traffic zwischen Seiten oder Knoten auf einer Website nachvollziehen können. Eine Prozesskarte bildet Informationen zu bestimmten Seiten (z. B. die Anzahl der Sitzungen, bei denen die Seiten angezeigt wurden) sowie das Traffic-Volumen zwischen Seiten oder Knoten ab.
 
 **Verarbeitungsserver**
 
-In einem Data Workbench-Servercluster werden die Data Workbench-Server, die von den Konfigurationsinformationen auf dem primären Server gesteuert werden, Ein Verarbeitungsserver verarbeitet Ereignisdaten in ein Dataset und beantwortet Anfragen von Clients wie Data Workbench und Report. Beim Reagieren auf eine Abfrage teilt ein Verarbeitungsserver die Verantwortung für die Erfüllung der Abfrage auf die Server im Cluster (&quot;Partitionen&quot;). Wenn die anderen Server drei Teile der Abfrage abschließen, kombiniert der Verarbeitungsserver (&quot;departitions&quot;) ihre Ergebnisse und gibt das kombinierte Ergebnis an den Client zurück.
+Die Server in einem Data Workbench-Servercluster, die über die auf dem primären Server festgehaltenen Konfigurationsinformationen gesteuert werden. Ein Verarbeitungsserver verarbeitet die in einen Datensatz enthaltenen Ereignisdaten und reagiert auf Abfragen von Clients wie etwa Data Workbench oder Report. Bei der Bearbeitung einer Abfrage teilt bzw. „partitioniert“ der Verarbeitungsserver die Zuständigkeit für die Erfüllung der Abfrage auf die Server im Cluster. Während die anderen Server die einzelnen Teile der Abfrage abschließen, führt der Verarbeitungsserver die Ergebnisse zusammen (bzw. „departitioniert“ sie) und gibt das kombinierte Ergebnis an den Client zurück.
 
 **Profil**
 
-Eine Reihe von Konfigurationsdateien, die die Regeln zum Erstellen eines Datensatzes für einen bestimmten Analysezweck enthalten. Ein Profil definiert auch Artikel wie Metriken, abgeleitete Dimensionen, Arbeitsbereiche, Berichte, Visualisierungen und Legenden, die es Analysten ermöglichen, mit dem Datensatz zu interagieren und Informationen daraus zu erhalten. Ein Profil kann im Allgemeinen für eine Website strukturiert sein (wie in einem Profil für www.mysite.com) oder für einen bestimmten Benutzertyp (z. B. das Benutzerprofil &quot;Marketing&quot;oder das Benutzerprofil &quot;Finanzen&quot;).
+Ein Satz von Konfigurationsdateien mit Regeln für die Erstellung eines Datensatzes für bestimmte Analysezwecke. Ein Profil definiert ferner Elemente wie Metriken, abgeleitete Dimensionen, Arbeitsbereiche, Berichte, Visualisierungen und Legenden, die es Analysten ermöglichen, mit dem Datensatz zu interagieren und Informationen aus ihm zu ziehen. Ein Profil kann im Allgemeinen für eine Website (z. B. in einem Profil für www.meinewebsite.com) oder für einen bestimmten Benutzertyp (z. B. ein Benutzerprofil für Marketing oder Finanzen) strukturiert sein.
 
-**Profilmanager**
+**Profil-Manager**
 
-Ein interaktives Verwaltungstool in der Data Workbench, mit dem ein Administrator oder ein anderer Benutzer die mit einem Profil verknüpften Konfigurationsdateien verwalten kann.
+Ein interaktives Administrations-Tool in Data Workbench, über das Administratoren oder andere Benutzer die einem Profil zugeordneten Konfigurationsdateien verwalten können.
 
 **Regulärer Ausdruck**
 
-Eine Formel, die einen Satz von Zeichenfolgen gemäß bestimmten Syntaxregeln beschreibt oder mit ihnen übereinstimmt. Reguläre Ausdrücke (häufig abgekürzt als regexp, regex oder regxp) werden verwendet, um Textkörper basierend auf bestimmten Mustern zu suchen und zu manipulieren. Reguläre Ausdrucksnotation entstand in frühen Unix Editoren und gewann weit verbreitete Verwendung in anderen Unix-Dienstprogrammen wie vi und Perl. Reguläre Ausdrücke werden heute von vielen Texteditoren, Skriptsprachen und anderen Textbearbeitungswerkzeugen unterstützt. Der Data Workbench-Server enthält eine Engine für reguläre Ausdrücke.
+Eine Formel, die einen Satz von Zeichenfolgen entsprechend bestimmten Syntaxregeln beschreibt oder mit diesen übereinstimmt. Reguläre Ausdrücke (häufig entsprechend dem englischen Begriff „Regular Expression“ abgekürzt als „regexp“, „regex“ oder „regxp“) werden verwendet, um auf Grundlage bestimmter Muster Textelemente zu suchen und zu bearbeiten. Die Notation des regulären Ausdrucks hat ihren Ursprung in frühen Unix-Editoren und fand von dort aus breite Verwendung in anderen Unix-Hilfsprogrammen wie z. B. vi und Perl. Heute werden reguläre Ausdrücke von einer Vielzahl von Text-Editoren, Skriptsprachen und anderen Tools für die Textbearbeitung unterstützt. Der Data Workbench-Server beinhaltet eine Engine für reguläre Ausdrücke.
 
-**Retention Map**
+**Treuekarte**
 
-Eine Art der Visualisierung in Data Workbench, die Elemente auf der X-Achse gemäß dem Wert der Treuemetrik anordnet.
+Eine Visualisierung in Data Workbench, in der Elemente auf der x-Achse entsprechend dem Wert der Treuemetrik abgebildet werden.
 
 **Streudiagramm**
 
-Eine Art der Visualisierung in Data Workbench, die bivariante Daten als Punkte auf einem Diagramm darstellt. Ein Streudiagramm enthält zwei Datenelemente für jedes Element, das grafisch dargestellt wird. Ein Streudiagramm der Metriken &quot;Konversionsrate&quot;und &quot;Besucher&quot;für einen Satz von 10 Seiten würde beispielsweise zu 10 separaten Punkten auf dem Diagramm führen.
+Eine Visualisierung in Data Workbench, die bivariate Daten als Punkte auf einem Diagramm darstellt. Jedes Element auf einem Streudiagramm wird durch zwei Datenelemente abgebildet. So würde etwa ein Streudiagramm der Metriken „Konversionsrate“ und „Besucher“ für einen Satz von 10 Seiten 10 einzelne Punkte umfassen.
 
 **Auswahl**
 
-Eine Funktion in Data Workbench, mit der ein Analyst den Satz der für die Berichterstellung oder Analyse abgerufenen und angezeigten Daten einschränken kann. Eine Auswahl kann interaktiv in der Data Workbench vorgenommen werden, indem auf Elemente geklickt wird, die in einer oder mehreren Dimensionen angezeigt werden (klicken Sie mit der linken Maustaste auf ein Element, klicken Sie mit der rechten Maustaste, um ein Element zu deaktivieren). Die Auswahl kann auch durch das Definieren von Filtern erfolgen, die bestimmte Elemente in bestimmten Dimensionen auswählen.
+Eine Funktion in Data Workbench, über die Analysten den Satz von Daten einschränken können, der für Berichte oder Analysen abgerufen und angezeigt wird. Eine Auswahl kann in Data Workbench interaktiv durch Klicken auf in einer oder mehreren Dimensionen angezeigte Elemente vorgenommen werden. (Durch Klicken mit der linken Maustaste auf ein Element wird es ausgewählt, durch Klicken mit der rechten Maustaste darauf wird die Auswahl des Elements aufgehoben.) Ebenfalls möglich ist eine Auswahl durch die Definition von Filtern, die bestimmte Elemente in spezifischen Dimensionen definieren.
 
 **Einfache Dimension**
 
-In der Adobe-Plattform eine Dimension, die eine Eins-zu-viele-Beziehung mit einer übergeordneten zählbaren Dimension hat. Zum Beispiel ist der Referrer eine einfache Dimension, deren übergeordnetes Element die zählbare Dimension &quot;Besucher&quot;ist. Ein Besucher hat nur einen Referrer. Ein Referrer kann jedoch mehrere Besucher haben (d. h. ein Referrer kann mit vielen Besuchern in Beziehung gesetzt werden).
+In der Adobe-Plattform ist dies eine Dimension, die eine Eins-zu-viele-Beziehung mit einer übergeordneten zählbaren Dimension aufweist. So stellt etwa der Besucherverweiser eine einfache Dimension dar, deren übergeordnete zählbare Dimension der Besucher ist. Einem Besucher kann nur ein Besucherverweiser zugehörig sein, einem Besucher-Werber jedoch mehrere Besucher. (Ein einzelner Besucherverweiser kann also einer Vielzahl von Besuchern zugeordnet sein.)
 
-**Glättung**
+**Ausgleichung**
 
-Eine mathematische Schlussfolgerung einer Kurve über mehrere Punkte in einem Liniendiagramm, die zur Veranschaulichung einer aussagekräftigeren Trendlinie über relativ schwache Datenpunkte dient.
+Eine mathematische Folgerung einer über mehrere Punkte verlaufenden Kurve in einem Kantengraph, die eine aussagekräftigere Darstellung einer über vergleichsweise wenige Datenpunkte verlaufenden Trendlinie ermöglicht.
 
 **Quelle**
 
-Auf dem Data Workbench-Server eine Ressource, die Ereignisdaten enthält, die zum Erstellen eines Datensatzes verwendet werden können. Adobe-Decoder suchen nach Quellen für Ereignisdaten, die für die Verwendung durch den Data Workbench-Server dekodiert werden sollen.
+Eine Ressource auf dem Data Workbench-Server, die Ereignisdaten für die Erstellung eines Datensatzes enthält. Adobe-Decoder rufen Quellen von Ereignisdaten ab, um diese für die Verwendung durch den Data Workbench-Server zu decodieren.
 
 **Quelldaten**
 
-Auf dem Data Workbench-Server sind Daten, die die Eingabe in einen der Decoder darstellen. Quelldaten können in den Sensor-Decoder eingegeben werden (der Quelldaten aus verschiedenen Versionen des Sensors lädt), den Regular Expression Decoder (der Quelldaten aus getrennten Flach-Dateien lädt) und den ODBC Decoder (der Quelldaten aus ODBC-Datenquellen lädt).
+Die Daten auf dem Data Workbench-Server, die die Eingabe in einen der Decoder darstellen. Quelldaten können in den Sensor-Decoder, der Quelldaten aus verschiedenen Versionen des Sensors lädt, den Decoder für reguläre Ausdrücke, über den Quelldaten aus getrennten Flat Files geladen werden, und den ODBC-Decoder, der zum Laden von Quelldaten aus ODBC-Datenquellen dient, eingespeist werden.
 
 **Tabellendiagramm**
 
-Eine Art Visualisierung in Data Workbench, die Daten im Tabellenformat anzeigt. Die Metrikwerte in einem Tabellendiagramm können numerisch ausgedrückt oder im Strichformat dargestellt werden.
+Eine Visualisierung in Data Workbench, die Daten in Form einer Tabelle darstellt. Die Metrikwerte in einem Tabellendiagramm können numerisch ausgedrückt oder in Form von Balken dargestellt werden.
 
 **Zeitreihe**
 
-Ein Diagramm, das zeigt, wie sich eine bestimmte Eigenschaft oder ein Wert im Laufe der Zeit ändert.
+Ein Diagramm, das die Veränderung einer bestimmten Eigenschaft oder eines Werts im Zeitverlauf darstellt.
 
 **Tracking-ID**
 
-Ein Bezeichner, der die primären Entitäten, die in einem Adobe-Datensatz analysiert werden, eindeutig unterscheidet. Eine Tracking-ID kann aus verschiedenen Quellen erstellt werden, einschließlich einer eindeutigen ID aus einem Webclient-Cookie, einer IP-Nummer und einem Benutzeragent-Hash oder einem x.509-Namen. Obwohl es sich hierbei um einige häufige Quellen für eine Tracking-ID handelt, können alle Werte verwendet werden, die in der Lage sind, eindeutig die Entitäten zu identifizieren, die die Besucherdimension im Datensatz ausfüllen.
+Eine Kennung, durch die die primären in einem Adobe-Datensatz analysierten Entitäten eindeutig unterschieden werden. Eine Tracking-ID kann aus verschiedenen Quellen erstellt werden, darunter eine eindeutige ID aus einem Webclient-Cookie, eine IP-Nummer, ein Benutzer-Agenten-Hash oder ein x.509-Name. Bei diesen handelt es sich um einige gängige Quellen für Tracking-IDs, jedoch können alle Werte verwendet werden, durch die sich die zum Füllen der Besucherdimension im Datensatz verwendeten Entitäten eindeutig identifizieren lassen.
 
-**Transformation**
+**Umwandlung**
 
-Eine Methode zur Änderung des Werts einer Variablen mithilfe eines mathematischen Vorgangs. Auf dem Data Workbench-Server können Analysten beispielsweise mithilfe der Teilung die Name-Wert-Paare in einer Abfragezeichenfolge in einzelne Variablen unterteilen.
+Eine Methode zur Änderung des Werts einer Variablen anhand einer mathematischen Operation. So ermöglicht der Data Workbench-Server es Analysten etwa mit der Split-Umwandlung, die Name-Wert-Paare in einer Abfragezeichenfolge in einzelne Variablen zu unterteilen.
 
 **Zweidimensionales Balkendiagramm**
 
-Eine Art Visualisierung in Data Workbench, die zwei Dimensionen und bis zu zwei Metriken gleichzeitig in einer dreidimensionalen grafischen Ansicht anzeigt.
+Eine Visualisierung in Data Workbench, die zwei Dimensionen und bis zu zwei Metriken gleichzeitig in einer dreidimensionalen grafischen Darstellung abbildet.
 
-**WertLegende**
+**Wertlegende**
 
-Ein Fenster in der Data Workbench, in dem ein Analyst einen Geldwert mit einem ausgewählten Ereignis verknüpfen und die Ergebnisse anzeigen kann, wenn dieser Geldwert für alle Instanzen des ausgewählten Ereignisses im Datensatz summiert wird.
+Ein Fenster in Data Workbench, in dem Analysten einem ausgewählten Ereignis einen Geldwert zuordnen und die Ergebnisse abrufen können, die sich errechnen, wenn dieser Geldwert für alle Instanzen des im Datensatz ausgewählten Ereignisses summiert wird.
 
 **Besucher**
 
-Die Dimension im Datensatz, die die Entität identifiziert, die das Ereignis generiert hat. Jedes Mitglied der Besucherdimension wird durch eine eindeutige Tracking-ID identifiziert. In Site wird die Tracking-ID beispielsweise normalerweise von einer eindeutigen ID im Cookie des Kunden abgeleitet. Bei einem Aufruf kann es sich bei der Tracking-ID um die Telefonnummer des Anrufers handeln.
+Die Dimension im Datensatz, durch die die Entität identifiziert wird, die das Ereignis generiert hat. Jedes Element der Dimension „Besucher“ wird durch eine eindeutige Tracking-ID identifiziert. So wird im Falle einer Website die Tracking-ID in der Regel von einer eindeutigen ID im Client-Cookie abgeleitet. Bei einem Anruf wiederum könnte die Tracking-ID die Telefonnummer des Anrufers sein.
 
-**Referrer des Besuchers**
+**Besucherverweiser**
 
-Der erste HTTP-Verweis für einen Besucher innerhalb des Zeitraums eines Adobe-Datensatzes.
+Der innerhalb der Zeitspanne eines Adobe-Datensatzes erste HTTP-Referrer für einen Besucher.
 
 **Besucheraufteilung**
 
-Eine Funktion im Data Workbench-Server, mit der Besucher mit großen Mengen von Ereignisdaten auf zwei Tracking-IDs aufgeteilt werden können. Die Besucheraufteilung verhindert, dass Ereignisdaten aus dem Datensatz gefiltert werden, wenn ein Besucher die maximal konfigurierte Anzahl von Ereignissen pro Besucher überschreitet (ein Parameter, der zur Gewährleistung der richtigen Systemleistung festgelegt wurde). Obwohl die Besucheraufteilung die Anzahl der Besucher im Datensatz künstlich erhöht, erhöht sie nicht die Gesamtanzahl der Ereignisdatensätze, was sicherstellt, dass die Gesamtanzahl der zählbaren Ereignisse (z. B. Seitenansichten, Buchungen) korrekt bleibt.
+Eine Funktion im Data Workbench-Server, mittels derer Besucher mit großen Mengen von Ereignisdaten auf zwei Tracking-IDs aufgeteilt werden können. Die Aufteilung von Besuchern verhindert, dass Ereignisdaten aus dem Datensatz gefiltert werden, wenn ein Besucher die konfigurierte Maximalanzahl von Ereignissen pro Besucher überschreitet. (Dieser Parameter wird zur Gewährleistung einer angemessenen Systemleistung festgelegt.) Durch die Besucheraufteilung wird zwar die Anzahl der Besucher im Datensatz künstlich erhöht, doch erhöht sich dadurch nicht die Gesamtanzahl der Ereignisdatensätze. Die Gesamtanzahl der zählbaren Ereignisse (z. B. Seitenansichten oder Buchungen) bleibt somit also weiterhin korrekt.
 
 **VSL**
 
-Protokolldatei. Der Typ der Datei, in der die Ereignisdaten des Data Workbench-Servers gespeichert werden, die sie von Sensor empfangen. VSL-Dateien werden komprimiert, können jedoch mithilfe der Datenkonvertierungsfunktion in unkomprimierter Form ausgegeben werden. VSL ist die Dateierweiterung für eine Protokolldatei.
+Eine Protokolldatei. Über diesen Dateityp speichert der Data Workbench-Server Ereignisdaten, die er vom Sensor erhält. VSL-Dateien werden komprimiert, können jedoch mithilfe der Funktion zur Datenumwandlung in unkomprimierter Form ausgegeben werden. VSL ist die Dateierweiterung für eine Protokolldatei.
 
-**What-if-Analyse**
+**Was-wäre-wenn-Analyse**
 
-Eine Art von Analyse, die verwendet wird, um die Auswirkungen der Änderung bestimmter Variablen in einem Datenmodell zu verstehen, indem die Auswirkungen von Änderungen an diesen Variablen auf andere Daten im Modell beobachtet werden.
+Eine Analyse, bei der die Auswirkungen der Änderung bestimmter Variablen in einem Datenmodell ermittelt werden, indem die Auswirkungen von Änderungen an diesen Variablen auf andere Daten im Modell beobachtet werden.
 
-**Workspace**
+**Arbeitsbereich**
 
-In Data Workbench ist ein Workspace ein Container für eine bestimmte Analyse- und Visualisierungsaufgabe. Ein Arbeitsbereich kann mehrere Visualisierungen enthalten), die alle mit einem gemeinsamen Datensatz arbeiten (d. h. alle Visualisierungen im Arbeitsbereich rendern denselben Satz von Abfrageergebnissen). Wenn ein Analyst eine Untergruppen- oder Filteroperation in einer Visualisierung ausführt, wird die ausgewählte Untergruppe im gesamten Arbeitsbereich angezeigt.
+In Data Workbench ist ein Arbeitsbereich ein Container für eine bestimmte Analyse- und Visualisierungsaufgabe. Ein Arbeitsbereich kann mehrere Visualisierungen enthalten, die alle einen gemeinsamen Datensatz abbilden (d. h., alle im Arbeitsbereich enthaltenen Visualisierungen geben denselben Satz von Abfragen wieder). Wenn ein Analyst in einer Visualisierung eine Operation zur Unterteilung in Untergruppen oder zum Filtern ausführt, wird die ausgewählte Untergruppe im gesamten Arbeitsbereich wiedergegeben.
 
 **Arbeitsfläche**
 
-Der Bereich &quot;Home&quot;in der Data Workbench-Benutzeroberfläche, mit dem Sie alle Arbeitsbereiche und Berichte organisieren und darauf zugreifen können. Außerdem können Sie damit neue und aktualisierte Arbeitsbereiche und Berichte erstellen und auf dem Data Workbench-Server speichern, damit auch andere Benutzer desselben Profils darauf zugreifen können.
+Der Startseitenbereich in der Data Workbench-Benutzeroberfläche, über den Sie alle Arbeitsbereiche und Berichte organisieren und darauf zugreifen können. Ferner können Sie damit neue und aktualisierte Arbeitsbereiche und Berichte erstellen und auf dem Data Workbench-Server speichern, damit auch andere Benutzer desselben Profils darauf zugreifen können.
