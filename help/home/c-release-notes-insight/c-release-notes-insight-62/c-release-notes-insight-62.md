@@ -1,34 +1,37 @@
 ---
-description: Die Versionshinweise zu Data Workbench 6.2 umfassen neue Funktionen, Aktualisierungsanforderungen, Fehlerkorrekturen und bekannte Probleme.
-title: Data Workbench 6.2 - Versionshinweise
+description: Versionshinweise zu Data Workbench 6.2 umfassen neue Funktionen, Aktualisierungsanforderungen, Fehlerkorrekturen und bekannte Probleme.
+title: Versionshinweise zu Data Workbench 6.2
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 5%
 
 ---
 
 
-# Data Workbench 6.2 Release Notes{#data-workbench-release-notes}
+# Versionshinweise zu Data Workbench 6.2{#data-workbench-release-notes}
 
-Die Versionshinweise zu Data Workbench 6.2 umfassen neue Funktionen, Aktualisierungsanforderungen, Fehlerkorrekturen und bekannte Probleme.
+Versionshinweise zu Data Workbench 6.2 umfassen neue Funktionen, Aktualisierungsanforderungen, Fehlerkorrekturen und bekannte Probleme.
 
 ## Neue Funktionen {#section-1225066ea8f44cf68e42e019d0bca816}
 
 Data Workbench 6.2 umfasst die folgenden neuen Funktionen:
 
-| Funktionen  | Beschreibung |
+| Funktionen | Beschreibung |
 |--- |--- |
-| Entscheidungsbäume | Entscheidungsbäume sind eine Visualisierung der prädiktiven Analyse, die zur Bewertung von Besuchermerkmalen und -beziehungen verwendet wird. Der Entscheidungsbaum-Aufbau erzeugt eine Entscheidungsbaumdarstellung basierend auf einem angegebenen positiven Fall und einer Reihe von Eingaben. |
+| Entscheidungsbäume | Entscheidungsbäume sind eine Visualisierung der Analyse, die zur Auswertung von Merkmalen und Beziehungen der Besucher verwendet wird. Der Entscheidungsbaum-Aufbau erzeugt eine Entscheidungsbaumdarstellung basierend auf einem angegebenen positiven Fall und einer Reihe von Eingaben. |
 | Aktualisieren auf Binärfilter in Korrelationsmatrix | Der Binärfilter wurde mit neuen Funktionen aktualisiert, sodass Sie jede Korrelationsmatrix mit einem Binärfilter neu erstellen müssen, der in früheren Versionen erstellt wurde. |
 | Dichtekarte | Die Dichtekarte ist eine Visualisierung, bei der Elemente als schattierte Rechtecke innerhalb einer Quadratkarte angezeigt werden. |
-| Zuordnungsprofil | Zur schnellen Analyse der Zuordnungswerte (Ereignisse, die die Verantwortung für eine erfolgreiche Konvertierung oder einen erfolgreichen Verkauf zuweisen) stellt Data Workbench ein regelbasiertes Zuordnungsprofil mit Funktionen bereit, die dem Architekten zur Einrichtung der Zuordnungsberichte und dem Analyst zur Ausführung der Berichte zur Verfügung stehen. |
-| Analyseberichte | Berichtsvorlagen standardisieren die Berichte von Adobe Analytics für Benutzer der Data Workbench, die das Adobe SC-Profil verwenden. Diese Berichte sind identisch mit den Berichten, die in Marketing Reports &amp; Analysen (früher SiteCatalyst) verwendet werden. |
+| Attributionsprofil | Zur schnellen Analyse der Zuordnungswerte (Ereignisse, die die Verantwortung für eine erfolgreiche Konvertierung oder einen erfolgreichen Verkauf zuweisen) stellt die Data Workbench ein regelbasiertes Zuordnungs-Profil mit Funktionen zur Verfügung, mit denen der Architekt die Zuordnungsberichte einrichten und der Analyst die Berichte ausführen kann. |
+| Analyseberichte | Berichtsvorlagen standardisieren Adobe Analytics-Berichte für Benutzer der Data Workbench, die das Adobe SC-Profil verwenden. Diese Berichte sind identisch mit den Berichten, die in Marketing Reports &amp; Analysen (früher SiteCatalyst) verwendet werden. |
 | 3D-Streudiagramme | Ein 3D-Streudiagramm zeichnet die Elemente einer Datendimension (z. B. Tage oder Referrer-Site) in einem dreidimensionalen Raster auf, wobei die X-, Y- und Z-Achsen verschiedene Metriken darstellen. |
 
 
-## Aktualisierungen der Benutzeroberfläche von Data Workbench{#data-workbench-client-ui-updates}
+## Aktualisierungen der Benutzeroberfläche von Data Workbench Client{#data-workbench-client-ui-updates}
 
-Data Workbench 6.2 umfasst neue Aktualisierungen der Benutzeroberfläche des Lesezeichenbedienfelds, neue Symbole in der Workspace-Symbolleiste, die Möglichkeit, den Arbeitsbereich in einen Bildschirm zu ziehen, neue Schnellschlüssel und Aktualisierungen der Kreisdiagrammdarstellung.
+Data Workbench 6.2 umfasst neue Aktualisierungen der Benutzeroberfläche für das Lesezeichenbedienfeld, neue Symbole in der Symbolleiste des Arbeitsbereichs, die Möglichkeit, den Arbeitsbereich innerhalb eines Bildschirms zu ziehen, neue Schnellschlüssel und Aktualisierungen für die Visualisierung des Kreisdiagramms.
 
 ## Neue Funktionen für Lesezeichen {#section-e361b605441540ca8213c3fddb5e0718}
 
@@ -37,7 +40,7 @@ Sie können nun Lesezeichen für wichtige Arbeitsbereiche erstellen, um schnell 
 **Arbeiten mit Lesezeichen**
 
 1. Markieren Sie einen Arbeitsbereich mit einem Lesezeichen, indem Sie auf das Lesezeichen-Symbol ![](assets/bookmark_icon.png) in der oberen rechten Ecke der Symbolleiste klicken.
-1. Klicken Sie auf **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** , um eine Liste der Lesezeichen zu öffnen.
+1. Klicken Sie auf **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** , um eine Liste von Lesezeichen zu öffnen.
 
    ![](assets/bookmarks_panel.png)
 
@@ -51,12 +54,13 @@ Sie können nun Lesezeichen für wichtige Arbeitsbereiche erstellen, um schnell 
 
 * Klicken Sie im Lesezeichenbedienfeld mit der rechten Maustaste und wählen Sie **[!UICONTROL Entfernen<bookmark title>]**zum Löschen eines ausgewählten Lesezeichens oder zum Löschen aller Lesezeichen **[!UICONTROL Clear All Bookmarks]**auswählen.
 
-* Sie können auch mit der rechten Maustaste auf den Arbeitsbereich in der Miniaturansicht auf der Arbeitsfläche klicken und **[!UICONTROL Clear Bookmark]** die Option auswählen.
+* Sie können auch mit der rechten Maustaste auf den Arbeitsbereich in der Miniaturansicht-Ansicht auf der Arbeitsfläche klicken und **[!UICONTROL Clear Bookmark]** auswählen.
 
 >[!IMPORTANT]
 >
 >* 25 Lesezeichen können gespeichert werden.
 >* Wenn Sie ein Lesezeichen hinzufügen und dann die Position der Arbeitsfläche verschieben, ist das Lesezeichen ungültig und muss aus dem Lesezeichenbedienfeld gelöscht und zurückgesetzt werden.
+
 >
 
 
@@ -78,16 +82,16 @@ Ein neues **[!UICONTROL Help]** Symbol wird hinzugefügt, um auf die Dokumentati
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Marketing Reports &amp; Analytics </td> 
+   <td colname="col1"> Marketing Reports &amp; Analytics  </td> 
    <td colname="col2">Öffnen Sie die Hilfeseite <span class="uicontrol"> Adobe Marketing Reports &amp; Analysen</span> . </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Ideenaustausch </td> 
+   <td colname="col1"> Ideenbörse </td> 
    <td colname="col2">Öffnen Sie die <span class="uicontrol"> Idea Exchange-Anmeldung</span>. Dieses Online-Portal ermöglicht es Benutzern, aktualisierte Änderungen und Verbesserungsvorschläge für Data Workbench bereitzustellen. Über diese kundenorientierten Ideen können dann alle Benutzer abstimmen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Hilfe </td> 
-   <td colname="col2">Öffnen Sie die <span class="uicontrol"> Data Workbench-Dokumentation</span>. <p>Sie können auch <span class="uicontrol"> &lt;F1&gt;</span> drücken, um die Hilfe in einem Arbeitsbereich zu öffnen. </p> </td> 
+   <td colname="col2">Öffnen Sie die Dokumentation zur <span class="uicontrol"> Data Workbench</span>. <p>Sie können auch <span class="uicontrol"> &lt;F1&gt;</span> drücken, um die Hilfe in einem Arbeitsbereich zu öffnen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Info </td> 
@@ -100,15 +104,15 @@ Ein neues **[!UICONTROL Help]** Symbol wird hinzugefügt, um auf die Dokumentati
 >
 >Sie können die Dokumentation auch über `<F1>` eine Arbeitsfläche öffnen.
 
-## Ansichten in Arbeitsbereich ziehen {#section-9129c340c21d45a3864c923884cd4382}
+## Arbeitsbereich-Ansichten ziehen {#section-9129c340c21d45a3864c923884cd4382}
 
-Wenn eine Arbeitsfläche größer als der sichtbare Bildschirm ist, können Sie die Ansicht verschieben, um alle Elemente im Arbeitsbereich anzuzeigen. Sie können im Hintergrund (außerhalb der Visualisierungen und Tabellen) klicken und den Bildschirm ziehen, um den sichtbaren Bereich innerhalb des Arbeitsbereichs zu verschieben. Der Cursor ändert sich in ein Handsymbol, wenn Sie die Ansicht innerhalb des Arbeitsflächenrahmens ziehen.
+Wenn eine Arbeitsfläche größer als der sichtbare Bildschirm ist, können Sie die Ansicht verschieben, um alle Elemente im Arbeitsbereich anzuzeigen. Sie können im Hintergrund (außerhalb der Visualisierungen und Tabellen) klicken und den Bildschirm ziehen, um den sichtbaren Bereich innerhalb des Arbeitsbereichs zu verschieben. Der Cursor ändert sich in ein Handsymbol, wenn die Ansicht innerhalb des Arbeitsflächenrahmens gezogen wird.
 
 ![](assets/drag_workspace.png)
 
 ## Schnelltasten zum Ändern der Workspace-Ansichten {#section-d8322f72423f437aa2e34f2188b1341c}
 
-Mit den neuen QuickKeys können Sie die Größe und Größe von Arbeitsbereichen zwischen Fenster- und Vollseitenansichten ändern.
+Mit den neuen QuickKeys können Sie die Größe und Größe von Arbeitsbereichen zwischen Fenster- und ganzseitigen Ansichten ändern.
 
 <table id="table_A01C514C99F043338D183A6839E03DEA"> 
  <thead> 
@@ -120,7 +124,7 @@ Mit den neuen QuickKeys können Sie die Größe und Größe von Arbeitsbereichen
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b>Vollbildansicht</b>. Workspace füllt den Bildschirm aus und nimmt die neue Größe an. </td> 
+   <td colname="col1"><b>Ansicht</b>im Vollbildmodus. Workspace füllt den Bildschirm aus und nimmt die neue Größe an. </td> 
    <td colname="col2"><b>Strg+</b> <p>Strg + (auf der Tastatur) </p> <p><i>oder</i> </p> <p>Strg+Umschalt+5 (auf der Tastatur) </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
@@ -129,7 +133,7 @@ Mit den neuen QuickKeys können Sie die Größe und Größe von Arbeitsbereichen
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b>Fensteransicht</b>. Workspace wird in einer Standardansicht des Fensters angezeigt und bezieht sich auf die neue Größe. </td> 
+   <td colname="col1"><b>Ansicht</b>des Fensters. Workspace wird in einer Ansicht des Standardfensters angezeigt und bezieht sich auf die neue Größe. </td> 
    <td colname="col2"><b>Strg minus</b> <p>Strg - </p> </td> 
    <td colname="col3"> 
     <ul id="ul_3474B9EFD69343C09BC84E485D896C28"> 
@@ -142,22 +146,22 @@ Mit den neuen QuickKeys können Sie die Größe und Größe von Arbeitsbereichen
 
 ## Fehlerkorrekturen {#section-8704a9ac358246cd81233dd0982d534f}
 
-* Die Suchdatei von Visual Site wurde aktualisiert, um Suchmaschinenänderungen am Suchbegriff zu beheben.
+* Die Suchdatei von Visual Site wurde aktualisiert, um Suchmaschinenänderungen am Suchbegriff Abfrage zu beheben.
 * Die Fehlermeldung &quot;Arbeitsbereich konnte nicht importiert werden&quot;wurde korrigiert, wenn ein Arbeitsbereich auf der Client-Workstation importiert wurde, obwohl der Import erfolgreich war.
 * Der Workstation-Verbindungsfehler, der die Meldung &quot;412 Konfigurationskonflikt&quot;anzeigt, wird jetzt durch eine benutzerfreundliche Meldung ersetzt, die die Systemaktion identifiziert.
 * In Report Server kann jetzt der Befehl „post“ ausgeführt werden.
 * Korrektur von Benutzeroberflächenfehlern in der Client-Benutzeroberfläche für vereinfachtes Chinesisch.
-* Adobe Analytics hat den Data Feed aktualisiert, der Data Workbench nutzt, um Profile und Zielgruppen zu nutzen, die in die Adobe Experience Cloud integriert sind. Alle Data Workbench-Benutzer mussten ihre Umgebung bis zum 21. April 2014 auf diesen Übergang vorbereiten.
+* Adobe Analytics hat den Data Feed aktualisiert, der Data Workbench befähigt, Profil und Audiencen zu nutzen, die in das Adobe Experience Cloud integriert sind. Alle Nutzer der Data Workbench mussten ihre Umgebung bis zum 21. April 2014 auf diese Transition vorbereiten.
 
-   Profile und Zielgruppen wurden eingeführt, um eine vollständige Übersicht über Kunden in Adobe Analytics zu erhalten. Dieser neue Dienst steht in der Adobe Experience Cloud zur Verfügung, um den Nutzen der Analysetools weiter zu steigern und damit die Grundlage für diese Funktionen in Analytics zu schaffen. Die neue Experience Cloud-Besucher-ID wird zusammen mit anderen Verbesserungen und Verbesserungen zum Anpassen an den neuen Datenfeed und die globale Besucher-ID zum Datenfeed hinzugefügt.
+   Profile und Audiencen wurden eingeführt, um eine vollständige Ansicht der Kunden in Adobe Analytics zu bieten. Dieser neue Dienst ist innerhalb der Adobe Experience Cloud verfügbar, um die Analysewerkzeuge noch wertvoller zu gestalten und so die Grundlage für diese Funktionen in Analytics zu schaffen. Die neue Experience Cloud-Besucher-ID wird dem Datenfeed zusammen mit anderen Verbesserungen und Verbesserungen hinzugefügt, um sich an den neuen Datenfeed und die globale Besucher-ID anzupassen.
 * Beim Importieren einer Arbeitsfläche wird eine Fehlermeldung angezeigt, auch wenn der Import erfolgreich war.
 
 ## Upgrade-Voraussetzung {#section-3cc74d08f7454d698b5a6d3f1dcde282}
 
-* Das Zuordnungsprofil ist für Benutzer konfiguriert, die das Adobe SC-Profil implementiert haben, um den Analytics-(SC/Insight-)Datenfeed zu verwenden. Standardmäßig werden die Marketing- und Umrechnungsereignisse als Standardinteraktionen verwendet, die in den regelbasierten Modellen ausgewertet werden.
-* Wenn Sie für Benutzer des Adobe SC-Profilupdates auf Data Workbench 6.2 nicht die Standardkonfigurationen verwenden, überprüfen Sie, ob der [!DNL x-bot_id] Wert in der [!DNL SC Fields.cfg] Datei korrekt dekodiert wird und ob das [!DNL x-bot_id] Feld ordnungsgemäß in den [!DNL Decoding Instructions.cfg] und den [!DNL Exclude Hit.cfg] Dateien aufgeführt wird. Dies ist nur dann ein Problem, wenn Sie die Konfigurationsdatei aus der Standardkonfiguration geändert haben.
+* Das Attribution-Profil ist für Benutzer konfiguriert, die das Adobe SC-Profil implementiert haben, um den Analytics-(SC/Insight-)Datenfeed zu verwenden. Standardmäßig werden die Ereignis Marketing und Konversion als Standardinteraktionen verwendet, die in den regelbasierten Modellen ausgewertet werden.
+* Wenn Sie die Standardkonfigurationen nicht verwenden, überprüfen Sie bei Adobe SC Profil-Upgrade auf Data Workbench 6.2, ob der [!DNL x-bot_id] Dateiwert richtig dekodiert wird und ob das [!DNL SC Fields.cfg] Feld ordnungsgemäß in den Dateien [!DNL x-bot_id] und [!DNL Decoding Instructions.cfg] [!DNL Exclude Hit.cfg] Dateien aufgeführt ist. Dies ist nur dann ein Problem, wenn Sie die Konfigurationsdatei aus der Standardkonfiguration geändert haben.
 
-* Wenn Sie ungenutzte Felder aus der Datei **[!UICONTROL Dataset]** > **[!UICONTROL-Protokollverarbeitung** > **[!DNL SC Fields.cfg]** für das Adobe SC-Profil gelöscht haben, müssen Sie die aktualisierten Feldwerte für das Zuordnungsprofil aktualisieren.
+* Wenn Sie ungenutzte Felder im Profil **[!UICONTROL Dataset]** > **[!UICONTROL Log Processing]** > **[!DNL SC Fields.cfg]** für das Adobe SC gelöscht haben, müssen Sie die aktualisierten Feldwerte für das Profil Attribution aktualisieren.
 
 ## Bekannte Probleme {#section-dbb307639835493a83409f5f461932b8}
 
