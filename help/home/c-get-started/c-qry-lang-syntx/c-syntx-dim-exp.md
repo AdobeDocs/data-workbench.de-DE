@@ -1,24 +1,27 @@
 ---
-description: Dimensionsausdrücke werden nie allein verwendet, können aber überall dort verwendet werden, wo eine Dimension in einer Metrik oder einem Filterausdruck gefordert wird.
+description: Dimension-Ausdruck werden nie allein verwendet, können aber überall dort verwendet werden, wo eine Dimension in einem Metrik- oder Filter-Ausdruck benötigt wird.
 solution: Analytics
-title: Syntax für Dimensionsausdrücke
+title: Syntax für Ausdrücke zu Dimensionen
 topic: Data workbench
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1855'
+ht-degree: 0%
 
 ---
 
 
-# Syntax für Dimensionsausdrücke{#syntax-for-dimension-expressions}
+# Syntax für Ausdrücke zu Dimensionen{#syntax-for-dimension-expressions}
 
-Dimensionsausdrücke werden nie allein verwendet, können aber überall dort verwendet werden, wo eine Dimension in einer Metrik oder einem Filterausdruck gefordert wird.
+Dimension-Ausdruck werden nie allein verwendet, können aber überall dort verwendet werden, wo eine Dimension in einem Metrik- oder Filter-Ausdruck benötigt wird.
 
-1. Unterstrichene Wörter sollten wörtlich in den Ausdruckstext eingegeben werden.
-1. Das Formular {TEXT}? steht für optionalen Text.
-1. Das Formular {TEXT}* stellt Text dar, der null oder mehr Mal auftreten kann.
-1. Das Formular {A| B| C|..} stellt Text dar, der aus genau einer der angegebenen Optionen besteht, wie z.B. A oder B oder C....
-1. Das Formular [A,B] stellt einen Zahlenbereich dar, von A bis B.
+1. Unterstrichene Wörter sollten wörtlich in den Ausdruck eingegeben werden.
+1. Das Formular `{TEXT}?` stellt optionalen Text dar.
+1. Das Formular `{TEXT}*` stellt Text dar, der null oder mehr Mal auftreten kann.
+1. Das Formular `{A | B | C |...}` stellt Text dar, der aus genau einer der angegebenen Optionen besteht, z. B. A oder B oder C....
+1. Das Formular `[A,B)` stellt einen Zahlenbereich dar, von A bis B, jedoch nicht einschließlich B.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
@@ -28,15 +31,15 @@ Dimensionsausdrücke werden nie allein verwendet, können aber überall dort ver
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Dimension) </p> </td> 
-   <td colname="col2"> <p>Das Ergebnis von (Dimension) ist dasselbe wie das Ergebnis von Dimension. Klammern geben die Reihenfolge der Vorgänge in einem Ausdruck an. </p> <p>Beispiel: Sessions[ (Seite) = "/home" ] ist die Anzahl der Sitzungen, die die Seite "/home"besuchen. </p> </td> 
+   <td colname="col2"> <p>Das Ergebnis von (Dimension) ist dasselbe wie das Ergebnis der Dimension. Klammern geben die Reihenfolge der Vorgänge in einem Ausdruck an. </p> <p>Beispiel: Sessions[ (Seite) = "/home" ] ist die Anzahl der Sitzungen, die die Seite "/home"besuchen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Dim nach Ebene </p> </td> 
-   <td colname="col2"> <p>Definiert eine Dimension, die dieselben Elemente wie die Dimension Dim hat, sich jedoch auf andere Dimensionen über die Dimensionsebene bezieht. </p> <p>Insbesondere bezieht sich ein Element der neuen Dimension auf dieselben Elemente der Ebene wie das gleiche Element von Dim und bezieht sich auf die Elemente jeder anderen Dimension, die sich auf eines dieser Elemente der Ebene beziehen. </p> <p>Beispiel: Sitzungen[ (Seite nach Besucher)="/home" ] ist die Anzahl der Sitzungen von Besuchern, die die Seite "/home"besucht haben. </p> </td> 
+   <td colname="col2"> <p>Definiert eine Dimension, die dieselben Elemente wie die Dimension Dim hat, sich jedoch auf andere Dimensionen über die Dimensionsebene bezieht. </p> <p>Insbesondere bezieht sich ein Element der neuen Dimension auf dieselben Elemente der Ebene wie das gleiche Element von Dim und bezieht sich auf die Elemente jeder anderen Dimension, die sich auf eines dieser Elemente der Ebene beziehen. </p> <p>Beispiel: Sessions[ (Seite nach Besucher)="/home" ] ist die Anzahl der Sitzungen von Besuchern, die die Seite "/home"besucht haben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>shift(Dim,Level,group,N) </p> </td> 
-   <td colname="col2"> <p>Definiert eine Dimension mit denselben Elementen wie die Dimension Dim. Das zehnte Element der Dimensionsebene bezieht sich auf dasselbe Element der neuen Dimension wie das Element des Dim, das sich auf das e+n-Element des Levels bezieht, sofern sich die eth- und e+N-Elemente der Ebene auf dasselbe Element der Dimensionengruppe beziehen. </p> <p>Beispiel: Page_Views[ shift(Page, Page_View, Session, 1)="/home" ] ist die Anzahl der Seitenansichten, für die die nächste in derselben Sitzung angezeigte Seite "/home"ist. </p> </td> 
+   <td colname="col2"> <p>Definiert eine Dimension mit denselben Elementen wie die Dimension Dim. Das zehnte Element der Dimensionsebene bezieht sich auf dasselbe Element der neuen Dimension wie das Element des Dim, das sich auf das e+n-Element des Levels bezieht, sofern sich die eth- und e+N-Elemente der Ebene auf dasselbe Element der Dimensionengruppe beziehen. </p> <p>Beispiel: Page_Ansichten[ shift(Page, Page_Ansicht, Session, 1)="/home" ] ist die Anzahl der Ansichten, für die die nächste in derselben Sitzung angezeigte Seite "/home"ist. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>next(Dim,Level,group,N) </p> </td> 
@@ -44,27 +47,27 @@ Dimensionsausdrücke werden nie allein verwendet, können aber überall dort ver
   </tr> 
   <tr> 
    <td colname="col1"> <p>segment(Level {,String-&gt;Filter}*) </p> </td> 
-   <td colname="col2"> <p> Definiert eine Dimension, die Elemente der Ebene basierend auf einer Filterliste klassifiziert. Die Elemente der neuen Dimension sind die Zeichenfolgen, die als Argumente angegeben werden. Jedes Element der Ebene bezieht sich auf das erste Element der Segmentdimension, deren Filter das Element der Ebene zulässt. Dies ähnelt der Segmentvisualisierung. </p> <p>Beispiel: segment(Visitor, "One-Time Visitors"-&gt; Visitor_Sessions = 1, "Very Loyal Visitors" -&gt; Visitor_Sessions &gt; 10, "All Else" -&gt; True) erstellt eine Dimension, die Besucher in drei Gruppen einteilt. Einmalige Besucher sind Besucher mit nur einer Sitzung, sehr treue Besucher mit mehr als zehn Sitzungen und alle anderen Besucher haben den Wert "Alle anderen." </p> </td> 
+   <td colname="col2"> <p> Definiert eine Dimension, die Elemente der Ebene basierend auf einer Liste von Filtern klassifiziert. Die Elemente der neuen Dimension sind die Zeichenfolgen, die als Argumente angegeben werden. Jedes Element der Ebene bezieht sich auf das erste Element der Segmentdimension, deren Filter das Element der Ebene zulässt. Dies ähnelt der Segmentvisualisierung. </p> <p>Beispiel: segment(Besucher, "Einmalige Besucher" -&gt; Besucher_Sitzungen = 1, "Sehr loyale Besucher" -&gt; Besucher_Sitzungen &gt; 10, "Alle anderen" -&gt; True) erstellt eine Dimension, die Besucher in drei Gruppen einteilt. Einmalige Besucher sind nur mit einer Sitzung, sehr loyale Besucher mit mehr als zehn Sitzungen und alle anderen Besucher haben den Wert "Sehr treue"und Alle anderen." </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Größe}? }?) </p> </td> 
-   <td colname="col2"> <p>Definiert eine Dimension, deren Elemente Zahlenbereiche sind (von fester Größe, z. B. [0-9], [10-19],...). Elemente der Ebene beziehen sich auf das Element des Behälterdims, dessen Bereich den Wert der Metrik für das Element der Ebene enthält. Format ist die Zeichenfolge im Druckformat, die zum Formatieren der Elemente der Metrik verwendet wird. </p> <p>Beispiel: Wenn Page_Duration_Minutes eine Dimension auf Seitenansichtsebene ist, die die Anzahl der auf jeder Seite verbrachten Minuten darstellt, dann ist bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) eine Dimension auf Sitzungsebene, die die Anzahl der in jeder Sitzung verbrachten Minuten darstellt. Seine Elemente sind 5-minütige Intervalle {[0-5), [5-10),...,[495-500)}. </p> <p>Start ist der Startwert des ersten Intervalls (Standard: 0) und Größe ist die Größe des Intervalls (Standard: 1). </p> </td> 
+   <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Beginn {, Size}? }?) </p> </td> 
+   <td colname="col2"> <p>Definiert eine Dimension, deren Elemente Zahlenbereiche sind (von fester Größe, z. B. [0-9], [10-19],...). Elemente der Ebene beziehen sich auf das Element des Behälterdims, dessen Bereich den Wert der Metrik für das Element der Ebene enthält. Format ist die Zeichenfolge im Druckformat, die zum Formatieren der Elemente der Metrik verwendet wird. </p> <p>Beispiel: Wenn Page_Duration_Minutes eine Dimension auf Seitenebene ist, die die Anzahl der auf jeder Ansicht verbrachten Minuten darstellt, dann ist bucket(Session, sum(Page_Duration_Minutes, Page_Ansicht), 100, "%0.0f minutes", 0, 5) eine Dimension auf Sitzungsebene, die die Anzahl der in jeder Sitzung verbrachten Minuten darstellt. seine Elemente sind alle 5 Minuten <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Beginn ist der Startwert des ersten Intervalls (Standard: 0) und Größe ist die Größe des Intervalls (Standard: 1). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}*)}*) </p> </td> 
-   <td colname="col2"> <p>Definiert eine Dimension, deren Elemente die angegebenen ElementName-Zeichenfolgen sind und die mit den entsprechenden Sätzen von Präfix-Zeichenfolgen verknüpft sind. Elemente der Ebene beziehen sich auf das Element des Präfix dim, das mit dem längsten Präfix verknüpft ist, das mit dem Namen des angegebenen Elements der Ebene übereinstimmt. Präfixe, die mit dem Sonderzeichen '$' enden, müssen exakt übereinstimmen. </p> <p>Beispielsweise erstellen prefix(URI, "Produkte" -&gt; ("/products/"), "Services" -&gt; ("/services/", "/products/service/"), "Warranties" -&gt; ("/products/warranty.html$", "/services/warranty.html$", "Alles andere" -&gt; ("/")) eine Dimension, die URIs in die vier aufgelisteten Kategorien klassifiziert. Die Auswirkungen auf verschiedene Seiten sind wie folgt: </p> <p>/products/warranty.html übernimmt die Gewährleistung, da es exakt mit dem Präfix /products/warranty.html$ übereinstimmt. </p> <p>/products/cars/specialcar.html geht in Produkte über, da es mit dem Präfix "/products/"und nicht mehr mit dem Präfix "prefix"übereinstimmt </p> <p>/products/service/something.html Wechselt in Dienste, da es mit dem Präfix "/products/service/"übereinstimmt, das länger als das Präfix "/products/"ist. </p> <p>/companyinfo/aboutus.html gelangt in die Kategorie "Alles andere", da das einzige Präfix, das ihm zugeordnet ist, "/"ist. </p> </td> 
+   <td colname="col2"> <p>Definiert eine Dimension, deren Elemente die angegebenen ElementName-Zeichenfolgen sind und die mit den entsprechenden Sätzen von Präfix-Zeichenfolgen verknüpft sind. Elemente der Ebene beziehen sich auf das Element des Präfix dim, das mit dem längsten Präfix verknüpft ist, das mit dem Namen des angegebenen Elements der Ebene übereinstimmt. Präfixe, die mit dem Sonderzeichen '$' enden, müssen exakt übereinstimmen. </p> <p>Beispielsweise erstellen prefix(URI, "Products" -&gt; ("/products/"), "Services" -&gt; ("/services/", "/products/service/"), "Warranties" -&gt; ("/products/warranty.html$", "/services/warranty.html$", "Alles andere" -&gt; ("/")) eine Dimension, die URIs in die vier aufgelisteten Kategorien klassifiziert. Die Auswirkungen auf verschiedene Seiten sind wie folgt: </p> <p>/products/warranty.html geht in die Gewährleistung, da es genau mit dem Präfix /products/warranty.html$ übereinstimmt. </p> <p>/products/cars/specialcar.html geht in Produkte über, da es mit dem Präfix "/products/"und nicht mehr mit dem Präfix "prefix"übereinstimmt </p> <p>/products/service/something.html Wechselt in Dienste, da es mit dem Präfix "/products/service/"übereinstimmt, das länger als das Präfix "/products/"ist. </p> <p>/companyinfo/aboutus.html gelangt in die Kategorie "Alles andere", da das einzige Präfix, das ihm zugeordnet ist, "/"ist. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>latency(Level, Clip, Dim, Filter, MaxBefore, MaxAfter, FormatString) </p> </td> 
-   <td colname="col2"> <p>Siehe <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Erstellen von Latenzdimensionen </a>. </p> </td> 
+   <td colname="col2"> <p>Siehe <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Erstellen von Dimensionen zur Latenz </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>cartesian_product(Separator {,Dim}*) </p> </td> 
-   <td colname="col2"> <p>Definiert eine Dimension, deren Elemente alle Kombinationen (das kartesische Produkt) der Elemente der angegebenen Dimensionen sind. Der Name jedes Elements wird aus der Verkettung der entsprechenden Elemente in den Eingabedimensionen, getrennt durch die angegebene Trennzeichenfolge, gebildet. </p> <p>Wenn beispielsweise die Dimension D1 Elemente {"a", "b"} und die Dimension D2 die Elemente {"x", "y"} enthält, hat das kartesische Produkt("-", D1, D2) die Elemente {"a-x", "a-y", "b-x", "b-y"}. </p> <p>Beachten Sie, dass intern jede der Eingabedimensionen so behandelt wird, als ob die Anzahl der zugehörigen Elemente die nächsthöhere Potenz von zwei ist. Dies führt dazu, dass das kartesische Produkt einige Dummy-Elemente enthält. Bei Verwendung der Data Workbench-API können diese Elemente abhängig vom Ausgabeformat gebunden oder als "#nnn"angezeigt werden, wobei nn die Ordinalform des Elements ist (und vom Client ignoriert werden sollte). </p> <p>Beispiel: Wenn D2 die drei Elemente {"x", "y", "z"} hätte, würde es so behandelt, als hätte es vier Elemente, und das kartesische Produkt hätte die Elemente {"a-x", "a-y", "a-z", "#3", "b-x", "b-y", "b-z", "#7". </p> <p>Wenn keine Dimensionen angegeben werden, ist das Ergebnis eine Dimension mit einem Element, "#0", das der Dimension "Keine"entspricht. </p> </td> 
+   <td colname="col2"> <p>Definiert eine Dimension, deren Elemente alle Kombinationen (das kartesische Produkt) der Elemente der angegebenen Dimensionen sind. Der Name jedes Elements wird aus der Verkettung der entsprechenden Elemente in den Eingabedimensionen, getrennt durch die angegebene Trennzeichenfolge, gebildet. </p> <p>Wenn beispielsweise die Dimension D1 Elemente {"a", "b"} und die Dimension D2 die Elemente {"x", "y"} enthält, hat das kartesische Produkt("-", D1, D2) die Elemente {"a-x", "a-y", "b-x", "b-y"}. </p> <p>Beachten Sie, dass intern jede der Eingabedimensionen so behandelt wird, als ob die Anzahl der zugehörigen Elemente die nächsthöhere Potenz von zwei ist. Dies führt dazu, dass das kartesische Produkt einige Dummy-Elemente enthält. Bei Verwendung der Data Workbenchs-API können diese Elemente abhängig vom Ausgabeformat gebunden werden oder als "#nnn"angezeigt werden, wobei nn die Ordinalform des -Elements ist (und vom Client ignoriert werden sollte). </p> <p>Beispiel: Wenn D2 die drei Elemente {"x", "y", "z"} hätte, würde es so behandelt, als hätte es vier Elemente, und das kartesische Produkt hätte die Elemente {"a-x", "a-y", "a-z", "#3", "b-x", "b-y", "b-z", "#7". </p> <p>Wenn keine Dimensionen angegeben werden, ist das Ergebnis eine Dimension mit einem Element, "#0", das der Dimension "Keine"entspricht. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>next_countable(Dim) </p> </td> 
-   <td colname="col2"> <p>Bezieht sich auf eine bereits vorhandene Dimension: der nächste zählbare Vorfahren von Dim im Schema. Beispielsweise ist der nächste zählbare(URI) identisch mit page_View. </p> </td> 
+   <td colname="col2"> <p>Bezieht sich auf eine bereits vorhandene Dimension: der nächste zählbare Vorfahren von Dim im Schema. Beispielsweise ist der nächste zählbare(URI) identisch mit page_Ansicht. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>normalized(Dim,Count) </p> </td> 
