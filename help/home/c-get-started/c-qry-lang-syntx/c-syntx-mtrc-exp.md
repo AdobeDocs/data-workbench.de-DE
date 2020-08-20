@@ -1,28 +1,31 @@
 ---
-description: Metriken können mit dem Metrik-Editor bearbeitet und im Verzeichnis Metriken eines Profils gespeichert werden.
+description: Metriken können mit dem Metrik-Editor bearbeitet und im Metrikverzeichnis eines Profils gespeichert werden.
 solution: Analytics
-title: Syntax für Metrikausdrücke
+title: Syntax für Ausdrücke zu Metriken
 topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 1%
 
 ---
 
 
-# Syntax für Metrikausdrücke{#syntax-for-metric-expressions}
+# Syntax für Ausdrücke zu Metriken{#syntax-for-metric-expressions}
 
-Metriken können mit dem Metrik-Editor bearbeitet und im Verzeichnis Metriken eines Profils gespeichert werden.
+Metriken können mit dem Metrik-Editor bearbeitet und im Metrikverzeichnis eines Profils gespeichert werden.
 
-Weitere Informationen finden Sie unter [Erstellen und Bearbeiten abgeleiteter Metriken](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Metrikausdrücke können auch in Arbeitsblättern verwendet werden. For more information, see [Worksheets](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). Die folgende Syntax wird verwendet, um Metrikausdrücke zu definieren.
+Weitere Informationen finden Sie unter [Erstellen und Bearbeiten abgeleiteter Metriken](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Metrische Ausdruck können auch in Arbeitsblättern verwendet werden. For more information, see [Worksheets](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). Die folgende Syntax dient zum Definieren von metrischen Ausdrücken.
 
 Hinweise:
 
-1. Unterstrichene Wörter sollten wörtlich in den Ausdruckstext eingegeben werden.
-1. Das Formular {TEXT}? steht für optionalen Text.
-1. Das Formular {TEXT}* stellt Text dar, der null oder mehr Mal auftreten kann.
-1. Das Formular {A| B| C|..} stellt Text dar, der aus genau einer der angegebenen Optionen besteht, wie z.B. A oder B oder C....
-1. Das Formular [A,B] stellt einen Zahlenbereich dar, von A bis B.
+1. Unterstrichene Wörter sollten wörtlich in den Ausdruck eingegeben werden.
+1. Das Formular `{TEXT}?` stellt optionalen Text dar.
+1. Das Formular `{TEXT}*` stellt Text dar, der null oder mehr Mal auftreten kann.
+1. Das Formular `{A | B | C |...}` stellt Text dar, der aus genau einer der angegebenen Optionen besteht, z. B. A oder B oder C....
+1. Das Formular `[A,B)` stellt einen Zahlenbereich dar, von A bis B, jedoch nicht einschließlich B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
@@ -56,7 +59,7 @@ Hinweise:
   </tr> 
   <tr> 
    <td colname="col1"> <p>trust(metric) </p> </td> 
-   <td colname="col2"> <p>Eine Schätzung der Standardabweichung der Metrik. Dies wird mit einer als Jackkniffing bezeichneten Probenahmemethode berechnet. </p> <p>Diese Metrik ist speicherintensiv und sollte nicht in großen Tabellen verwendet werden. </p> <p>Um diese Syntax zu verwenden, müssen Sie eine Jackmesser-Dimension (namens "Jackmesser") mit den entsprechenden Eigenschaften haben. Weitere Informationen erhalten Sie bei Adobe Consulting Services. </p> <p>Beispiel: trust(Average_Score) </p> <p> <p>Hinweis:  Die Konfidenzmetriktypen, einschließlich Konfidenz(Metrik) und Konfidenz(Metrik, Jacknife), sind besonders bei der Verwendung der von Adobe verwalteten Experimentierungsfunktion nützlich. Wenn eine Metrik während eines kontrollierten Experiments von 12 % auf 16 % sprang, könnten Sie eine Konfidenzaufschlüsselung verwenden, um die Wahrscheinlichkeit zu berechnen, dass der Sprung auf zufällige Variationen zurückzuführen war. Dies kann Ihnen helfen, die falschen Schlussfolgerungen aus begrenzten Beweisen zu vermeiden und umgekehrt die Sicherheit zu bieten, dass eine fragwürdige Veränderung tatsächlich real ist. </p> </p> </td> 
+   <td colname="col2"> <p>Eine Schätzung der Standardabweichung der Metrik. Dies wird mit einer als Jackkniffing bezeichneten Probenahmemethode berechnet. </p> <p>Diese Metrik ist speicherintensiv und sollte nicht in großen Tabellen verwendet werden. </p> <p>Um diese Syntax zu verwenden, müssen Sie eine Jackmesser-Dimension (namens "Jackmesser") mit den entsprechenden Eigenschaften haben. Weitere Informationen erhalten Sie bei Adobe Consulting Services. </p> <p>Beispiel: trust(Average_Score) </p> <p> <p>Hinweis:  Die Konfidenzmetriktypen, einschließlich Konfidenz(Metrik) und Konfidenz(Metrik, Jacknife), sind besonders bei der Verwendung der kontrollierten Experimentierungsfunktion der Adobe nützlich. Wenn eine Metrik während eines kontrollierten Experiments von 12 % auf 16 % sprang, könnten Sie eine Konfidenzaufschlüsselung verwenden, um die Wahrscheinlichkeit zu berechnen, dass der Sprung auf zufällige Variationen zurückzuführen war. Dies kann Ihnen helfen, die falschen Schlussfolgerungen aus begrenzten Beweisen zu vermeiden und umgekehrt die Sicherheit zu bieten, dass eine fragwürdige Veränderung tatsächlich real ist. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>trust(metric, jackmesser) </p> </td> 
@@ -64,7 +67,7 @@ Hinweise:
   </tr> 
   <tr> 
    <td colname="col1"> <p>eval(CellReference) </p> </td> 
-   <td colname="col2"> <p>Behandelt den Inhalt der Zelle, auf die Sie verweisen, als Metrikausdruck. Diese Syntax kann nur in einer Arbeitsblattvisualisierung verwendet werden. </p> <p>Beispiel: eval(B1) </p> </td> 
+   <td colname="col2"> <p>Behandelt den Zelleninhalt, den Sie referenzieren, als metrischen Ausdruck. Diese Syntax kann nur in einer Arbeitsblattvisualisierung verwendet werden. </p> <p>Beispiel: eval(B1) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>log (B, X) </p> </td> 
@@ -76,7 +79,7 @@ Hinweise:
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metrik nach Dimension </p> </td> 
-   <td colname="col2"> <p>Eine Metrik, die auf der "Ebene"der Dimension ausgewertet wird. Das Ergebnis von (M von X)[F] (das Ergebnis der Metrik "M von X", die mit Filter "F" ausgewertet wird) ist das Ergebnis von M[F von X] (das Ergebnis der Metrik "M", ausgewertet mit Filter "F von X"). </p> <p>Beispiel: AB_Visitors = </p> <p>(Besucher nach Sitzung)[Seite="A" und Seite="B"] = </p> <p>Besucher[(Seite="A" und Seite="B") nach Sitzung] = </p> <p>Die Anzahl der Besucher, die in derselben Sitzung Seite A und B besucht haben. </p> </td> 
+   <td colname="col2"> <p>Eine Metrik, die auf der "Ebene"der Dimension ausgewertet wird. Das Ergebnis von (M von X)[F] (das Ergebnis der Metrik "M von X", die mit Filter "F" ausgewertet wird) ist das Ergebnis von M[F von X] (das Ergebnis der Metrik "M", ausgewertet mit Filter "F von X"). </p> <p>Beispiel: AB_Besuchers = </p> <p>(Besucher nach Sitzung)[Page="A" und page="B"] = </p> <p>Besucher[(Page="A" and page="B") by Session] = </p> <p>Die Anzahl der Besucher, die Seite A und Seite B in derselben Sitzung besucht haben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Anzahl </p> </td> 
@@ -84,7 +87,7 @@ Hinweise:
   </tr> 
   <tr> 
    <td colname="col1"> <p>total(Metrik) </p> </td> 
-   <td colname="col2"> <p>Ignoriert alle Dimensionen, bei denen die Metrik ausgewertet wird. Die Metrik hat für jedes Element dieser Dimension denselben Wert. </p> <p>Beispiel: pct_of_Visitors = Besucher / total(Besucher) </p> </td> 
+   <td colname="col2"> <p>Ignoriert alle Dimensionen, bei denen die Metrik ausgewertet wird. Die Metrik hat für jedes Element dieser Dimension denselben Wert. </p> <p>Beispiel: Pct_of_Besuchers = Besucher / total(Besucher) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>all(Metric) </p> </td> 
@@ -92,14 +95,14 @@ Hinweise:
   </tr> 
   <tr> 
    <td colname="col1"> <p>total(all(Metric) </p> </td> 
-   <td colname="col2"> <p>Ignoriert alle Filter und Dimensionen. Es hat denselben Wert für ein bestimmtes Profil, unabhängig davon, welche Filter oder Dimensionen angewendet werden. </p> <p>Beispiel: DataSet_Visitors = total(all(Visitors) </p> </td> 
+   <td colname="col2"> <p>Ignoriert alle Filter und Dimensionen. Sie hat in einem bestimmten Profil den gleichen Wert, unabhängig davon, welche Filter oder Dimensionen angewendet werden. </p> <p>Beispiel: DataSet_Besuchers = total(all(Besucher) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>sum(One,Countable_Dimension) </p> </td> 
-   <td colname="col2"> <p>Eine Metrik, die die Anzahl einer zählbaren Dimension wie Besucher oder Sitzung angibt. </p> <p>Beispiel: Besucher = Summe(Eins,Besucher) </p> </td> 
+   <td colname="col2"> <p>Eine Metrik, die die Anzahl einer zählbaren Dimension wie Besucher oder Sitzung angibt. </p> <p>Beispiel: Besucher = sum(One,Besucher) </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>sum(Numeric_Dimension, zählbare_Dimension) </p> </td> 
+   <td colname="col1"> <p>sum(Numeric_ Dimension, Countable_ Dimension) </p> </td> 
    <td colname="col2"> <p>Eine Metrik, die die Summe einer numerischen Dimension über einer zählbaren Dimension angibt. Die normalen Werte (im Gegensatz zu den formatierten Werten) der Elemente der numerischen Dimension werden verwendet, sodass oft ein Skalierungsfaktor auf das Ergebnis angewendet werden muss. </p> <p>Beispiel: Wert = sum(Session_Value, Session)*0.01 </p> </td> 
   </tr> 
   <tr> 
