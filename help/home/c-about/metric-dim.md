@@ -1,40 +1,43 @@
 ---
-description: Erstellen Sie Dimensionen, die von Metrikattributen (Metrik-DIS) definiert werden, mit einem Assistenten, der Sie Schritt für Schritt vornimmt. Testen Sie dann das neue Metrikkennzeichen, zeigen Sie es in der Vorschau an und speichern Sie es in Ihrer Dimensionsliste.
-title: Metrik-Dim-Assistent
+description: Erstellen Sie Dimensionen, die von Metrikattributen (Metrik-DIS) definiert werden, mit einem Assistenten, der Sie Schritt für Schritt vornimmt. Testen Sie dann den neuen Metrikstempel, erstellen Sie eine Vorschau und speichern Sie ihn in der Liste Ihrer Dimensionen.
+title: Assistent für Metrikdimensionen
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 translation-type: tm+mt
-source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
+source-git-commit: 35e6e9280ab36e8b39e89039b791199d1de54e03
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 2%
 
 ---
 
 
-# Metrik-Dim-Assistent{#metric-dim-wizard}
+# Assistent für Metrikdimensionen{#metric-dim-wizard}
 
-Erstellen Sie Dimensionen, die von Metrikattributen (Metrik-DIS) definiert werden, mit einem Assistenten, der Sie Schritt für Schritt vornimmt. Testen Sie dann das neue Metrikkennzeichen, zeigen Sie es in der Vorschau an und speichern Sie es in Ihrer Dimensionsliste.
+Erstellen Sie Dimensionen, die von Metrikattributen (Metrik-DIS) definiert werden, mit einem Assistenten, der Sie Schritt für Schritt vornimmt. Testen Sie dann den neuen Metrikstempel, erstellen Sie eine Vorschau und speichern Sie ihn in der Liste Ihrer Dimensionen.
 
-Ein Metrik-Dim konvertiert eine Metrik in eine neue Dimension. Beispielsweise zeigt ein Metrik-Dim, der auf einer Metrik aus Seitenansichten und Besucherebene basiert, Dimensionselemente basierend auf der Gesamtanzahl der Seitenansichten für jeden Besucher an. Damit können Sie eine aktuell definierte Metrik, die auf Dimensionselementen basiert, erweitern, um sie als neue Dimension zu erstellen und zu speichern.
+Ein Metrik-Dim konvertiert eine Metrik in eine neue Dimension. So zeigt ein Metrik-Dim, der auf einer Metrik aus &quot;Ansichten der Seite&quot;und &quot;Ebene des Besuchers&quot;basiert, Dimensionselemente basierend auf der Gesamtzahl der Ansichten der Seite für jeden Besucher an. Damit können Sie eine aktuell definierte Metrik, die auf Dimensionselementen basiert, erweitern, um sie als neue Dimension zu erstellen und zu speichern.
 
-## Schritt 1: Dimension und Metrik auswählen {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
+## Step 1: Select Dimension and Metric {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
 
 1. Öffnen Sie den Metrik-Dim-Assistenten.
 
-   Klicken Sie in einem Arbeitsbereich mit der rechten Maustaste und wählen Sie &quot; **[UICONTROL-Werkzeuge]** &quot;> &quot; **[UICONTROL-Metrikfilter erstellen&quot;]**.
+   Klicken Sie in einem Arbeitsbereich mit der rechten Maustaste und wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**.
 
 1. Benennen Sie den Metrikstempel.
 
    Standardmäßig wird das Feld &quot;Name&quot;basierend auf der Ebene- und Metrikauswahl automatisch gefüllt.
 
-1. Wählen Sie eine Dimensionsebene aus.
+1. Wählen Sie eine Dimension.
 
    Die Dimensionsebene ist die übergeordnete Dimension, die alle Elementwerte enthält, um die Eingabe zu filtern und einen Dimensionstyp zu definieren.
 
-   Zu den Dimensionsebenen gehören:
+   Zu den Dimensionen gehören:
 
    * Clickthrough
    * Treffer
-   * Product
+   * Produkt
    * Besuch
-   * Besucher
+   * Besucher.
 
 1. Wählen Sie eine Metrik aus.
 
@@ -44,11 +47,11 @@ Ein Metrik-Dim konvertiert eine Metrik in eine neue Dimension. Beispielsweise ze
 
 1. (Optional) Erstellen Sie eine Metrikformel.
 
-   Klicken Sie auf das Feld, um eine benutzerspezifische Metrikformel einzugeben. Der berechnete Wert für die Vorschau wird angezeigt und überprüft den Ausdruck.
+   Klicken Sie auf das Feld, um eine benutzerspezifische Metrikformel einzugeben. Der Wert für die berechnete Vorschau wird angezeigt und überprüft den Ausdruck.
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   Sie können Ihren eigenen [Metrikausdruck](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) hinzufügen oder einen anderen Metrik-Editor oder eine Visualisierung ausschneiden und einfügen. Syntaxfehler, Formelfehler, nicht definierte Filter und andere Fehler werden im Assistenten gemeldet.
+   Sie können Ihren eigenen [Metrik-Ausdruck](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) hinzufügen oder aus einem anderen Metrik-Editor oder einer anderen Visualisierung ausschneiden und einfügen. Syntaxfehler, Formelfehler, nicht definierte Filter und andere Fehler werden im Assistenten gemeldet.
 
 1. Klicken Sie auf **[!UICONTROL Next]**.
 
@@ -67,9 +70,9 @@ Ein Metrik-Dim konvertiert eine Metrik in eine neue Dimension. Beispielsweise ze
 
    Im **[!UICONTROL Preview]** Feld wird ein Wert basierend auf der ausgewählten Metrik und dem ausgewählten Format angezeigt.
 
-1. Bucket-Zählungsausdruck hinzufügen.
+1. hinzufügen Ausdruck zur Zählung der Behälter.
 
-   Sie können eine Metrik mit verschiedenen Bereichen oder Behältern definieren. Hiermit werden Untergruppen von Elementen basierend auf der Größe zurückgegeben, z. B. [0-4], [5-10],...). Elemente der Dimensionsebene beziehen sich auf die Elemente, deren Bereich den Wert der Metrik enthält. Siehe Beschreibung des Behälterausdrucks unter [Syntax für Dimensionsausdrücke](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
+   Sie können eine Metrik mit verschiedenen Bereichen oder Behältern definieren. Hiermit werden Untergruppen von Elementen basierend auf der Größe zurückgegeben, z. B. [0-4], [5-10],...). Elemente der Dimension beziehen sich auf die Elemente, deren Bereich den Wert der Metrik enthält. Informationen zu Dimension-Ausdrücken finden Sie unter [Syntax in der Beschreibung des bucket-Ausdrucks](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
 1. Klicken Sie auf , **[!UICONTROL Preview]** um die Tabelle mit den Metrik-Dim-Werten vor dem Speichern zu öffnen.
 
@@ -93,5 +96,5 @@ Ein Metrik-Dim konvertiert eine Metrik in eine neue Dimension. Beispielsweise ze
 
 1. Klicken **[!UICONTROL Finish]** und speichern.
 
-   Daraufhin wird ein Dialogfeld zum Speichern geöffnet, in dem Sie die Datei speichern können. Die ausgewählten Optionen zum Anzeigen von Werten werden im Arbeitsbereich geöffnet.
+   Daraufhin wird ein Dialogfeld zum Speichern geöffnet, in dem Sie die Datei speichern können. Die ausgewählten Optionen für die Ansicht werden im Arbeitsbereich geöffnet.
 
