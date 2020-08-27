@@ -3,7 +3,10 @@ description: Mit dem Windows-Zertifikatspeicher können Sie das Zertifikat und d
 title: Windows-Zertifikatspeicher
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ Bei der [Verwendung von benutzerdefinierten Zertifikaten](../../../../../home/c-
 </filepath>>\Certificates\
 ```
 
-Der Name des Zertifikats lautet `<Common Name>.pem` (z. B. [!DNL Analytics Server 1.pem](nicht die [!DNL trust_ca_cert.pem] Datei).
+Der Name des Zertifikats lautet `<Common Name>.pem` (z. B. [!DNL Analytics Server 1.pem] (nicht die [!DNL trust_ca_cert.pem] Datei).
 
 Bevor das Zertifikat und der private Schlüssel importiert werden können, müssen sie aus konvertiert werden. [!DNL pem] in ein [!DNL .pfx] Format, z. B. [!DNL pkcs12.pfx] ).
 
@@ -58,7 +61,7 @@ Bevor das Zertifikat und der private Schlüssel importiert werden können, müss
 
    Wenn Sie dazu aufgefordert werden, drücken Sie die **Eingabetaste** , um die Eingabe eines Exportkennworts zu überspringen.
 
-1. Führen Sie [!DNL certmgr.msc] die Ausführung über die Eingabeaufforderung, das Startmenü oder die Befehlszeile aus.
+1. Führen Sie [!DNL certmgr.msc] die Ausführung über die Eingabeaufforderung, das Menü &quot;Beginn&quot;oder die Befehlszeile aus.
 1. Öffnen Sie den **persönlichen** Zertifikatspeicher für den aktuellen Benutzer.
 
    ![](assets/6_5_crypto_api_0.png)
@@ -89,12 +92,12 @@ Bevor das Zertifikat und der private Schlüssel importiert werden können, müss
 
 **Schritt 2: Bearbeiten Sie die Datei Insight.cfg.**
 
-Die [!DNL Insight.cfg] Datei muss bearbeitet werden, damit Data Workbench die Windows-Zertifikatspeicherung nutzen kann. Jeder Servereintrag in dieser Datei muss einige zusätzliche Parameter enthalten. Wenn die Parameter weggelassen werden, verwendet die Workstation standardmäßig die vorhandene Zertifikatkonfiguration. Wenn die Parameter angegeben sind, aber falsche Werte haben, gibt die Workstation einen Fehlerstatus ein und Sie müssen in der Protokolldatei auf Fehlerinformationen verweisen.
+Die [!DNL Insight.cfg] Datei muss bearbeitet werden, um die Data Workbench zur Verwendung der Windows-Zertifikatspeicher-Funktion anzuweisen. Jeder Servereintrag in dieser Datei muss einige zusätzliche Parameter enthalten. Wenn die Parameter weggelassen werden, verwendet die Workstation standardmäßig die vorhandene Zertifikatkonfiguration. Wenn die Parameter angegeben sind, aber falsche Werte haben, gibt die Workstation einen Fehlerstatus ein und Sie müssen in der Protokolldatei auf Fehlerinformationen verweisen.
 
 1. Öffnen Sie die Datei **Insight.cfg** (die sich im Installationsordner von **Insight** befindet).
 
 1. Blättern Sie nach unten zu dem Servereintrag, den Sie konfigurieren möchten. Wenn Sie den Windows-Zertifikatspeicher für jeden Server verwenden möchten, müssen Sie diese Änderungen an jedem Eintrag im Vektor von [!DNL serverInfo] Objekten vornehmen.
-1. Fügen Sie diese Parameter ihrer [!DNL Insight.cfg] Datei hinzu. Sie können dies auf der Workstation oder manuell tun, indem Sie die folgenden Parameter zum [!DNL serverInfo] Objekt hinzufügen. (Achten Sie darauf, Leerzeichen anstelle von Tabulatorzeichen zu verwenden, und führen Sie in dieser Datei keine anderen Tippfehler oder Syntaxfehler durch. )
+1. hinzufügen diese Parameter in ihre [!DNL Insight.cfg] Datei. Sie können dies auf der Workstation oder manuell tun, indem Sie die folgenden Parameter zum [!DNL serverInfo] Objekt hinzufügen. (Achten Sie darauf, Leerzeichen anstelle von Tabulatorzeichen zu verwenden, und führen Sie in dieser Datei keine anderen Tippfehler oder Syntaxfehler durch. )
 
    ```
    SSL Use CryptoAPI = bool: true  
@@ -109,11 +112,11 @@ Die [!DNL Insight.cfg] Datei muss bearbeitet werden, damit Data Workbench die Wi
    >
    >Der Name &quot;Persönlich&quot;im Zertifikatmanager (certmgr.msc) bezieht sich eigentlich auf den Zertifikatspeicher **My.** Wenn Sie daher Ihr SSL-Kommunikationszertifikat und Ihren SSL-Schlüssel (.PFX) wie empfohlen in den **persönlichen** Zertifikatspeicher importieren, müssen Sie die Zeichenfolge für den **SSL-CryptoAPI-Zertifikatsspeichernamen** auf &quot;My&quot;setzen. Die Festlegung dieses Parameters auf &quot;Persönlich&quot;funktioniert nicht. Dies ist eine Besonderheit des Windows-Zertifikatspeichers.
 
-   Eine vollständige Liste der vordefinierten Systemspeicher finden Sie hier: [https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx). Ihr System verfügt möglicherweise über zusätzliche Zertifikatspeicher. Wenn Sie einen anderen Store als &quot;Persönlich&quot; (z. B. **My**) verwenden möchten, müssen Sie den kanonischen Namen des Zertifikatspeichers abrufen und in der [!DNL Insight.cfg] Datei angeben. (Der Systemspeichername &quot;My&quot;wird in der Windows-Dokumentation inkonsistent als &quot;My&quot;und &quot;MY&quot;bezeichnet. Beim Parameter wird nicht zwischen Groß- und Kleinschreibung unterschieden.)
+   Eine vollständige Liste der vordefinierten Systemspeicher erhalten Sie hier: [https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx). Ihr System verfügt möglicherweise über zusätzliche Zertifikatspeicher. Wenn Sie einen anderen Store als &quot;Persönlich&quot; (z. B. **My**) verwenden möchten, müssen Sie den kanonischen Namen des Zertifikatspeichers abrufen und in der [!DNL Insight.cfg] Datei angeben. (Der Systemspeichername &quot;My&quot;wird in der Windows-Dokumentation inkonsistent als &quot;My&quot;und &quot;MY&quot;bezeichnet. Beim Parameter wird nicht zwischen Groß- und Kleinschreibung unterschieden.)
 
 1. Nachdem Sie diese Parameter hinzugefügt und überprüft haben, ob die Werte mit der Liste im Windows-Zertifikatmanager übereinstimmen, speichern Sie die [!DNL Insight.cfg] Datei.
 
-Sie können jetzt die Workstation starten (oder die Verbindung zum Server trennen/wieder herstellen). Data Workbench sollte Ihr Zertifikat und Ihren Schlüssel aus dem Zertifikatspeicher laden und eine normale Verbindung herstellen.
+Sie können jetzt die Workstation Beginn (oder die Verbindung zum Server trennen/wieder herstellen). Data Workbench sollte Ihr Zertifikat und Ihren Schlüssel aus dem Zertifikatspeicher laden und normal verbinden.
 
 ## Protokollausgabe {#section-a7ef8c9e90ef4bbabaa3cd51a2aca3ab}
 
