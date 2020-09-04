@@ -4,9 +4,9 @@ solution: Insight
 title: Konfigurationseinstellungen für die Kommunikation
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 5%
 
 ---
@@ -34,11 +34,11 @@ Füllen Sie die Parameter in der folgenden Datei aus:
  <tbody> 
   <tr> 
    <td colname="col1"> Zugriffskontrolle </td> 
-   <td colname="col2"> <p>Speicherort der <span class="filepath"> Datei "Zugriffskontrolle.cfg" </span> . Der Standardspeicherort ist der <span class="filepath"> Zugriffskontrolle- </span> Ordner im Installationsordner von <span class="keyword"> Insight Server </span> oder <span class="wintitle"> Repeater </span> . </p> <p>Beispiel: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Speicherort der <span class="filepath"> Datei "Zugriffskontrolle.cfg" </span> . Der Standardspeicherort ist der <span class="filepath"> Zugriffskontrolle- </span> Ordner im Installationsordner von <span class="keyword"> Insight Server </span> oder <span class="wintitle"> Repeater </span> . </p> <p>Beispiel: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Protokollverzeichnis </td> 
-   <td colname="col2"> <p>Ordner, dem die Prüfprotokolle zugeordnet werden sollen. </p> <p>Beispiel: <filepath></filepath> </p> <p> <p>Hinweis:  Sie können Prüfprotokolle einem anderen lokalen Laufwerk zuordnen (Beispiel: <span class="filepath"> Zeichenfolge: P:\\Audit\\ </span>), aber ordnen Sie keine Prüfprotokolle einem Netzlaufwerk zu. </p> </p> </td> 
+   <td colname="col2"> <p>Ordner, dem die Prüfprotokolle zugeordnet werden sollen. </p> <p>Beispiel: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Hinweis:  Sie können Prüfprotokolle einem anderen lokalen Laufwerk zuordnen (Beispiel: <span class="filepath"> Zeichenfolge: P:\\Audit\\ </span>), aber ordnen Sie keine Prüfprotokolle einem Netzlaufwerk zu. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Zugriffsprotokoll-Funktion </td> 
@@ -46,19 +46,19 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
   <tr> 
    <td colname="col1"> IP-Schnittstelle </td> 
-   <td colname="col2"> <p>IP-Adresse, die verwendet wird, wenn zwei Netzwerkkarten für den Zugriff auf zwei verschiedene Netzwerke verfügbar sind. </p> <p>Beispiel: I <filepath></filepath><i>&lt; <span class="filepath"> IP-Adresse </span>&gt;</i> </p> </td> 
+   <td colname="col2"> <p>IP-Adresse, die verwendet wird, wenn zwei Netzwerkkarten für den Zugriff auf zwei verschiedene Netzwerke verfügbar sind. </p> <p>Beispiel: <code>IP Interface = string: &lt; IP Address &gt;</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Anschluss </td> 
-   <td colname="col2"> <p>Nicht sicherer (HTTP) Anschluss, auf dem der <span class="keyword"> Insight-Server </span> oder <span class="wintitle"> -Repeater </span> lauscht. Der Standardanschluss ist 80. Durch Eingabe des Werts 0 werden nicht sichere Verbindungen deaktiviert. </p> <p>Beispiel: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Nicht sicherer (HTTP) Anschluss, auf dem der <span class="keyword"> Insight-Server </span> oder <span class="wintitle"> -Repeater </span> lauscht. Der Standardanschluss ist 80. Durch Eingabe des Werts 0 werden nicht sichere Verbindungen deaktiviert. </p> <p>Beispiel: <code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-Ciphers </td> 
-   <td colname="col2"> Einige Umgebung erfordern eine höhere Kommunikationssicherheit als andere. Wenn Sie eine bestimmte SSL-Chipher-Suite verwenden möchten, können Sie diese mit diesem Parameter angeben. <p>Beispiel: <filepath></filepath> </p> </td> 
+   <td colname="col2"> Einige Umgebung erfordern eine höhere Kommunikationssicherheit als andere. Wenn Sie eine bestimmte SSL-Chipher-Suite verwenden möchten, können Sie diese mit diesem Parameter angeben. <p>Beispiel: <code>SSL Ciphers = string: AES256-SHA256</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-Anschluss </td> 
-   <td colname="col2"> <p>Sicherer Anschluss (über SSL), auf dem der <span class="keyword"> Insight-Server </span> oder <span class="wintitle"> -Repeater </span> lauscht. Der Standardanschluss ist 443. Durch Eingabe des Werts 0 werden sichere Verbindungen deaktiviert. </p> <p>Beispiel: <span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Sicherer Anschluss (über SSL), auf dem der <span class="keyword"> Insight-Server </span> oder <span class="wintitle"> -Repeater </span> lauscht. Der Standardanschluss ist 443. Durch Eingabe des Werts 0 werden sichere Verbindungen deaktiviert. </p> <p>Beispiel: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
