@@ -1,14 +1,17 @@
 ---
 description: Erstellen Sie benutzerdefinierte Spalten-Exportkopfzeilen für Ihre Segmentexportdateien, um leicht verständliche Beschreibungen für exportierte Segmente hinzuzufügen. Mit dieser Exportfunktion können Sie auch als TSV- und CSV-Dateien ausgeben.
-title: Segmentexport mit benutzerdefinierten Überschriften
+title: Segmentexport mit benutzerdefinierten Kopfzeilen
 uuid: 186e7868-13b2-42e1-b83f-5a752ee9b407
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 5%
 
 ---
 
 
-# Segmentexport mit benutzerdefinierten Überschriften{#segment-export-with-custom-headers}
+# Segmentexport mit benutzerdefinierten Kopfzeilen{#segment-export-with-custom-headers}
 
 Erstellen Sie benutzerdefinierte Spalten-Exportkopfzeilen für Ihre Segmentexportdateien, um leicht verständliche Beschreibungen für exportierte Segmente hinzuzufügen. Mit dieser Exportfunktion können Sie auch als TSV- und CSV-Dateien ausgeben.
 
@@ -39,11 +42,11 @@ Sie können Spaltenüberschriften für Ihre Exportdateien erstellen.
 
    Daraufhin wird ein Exportfenster geöffnet.
 
-1. Klicken Sie mit der rechten Maustaste auf den Exportnamen und klicken Sie auf **[!UICONTROL Speichern unter<export filename>]**.
+1. Klicken Sie mit der rechten Maustaste auf den Exportnamen und klicken Sie auf **Speichern unter`<export filename>`**.
 
    ![](assets/segment_export_headers_7.png)
 
-1. Klicken Sie mit der rechten Maustaste [!DNL Admin] > [!DNL Profile Manager] > [!DNL Expand Export]. Suchen Sie die soeben erstellte Exportdatei und speichern Sie sie in einem vorhandenen Profil.
+1. Rechtsklick [!DNL Admin] > [!DNL Profile Manager] > [!DNL Expand Export]. Suchen Sie die soeben erstellte Exportdatei und speichern Sie sie in einem vorhandenen Profil.
 
    ![](assets/segment_export_headers_8.png)
 
