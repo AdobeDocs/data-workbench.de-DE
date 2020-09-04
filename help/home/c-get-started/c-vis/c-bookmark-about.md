@@ -1,11 +1,11 @@
 ---
 description: Sie können wichtige Arbeitsbereiche mit einem Lesezeichen versehen, um schnell zwischen Visualisierungen und Berichten zu wechseln, die in Ihrem Arbeitsablauf verwendet werden.
 solution: Analytics
-title: Hinzufügen von Lesezeichen
+title: hinzufügen von Lesezeichen
 topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 translation-type: tm+mt
-source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 ---
 
 
-# Hinzufügen von Lesezeichen{#add-a-bookmarks}
+# hinzufügen von Lesezeichen{#add-a-bookmarks}
 
 Sie können wichtige Arbeitsbereiche mit einem Lesezeichen versehen, um schnell zwischen Visualisierungen und Berichten zu wechseln, die in Ihrem Arbeitsablauf verwendet werden.
 
@@ -33,7 +33,7 @@ Sie können wichtige Arbeitsbereiche mit einem Lesezeichen versehen, um schnell 
 
 **So löschen Sie ein Lesezeichen:**
 
-* Klicken Sie im Lesezeichenbedienfeld mit der rechten Maustaste und wählen Sie **[!UICONTROL Entfernen<bookmark title>]**zum Löschen eines ausgewählten Lesezeichens oder zum Löschen aller Lesezeichen **[!UICONTROL Clear All Bookmarks]**auswählen.
+* Klicken Sie im Lesezeichenbedienfeld mit der rechten Maustaste und wählen Sie &quot; **Entfernen&quot;,`<bookmark title>`** um ein ausgewähltes Lesezeichen zu löschen, oder wählen Sie **[!UICONTROL Clear All Bookmarks]** zum Löschen aller Lesezeichen aus.
 
 * Sie können auch mit der rechten Maustaste auf den Arbeitsbereich in der Miniaturansicht-Ansicht auf der Arbeitsfläche klicken und **[!UICONTROL Clear Bookmark]** auswählen.
 
