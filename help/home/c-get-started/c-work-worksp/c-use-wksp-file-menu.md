@@ -1,16 +1,19 @@
 ---
 description: Informationen zu den Menüoptionen, die im Menü der Workspace-Datei verfügbar sind.
 solution: Analytics
-title: Menü "Arbeitsfläche"
+title: Menü „Datei“ des Arbeitsbereichs
 topic: Data workbench
 uuid: abbdb2db-d918-4edf-977c-1daaf8a71721
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 1%
 
 ---
 
 
-# Menü &quot;Arbeitsfläche&quot;{#workspace-file-menu}
+# Menü „Datei“ des Arbeitsbereichs{#workspace-file-menu}
 
 Informationen zu den Menüoptionen, die im Menü der Workspace-Datei verfügbar sind.
 
@@ -40,7 +43,7 @@ Passt die Visualisierungen an die verwendete Bildschirmauflösung an. Dies ist h
 
 Legt eine Größe für eine Arbeitsfläche fest. Sie können &quot;Vollbild&quot;, &quot;Standard&quot;oder eine der spezifischen Größen für Computerbildschirme, gedruckte Seiten und Berichte auswählen. Der Vollbildmodus füllt Ihren jeweiligen Bildschirm aus. Standard ist eine Einstellung, die an die standardmäßige Bildschirmgröße Ihres Unternehmens angepasst werden kann. Die Standardeinstellung &quot;Standard&quot;füllt den Bildschirm mit einer Auflösung von 1024 x 768.
 
-Arbeitsbereiche, die kopiert, als [!DNL .png] Dateien gespeichert oder gedruckt werden, verwenden diese Seitengröße auch für die Ausgabe. Seitengrößen, die größer als die Data Workbench-Visualisierung sind, verwenden Bildlaufleisten, während kleinere Größen auf dem Bildschirm zentriert sind und einen hellgrauen Rand um den Arbeitsbereich anzeigen.
+Arbeitsbereiche, die kopiert, als [!DNL .png] Dateien gespeichert oder gedruckt werden, verwenden diese Seitengröße auch für die Ausgabe. Seitengrößen, die größer als die Visualisierung der Data Workbench sind, verwenden Bildlaufleisten, während kleinere Größen auf dem Bildschirm zentriert sind und einen hellgrauen Rand um den Arbeitsbereich herum anzeigen.
 
 **Beschreibung**
 
@@ -51,11 +54,11 @@ Ermöglicht das Erstellen oder Bearbeiten einer Textbeschreibung des Arbeitsbere
 (Wird nur angezeigt, wenn Sie online arbeiten.) Behält die Abfragen im ausgewählten Arbeitsbereich im Hintergrund bei, während Sie weiter arbeiten. Wenn diese Option aktiviert ist, zeigt die Miniaturansicht die folgenden Informationen an, die den Fortschritt der Abfragen anzeigen:
 
 * Arbeit: *n%* - gibt an, dass die Abfrage verarbeitet wird und der Prozentsatz der Verarbeitung abgeschlossen ist.
-* *n* MB Query Load - Gesamtgröße des Abfrageergebnisses. Query Load ist proportional zur Gesamtspeicherlast Ihres Data Workbench-Servers, korreliert aber nicht direkt. Als Richtlinie kann eine Abfrageauslastung von 10 MB oder mehr Ihr System belasten. Bei der aufgelisteten Abfrageladung wird das Clustering nicht berücksichtigt.
+* *n* MB Abfrage Load - Gesamtgröße des Abfragen-Ergebnisses. Abfrage Load ist proportional zur Gesamtspeicherlast des Data Workbench-Servers, korreliert aber nicht direkt. Als Richtlinie gilt, dass eine Abfrage von 10 MB oder mehr Ihr System belastet. Bei der aufgelisteten Abfrage-Last wird das Clustering nicht berücksichtigt.
 
 >[!NOTE]
 >
->Wenn &quot;Im Hintergrund berechnen&quot;ausgewählt bleibt, werden die Abfragen im ausgewählten Arbeitsbereich zu ständigen Abfragen, die weiterhin aktualisiert werden und Arbeitsspeicherlast verwenden. Achten Sie darauf, die Auswahl für &quot;Im Hintergrund berechnen&quot;zu löschen, wenn Sie mit der Arbeit im Arbeitsbereich fertig sind.
+>Wenn die Option &quot;Im Hintergrund berechnen&quot;weiterhin aktiviert ist, werden die Abfragen im ausgewählten Arbeitsbereich zu stehenden Abfragen, werden weiterhin aktualisiert und nutzen Speicherlast. Achten Sie darauf, die Auswahl für &quot;Im Hintergrund berechnen&quot;zu löschen, wenn Sie mit der Arbeit im Arbeitsbereich fertig sind.
 
 **Close**
 
@@ -66,8 +69,8 @@ Sie können die Änderungen auch speichern, den Arbeitsbereich schließen und mi
 * Klicken Sie auf das Data Workbench-Logo in der oberen linken Ecke des Arbeitsbereichs.
 * Wenn die Maus Navigationsschaltflächen hat, klicken Sie auf die Zurück-Taste der Maus.
 
-Sie können Ihre Änderungen auch löschen, indem Sie den Arbeitsbereich schließen, ohne zu speichern, indem Sie **[!UICONTROL `<Ctrl>`+<Backspace>]**.
+Sie können Ihre Änderungen auch löschen, indem Sie den Arbeitsbereich schließen, ohne zu speichern, indem Sie **Strg+Rücktaste drücken**.
 
 **In Excel aus Vorlage exportieren**
 
-Wenn Microsoft Excel auf dem Data Workbench-Computer installiert ist, wird Microsoft Excel automatisch gestartet und exportiert die Daten aus bestimmten Visualisierungen, bestimmten Legenden und Textkommentaren in die ausgewählte Excel-Vorlagendatei ( [!DNL .xls]oder [!DNL .xlsx]). Siehe [Exportieren in eine Excel-Vorlagendatei](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302).
+Wenn Microsoft Excel auf dem Data Workbench-Computer installiert ist, wird Microsoft Excel automatisch Beginn und die Daten aus bestimmten Visualisierungen, bestimmten Legenden und Textkommentaren werden in die ausgewählte Excel-Vorlagendatei ( [!DNL .xls]oder [!DNL .xlsx]) exportiert. Siehe [Exportieren in eine Excel-Vorlagendatei](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302).
