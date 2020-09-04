@@ -1,14 +1,17 @@
 ---
 description: Data Workbench bietet einen Assistenten zum Einrichten der Workstation-Anwendung (Client).
-title: Workstation-Setup-Assistent
+title: Workstation-Einrichtungsassistent
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 1%
 
 ---
 
 
-# Workstation-Setup-Assistent{#workstation-setup-wizard}
+# Workstation-Einrichtungsassistent{#workstation-setup-wizard}
 
 Data Workbench bietet einen Assistenten zum Einrichten der Workstation-Anwendung (Client).
 
@@ -24,13 +27,13 @@ Starten Sie die ausführbare Datei des Installationsassistenten und gehen Sie du
 
    ![](assets/6_4_workstation_wizard.png)
 
-1. Klicken Sie **im Dialogfeld &quot;Willkommen beim Setup-Assistenten** von Data Workbench&quot;auf Weiter **** .
+1. Klicken Sie im Dialogfeld &quot;Willkommen beim Setup-Assistenten für Data Workbenchs&quot;auf **Weiter****** .
 
 1. Wählen Sie zum Installieren einer **neuen Installation** oder zum **Aktualisieren oder Reparieren** einer vorhandenen Installation.
 
    **Die neue Installation** überschreibt alle zuvor installierten Dateien.
 
-   **Aktualisieren** Sie Ihre Workstation auf die neueste Version oder können Sie eine vorhandene Installation reparieren. Data Workbench vergleicht installierte **Insight.exe** -Dateien und führt den Workstation Setup Wizard aus, wenn eine neuere Version des Clients verfügbar ist.
+   **Aktualisieren** Sie Ihre Workstation auf die neueste Version oder können Sie eine vorhandene Installation reparieren. Data Workbench vergleicht installierte **Insight.exe** -Dateien und führt den Workstation Setup Wizard aus, wenn eine neuere Clientversion verfügbar ist.
 
 1. Installationsspeicherort auswählen:
 
@@ -61,17 +64,17 @@ Starten Sie die ausführbare Datei des Installationsassistenten und gehen Sie du
 
 1. Klicken Sie auf **Weiter.** Eine Zusammenfassung der ausgewählten Dateispeicherorte und Sprachen wird angezeigt. Click **Install.**
 
-1. Suchen Sie das **Data Workbench-Zertifikat**.
+1. Suchen Sie nach dem **Data Workbenchs-Zertifikat**.
 
-   Wenn der Setup-Assistent das Data Workbench-Zertifikat während der Installation nicht finden kann, wird ein Dialogfeld geöffnet, in dem Sie zum Speicherort des Zertifikats navigieren können (standardmäßig befindet sich eine **.pem** -Datei im Ordner &quot;Client- **Zertifikate** &quot;), oder Sie klicken auf &quot; **Überspringen** &quot;, um das Zertifikat nach der Installation zu suchen.
+   Wenn der Installationsassistent das Zertifikat während der Installation nicht finden kann, wird ein Dialogfeld geöffnet, in dem Sie zum Speicherort des Zertifikats (standardmäßig eine **.pem** -Data Workbench im Ordner &quot;Client- **Zertifikate** &quot;) navigieren können, oder Sie klicken auf &quot; **Überspringen** &quot;, um das Zertifikat nach der Installation zu suchen.
 
    Klicken Sie auf **Installieren** , nachdem Sie das Zertifikat gefunden haben.
 
-1. Nachdem der Setup-Assistent abgeschlossen und Data Workbench installiert ist, klicken Sie auf **Fertig stellen** , um die Einrichtung abzuschließen.
+1. Nachdem der Setup-Assistent abgeschlossen und die Data Workbench installiert ist, klicken Sie auf **Fertig stellen** , um das Setup abzuschließen.
 
    >[!NOTE]
    >
-   >Der Standardspeicherort für das Protokoll des Workstation-Setup-Assistenten unter **[!DNL C:\Users\&quot;<userName>`\AppData\Local\Temp.]**
+   >Der Standardspeicherort für das Protokoll des Workstation-Setup-Assistenten unter `C:\Users\<userName>\AppData\Local\Temp`.
 
    Aktivieren Sie das Kontrollkästchen Anwendung **starten** , um die Workbench nach dem Setup zu öffnen.
 
@@ -83,7 +86,7 @@ Starten Sie die ausführbare Datei des Installationsassistenten und gehen Sie du
 
 ## Installationsordner {#section-b5ea5a3b3ecb4622aef713972f3f8ebd}
 
-Die Ordnerstruktur von Data Workbench umfasst zwei Installationsspeicherorte:
+Die Ordnerstruktur der Data Workbench umfasst zwei Installationsspeicherorte:
 
 * **Programm-Dateien** Die **Insight.exe** und die zugehörigen Clientdateien (**Insight.ini**) befinden sich jetzt standardmäßig unter
 
@@ -109,10 +112,10 @@ Die Ordnerstruktur von Data Workbench umfasst zwei Installationsspeicherorte:
 
 ## Deinstallieren der Workstation {#section-5ce2e233fe4348469ef1b3c451dd5b70}
 
-Data Workbench enthält jetzt eine ausführbare Datei zum Deinstallieren der Workstation (standardmäßig unter **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**).
+Die Data Workbench enthält jetzt eine ausführbare Datei zum Deinstallieren der Workstation (standardmäßig unter **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**).
 
-Starten Sie die Data Workbench Workstation-Dateien und führen Sie die Schritte zum Entfernen von der Festplatte aus.
+Starten Sie die Data Workbench Workstation-Dateien und führen Sie die entsprechenden Schritte aus, um sie von Ihrer Festplatte zu entfernen.
 
 >[!NOTE]
 >
->Sie können die ausführbare Datei &quot; **unins000.exe** &quot;aus dem Beginn über die Verknüpfung zum **Deinstallieren von Data Workbench** über das Menü &quot;&quot;oder über **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]** starten.
+>Sie können die ausführbare Datei &quot; **unins000.exe** &quot;aus dem Ordner über die Verknüpfung &quot;Data Workbench **** deinstallieren&quot;im Menü &quot;Beginn&quot;oder über **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]** starten.
