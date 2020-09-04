@@ -1,15 +1,18 @@
 ---
 description: Anweisungen zum Konfigurieren der Kommunikation für Insight Server oder Repeater.
 solution: Insight
-title: Kommunikationskonfigurationseinstellungen
+title: Konfigurationseinstellungen für die Kommunikation
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 5%
 
 ---
 
 
-# Kommunikationskonfigurationseinstellungen{#communications-configuration-settings}
+# Konfigurationseinstellungen für die Kommunikation{#communications-configuration-settings}
 
 Anweisungen zum Konfigurieren der Kommunikation für Insight Server oder Repeater.
 
@@ -19,7 +22,7 @@ Füllen Sie die Parameter in der folgenden Datei aus:
 
 >[!NOTE]
 >
->Wenden Sie sich an Adobe, bevor Sie Parameter ändern, die nicht in dieser Tabelle aufgeführt sind.
+>Bitte kontaktieren Sie die Adobe, bevor Sie Parameter ändern, die nicht in dieser Tabelle aufgeführt sind.
 
 <table id="table_C87F1150E53548F484A8C0CFE91F1079"> 
  <thead> 
@@ -30,8 +33,8 @@ Füllen Sie die Parameter in der folgenden Datei aus:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Zugriffssteuerungsdatei </td> 
-   <td colname="col2"> <p>Speicherort der <span class="filepath"> Datei "Access Control.cfg" </span> . Der Standardspeicherort ist der <span class="filepath"> Zugriffssteuerungsordner </span> im <span class="keyword"> Installationsordner von Insight Server </span> oder <span class="wintitle"> Repeater </span> . </p> <p>Beispiel: <filepath></filepath> </p> </td> 
+   <td colname="col1"> Zugriffskontrolle </td> 
+   <td colname="col2"> <p>Speicherort der <span class="filepath"> Datei "Zugriffskontrolle.cfg" </span> . Der Standardspeicherort ist der <span class="filepath"> Zugriffskontrolle- </span> Ordner im Installationsordner von <span class="keyword"> Insight Server </span> oder <span class="wintitle"> Repeater </span> . </p> <p>Beispiel: <filepath></filepath> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Protokollverzeichnis </td> 
@@ -51,7 +54,7 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
   <tr> 
    <td colname="col1"> SSL-Ciphers </td> 
-   <td colname="col2"> Einige Umgebungen erfordern eine höhere Kommunikationssicherheit als andere. Wenn Sie eine bestimmte SSL-Chipher-Suite verwenden möchten, können Sie diese mit diesem Parameter angeben. <p>Beispiel: <filepath></filepath> </p> </td> 
+   <td colname="col2"> Einige Umgebung erfordern eine höhere Kommunikationssicherheit als andere. Wenn Sie eine bestimmte SSL-Chipher-Suite verwenden möchten, können Sie diese mit diesem Parameter angeben. <p>Beispiel: <filepath></filepath> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-Anschluss </td> 
@@ -82,8 +85,7 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI = String: /ReportStatus.vsp </p> </td> 
-   <td colname="col2"> <p>Dieser Parameter gilt nur für <span class="keyword"> Insight Server </span>. </p> <p>Ermöglicht die Anzeige des <span class="keyword"> Berichtstatus in der Detaillierten Statusoberfläche für </span> Insight Server <span class="keyword"> </span>. </p> </td> 
+   <td colname="col2"> <p>Dieser Parameter gilt nur für <span class="keyword"> Insight Server </span>. </p> <p>Ermöglicht die Ansicht des <span class="keyword"> Berichtstatus in der Detaillierten Statusoberfläche für </span> Insight Server <span class="keyword"> </span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
