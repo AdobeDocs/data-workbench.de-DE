@@ -1,16 +1,19 @@
 ---
 description: Vertrauenslegenden helfen Ihnen, die Wahrscheinlichkeit zu ermitteln, dass die Zahlen, die Sie sehen, zufällig sind, und die möglichen Abweichungen in den Daten zu verstehen.
 solution: Analytics
-title: Vertrauenslegenden
+title: Konfidenzlegenden
 topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
 
-# Vertrauenslegenden{#confidence-legends}
+# Konfidenzlegenden{#confidence-legends}
 
 Vertrauenslegenden helfen Ihnen, die Wahrscheinlichkeit zu ermitteln, dass die Zahlen, die Sie sehen, zufällig sind, und die möglichen Abweichungen in den Daten zu verstehen.
 
@@ -32,15 +35,15 @@ Die folgende Konfidenzlegende enthält Konfidenzdetails zur Konversionsmetrik, w
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Metrik oder Formel </p> </td> 
-   <td colname="col2"> <p>Der Metrikname oder Metrikausdruck, für den Sie Konfidenzinformationen anzeigen möchten. Jede Auswahl, die Sie in Ihrem Arbeitsbereich treffen, wird in der Legende widergespiegelt. In diesem Beispiel werden Details zur Konversionsmetrik angezeigt. </p> <p>Weitere Informationen zu Syntaxregeln für die Eingabe eines Ausdrucks finden Sie unter <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> Syntax</a>der Abfragesprache. </p> </td> 
+   <td colname="col2"> <p>Der Metrikname oder Metrikname, für den Sie Konfidenzinformationen Ansicht haben möchten. Jede Auswahl, die Sie in Ihrem Arbeitsbereich treffen, wird in der Legende widergespiegelt. In diesem Beispiel werden Details zur Konversionsmetrik angezeigt. </p> <p>Weitere Informationen zu Syntaxregeln für die Eingabe eines Ausdrucks finden Sie unter <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> Syntax</a>der Abfrage. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Gemessener Wert </p> </td> 
-   <td colname="col2"> <p>Der Wert der tatsächlich erfassten Daten. In diesem Beispiel beträgt die Konversionsrate für die aktuelle Auswahl 2,3 %. </p> </td> 
+   <td colname="col2"> <p>Der Wert der tatsächlich erfassten Daten. In diesem Beispiel beträgt der Konversionsrate für die aktuelle Auswahl 2,3 %. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Standardabweichung </p> </td> 
-   <td colname="col2"> <p>Die Standardabweichung des gemessenen Werts. In diesem Beispiel beträgt die Standardabweichung der Konversionsrate für die aktuelle Auswahl 0,1 %. </p> </td> 
+   <td colname="col2"> <p>Die Standardabweichung des gemessenen Werts. In diesem Beispiel beträgt die Standardabweichung des Konversionsraten für die aktuelle Auswahl 0,1 %. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Der Wert "true" </p> </td> 
@@ -51,17 +54,18 @@ Die folgende Konfidenzlegende enthält Konfidenzdetails zur Konversionsmetrik, w
 
 >[!NOTE]
 >
->Bei der Analyse der Ergebnisse von Berechnungen müssen die folgenden Einschränkungen berücksichtigt werden: >
+>Bei der Analyse der Ergebnisse von Berechnungen müssen die folgenden Einschränkungen berücksichtigt werden:
 >* Die Zahlen sind Schätzungen. Wenn Sie dieselben Berechnungen mit einem anderen Datensatz wiederholen, erhalten Sie ein anderes Ergebnis. Dies wird als zufällige Variation bezeichnet.
 >* Extrapolationen auf höhere Wahrscheinlichkeiten hängen von einer Annahme der Normalität ab, die nicht für alle Metriken korrekt ist. Daher sind die Werte für die 99%ige Wahrscheinlichkeit weniger zuverlässig als die Werte für die 90%ige Wahrscheinlichkeit.
+
 >
 >
 Wenn Sie genauere Zahlen benötigen, sollten Sie sich an einen Experten für Statistik wenden.
 
 ## Metriken oder Formeln ändern {#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* Klicken Sie in der Konfidenzlegende in das **[!UICONTROL Metric or Formula]** Feld und geben Sie die gewünschte Metrik oder den gewünschten Ausdruck ein. Weitere Informationen zu Ausdruckssyntaxregeln finden Sie unter [Abfragesprachsyntax](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+* Klicken Sie in der Konfidenzlegende auf das **[!UICONTROL Metric or Formula]** Feld und geben Sie die gewünschte Metrik oder den gewünschten Ausdruck ein. Informationen zu Ausdruck-Syntaxregeln finden Sie unter [Abfrage-Sprachsyntax](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
-## Nach Microsoft Excel exportieren {#section-f36e2db7273740b7af278f8a2b79d564}
+## Exportieren in Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
 Informationen zum Exportieren von Fenstern finden Sie unter [Exportieren von Fensterdaten](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
