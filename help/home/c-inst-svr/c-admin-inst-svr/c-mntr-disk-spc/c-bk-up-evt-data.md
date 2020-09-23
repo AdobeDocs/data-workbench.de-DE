@@ -1,17 +1,20 @@
 ---
-description: Ereignisdaten müssen täglich mit den normalen Backup- und Disaster Recovery-Verfahren Ihres Unternehmens gesichert werden.
-solution: Insight
+description: Ereignis-Daten müssen täglich mit den normalen Backup- und Disaster Recovery-Verfahren Ihrer Firma gesichert werden.
+solution: Analytics
 title: Sichern von Ereignisdaten
 uuid: 1b9e5dfe-0bf2-4ee9-bf70-1dd320a678d6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 5%
 
 ---
 
 
 # Sichern von Ereignisdaten{#backing-up-event-data}
 
-Ereignisdaten müssen täglich mit den normalen Backup- und Disaster Recovery-Verfahren Ihres Unternehmens gesichert werden.
+Ereignis-Daten müssen täglich mit den normalen Backup- und Disaster Recovery-Verfahren Ihrer Firma gesichert werden.
 
 **Empfohlene Häufigkeit:** Täglich
 
@@ -21,4 +24,4 @@ Ereignisdaten müssen täglich mit den normalen Backup- und Disaster Recovery-Ve
 
 **Empfohlene Häufigkeit:** Täglich
 
-Integration, Betriebssystem, Ausgabe und Systemdaten müssen regelmäßig und sorgfältig mit den normalen Backup- und Disaster Recovery-Systemen Ihres Unternehmens gesichert werden.
+Integration-, Betriebssystem-, Ausgabe- und Systemdaten müssen regelmäßig und sorgfältig mit den normalen Backup- und Disaster Recovery-Systemen Ihrer Firma gesichert werden.
