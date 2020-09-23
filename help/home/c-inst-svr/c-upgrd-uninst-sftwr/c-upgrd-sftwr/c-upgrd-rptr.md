@@ -1,15 +1,18 @@
 ---
 description: Anweisungen zum Aktualisieren von Repeater mit Insight oder zum Aktualisieren durch Kopieren von Dateien.
-solution: Insight
-title: Verstärker aktualisieren
+solution: Analytics
+title: Upgrade von Repeater
 uuid: 2027ed9e-9dd9-40f5-b7e9-2709f8745b5c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
 
 
-# Verstärker aktualisieren{#upgrading-repeater}
+# Upgrade von Repeater{#upgrading-repeater}
 
 Anweisungen zum Aktualisieren von Repeater mit Insight oder zum Aktualisieren durch Kopieren von Dateien.
 
@@ -38,7 +41,7 @@ Sie können eine der folgenden Methoden verwenden, um eine Aktualisierung [!DNL 
 
 >[!NOTE]
 >
->Wenn Sie zum Abschluss des [!DNL Repeater] Upgrades zusätzliche Dateien hochladen müssen, stellt Adobe entsprechende Anweisungen bereit.
+>Wenn Sie zusätzliche Dateien hochladen müssen, um Ihre [!DNL Repeater] Aktualisierung abzuschließen, gibt Adobe entsprechende Anweisungen.
 
 Nachdem Sie die Aktualisierungsdateien auf den [!DNL Repeater] Computer hochgeladen haben, wird [!DNL Repeater] automatisch ein Neustart durchgeführt und die neue Version wird geladen.
 
@@ -50,6 +53,6 @@ Nachdem Sie die Aktualisierungsdateien auf den [!DNL Repeater] Computer hochgela
 
 >[!NOTE]
 >
->Wenn Sie zum Abschluss des [!DNL Insight Server] Upgrades zusätzliche Dateien hochladen müssen, stellt Adobe entsprechende Anweisungen bereit.
+>Wenn Sie zusätzliche Dateien hochladen müssen, um Ihre [!DNL Insight Server] Aktualisierung abzuschließen, gibt Adobe entsprechende Anweisungen.
 
 Nachdem Sie die Aktualisierungsdateien auf den [!DNL Repeater] Computer kopiert haben, wird [!DNL Repeater] automatisch ein Neustart durchgeführt und die neue Version wird geladen.
