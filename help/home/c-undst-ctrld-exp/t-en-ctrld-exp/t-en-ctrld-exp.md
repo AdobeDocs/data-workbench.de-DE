@@ -1,16 +1,19 @@
 ---
 description: Um eine kontrollierte Experimentierung zu aktivieren, muss jemand mit Administratorzugriff auf Ihre Web- oder Anwendungsserver den Parameter ExpFile in der Konfigurationsdatei des Sensors (gewöhnlich mit txlogd.conf benannt) auf jedem Web- oder Anwendungsserver im Webcluster, auf dem ein Sensor installiert ist, ändern.
-solution: Insight,Analytics
-title: Aktivieren der kontrollierten Experimentierung
+solution: Analytics,Analytics
+title: Ermöglichen gesteuerter Experimente
 topic: Data workbench
 uuid: 27d68fad-ae2d-4a2e-b449-fbaf88286cfa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 2%
 
 ---
 
 
-# Aktivieren der kontrollierten Experimentierung{#enabling-controlled-experimentation}
+# Ermöglichen gesteuerter Experimente{#enabling-controlled-experimentation}
 
 Um eine kontrollierte Experimentierung zu aktivieren, muss jemand mit Administratorzugriff auf Ihre Web- oder Anwendungsserver den Parameter ExpFile in der Konfigurationsdatei des Sensors (gewöhnlich mit txlogd.conf benannt) auf jedem Web- oder Anwendungsserver im Webcluster, auf dem ein Sensor installiert ist, ändern.
 
