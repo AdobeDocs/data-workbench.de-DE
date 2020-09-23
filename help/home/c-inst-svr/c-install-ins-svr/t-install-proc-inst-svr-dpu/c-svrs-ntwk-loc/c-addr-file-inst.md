@@ -1,15 +1,18 @@
 ---
 description: Die auf Insight Server installierte Adressdatei enthält vier vordefinierte Netzwerkspeicherorte.
-solution: Insight
-title: Die auf dem Insight-Server installierte Adressdatei
+solution: Analytics
+title: Auf Insight Server installierte Adressdatei
 uuid: a58d36d8-e1a3-43e7-91c5-c57351e1be49
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 2%
 
 ---
 
 
-# Die auf dem Insight-Server installierte Adressdatei{#the-address-file-installed-on-insight-server}
+# Auf Insight Server installierte Adressdatei{#the-address-file-installed-on-insight-server}
 
 Die auf Insight Server installierte Adressdatei enthält vier vordefinierte Netzwerkspeicherorte.
 
@@ -71,7 +74,7 @@ Im folgenden Verfahren wird beschrieben, wie Sie die Adressdatei konfigurieren, 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Für diesen Wert... </th> 
-   <th colname="col2" class="entry"> Legen Sie </th> 
+   <th colname="col2" class="entry"> Legen Sie  </th> 
   </tr> 
  </thead>
  <tbody> 
