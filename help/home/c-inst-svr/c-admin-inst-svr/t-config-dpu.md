@@ -1,19 +1,22 @@
 ---
 description: Die DPU-Konfigurationsdatei DPU.cfg gibt verschiedene Leistungsparameter für Insight Server an.
-solution: Insight
-title: DPU.cfg konfigurieren
+solution: Analytics
+title: Konfigurieren der Datei „DPU.cfg“
 uuid: c348622b-7d4b-4cfa-a8f8-a07d91e440d5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 1%
 
 ---
 
 
-# DPU.cfg konfigurieren{#configuring-dpu-cfg}
+# Konfigurieren der Datei „DPU.cfg“{#configuring-dpu-cfg}
 
 Die DPU-Konfigurationsdatei DPU.cfg gibt verschiedene Leistungsparameter für Insight Server an.
 
-Wie Sie diese Parameter einstellen, hängt von Ihrer Datensatzgröße und vielen anderen Faktoren ab. Wenden Sie sich an Adobe Consulting Services, um Hilfe zur Leistungsoptimierung zu erhalten.
+Wie Sie diese Parameter einstellen, hängt von Ihrer Datensatzgröße und vielen anderen Faktoren ab. Wenden Sie sich an Adobe Consulting Services, um Hilfe bei der Leistungsoptimierung zu erhalten.
 
 **Empfohlene Häufigkeit:** Nur bei Bedarf
 
@@ -21,15 +24,15 @@ Wie Sie diese Parameter einstellen, hängt von Ihrer Datensatzgröße und vielen
 
 1. Klicken Sie [!DNL Insight]auf der Registerkarte [!DNL Admin] > [!DNL Dataset and Profile] auf die **[!UICONTROL Servers Manager]** Miniaturansicht, um den Arbeitsbereich &quot;Server Manager&quot;zu öffnen.
 1. Klicken Sie mit der rechten Maustaste auf das Symbol des zu konfigurierenden [!DNL Insight Server] Objekts und klicken Sie auf **[!UICONTROL Server Files]**.
-1. Klicken Sie im [!DNL Server Files Manager]Fenster auf **[!UICONTROL Components]** , um den Inhalt anzuzeigen. Die [!DNL DPU.cfg] Datei befindet sich in diesem Ordner.
+1. Klicken Sie im [!DNL Server Files Manager]Fenster auf , **[!UICONTROL Components]** um den Inhalt der Datei Ansicht. Die [!DNL DPU.cfg] Datei befindet sich in diesem Ordner.
 1. Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte *Servername* für [!DNL DPU.cfg] und klicken Sie auf **[!UICONTROL Make Local]**. In der [!DNL Temp] Spalte für wird ein Häkchen angezeigt [!DNL DPU.cfg].
 1. Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen in der [!DNL Temp] Spalte und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
-1. Klicken Sie im [!DNL DPU.cfg] Fenster auf Komponente, um deren Inhalt anzuzeigen.
+1. Klicken Sie im [!DNL DPU.cfg] Fenster auf &quot;component&quot;, um den Inhalt der Komponente Ansicht.
 1. Ändern Sie bei Bedarf die Leistungs- und Pfadeinstellungen. Eine Liste der in dieser Datei verfügbaren Parameter finden Sie unter [DPU-Leistungseinstellungen](../../../home/c-inst-svr/c-cfg-stgs-ref/c-dpu-perf-stgs.md#concept-477c4c526de44bda84176e62266c3df1).
 
    >[!NOTE]
    >
-   >Bitte wenden Sie sich an Adobe, bevor Sie die Parameter in dieser Datei ändern.
+   >Bitte wenden Sie sich an die Adobe, bevor Sie einen der Parameter in dieser Datei ändern.
 
    ![](assets/cfg_DPU_egvalues.png)
 
