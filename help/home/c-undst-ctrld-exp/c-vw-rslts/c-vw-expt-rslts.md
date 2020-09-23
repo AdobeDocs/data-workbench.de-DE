@@ -1,22 +1,25 @@
 ---
-description: Nachdem Sie das neue Feld der Datei "Log Processing.cfg"hinzugefügt und die neue Split-Transformation und die erweiterte Dimension erstellt haben, können Sie die neue erweiterte Dimension anzeigen, die Sie erstellt haben, sobald die Phase der schnellen Eingabe der Datenverarbeitung abgeschlossen ist.
-solution: Insight,Analytics
-title: Ansicht der Experimentergebnisse
+description: Nachdem Sie das neue Feld der Datei "Log Processing.cfg"hinzugefügt und die neue Split-Transformation und die erweiterte Dimension erstellt haben, können Sie die neue erweiterte Dimension, die Sie erstellt haben, nach Abschluss der Verarbeitung der schnellen Eingabe Ansicht haben.
+solution: Analytics,Analytics
+title: Einsehen der Ergebnisse des Experiments
 topic: Data workbench
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 4%
 
 ---
 
 
-# Ansicht der Experimentergebnisse{#viewing-the-experiment-results}
+# Einsehen der Ergebnisse des Experiments{#viewing-the-experiment-results}
 
-Nachdem Sie das neue Feld der Datei &quot;Log Processing.cfg&quot;hinzugefügt und die neue Split-Transformation und die erweiterte Dimension erstellt haben, können Sie die neue erweiterte Dimension anzeigen, die Sie erstellt haben, sobald die Phase der schnellen Eingabe der Datenverarbeitung abgeschlossen ist.
+Nachdem Sie das neue Feld der Datei &quot;Log Processing.cfg&quot;hinzugefügt und die neue Split-Transformation und die erweiterte Dimension erstellt haben, können Sie die neue erweiterte Dimension, die Sie erstellt haben, nach Abschluss der Verarbeitung der schnellen Eingabe Ansicht haben.
 
 Diese Dimension zeigt standardmäßig die Anzahl der Sitzungen für jede Ihrer Experimentgruppen an.
 
-**So zeigen Sie die Experimentdimension an**
+**So Ansicht Sie die Experimentdimension**
 
 * Öffnen Sie in einem beliebigen Arbeitsbereich in [!DNL Insight]einer Tabelle die Experimentdimension, die Sie erstellt haben.
 
