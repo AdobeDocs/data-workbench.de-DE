@@ -1,15 +1,18 @@
 ---
 description: Informationen zur allgemeinen Konfiguration des Sensors mit einer Webserverinstanz, die auf einem Webserver ausgeführt wird.
-solution: Insight
-title: Arbeiten mit mehreren Instanzen eines Webservers
+solution: Analytics
+title: Arbeiten mit mehreren Instanzen eines Web-Servers
 uuid: 778ea95f-e0f2-4c2a-b7ed-7e323fea1e48
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 5%
 
 ---
 
 
-# Arbeiten mit mehreren Instanzen eines Webservers{#working-with-multiple-instances-of-a-web-server}
+# Arbeiten mit mehreren Instanzen eines Web-Servers{#working-with-multiple-instances-of-a-web-server}
 
 Informationen zur allgemeinen Konfiguration des Sensors mit einer Webserverinstanz, die auf einem Webserver ausgeführt wird.
 
@@ -27,9 +30,9 @@ Wenn Sie auf einem Webserver installiert [!DNL Sensor] sind, auf dem mehrere Sam
 
    Dadurch können Sie jede Webserverinstanz eindeutig identifizieren. Mit anderen Worten, die Identifizierung des Webservers (und der entsprechenden SensorID in der [!DNL Sensor] Konfiguration) ist eine Funktion dieser Konfiguration.
 
-In jedem Fall verfügen die Daten immer noch über alle Hostnameninformationen, sodass Sie zwischen [!DNL www.client.com], [!DNL www2.client.com]usw. unterscheiden können. Die richtige Konfiguration wird durch die Analyseziele bestimmt und ob die Analysten die Daten basierend auf einer bestimmten Instanz auf einem Webserver segmentieren müssen.
+In jedem Fall verfügen die Daten immer noch über alle Hostnameninformationen, sodass Sie zwischen [!DNL www.client.com], [!DNL www2.client.com]usw. unterscheiden können. Die richtige Konfiguration wird durch die Analyse von Zielen bestimmt und ob die Analysten die Daten basierend auf einer bestimmten Instanz auf einem Webserver segmentieren müssen.
 
 >[!NOTE]
 >
->Diese Art der Segmentierung wird in der Regel nur in der operativen Analyse verwendet und bietet außerhalb dieses Bereichs keinen großen praktischen Nutzen.
+>Diese Art der Segmentierung wird in der Regel nur in der betrieblichen Analyse verwendet und bietet außerhalb dieses Bereichs keinen großen praktischen Nutzen.
 
