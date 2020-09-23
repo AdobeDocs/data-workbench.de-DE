@@ -1,15 +1,18 @@
 ---
 description: Wenn Clients einen Insight-Server über mehrere Netzwerke erreichen können (z. B. über das firmeninterne Intranet und das Internet), muss die Adressdatei einen separaten Netzwerkspeicherort für jede IP-Adresse des Servers definieren.
-solution: Insight
-title: Mehrere IP-Adressen für einen Insight-Server
+solution: Analytics
+title: Mehrere IP-Adressen für einen Insight Server
 uuid: 6ed00b47-8ba3-4127-a5db-7e684e573d9c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
 
-# Mehrere IP-Adressen für einen Insight-Server{#multiple-ip-addresses-for-an-insight-server}
+# Mehrere IP-Adressen für einen Insight Server{#multiple-ip-addresses-for-an-insight-server}
 
 Wenn Clients einen Insight-Server über mehrere Netzwerke erreichen können (z. B. über das firmeninterne Intranet und das Internet), muss die Adressdatei einen separaten Netzwerkspeicherort für jede IP-Adresse des Servers definieren.
 
