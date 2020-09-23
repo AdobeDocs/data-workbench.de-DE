@@ -1,24 +1,27 @@
 ---
-description: Nachdem Sie das Experiment durchgeführt haben, bis die erforderliche Mindestanzahl von Besuchern an dem Experiment teilgenommen hat, können Sie sich auf ausreichende statistische Sicherheit verlassen, um die Ergebnisse Ihres Experiments zu bewerten.
-solution: Insight,Analytics
-title: Experiment bewerten
+description: Nachdem Sie das Experiment durchgeführt haben, bis die erforderliche Mindestanzahl von Besuchern an dem Experiment teilgenommen hat, können Sie sich sicher sein, dass die Ergebnisse Ihres Experiments ausreichend statistisch zuverlässig sind.
+solution: Analytics,Analytics
+title: Auswerten des Experiments
 topic: Data workbench
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 1%
 
 ---
 
 
-# Experiment bewerten{#evaluating-the-experiment}
+# Auswerten des Experiments{#evaluating-the-experiment}
 
-Nachdem Sie das Experiment durchgeführt haben, bis die erforderliche Mindestanzahl von Besuchern an dem Experiment teilgenommen hat, können Sie sich auf ausreichende statistische Sicherheit verlassen, um die Ergebnisse Ihres Experiments zu bewerten.
+Nachdem Sie das Experiment durchgeführt haben, bis die erforderliche Mindestanzahl von Besuchern an dem Experiment teilgenommen hat, können Sie sich sicher sein, dass die Ergebnisse Ihres Experiments ausreichend statistisch zuverlässig sind.
 
-Vergleichen Sie anhand [!DNL Insight]dieser Daten, welche Metriken oder wichtigen Leistungsindikatoren als Teil der Hypothese definiert wurden, um festzustellen, ob das Experiment ein Erfolg war (d. h. die Hypothese wurde mit der angegebenen Konfidenz validiert).
+Vergleichen Sie [!DNL Insight]anhand dieser Methode die Metriken oder wichtigen Leistungsindikatoren, die als Teil der Hypothese definiert wurden, um festzustellen, ob das Experiment ein Erfolg war (d. h. die Hypothese wurde mit der angegebenen Konfidenz validiert).
 
-In unserem Beispielexperiment ist unsere Hypothese korrekt, wenn die Besucherumrechnung um mindestens 1,5 % zunimmt. Dies ist das Erfolgskriterium, das wir zuvor definiert haben.
+In unserem Beispielversuch ist unsere Hypothese als richtig erwiesen, wenn die Besucher-Umrechnung um mindestens 1,5 % zunimmt, was das Erfolgskriterium ist, das wir zuvor definiert haben.
 
-Das folgende Arbeitsbereichsbeispiel zeigt, dass die Konvertierung für die Index2-Testgruppe tatsächlich 1,8 % höher war als für die Kontrollgruppe, was unsere Hypothese bestätigt.
+Das folgende Arbeitsbereichsbeispiel zeigt, dass die Konvertierung für die Index2-Testgruppe tatsächlich 1,8 % höher war als für die Kontrollgruppe, was unsere Hypothese beweist.
 
 ![](assets/experimentresults.png)
 
@@ -36,10 +39,10 @@ Anschließend können Sie Ihre Berichte wie im folgenden Beispiel verwenden, um 
 
 ## Maßnahmen auf der Grundlage der Ergebnisse {#section-1623e26ced524fd9beab48ac1f9165d9}
 
-Sobald die Ergebnisse klar sind, können Sie auf diese Ergebnisse reagieren, indem Sie Änderungen auf Produktionsebene an den getesteten Seiten vornehmen, diese Änderungen auf andere Bereiche Ihrer Website anwenden und sicherstellen, dass der Test, seine Ergebnisse und die vorgenommenen Änderungen vollständig dokumentiert werden.
+Sobald die Ergebnisse klar sind, können Sie auf diese Ergebnisse reagieren, indem Sie Änderungen auf Produktionsebene an den getesteten Seiten vornehmen, diese Änderungen auf andere Bereiche Ihrer Website anwenden und sicherstellen, dass der Test, seine Ergebnisse und die vorgenommenen Änderungen vollständig Dokument werden.
 
 ## Aktionen überwachen {#section-1954311950c34637800cbd7c0711983f}
 
-Nachdem das kontrollierte Experiment abgeschlossen ist und Sie die entsprechenden Änderungen implementiert haben, stellen Sie sicher, dass Sie die Änderungen, die Sie vorgenommen haben, weiterhin überwachen, z. B. durch Anzeigen von Überprüfungsmetriken, Erstellen von Kontrolldiagrammen und Bereitstellen von Dashboard-Metriken.
+Nachdem das kontrollierte Experiment abgeschlossen ist und Sie die entsprechenden Änderungen implementiert haben, stellen Sie sicher, dass Sie die vorgenommenen Änderungen weiterhin überwachen, z. B. durch Anzeigen von Überprüfungsmetriken, Erstellen von Kontrolldiagrammen und Bereitstellen von Dashboard-Metriken.
 
-Seien Sie stets darauf vorbereitet, Ihre Hypothese erneut zu testen, wenn Sie der Meinung sind, dass die Änderungen, die Sie getestet und vorgenommen haben, nicht die ursprünglichen Ergebnisse widerspiegeln.
+Seien Sie stets darauf vorbereitet, Ihre Hypothese erneut zu testen, wenn Sie der Meinung sind, dass die von Ihnen getesteten und vorgenommenen Änderungen die Originalergebnisse nicht widerspiegeln.
