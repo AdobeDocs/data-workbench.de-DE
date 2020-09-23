@@ -1,16 +1,19 @@
 ---
 description: 'null'
-solution: Insight,Analytics
-title: Was sind die Anforderungen?
+solution: Analytics,Analytics
+title: Welche Voraussetzungen müssen erfüllt sein?
 topic: Data workbench
 uuid: c76ebf2b-4040-4ac4-b69f-3ce87bfb78f1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '87'
+ht-degree: 10%
 
 ---
 
 
-# Was sind die Anforderungen?{#what-are-the-requirements}
+# Welche Voraussetzungen müssen erfüllt sein?{#what-are-the-requirements}
 
 Um auf Ihrer Website ein kontrolliertes Experiment mit Site durchführen zu können, müssen Sie die folgenden Anforderungen erfüllen:
 
