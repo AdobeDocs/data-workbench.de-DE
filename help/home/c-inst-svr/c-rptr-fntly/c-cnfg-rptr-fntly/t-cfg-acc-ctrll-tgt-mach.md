@@ -1,10 +1,10 @@
 ---
 description: Zielgruppe Insight Server-Computer, auf denen der Insight Server Replication Service ausgeführt wird, müssen die Protokolldateien auf diesem Repeater-Server lesen können.
-solution: Insight
+solution: Analytics
 title: Konfigurieren der Zugangssteuerung für Target-Maschinen
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
 translation-type: tm+mt
-source-git-commit: 0276701151d1403926ce184069526ebdf3e28e36
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 6%
