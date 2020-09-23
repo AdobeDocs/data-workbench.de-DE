@@ -1,11 +1,14 @@
 ---
 description: Nachdem Sie das Experiment bereitgestellt haben, sollten Sie überprüfen, ob das Experiment ordnungsgemäß funktioniert.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Validieren des Experiments
 topic: Data workbench
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +27,7 @@ Um eine bestimmte Experimentgruppe für Ihre Website zu testen, muss Ihr Browser
 
 Achten Sie bei jedem Test einer neuen Gruppe darauf, die Cookies für die Website zu löschen.
 
-Um sich in einer bestimmten Gruppe innerhalb eines bestimmten Experiments zu platzieren, fordern Sie die Testseite mit einer Abfragezeichenfolge in folgendem Formular an:
+Um sich in einer bestimmten Gruppe innerhalb eines bestimmten Experiments zu platzieren, fordern Sie die Testseite mit einer Abfrage-Zeichenfolge in folgendem Formular an:
 
 [!DNL http://] *&lt;[!DNL sitename/?Experiment Name=Group Name]>*
 
@@ -34,11 +37,11 @@ Beispiel:
 
 Wenn die virtuelle URL-Anforderung an den Server gesendet wird, [!DNL Sensor] identifiziert Sie im angegebenen Experiment als Mitglied der angegebenen Gruppe und leitet Sie dann zum Stammordner der Website weiter. Sie können nun zum entsprechenden Speicherort auf der Website navigieren, um zu überprüfen, ob der richtige Inhalt für dieses Experiment und diese Gruppe angezeigt wird.
 
-Wenn Sie Folgendes in Ihren Browser eingeben, zeigt der Browser die Homepage der Website an und platziert Sie in der Gruppe &quot;index2&quot;im Experiment &quot;New_Homepage&quot;:
+Wenn Sie Folgendes in Ihren Browser eingeben, zeigt der Browser die Startseite der Website an und platziert Sie im Experiment &quot;New_Homepage&quot;in die Gruppe &quot;index2&quot;:
 
 [!DNL http://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
-Wenn Besucher der Gruppe &quot;index2&quot;die Homepage anfordern, wird der grafische Link &quot;Anforderung einer Demo&quot;höher auf der Seite angezeigt, wie in der folgenden Grafik:
+Wenn Besucher der Gruppe &quot;index2&quot;die Startseite anfordern, wird der grafische Link &quot;Anforderung einer Demo&quot;höher auf der Seite angezeigt, wie in der folgenden Grafik:
 
 ![](assets/TestPage.png)
 
