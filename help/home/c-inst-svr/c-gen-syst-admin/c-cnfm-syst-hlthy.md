@@ -1,17 +1,20 @@
 ---
-description: Sie müssen sicherstellen, dass die Computer, auf denen Adobe-Serverprodukte installiert sind, die im Dokument mit den Mindestsystemanforderungen festgelegten Mindestsystemanforderungen erfüllen.
-solution: Insight
-title: Überprüfen, ob Ihre Systeme gesund sind
+description: Sie müssen sicherstellen, dass die Computer, auf denen Serverprodukte der Adobe installiert sind, die im Dokument Systemanforderungen festgelegten Mindestsystemanforderungen erfüllen.
+solution: Analytics
+title: Prüfen des Zustands der Systeme
 uuid: 6d132865-36ab-40fc-be24-e031f356fce2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 5%
 
 ---
 
 
-# Überprüfen, ob Ihre Systeme gesund sind{#confirming-your-systems-are-healthy}
+# Prüfen des Zustands der Systeme{#confirming-your-systems-are-healthy}
 
-Sie müssen sicherstellen, dass die Computer, auf denen Adobe-Serverprodukte installiert sind, die im Dokument mit den Mindestsystemanforderungen festgelegten Mindestsystemanforderungen erfüllen.
+Sie müssen sicherstellen, dass die Computer, auf denen Serverprodukte der Adobe installiert sind, die im Dokument Systemanforderungen festgelegten Mindestsystemanforderungen erfüllen.
 
 **Empfohlene Häufigkeit:** Alle 5-10 Minuten
 
@@ -27,4 +30,4 @@ Sie müssen außerdem Ihre Systeme nach den Best Practices für den Betrieb der 
 
 Adobe empfiehlt, dass Sie Ihr Verwaltungstool so konfigurieren, dass Administratoren benachrichtigt werden, wenn ein Systemparameter auf einem Servercomputer den von Ihnen festgelegten Schwellenwert überschreitet.
 
-Für [!DNL Insight Server] Computer empfiehlt Adobe außerdem, dass Sie jede Konfiguration so konfigurieren, dass angegeben wird, wann der von Ihnen festgelegte Mindestspeicherplatz erreicht [!DNL Insight Server] wird. Weitere Informationen zu diesen Warnungen finden Sie unter [Konfigurieren von Administratorwarnungen](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa).
+Bei [!DNL Insight Server] Computern empfiehlt Adobe außerdem, dass Sie jede Konfiguration so konfigurieren, dass angegeben wird, wann der von Ihnen festgelegte Mindestspeicherplatz erreicht [!DNL Insight Server] wird. Weitere Informationen zu diesen Warnungen finden Sie unter [Konfigurieren von Administratorwarnungen](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa).
