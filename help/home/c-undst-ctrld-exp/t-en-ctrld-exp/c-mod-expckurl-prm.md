@@ -1,16 +1,19 @@
 ---
 description: Mit dem Parameter ExpCookieURL können Sie testen, ob Ihr kontrolliertes Experiment ordnungsgemäß funktioniert.
-solution: Insight,Analytics
-title: Ändern des ExpCookieURL-Parameters (optional)
+solution: Analytics,Analytics
+title: Bearbeiten des ExpCookieURL-Parameters (optional)
 topic: Data workbench
 uuid: 0c160c26-f9de-4e41-a05d-bf7bb32395bb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 6%
 
 ---
 
 
-# Ändern des ExpCookieURL-Parameters (optional){#modifying-the-expcookieurl-paramter-optional}
+# Bearbeiten des ExpCookieURL-Parameters (optional){#modifying-the-expcookieurl-paramter-optional}
 
 Mit dem Parameter ExpCookieURL können Sie testen, ob Ihr kontrolliertes Experiment ordnungsgemäß funktioniert.
 
