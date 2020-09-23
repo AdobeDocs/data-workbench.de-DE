@@ -1,18 +1,21 @@
 ---
-description: Nachdem das Feld "x-experiment"verfügbar ist, müssen Sie eine erweiterte Dimension erstellen, um das Feld "x-experiment"in Ihr Dataset einzuschließen, sodass Sie Ihre Ergebnisse in Insight anzeigen können.
-solution: Insight,Analytics
-title: Ändern von "Transformation.cfg"
+description: Nachdem das Feld "x-experiment"verfügbar ist, müssen Sie eine erweiterte Dimension erstellen, um das Feld "x-experiment"in Ihr Dataset einzuschließen, sodass Sie Ihre Ergebnisse in Insight Ansicht haben.
+solution: Analytics,Analytics
+title: Bearbeiten der Datei „Transformation.cfg“
 topic: Data workbench
 uuid: c17e48db-8fd9-4640-b621-6963bb8223d7
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 2%
 
 ---
 
 
-# Ändern von &quot;Transformation.cfg&quot;{#modifying-transformation-cfg}
+# Bearbeiten der Datei „Transformation.cfg“{#modifying-transformation-cfg}
 
-Nachdem das Feld &quot;x-experiment&quot;verfügbar ist, müssen Sie eine erweiterte Dimension erstellen, um das Feld &quot;x-experiment&quot;in Ihr Dataset einzuschließen, sodass Sie Ihre Ergebnisse in Insight anzeigen können.
+Nachdem das Feld &quot;x-experiment&quot;verfügbar ist, müssen Sie eine erweiterte Dimension erstellen, um das Feld &quot;x-experiment&quot;in Ihr Dataset einzuschließen, sodass Sie Ihre Ergebnisse in Insight Ansicht haben.
 
 Dazu müssen Sie der [!DNL Transformation.cfg] Datei eine neue Dimension hinzufügen.
 
@@ -22,7 +25,7 @@ Das folgende Verfahren umfasst die Erstellung der neuen Split-Transformation und
 
 **So ändern Sie Transformation.cfg**
 
-1. Öffnen Sie [!DNL Insight]die Datei, [!DNL Profile Manager] indem Sie mit der rechten Maustaste in einen Arbeitsbereich klicken und auf **[!UICONTROL Admin]** > **[!UICONTROL Profile Manager]** klicken oder indem Sie den Arbeitsbereich &quot;Profilverwaltung&quot;auf der [!DNL Admin] Registerkarte öffnen.
+1. Öffnen Sie [!DNL Insight]das Profil, [!DNL Profile Manager] indem Sie mit der rechten Maustaste in einen Arbeitsbereich klicken und auf **[!UICONTROL Admin]** > **[!UICONTROL Profile Manager]** klicken, oder indem Sie den Arbeitsbereich &quot;-Verwaltung&quot;auf der [!DNL Admin] Registerkarte öffnen.
 1. Klicken Sie im [!DNL Profile Manager]Fenster auf **[!UICONTROL Dataset]** , um den Inhalt anzuzeigen.
 1. Klicken Sie mit der rechten Maustaste auf das Häkchen neben [!DNL Transformation.cfg] und klicken Sie auf **[!UICONTROL Make Local]**. Ein Häkchen für diese Datei wird in der [!DNL User] Spalte angezeigt.
 1. Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Insight]**. Das [!DNL Transformation.cfg] Fenster wird angezeigt.
@@ -48,7 +51,7 @@ Das folgende Verfahren umfasst die Erstellung der neuen Split-Transformation und
 
 
 1. Klicken Sie mit der rechten Maustaste **[!UICONTROL (modified)]** am oberen Rand des Fensters und klicken Sie auf **[!UICONTROL Save]**.
-1. Klicken Sie in der [!DNL Profile Manager]Spalte mit der rechten Maustaste auf das Häkchen [!DNL Transformation.cfg] in der [!DNL User] Spalte und klicken Sie dann auf **[!UICONTROL Save to]** > **[!UICONTROL profile name]** , um die lokal vorgenommenen Änderungen am Arbeitsprofil zu speichern.
+1. Klicken Sie in der [!DNL Profile Manager]Spalte mit der rechten Maustaste auf das Häkchen für [!DNL Transformation.cfg] in der [!DNL User] Spalte und klicken Sie dann auf **[!UICONTROL Save to]** > **[!UICONTROL profile name]** , um die lokal vorgenommenen Änderungen im funktionierenden Profil zu speichern.
 
    >[!NOTE]
    >
