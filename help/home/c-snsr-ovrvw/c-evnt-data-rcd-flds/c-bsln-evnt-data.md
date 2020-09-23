@@ -1,17 +1,20 @@
 ---
-description: Informationen zu Datensatzfeldern zu Basisereignissen, die vom Sensor aufgezeichnet wurden.
-solution: Insight
-title: Felder für Ereignisdatensätze als Basiswert
+description: Informationen über die vom Sensor aufgezeichneten Ereignis-Datensatzfelder zu Basiswerten.
+solution: Analytics
+title: Standardfelder für Ereignisdatensätze
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 3%
 
 ---
 
 
-# Felder für Ereignisdatensätze als Basiswert{#baseline-event-data-record-fields}
+# Standardfelder für Ereignisdatensätze{#baseline-event-data-record-fields}
 
-Informationen zu Datensatzfeldern zu Basisereignissen, die vom Sensor aufgezeichnet wurden.
+Informationen über die vom Sensor aufgezeichneten Ereignis-Datensatzfelder zu Basiswerten.
 
 <table id="table_E29606BB010E4DB48C463979B7BEC769"> 
  <thead> 
@@ -30,8 +33,8 @@ Informationen zu Datensatzfeldern zu Basisereignissen, die vom Sensor aufgezeich
    <td colname="col2"> <p>Die Cookies, die vom Client mit der Anforderung gesendet werden. </p> <p>Beispiel: v1st=42FDF66DE610CF36; ASPSESSIONIDQCATDAQC=GPIBKEIBFBFIPLOJMKCAAMPEG; </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs(referrer) </td> 
-   <td colname="col2"> <p>Die vom Client mit der Anforderung an den Server gesendete HTTP-Referrer-Zeichenfolge. </p> <p>Beispiel: http://www.mysite.net/cgi-bin/websearch?qry </p> <p>Wenn Sie Seiten-Tags verwenden, ist die cs(referrer) die vollständige URL des Dokuments, das das Tag-Bild enthält, einschließlich HTTP oder HTTPs. </p> <p>Außerdem können Sie die Apache- (1.3, 2.0 und 2.2) und IIS-Sensoren so konfigurieren, dass der für die Anforderung verwendete Anschluss erfasst wird, der HTTP- und HTTPS-Anforderungen identifizieren kann. </p> </td> 
+   <td colname="col1"> cs(Werber) </td> 
+   <td colname="col2"> <p>Die HTTP-Werber-Zeichenfolge, die vom Client mit der Anforderung an den Server gesendet wird. </p> <p>Beispiel: http://www.mysite.net/cgi-bin/websearch?qry </p> <p>Wenn Sie Seiten-Tags verwenden, ist der Werber "cs"die vollständige URL des Dokuments, das das Tag-Image enthält, einschließlich HTTP oder HTTPs. </p> <p>Außerdem können Sie die Apache- (1.3, 2.0 und 2.2) und IIS-Sensoren so konfigurieren, dass der für die Anforderung verwendete Anschluss erfasst wird, der HTTP- und HTTPS-Anforderungen identifizieren kann. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
@@ -42,12 +45,12 @@ Informationen zu Datensatzfeldern zu Basisereignissen, die vom Sensor aufgezeich
    <td colname="col2"> <p>Der Methodentyp der HTTP-Anforderung </p> <p>Beispiel: GET </p> <p>Referenz: http://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs-uri-query </td> 
-   <td colname="col2"> <p>Der Abfragezeichenfolgen-Teil des URI (Stamm + Abfragezeichenfolge = URI) </p> <p>Dem wird ein Fragezeichen vorangestellt (?) und kann ein oder mehrere durch kaufmännische Und-Zeichen (&amp;) getrennte Name-Wert-Paare enthalten. </p> <p>Beispiel: page=homepage </p> </td> 
+   <td colname="col1"> cs-uri-Abfrage </td> 
+   <td colname="col2"> <p>Der Abfragen-Zeichenfolgenteil von URI (Stamm + Abfrage-Zeichenfolge = URI) </p> <p>Dem wird ein Fragezeichen vorangestellt (?) und kann ein oder mehrere durch kaufmännische Und-Zeichen (&amp;) getrennte Name-Wert-Paare enthalten. </p> <p>Beispiel: page=homepage </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-stamm </td> 
-   <td colname="col2"> <p>Der Stammteil von URI (Stamm + Abfragezeichenfolge = URI) </p> <p>Der Stamm ist der tatsächliche oder logische Pfad zur angeforderten Ressource auf dem Server. </p> <p>Beispiel: /index.asp </p> </td> 
+   <td colname="col2"> <p>Der Stammteil von URI (Stamm + Abfrage-Zeichenfolge = URI) </p> <p>Der Stamm ist der tatsächliche oder logische Pfad zur angeforderten Ressource auf dem Server. </p> <p>Beispiel: /index.asp </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> sc(content-type) </td> 
@@ -80,4 +83,4 @@ Informationen zu Datensatzfeldern zu Basisereignissen, die vom Sensor aufgezeich
  </tbody> 
 </table>
 
-Die Variable [!DNL data workbench server] kann eine Reihe von Variablen aus den Datensatzfeldern für Basisereignisse ableiten. For more information, see the *Dataset Configuration Guide*.
+Die Variable [!DNL data workbench server] kann eine Reihe von Variablen aus den Datensatzfeldern für Basisdaten des Ereignisses ableiten. For more information, see the *Dataset Configuration Guide*.
