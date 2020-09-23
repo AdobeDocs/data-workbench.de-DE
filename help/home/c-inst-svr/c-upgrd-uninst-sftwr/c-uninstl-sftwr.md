@@ -1,10 +1,13 @@
 ---
 description: Anweisungen zum Deinstallieren von Insight Server, Transform oder Repeater.
-solution: Insight
+solution: Analytics
 title: Deinstallieren der Software
 uuid: 79cf0db6-0f99-40fa-a7b0-38dd8d7246bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 4%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Anweisungen zum Deinstallieren von Insight Server, Transform oder Repeater.
 
-## Deinstallieren von Insight Server Adobe {#section-7d7befe672854df79bb6c28ec02f6670}
+## Deinstallieren der Insight Server-Adobe {#section-7d7befe672854df79bb6c28ec02f6670}
 
 1. Heben Sie die Registrierung des [!DNL Insight Server] Windows-Dienstes auf.
 
@@ -38,7 +41,7 @@ Anweisungen zum Deinstallieren von Insight Server, Transform oder Repeater.
 
    1. Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Insight]**. Das [!DNL profile.cfg] Fenster wird angezeigt.
 
-   1. Löschen Sie im [!DNL profile.cfg] Fenster den [!DNL Transform] Profileintrag aus dem Ordner-Vektor.
+   1. Löschen Sie im [!DNL profile.cfg] Fenster den Eintrag &quot; [!DNL Transform] Profil&quot;im Ordner-Vektor.
 
    1. Klicken Sie mit der rechten Maustaste **[!UICONTROL (modified)]** am oberen Rand des Fensters und klicken Sie auf **[!UICONTROL Save]**.
 
