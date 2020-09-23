@@ -1,23 +1,26 @@
 ---
-description: Wenn ein Webserver aufgrund eines Fehlers offline ist, ist die Lösung eine einfache, die einen Data Workbench-Benutzer mit entsprechenden Berechtigungen erfordert, um die Datei "Log Processing Mode.cfg"zu öffnen und die ID des Sensors (in unserem Beispiel WEB2) zum Abschnitt "Offline-Quellen"hinzuzufügen.
-solution: Insight
+description: Wenn ein Webserver aufgrund eines Fehlers offline ist, ist die Lösung eine einfache Lösung, die einen Data Workbench-Benutzer mit entsprechenden Berechtigungen erfordert, um die Datei "Log Processing Mode.cfg"zu öffnen und die ID des Sensors (in unserem Beispiel WEB2) zum Abschnitt "Offline-Quellen"hinzuzufügen.
+solution: Analytics
 title: Lösung des Problems
 uuid: 19d47b06-be12-4adf-9eac-b16cf7131834
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
 
 
 # Lösung des Problems{#solving-the-problem}
 
-Wenn ein Webserver aufgrund eines Fehlers offline ist, ist die Lösung eine einfache, die einen Data Workbench-Benutzer mit entsprechenden Berechtigungen erfordert, um die Datei &quot;Log Processing Mode.cfg&quot;zu öffnen und die ID des Sensors (in unserem Beispiel WEB2) zum Abschnitt &quot;Offline-Quellen&quot;hinzuzufügen.
+Wenn ein Webserver aufgrund eines Fehlers offline ist, ist die Lösung eine einfache Lösung, die einen Data Workbench-Benutzer mit entsprechenden Berechtigungen erfordert, um die Datei &quot;Log Processing Mode.cfg&quot;zu öffnen und die ID des Sensors (in unserem Beispiel WEB2) zum Abschnitt &quot;Offline-Quellen&quot;hinzuzufügen.
 
 Dieser Abschnitt der Datei teilt dem [!DNL data workbench server] mit, dass keine Daten mehr von dieser Quelle erwartet werden sollten, da sie tatsächlich offline ist.
 
 >[!NOTE]
 >
->Diese Änderung muss nicht von einem Adobe-Berater vorgenommen werden. Jeder, der über die entsprechenden Berechtigungen zum Öffnen der [!DNL Log Processing Mode.cfg] Datei verfügt, kann diese Änderung vornehmen.
+>Diese Änderung muss nicht von einem Adobe Consultant vorgenommen werden. Jeder, der über die entsprechenden Berechtigungen zum Öffnen der [!DNL Log Processing Mode.cfg] Datei verfügt, kann diese Änderung vornehmen.
 
 Wenn WEB2 beginnt, Daten erneut zu senden, [!DNL data workbench server] bringt die Quelle zurück ins Netz und passt die Ausführungszeit an, um das letzte Mal, wenn sie Daten aus allen Quellen erhalten hat, von denen sie Kenntnis hat, widerzuspiegeln. Mit anderen Worten, neue Daten, die in das System eingehen, haben Vorrang vor dem, was in der [!DNL Log Processing Mode.cfg file].
 
