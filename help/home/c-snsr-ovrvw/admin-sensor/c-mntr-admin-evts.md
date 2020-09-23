@@ -1,31 +1,34 @@
 ---
-description: Um Sensorfehler so schnell wie möglich zu erkennen und zu beheben, bevor sie zu größeren Problemen oder Ausfällen führen, sollten Sie Ihre Ereignisprotokolle regelmäßig überwachen.
-solution: Insight
-title: Überwachen von Verwaltungsereignissen
+description: Um Sensorfehler so schnell wie möglich zu erkennen und zu beheben, bevor sie zu größeren Problemen oder Ausfällen führen, sollten Sie Ihre Ereignis-Protokolle regelmäßig überwachen.
+solution: Analytics
+title: Überwachen administrativer Ereignisse
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 1%
 
 ---
 
 
-# Überwachen von Verwaltungsereignissen{#monitoring-administrative-events}
+# Überwachen administrativer Ereignisse{#monitoring-administrative-events}
 
-Um Sensorfehler so schnell wie möglich zu erkennen und zu beheben, bevor sie zu größeren Problemen oder Ausfällen führen, sollten Sie Ihre Ereignisprotokolle regelmäßig überwachen.
+Um Sensorfehler so schnell wie möglich zu erkennen und zu beheben, bevor sie zu größeren Problemen oder Ausfällen führen, sollten Sie Ihre Ereignis-Protokolle regelmäßig überwachen.
 
 **Empfohlene Häufigkeit:** Mindestens stündlich
 
-Sie können diese Ereignisse mithilfe der Windows Event Viewer- oder Unix-Syslog-Datei und der [!DNL *.sensor-log] Dateien überwachen, die sich standardmäßig im [!DNL Logs] Ordner im [!DNL Sensor] Installationsordner befinden. Diese Dateien weisen auf Fehler bei der Datenerfassung hin, insbesondere wenn eine [!DNL Sensor] Verbindung zum Ziel nicht hergestellt werden kann [!DNL data workbench server] und die Datenwarteschlange beginnt.
+Sie können diese Ereignisse mithilfe der Windows Ereignis Viewer- oder Unix-Syslog-Datei und der [!DNL *.sensor-log] Dateien überwachen, die sich standardmäßig im [!DNL Logs] Installationsordner befinden [!DNL Sensor] . Diese Dateien weisen auf Fehler bei der Datenerfassung hin, insbesondere wenn eine Verbindung zur Zielgruppe nicht hergestellt werden kann [!DNL Sensor] [!DNL data workbench server] und Beginn Daten in die Warteschlange stellen.
 
-## Ereignisse unter Windows überwachen {#section-7c0443a356af4381bf22259654f5cd17}
+## Überwachen von Ereignissen unter Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
-Sensor protokolliert Fehler im Anwendungsprotokoll des Windows Event Viewers mit der Quelle &quot;Adobe&quot;.
+Sensor protokolliert Fehler im Anwendungsprotokoll des Windows Ereignis Viewers mit der Quelle &quot;Adobe&quot;.
 
 Nachrichten werden je nach Schweregrad als &quot;Informationen&quot;, &quot;Warnung&quot;oder &quot;Fehler&quot;protokolliert.
 
-**So öffnen Sie die Windows-Ereignisanzeige**:
+**So öffnen Sie den Windows Ereignis Viewer**:
 
-* Klicken Sie auf **Start > Systemsteuerung > Verwaltung > Ereignisanzeige**.
+* Klicken Sie auf **Beginn > Systemsteuerung > Verwaltung > Ereignis-Viewer**.
 
 ## Ereignisse unter Unix überwachen {#section-5de3947891fb47ac88b7c855e545d54a}
 
@@ -55,24 +58,24 @@ Alle Sensormeldungen enthalten die Zeichenfolge &quot;Sensor&quot; und werden nu
 >
 >Warnungen (2xxx) werden derzeit nicht verwendet. Diese Nummern sind für die zukünftige Verwendung reserviert.
 
-Ihr Netzwerk-Management-Tool kann so eingestellt werden, dass Ihre Nachrichten alle 5-10 Minuten auf Fehler mit der &quot;Sensor&quot;-Quelle überwacht werden und entsprechende Mitarbeiter über Probleme warnen, die eine Intervention erfordern könnten. Sie können festlegen, dass das System nur auf bestimmte Arten von Ereignismeldungen wie die Zeichenfolge &quot;Sensorfehler&quot;überwacht wird. Alternativ können Sie unterschiedliche Regeln auf Ereignisse anwenden, denen die Zeichenfolgen &quot;Sensor Info&quot;, &quot;Sensor Warning&quot;und &quot;Sensor Error&quot;vorangestellt sind.
+Ihr Netzwerk-Management-Tool kann so eingestellt werden, dass Ihre Nachrichten alle 5-10 Minuten auf Fehler mit der &quot;Sensor&quot;-Quelle überwacht werden und entsprechende Mitarbeiter über Probleme warnen, die eine Intervention erfordern könnten. Sie können festlegen, dass das System nur auf bestimmte Typen von Ereignis-Meldungen überwacht wird, z. B. die Zeichenfolge &quot;Sensorfehler&quot;. Alternativ können Sie andere Regeln auf Ereignis anwenden, denen die Zeichenfolgen &quot;Sensor Info&quot;, &quot;Sensor Warning&quot;und &quot;Sensor Error&quot;vorangestellt sind.
 
 ## Identifizieren wichtiger Nachrichten {#section-5a20f5dc18ca4012931d194db855e54e}
 
-In Ihren Ereignisprotokollen sollten Sie besonders auf Meldungen zur Warteschlangengröße achten und diese sofort bearbeiten.
+In Ihren Ereignis-Protokollen sollten Sie besonders auf Meldungen bezüglich der Warteschlangengröße achten und diese sofort bearbeiten.
 
 Zum Beispiel brauchen Nachrichten wie &quot; [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot;Aufmerksamkeit.
 
-## Antwort auf Sensor-Ereignismeldungen {#section-0004c4a169dc4a8882d9bd87dd326ad4}
+## Reagieren auf Sensor-Ereignis-Meldungen {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
-Tabellen, die Sensor-Ereignisse und empfohlene Aktionen für die unterstützten Webserverplattformen beschreiben.
+Tabellen, die Sensor-Ereignis und empfohlene Aktionen für die unterstützten Webserverplattformen beschreiben.
 
 **Alle Plattformen**
 
 <table id="table_F8835AC0AD8F43E2B4494D8D35EBC0FD"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Ereignismeldung </th> 
+   <th colname="col1" class="entry"> Ereignis-Nachricht </th> 
    <th colname="col2" class="entry"> Vorgeschlagene Aktion </th> 
   </tr>
  </thead>
@@ -114,7 +117,7 @@ Tabellen, die Sensor-Ereignisse und empfohlene Aktionen für die unterstützten 
    <td colname="col2"> <p>Vergewissern Sie sich, dass die in txlogd.conf angegebene kontrollierte Experimentdatei vorhanden ist und dass der txlogd-Prozess über die erforderlichen Berechtigungen zum Lesen der Datei verfügt. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfehler 3018: Inhaltsfilterlisten können nicht analysiert werden. Überprüfen der Konfigurationsdatei von txlogd </td> 
+   <td colname="col1"> Sensorfehler 3018: Inhaltsfilter-Listen können nicht analysiert werden. Überprüfen der Konfigurationsdatei von txlogd </td> 
    <td colname="col2"> Überprüfen Sie die Syntax der Einträge ContentFilterInclude und ContentFilterExclude in txlogd.conf. </td> 
   </tr> 
   <tr> 
@@ -167,7 +170,7 @@ Tabellen, die Sensor-Ereignisse und empfohlene Aktionen für die unterstützten 
   </tr> 
   <tr> 
    <td colname="col1"> Sensorfehler 5034: Signal empfangen </td> 
-   <td colname="col2"> Das Programm wurde wahrscheinlich durch ein externes Signal beendet. Wenn die Quelle dieses Signals nicht ermittelt werden kann, wenden Sie sich an Adobe ClientCare. </td> 
+   <td colname="col2"> Programm wurde wahrscheinlich durch ein externes Signal beendet. Wenn die Signalquelle nicht ermittelt werden kann, wenden Sie sich an Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sensorfehler 5035: Ausstieg von außen aufgerufen </td> 
@@ -182,7 +185,7 @@ Tabellen, die Sensor-Ereignisse und empfohlene Aktionen für die unterstützten 
 
 **Apache/IBM HTTP Server**
 
-| Ereignismeldung | Vorgeschlagene Aktion |
+| Ereignis-Nachricht | Vorgeschlagene Aktion |
 |---|---|
 | Sensorfehler 3015: Die VisualSciencesConfig-Direktive fehlt in httpd.conf. | Dies ist ein Konfigurationsfehler. Die VisualSciencesConfig-Direktive muss sich in httpd.conf befinden und einen Parameter enthalten, der den Speicherort von txlogd.conf angibt. |
 | Sensorfehler 3019: vys-cookie wurde nicht vor vys-log aufgerufen. Bitte wenden Sie sich an den Support. | Wenden Sie sich an Adobe ClientCare. |
@@ -190,7 +193,7 @@ Tabellen, die Sensor-Ereignisse und empfohlene Aktionen für die unterstützten 
 
 **AOL-Server**
 
-| Ereignismeldung | Vorgeschlagene Aktion |
+| Ereignis-Nachricht | Vorgeschlagene Aktion |
 |---|---|
 | Sensorfehler 3015: Der Abschnitt &quot;ns/server/[server]/module/[module] &quot;fehlt in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
 | Sensorfehler 3019: vys-cookie wurde nicht vor vys-log aufgerufen. Bitte wenden Sie sich an den Support. Wenden Sie sich an Adobe ClientCare. | Bitte wenden Sie sich an den Support. Wenden Sie sich an Adobe ClientCare. |
@@ -199,7 +202,7 @@ Tabellen, die Sensor-Ereignisse und empfohlene Aktionen für die unterstützten 
 
 **iPlanet- und Java-System-Webserver**
 
-| Ereignismeldung | Vorgeschlagene Aktion |
+| Ereignis-Nachricht | Vorgeschlagene Aktion |
 |---|---|
 | Sensorfehler 3011: Init-Richtlinie erforderlich. Beispiel: Init fn=vys-init config-file=&quot;/mypath/myfile&quot; | Dies ist ein Konfigurationsfehler. Die iPlanet Init-Richtlinie fehlt. |
 | Sensorfehler 3015: config-file ist nicht in der iPlanet Init-Direktive angegeben | Dies ist ein Konfigurationsfehler. Der Pfad zur Konfigurationsdatei wurde in der iPlanet Init-Richtlinie nicht angegeben. |
