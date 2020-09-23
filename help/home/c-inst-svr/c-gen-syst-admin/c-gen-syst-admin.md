@@ -1,21 +1,24 @@
 ---
-description: Adobe empfiehlt, dass Sie den allgemeinen Zustand jedes Servers, auf dem ein Adobe-Softwareprodukt installiert ist, regelmäßig verwalten und überwachen.
-solution: Insight
-title: Allgemeine Systemverwaltung
+description: Adobe empfiehlt, dass Sie regelmäßig den allgemeinen Zustand jedes Servers, auf dem ein Adobe-Softwareprodukt installiert ist, verwalten und überwachen.
+solution: Analytics
+title: Allgemeine Systemadministration
 uuid: 36f87f65-3791-41fd-a4fb-b94f7fa32fac
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 5%
 
 ---
 
 
-# Allgemeine Systemverwaltung{#general-systems-administration}
+# Allgemeine Systemadministration{#general-systems-administration}
 
-Adobe empfiehlt, dass Sie den allgemeinen Zustand jedes Servers, auf dem ein Adobe-Softwareprodukt installiert ist, regelmäßig verwalten und überwachen.
+Adobe empfiehlt, dass Sie regelmäßig den allgemeinen Zustand jedes Servers, auf dem ein Adobe-Softwareprodukt installiert ist, verwalten und überwachen.
 
-Allgemeine Empfehlungen und Anweisungen zur Überwachung und Verwaltung aller Adobe-Computer werden bereitgestellt.
+Allgemeine Empfehlungen und Anleitungen zur Überwachung und Verwaltung aller Ihrer Adoben-Maschinen finden Sie hier.
 
-Informationen zur Verwaltung bestimmter Adobe-Softwareprodukte finden Sie in den einzelnen Kapiteln in diesem Handbuch.
+Informationen zur Verwaltung spezifischer Softwareprodukte der Adobe finden Sie in den einzelnen Kapiteln dieses Handbuchs.
 
 >[!NOTE]
 >
