@@ -1,17 +1,20 @@
 ---
-description: Standardmäßig schreibt Insight Server seinen Datensatz (temp.db) auf dasselbe Laufwerk wie die Insight Server-Programmdateien.
-solution: Insight
-title: Speicherort des Datensatzes konfigurieren (temp.db)
+description: Standardmäßig schreibt Insight Server seinen Datensatz (temp.db) auf dasselbe Laufwerk wie die Insight Server-Programm-Dateien.
+solution: Analytics
+title: Konfigurieren des Datensatzstandorts (temp.db)
 uuid: a6884cad-70ed-4bc6-853c-700d301fb178
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 5%
 
 ---
 
 
-# Speicherort des Datensatzes konfigurieren (temp.db){#configuring-the-location-of-the-dataset-temp-db}
+# Konfigurieren des Datensatzstandorts (temp.db){#configuring-the-location-of-the-dataset-temp-db}
 
-Standardmäßig schreibt Insight Server seinen Datensatz (temp.db) auf dasselbe Laufwerk wie die Insight Server-Programmdateien.
+Standardmäßig schreibt Insight Server seinen Datensatz (temp.db) auf dasselbe Laufwerk wie die Insight Server-Programm-Dateien.
 
 Wenn Sie beispielsweise [!DNL Insight Server] auf Laufwerk C installieren, wird der Datensatz in Laufwerk C geschrieben.
 
@@ -47,5 +50,5 @@ Wenn Sie den Datensatz auf einem anderen Laufwerk verwalten möchten oder wenn d
 
    >[!NOTE]
    >
-   >Beachten Sie die Verwendung der doppelten Schrägstriche in den Dateinamen oben. In [!DNL Insight Server] Konfigurationsdateien ist der umgekehrte Schrägstrich ein Escape-Zeichen. Es wird verwendet, um spezielle Steuerfolgen (z. B. \t für ein Tabulatorzeichen) im Text auszudrücken. Um einen tatsächlichen umgekehrten Schrägstrich darzustellen, müssen Sie den umgekehrten Schrägstrich zweimal eingeben (z. B. \\), um die Escape-Funktion zu überschreiben. Dies gilt nur, wenn Konfigurationsdateien in einem Texteditor wie Notepad bearbeitet werden.
+   >Beachten Sie die Verwendung der Dublette-Backslashes in den Dateinamen oben. In [!DNL Insight Server] Konfigurationsdateien ist der umgekehrte Schrägstrich ein Escape-Zeichen. Es wird verwendet, um spezielle Steuerfolgen (z. B. \t für ein Tabulatorzeichen) im Text auszudrücken. Um einen tatsächlichen umgekehrten Schrägstrich darzustellen, müssen Sie den umgekehrten Schrägstrich zweimal eingeben (z. B. \\), um die Escape-Funktion zu überschreiben. Dies gilt nur, wenn Konfigurationsdateien in einem Texteditor wie Notepad bearbeitet werden.
 
