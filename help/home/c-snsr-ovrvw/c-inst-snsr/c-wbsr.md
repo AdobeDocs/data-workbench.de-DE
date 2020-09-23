@@ -1,10 +1,13 @@
 ---
 description: Detaillierte Anweisungen zum Installieren und Konfigurieren von Sensor für WebSphere 5.x unter AIX 5.1 oder höher.
-solution: Insight
+solution: Analytics
 title: WebSphere unter AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1645'
+ht-degree: 0%
 
 ---
 
@@ -13,15 +16,15 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Detaillierte Anweisungen zum Installieren und Konfigurieren von Sensor für WebSphere 5.x unter AIX 5.1 oder höher.
 
-Die Programmdateien für [!DNL Sensor] werden in einer Installationsdatei gepackt, die Sie von der Adobe-Download-Site erhalten. Wenn Sie noch nicht über die [!DNL Sensor] Installationsdatei für den jeweiligen Webserver verfügen, laden Sie diese herunter (oder rufen Sie sie von Ihrem Adobe-Kundenbetreuer ab), bevor Sie die folgenden Schritte durchführen.
+Die Programm-Dateien für [!DNL Sensor] werden in einer Installationsdatei gepackt, die Sie von der Adobe-Download-Site erhalten. Wenn Sie noch nicht über die [!DNL Sensor] Installationsdatei für den jeweiligen Webserver verfügen, laden Sie diese herunter (oder rufen Sie sie von Ihrem Kundenbetreuer ab), bevor Sie die folgenden Schritte durchführen.
 
 >[!NOTE]
 >
->Die [!DNL Sensor] für WebSphere-Server unterstützen keine kontrollierte Experimentierung. Weitere Informationen zur kontrollierten Experimentierung finden Sie im Handbuch *Data Workbench Controlled Experiments.*
+>Die [!DNL Sensor] für WebSphere-Server unterstützen keine kontrollierte Experimentierung. Informationen zum kontrollierten Experimentieren finden Sie im Handbuch *Data Workbench Controlled Experiments.*
 
-## Programmdateien installieren {#section-86f69127278c41bc90b97b68bb40bc6e}
+## Installieren der Programm-Dateien {#section-86f69127278c41bc90b97b68bb40bc6e}
 
-Verfahren zum Extrahieren und Installieren der Programmdateien für Sensor auf dem Servercomputer.
+Verfahren zum Extrahieren und Installieren der Programm-Dateien von Sensorto Server Machine.
 
 1. Melden Sie sich als Root-Benutzer oder als Benutzer mit Root-Berechtigung an.
 1. Dekomprimieren und entpacken Sie die Installationsdatei mit dem folgenden Befehl:
@@ -31,14 +34,14 @@ Verfahren zum Extrahieren und Installieren der Programmdateien für Sensor auf d
    tar -xf installationFilename.tar
    ```
 
-1. Kopieren Sie die entpackten Programmdateien in die in der folgenden Tabelle angegebenen Ordner:
+1. Kopieren Sie die entpackten Programm-Dateien in die in der folgenden Tabelle angegebenen Ordner:
 
 <table id="table_0E3B403071EF44AFBF0DD673EFEBBFE5"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Datei </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Zielverzeichnis </th> 
+   <th colname="col3" class="entry"> Zielgruppen-Verzeichnis </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -54,8 +57,8 @@ Verfahren zum Extrahieren und Installieren der Programmdateien für Sensor auf d
   </tr> 
   <tr> 
    <td colname="col1"> txlogd </td> 
-   <td colname="col2"> Das Transmitterprogramm </td> 
-   <td colname="col3"> <p>/usr/local/bin </p> <p>--ODER-- </p> <p>/usr/local/sbin </p> </td> 
+   <td colname="col2"> Transmitter-Programm </td> 
+   <td colname="col3"> <p>/usr/local/bin </p> <p>--OR-- </p> <p>/usr/local/sbin </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> txlogd.conf </td> 
@@ -74,13 +77,13 @@ Verfahren zum Extrahieren und Installieren der Programmdateien für Sensor auf d
 >
 >Das Installationspaket enthält eine Tabellendatei mit dem Namen TestExperiment.xls. Diese Tabelle ist ein Tool, mit dem Architekten ein kontrolliertes Experiment konfigurieren können. Sensor selbst verwendet diese Datei nicht, daher ist es nicht notwendig, die Datei auf dem Computer zu installieren, auf dem Sensor ausgeführt wird (obwohl Sie dies auch tun können). Sie sollten stattdessen die Datei an einen Speicherort kopieren, an dem Ihre Architekten darauf zugreifen oder die Datei nach Bedarf einfach aus dem Installationspaket extrahieren können. Weitere Informationen zum kontrollierten Experimentieren finden Sie im Insight Controlled Experiments Guide.
 
-**Berechtigungen in den Programmdateien**
+**Berechtigungen in den Programm-Dateien**
 
-Falsche Berechtigungen für die Programmdateien verursachen die meisten Probleme bei der Installation von Sensor.
+Falsche Berechtigungen für die Programm-Dateien verursachen die meisten Probleme bei der Installation von Sensor.
 
 Bitte stellen Sie sicher, dass Sie die Berechtigungen genau wie in diesem Abschnitt angegeben einstellen.
 
-Standardmäßig haben die Programmdateien in der tar-Datei die folgenden Berechtigungen. Je nachdem, wie Ihr System konfiguriert ist, können diese Einstellungen beim Extrahieren der Dateien geändert (nicht maskiert) werden.
+Standardmäßig haben die Programm-Dateien in der tar-Datei die folgenden Berechtigungen. Je nachdem, wie Ihr System konfiguriert ist, können diese Einstellungen beim Extrahieren der Dateien geändert (nicht maskiert) werden.
 
 Um die Berechtigungen auf die empfohlenen Standardeinstellungen zurückzusetzen, verwenden Sie die folgenden chmod-Befehle.
 
@@ -98,7 +101,7 @@ Um die Berechtigungen auf die empfohlenen Standardeinstellungen zurückzusetzen,
 
 Wenn Sie andere als die empfohlenen Standardberechtigungen verwenden möchten, lesen Sie die Informationen in den Sensor-UNIX-Dateiberechtigungen, um sicherzustellen, dass Sie wissen, wie diese Dateien verwendet werden.
 
-## Bearbeiten der Datei &quot;Sensor-Konfiguration&quot; {#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## Edit the Sensor Configuration file {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 Die Datei &quot;txlogd.conf&quot;enthält die Konfigurationsparameter für Sensor.
 
@@ -114,19 +117,19 @@ Die Konfigurationsdatei enthält die erforderlichen Parameter und optionalen Par
 1. Öffnen Sie die Datei /etc/txlogd.conf in einem Texteditor und legen Sie die erforderlichen Parameter sowie die gewünschten optionalen Parameter fest.
 1. Speichern und schließen Sie die Datei.
 
-## Starten Sie den Transmitter und erstellen Sie die Disk-Warteschlange {#section-63285a2328604f20a2cb31b3d5cb80e6}
+## Beginn des Transmitters und Erstellen der Disk-Warteschlange {#section-63285a2328604f20a2cb31b3d5cb80e6}
 
 Verfahren zum Erstellen der Disk-Warteschlange, nachdem Sie die Datei &quot;txlogd.conf&quot;konfiguriert haben.
 
 1. Wenn der Ordner, in dem sich die Disk-Warteschlange befindet, noch nicht vorhanden ist, erstellen Sie ihn. Stellen Sie sicher, dass der Ordner sowohl dem Sammlermodul als auch dem Transmitter-Programm Lese-/Schreibzugriff auf die Datei bietet.
 
-1. Führen Sie auf dem Computer, auf dem Sensor installiert ist, den folgenden Befehl aus, um den Transmitter zu starten:
+1. Führen Sie auf dem Computer, auf dem Sensor installiert ist, den folgenden Befehl aus, um den Sender Beginn:
 
    ```
    /usr/local/bin/txlogd -ic -f /etc/txlogd.conf
    ```
 
-   * Die Option &quot;i&quot;in diesem Befehl startet den Transmitter im interaktiven Modus. Dieser Modus zeigt Transmittermeldungen auf dem Bildschirm an und ermöglicht Ihnen auch die Interaktion mit dem Transmitter mithilfe von Tastaturbefehlen.
+   * Die Option &quot;i&quot;in diesem Befehl Beginn den Transmitter im interaktiven Modus. Dieser Modus zeigt Transmittermeldungen auf dem Bildschirm an und ermöglicht Ihnen auch die Interaktion mit dem Transmitter mithilfe von Tastaturbefehlen.
    * Die Option &quot;c&quot;weist den Sender an, die Datenträgerwarteschlange zu erstellen.
    * Die Option &quot;f&quot;gibt den Speicherort der Konfigurationsdatei an.
 
@@ -137,14 +140,14 @@ Verfahren zum Erstellen der Disk-Warteschlange, nachdem Sie die Datei &quot;txlo
    1. Vergewissern Sie sich, dass das Gerät, dem die Disk-Warteschlange zugewiesen ist, betriebsbereit ist und über ausreichend Speicherplatz verfügt, um eine Datei der im Parameter QueueSize angegebenen Größe aufzunehmen.
    1. Nehmen Sie alle erforderlichen Korrekturen vor und wiederholen Sie diesen Vorgang.
 
-## Hinzufügen des Sammlers zur Webanwendung {#section-d17297b1193f4e3cb150fb41f754ef12}
+## hinzufügen Sie den Sammler auf die Webanwendung {#section-d17297b1193f4e3cb150fb41f754ef12}
 
 Bei WebSphere-Servern fungiert der Collector als Filter im Servlet-Container.
 
 Um den Collector der Webanwendung hinzuzufügen, fügen Sie den Filter dem Web.xml-Bereitstellungsdeskriptor der Webanwendung hinzu und starten Sie die Webanwendung neu.
 
 1. Öffnen Sie in einem Texteditor die Datei &quot;web.xml&quot;für den Webserver, dessen Ereignisse Sensor erfasst.
-1. Fügen Sie der Deskriptordatei die folgenden Elemente `<filter>` und `<filter-mapping>` Elemente hinzu. Wenn Sie txlogd.conf nicht im Ordner /etc installiert haben, müssen Sie den richtigen Pfad zu dieser Datei im `<param-value>` Element eingeben.
+1. hinzufügen Sie die folgenden `<filter>` und die `<filter-mapping>` Elemente in die Deskriptordatei ein. Wenn Sie txlogd.conf nicht im Ordner /etc installiert haben, müssen Sie den richtigen Pfad zu dieser Datei im `<param-value>` Element eingeben.
 
    ```
    <filter>
@@ -170,7 +173,7 @@ Um den Collector der Webanwendung hinzuzufügen, fügen Sie den Filter dem Web.x
    >
    >Bei diesen Zeilen ist die Groß-/Kleinschreibung zu beachten. Geben Sie sie genau so ein, wie sie oben angezeigt werden.
 
-1. Starten Sie die Webanwendung neu. Der Collector wird mit der Anwendung geladen und beginnt mit der Erfassung der Ereignisdaten und dem Schreiben in die Disk-Warteschlange.
+1. Starten Sie die Webanwendung neu. Der Collector wird mit der Anwendung geladen und beginnt mit der Erfassung von Ereignis-Daten und dem Schreiben in die Disk-Warteschlange.
 
 ## Speicherort der Sammlungs- und freigegebenen Objektdateien deklarieren {#section-e641f08999d34a648aaee2111b69ca25}
 
@@ -193,11 +196,11 @@ Verfahren zum Bearbeiten des Websphere-Startskripts, um den Speicherort der Date
 
 ## Sensor testen {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
-Verfahren zum Starten des Senders und zur Überprüfung, ob er erfolgreich eine Verbindung zum Insight-Server herstellen und Ereignisdaten an ihn übertragen kann.
+Verfahren zum Beginn des Senders und zur Überprüfung, ob er erfolgreich eine Verbindung zum Insight-Server herstellen und Ereignis-Daten an ihn übertragen kann.
 
 >[!NOTE]
 >
->Um zu überprüfen, ob der Transmitter Ereignisdaten erfolgreich an den Insight-Server senden kann, stellen Sie sicher, dass der Insight-Zielserver installiert und ausgeführt wird, bevor Sie den folgenden Test starten.
+>Um zu überprüfen, ob der Transmitter erfolgreich Ereignis-Daten an den Insight-Server senden kann, stellen Sie sicher, dass die Zielgruppe Insight Server installiert und ausgeführt wird, bevor Sie den folgenden Test starten.
 
 1. Wenn der Transmitter noch nicht ausgeführt wird, starten Sie ihn mit dem folgenden Befehl neu:
 
@@ -206,24 +209,24 @@ Verfahren zum Starten des Senders und zur Überprüfung, ob er erfolgreich eine 
    ```
 
 1. Öffnen Sie einen Browser (auf einem beliebigen Computer) und fordern Sie eine Seite vom Webserver an, auf dem Sensor ausgeführt wird (wählen Sie unbedingt eine Seite aus, die von Sensor überwacht wird).
-1. Nachdem Sie die Anforderung gesendet haben, überprüfen Sie die Konsole des Senders auf Meldungen, die darauf hinweisen, dass Ereignisdaten an den Ziel-Insight-Server gesendet werden.
+1. Nachdem Sie die Anforderung gesendet haben, überprüfen Sie die Konsole des Senders auf Meldungen, die darauf hinweisen, dass Ereignis-Daten an die Zielgruppe Insight Server gesendet werden.
 1. Wenn Sensor die Daten nicht erfolgreich übermittelt, überprüfen Sie, ob:
 
-   * Das Ziel Insight Server wird ausgeführt.
+   * Der Zielgruppe Insight Server wird ausgeführt.
    * Die Parameter ServerAddress und ServerPort werden in txtlogd.conf korrekt eingestellt. Wenn Sie &quot;ServerAddress&quot;unter einem Servernamen angegeben haben, versuchen Sie stattdessen, die zugehörige numerische IP-Adresse zu verwenden.
-   * Der Wert des CertName-Parameters stimmt exakt mit dem allgemeinen Namen überein, der im digitalen Zertifikat des Ziel-Insight-Servers angezeigt wird.
+   * Der Wert des CertName-Parameters entspricht dem allgemeinen Namen, der im digitalen Zertifikat der Zielgruppe Insight Server exakt angegeben ist.
 
-## Den Transmitter zu Ihrem Systemstartskript hinzufügen {#section-23bb905100d04f018af93873dd4d5f68}
+## Transmitter in Ihr Systemstartskript Hinzufügen {#section-23bb905100d04f018af93873dd4d5f68}
 
 Informationen, die sicherstellen, dass der Transmitter beim Neustart des Webservercomputers automatisch geladen wird.
 
-Fügen Sie dem Systemstartskript den folgenden Befehl hinzu (der den Transmitter startet).
+hinzufügen Sie den folgenden Befehl (der den Transmitter startet) an Ihr Systemstartskript.
 
 ```
 /usr/local/bin/txlogd -f /etc/txlogd.conf
 ```
 
-Dieser Befehl startet den Transmitter als Daemon. Die vom Sender erzeugten Betriebs- und Fehlermeldungen werden in syslog geschrieben.
+Dieser Befehl Beginn den Sender als Daemon. Die vom Sender erzeugten Betriebs- und Fehlermeldungen werden in syslog geschrieben.
 
 ## Erfassen zusätzlicher Daten {#section-d5ccf8ee50914a87938e0c17480757e6}
 
@@ -235,19 +238,19 @@ Die Sensoren für die J2EE-Plattform bieten einen Mechanismus zur Erfassung von 
 >
 >Die Daten können zwar durch Seiten-Tags und die Änderung der Kopfzeile ausgeblendet werden, stehen aber dennoch denjenigen zur Verfügung, die den Quellcode einer Seite prüfen oder die Kopfzeilen mithilfe der Browser-Plugin-Tools betrachten.
 
-Der J2EE-Collector kann beispielsweise zur Erfassung von CPC-Daten (Cost per Click) für Links verwendet werden, die auf einer Seite angezeigt werden, sowie für sensible Partnerinformationen auf einer Seite und viele andere Datenpunkte. Die J2EE-Umgebung ermöglicht es Ihnen, Ihre WEBAPP zu ändern, um diese benutzerspezifischen Daten mit unserer Collector-Klasse zu erfassen.
+Der J2EE-Collector kann beispielsweise zur Erfassung von CPC-Daten (Cost per Click) für Links verwendet werden, die auf einer Seite angezeigt werden, sowie für sensible Partnerinformationen auf einer Seite und viele andere Datenpunkte. Mit der J2EE-Umgebung können Sie Ihre WEBAPP so ändern, dass diese benutzerspezifischen Daten mit unserer Collector-Klasse erfasst werden.
 
-Wenn ein Sensor für die J2EE-Plattform eine Anforderung empfängt, ruft er eine Collector-Klasse auf, die die Funktion appendToLog importiert. Die Funktion appendToLog hängt an die ursprüngliche Anforderung die in der Funktion appendToLog angegebenen Abfragezeichenfolgenparameter an. Dies ergibt den URI der ursprünglichen Anforderung, der zusätzliche Paare aus Name und Wert der Abfragezeichenfolge enthält, die den Namen und Werten der erfassten Daten entsprechen. Beispiel: CPC=20 wird an die ursprüngliche Anforderung angehängt, wenn der Wert einer bestimmten Anzeigenplatzierung oder eines Clickthrough-Links 20 Cent beträgt. Insight Server verarbeitet diese Werte zur Analyse in den Datensatz. Ein weiterer Vorteil dieser Erfassungsmethodik besteht darin, dass sie die Erfassung zusätzlicher Daten ohne Erstellung zusätzlicher Protokolleinträge ermöglicht, da diese möglicherweise mit Seitenmarkierungsmethoden erstellt werden.
+Wenn ein Sensor für die J2EE-Plattform eine Anforderung empfängt, ruft er eine Collector-Klasse auf, die die Funktion appendToLog importiert. Die Funktion appendToLog hängt an die ursprüngliche Anforderung die in der Funktion appendToLog angegebenen Zeichenfolgenparameter der Abfrage an. Dies führt dazu, dass der URI der ursprünglichen Anforderung zusätzliche Abfragen-Zeichenfolgennamenpaare enthält, die den Namen und Werten der erfassten Daten entsprechen. Beispiel: CPC=20 wird an die ursprüngliche Anforderung angehängt, wenn der Wert einer bestimmten Anzeigenplatzierung oder eines Clickthrough-Links 20 Cent beträgt. Insight Server verarbeitet diese Werte zur Analyse in den Datensatz. Ein weiterer Vorteil dieser Erfassungsmethodik besteht darin, dass sie die Erfassung zusätzlicher Daten ohne Erstellung zusätzlicher Protokolleinträge ermöglicht, da diese möglicherweise mit Seitenmarkierungsmethoden erstellt werden.
 
 Weitere Informationen zur Verarbeitung finden Sie im Handbuch zur Konfiguration von *Datasets*.
 
-1. Fügen Sie oben auf der JSP-Seite, von der Sie Daten erfassen möchten, den folgenden Code hinzu:
+1. hinzufügen Sie den folgenden Code oben auf der JSP-Seite, von der Sie Daten erfassen möchten:
 
    ```
    <%@ page import="com.visualsciences.collector.VSCollector" %>
    ```
 
-1. Verwenden Sie die Methode appendToLog() des Collector-Objekts, um die gewünschten Name-Wert-Paare an die Abfragezeichenfolge der angeforderten JSP-Seite anzuhängen. Im folgenden Beispiel wird der Abfragezeichenfolge der angeforderten JSP-Seite für die Seite /index.jsp die Zeichenfolge &quot;A=1&quot;und &quot;B=2&quot;angefügt:
+1. Verwenden Sie die Methode appendToLog() des Collector-Objekts, um die gewünschten Name-Wert-Paare an die Abfrage-Zeichenfolge der angeforderten JSP-Seite anzuhängen. Im folgenden Beispiel werden &quot;A=1&quot;und &quot;B=2&quot;an die Abfrage-Zeichenfolge der angeforderten JSP-Seite für die Seite /index.jsp angehängt:
 
    ```
    <html> 
