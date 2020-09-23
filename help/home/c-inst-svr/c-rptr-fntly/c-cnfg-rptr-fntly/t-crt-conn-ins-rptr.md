@@ -1,10 +1,13 @@
 ---
 description: Wenn Netzwerk-Firewalls den Zugriff auf den Repeater-Server nicht von Insight-Computern verhindern, können Sie eine Verbindung zwischen dem Repeater-Server und Insight erstellen, damit Sie den Repeater-Server mit Insight verwalten können.
-solution: Insight
+solution: Analytics
 title: Erstellen einer Verbindung zwischen Insight und Repeater
 uuid: dccce83a-8708-4763-a19a-64d905a9f624
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 4%
 
 ---
 
