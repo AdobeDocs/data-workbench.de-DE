@@ -1,17 +1,20 @@
 ---
-description: Sensor kann bei Verwendung auf einem Server Ereignisdatenfelder aus jeder gültigen HTTP-Anforderung oder jedem Antwortheader oder jeder Variablen erfassen, die über die Server-API verfügbar sind.
-solution: Insight
+description: Sensor kann bei Verwendung auf einem Server Ereignis-Datenfelder aus jeder gültigen HTTP-Anforderung oder Antwort-Kopfzeile oder -Variable erfassen, die über die Server-API verfügbar sind.
+solution: Analytics
 title: Erweiterbare Felder
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 1%
 
 ---
 
 
 # Erweiterbare Felder{#extensible-fields}
 
-Sensor kann bei Verwendung auf einem Server Ereignisdatenfelder aus jeder gültigen HTTP-Anforderung oder jedem Antwortheader oder jeder Variablen erfassen, die über die Server-API verfügbar sind.
+Sensor kann bei Verwendung auf einem Server Ereignis-Datenfelder aus jeder gültigen HTTP-Anforderung oder Antwort-Kopfzeile oder -Variable erfassen, die über die Server-API verfügbar sind.
 
 Um solche Datenfelder zu erfassen, müssen Sie die gewünschten Kopfzeilenfelder oder Variablen in der [!DNL txlogd.conf] Konfigurationsdatei für [!DNL Sensor]angeben.
 
@@ -26,7 +29,7 @@ Im Folgenden finden Sie die Syntax zum Festlegen eines Anforderungs-Header-Felds
 LogHeader RequestHeaderName
 ```
 
-Die erfassten Daten werden von einem Feld [!DNL Sensor] mit dem Namen &quot;cs(RequestHeaderName)&quot;in den [!DNL .vsl] Dateien aufgezeichnet, die vom [!DNL data workbench server]. Wenn Sie beispielsweise den jeweiligen Anforderungsheader-Wert aus dem Anforderungsheader &quot;Host&quot;erfassen möchten, geben Sie &quot;LogHeader-Host&quot;in [!DNL txlogd.conf]ein. Die Daten werden im Ereignisdatensatz in das Feld &quot;cs(Host)&quot;eingetragen.
+Die erfassten Daten werden von einem Feld [!DNL Sensor] mit dem Namen &quot;cs(RequestHeaderName)&quot;in den [!DNL .vsl] Dateien aufgezeichnet, die vom [!DNL data workbench server]. Wenn Sie beispielsweise den jeweiligen Anforderungsheader-Wert aus dem Anforderungsheader &quot;Host&quot;erfassen möchten, geben Sie &quot;LogHeader-Host&quot;in [!DNL txlogd.conf]ein. Die Daten werden in das Feld &quot;cs(Host)&quot;im Ereignis-Datensatz aufgezeichnet.
 
 ## Servervariablen {#section-74b258bc3e8a4a93a0ee9fb01c067e4b}
 
@@ -50,7 +53,7 @@ Die folgende Tabelle enthält Beschreibungen der Komponenten eines Eintrags &quo
  <tbody> 
   <tr> 
    <td colname="col1"> cs(Protokollfeld) </td> 
-   <td colname="col2"> Der Name des Felds, in dem die erfassten Daten im Ereignisdatensatz und in den <span class="filepath"> .vsl- </span> Dateien aufgezeichnet werden, die vom <span class="keyword"> Data Workbench-Server erstellt wurden </span>. </td> 
+   <td colname="col2"> Der Name des Felds, in das die erfassten Daten im Ereignis-Datensatz aufgezeichnet werden, sowie die <span class="filepath"> .vsl- </span> Dateien, die vom <span class="keyword"> Data Workbench-Server erstellt werden </span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> serverVariable </td> 
@@ -63,4 +66,4 @@ Die folgende Tabelle enthält Beschreibungen der Komponenten eines Eintrags &quo
  </tbody> 
 </table>
 
-Wenden Sie sich an Adobe Consulting Services, [!DNL Sensor] um die Erfassung erweiterbarer Ereignisdatensatzfelder zu unterstützen.
+Wenden Sie sich an Adobe Consulting Services, [!DNL Sensor] um die Erfassung erweiterbarer Ereignis-Datensatzfelder zu unterstützen.
