@@ -1,24 +1,27 @@
 ---
-description: Informationen zum Konfigurieren des Clusters auf dem Master Insight-Server, zum Aktualisieren der Zugriffskontrolle für einen Cluster und mehr.
-solution: Insight
-title: Konfigurieren des Master Insight-Servers für das Clustering
+description: Informationen zum Konfigurieren des Clusters auf dem Übergeordnet Insight-Server, zum Aktualisieren der Zugriffskontrolle-Datei für einen Cluster und mehr.
+solution: Analytics
+title: Konfigurieren des Master-Insight-Servers für das Clustering
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 translation-type: tm+mt
-source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1244'
+ht-degree: 1%
 
 ---
 
 
-# Konfigurieren des Master Insight-Servers für das Clustering{#configuring-the-master-insight-server-for-clustering}
+# Konfigurieren des Master-Insight-Servers für das Clustering{#configuring-the-master-insight-server-for-clustering}
 
-Informationen zum Konfigurieren des Clusters auf dem Master Insight-Server, zum Aktualisieren der Zugriffskontrolle für einen Cluster und mehr.
+Informationen zum Konfigurieren des Clusters auf dem Übergeordnet Insight-Server, zum Aktualisieren der Zugriffskontrolle-Datei für einen Cluster und mehr.
 
-Um den Cluster zu konfigurieren, führen Sie die folgenden Schritte auf dem Master aus [!DNL Insight Server]:
+Führen Sie zum Konfigurieren des Clusters die folgenden Schritte auf dem Übergeordnete aus [!DNL Insight Server]:
 
-* Hinzufügen Sie die [!DNL Insight Servers’] allgemeinen Namen und Adressen für die Verarbeitung der Adressdatei.
-* Hinzufügen Sie alle Elemente [!DNL Insight Servers] in der [!DNL Access Control.cfg] Datei zur Gruppe Cluster-Server.
+* hinzufügen Sie die [!DNL Insight Servers’] allgemeinen Namen und Adressen für die Verarbeitung der Adressdatei.
+* hinzufügen Sie alle Elemente [!DNL Insight Servers] in der [!DNL Access Control.cfg] Datei zur Gruppe Cluster-Server.
 
-* Aktualisieren Sie die [!DNL Synchronize.cfg] Datei im Ordner &quot;Komponenten für Verarbeitungsserver&quot;so, dass sie auf den Master verweist [!DNL Insight Server].
+* Aktualisieren Sie die [!DNL Synchronize.cfg] Datei im Verzeichnis &quot;Komponenten für Verarbeitungsserver&quot;so, dass sie auf den Übergeordnete verweist [!DNL Insight Server].
 
 * Ändern Sie bei Bedarf die [!DNL Disk Files.cfg] Datei im Ordner &quot;Komponenten für Verarbeitungsserver&quot;, um den Speicherort der [!DNL temp.db] Datei in der Verarbeitung anzugeben [!DNL Insight Servers].
 
@@ -26,15 +29,15 @@ Um diese Schritte auszuführen, müssen Sie die allgemeinen Namen (wie in den di
 
 >[!NOTE]
 >
->Die in diesem Abschnitt beschriebenen Verfahren erfordern [!DNL Insight]. Wenn Sie noch nicht installiert haben, befolgen Sie [!DNL Insight]die Anweisungen im **[!DNL Insight]Benutzerhandbuch **, bevor Sie fortfahren.
+>Die in diesem Abschnitt beschriebenen Verfahren erfordern [!DNL Insight]. Wenn Sie noch nicht installiert haben, befolgen Sie [!DNL Insight]die Anweisungen im **[!DNL Insight]Benutzerhandbuch** , bevor Sie fortfahren.
 
 ## Hinzufügen der Processing Insight-Server zur Adressdatei {#section-2fe5298180164e8dbaa59ea6b6ff682d}
 
-Verwenden Sie das folgende Verfahren, um der Adressdatei auf dem Master die [!DNL Insight Servers’] allgemeinen Verarbeitungsnamen und IP-Adressen hinzuzufügen [!DNL Insight Server]. (Obwohl die Adressdatei auf dem Master verwaltet und verwaltet wird, [!DNL Insight Server]wird sie von allen [!DNL Insight Servers] im Cluster verwendet.)
+Verwenden Sie das folgende Verfahren, um der Adressdatei auf dem Übergeordnete die [!DNL Insight Servers’] allgemeinen Verarbeitungsnamen und IP-Adressen hinzuzufügen [!DNL Insight Server]. (Obwohl die Adressdatei Übergeordnet verwaltet und verwaltet wird, [!DNL Insight Server]wird sie von allen [!DNL Insight Servers] im Cluster verwendet.)
 
 >[!NOTE]
 >
->Im Folgenden wird davon ausgegangen, dass die Adressdatei bereits für den Master konfiguriert wurde [!DNL Insight Server]. Wenn Sie die Master- [!DNL Insight Server’s] IP-Adresse(n) noch nicht zur Adressdatei hinzugefügt haben, führen Sie das unter [Definieren des Netzwerkspeicherorts](../../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-svrs-ntwk-loc/c-svrs-ntwk-loc.md#concept-87dd2aa3448c415ca1285bc445a8c649) des Servers beschriebene Verfahren aus, bevor Sie beginnen.
+>Im Folgenden wird davon ausgegangen, dass die Adressdatei bereits für den Übergeordnete konfiguriert wurde [!DNL Insight Server]. Wenn Sie der Adressdatei noch nicht die Übergeordnet [!DNL Insight Server’s] IP-Adresse(n) hinzugefügt haben, führen Sie das unter [Definieren des Netzwerkspeicherorts](../../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-svrs-ntwk-loc/c-svrs-ntwk-loc.md#concept-87dd2aa3448c415ca1285bc445a8c649) des Servers beschriebene Verfahren aus, bevor Sie beginnen.
 
 **So fügen Sie die Verarbeitung[!DNL Insight Servers]der Adressdatei hinzu**
 
@@ -42,7 +45,7 @@ Verwenden Sie das folgende Verfahren, um der Adressdatei auf dem Master die [!DN
 
 1. Klicken Sie [!DNL Insight]auf der Registerkarte [!DNL Admin] > [!DNL Dataset and Profile] auf die **[!UICONTROL Servers Manager]** Miniaturansicht, um den Arbeitsbereich &quot;Server Manager&quot;zu öffnen.
 
-1. Klicken Sie mit der rechten Maustaste auf das Symbol des Masterbilds **[!UICONTROL Insight Server]** und klicken Sie auf **[!UICONTROL Server Files]**.
+1. Klicken Sie mit der rechten Maustaste auf das Symbol des Übergeordneten **[!UICONTROL Insight Server]** und klicken Sie auf **[!UICONTROL Server Files]**.
 
 1. Öffnen Sie im Ordner &quot; [!DNL Server Files Manager]Adressen&quot;den Ordner &quot;Addresses&quot;und führen Sie zum Öffnen der [!DNL Insight Server’s] Adressdatei die folgenden Schritte aus:
 
@@ -58,7 +61,7 @@ Verwenden Sie das folgende Verfahren, um der Adressdatei auf dem Master die [!DN
    1. Geben Sie im Parameter Name den [!DNL Insight Server’s] allgemeinen Verarbeitungsnamen an.
    1. Geben Sie im Parameter Adresse die verarbeitende [!DNL Insight Server’s] IP-Adresse an.
 
-      Sie können ein Sternchen als Platzhalter im Feld &quot;Adresse&quot;verwenden, z. B. 10.10.116.* zur Vereinfachung des Clustering. Siehe [Die Zugriffsebenen](../../../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-lvls.md#concept-6b292edf79214750a8d0525097b8795a).
+      Sie können ein Sternchen als Platzhalter im Feld &quot;Adresse&quot;verwenden, z. B. 10.10.116.* zur Vereinfachung des Clustering. See [Understanding Access Levels](../../../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-lvls.md#concept-6b292edf79214750a8d0525097b8795a).
 
       Im folgenden Beispiel wird ein Cluster definiert, der zwei [!DNL Insight Servers]enthält:
 
@@ -78,13 +81,13 @@ Verwenden Sie das folgende Verfahren, um der Adressdatei auf dem Master die [!DN
 
 ## Aktualisieren der Zugriffskontrolle für einen Cluster {#section-fce1367d92a445168c35e9ca506e7d6b}
 
-Zur Verwendung [!DNL Insight Servers] in einem Cluster muss jeder [!DNL Insight Server] im Cluster (einschließlich Master [!DNL Insight Server]) zur Gruppe Cluster Server-Zugriffskontrolle gehören. Die Gruppe Cluster-Server identifiziert die Server (nach IP-Adresse), die am Cluster teilnehmen dürfen. Diese Datei wird zwar auf dem Master verwaltet und verwaltet, [!DNL Insight Server]wird aber von allen im Cluster [!DNL Insight Servers] verwendeten verwendet.
+Zur Verwendung [!DNL Insight Servers] in einem Cluster muss jeder [!DNL Insight Server] im Cluster (einschließlich des Übergeordneten [!DNL Insight Server]) zur Zugriffskontrolle der Cluster-Server gehören. Die Gruppe Cluster-Server identifiziert die Server (nach IP-Adresse), die am Cluster teilnehmen dürfen. Obwohl diese Datei Übergeordnet verwaltet und verwaltet wird, wird sie von allen im Cluster [!DNL Insight Server]verwendet [!DNL Insight Servers] .
 
 **So bearbeiten Sie die Zugriffskontrolle**
 
 1. Klicken Sie [!DNL Insight]auf der Registerkarte [!DNL Admin] > [!DNL Dataset and Profile] auf die **[!UICONTROL Servers Manager]** Miniaturansicht, um den Arbeitsbereich &quot;Server Manager&quot;zu öffnen.
 
-1. Klicken Sie mit der rechten Maustaste auf das Symbol des Masterbilds [!DNL Insight Server] und klicken Sie auf **[!UICONTROL Server Files]**.
+1. Klicken Sie mit der rechten Maustaste auf das Symbol des Übergeordneten [!DNL Insight Server] und klicken Sie auf **[!UICONTROL Server Files]**.
 
 1. Öffnen Sie im [!DNL Server Files Manager]Ordner &quot;Zugriffskontrolle&quot;.
 1. Führen Sie zum Öffnen der [!DNL Access Control.cfg] Datei die folgenden Schritte aus:
@@ -94,7 +97,7 @@ Zur Verwendung [!DNL Insight Servers] in einem Cluster muss jeder [!DNL Insight 
    1. Klicken Sie mit der rechten Maustaste auf das Häkchen in der [!DNL Temp] Spalte und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
 
 1. Erweitern Sie die Gruppenstruktur und erweitern Sie dann AccessGroup (Cluster Servers).
-1. Führen Sie für jeden [!DNL Insight Server] im Cluster (einschließlich Master [!DNL Insight Server]) folgende Schritte aus:
+1. Führen Sie für jeden [!DNL Insight Server] im Cluster (einschließlich des Übergeordneten [!DNL Insight Server]) folgende Schritte aus:
 
    1. Klicken Sie mit der rechten Maustaste **[!UICONTROL Members]** und klicken Sie auf **[!UICONTROL Add New]** > **[!UICONTROL New Member]**.
 
@@ -112,19 +115,19 @@ Zur Verwendung [!DNL Insight Servers] in einem Cluster muss jeder [!DNL Insight 
 
 ## Synchronisierungsdatei konfigurieren {#section-d23e751771c84da6bab6a34a8db867bc}
 
-Mit dem folgenden Verfahren können Sie die zentrale Kopie der [!DNL Synchronize.cfg] Datei konfigurieren. Die zentrale Kopie dieser Datei wird auf dem Master gespeichert [!DNL Insight Server]. Die Verarbeitung [!DNL Insight Servers] im Cluster initiiert eine Kommunikation mit dem Master, [!DNL Insight Server] um eine aktualisierte Kopie dieser Datei abzurufen.
+Mit dem folgenden Verfahren können Sie die zentrale Kopie der [!DNL Synchronize.cfg] Datei konfigurieren. Die zentrale Kopie dieser Datei wird Übergeordnet aufbewahrt [!DNL Insight Server]. Die Verarbeitung [!DNL Insight Servers] im Cluster initiiert die Kommunikation mit dem Übergeordnete, [!DNL Insight Server] um eine aktualisierte Kopie dieser Datei abzurufen.
 
-Die [!DNL Synchronize.cfg] Datei gibt den Speicherort des Masterbilds an [!DNL Insight Server]. Er identifiziert außerdem den Satz von Verwaltungsdateien, die von jeder Verarbeitung [!DNL Insight Servers] im Cluster vom Master abgerufen werden [!DNL Insight Server]. Die Verarbeitung lädt diese Dateien [!DNL Insight Servers] beim Beginn automatisch vom Master [!DNL Insight Server] herunter. Außerdem werden aktualisierte Kopien dieser Dateien dynamisch vom Master abgerufen, [!DNL Insight Server] wenn sich die Dateien ändern.
+Die [!DNL Synchronize.cfg] Datei gibt den Speicherort des Übergeordneten an [!DNL Insight Server]. Er identifiziert außerdem den Satz von Verwaltungsdateien, die von jeder Verarbeitung [!DNL Insight Servers] im Cluster aus dem Übergeordnete abgerufen werden [!DNL Insight Server]. Die Verarbeitung lädt diese Dateien [!DNL Insight Servers] automatisch vom Übergeordnete herunter, [!DNL Insight Server] wenn sie Beginn werden. Außerdem werden aktualisierte Kopien dieser Dateien dynamisch aus dem Übergeordnete abgerufen, [!DNL Insight Server] wenn sich die Dateien ändern.
 
 >[!NOTE]
 >
->Obwohl Sie die [!DNL Synchronize.cfg] Datei auf dem Master konfigurieren, [!DNL Insight Server]verwendet der Master [!DNL Insight Server] diese Datei nicht. Sie aktualisieren diese Datei auf dem Master, [!DNL Insight Server] sodass sie beim Abrufen der Datei durch die Verarbeitung ordnungsgemäß konfiguriert [!DNL Insight Servers] ist.
+>Obwohl Sie die [!DNL Synchronize.cfg] Datei Übergeordnet konfigurieren [!DNL Insight Server], verwendet das Übergeordnet [!DNL Insight Server] diese Datei nicht. Sie aktualisieren diese Datei auf dem Übergeordnete, [!DNL Insight Server] sodass sie beim [!DNL Insight Servers] Abrufen der Datei durch die Verarbeitung ordnungsgemäß konfiguriert ist.
 
-**So aktualisieren Sie die Datei &quot;Synchronize.cfg&quot;auf dem Master[!DNL Insight Server]**
+**So aktualisieren Sie die Datei &quot;Synchronize.cfg&quot;auf dem Übergeordnete[!DNL Insight Server]**
 
 1. Klicken Sie [!DNL Insight]auf der Registerkarte [!DNL Admin] > [!DNL Dataset and Profile] auf die **[!UICONTROL Servers Manager]** Miniaturansicht, um den Arbeitsbereich &quot;Server Manager&quot;zu öffnen.
 
-1. Klicken Sie mit der rechten Maustaste auf das Symbol des Masterbilds [!DNL Insight Server] und klicken Sie auf **[!UICONTROL Server Files]**.
+1. Klicken Sie mit der rechten Maustaste auf das Symbol des Übergeordneten [!DNL Insight Server] und klicken Sie auf **[!UICONTROL Server Files]**.
 
 1. Öffnen Sie [!DNL Server Files Manager]den Ordner &quot; **[!UICONTROL Components]** Verarbeitungsserver&quot;.
 
@@ -135,11 +138,11 @@ Die [!DNL Synchronize.cfg] Datei gibt den Speicherort des Masterbilds an [!DNL I
    1. Klicken Sie mit der rechten Maustaste auf das [!DNL Temp] Häkchen und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
 
 1. Erweitern Sie die Komponentenstruktur.
-1. Geben Sie im Parameter Primär-Serveradresse des Clusters die IP-Adresse des Masterservers an (primär) **[!UICONTROL Insight Server]**.
+1. Geben Sie im Parameter Cluster Primär Server Address die IP-Adresse des Übergeordneten (primär) an **[!UICONTROL Insight Server]**.
 
    ![](assets/cfg_cluster_SyncFile_CentralCopy.png)
 
-   Um ein Protokoll zu erstellen, das jedes Mal, wenn eine Synchronisierung zwischen Master [!DNL Insight Server] und Verarbeitung stattfindet, aufzeichnet, stellen Sie sicher, dass der Parameter &quot;Synchronisierungsprotokoll aktivieren&quot;auf &quot;true&quot;eingestellt ist [!DNL Insight Servers].
+   Um ein Protokoll zu erstellen, das jedes Mal, wenn eine Synchronisierung zwischen dem Übergeordnete [!DNL Insight Server] und der Verarbeitung stattfindet, aufzeichnet, stellen Sie sicher, dass der Parameter &quot;Synchronisierungsprotokoll aktivieren&quot;auf &quot;true&quot;eingestellt ist [!DNL Insight Servers].
 
 1. Speichern Sie Ihre Änderungen auf dem Server, indem Sie folgende Schritte ausführen:
 
@@ -147,7 +150,7 @@ Die [!DNL Synchronize.cfg] Datei gibt den Speicherort des Masterbilds an [!DNL I
 
    1. Klicken Sie [!DNL Server Files Manager]mit der rechten Maustaste auf das Häkchen für die Datei in der [!DNL Temp] Spalte und klicken Sie auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
 
-## Speicherort des Datensatzes konfigurieren (temp.db) {#section-5ec257a4b4c64fb58baec1f12119a822}
+## Konfigurieren des Datensatzstandorts (temp.db) {#section-5ec257a4b4c64fb58baec1f12119a822}
 
 Führen Sie das folgende Verfahren aus, wenn die Verarbeitung [!DNL Insight Servers] in einem Verzeichnis oder einem Laufwerk, das sich vom Standardspeicherort unterscheidet, [!DNL temp.db] (dem Datensatz) gespeichert werden soll, oder wenn Sie die Verteilung über mehrere Laufwerke [!DNL temp.db] hinweg durchführen möchten.
 
@@ -159,7 +162,7 @@ Führen Sie das folgende Verfahren aus, wenn die Verarbeitung [!DNL Insight Serv
 
 1. Klicken Sie [!DNL Insight]auf der Registerkarte [!DNL Admin] > [!DNL Dataset and Profile] auf die **[!UICONTROL Servers Manager]** Miniaturansicht, um den Arbeitsbereich &quot;Server Manager&quot;zu öffnen.
 
-1. Klicken Sie mit der rechten Maustaste auf das Symbol des Masterbilds [!DNL Insight Server] und klicken Sie auf **[!UICONTROL Server Files]**.
+1. Klicken Sie mit der rechten Maustaste auf das Symbol des Übergeordneten [!DNL Insight Server] und klicken Sie auf **[!UICONTROL Server Files]**.
 
 1. Öffnen Sie im [!DNL Server Files Manager]Ordner den **[!UICONTROL Components for Processing Servers]** .
 
