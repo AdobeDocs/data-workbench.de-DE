@@ -1,17 +1,20 @@
 ---
-description: Anweisungen zum Abschluss der Installation der Adobe-Anwendung.
-solution: Insight
+description: Anweisungen zum Abschluss der Installation der Adobe.
+solution: Analytics
 title: Nächste Schritte
 uuid: 9707adc2-0618-4e94-baed-80b076d60f29
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 3%
 
 ---
 
 
 # Nächste Schritte{#next-steps}
 
-Anweisungen zum Abschluss der Installation der Adobe-Anwendung.
+Anweisungen zum Abschluss der Installation der Adobe.
 
 * Installieren Sie mindestens eine Kopie von [!DNL Insight] , wie im * [!DNL Insight] Benutzerhandbuch* beschrieben.
 
