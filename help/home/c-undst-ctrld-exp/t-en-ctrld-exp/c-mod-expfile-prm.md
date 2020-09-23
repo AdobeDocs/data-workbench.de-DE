@@ -1,16 +1,19 @@
 ---
 description: Der Parameter ExpFile verweist auf den Speicherort der Experimentkonfigurationsdatei, die Ihr Experiment definiert.
-solution: Insight,Analytics
-title: Ändern des ExpFile-Parameters
+solution: Analytics,Analytics
+title: Bearbeiten des ExpFile-Parameters
 topic: Data workbench
 uuid: bf146f46-f541-4969-8d90-af1a0c969344
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 3%
 
 ---
 
 
-# Ändern des ExpFile-Parameters{#modifying-the-expfile-parameter}
+# Bearbeiten des ExpFile-Parameters{#modifying-the-expfile-parameter}
 
 Der Parameter ExpFile verweist auf den Speicherort der Experimentkonfigurationsdatei, die Ihr Experiment definiert.
 
@@ -30,4 +33,4 @@ Vergewissern Sie sich, dass Sie den Speicherort des Experimentverzeichnisses und
 >
 >Wenn Sie diesen Parameter nicht auf allen Computern im Webcluster, auf denen ein Webcluster installiert [!DNL Sensor] ist, identisch einstellen, funktioniert das kontrollierte Experimentieren nicht.
 
-Dieser Eintrag kann vorkonfiguriert werden und dauerhaft in der [!DNL Sensor] Konfigurationsdatei bleiben, ohne dass dies negative Auswirkungen hat. Wenn der angegebene Name der Experimentkonfigurationsdatei nicht von gefunden wird [!DNL Sensor] oder leer ist (d. h., er existiert, hat aber keinen Inhalt), führt das Experiment [!DNL Sensor] nicht durch, protokolliert ein Fehlerereignis auf dem HTTP-Server und funktioniert in jeder anderen Hinsicht normal weiter.
+Dieser Eintrag kann vorkonfiguriert werden und dauerhaft in der [!DNL Sensor] Konfigurationsdatei bleiben, ohne dass dies negative Auswirkungen hat. Wenn der angegebene Name der Experimentkonfigurationsdatei nicht von gefunden wird [!DNL Sensor] oder leer ist (d. h., er existiert, hat aber keinen Inhalt), [!DNL Sensor] führt das Experiment nicht durch, protokolliert ein Fehlerfehler-Ereignis auf dem HTTP-Server und funktioniert in jeder anderen Hinsicht normal weiter.
