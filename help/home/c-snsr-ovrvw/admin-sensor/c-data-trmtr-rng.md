@@ -1,15 +1,18 @@
 ---
 description: Überprüfen Sie, ob der Sender ausgeführt wird, indem Sie Warnhinweise einrichten, den Systemstatus des Sensors überprüfen und vieles mehr.
-solution: Insight
-title: Bestätigung, dass der Datensender ausgeführt wird
+solution: Analytics
+title: Feststellen, dass die Datenübertragung funktioniert
 uuid: 8dd6307c-e7d2-4800-88c7-f93385b33ca5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 5%
 
 ---
 
 
-# Bestätigung, dass der Datensender ausgeführt wird{#confirming-that-the-data-transmitter-is-running}
+# Feststellen, dass die Datenübertragung funktioniert{#confirming-that-the-data-transmitter-is-running}
 
 Überprüfen Sie, ob der Sender ausgeführt wird, indem Sie Warnhinweise einrichten, den Systemstatus des Sensors überprüfen und vieles mehr.
 
@@ -21,7 +24,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ## Transmitter-Prozess überprüfen {#section-79806fa3b7034a8eaf571a66e24874d7}
 
-Eine Möglichkeit, zu überprüfen, ob der Transmitter ausgeführt wird, besteht darin, zu überprüfen, ob der [!DNL Sensor] Transmitter-Prozess auf jedem Webserver ausgeführt wird, auf dem eine [!DNL Sensor] Instanz installiert ist. Der Transmitter-Prozess erscheint in der Prozessliste des Webservers als &quot;txlogd&quot;. Sie können diese Prüfung mit einem Systemüberwachungstool durchführen.
+Eine Möglichkeit, zu überprüfen, ob der Transmitter ausgeführt wird, besteht darin, zu überprüfen, ob der [!DNL Sensor] Transmitter-Prozess auf jedem Webserver ausgeführt wird, auf dem eine [!DNL Sensor] Instanz installiert ist. Der Transmitter-Prozess erscheint als &quot;txlogd&quot;in der Liste der Prozesse des Webservers. Sie können diese Prüfung mit einem Systemüberwachungstool durchführen.
 
 ## Einrichten von Administratorwarnungen im Data Workbench-Server {#section-d98e0f18b8fb45a78419fe75610a3b1e}
 
@@ -29,12 +32,12 @@ Eine andere Möglichkeit, zu überprüfen, ob der Sender ausgeführt wird, ist d
 
 ## Überprüfen des Systemstatus des Sensors {#section-de9d7e359242487a9fbead4ed65aebbc}
 
-Eine weitere Möglichkeit, zu überprüfen, ob der Transmitter ausgeführt wird, ist die manuelle Überprüfung der Daten [!DNL Servers Manager] in Data Workbench.
+Eine weitere Möglichkeit, zu überprüfen, ob der Sender läuft, ist die manuelle Überprüfung der [!DNL Servers Manager] Data Workbench.
 
-**So zeigen Sie die[!DNL Servers Manager]**
+**Zur Ansicht der[!DNL Servers Manager]**
 
-* Klicken Sie in Data Workbench mit der rechten Maustaste in einen Arbeitsbereich, klicken Sie **[!UICONTROL Admin]** und klicken Sie anschließend unter [!DNL Manage]und dann auf **[!UICONTROL Servers]**.
+* Klicken Sie in der Data Workbench mit der rechten Maustaste auf einen Arbeitsbereich, klicken Sie auf **[!UICONTROL Admin]** und dann unter [!DNL Manage]und klicken Sie auf **[!UICONTROL Servers]**.
 
 Wenn das Symbol für eine [!DNL Sensor] grün ist, wird der Sender ausgeführt.
 
-Weitere Informationen zum Thema [!DNL Servers Manager]finden Sie im Kapitel &quot;Verwaltungsschnittstellen&quot;des *Data Workbench-[!DNL Sensor]Handbuchs*.
+Weitere Informationen zum Thema [!DNL Servers Manager]finden Sie im Kapitel &quot;Verwaltungsschnittstellen&quot;des *Data Workbenchs-[!DNL Sensor]Handbuchs*.
