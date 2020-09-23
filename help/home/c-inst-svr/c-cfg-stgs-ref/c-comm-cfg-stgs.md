@@ -1,10 +1,10 @@
 ---
 description: Anweisungen zum Konfigurieren der Kommunikation für Insight Server oder Repeater.
-solution: Insight
+solution: Analytics
 title: Konfigurationseinstellungen für die Kommunikation
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 5%
@@ -71,12 +71,12 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Local Path = string: Protokolle\\ </p> </td> 
-   <td colname="col2"> <p>Ordner, in dem Sie die Protokolldateien speichern möchten. </p> <p>Beispiel: </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
+   <td colname="col2"> <p>Ordner, in dem Sie die Protokolldateien speichern möchten. </p> <p>Beispiel:  </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
      &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>Um über den <span class="wintitle"> Server Files Manager auf diesen Ordner zugreifen zu können, muss der in diesem Parameter angegebene Speicherort mit dem Speicherort übereinstimmen, den Sie im Parameter "Log Paths"in der </span>Datei "Log Processing.cfg"angegeben <span class="filepath"> </span> haben. Weitere Informationen zum Ändern des Protokollverzeichnisses in der <span class="filepath"> Datei " </span> Log Processing.cfg"finden Sie im Kapitel "Konfigurationsdatei für die Protokollverarbeitung"im Handbuch zur <i>Konfiguration</i>des Datensatzes. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Local Path = string: Audit\ </p> </td> 
-   <td colname="col2"> <p>Ordner, dem die Prüfprotokolle zugeordnet werden sollen. </p> <p>Beispiel: </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
+   <td colname="col2"> <p>Ordner, dem die Prüfprotokolle zugeordnet werden sollen. </p> <p>Beispiel:  </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
      &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Hinweis:  <p>Sie können Prüfprotokolle einem anderen lokalen Laufwerk zuordnen (Beispiel: <span class="filepath"> Zeichenfolge: P:\\Audit\\ </span>), aber ordnen Sie keine Prüfprotokolle einem Netzlaufwerk zu. </p> <p>Um über den <span class="wintitle"> </span>Server Files Manager auf diesen Ordner zugreifen zu können, muss der in diesem Parameter angegebene Speicherort mit dem Speicherort übereinstimmen, den Sie im Parameter Zugriffsprotokoll-Verzeichnis in dieser Datei angegeben haben. </p> </p> </td> 
   </tr> 
   <tr> 
