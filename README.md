@@ -1,9 +1,16 @@
 ---
-source-git-commit: ab11482af603a0856d097d60ec5736f9ed5ec0a7
+source-git-commit: fd80aec422f07806a734475c9c1cabb70596bb80
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '517'
+ht-degree: 85%
 
 ---
 # Artikel beitragen
+
+| EXL-PR | EXL | Vorschau | Aktivieren | Veröffentlicht | Hilfe |
+|--- |--- |--- |--- |--- |--- |
+| [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/data-workbench.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/data-workbench.en_pr-exl/lastBuild/) | [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/data-workbench.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/data-workbench.en_exl/lastBuild/lastBuild) | [Vorschauen-URL](https://experienceleague.corp.adobe.com/docs/data-workbench/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/data-workbench/using/home.html?lang=en) | [Autorenanleitung](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Wir freuen uns über Beiträge unserer Community sowie von Adobe-Mitarbeitern, die nicht zum Dokumentationsteam gehören.
 
