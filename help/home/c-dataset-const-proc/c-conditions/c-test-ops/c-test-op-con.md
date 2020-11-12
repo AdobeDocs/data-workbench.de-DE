@@ -5,9 +5,9 @@ title: Bedingungen für Testoperationen
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: 1630f34588e4984226b70c963618856496b42346
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1115'
 ht-degree: 6%
 
 ---
@@ -199,7 +199,7 @@ Die Parameter der [!DNL Regular Expression] Bedingung sind in der folgenden Tabe
  </tbody> 
 </table>
 
-In diesem Beispiel wird die Verwendung der [!DNL Regular Expression] Bedingung zur Übereinstimmung mit einem Datenfeld veranschaulicht, das aus dem Website-Traffic erfasst wurde. Die Bedingung gibt &quot;true&quot;nur dann zurück, wenn das Feld cs(Werber-Abfrage) eine Zeichenfolge enthält, die mit dem regulären Ausdruck übereinstimmt `campaign=C[1-9][0-9]{4}`. Dieser reguläre Ausdruck stimmt mit jeder Zeichenfolge überein, die &quot;Kampagne=C12345&quot;enthält. Das Muster stimmt jedoch nicht mit der Zeichenfolge &quot;Kampagne=C0123&amp;&quot;überein, da das erste Zeichen nach &quot;C&quot;nicht im Bereich 1-9 liegt.
+In diesem Beispiel wird die Verwendung der [!DNL Regular Expression] Bedingung zur Übereinstimmung mit einem Datenfeld veranschaulicht, das aus dem Website-Traffic erfasst wurde. Die Bedingung gibt &quot;true&quot;nur dann zurück, wenn das Feld cs(Werber-Abfrage) eine Zeichenfolge enthält, die mit dem regulären Ausdruck übereinstimmt `campaign=C[1-9][0-9]{4}`. Dieser reguläre Ausdruck stimmt mit allen Zeichenfolgen überein, die `campaign=C12345`enthalten. Das Muster stimmt jedoch nicht mit der Zeichenfolge überein, `campaign=C0123&` da das erste Zeichen nach &quot;C&quot;nicht im Bereich 1-9 liegt.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
