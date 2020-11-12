@@ -1,16 +1,19 @@
 ---
 description: Informationen zu Testbedingungen, einschließlich Vergleichen, nicht leer, Bereich, regulärer Ausdruck und Zeichenfolgenübereinstimmung.
 solution: Analytics
-title: Prüfbedingungen
+title: Bedingungen für Testoperationen
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1119'
+ht-degree: 6%
 
 ---
 
 
-# Prüfbedingungen{#test-operation-conditions}
+# Bedingungen für Testoperationen{#test-operation-conditions}
 
 Informationen zu Testbedingungen, einschließlich Vergleichen, nicht leer, Bereich, regulärer Ausdruck und Zeichenfolgenübereinstimmung.
 
@@ -31,13 +34,13 @@ Die Parameter der [!DNL Compare] Bedingung sind in der folgenden Tabelle beschri
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> Groß-/Kleinschreibung </td> 
-   <td colname="col2">True oder false. Wird nur verwendet, wenn der Typ <span class="wintitle"> LEXISCH</span>ist. Bei der Einstellung "false"werden Groß- und Kleinbuchstaben als gleich betrachtet. </td> 
+   <td colname="col2">Wahr oder falsch. Wird nur verwendet, wenn der Typ <span class="wintitle"> LEXISCH</span>ist. Bei der Einstellung "false"werden Groß- und Kleinbuchstaben als gleich betrachtet. </td> 
    <td colname="col3"> true (wahr) </td> 
   </tr> 
   <tr> 
@@ -76,7 +79,7 @@ Die Parameter der [!DNL Compare] Bedingung sind in der folgenden Tabelle beschri
  </tbody> 
 </table>
 
-In diesem Beispiel wird eine [!DNL Compare] Bedingung verwendet, um die Variable zu definieren [!DNL Log Entry Condition]. Während der Data Workbench-Server jeden Ereignisdatensatz liest, werden die numerischen Werte x-age und 55 verglichen. Wenn x-age bei einem gegebenen Protokolleintrag kleiner als oder gleich 55 ist, wird der Protokolleintrag in den Dataset-Aufbau einbezogen.
+In diesem Beispiel wird eine [!DNL Compare] Bedingung verwendet, um die Variable zu definieren [!DNL Log Entry Condition]. Während der Data Workbench-Server jeden Ereignis-Datensatz liest, werden die numerischen Werte x-age und 55 verglichen. Wenn x-age bei einem gegebenen Protokolleintrag kleiner als oder gleich 55 ist, wird der Protokolleintrag in den Dataset-Aufbau einbezogen.
 
 ![](assets/cfg_Condition_CompareCondition.png)
 
@@ -86,7 +89,7 @@ Die [!DNL Not Empty] Bedingung prüft, ob ein Feld einen Wert enthält oder leer
 
 Die Parameter der [!DNL Not Empty] Bedingung sind in der folgenden Tabelle beschrieben:
 
-| Parameter | Beschreibung | Standardeinstellung |
+| Parameter | Beschreibung | Standard |
 |---|---|---|
 | Kommentare | Optional. Hinweise zur Bedingung. | Kommentare |
 | Eingabe | Der Name des Felds im Protokolleintrag, das auf Inhalt überprüft werden soll. |  |
@@ -106,13 +109,13 @@ Die Parameter der [!DNL Range] Bedingung sind in der folgenden Tabelle beschrieb
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> Groß-/Kleinschreibung </td> 
-   <td colname="col2">True oder false. Wird nur verwendet, wenn der <span class="wintitle"> Typ</span> <span class="wintitle"> LEXISCH</span>ist. Bei der Einstellung "false"werden Groß- und Kleinbuchstaben als gleich betrachtet. </td> 
+   <td colname="col2">Wahr oder falsch. Wird nur verwendet, wenn der <span class="wintitle"> Typ</span> <span class="wintitle"> LEXISCH</span>ist. Bei der Einstellung "false"werden Groß- und Kleinbuchstaben als gleich betrachtet. </td> 
    <td colname="col3"> true (wahr) </td> 
   </tr> 
   <tr> 
@@ -153,7 +156,7 @@ In diesem Beispiel wird eine [!DNL Range] Bedingung verwendet, um die Variable z
 
 ## Regulärer Ausdruck {#section-ae9c016502cb44128760c58f2d2d5297}
 
-Der [!DNL Regular Expression] Bedingungstest verwendet die Musterübereinstimmung mit regulären Ausdrücken (siehe [Reguläre Ausdrücke](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)), um zu ermitteln, ob der Wert des angegebenen Eingabefelds eine Zeichenfolge enthält, die mit einem der im Parameter Übereinstimmungen angegebenen Muster übereinstimmt.
+Der [!DNL Regular Expression] Bedingungstest verwendet die Musterübereinstimmung mit regulären Ausdrücken (siehe [Reguläre Ausdruck](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)), um zu ermitteln, ob der Wert des angegebenen Eingabefelds eine Zeichenfolge enthält, die einem der im Übereinstimmungsparameter angegebenen Muster entspricht.
 
 Wenn die Eingabe ein Vektor von Zeichenfolgen ist, wird nur der erste Wert im Vektor für den Test verwendet. Die [!DNL Regular Expression] Bedingung führt vollständige Zeichenfolgenvergleiche durch. Wenn Sie Unterzeichenfolgen identifizieren möchten, müssen Sie &quot;.*&quot; auf die Zeichenfolge.
 
@@ -164,13 +167,13 @@ Die Parameter der [!DNL Regular Expression] Bedingung sind in der folgenden Tabe
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> Groß-/Kleinschreibung </td> 
-   <td colname="col2"> True oder false. Bei der Einstellung "false"werden Groß- und Kleinbuchstaben als gleich betrachtet. </td> 
+   <td colname="col2"> Wahr oder falsch. Bei der Einstellung "false"werden Groß- und Kleinbuchstaben als gleich betrachtet. </td> 
    <td colname="col3"> true (wahr) </td> 
   </tr> 
   <tr> 
@@ -184,11 +187,11 @@ Die Parameter der [!DNL Regular Expression] Bedingung sind in der folgenden Tabe
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Stimmt überein </td> 
-   <td colname="col2"> <p>Die Muster für reguläre Ausdrücke, die mit dem Wert des Eingabefelds übereinstimmen sollen. </p> <p> <b> So fügen Sie ein Muster für reguläre Ausdrücke hinzu</b> 
+   <td colname="col1"> Stimmt überein mit </td> 
+   <td colname="col2"> <p>Die Muster des regulären Ausdrucks, die mit dem Wert des Eingabefelds übereinstimmen. </p> <p> <b> So fügen Sie ein reguläres Ausdruck-Muster hinzu</b> 
      <ol id="ol_6D6467FF74334DEA8E8625C3B155D11D"> 
       <li id="li_9E13A63558FF44749C2E49BD50B7F770">Klicken Sie mit der rechten Maustaste auf <span class="uicontrol"> Übereinstimmungen</span>. </li> 
-      <li id="li_195A2F3B6B9442F5B1DACDE0FC96CE5C">Klicken Sie auf <span class="uicontrol"> Neue</span> hinzufügen &gt; <span class="uicontrol"> Regulärer Ausdruck</span>. </li> 
+      <li id="li_195A2F3B6B9442F5B1DACDE0FC96CE5C">Klicken Sie auf <span class="uicontrol"> Hinzufügen neuen</span> &gt; <span class="uicontrol"> Regulären Ausdruck</span>. </li> 
       <li id="li_225E98F8EF39426A9483B86EA2CFE6DF">Geben Sie den gewünschten regulären Ausdruck in das Textfeld ein. </li> 
      </ol> </p> </td> 
    <td colname="col3"> </td> 
@@ -196,26 +199,26 @@ Die Parameter der [!DNL Regular Expression] Bedingung sind in der folgenden Tabe
  </tbody> 
 </table>
 
-In diesem Beispiel wird die Verwendung der [!DNL Regular Expression] Bedingung zur Übereinstimmung mit einem Datenfeld veranschaulicht, das aus dem Website-Traffic erfasst wurde. Die Bedingung gibt &quot;true&quot;nur dann zurück, wenn das Feld cs(referrer-query) eine Zeichenfolge enthält, die mit dem regulären Ausdruck campaign=C[1-9][0-9]{4} übereinstimmt. Dieser reguläre Ausdruck stimmt mit jeder Zeichenfolge überein, die &quot;campaign=C12345&quot;enthält. Das Muster stimmt jedoch nicht mit der Zeichenfolge &quot;campaign=C0123&amp;&quot;überein, da das erste Zeichen nach dem Zeichen &quot;C&quot;nicht im Bereich 1-9 liegt.
+In diesem Beispiel wird die Verwendung der [!DNL Regular Expression] Bedingung zur Übereinstimmung mit einem Datenfeld veranschaulicht, das aus dem Website-Traffic erfasst wurde. Die Bedingung gibt &quot;true&quot;nur dann zurück, wenn das Feld cs(Werber-Abfrage) eine Zeichenfolge enthält, die mit dem regulären Ausdruck übereinstimmt `campaign=C[1-9][0-9]{4}`. Dieser reguläre Ausdruck stimmt mit jeder Zeichenfolge überein, die &quot;Kampagne=C12345&quot;enthält. Das Muster stimmt jedoch nicht mit der Zeichenfolge &quot;Kampagne=C0123&amp;&quot;überein, da das erste Zeichen nach &quot;C&quot;nicht im Bereich 1-9 liegt.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
 ## Zeichenfolgenübereinstimmung {#section-f8d132085c6b4500bfbe4515b848142f}
 
-Die [!DNL String Match] Bedingung testet die Zeichenfolgengleichheit. Es nimmt ein bestimmtes Feld als Eingabe und testet den Wert dieses Felds in jedem Protokolleintrag anhand der im Parameter Übereinstimmung des Vorgangs angegebenen Zeichenfolgen. Wenn eine dieser übereinstimmenden Zeichenfolgen, die zwischen Groß- und Kleinschreibung unterscheidet, mit dem Wert im bereitgestellten Eingabefeld übereinstimmt, gibt der Vorgang &quot;true&quot;zurück. Wenn die Bedingung keine Übereinstimmungszeichenfolgen [!DNL StringCondition] enthält, gibt sie &quot;false&quot;zurück. Wenn die Eingabe ein Vektor von Zeichenfolgen ist, wird nur der erste Wert (Zeichenfolge) im Vektor für den Test verwendet.
+Die [!DNL String Match] Bedingung testet die Zeichenfolgengleichheit. Es nimmt ein bestimmtes Feld als Eingabe und testet den Wert dieses Felds in jedem Protokolleintrag anhand der im Parameter Übereinstimmung des Vorgangs angegebenen Zeichenfolgen. Wenn eine dieser übereinstimmenden Zeichenfolgen, die zwischen Groß- und Kleinschreibung unterscheidet, mit dem Wert im bereitgestellten Eingabefeld übereinstimmt, gibt der Vorgang &quot;true&quot;zurück. In dem Ereignis, dass die Bedingung keine Übereinstimmungszeichenfolgen [!DNL StringCondition] enthält, gibt die Bedingung &quot;false&quot;zurück. Wenn die Eingabe ein Vektor von Zeichenfolgen ist, wird nur der erste Wert (Zeichenfolge) im Vektor für den Test verwendet.
 
 <table id="table_BD599BAA5DD54B278813B6C38AC8DE6B"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> Groß-/Kleinschreibung </td> 
-   <td colname="col2"> True oder false. Bei der Einstellung "false"werden Groß- und Kleinbuchstaben als gleich betrachtet. </td> 
+   <td colname="col2"> Wahr oder falsch. Bei der Einstellung "false"werden Groß- und Kleinbuchstaben als gleich betrachtet. </td> 
    <td colname="col3"> true (wahr) </td> 
   </tr> 
   <tr> 
@@ -229,7 +232,7 @@ Die [!DNL String Match] Bedingung testet die Zeichenfolgengleichheit. Es nimmt e
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Stimmt überein </td> 
+   <td colname="col1"> Stimmt überein mit </td> 
    <td colname="col2"> <p>Die Zeichenfolge(n), die mit dem Wert des Eingabefelds übereinstimmen soll(en). </p> <p> <b>So fügen Sie eine Zeichenfolge hinzu</b> 
      <ol id="ol_9E32218C771445D88357960475FAD6EB"> 
       <li id="li_A700747858D0470491783E9B3933DAFE">Klicken Sie mit der rechten Maustaste auf <span class="uicontrol"> Übereinstimmungen</span>. </li> 
