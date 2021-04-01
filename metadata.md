@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe analytics
 solution-title: Lernen und Support
 solution-hub-url: https://helpx.adobe.com/de/support/analytics.html
@@ -8,10 +8,13 @@ getting-started-title: Erste Schritte
 getting-started-url: https://helpx.adobe.com/de/analytics/get-started.html
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/analytics/kt/index/analytics-videos.html
-git-repo: https://github.com/AdobeDocs/data-workbench.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/data-workbench.de-DE
 index: true
 translation-type: tm+mt
-source-git-commit: a20cfa7bcae08fcb516dead5aa899e1f06db64f2
+source-git-commit: cfa391f4238bac43fdf2539baa8e038a79110200
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 96%
 
 ---
 
