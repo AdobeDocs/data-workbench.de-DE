@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Data Workbench-Hilfe
 user-guide-description: Erfahren Sie mehr über die Mehrkanal-Funktionen der Data Workbench. Beinhaltet Leitfäden für den Data Workbench-Client sowie Installation, Datensatzkonfiguration usw.
 translation-type: tm+mt
-source-git-commit: cfa391f4238bac43fdf2539baa8e038a79110200
+source-git-commit: 3fc9ad4411438afe50c0e20d807234176480e2b3
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3493'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,6 @@ ht-degree: 100%
       + [Upgrade von Data Workbench – Übersicht](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [Upgrade von Version 6.4 auf 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [Upgrade von Version 6.3 auf 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
-      + [DWB-Server-Upgrade: 6.2 auf 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
       + [DWB-Server-Upgrade: 6.1 auf 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
       + [Data Workbench-Upgrade: 6.0 auf 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
       + [Data Workbench-Upgrade: 5.5 auf 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
@@ -269,7 +268,6 @@ ht-degree: 100%
       + Arbeiten mit Vektorebenen {#vector-layers}
          + [Arbeiten mit Vektorebenen](home/c-get-started/c-im-layers/c-vctr-layers/c-vctr-layers.md)
          + [Definieren von Vektorebenen mit Verweis auf Vektordateien](home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md)
-         + [Vektorebenen mit Verweis auf Dateien mit tabulatorgetrennten Werten](home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md)
          + [Verfügbar machen von neuen Vektorebenen](home/c-get-started/c-im-layers/c-vctr-layers/t-make-new-vctr-layer-av.md)
    + Administrationsoberflächen {#admin-ui}
       + [Administrationsoberflächen](home/c-get-started/c-admin-intrf/c-admin-intrf.md)
@@ -334,7 +332,6 @@ ht-degree: 100%
          + [Ändern der Reihenfolge von Registerkarten](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-chg-ordr-tabs.md)
          + [Anzeigen von Unterordnern als Unterregisterkarten](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-sbfldrs-sbtabs.md)
          + [Ausblenden oder Entfernen von Registerkarten](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-hide-rmv-tabs.md)
-      + [Installieren des Eingabemethoden-Editors](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
       + [Einrichten lokalisierter Sprachen](home/c-get-started/c-intf-anlys-ftrs/c-localized-ime/c-localized-ime-config.md)
       + Konfigurieren gesperrter Arbeitsbereiche {#config-locked-wkspc}
          + [Konfigurieren gesperrter Arbeitsbereiche ](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md)
@@ -380,7 +377,6 @@ ht-degree: 100%
          + [Bedingung für neuen Besucher](home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-new-vstr-con.md)
          + [Zeitzonen](home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-time-zones.md)
       + [Konzepte zur Konfigurationsdatei für Umwandlungen](home/c-dataset-const-proc/c-trans-config-file/c-con-tran-config-file.md)
-      + [DeviceAtlas-Distribution](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
    + Datensatzaufnahme-Dateien {#dataset-include-files}
       + [Über Datensatzaufnahme-Dateien](home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
       + [Arbeiten mit Datensatzaufnahme-Dateien](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/c-work-dataset-inc-files.md)
@@ -468,7 +464,6 @@ ht-degree: 100%
       + Oberflächen für die Datensatzkonfiguration {#dataset-config-ui}
          + [Arbeiten mit den Oberflächen für die Datensatzkonfiguration](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-config-int.md)
          + [Datensatzschema](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md)
-         + [Abhängigkeitskarten](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dep-maps.md)
          + [Feld-Viewer](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-field-viewers.md)
       + Ausblenden von Datensatzkomponenten {#hide-dataset-comp}
          + [Ausblenden von Datensatzkomponenten](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/c-hide-dataset-comp.md)
@@ -765,12 +760,6 @@ ht-degree: 100%
       + Upgrade von Insight Server {#upgrade-insight-server}
          + [Upgrade von Insight Server](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
          + [DWB-Server-Upgrade: 6.2 auf 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
-         + [DWB-Server-Upgrade: 6.1 auf 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
-         + Data Workbench-Upgrade: 6.0 auf 6.1 {#upgrade-6-0-to-6-1}
-            + [Data Workbench-Upgrade: 6.0 auf 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
-            + [Installieren des Eingabemethoden-Editors](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
-            + [DeviceAtlas-Distribution](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
-         + [Data Workbench-Upgrade: 5.5 auf 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
          + [DWB-Server-Upgrade: 5.4 auf 5.5](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
          + [Upgrade von Transform](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-trfm.md)
          + [Upgrade von Repeater](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md)
