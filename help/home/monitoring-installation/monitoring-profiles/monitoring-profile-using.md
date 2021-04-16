@@ -1,24 +1,25 @@
 ---
-description: Das Profil "Data Workbench-Profilstatus"bietet aktuelle Informationen zum Status des Data Workbench-Servers basierend auf dem Profil und nicht auf Servermetriken oder historischen Daten.
-solution: Analytics
-title: Data Workbench-Profilstatus-Arbeitsbereich
-topic: Data workbench
+description: Das Data Workbench Profil Status-Profil bietet aktuelle Informationen zum Datenbasis-Serverstatus basierend auf dem Profil und nicht auf Servermetriken oder Verlaufsdaten.
+title: Data Workbench-Arbeitsbereich zum Profilstatus
 uuid: b54713c8-863d-4376-8ebf-4a2985e28c76
+exl-id: 40b9b0bf-4fd9-48d8-875b-514921c520cd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 4%
 
 ---
 
+# Data Workbench-Arbeitsbereich zum Profilstatus{#data-workbench-profile-status-workspace}
 
-# Data Workbench-Profilstatus-Arbeitsbereich{#data-workbench-profile-status-workspace}
+Das Data Workbench Profil Status-Profil bietet aktuelle Informationen zum Datenbasis-Serverstatus basierend auf dem Profil und nicht auf Servermetriken oder Verlaufsdaten.
 
-Das Profil &quot;Data Workbench-Profilstatus&quot;bietet aktuelle Informationen zum Status des Data Workbench-Servers basierend auf dem Profil und nicht auf Servermetriken oder historischen Daten.
+## Status des Data Workbench-Profils {#section-65d1fa393cfd450cbacef3cba823fcc1}
 
-## Datenbasis-Profilstatus {#section-65d1fa393cfd450cbacef3cba823fcc1}
+Dieses Profil stellt die Daten des Data Workbench-Servers bereit, die aktuell sind, jedoch nicht in Echtzeit, da der Agent alle zehn Minuten abgefragt wird und Berichte immer diese zehnminütige Latenz aufweist. Genauer gesagt bieten die von diesem Profil generierten Datensätze die neueste Serverbeobachtung vom Agenten, der meist eine Standardabfragezeit von zehn Minuten hat.
 
-Dieses Statusprofil enthält die aktuellen Daten des Data Workbench-Servers, jedoch nicht in Echtzeit, da der Agent alle zehn Minuten abgefragt wird und die Berichterstellung immer diese zehnminütige Latenz enthält. Genauer gesagt bieten die von diesem Profil erzeugten Datensätze die neueste Beobachtung des Servers vom Agenten, der meist eine Standardabfragezeit von zehn Minuten hat.
-
-Weitere Referenzinformationen zu den im Profil-Status-Profil-Profil von Data Workbench verwendeten Dimensionen finden Sie unter [Insight-Profil-Status-Profil](../../../home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md#concept-d4cd7da41c8a42bab4aea25418264e64).
+Weitere Referenzinformationen zu den im Data Workbench Profil Status-Profil verwendeten Dimensionen finden Sie unter [Insight Profil Status Profil](../../../home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md#concept-d4cd7da41c8a42bab4aea25418264e64).
 
 ![](assets/Status_General_Status.png)
 
@@ -33,4 +34,3 @@ Wenn die angehaltene Metrik 1 ist, wird der Server angehalten. Wenn der Wert 0 i
 **Protokolllesen bei großen Batch-Lasten**
 
 ![](assets/Status_General_stalled_log.png)
-
