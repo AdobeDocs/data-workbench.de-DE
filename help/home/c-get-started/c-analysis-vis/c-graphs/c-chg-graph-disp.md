@@ -1,14 +1,15 @@
 ---
 description: In der Standardeinstellung werden bei Visualisierungen für Diagramme Balken angezeigt. Die Balken können jedoch problemlos als Linien angezeigt werden und umgekehrt.
-solution: Analytics
 title: Ändern der Diagrammanzeige
-topic: Data workbench
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
+exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 4%
 
 ---
-
 
 # Ändern der Diagrammanzeige{#change-a-graph-display}
 
@@ -26,7 +27,7 @@ Klicken Sie mit der rechten Maustaste auf die Dimensionsbeschriftung am unteren 
 
 **Verlaufsüberlagerung auf einem Diagramm**
 
-Sie können mit der rechten Maustaste auf eine **Verlaufsüberlagerung** klicken, um die Diagrammelemente besser anzuzeigen.
+Sie können mit der rechten Maustaste klicken und eine **Verlaufsüberlagerung** aus dem Menü auswählen, um die Diagrammelemente besser zu Ansichten.
 
 ![](assets/6_51_gradient_graph.png)
 
@@ -34,4 +35,3 @@ Sie können mit der rechten Maustaste auf eine **Verlaufsüberlagerung** klicken
 * **Hintergrund von links**. Wählen Sie diese Option, um die Farbabstufung über alle Balken von links nach rechts anzuzeigen.
 * **Hintergrund von rechts**. Wählen Sie diese Option, um die Farbabstufung über alle Balken von rechts nach links anzuzeigen.
 * **Zylinder**. Wählen Sie diese Option, um die Farbabstufung von der Mitte der einzelnen Balken bis zum Rand der einzelnen Balken anzuzeigen.
-
