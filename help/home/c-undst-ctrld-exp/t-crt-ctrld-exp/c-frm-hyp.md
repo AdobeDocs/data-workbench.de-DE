@@ -2,16 +2,15 @@
 description: Eine Hypothese ist eine Annahme, die als stichhaltig betrachtet werden kann und die eine vorsichtige Erklärung liefert, die durch eine weitere Untersuchung geprüft werden kann.
 solution: Analytics,Analytics
 title: Formulieren einer Hypothese
-topic: Data workbench
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
+exl-id: d7e77d85-4655-49c5-adeb-15402e48dd7b
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 3%
 
 ---
-
 
 # Formulieren einer Hypothese{#forming-a-hypothesis}
 
@@ -23,11 +22,10 @@ Ihre Hypothese muss in der Lage sein, ein Ergebnis mit statistischer Bedeutung z
 
 An dieser Stelle sollten Sie auch Ihre Besucher-basierten Erfolgsmetriken entweder als Teil der Hypothese oder als zusätzliche Matrix definieren.
 
-**Hypothese:** Wenn Sie den grafischen Link &quot;Anforderung einer Demo&quot;näher an den Anfang der Seite verschieben, erhöht sich die Umrechnungsrate des Besuchers um mindestens 1,5 %.
+**Hypothese:Wenn Sie den grafischen Link &quot;Anforderung einer Demo&quot;näher an den Anfang der Seite** verschieben, erhöht sich die Umrechnung des Besuchers um mindestens 1,5 %.
 
 In unserer Hypothese haben wir das Erfolgskriterium für dieses Experiment als eine Steigerung der Besucher-Umrechnung von mindestens 1,5 % definiert.
 
 ![](assets/ControlPage.png)
 
 ![](assets/TestPage.png)
-
