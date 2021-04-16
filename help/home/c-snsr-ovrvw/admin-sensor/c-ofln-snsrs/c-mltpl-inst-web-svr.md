@@ -1,16 +1,15 @@
 ---
 description: Informationen zur allgemeinen Konfiguration des Sensors mit einer Webserverinstanz, die auf einem Webserver ausgeführt wird.
-solution: Analytics
 title: Arbeiten mit mehreren Instanzen eines Web-Servers
 uuid: 778ea95f-e0f2-4c2a-b7ed-7e323fea1e48
+exl-id: a371f9ed-6c27-4b3d-843f-ae5621013410
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 5%
 
 ---
-
 
 # Arbeiten mit mehreren Instanzen eines Web-Servers{#working-with-multiple-instances-of-a-web-server}
 
@@ -18,9 +17,9 @@ Informationen zur allgemeinen Konfiguration des Sensors mit einer Webserverinsta
 
 ![](assets/web_inst.png)
 
-In diesem Szenario schreibt eine einzelne Webserverinstanz Daten in die speicherzugeordnete Warteschlangendatei, die vom Sender gelesen und an die [!DNL data workbench server]gesendet wird.
+In diesem Szenario schreibt eine einzelne Webserverinstanz Daten in die speicherzugeordnete Warteschlangendatei, die vom Sender gelesen und an das [!DNL data workbench server] gesendet wird.
 
-Wenn Sie auf einem Webserver installiert [!DNL Sensor] sind, auf dem mehrere Sammlungsinstanzen ausgeführt werden, haben Sie zwei Möglichkeiten, diese zu konfigurieren:
+Wenn [!DNL Sensor] auf einem Webserver installiert ist, auf dem mehrere Sammlungsinstanzen ausgeführt werden, können Sie dies auf zwei Arten konfigurieren:
 
 * Sie können alle Sammlermodule eine Warteschlangendatei gemeinsam verwenden lassen.
 
@@ -28,11 +27,10 @@ Wenn Sie auf einem Webserver installiert [!DNL Sensor] sind, auf dem mehrere Sam
 
 * Sie können die oben genannte Architektur mehrmals replizieren und jede Webserverinstanz über eine separate Warteschlangendatei verfügen.
 
-   Dadurch können Sie jede Webserverinstanz eindeutig identifizieren. Mit anderen Worten, die Identifizierung des Webservers (und der entsprechenden SensorID in der [!DNL Sensor] Konfiguration) ist eine Funktion dieser Konfiguration.
+   Dadurch können Sie jede Webserverinstanz eindeutig identifizieren. Mit anderen Worten, die Identifizierung des Webservers (und die entsprechende SensorID in der [!DNL Sensor]-Konfiguration) ist eine Funktion dieser Konfiguration.
 
-In jedem Fall verfügen die Daten immer noch über alle Hostnameninformationen, sodass Sie zwischen [!DNL www.client.com], [!DNL www2.client.com]usw. unterscheiden können. Die richtige Konfiguration wird durch die Analyse von Zielen bestimmt und ob die Analysten die Daten basierend auf einer bestimmten Instanz auf einem Webserver segmentieren müssen.
+In jedem Fall verfügen die Daten immer noch über alle Hostnameninformationen, sodass Sie zwischen [!DNL www.client.com], [!DNL www2.client.com] usw. unterscheiden können. Die richtige Konfiguration wird durch die Analyse von Zielen bestimmt und ob die Analysten die Daten basierend auf einer bestimmten Instanz auf einem Webserver segmentieren müssen.
 
 >[!NOTE]
 >
 >Diese Art der Segmentierung wird in der Regel nur in der betrieblichen Analyse verwendet und bietet außerhalb dieses Bereichs keinen großen praktischen Nutzen.
-
