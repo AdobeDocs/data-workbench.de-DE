@@ -1,23 +1,24 @@
 ---
-description: Informationen zu den Verwaltungsschnittstellen, die zur Verwaltung und Überwachung Ihrer Implementierung von Data Workbench zur Verfügung stehen. Informationen zum Öffnen von Verwaltungsschnittstellen sowie Informationen zu verschiedenen anderen Schnittstellen.
-solution: Analytics
-title: Verwaltungsschnittstellen
-topic: Data workbench
+description: Informationen zu den Verwaltungsschnittstellen, die zur Verwaltung und Überwachung Ihrer Implementierung der Data Workbench zur Verfügung stehen. Informationen zum Öffnen von Verwaltungsschnittstellen sowie Informationen zu verschiedenen anderen Schnittstellen.
+title: Administrationsoberflächen
 uuid: bd587f01-7edc-44e8-b4d4-f74f94f5d60f
+exl-id: 109e30da-9ccb-4349-865a-dff9c05fe37a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 23%
 
 ---
 
+# Administrationsoberflächen{#administrative-interfaces}
 
-# Verwaltungsschnittstellen{#administrative-interfaces}
+Informationen zu den Verwaltungsschnittstellen, die zur Verwaltung und Überwachung Ihrer Implementierung der Data Workbench zur Verfügung stehen. Informationen zum Öffnen von Verwaltungsschnittstellen sowie Informationen zu verschiedenen anderen Schnittstellen.
 
-Informationen zu den Verwaltungsschnittstellen, die zur Verwaltung und Überwachung Ihrer Implementierung von Data Workbench zur Verfügung stehen. Informationen zum Öffnen von Verwaltungsschnittstellen sowie Informationen zu verschiedenen anderen Schnittstellen.
-
-* [Benutzeroberfläche des Datenschemas](c-dtst-sch-intrf.md)
-* [Abfragestatus-Legende](c-query-stat-lgnd.md)
+* [Oberfläche zum Datensatzschema](c-dtst-sch-intrf.md)
+* [Legende zum Abfragestatus](c-query-stat-lgnd.md)
 * [Abfragewarteschlange](c-query-que/c-query-que.md)
-* [Legende bearbeiten](c-pro-lgd.md)
-* [Detaillierte Statusoberfläche](c-det-stat-interf.md)
-* [Profilmanager](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)
-* [Datenbestand-Manager](c-dataset-mgrs/c-dataset-mgrs.md)
+* [Verarbeitungslegende](c-pro-lgd.md)
+* [Oberfläche zu Statusdetails](c-det-stat-interf.md)
+* [Profil-Manager](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)
+* [Datensatz-Manager](c-dataset-mgrs/c-dataset-mgrs.md)
