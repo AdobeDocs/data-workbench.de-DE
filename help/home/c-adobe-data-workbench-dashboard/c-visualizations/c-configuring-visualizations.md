@@ -1,54 +1,55 @@
 ---
-description: Zeigt, wie Titel, Profil, Dimension, Metrik, Filter, Ansicht oben, Sortieren nach und Zeitraum konfiguriert werden.
-solution: Analytics
-title: Visualisierungen konfigurieren
-topic: Data workbench
+description: Zeigt, wie Sie Titel, Profil, Dimension, Metrik, Filter, Anzeigenkopf, Sortierung nach und Zeitraum konfigurieren.
+title: Konfigurieren von Visualisierungen
 uuid: aca77188-8f28-4554-8913-412b252f688c
+exl-id: 153adf94-5689-4917-9d71-625caef49903
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 1%
 
 ---
 
+# Konfigurieren von Visualisierungen{#configuring-visualizations}
 
-# Visualisierungen konfigurieren{#configuring-visualizations}
+Zeigt, wie Sie Titel, Profil, Dimension, Metrik, Filter, Anzeigenkopf, Sortierung nach und Zeitraum konfigurieren.
 
-Zeigt, wie Titel, Profil, Dimension, Metrik, Filter, Ansicht oben, Sortieren nach und Zeitraum konfiguriert werden.
-
-Jede Visualisierung auf der Dashboard-Arbeitsfläche verfügt über eine eigene Konfiguration. Wenn eine Visualisierung zum ersten Mal der Dashboard-Arbeitsfläche hinzugefügt wird, wird das Konfigurationsfenster automatisch angezeigt. Nach der Konfiguration kann die Visualisierung jederzeit geändert werden, indem Sie auf das Zahnradsymbol oben rechts im Visualisierungsfenster klicken.
+Jede Visualisierung auf der Arbeitsfläche des Dashboards hat eine eigene Konfiguration. Wenn eine Visualisierung zum ersten Mal der Arbeitsfläche des Dashboards hinzugefügt wird, wird das Konfigurationsfenster automatisch angezeigt. Nach der Konfiguration kann die Visualisierung jederzeit geändert werden, indem Sie auf das Zahnradsymbol oben rechts im Visualisierungsfenster klicken.
 
 >[!NOTE]
 >
 >Die Konfigurationsoptionen variieren je nach Art der angezeigten Visualisierung geringfügig.
 
-## Titel der Visualisierung {#section-0414844283d745ae912e85f8ea14a51d}
+## Visualisierungstitel {#section-0414844283d745ae912e85f8ea14a51d}
 
-Mit diesem Feld können Sie den Titel anpassen, der oben in der Visualisierung angezeigt wird. Standardmäßig ist der Titel auf **[!UICONTROL Automatic Title]**, wodurch automatisch ein Titel für das Visualisierungsfenster generiert wird. Durch Löschen der **[!UICONTROL Automatic Title]** Schaltfläche können Sie einen beliebigen Titel in dieses Feld einfügen. (Dieses Feld gilt für alle Visualisierungen.)
+Mit diesem Feld können Sie den Titel anpassen, der oben in der Visualisierung angezeigt wird. Standardmäßig ist der Titel auf **[!UICONTROL Automatic Title]** eingestellt, wodurch automatisch ein Titel für das Visualisierungsfenster generiert wird. Durch Löschen der Schaltfläche **[!UICONTROL Automatic Title]** können Sie einen beliebigen Titel in dieses Feld setzen. (Dieses Feld gilt für alle Visualisierungen.)
 
 ![](assets/title.png)
 
 ## Profil {#section-16eb0def0a2d4eb289f5bb9200d14754}
 
-In diesem Feld können Sie auswählen, aus welchem Profil Sie Daten visualisieren möchten. Durch Klicken auf das Dropdown-Menü erhalten Sie eine Liste der Profile, auf die Sie Zugriff haben. (Dieses Feld gilt nicht für Rich-Text-Visualisierungen.)
+In diesem Feld können Sie auswählen, aus welchem Profil Daten visualisiert werden sollen. Durch Klicken auf das Dropdown-Menü erhalten Sie eine Liste der Profil, auf die Sie Zugriff haben. (Dieses Feld gilt nicht für Rich-Text-Visualisierungen.)
 
-Profile sind in Data Workbench definierte Datensätze, die Daten über eine bestimmte Domäne sowie die Dimensionen, Metriken und Filter enthalten, die die Daten begleiten. Ein Profil ist häufig so konzipiert, dass es einen bestimmten Zweck erfüllt (z. B. Marketing oder Website-Traffic).
+Profil sind in Data Workbench definierte Datensätze, die Daten über eine bestimmte Domäne sowie die Dimensionen, Metriken und Filter enthalten, die die Daten begleiten. Ein Profil ist häufig auf die Erfüllung eines bestimmten Zwecks (z. B. Marketing oder Website-Traffic) ausgelegt.
 
 >[!NOTE]
 >
->Sie können nur die Profile anzeigen, für die Ihnen Zugriff gewährt wurde. Weitere Informationen finden Sie unter Zugriffssteuerung.
+>Sie können nur die Profil sehen, für die Ihnen Zugriff gewährt wurde. Weitere Informationen finden Sie unter Zugriffskontrollen.
 
 ![](assets/profile.png)
 
 ## Dimension {#section-4ebb8c4308a146c3a35c7ac7ab6b579f}
 
-Hier können Sie die Dimension auswählen, die Sie visualisieren möchten. Die Liste wird aus der Liste der Dimensionen gefüllt, die in dem im Feld Profil ausgewählten Profil verfügbar sind. Klicken Sie auf die gewünschte Dimension und dann auf die Schaltfläche Auswählen. (Dieses Feld gilt nicht für Metrik-Legenden und Rich-Text-Visualisierungen.)
+Hier können Sie die Dimension auswählen, die Sie visualisieren möchten. Die Liste wird aus der Liste der Dimensionen gefüllt, die aus dem im Feld &quot;Profil&quot;ausgewählten Profil verfügbar sind. Klicken Sie auf die gewünschte Dimension und dann auf die Schaltfläche Auswählen. (Dieses Feld gilt nicht für Metrik-Legenden und Rich-Text-Visualisierungen.)
 
-Dimensionen sind Kategorien gleichartiger Datentypen. Die Dimension &quot;Wochentage&quot;setzt sich beispielsweise aus den folgenden Datenelementen zusammen: Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag und Samstag. Dimensionen zeigen, was gemessen wird.
+Dimensionen sind Kategorien ähnlicher Datentypen. Die Dimension &quot;Wochentage&quot;setzt sich beispielsweise aus den folgenden Datenelementen zusammen: Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag und Samstag. Dimensionen zeigen, was gemessen wird.
 
 ![](assets/dimension.png)
 
-## Metric(s) {#section-7d46f2f1b9fe4e539b5eb0a0dc6e5ad3}
+## Metrik(en) {#section-7d46f2f1b9fe4e539b5eb0a0dc6e5ad3}
 
-Hier können Sie die zu visualisierenden Metriken auswählen. Metriken sind quantitative Objekte und werden durch einen quantifizierbaren Ausdruck definiert. Beispielsweise werden Seitenansichten pro Sitzung vom Ausdruck der Anzahl der Seitenansichten dividiert durch die Anzahl der Sitzungen abgeleitet. Metriken beantworten die Frage &quot;Wie viele?&quot;
+Hier können Sie die zu visualisierenden Metriken auswählen. Metriken sind quantitative Objekte und werden durch einen quantifizierbaren Ausdruck definiert. Beispielsweise werden die Ansichten der Seite pro Sitzung vom Ausdruck der Anzahl der Ansichten der Seite dividiert durch die Anzahl der Sitzungen abgeleitet. Metriken beantworten die Frage &quot;Wie viele?&quot;
 
 Visualisierungen mit einer Metrik haben ein Auswahlfenster mit einer Metrik:
 
@@ -58,21 +59,21 @@ Visualisierungen mit mehreren Metriken verfügen über ein Auswahlfenster mit me
 
 ![](assets/metrics.png)
 
-Die Liste wird aus der Liste der verfügbaren Metriken aus dem im Feld Profil ausgewählten Profil gefüllt.
+Die Liste wird aus der Liste der Metriken gefüllt, die aus dem im Feld Profil ausgewählten Profil verfügbar sind.
 
 Klicken Sie auf die gewünschten Metriken und dann auf **[!UICONTROL Select]**. (Dieses Feld gilt nicht für Rich-Text-Visualisierungen.)
 
 ## Filter {#section-f8619ae2f8e54735a2c1b0fbb8bb1281}
 
-Wählen Sie die Filter aus, die Sie auf Ihre Visualisierung anwenden möchten. Im Fenster zur Filterauswahl können Sie mehrere Filter aus der Filterliste auswählen. Die Liste wird aus der Liste der verfügbaren Filter aus dem im Feld Profil ausgewählten Profil gefüllt. Klicken Sie auf den gewünschten Filter und dann auf **[!UICONTROL Select]**.
+Wählen Sie die Filter aus, die Sie auf Ihre Visualisierung anwenden möchten. Im Filterauswahlfenster können Sie mehrere Filter aus der Liste auswählen. Die Liste wird aus der Liste der Filter gefüllt, die aus dem im Profil ausgewählten Profil verfügbar sind. Klicken Sie auf den gewünschten Filter und dann auf **[!UICONTROL Select]**.
 
 >[!NOTE]
 >
->Hier angewendete Filter werden nur auf die entsprechende Visualisierung angewendet, nicht auf das gesamte Dashboard. Dies ist nützlich, um die Ergebnisse zweier verschiedener Visualisierungen mit verschiedenen angewendeten Filtern zu vergleichen.
+>Hier angewendete Filter werden nur auf die entsprechende Visualisierung angewendet, nicht auf das gesamte Dashboard. Dies ist hilfreich, um die Ergebnisse zweier verschiedener Visualisierungen mit verschiedenen angewendeten Filtern zu vergleichen.
 
 ![](assets/filter.png)
 
-## Anzeigetafeln {#section-7ce71cb0fa6446998b710b427e68b133}
+## Anzeigen von Tops {#section-7ce71cb0fa6446998b710b427e68b133}
 
 Visualisierungen im Dashboard sind nicht so ausgelegt, dass sie die Gesamtheit der Daten anzeigen. Sie ermöglichen es Ihnen vielmehr, die Anzahl der Dimensionsdatensätze anzugeben, die Sie in der Visualisierung anzeigen möchten. Dies zeigt die höchste Anzahl von Dimensionen in Abhängigkeit vom unten angegebenen Sortierwert an. (Dieses Feld gilt nicht für Tabellen-, Metrik- und Rich-Text-Visualisierungen.)
 
@@ -92,11 +93,11 @@ Auf diese Weise können Sie festlegen, wie die Daten sortiert werden sollen, wen
 
 ## Zeitraum {#section-6220368e9e524b46ac735add6ab9edb0}
 
-Mit dieser Visualisierung können Sie das gewünschte Start- und/oder Enddatum der Daten angeben, die in der Visualisierung angezeigt werden sollen.
+Mit dieser Visualisierung können Sie den gewünschten Beginn und/oder das Enddatum der Daten angeben, die in der Visualisierung angezeigt werden sollen.
 
-Bei Auswahl von **[!UICONTROL All Dates]**wird der gesamte im Profil verfügbare Datumsbereich angezeigt.
+Durch Auswahl von **[!UICONTROL All Dates]**wird der gesamte im Profil verfügbare Datumsbereich angezeigt.
 
-Bei Auswahl dieser Option **[!UICONTROL Range]** werden nur die Daten angezeigt, die innerhalb eines bestimmten Bereichs liegen. Zur Eingabe des Datumsbereichs können Sie das Start- und/oder Enddatum eingeben oder eine Kalendereingabe über das Kalendersymbol eingeben.
+Wenn Sie **[!UICONTROL Range]** auswählen, werden nur die Daten angezeigt, die innerhalb eines bestimmten Bereichs liegen. Zur Eingabe des Datumsbereichs können Sie das Start- und/oder Enddatum eingeben oder eine Kalendereingabe über das Kalendersymbol eingeben.
 
 (Dieses Feld gilt nicht für Rich-Text-Visualisierungen.)
 
@@ -105,4 +106,3 @@ Bei Auswahl dieser Option **[!UICONTROL Range]** werden nur die Daten angezeigt,
 >Hier angewendete Datumsbereiche werden nur auf die entsprechende Visualisierung angewendet, nicht auf das gesamte Dashboard. Dies ist nützlich, um die Ergebnisse zweier verschiedener Visualisierungen mit unterschiedlichen Datumsbereichen zu vergleichen.
 
 ![](assets/time_period.png)
-
