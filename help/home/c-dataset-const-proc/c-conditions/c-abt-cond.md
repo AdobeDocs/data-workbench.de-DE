@@ -1,16 +1,17 @@
 ---
 description: Bei Transformationen und Dimensionen wird anhand von Bedingungen bestimmt, wann bestimmte Anweisungen oder Aktionen auf Protokollfelder angewendet werden.
-solution: Analytics
-title: Info zu Bedingungen
-topic: Data workbench
+title: Über Bedingungen
 uuid: 882fe761-895c-4226-a019-270c50ae6da2
+exl-id: 0d44282f-1327-4f11-90fc-7e6a2ef8dc76
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
-
-# Info zu Bedingungen{#about-conditions}
+# Über Bedingungen{#about-conditions}
 
 Bei Transformationen und Dimensionen wird anhand von Bedingungen bestimmt, wann bestimmte Anweisungen oder Aktionen auf Protokollfelder angewendet werden.
 
@@ -18,7 +19,6 @@ Der Parameter &quot;Log Entry Condition&quot;verwendet Bedingungen, um zu bestim
 
 Eine Bedingung fällt in eine von zwei Kategorien:
 
-* **[!DNL Test Operations]:**Die[!DNL Compare],[!DNL Not Empty],[!DNL Range],[!DNL Regular Expression]und[!DNL String Match]Bedingungen werden zum Testen auf verschiedene Status in den verfügbaren Protokollfeldern verwendet.
+* **[!DNL Test Operations]:** [!DNL Compare],  [!DNL Not Empty],  [!DNL Range],  [!DNL Regular Expression]und  [!DNL String Match] Bedingungen werden zum Testen auf verschiedene Status in den verfügbaren Protokollfeldern verwendet.
 
-* **[!DNL Boolean Operations]:**Die[!DNL And],[!DNL Or]und[!DNL Neither]Bedingungen werden verwendet, um die oben beschriebenen Prüfverfahren zu kombinieren. Wenn Sie zum Beispiel eine[!DNL Range]Bedingung und eine Bedingung haben, die beide falsch sein müssen, um die entsprechende Aktion durchzuführen, würden Sie diese beiden Vorgänge zu untergeordneten Elementen der[!DNL String Match][!DNL Neither]Bedingung machen. Beachten Sie, dass die[!DNL And]Bedingung als Stamm aller Bedingungstests im System verwendet wird.
-
+* **[!DNL Boolean Operations]:** Die oben beschriebenen Prüfvorgänge werden mit  [!DNL And],  [!DNL Or]und  [!DNL Neither] Bedingungen kombiniert. Wenn Sie beispielsweise eine Bedingung von [!DNL Range] und eine Bedingung von [!DNL String Match] haben, die beide &quot;false&quot;sein müssen, um die entsprechende Aktion durchzuführen, würden Sie diese beiden Vorgänge zu untergeordneten Elementen der Bedingung [!DNL Neither] machen. Beachten Sie, dass die Bedingung [!DNL And] als Stamm aller Bedingungstests im System verwendet wird.
