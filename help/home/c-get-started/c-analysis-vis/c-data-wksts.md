@@ -1,22 +1,23 @@
 ---
 description: Text oder Ausdrücke können in eine beliebige Zelle eines Arbeitsblatts eingegeben werden.
-solution: Analytics
 title: Arbeiten mit Daten in Arbeitsblättern
-topic: Data workbench
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
+exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 3%
 
 ---
-
 
 # Arbeiten mit Daten in Arbeitsblättern{#work-with-data-in-worksheets}
 
 Text oder Ausdrücke können in eine beliebige Zelle eines Arbeitsblatts eingegeben werden.
 
-Allen Ausdrücken in einem Arbeitsblatt wird ein Gleichheitszeichen (=) vorangestellt, es sei denn, es wird [!DNL eval( )]der Text in der referenzierten Zelle als Ausdruck behandelt.
+Allen Ausdrücken in einem Arbeitsblatt wird ein Gleichheitszeichen (=) vorangestellt, es sei denn, es wird [!DNL eval( )] verwendet, wodurch der Text in der referenzierten Zelle als Ausdruck behandelt wird.
 
-Eine vollständige Liste der Metrik-, Dimensions- und Filtersyntax-Regeln finden Sie unter [Abfragesprachsyntax](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+Eine vollständige Liste der Metrik-, Dimensions- und Filtersyntax-Regeln finden Sie unter [Abfrage-Syntax](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 **So geben Sie Daten in ein Arbeitsblatt ein**
 
@@ -40,7 +41,7 @@ Data Workbench aktualisiert automatisch die Verweise in der neuen Zelle, um auf 
 
 **So fügen Sie eine Spalte ein**
 
-* Klicken Sie mit der rechten Maustaste auf eine Spalte und dann auf **[!UICONTROL Insert Column]**. Die neue Spalte wird links neben der ausgewählten Spalte eingefügt.
+* Klicken Sie mit der rechten Maustaste auf eine Spalte und klicken Sie auf **[!UICONTROL Insert Column]**. Die neue Spalte wird links neben der ausgewählten Spalte eingefügt.
 
 **So löschen Sie eine Spalte**
 
@@ -48,7 +49,7 @@ Data Workbench aktualisiert automatisch die Verweise in der neuen Zelle, um auf 
 
 **So fügen Sie eine Zeile ein**
 
-* Klicken Sie mit der rechten Maustaste auf eine Zeile und dann **[!UICONTROL Insert Row]**. Die neue Zeile wird oberhalb der ausgewählten Zeile eingefügt.
+* Klicken Sie mit der rechten Maustaste auf eine Zeile und klicken Sie auf **[!UICONTROL Insert Row]**. Die neue Zeile wird oberhalb der ausgewählten Zeile eingefügt.
 
 **So löschen Sie eine Zeile**
 
@@ -77,32 +78,32 @@ Data Workbench aktualisiert automatisch die Verweise in der neuen Zelle, um auf 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Nummer </p> </td> 
-   <td colname="col2"> <p>Wendet das ausgewählte numerische Format auf Ihre Daten an, z. B. Uhrzeit, Datum, Prozentsatz oder Dezimalzahl. </p> <p>Klicken Sie auf <span class="uicontrol"> Standard</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Wendet das ausgewählte numerische Format auf Ihre Daten an, z. B. Uhrzeit, Datum, Prozentsatz oder Dezimalzahl. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span>, um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Blocksatz </p> </td> 
-   <td colname="col2"> <p>Richtet die Daten in der Zelle links, zentriert oder rechts aus. Die Standardausrichtung bleibt erhalten. </p> <p>Klicken Sie auf <span class="uicontrol"> Standard</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Richtet die Daten in der Zelle links, zentriert oder rechts aus. Die Standardausrichtung bleibt erhalten. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span>, um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Kanalfarbe </p> </td> 
-   <td colname="col2"> <p>Wendet die ausgewählte Schriftfarbe auf die Daten in der Zelle an. Die Standardschriftfarbe ist weiß. </p> <p>Klicken Sie auf <span class="uicontrol"> Standard</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col1"> <p>Farbe </p> </td> 
+   <td colname="col2"> <p>Wendet die ausgewählte Schriftfarbe auf die Daten in der Zelle an. Die Standardschriftfarbe ist weiß. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span>, um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Indikator </p> </td> 
-   <td colname="col2"> <p>Erstellt eine Metrikanzeige mithilfe dieser Zelle. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Erstellen von Metrikindikatoren</a>. </p> <p>Klicken Sie auf <span class="uicontrol"> Standard</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Erstellt eine Metrikanzeige mithilfe dieser Zelle. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Erstellen von Metrikindikatoren</a>. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span>, um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Eingabezelle </p> </td> 
-   <td colname="col2"> <p>Macht die ausgewählte Zelle zu einer Eingabezelle. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Erstellen von Eingabezellen</a>. </p> <p>Klicken Sie auf <span class="uicontrol"> Standard</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Macht die ausgewählte Zelle zu einer Eingabezelle. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Erstellen von Eingabezellen</a>. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span>, um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Tastaturbefehle {#section-05301f4d2c60418e86902635a7aeee20}
 
-In Arbeitsblättern können Sie viele der grundlegenden Tastaturkürzel zur Bearbeitung verwenden, die Sie in jedem Texteditor wie Notepad oder Microsoft Word verwenden können.
+In Arbeitsblättern können Sie viele der grundlegenden Tastenkombinationen zur Bearbeitung verwenden, die Sie in jedem Texteditor wie Notepad oder Microsoft Word verwenden können.
 
-In der folgenden Tabelle sind die grundlegenden Tastaturbefehle aufgeführt, die Sie bei der Eingabe von Daten in ein Arbeitsblatt verwenden können.
+In der folgenden Tabelle werden die grundlegenden Tastaturbefehle Liste, die Sie bei der Eingabe von Daten in ein Arbeitsblatt verwenden können.
 
 <table id="table_8E6F73F253B3451CA1DE45EE4F4E69EF"> 
  <thead> 
@@ -158,4 +159,3 @@ In der folgenden Tabelle sind die grundlegenden Tastaturbefehle aufgeführt, die
   </tr> 
  </tbody> 
 </table>
-
