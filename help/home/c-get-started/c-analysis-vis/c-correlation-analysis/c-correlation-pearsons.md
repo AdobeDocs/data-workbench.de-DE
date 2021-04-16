@@ -1,16 +1,17 @@
 ---
 description: Der Pearson-Korrelationskoeffizient wird in der Korrelationsmatrix als Algorithmus verwendet, um die Stärke der linearen Abhängigkeit zwischen zwei Variablen anzuzeigen.
-solution: Analytics
-title: Informationen zum Pearson-Korrelationskoeffizient
-topic: Data workbench
+title: Über den Korrelationskoeffizienten nach Pearson
 uuid: d4c37302-3d0e-4411-b4e2-fc4b0c53cbcd
+exl-id: 92a030c7-406a-4ffa-b279-fc60d207496c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 6%
 
 ---
 
-
-# Informationen zum Pearson-Korrelationskoeffizient{#about-the-pearson-correlation-coefficient}
+# Über den Korrelationskoeffizienten nach Pearson{#about-the-pearson-correlation-coefficient}
 
 Der Pearson-Korrelationskoeffizient wird in der Korrelationsmatrix als Algorithmus verwendet, um die Stärke der linearen Abhängigkeit zwischen zwei Variablen anzuzeigen.
 
