@@ -1,22 +1,23 @@
 ---
 description: Das Marketing Ihrer Website kann die Platzierung von Anzeigen in Form von Bildern oder anderen Rich-Media-Dateien (die von Ihrem Webserver bereitgestellt werden) auf Websites von Drittanbietern beinhalten.
-solution: Analytics
-title: Messen von Anzeigenimpressionen
-topic: Data workbench
+title: Messen von Anzeigen-Impressions
 uuid: ca2bd6bf-4f49-406c-b47a-18d6abfb48a4
+exl-id: 77cd816e-63a4-4080-ac65-0661e1de4ec0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 4%
 
 ---
 
-
-# Messen von Anzeigenimpressionen{#measuring-advertisement-impression}
+# Messen von Anzeigen-Impressions{#measuring-advertisement-impression}
 
 Das Marketing Ihrer Website kann die Platzierung von Anzeigen in Form von Bildern oder anderen Rich-Media-Dateien (die von Ihrem Webserver bereitgestellt werden) auf Websites von Drittanbietern beinhalten.
 
-In solchen Fällen möchten Sie möglicherweise sowohl den Eindruck der Werbung in einem Browser als auch den anschließenden Clickthrough, falls dieser eintritt, zur Ziel-URL der Werbung auf Ihrer Website messen.
+In solchen Fällen möchten Sie möglicherweise sowohl den Eindruck der Werbung in einem Browser als auch den anschließenden Clickthrough, falls dieser eintritt, zur Zielgruppen-URL der Werbung auf Ihrer Website messen.
 
-Bei Anzeigen in Form von Bildern führt das Anfügen [!DNL Log=1] an die Abfragezeichenfolge zur Bildanforderung und somit zum Anzeigenimpression, die [!DNL Sensor] zu Analysezwecken erfasst werden.
+Bei Anzeigen in Bildform führt das Anhängen von [!DNL Log=1] an die Abfrage-Zeichenfolge zur Bildanforderung und somit zum Anzeigenimpression, die von [!DNL Sensor] zur Analyse erfasst werden.
 
 ```
 <!—REFERENCE IMPRESSION TAG-> 
@@ -26,11 +27,11 @@ Bei Anzeigen in Form von Bildern führt das Anfügen [!DNL Log=1] an die Abfrage
 
 | Erfasste Daten | Erklärung | Beispiel |
 |---|---|---|
-| v_ic= | Wert, der die Impressionskampagne angibt | v_ic=&quot;CAMPAIGN1&quot; |
-| v_ica= | Wert, der das Impressionskampagnen-Asset angibt | v_ica=&quot;72890ab&quot; |
-| v_icr= | Wert, der die verweisende Impressionskampagne angibt | v_icr=&quot;http://money.cnn.com/markets/ |
+| v_ic= | Wert, der die Impression-Kampagne angibt | v_ic=&quot;KAMPAGNE1&quot; |
+| v_ica= | Wert, der das Impression Kampagne Asset angibt | v_ica=&quot;72890ab&quot; |
+| v_icr= | Wert, der den Werber Impression Kampagne angibt | v_icr=&quot;http://money.cnn.com/markets/ |
 
-Neben dem Anhängen an [!DNL Log=1] die Bildanforderung sollte der URL, die von der Werbung zur Zielseite Ihrer Website führt, eine ID hinzugefügt werden, um die Werbung zu verfolgen, die zum Clickthrough führte, und um den Clickthrough zur jeweiligen Kampagne für diese Anzeige zurückzuverfolgen.
+Zusätzlich zum Anhängen von [!DNL Log=1] an die Bildanforderung sollte der URL, die von der Werbung zur Zielgruppe Ihrer Website führt, eine ID hinzugefügt werden, um die Werbung zu verfolgen, die zum Clickthrough geführt hat, und den Clickthrough zur jeweiligen Kampagne für diese Anzeige zurückzuverfolgen.
 
 ```
 <a href=”www.mysite.com/path/to/landingpage?Log=1&v_c=CAMPAIGN&v_ca=72890ab&v_cr=http://money.cnn.com/markets/”>
@@ -50,18 +51,17 @@ Click Here
   <tr> 
    <td colname="col1"> v_c= </td> 
    <td colname="col2"> Wert, der die Clickthrough-Kampagne angibt </td> 
-   <td colname="col3"> v_c="CAMPAIGN1" </td> 
+   <td colname="col3"> v_c="KAMPAGNE1" </td> 
   </tr> 
   <tr> 
    <td colname="col1"> v_ca= </td> 
-   <td colname="col2"> Wert, der das Clickthrough-Kampagnenelement angibt </td> 
+   <td colname="col2"> Wert, der das Clickthrough-Kampagne-Asset angibt </td> 
    <td colname="col3"> v_ca="72890ab" </td> 
   </tr> 
   <tr> 
    <td colname="col1"> v_cr= </td> 
-   <td colname="col2"> Wert, der den Clickthrough-Kampagnenverweiser angibt </td> 
+   <td colname="col2"> Wert, der den Werber der Clickthrough-Kampagne angibt </td> 
    <td colname="col3"> <p> <span class="filepath"> v_cr="http://money.cnn.com/</span> </p> <p>märkte/ </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
