@@ -1,14 +1,15 @@
 ---
 description: Mit einer Zeitdimension können Sie einen Satz periodischer oder absoluter lokaler Zeitdimensionen erstellen (z. B. Tag, Wochentag, Tageszeit, Reservierungszeit usw.), die auf einem Zeitstempelfeld basieren, das Sie für den Parameter Eingabezeit (1970 Epoche) angeben.
-solution: Analytics
 title: Zeitdimensionen
-topic: Data workbench
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
+exl-id: f9534b24-3a16-4220-bac2-bc541e121005
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 11%
 
 ---
-
 
 # Zeitdimensionen{#time-dimensions}
 
@@ -23,7 +24,7 @@ Zeitdimensionen werden durch die folgenden Parameter definiert:
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -66,14 +67,13 @@ Zeitdimensionen werden durch die folgenden Parameter definiert:
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Wochentag </td> 
-   <td colname="col2"> <p>Der Tag, der als erster Tag einer Woche verwendet wird. </p> <p> Dieser Parameter wirkt sich auf die Dimension "Woche", die Dimension "Wochentag"und alle Berichterstellungszeitdimensionen aus, die als Wochen definiert werden. </p> </td> 
+   <td colname="col1"> Wochentag Beginn </td> 
+   <td colname="col2"> <p>Der Tag, der als erster Tag einer Woche verwendet wird. </p> <p> Dieser Parameter wirkt sich auf die Dimension "Woche", die Dimension "Wochentag"und alle in Wochen definierten Zeitdimensionen des Berichte aus. </p> </td> 
    <td colname="col3"> Mon </td> 
   </tr> 
  </tbody> 
 </table>
 
-In diesem Beispiel wird ein Satz von Zeitdimensionen basierend auf dem benutzerdefinierten Eingabefeld x-time-1970 erstellt. Der Satz der Zeitdimensionen heißt &quot;Sitzungszeit&quot;. Da das übergeordnete Element jeder Dimension die Sitzungsdimension ist, entspricht jedes Element der Zeitdimensionen dem Zeitpunkt, zu dem eine Sitzung begann. Der Parameter &quot;Wochenstarttag&quot;gibt an, dass jede Woche der Dimension &quot;Woche&quot;am Montag beginnt.
+In diesem Beispiel wird ein Satz von Zeitdimensionen basierend auf dem benutzerdefinierten Eingabefeld x-time-1970 erstellt. Der Satz der Zeitdimensionen heißt &quot;Sitzungszeit&quot;. Da das übergeordnete Element jeder Dimension die Sitzungsdimension ist, entspricht jedes Element der Zeitdimensionen dem Zeitpunkt, zu dem eine Sitzung begann. Der Parameter &quot;Wochentag&quot;gibt an, dass jede Beginn-Woche des Wochendimensionszeitraums am Montag Beginn ist.
 
 ![](assets/cfg_Transformation_Dim_TimeDim.png)
-
