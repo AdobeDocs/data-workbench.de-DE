@@ -1,16 +1,17 @@
 ---
 description: Über das Menü "Fenstersteuerelemente"können Sie ein einzelnes Fenster steuern.
-solution: Analytics
-title: Fenster, Menü
-topic: Data workbench
+title: Menü für Steuerelemente in Fenstern
 uuid: 9a7c24a7-c591-4d73-94f5-bba79b2aa848
+exl-id: abbd6545-0b80-45a2-88d7-f0687249583d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 3%
 
 ---
 
-
-# Fenster, Menü{#window-controls-menu}
+# Menü für Steuerelemente in Fenstern{#window-controls-menu}
 
 Über das Menü &quot;Fenstersteuerelemente&quot;können Sie ein einzelnes Fenster steuern.
 
@@ -34,19 +35,19 @@ Diese Menüoptionen variieren je nach Fenstertyp. Die folgende Tabelle enthält 
   </tr> 
   <tr> 
    <td colname="col1"> Speichern </td> 
-   <td colname="col2">Speichert die Visualisierung (als <span class="filepath"> .vw</span> -Datei) in ihrem aktuellen Status. Mit dem angezeigten Dialogfeld können Sie die Visualisierung unter einem anderen Namen oder an einem anderen Ort speichern. Der Standardspeicherort ist der Ordner "User\<i>profile name</i>\Work"im Installationsordner von Data Workbench. </td> 
+   <td colname="col2">Speichert die Visualisierung (als Datei <span class="filepath"> .vw</span>) im aktuellen Status. Mit dem angezeigten Dialogfeld können Sie die Visualisierung unter einem anderen Namen oder an einem anderen Ort speichern. Der Standardspeicherort ist der Ordner "User\<i>Profil name</i>\Work"im Installationsordner der Data Workbench. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Anzeigen als </td> 
    <td colname="col2">(Nur für Tabellen verfügbar.) Zeigt die Daten in einer Tabelle gleichzeitig als Zahlen, Balken oder beides an. Siehe <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-chg-tbl-disp.md#concept-c515caeefce9495f88873a10dc112770"> Ändern der Tabellenanzeige</a>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Anzeigen </td> 
+   <td colname="col1"> Anzeigen  </td> 
    <td colname="col2">(Nur für Diagramme verfügbar.) Zeigt die Daten in einem Diagramm als Linien oder Balken an. Siehe <a href="../../../home/c-get-started/c-analysis-vis/c-graphs/c-chg-graph-disp.md#concept-eaba669d90f64cfa872f1397205fe2f7"> Ändern der Diagrammanzeige</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> An Fenster anpassen </td> 
-   <td colname="col2">Ermöglicht das automatische Erweitern oder Verkleinern des Fensterinhalts, damit das Fenster bei jeder Größenänderung angepasst werden kann. Siehe <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> Arbeiten mit Bildnotationen</a> und <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> Anpassen der Daten in das Fenster</a>. </td> 
+   <td colname="col2">Ermöglicht das automatische Erweitern oder Verkleinern des Fensterinhalts, damit das Fenster bei jeder Größenänderung angepasst werden kann. Siehe <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> Arbeiten mit Bildannotationen</a> und <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> Einpassen von Daten in das Fenster</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Bestellung </td> 
@@ -59,7 +60,7 @@ Diese Menüoptionen variieren je nach Fenstertyp. Die folgende Tabelle enthält 
   </tr> 
   <tr> 
    <td colname="col1"> Kopieren </td> 
-   <td colname="col2">Kopiert einzelne Fenster zur Verwendung in Drittanbieteranwendungen in die Zwischenablage. Nachdem Sie ein Fenster in die Zwischenablage kopiert haben, kann es in gängige Office-Anwendungen wie Microsoft Word, Microsoft PowerPoint oder eine Microsoft Outlook-E-Mail-Nachricht eingefügt werden. Um ein Fenster zu kopieren, klicken Sie mit der rechten Maustaste auf den oberen Rand, klicken Sie auf " <span class="uicontrol"> Kopieren</span>"und klicken Sie auf die entsprechende Option: 
+   <td colname="col2">Kopiert einzelne Fenster zur Verwendung in Drittanbieteranwendungen in die Zwischenablage. Nachdem Sie ein Fenster in die Zwischenablage kopiert haben, kann es in gängige Office-Anwendungen wie Microsoft Word, Microsoft PowerPoint oder eine Microsoft Outlook-E-Mail-Nachricht eingefügt werden. Um ein Fenster zu kopieren, klicken Sie mit der rechten Maustaste auf den oberen Rand, klicken Sie auf <span class="uicontrol"> Kopieren</span> und klicken Sie auf die entsprechende Option: 
     <ul id="ul_ECCD6A70729E40998C64714E01504995"> 
      <li id="li_21D375DAE7BC4F449C8A3225296A6D26">Der Arbeitsbereich wird mit schwarzem Hintergrund wie angezeigt kopiert. </li> 
      <li id="li_1B08C688678F42948E0952EEE0BF2B30">Der weiße Hintergrund kopiert die Elemente des Arbeitsbereichs in Farbe und zeigt sie auf einem weißen Hintergrund an. </li> 
