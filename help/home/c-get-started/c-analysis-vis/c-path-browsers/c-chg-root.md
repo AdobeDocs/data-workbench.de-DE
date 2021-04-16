@@ -1,22 +1,23 @@
 ---
 description: Sie können den Stamm des Pfadbrowsers ändern, indem Sie entweder ein angezeigtes Element als Stamm angeben oder ein neues Element zur Visualisierung hinzufügen.
-solution: Analytics
-title: Ändern der Stamm-Node des Pfadbrowsers
-topic: Data workbench
+title: Ändern des Stamms des Pfad-Browsers
 uuid: 0bb9b004-9736-411b-bd22-cac04f4733a6
+exl-id: 09842b93-af26-42b9-9395-a02b86978b21
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 2%
 
 ---
 
-
-# Ändern der Stamm-Node des Pfadbrowsers{#change-the-path-browser-s-root}
+# Ändern des Stamms des Pfad-Browsers{#change-the-path-browser-s-root}
 
 Sie können den Stamm des Pfadbrowsers ändern, indem Sie entweder ein angezeigtes Element als Stamm angeben oder ein neues Element zur Visualisierung hinzufügen.
 
 >[!NOTE]
 >
->Sie können einen Start- oder Endknoten nicht als Stamm eines Pfadbrowsers festlegen.
+>Sie können einen Beginn- oder Endknoten nicht als Stamm eines Pfadbrowsers festlegen.
 
 **So legen Sie den Stamm eines Pfadbrowsers fest**
 
@@ -38,5 +39,4 @@ Sie können den Stamm des Pfadbrowsers ändern, indem Sie entweder ein angezeigt
 
    >[!NOTE]
    >
-   >Wenn Sie ein Element in einen Pfadbrowser ziehen, wird möglicherweise die mit dem Pfadbrowser verknüpfte Basisdimension geändert, jedoch nicht die Dimension der Ebene, die Gruppendimension oder die Metrik. Daher müssen Sie bei der Auswahl einer Basisdimension vorsichtig sein, die sinnvoll ist, wenn sie mit der Ebenendimension, Gruppendimension und Metrik des Pfadbrowsers verwendet wird. Um die Dimension der Ebene, die Gruppendimension oder die Metrik zu ändern, müssen Sie die [!DNL *.vw] Datei des Pfadbrowsers in einem Texteditor wie Notepad bearbeiten. Siehe [Konfigurieren von Pfadbrowsern](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
-
+   >Wenn Sie ein Element in einen Pfadbrowser ziehen, wird möglicherweise die mit dem Pfadbrowser verknüpfte Basisdimension geändert, jedoch nicht die Dimension der Ebene, die Gruppendimension oder die Metrik. Daher müssen Sie bei der Auswahl einer Basisdimension vorsichtig sein, die sinnvoll ist, wenn sie mit der Ebenendimension, Gruppendimension und Metrik des Pfadbrowsers verwendet wird. Um die Dimension der Ebene, die Gruppendimension oder die Metrik zu ändern, müssen Sie die Datei [!DNL *.vw] des Pfadbrowsers in einem Texteditor wie Notepad bearbeiten. Siehe [Konfigurieren von Pfadbrowsern](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
