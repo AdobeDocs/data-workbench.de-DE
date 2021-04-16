@@ -1,22 +1,23 @@
 ---
 description: Die LookupRows-Transformation betrachtet andere Protokolleinträge mit derselben Tracking-ID und stellt den Wert des Ausgabefelds auf den Wert eines angegebenen Felds in der Eingabelzeile ein.
-solution: Analytics
 title: LookupRows
-topic: Data workbench
 uuid: 4cff7cf1-00c8-4ab1-8adc-3805518226d3
+exl-id: caa9a311-b056-4fe8-bb11-1605cc690375
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 1%
 
 ---
-
 
 # LookupRows{#lookuprows}
 
 Die LookupRows-Transformation betrachtet andere Protokolleinträge mit derselben Tracking-ID und stellt den Wert des Ausgabefelds auf den Wert eines angegebenen Felds in der Eingabelzeile ein.
 
-Da die [!DNL LookupRows] Transformation die Suche nach Protokolleinträgen und nicht nach Lookup-Dateien durchführt, ist sie der [!DNL CrossRows] Transformation sehr ähnlich. Siehe [CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2).
+Da die Transformation [!DNL LookupRows] ihre Suche nach Protokolleinträgen und nicht nach Lookup-Dateien durchführt, ist sie der Transformation [!DNL CrossRows] sehr ähnlich. Siehe [CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2).
 
-Damit die [!DNL LookupRows] Transformation funktioniert, müssen die Daten in der Zeit angeordnet und nach der Tracking-ID in den Quelldaten gruppiert werden. Daher [!DNL LookupRows] funktioniert nur, wenn sie in der [!DNL Transformation.cfg] Datei oder in einer [!DNL Transformation Dataset Include] Datei definiert ist.
+Für die Umwandlung von [!DNL LookupRows] ist es erforderlich, dass die Daten in der Zeit angeordnet und nach der Tracking-ID in den Quelldaten gruppiert werden. [!DNL LookupRows] funktioniert daher nur, wenn sie in der Datei [!DNL Transformation.cfg] oder in einer Datei [!DNL Transformation Dataset Include] definiert ist.
 
 Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabelle Folgendes:
 
@@ -28,7 +29,7 @@ Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabell
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -49,7 +50,7 @@ Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabell
   </tr> 
   <tr> 
    <td colname="col1"> Eingabebedingung </td> 
-   <td colname="col2">Akzeptiert Eingaben für die Transformation nur aus bestimmten Eingabezeilen. Wenn die <span class="wintitle"> Eingabebedingung</span> für eine bestimmte Eingabezeile nicht erfüllt ist, wird das Eingabefeld aus dieser Zeile ignoriert und wirkt sich nicht auf andere Ausgabezeilen aus. Das Ausgabefeld aus dieser Zeile wird jedoch weiterhin gemäß der angegebenen Bedingung geändert. </td> 
+   <td colname="col2">Akzeptiert Eingaben für die Transformation nur aus bestimmten Eingabezeilen. Wenn die Bedingung <span class="wintitle"> Eingabe</span> für eine bestimmte Eingabezeile nicht erfüllt ist, wird das Eingabefeld aus dieser Zeile ignoriert und wirkt sich nicht auf andere Ausgabezeilen aus. Das Ausgabefeld aus dieser Zeile wird jedoch weiterhin gemäß der angegebenen Bedingung geändert. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -64,7 +65,7 @@ Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabell
   </tr> 
   <tr> 
    <td colname="col1"> Vorgang </td> 
-   <td colname="col2"> <p>Ein Vorgang, der für jede Ausgabezeile auf alle Eingabezeilen angewendet wird, die alle Bedingungen erfüllen, die durch die Eingabebedingung <span class="wintitle"> und die Eingabezeileneingabeparameter</span> definiert sind, um eine Ausgabe zu erstellen: 
+   <td colname="col2"> <p>Ein Vorgang, der für jede Ausgabezeile auf alle Eingabezeilen angewendet wird, die alle Bedingungen erfüllen, die mit den Eingabeparametern <span class="wintitle"> Eingabe</span> Bedingung und Eingabe-Zeilenschlüssel für die Ausgabe definiert wurden: 
      <ul id="ul_16FB152CB558497794DDED72A2F05CDD"> 
       <li id="li_22DA9F814E4E42D0B21E90B63A2A7A0E"> ERST gibt den Wert des Felds im Eingabezeilenwert-Eingabeparameter aus der ersten übereinstimmenden Eingabezeile in den Daten aus (nicht die erste übereinstimmende Zeile nach der Ausgabezeile). </li> 
       <li id="li_45E00C3DE0494A1CB5C09B942088F161"> LAST gibt den Wert des Felds im Eingabezeileneingabewert-Parameter aus der letzten Eingabezeile in den Daten aus (nicht die letzte übereinstimmende Zeile vor der Ausgabezeile). </li> 
@@ -78,7 +79,7 @@ Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabell
   </tr> 
   <tr> 
    <td colname="col1"> Ausgabe des Zeilenwertes </td> 
-   <td colname="col2">Der Name des Felds in der Ausgabezeile, dessen Wert aus dem Feld im Eingabewert des Eingabeparameters kopiert wird, wenn alle Bedingungen erfüllt sind. Alle Ausgabezeilen mit demselben x-trackingid- und <span class="wintitle"> Ausgabe-Zeilenschlüssel- </span>Wert haben denselben <span class="wintitle"> Ausgabezeilenwert</span> . </td> 
+   <td colname="col2">Der Name des Felds in der Ausgabezeile, dessen Wert aus dem Feld im Eingabewert des Eingabeparameters kopiert wird, wenn alle Bedingungen erfüllt sind. Alle Ausgabezeilen mit denselben x-trackingid- und <span class="wintitle">-Eingabe des Ausgabezeilenschlüssels </span>haben denselben Wert <span class="wintitle"> Ausgabe-Zeilenwert-Ausgabe</span>. </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -100,26 +101,26 @@ Um die Funktionsweise der Transformation besser zu verstehen, beachten Sie die f
 
 Überlegungen zu [!DNL LookupRows]
 
-* Leere Schlüsselwerte stimmen nie überein. Auch wenn es Eingabezeilen mit leeren Schlüsseln und nicht leeren Werten gibt, die mit dem Wert übereinstimmen [!DNL Input Condition], erzeugt ein [!DNL Output Row Key Input] von &quot;&quot;immer den [!DNL Output Row Value Output] Wert &quot;&quot;.
+* Leere Schlüsselwerte stimmen nie überein. Auch wenn es Eingabezeilen mit leeren Schlüsseln und nicht leeren Werten gibt, die mit [!DNL Input Condition] übereinstimmen, erzeugt ein [!DNL Output Row Key Input] von &quot;&quot; immer einen [!DNL Output Row Value Output] von &quot;&quot;.
 
-* Wenn eine Zeile nicht vom [!DNL Input Condition]Operator verboten ist, kann sie selbst nachschlagen, wenn ihre [!DNL Input Row Key Input] und [!DNL Output Row Key Input] Werte identisch sind.
+* Wenn [!DNL Input Condition] nicht verboten ist, kann eine Zeile selbst nachschlagen, wenn die Werte [!DNL Input Row Key Input] und [!DNL Output Row Key Input] identisch sind.
 
-Wenn Sie mehrere Schlüsselwerte haben, können Sie diese mithilfe einer [!DNL Format] Transformation (siehe [Format](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)) kombinieren, bevor Sie eine [!DNL LookupRows] Transformation anwenden.
+Wenn Sie mehrere Schlüsselwerte haben, können Sie diese mit einer [!DNL Format]-Transformation kombinieren (siehe [Format](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)), bevor Sie eine [!DNL LookupRows]-Transformation anwenden.
 
-Angenommen, Sie haben eine Website mit einer Registrierungsseite für Haustiere, auf der der Name und die Rasse eingegeben werden, und eine spätere Seite &quot;Spielzeug kaufen&quot;, auf der nur der Name des Tieres verwendet wird. Sie möchten den Namen des Tieres mit der auf der Registrierungsseite eingetragenen Tierrasse verknüpfen können. Dazu können Sie die folgende [!DNL LookupRows] Transformation erstellen:
+Angenommen, Sie haben eine Website mit einer Registrierungsseite für Haustiere, auf der der Name und die Rasse eingegeben werden, und eine spätere Seite &quot;Spielzeug kaufen&quot;, auf der nur der Name des Tieres verwendet wird. Sie möchten den Namen des Tieres mit der auf der Registrierungsseite eingetragenen Tierrasse verknüpfen können. Dazu können Sie die folgende [!DNL LookupRows]-Transformation erstellen:
 
 ![](assets/cfg_TransformationType_LookupRows.png)
 
 Analysieren wir dieses Beispiel anhand der vorherigen Gliederung:
 
-* Für jede Ausgabezeile mit einem nicht leeren Wert von cs-uri-query(petname):
+* Für jede Ausgabezeile mit einem nicht leeren Wert von cs-uri-Abfrage(petname):
 
    * Suchen Sie die letzte Eingabezeile, sodass
 
-      * die Eingabezeile enthält einen nicht leeren Wert von cs-uri-query(petbreed) und
+      * die Eingabezeile einen nicht leeren Wert von cs-uri-Abfrage (mit Stempel) enthält und
       * die x-trackingid der Eingabezeile gleich der x-trackingid der Ausgabezeile und
-      * der Wert von cs-uri-query(petname) der Eingabezeile entspricht dem Wert von cs-uri-query(petname) der Ausgabezeile;
+      * der Wert von cs-uri-Abfrage(Petname) der Eingabezeile gleich dem Wert von cs-uri-Abfrage(Petname) der Ausgabezeile;
 
-* und legen Sie den Wert der X-Tier-Rasse der Ausgabezeile auf den Wert von cs-uri-query(petbreed) der Eingabezeile fest.
+* und legen Sie den Wert der X-Tier-Rasse der Ausgabezeile auf den Wert von cs-uri-Abfrage(petbreed) der Eingabezeile fest.
 
-Die [!DNL LookupRows] Transformation verwendet den Namen des Tieres (den Schlüssel), um sicherzustellen, dass die Tierrasse sowohl mit der Registrierung des Tieres als auch mit dem Kauf von Spielzeugseiten verknüpft ist, damit Sie die für jede Tierrasse gekauften Spielzeuge analysieren können, auch für Besucher mit mehreren Haustieren.
+Die [!DNL LookupRows]-Transformation verwendet den Namen des Tieres (den Schlüssel), um sicherzustellen, dass die Heimtierrasse sowohl mit der Registrierung des Tieres als auch mit dem Kauf von Spielzeugseiten verknüpft ist, damit Sie die für jede Tierrasse gekauften Spielzeuge analysieren können, auch für Besucher mit mehreren Haustieren.
