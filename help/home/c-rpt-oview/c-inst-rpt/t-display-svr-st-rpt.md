@@ -1,22 +1,23 @@
 ---
-description: Die Detaillierte Statusschnittstelle in Data Workbench ist hilfreich, um Fehler oder andere Probleme mit den Data Workbench Server- und Report Server-Computern zu beheben, die Clients von Data Workbench Server sind.
-solution: Analytics
-title: Berichtsserverstatus anzeigen
-topic: Data workbench
+description: Die Detaillierte Statusschnittstelle in Data Workbench ist hilfreich, um Fehler oder andere Probleme mit Data Workbench Server- und Report Server-Computern zu beheben, die Clients von Data Workbench Server sind.
+title: Anzeigen des Report Server-Status
 uuid: 5260266d-5bd1-4905-9619-f67f6e1bc54c
+exl-id: 3a717a81-7c5d-432d-b214-4ae0455b19b5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 6%
 
 ---
 
+# Anzeigen des Report Server-Status{#displaying-report-server-status}
 
-# Berichtsserverstatus anzeigen{#displaying-report-server-status}
+Die Detaillierte Statusschnittstelle in Data Workbench ist hilfreich, um Fehler oder andere Probleme mit Data Workbench Server- und Report Server-Computern zu beheben, die Clients von Data Workbench Server sind.
 
-Die Detaillierte Statusschnittstelle in Data Workbench ist hilfreich, um Fehler oder andere Probleme mit den Data Workbench Server- und Report Server-Computern zu beheben, die Clients von Data Workbench Server sind.
+Um den Status des Berichts in der [!DNL Master Server Detailed Status]-Schnittstelle Ansicht, müssen Sie einen Berichtsstatusserver zum Vektor [!DNL Servers] in der [!DNL Communications.cfg]- des Data Workbench-Servers hinzufügen. Im folgenden Verfahren wird beschrieben, wie Sie den Berichtsstatusserver zur Datei [!DNL Communications.cfg] hinzufügen:
 
-Um den Status des Berichts auf der [!DNL Master Server Detailed Status] Oberfläche anzuzeigen, müssen Sie dem [!DNL Servers] Vektor in der [!DNL Communications.cfg] Datei des Data Workbench-Servers einen Berichtsstatusserver hinzufügen. Im folgenden Verfahren wird beschrieben, wie Sie der [!DNL Communications.cfg] Datei den Berichtsstatusserver hinzufügen:
-
-Weitere Informationen zu [!DNL Detailed Status] Schnittstellen finden Sie im Kapitel &quot;Verwaltungsschnittstellen&quot;des *Data Workbench-Benutzerhandbuchs*.
+Weitere Informationen zu [!DNL Detailed Status]-Schnittstellen finden Sie im Kapitel &quot;Administrative Schnittstellen&quot;des *Data Workbench-Benutzerhandbuchs*.
 
 **So fügen Sie eine[!DNL Report Status Server]**
 
@@ -24,7 +25,7 @@ Weitere Informationen zu [!DNL Detailed Status] Schnittstellen finden Sie im Kap
 
    Beispiel: [!DNL C:\Adobe\Server\Components]
 1. Öffnen Sie [!DNL Communications.cfg] in einem Texteditor wie Notepad.
-1. Suchen Sie den [!DNL Servers] Vektor und fügen Sie dem Vektor den Berichtsstatusserver hinzu, wie im folgenden Dateifragment hervorgehoben.
+1. Suchen Sie den Vektor [!DNL Servers] und fügen Sie dem Vektor den Berichtsstatusserver hinzu, wie im folgenden Dateifragment hervorgehoben.
 
    ```
     . . .
@@ -43,5 +44,5 @@ Weitere Informationen zu [!DNL Detailed Status] Schnittstellen finden Sie im Kap
          URI = string: /ReportStatus.vsp
    ```
 
-1. Aktualisieren Sie die Elementanzahl für den [!DNL Servers] Vektor (inkrementieren Sie den Elementwert um 1), wie im Dateifragment im vorherigen Schritt hervorgehoben.
+1. Aktualisieren Sie die Elementanzahl für den Vektor [!DNL Servers] (inkrementieren Sie den Elementwert um 1), wie im Dateifragment im vorherigen Schritt hervorgehoben.
 1. Speichern Sie die Datei.
