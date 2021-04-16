@@ -1,14 +1,15 @@
 ---
 description: Farblegenden zeigen Farbcode-Visualisierungen nach Metriken wie Konversion und Treue an und können in fast allen Arbeitsbereichen verwendet werden.
-solution: Analytics
 title: Farblegenden
-topic: Data workbench
 uuid: 4f5ad93e-9128-464c-b5b7-9db454fa71a6
+exl-id: 0ecf5237-8d64-46a6-b73b-e59de69e5988
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 2%
 
 ---
-
 
 # Farblegenden{#color-legends}
 
@@ -25,4 +26,3 @@ Die Verknüpfung von Geschäftsmetriken mit Farben erleichtert das Auffinden von
 * Klicken Sie mit der rechten Maustaste auf den Metriknamen und dann auf die gewünschte Metrik.
 
    ![](assets/lgd_ColorLegend.png)
-
