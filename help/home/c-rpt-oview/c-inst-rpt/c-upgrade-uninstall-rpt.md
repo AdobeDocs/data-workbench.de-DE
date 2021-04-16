@@ -1,16 +1,17 @@
 ---
 description: Informationen zum Aktualisieren und Deinstallieren Ihrer Report Server-Software.
-solution: Analytics
-title: Aktualisieren und Deinstallieren von Report Server
-topic: Data workbench
+title: Upgrade und Deinstallation von Report Server
 uuid: 42f0d190-1a88-424d-be4b-90338144d287
+exl-id: 86d0d848-4e2a-45cb-a1b3-b8a856332d33
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 2%
 
 ---
 
-
-# Aktualisieren und Deinstallieren von Report Server{#upgrading-and-uninstalling-report-server}
+# Upgrade und Deinstallation von Report Server{#upgrading-and-uninstalling-report-server}
 
 Informationen zum Aktualisieren und Deinstallieren Ihrer Report Server-Software.
 
@@ -19,27 +20,27 @@ Informationen zum Aktualisieren und Deinstallieren Ihrer Report Server-Software.
 
 ## Aktualisieren des Berichtsservers {#section-95fea4bddad74616a8aea450dcdb2282}
 
-Wenn Sie ein Upgrade auf [!DNL Report Server] 5.4 durchführen, können Sie die Anweisungen zur Aktualisierung Ihrer [!DNL Report Server] Software verwenden. Wenn Sie [!DNL Report Server] 3.6 oder früher verwenden, wenden Sie sich an Adobe, um Unterstützung bei Ihrem Upgrade zu erhalten.
+Wenn Sie auf [!DNL Report Server] 5.4 aktualisieren, können Sie die Anweisungen zum Aktualisieren Ihrer [!DNL Report Server] Software verwenden. Wenn Sie [!DNL Report Server] 3.6 oder früher verwenden, wenden Sie sich an die Adobe, um Unterstützung bei Ihrem Upgrade zu erhalten.
 
-Um [!DNL Report Server] 5.4 zu aktualisieren, verwenden Sie Data Workbench, um eine Aktualisierungsdatei auf den Data Workbench-Server zu kopieren, mit dem eine Verbindung hergestellt [!DNL Report Server] wird. Danach aktualisieren sich [!DNL Report] Serverinstanzen automatisch selbst, wenn sie eine Verbindung zu diesem Server herstellen und ein Profil laden.
+Um [!DNL Report Server] 5.4 zu aktualisieren, verwenden Sie Data Workbench, um eine Aktualisierungsdatei auf den Data Workbench-Server zu kopieren, mit dem [!DNL Report Server] verbunden ist. Danach aktualisieren sich [!DNL Report]-Serverinstanzen automatisch selbst, wenn sie eine Verbindung zu diesem Server herstellen und ein Profil laden.
 
 >[!NOTE]
 >
->Vergewissern Sie sich vor der Aktualisierung [!DNL Report Server], dass Sie die Data Workbench-Serversoftware sowie die Profile, die auf dem Data Workbench-Server ausgeführt werden, ordnungsgemäß aktualisiert haben. Weitere Informationen erhalten Sie bei Adobe Consulting Services.
+>Vergewissern Sie sich vor der Aktualisierung von [!DNL Report Server], dass Sie die Data Workbench-Serversoftware sowie die auf dem Data Workbench-Server ausgeführten Profil ordnungsgemäß aktualisiert haben. Weitere Informationen erhalten Sie bei Adobe Consulting Services.
 
-Um das folgende Verfahren auszuführen, müssen Sie zunächst die Aktualisierungsdatei für [!DNL Report Server]abrufen.
+Um das folgende Verfahren auszuführen, müssen Sie zunächst die Aktualisierungsdatei für [!DNL Report Server] abrufen.
 
-**So aktualisieren Sie auf Version[!DNL Report Server]5.4 und höher**
+**So aktualisieren Sie auf Version  [!DNL Report Server] 5.4 und höher**
 
-1. Erstellen Sie eine Sicherungskopie aller Dateien unter [!DNL E:\Portal] und entfernen Sie alle Dateien und Ordner in diesem Ordner.
-1. Copy the contents of the new build into [!DNL E:\Portal].
-1. Ändern Sie [!DNL global.asa], [!DNL email.asp]und [!DNL TopNavigation.xml] entsprechend den Anweisungen im vorherigen Abschnitt.
+1. Erstellen Sie eine Sicherung aller Dateien unter [!DNL E:\Portal] und entfernen Sie alle Dateien und Ordner in diesem Ordner.
+1. Kopieren Sie den Inhalt des neuen Builds nach [!DNL E:\Portal].
+1. Ändern Sie [!DNL global.asa], [!DNL email.asp] und [!DNL TopNavigation.xml] gemäß den Anweisungen im vorherigen Abschnitt.
 
-1. Kopieren Sie die [!DNL users.mdb] Datei aus Ihrem Backup.
+1. Kopieren Sie [!DNL users.mdb] aus Ihrer Sicherung.
 
    >[!NOTE]
    >
-   >Wenn Sie zuvor keine Berichte mit der PNG-Ausgabe erstellt haben, müssen Sie in die einzelnen Berichtsordner gehen und die Einstellung ändern, [!DNL reports.xml] um ein Berichtsformat einzuschließen. Andernfalls wird möglicherweise ein 500-Fehler ausgegeben. Ihr Original [!DNL reports.xml] würde etwa wie folgt aussehen:
+   >Wenn Sie zuvor keine Berichte mit der PNG-Ausgabe erstellt haben, müssen Sie in die einzelnen Berichtsordner gehen und das [!DNL reports.xml] ändern, um ein Berichtsformat von png einzuschließen. Andernfalls wird möglicherweise ein 500-Fehler ausgegeben. Ihr Original [!DNL reports.xml] würde etwa wie folgt aussehen:
 
    ```
       <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
@@ -70,26 +71,25 @@ Um das folgende Verfahren auszuführen, müssen Sie zunächst die Aktualisierung
    </REPORTS>
    ```
 
-1. Schließen Sie im [!DNL report.cfg]Dialogfeld das Ausgabeformat &quot;png&quot;und &quot;save&quot;ein. In Zukunft sollte es Berichte im PNG-Format generieren.
+1. Geben Sie in das Ausgabeformat [!DNL report.cfg] png und save ein. In Zukunft sollte es Berichte im PNG-Format generieren.
 
-**So aktualisieren Sie auf[!DNL Report Server]4.0**
+**So aktualisieren Sie auf  [!DNL Report Server] 4.0**
 
-1. Kopieren Sie auf dem Data Workbench-Computer die Aktualisierungsdatei für den Report Server in den [!DNL Temp\Software] Ordner, in dem die Data Workbench installiert ist.
-1. Starten Sie die Data Workbench und laden Sie das [!DNL Configuration] Profil.
-1. Klicken Sie auf die **[!UICONTROL Configure Connection to Servers]** Miniaturansicht.
-1. Klicken Sie im [!DNL Servers Manager]Kontextmenü mit der rechten Maustaste auf das Symbol Data Workbench-Server und klicken Sie auf **[!UICONTROL Server Files]**.
+1. Kopieren Sie auf dem Data Workbench-Computer die Aktualisierungsdatei für den Report Server in den Ordner [!DNL Temp\Software], in dem die Data Workbench installiert ist.
+1. Beginn Data Workbench und laden Sie das Profil [!DNL Configuration].
+1. Klicken Sie auf die Miniaturansicht von **[!UICONTROL Configure Connection to Servers]**.
+1. Klicken Sie im Ordner [!DNL Servers Manager] mit der rechten Maustaste auf das Symbol für den Data Workbench-Server und klicken Sie auf **[!UICONTROL Server Files]**.
 
-1. Öffnen Sie im Ordner Software den [!DNL Report Server] Ordner.
-1. Klicken Sie mit der rechten Maustaste auf das **[!UICONTROL Temp]** Häkchen [!DNL ReportServer.exe] und wählen Sie **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+1. Öffnen Sie im Ordner Software den Ordner [!DNL Report Server].
+1. Klicken Sie mit der rechten Maustaste auf das Häkchen [!DNL ReportServer.exe] und wählen Sie **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]***.**[!UICONTROL Temp]**
 
-## Deinstallieren von Report Server {#section-96eb3281c45a45c0a7065deaa6845c25}
+## Deinstallieren des Berichtsservers {#section-96eb3281c45a45c0a7065deaa6845c25}
 
 **So deinstallieren[!DNL Report Server]**
 
-1. Heben Sie die Registrierung des [!DNL Report Windows] Dienstes auf.
+1. Heben Sie die Registrierung des [!DNL Report Windows]-Dienstes auf.
 
    1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Unterordner &quot;bin&quot;in dem Ordner, in dem Sie den Data Workbench-Server installiert haben (InsightServer64.exe). Beispiel: [!DNL D:\Adobe\Report\bin]
    1. Führen Sie an der Eingabeaufforderung den folgenden Befehl aus, um ihn unter Microsoft Windows als Dienst zu beenden und die Registrierung aufzuheben: [!DNL visualreport /unregserver]
 
 1. Löschen Sie den Installationsordner des Berichtsservers.
-
