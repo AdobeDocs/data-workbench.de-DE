@@ -1,16 +1,17 @@
 ---
 description: Schritte zum Anzeigen von Informationen oder Optionen für eine Dimension.
-solution: Analytics
-title: Menü "Dimension"anzeigen
-topic: Data workbench
+title: Anzeigen des Kontextmenüs zur Dimension
 uuid: e2c4fa8d-3559-45bd-8ec5-d064c763b20b
+exl-id: 55b2cb3a-d82e-4e42-b1b6-079ca3667be8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '89'
+ht-degree: 11%
 
 ---
 
-
-# Menü &quot;Dimension&quot;anzeigen{#display-the-dimension-menu}
+# Anzeigen des Kontextmenüs zur Dimension{#display-the-dimension-menu}
 
 Schritte zum Anzeigen von Informationen oder Optionen für eine Dimension.
 
@@ -22,10 +23,9 @@ Schritte zum Anzeigen von Informationen oder Optionen für eine Dimension.
    >
    >Wenn ein Dimensionsname rot angezeigt wird, wird er nicht in Ihrem Datensatz definiert.
 
-1. Zeigen Sie die statistischen Informationen zur Dimension an, die weiter oben in diesem Abschnitt beschrieben werden.
+1. Ansicht der statistischen Informationen zur Dimension, die weiter oben in diesem Abschnitt beschrieben werden.
 1. (Optional) Klicken Sie auf eine der folgenden Optionen:
 
    * **[!UICONTROL Add]** , um eine weitere Dimension hinzuzufügen.
    * **[!UICONTROL Remove]** um die ausgewählte Dimension zu entfernen.
    * **[!UICONTROL Add Visualization]** , um eine Visualisierung für die ausgewählte Dimension hinzuzufügen.
-
