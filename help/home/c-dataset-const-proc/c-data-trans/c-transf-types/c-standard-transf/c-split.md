@@ -1,27 +1,28 @@
 ---
 description: Bei der Transformation "Teilen"wird eine Zeichenfolge basierend auf einem gegebenen Trennzeichen in einen Vektor von Unterzeichenfolgen unterteilt.
-solution: Analytics
-title: Teilen
-topic: Data workbench
+title: Split
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
+exl-id: ea85b095-1306-4938-906d-35d421db6c98
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 3%
 
 ---
-
 
 # Split{#split}
 
 Bei der Transformation &quot;Teilen&quot;wird eine Zeichenfolge basierend auf einem gegebenen Trennzeichen in einen Vektor von Unterzeichenfolgen unterteilt.
 
-[!DNL Split] ist besonders hilfreich, um einzelne Werte aus einer Sammlung von Werten zu extrahieren, die mit einem einzelnen URI-Abfragenamenwert verknüpft sind.
+[!DNL Split] ist besonders hilfreich, um einzelne Werte aus einer Wertsammlung zu extrahieren, die mit einem einzelnen URI-Abfragen-Namenswert verknüpft ist.
 
 <table id="table_C97DA4E45DA844FAB8D61AABA22FF809"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -58,11 +59,11 @@ Bei der Transformation &quot;Teilen&quot;wird eine Zeichenfolge basierend auf ei
  </tbody> 
 </table>
 
-Betrachten Sie eine Website, auf der die von einem Kunden gekauften Produkte als Teil des Abfragewerts &quot;cs-uri&quot;aufgeführt werden, wenn auf die Bestätigungsseite zugegriffen wird, die mit einem erfolgreichen Kauf verknüpft ist. Die folgende Tabelle zeigt ein Beispiel für eine solche Zeichenfolge:
+Betrachten Sie eine Website, auf der die von einem Kunden erworbenen Produkte als Teil des Werts &quot;cs-uri-Abfrage&quot;aufgeführt werden, wenn auf die Bestätigungsseite für einen erfolgreichen Kauf zugegriffen wird. Die folgende Tabelle zeigt ein Beispiel für eine solche Zeichenfolge:
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-Das cs-uri-Stammfeld wird verwendet, um zu bestimmen, ob die vom Protokolleintrag angeforderte Seite die Bestätigungsseite ist. Die Codes für die Produkte, die der Kunde gekauft hat, werden als kommagetrennte Werte des Namens prod_selected in der cs-uri-Abfrage aufgeführt. Die [!DNL Split] Transformation kann verwendet werden, um diese Informationen zu extrahieren, indem die Produktcodes am Komma aufgeteilt werden, wenn der Wert des cs-uri-Stammes mit dem in der [!DNL String Match] Bedingung angegebenen Wert übereinstimmt. Siehe [Zeichenfolgenübereinstimmung](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). Die folgende Transformation beschreibt die Lösung dieses Problems.
+Das cs-uri-Stammfeld wird verwendet, um zu bestimmen, ob die vom Protokolleintrag angeforderte Seite die Bestätigungsseite ist. Die Produktcodes für die vom Kunden erworbenen Produkte werden als kommagetrennte Werte des Typs &quot;prod_selected&quot;in der Abfrage &quot;cs-uri&quot;aufgeführt. Die [!DNL Split]-Transformation kann verwendet werden, um diese Informationen zu extrahieren, indem die Produktcodes am Komma aufgeteilt werden, wenn der Wert des cs-uri-Stammes mit dem in der Bedingung [!DNL String Match] angegebenen Wert übereinstimmt. Siehe [String Match](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). Die folgende Transformation beschreibt die Lösung dieses Problems.
 
 ![](assets/cfg_TransformationType_Split.png)
 
