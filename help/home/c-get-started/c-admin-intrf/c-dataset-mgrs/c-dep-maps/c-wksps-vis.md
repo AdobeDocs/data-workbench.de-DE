@@ -1,24 +1,25 @@
 ---
 description: Konzeptbezogene Informationen zu Arbeitsbereichen und Visualisierungen.
-solution: Analytics
 title: Arbeitsbereiche und Visualisierungen
-topic: Data workbench
 uuid: dc7fab6c-d8b4-4ed7-bad6-b3df14b9ebbf
+exl-id: a70748dd-8190-4d1b-9ee1-1011b73a1a86
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 3%
 
 ---
-
 
 # Arbeitsbereiche und Visualisierungen{#workspaces-and-visualizations}
 
 Konzeptbezogene Informationen zu Arbeitsbereichen und Visualisierungen.
 
-Die folgende Abbildung zeigt eine Abhängigkeitszuordnung, deren Knoten die im Profil definierten Arbeitsbereiche, Berichte, Menüoptionen und globalen Ebenen darstellen. Diese Option funktioniert nur, wenn die [!DNL Query Model] Anzeigeoption aktiviert ist.
+Die folgende Abbildung zeigt eine Abhängigkeitszuordnung, deren Knoten die im Profil definierten Arbeitsbereiche, Berichte, Menüoptionen und globalen Ebenen darstellen. Diese Option funktioniert nur, wenn die Anzeigeoption [!DNL Query Model] aktiviert ist.
 
 >[!NOTE]
 >
->Wenn die [!DNL Query Model] Anzeigeoption bei Auswahl der [!DNL Workspaces and Visualizations] Anzeigeoption nicht aktiviert ist, wird eine Fehlermeldung angezeigt.
+>Wenn die Anzeigeoption [!DNL Query Model] bei Auswahl der Anzeigeoption [!DNL Workspaces and Visualizations] nicht aktiviert ist, wird eine Fehlermeldung angezeigt.
 
 ![](assets/vis_DependencyMap_QueryModelandWorkspaces.png)
 
@@ -28,6 +29,6 @@ Die folgende Abbildung zeigt eine Abhängigkeitszuordnung, deren Knoten die im P
 
 >[!NOTE]
 >
->Da die Abhängigkeitszuordnung für acyclische Abhängigkeiten konzipiert ist, werden Knoten, die an zirkulären Abhängigkeiten beteiligt sind, auf der Karte möglicherweise nicht richtig angezeigt. Sie können nach zirkulären Abhängigkeiten suchen, indem Sie &quot;zirkuläre Abhängigkeit&quot;in das [!DNL Search] Textfeld eingeben. Weitere Informationen zur [!DNL Search] Funktion finden Sie unter [Suchen in einer Map](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb).
+>Da die Abhängigkeitszuordnung für acyclische Abhängigkeiten konzipiert ist, werden Knoten, die an zirkulären Abhängigkeiten beteiligt sind, auf der Karte möglicherweise nicht richtig angezeigt. Sie können nach zirkulären Abhängigkeiten suchen, indem Sie &quot;zirkuläre Abhängigkeit&quot;in das Textfeld [!DNL Search] eingeben. Weitere Informationen zur Funktion [!DNL Search] finden Sie unter [Suchen in einer Map](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb).
 
-Beschreibungen anderer Knoten auf der Map finden Sie unter Komponenten des [Abfragemodells](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-qry-mod-comp.md#concept-32c6dadd32f74179b026c7e96d47710f).
+Beschreibungen anderer Nodes auf der Map finden Sie unter [Abfrage Model Components](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-qry-mod-comp.md#concept-32c6dadd32f74179b026c7e96d47710f).
