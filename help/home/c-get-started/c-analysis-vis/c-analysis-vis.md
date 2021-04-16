@@ -1,22 +1,23 @@
 ---
-description: Informationen zu den zahlreichen Visualisierungen von Analysen, die in Data Workbench verfügbar sind.
-solution: Analytics
-title: Visualisierungen der Analyse
-topic: Data workbench
+description: Informationen zu den zahlreichen Visualisierungen der Analyse in der Data Workbench.
+title: Visualisierungen von Analysen
 uuid: db003afa-b971-4510-b762-3ef9b29e0910
+exl-id: a455d3cc-8133-4a08-9656-91332765c6c3
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 4%
 
 ---
 
+# Visualisierungen von Analysen{#analysis-visualizations}
 
-# Visualisierungen der Analyse{#analysis-visualizations}
+Informationen zu den zahlreichen Visualisierungen der Analyse in der Data Workbench.
 
-Informationen zu den zahlreichen Visualisierungen von Analysen, die in Data Workbench verfügbar sind.
+* Sie können eine beliebige Visualisierung öffnen, indem Sie mit der rechten Maustaste auf einen Arbeitsbereich klicken und die gewünschte Menüoption auswählen oder indem Sie auf **Strg** + **n** klicken.
 
-* Sie können eine beliebige Visualisierung öffnen, indem Sie mit der rechten Maustaste in einen Arbeitsbereich klicken und die gewünschte Menüoption auswählen, oder indem Sie auf **Strg** + **n** klicken.
-
-* Visualisierungen können nicht wie Arbeitsbereiche importiert werden. Wenn Sie mit der rechten Maustaste auf die Arbeitsfläche klicken und &quot; **[!UICONTROL Import]** auswählen&quot;wählen, können Sie einen vorhandenen Arbeitsbereich importieren, jedoch keine außerhalb des Arbeitsbereichs befindliche Visualisierung.
+* Visualisierungen können nicht wie Arbeitsbereiche importiert werden. Wenn Sie mit der rechten Maustaste auf die Arbeitsfläche klicken und **[!UICONTROL Import]** auswählen, können Sie einen vorhandenen Arbeitsbereich importieren, jedoch keine außerhalb des Arbeitsbereichs befindliche Visualisierung.
 
    ![](assets/import_workspace.png)
 
