@@ -1,16 +1,17 @@
 ---
 description: Auf dem Data Workbench-Server stehen verschiedene Arten von Dimensionen zur Verfügung. Daher ist es wichtig, den Dimensionstyp zu kennen, wenn eine Dimension zum Erstellen von Metriken, Filtern oder abgeleiteten Dimensionen verwendet wird.
-solution: Analytics
-title: Dimensionstypen
-topic: Data workbench
+title: Typen von Dimensionen
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
+exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '754'
+ht-degree: 68%
 
 ---
 
-
-# Dimensionstypen{#dimension-types}
+# Typen von Dimensionen{#dimension-types}
 
 Auf dem Data Workbench-Server stehen verschiedene Arten von Dimensionen zur Verfügung. Daher ist es wichtig, den Dimensionstyp zu kennen, wenn eine Dimension zum Erstellen von Metriken, Filtern oder abgeleiteten Dimensionen verwendet wird.
 
@@ -19,7 +20,7 @@ Insight Server kann die folgenden Arten von Dimensionen erstellen und verwalten:
 <table id="table_1A79B6C57ED145B6AA3BB05DD37AAD1B"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Dimensionstypen </th> 
+   <th colname="col1" class="entry"> Typen von Dimensionen </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
   </tr> 
  </thead>
@@ -34,7 +35,7 @@ Insight Server kann die folgenden Arten von Dimensionen erstellen und verwalten:
   </tr> 
   <tr> 
    <td colname="col1"> Numerisch </td> 
-   <td colname="col2">Eine Dimension, die geordnete, numerische Werte und eine Eins-zu-viele-Beziehung zu einer übergeordneten zählbaren Dimension hat. Eine nummerische Dimension kann als Darstellung der nummerischen Eigenschaft von Elementen der übergeordneten Dimension betrachtet werden. Nummerische Dimensionen werden häufig zur Definition von Summenmetriken verwendet. <p>Beispiel: Die nummerische Dimension „Sitzungsumsatz“ definiert den Umsatz jeder einzelnen Sitzung in Dollar. Jede Sitzung hat einen eigenen Umsatzbetrag, wobei einige Sitzungen jedoch den gleichen Umsatz aufweisen können, sodass der Sitzungsumsatz in einem Eins-zu-viele-Bezug zur Sitzung steht. A metric “Revenue” might be defined as <span class="filepath"> sum(Session_Revenue, Session)</span>, giving the total amount of revenue for the selected Sessions. </p></td> 
+   <td colname="col2">Eine Dimension, die geordnete, numerische Werte und eine Eins-zu-viele-Beziehung zu einer übergeordneten zählbaren Dimension hat. Eine nummerische Dimension kann als Darstellung der nummerischen Eigenschaft von Elementen der übergeordneten Dimension betrachtet werden. Numerische Dimensionen werden häufig zur Definition von Summenmetriken verwendet. <p>Beispiel: Die nummerische Dimension „Sitzungsumsatz“ definiert den Umsatz jeder einzelnen Sitzung in Dollar. Jede Sitzung hat einen eigenen Umsatzbetrag, wobei einige Sitzungen jedoch den gleichen Umsatz aufweisen können, sodass der Sitzungsumsatz in einem Eins-zu-viele-Bezug zur Sitzung steht. Eine Metrik "Umsatz"kann als <span class="filepath"> sum(Session_Revenue, Session)</span> definiert werden, wobei der Gesamtumsatz für die ausgewählten Sitzungen angegeben wird. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Viele-zu-viele </td> 
@@ -50,8 +51,7 @@ Insight Server kann die folgenden Arten von Dimensionen erstellen und verwalten:
   </tr> 
   <tr> 
    <td colname="col1"> Abgeleitet </td> 
-   <td colname="col2">Abgeleitete Dimensionen werden nicht in der Datensatzkonfiguration basierend auf den verarbeiteten Daten definiert, sondern auf anderen Dimensionen oder Metriken. Viele abgeleitete Dimensionen werden automatisch erstellt, um verschiedene Visualisierungen zu ermöglichen. <p>Wenn ein Benutzer z. B. eine Site oder eine Prozesszuordnung erstellt, erstellt Insight Server im Hintergrund die Dimension "Präfix". Andere Dimensionen, wie zum Beispiel die in Berichten aufgeführten Zeitdimensionen, werden durch Dateien im Dimensionsverzeichnis eines Profils definiert. </p></td> 
+   <td colname="col2">Abgeleitete Dimensionen werden nicht in der Datensatzkonfiguration basierend auf den verarbeiteten Daten definiert, sondern auf anderen Dimensionen oder Metriken im Profil. Viele abgeleitete Dimensionen werden automatisch erstellt, um verschiedene Visualisierungen zu ermöglichen. <p>Wenn ein Benutzer z. B. eine Site oder eine Prozesszuordnung erstellt, erstellt Insight Server im Hintergrund die Dimension "Präfix". Andere Dimensionen, wie zum Beispiel die in Berichten aufgeführten Zeitdimensionen, werden durch Dateien im Dimensionsverzeichnis eines Profils definiert. </p></td> 
   </tr> 
  </tbody> 
 </table>
-
