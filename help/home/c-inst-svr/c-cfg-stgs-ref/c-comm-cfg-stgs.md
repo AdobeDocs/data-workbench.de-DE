@@ -1,16 +1,15 @@
 ---
 description: Anweisungen zum Konfigurieren der Kommunikation für Insight Server oder Repeater.
-solution: Analytics
 title: Konfigurationseinstellungen für die Kommunikation
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
+exl-id: a35788d1-de36-4350-a107-eee392e44503
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 5%
 
 ---
-
 
 # Konfigurationseinstellungen für die Kommunikation{#communications-configuration-settings}
 
@@ -34,11 +33,11 @@ Füllen Sie die Parameter in der folgenden Datei aus:
  <tbody> 
   <tr> 
    <td colname="col1"> Zugriffskontrolle </td> 
-   <td colname="col2"> <p>Speicherort der <span class="filepath"> Datei "Zugriffskontrolle.cfg" </span> . Der Standardspeicherort ist der <span class="filepath"> Zugriffskontrolle- </span> Ordner im Installationsordner von <span class="keyword"> Insight Server </span> oder <span class="wintitle"> Repeater </span> . </p> <p>Beispiel: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
+   <td colname="col2"> <p>Speicherort der Datei <span class="filepath"> Zugriffskontrolle.cfg </span>. Der Standardspeicherort ist der Ordner <span class="filepath"> Zugriffskontrolle </span> im Installationsordner <span class="keyword"> Insight Server </span> oder <span class="wintitle"> Repeater </span>. </p> <p>Beispiel: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Protokollverzeichnis </td> 
-   <td colname="col2"> <p>Ordner, dem die Prüfprotokolle zugeordnet werden sollen. </p> <p>Beispiel: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Hinweis:  Sie können Prüfprotokolle einem anderen lokalen Laufwerk zuordnen (Beispiel: <span class="filepath"> Zeichenfolge: P:\\Audit\\ </span>), aber ordnen Sie keine Prüfprotokolle einem Netzlaufwerk zu. </p> </p> </td> 
+   <td colname="col2"> <p>Ordner, dem die Prüfprotokolle zugeordnet werden sollen. </p> <p>Beispiel: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Hinweis:  Sie können Prüfprotokolle einem anderen lokalen Laufwerk zuordnen (Beispiel: <span class="filepath">-Zeichenfolge: P:\\Audit\\ </span>), aber keine Prüfprotokolle zu einem Netzlaufwerk zuordnen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Zugriffsprotokoll-Funktion </td> 
@@ -50,7 +49,7 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
   <tr> 
    <td colname="col1"> Anschluss </td> 
-   <td colname="col2"> <p>Nicht sicherer (HTTP) Anschluss, auf dem der <span class="keyword"> Insight-Server </span> oder <span class="wintitle"> -Repeater </span> lauscht. Der Standardanschluss ist 80. Durch Eingabe des Werts 0 werden nicht sichere Verbindungen deaktiviert. </p> <p>Beispiel: <code>Port = int: 80</code> </p> </td> 
+   <td colname="col2"> <p>Nicht sicherer (HTTP) Anschluss, an dem der Insight-Server </span> oder <span class="wintitle"> Repeater </span> überwacht. <span class="keyword"> Der Standardanschluss ist 80. Durch Eingabe des Werts 0 werden nicht sichere Verbindungen deaktiviert. </span></p> <p>Beispiel: <code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-Ciphers </td> 
@@ -58,7 +57,7 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
   <tr> 
    <td colname="col1"> SSL-Anschluss </td> 
-   <td colname="col2"> <p>Sicherer Anschluss (über SSL), auf dem der <span class="keyword"> Insight-Server </span> oder <span class="wintitle"> -Repeater </span> lauscht. Der Standardanschluss ist 443. Durch Eingabe des Werts 0 werden sichere Verbindungen deaktiviert. </p> <p>Beispiel: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
+   <td colname="col2"> <p>Sicherer Anschluss (über SSL), an dem der Insight-Server </span> oder <span class="wintitle"> Repeater </span> lauscht. <span class="keyword"> Der Standardanschluss ist 443. Durch Eingabe des Werts 0 werden sichere Verbindungen deaktiviert. </span></p> <p>Beispiel: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
@@ -72,20 +71,20 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Local Path = string: Protokolle\\ </p> </td> 
    <td colname="col2"> <p>Ordner, in dem Sie die Protokolldateien speichern möchten. </p> <p>Beispiel:  </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>Um über den <span class="wintitle"> Server Files Manager auf diesen Ordner zugreifen zu können, muss der in diesem Parameter angegebene Speicherort mit dem Speicherort übereinstimmen, den Sie im Parameter "Log Paths"in der </span>Datei "Log Processing.cfg"angegeben <span class="filepath"> </span> haben. Weitere Informationen zum Ändern des Protokollverzeichnisses in der <span class="filepath"> Datei " </span> Log Processing.cfg"finden Sie im Kapitel "Konfigurationsdatei für die Protokollverarbeitung"im Handbuch zur <i>Konfiguration</i>des Datensatzes. </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>Um auf diesen Ordner über den <span class="wintitle"> Server Files Manager </span> zugreifen zu können, muss der in diesem Parameter angegebene Speicherort mit dem Speicherort übereinstimmen, den Sie im Parameter "Log Paths"in der Datei <span class="filepath"> Log Processing.cfg </span> angegeben haben. Weitere Informationen zum Ändern des Protokollverzeichnisses in der Datei <span class="filepath"> "Protokollverarbeitung.cfg </span>"finden Sie im Kapitel "Konfigurationsdatei für Protokollverarbeitung"im Handbuch <i>Datenaset-Konfiguration</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Local Path = string: Audit\ </p> </td> 
    <td colname="col2"> <p>Ordner, dem die Prüfprotokolle zugeordnet werden sollen. </p> <p>Beispiel:  </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Hinweis:  <p>Sie können Prüfprotokolle einem anderen lokalen Laufwerk zuordnen (Beispiel: <span class="filepath"> Zeichenfolge: P:\\Audit\\ </span>), aber ordnen Sie keine Prüfprotokolle einem Netzlaufwerk zu. </p> <p>Um über den <span class="wintitle"> </span>Server Files Manager auf diesen Ordner zugreifen zu können, muss der in diesem Parameter angegebene Speicherort mit dem Speicherort übereinstimmen, den Sie im Parameter Zugriffsprotokoll-Verzeichnis in dieser Datei angegeben haben. </p> </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Hinweis:  <p>Sie können Prüfprotokolle einem anderen lokalen Laufwerk zuordnen (Beispiel: <span class="filepath">-Zeichenfolge: P:\\Audit\\ </span>), aber keine Prüfprotokolle zu einem Netzlaufwerk zuordnen. </p> <p>Um auf diesen Ordner über den <span class="wintitle"> Server Files Manager </span> zugreifen zu können, muss der in diesem Parameter angegebene Speicherort mit dem Speicherort übereinstimmen, den Sie im Parameter Zugriffsprotokoll-Verzeichnis in dieser Datei angegeben haben. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>NormalizeServer: </td> 
-   <td colname="col2"> <p>Dieser Parameter gilt nur für <span class="keyword"> Insight Server </span>. </p> <p>Weitere Informationen zum Festlegen des zentralisierten Normalisierungsservers für Ihren <span class="keyword"> Insight Server- </span> Cluster finden Sie im Kapitel "Konfigurationsdatei für Protokollverarbeitung"des <i>Dataset-Konfigurationsleitfadens</i>. </p> </td> 
+   <td colname="col2"> <p>Dieser Parameter gilt nur für <span class="keyword"> Insight Server </span>. </p> <p>Weitere Informationen zum Festlegen des zentralisierten Normalisierungsservers für den Cluster <span class="keyword"> Insight Server </span> finden Sie im Kapitel "Konfigurationsdatei für die Protokollverarbeitung"im Handbuch <i>Dataset Configuration Guide</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI = String: /ReportStatus.vsp </p> </td> 
-   <td colname="col2"> <p>Dieser Parameter gilt nur für <span class="keyword"> Insight Server </span>. </p> <p>Ermöglicht die Ansicht des <span class="keyword"> Berichtstatus in der Detaillierten Statusoberfläche für </span> Insight Server <span class="keyword"> </span>. </p> </td> 
+   <td colname="col2"> <p>Dieser Parameter gilt nur für <span class="keyword"> Insight Server </span>. </p> <p>Ermöglicht die Ansicht des <span class="keyword">-Status des Berichts </span> in der Detaillierten Statusschnittstelle für <span class="keyword"> Insight Server </span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
