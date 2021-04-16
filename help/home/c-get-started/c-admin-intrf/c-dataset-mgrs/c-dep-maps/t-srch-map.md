@@ -1,20 +1,21 @@
 ---
 description: Schritte zum Suchen nach Komponenten, die bestimmten Text enthalten.
-solution: Analytics
-title: In einer Map suchen
-topic: Data workbench
+title: Durchsuchen von Graphen
 uuid: 87fa8c69-f1f1-4977-b60c-050ddaacaab2
+exl-id: fb04aedb-aa31-45d0-9225-66d8fd2f7810
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '61'
+ht-degree: 16%
 
 ---
 
-
-# In einer Map suchen{#search-within-a-map}
+# Durchsuchen von Graphen{#search-within-a-map}
 
 Schritte zum Suchen nach Komponenten, die bestimmten Text enthalten.
 
-1. Klicken Sie mit der rechten Maustaste in die Abhängigkeitskarte und klicken Sie auf **[!UICONTROL Search]**.
+1. Klicken Sie mit der rechten Maustaste in die Abhängigkeitszuordnung und klicken Sie auf **[!UICONTROL Search]**.
 1. Geben Sie in das Textfeld den zu suchenden Text ein.
 
    ![Schritt-Info](assets/vis_DependencyMap_Search.png)
