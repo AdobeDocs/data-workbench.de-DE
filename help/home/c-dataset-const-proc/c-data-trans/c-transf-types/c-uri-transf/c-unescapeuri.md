@@ -1,14 +1,15 @@
 ---
 description: Bei der Unescape-URI-Transformation werden alle Zeichen in einer Zeichenfolge, die mit Escape-Zeichen versehen wurden, entschlüsselt.
-solution: Analytics
 title: UnescapeURI
-topic: Data workbench
 uuid: 25e87cc7-812d-4d77-be94-16093e8955fe
+exl-id: abf20906-5052-4bbe-9ffb-522b850669a6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 6%
 
 ---
-
 
 # UnescapeURI{#unescapeuri}
 
@@ -18,12 +19,12 @@ Bei der Unescape-URI-Transformation werden alle Zeichen in einer Zeichenfolge, d
 >
 >Escapezeichen ersetzen die unsicheren Zeichen in einer URI-Zeichenfolge. Sie werden durch ein Dreieck dargestellt, das aus einem Prozentzeichen gefolgt von zwei hexadezimalen Ziffern besteht (z. B. %20).
 
-| Parameter | Beschreibung | Standardeinstellung |
+| Parameter | Beschreibung | Standard |
 |---|---|---|
 | Name | Beschreibender Name der Transformation. Sie können hier einen beliebigen Namen eingeben. |  |
 | Kommentare | Optional. Anmerkungen zur Transformation. |  |
 | Bedingung | Die Bedingungen, unter denen diese Umwandlung angewendet wird. |  |
-| Standardeinstellung | Der Standardwert, der verwendet wird, wenn die Bedingung erfüllt ist und der Eingabewert nicht verfügbar ist. |  |
+| Standard | Der Standardwert, der verwendet wird, wenn die Bedingung erfüllt ist und der Eingabewert nicht verfügbar ist. |  |
 | Eingabe | Die zu entschließende URI-Zeichenfolge. |  |
 | Ausgabe | Der Name des Felds, in dem die Zeichenfolge ohne Escape gespeichert werden soll. |  |
 
@@ -38,4 +39,3 @@ Wenn der Wert docname
 der Wert von x-docname-unescape
 
 * [!DNL mysite.net/lending and leasing forms/document library/credit application.doc]
-
