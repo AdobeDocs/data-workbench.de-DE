@@ -1,18 +1,19 @@
 ---
-description: Mit dem Report Server für Data Workbench können Sie Berichtssätze planen und automatisch generieren und an andere verteilen.
-solution: Analytics
-title: Data Workbench-Berichtsserver
-topic: Data workbench
+description: Mithilfe des Berichtsservers zur Data Workbench können Sie Berichtssätze planen und automatisch generieren und an andere verteilen.
+title: Data Workbench Report Server
 uuid: eac678de-58bf-46d2-aa09-592696c01fb2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 0%
 
 ---
 
 
-# Data Workbench-Berichtsserver{#data-workbench-report-server}
+# Data Workbench Report Server{#data-workbench-report-server}
 
-Mit dem Report Server für Data Workbench können Sie Berichtssätze planen und automatisch generieren und an andere verteilen.
+Mithilfe des Berichtsservers zur Data Workbench können Sie Berichtssätze planen und automatisch generieren und an andere verteilen.
 
 Sie können beispielsweise einen Statusbericht erstellen, der die speziellen Visualisierungen enthält, die Mitglieder der oberen Führungsebene sehen möchten, und den resultierenden Bericht dann an die entsprechenden Führungskräfte verteilen.
 
