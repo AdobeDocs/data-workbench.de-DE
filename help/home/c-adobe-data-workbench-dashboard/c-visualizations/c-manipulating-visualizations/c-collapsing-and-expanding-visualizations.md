@@ -1,14 +1,15 @@
 ---
 description: Reduziert/erweitert die aktuelle Visualisierung.
-solution: Analytics
 title: Reduzieren und Erweitern von Visualisierungen
-topic: Data workbench
 uuid: 16ee5479-e457-4abc-8a40-ed75612318fa
+exl-id: b005fd1e-1704-476f-b220-44ac591b8d15
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '94'
+ht-degree: 8%
 
 ---
-
 
 # Reduzieren und Erweitern von Visualisierungen{#collapsing-and-expanding-visualizations}
 
@@ -16,4 +17,4 @@ Reduziert/erweitert die aktuelle Visualisierung.
 
 Visualisierungen können jederzeit reduziert und erweitert werden. Durch das Reduzieren einer Visualisierung wird die Höhe der Visualisierung auf den Titel und den Tool-Teil reduziert, wodurch der Visualisierungskörper ausgeblendet wird. Wenn Sie eine reduzierte Visualisierung erweitern, wird ihre Größe auf ihre ursprüngliche Höhe zurückgesetzt.
 
-Das Reduzieren einer Visualisierung ist besonders hilfreich, um eine große Anzahl von Visualisierungen innerhalb eines Dashboards bei minimalem Speicherplatz beizubehalten. Benutzer können eine reduzierte Visualisierung erweitern, um deren Inhalt nur bei Bedarf anzuzeigen.
+Das Reduzieren einer Visualisierung ist besonders hilfreich, um eine große Anzahl von Visualisierungen innerhalb eines Dashboards zu erhalten und dabei minimalen Speicherplatz zu beanspruchen. Benutzer können eine reduzierte Visualisierung erweitern, um deren Inhalt nur bei Bedarf anzuzeigen.
