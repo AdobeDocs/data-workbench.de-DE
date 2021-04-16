@@ -1,26 +1,27 @@
 ---
 description: Wie andere Transformationen wird auch die CrossRows-Transformation auf die Datenzeilen (Protokolleinträge) in Ihren Protokollquellen angewendet.
-solution: Analytics
 title: CrossRows
-topic: Data workbench
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
+exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 1%
 
 ---
-
 
 # CrossRows{#crossrows}
 
 Wie andere Transformationen wird auch die CrossRows-Transformation auf die Datenzeilen (Protokolleinträge) in Ihren Protokollquellen angewendet.
 
-Für jede Datenzeile nimmt die Transformation den Wert des angegebenen Eingabefelds, führt eine Reihe von Verarbeitungsschritten aus und zeichnet das Ergebnis im angegebenen Ausgabefeld auf. Wenn die [!DNL CrossRows] Transformation jedoch an einer Datenzeile funktioniert (diese Zeile wird als Ausgabezeile bezeichnet), berücksichtigt sie diese Zeile sowie eine oder mehrere andere Datenzeilen (diese Zeilen werden als Eingabezeilen bezeichnet), die mit derselben Tracking-ID verknüpft sind. Daher basiert der Wert des Ausgabefelds für jede Ausgabezeile für eine bestimmte Tracking-ID auf den Werten des Eingabefelds für eine oder mehrere Eingabelzeilen.
+Für jede Datenzeile nimmt die Transformation den Wert des angegebenen Eingabefelds, führt eine Reihe von Verarbeitungsschritten aus und zeichnet das Ergebnis im angegebenen Ausgabefeld auf. Wenn die [!DNL CrossRows]-Konvertierung jedoch für eine Datenzeile funktioniert (diese Zeile wird als Ausgabezeile bezeichnet), berücksichtigt sie diese Zeile sowie eine oder mehrere andere Datenzeilen (diese Zeilen werden als Eingabezeilen bezeichnet), die mit derselben Tracking-ID verknüpft sind. Daher basiert der Wert des Ausgabefelds für jede Ausgabezeile für eine bestimmte Tracking-ID auf den Werten des Eingabefelds für eine oder mehrere Eingabelzeilen.
 
-Die Transformation bietet mehrere Bedingungen und Einschränkungen, mit denen Sie die Eingabezeilen für die Transformation einschränken können. Sie können diese Beschränkungen in Bezug auf die Bedingungen des Data Workbench-Servers (siehe [Bedingungen](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), einen Bereich von Eingabezeilen relativ zur Ausgabezeile oder einen Zeitbereich in Bezug auf die Zeit der Ausgabezeile ausdrücken. Für die Eingabereilen, die die Bedingungen und Einschränkungen der Transformation erfüllen, können Sie einen Vorgang (z. B. SUM) anwenden, der den Wert des Ausgabefelds bestimmt.
+Die Transformation bietet mehrere Bedingungen und Einschränkungen, mit denen Sie die Eingabezeilen für die Transformation einschränken können. Sie können diese Beschränkungen in Bezug auf die Bedingungen des Data Workbench-Servers (siehe [Conditions](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), einen Bereich von Eingabezeilen relativ zur Ausgabezeile oder einen Zeitbereich im Verhältnis zur Zeit der Ausgabezeile angeben. Für die Eingabereilen, die die Bedingungen und Einschränkungen der Transformation erfüllen, können Sie einen Vorgang (z. B. SUM) anwenden, der den Wert des Ausgabefelds bestimmt.
 
 >[!NOTE]
 >
->Damit die [!DNL CrossRows] Transformation funktioniert, müssen die Daten in der Zeit angeordnet und nach der Tracking-ID in den Quelldaten gruppiert werden. Daher [!DNL CrossRows] funktioniert nur, wenn sie in der [!DNL Transformation.cfg] Datei oder in einer [!DNL Transformation Dataset Include] Datei definiert ist.
+>Für die Umwandlung von [!DNL CrossRows] ist es erforderlich, dass die Daten in der Zeit angeordnet und nach der Tracking-ID in den Quelldaten gruppiert werden. [!DNL CrossRows] funktioniert daher nur, wenn sie in der Datei [!DNL Transformation.cfg] oder in einer Datei [!DNL Transformation Dataset Include] definiert ist.
 
 Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabelle Folgendes:
 
@@ -32,7 +33,7 @@ Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabell
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -63,7 +64,7 @@ Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabell
   </tr> 
   <tr> 
    <td colname="col1"> Schlüssel </td> 
-   <td colname="col2"> <p>Optional. Der Name des Felds, das als Schlüssel verwendet werden soll. </p> <p> Wenn ein Schlüssel angegeben ist, sind die Eingabelzeilen für eine bestimmte Ausgabezeile auf den zusammenhängenden Zeilenblock mit demselben Schlüsselwert wie die Ausgabezeile beschränkt. Diese Einschränkung gilt zusätzlich zu allen anderen Einschränkungen, die von anderen Parametern der <span class="wintitle"> CrossRows</span> -Transformation auf den Eingabezeilen platziert werden. </p> <p> Wenn Sie z. B. mit Webdaten arbeiten und den Schlüssel für das Feld x-session-key (der für jede Sitzung einen eindeutigen Wert hat) festlegen, sind die Eingabelzeilen für die Transformation auf die Zeilen beschränkt, die denselben X-Session-Key-Wert wie die Ausgabezeile haben. Daher erwägen Sie nur die Eingabezeilen, die Seitenansichten darstellen, die während derselben Sitzung wie die Ausgabezeile auftreten. </p> </td> 
+   <td colname="col2"> <p>Optional. Der Name des Felds, das als Schlüssel verwendet werden soll. </p> <p> Wenn ein Schlüssel angegeben ist, sind die Eingabelzeilen für eine bestimmte Ausgabezeile auf den zusammenhängenden Zeilenblock mit demselben Schlüsselwert wie die Ausgabezeile beschränkt. Diese Einschränkung gilt zusätzlich zu allen anderen Einschränkungen, die durch andere Parameter der <span class="wintitle">-Transformation auf den Eingabezeilen platziert werden.</span> </p> <p> Wenn Sie z. B. mit Webdaten arbeiten und den Schlüssel für das Feld x-session-key (der für jede Sitzung einen eindeutigen Wert hat) festlegen, sind die Eingabelzeilen für die Transformation auf die Zeilen beschränkt, die denselben X-Session-Key-Wert wie die Ausgabezeile haben. Daher erwägen Sie nur die Eingabezeilen, die Seitenzeilen darstellen, die während derselben Sitzung wie die Ausgabezeile auftreten. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -103,10 +104,10 @@ Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabell
  </tbody> 
 </table>
 
-Die [!DNL CrossRows] Transformation in diesem Beispiel wird auf Zeilen mit Webdaten angewendet, um für jede Seitenansicht den Zeitpunkt der nächsten Seitenansicht zu ermitteln. Da wir wissen, dass dies nur während der Umwandlungsphase des Datensatzerstellungsprozesses angewendet [!DNL CrossRows] wird, werden die Datenzeilen nach Besuchern sortiert (jeder Besucher hat eine eindeutige Tracking-ID) und Zeit.
+Die [!DNL CrossRows]-Transformation in diesem Beispiel wird auf Zeilen mit Webdaten angewendet, um für jede Ansicht den Zeitpunkt der nächsten Ansicht zu ermitteln. Da wir wissen, dass [!DNL CrossRows] nur während der Konvertierungsphase des Datensatzerstellungsprozesses angewendet wird, werden die Datenzeilen nach Besucher (jeder Besucher hat eine eindeutige Tracking-ID) und Uhrzeit sortiert.
 
-Das Eingabefeld x-timestamp gilt nur für die Eingabelzeilen, in denen das Feld x-is-page-view gefüllt ist (das Angeben der Datenzeile steht für eine Seitenansicht). Das Feld x-session-key (das für jede Sitzung einen eindeutigen Wert enthält) wird für den Parameter key angegeben. Daher sind die Eingabezeilen (Protokolleinträge) für die Transformation auf den zusammenhängenden Zeilenblock beschränkt, der denselben Wert wie die Ausgabezeile hat. Damit eine Eingabezeile für die Transformation berücksichtigt werden kann, muss sie eine Seitenansicht darstellen, die während der gleichen Sitzung wie die Seitenansicht in der Ausgabezeile erfolgt. Der erste Zeilenvorgang nimmt den Wert des Ausgabefelds aus der ersten Eingabezeile, die die [!DNL Input] Bedingung erfüllt und denselben X-Session-Key-Wert wie die Ausgabezeile hat.
+Das Eingabefeld x-timestamp gilt nur für die Eingabelzeilen, in denen das Feld x-is-page-Ansicht ausgefüllt ist (die Datenzeile steht für eine Ansicht der Seite). Das Feld x-session-key (das für jede Sitzung einen eindeutigen Wert enthält) wird für den Parameter key angegeben. Daher sind die Eingabezeilen (Protokolleinträge) für die Transformation auf den zusammenhängenden Zeilenblock beschränkt, der denselben Wert wie die Ausgabezeile hat. Damit eine Eingabezeile für die Konvertierung berücksichtigt werden kann, muss sie eine Seitenzeile darstellen, die während der gleichen Ansicht wie die Seite in der Ausgabezeile auftritt. Der erste Zeilenvorgang nimmt den Wert des Ausgabefelds aus der ersten Eingabezeile, die die Bedingung [!DNL Input] erfüllt und denselben X-Session-Key-Wert wie die Ausgabezeile hat.
 
 ![](assets/cfg_TransformationType_CrossRows.png)
 
-[!DNL CrossRows] wird in einem Zeitraum ausgeführt, der proportional zur Größe der Eingaben und zur Größe der Ausgaben ist. Das bedeutet, dass für die Vorgänge SUM, FIRST ROW und LAST ROW diese nicht weniger effizient sind als andere Transformationen. Für ALLE ist die Situation komplexer, da es möglich ist, eine Datenmenge für jede Datenzeile (Protokolleintrag) auszugeben, die proportional zur Gesamtanzahl der Zeilen (Protokolleinträge) für eine bestimmte Tracking-ID ist. [!DNL CrossRows]
+[!DNL CrossRows] wird in einem Zeitraum ausgeführt, der proportional zur Größe der Eingaben und der Größe der Ausgaben ist. Das bedeutet, dass für die Vorgänge SUM, FIRST ROW und LAST ROW diese nicht weniger effizient sind als andere Transformationen. Für ALLE ist die Situation komplexer, da es möglich ist, [!DNL CrossRows] so zu konfigurieren, dass für jede Datenzeile (Protokolleintrag) eine Datenmenge ausgegeben wird, die proportional zur Gesamtanzahl der Zeilen (Protokolleinträge) für eine bestimmte Tracking-ID ist.
