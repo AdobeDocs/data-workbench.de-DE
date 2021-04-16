@@ -1,14 +1,15 @@
 ---
 description: Eine numerische Dimension besteht aus geordneten numerischen Elementen und hat eine Eins-zu-viele-Beziehung zu ihrer übergeordneten zählbaren Dimension.
-solution: Analytics
 title: Numerische Dimensionen
-topic: Data workbench
 uuid: 19fab770-1535-41b2-bad1-811eba5f3575
+exl-id: 69a4dfa6-8402-4c2b-8b04-e6e1a0fd5ccb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '990'
+ht-degree: 2%
 
 ---
-
 
 # Numerische Dimensionen{#numeric-dimensions}
 
@@ -27,7 +28,7 @@ Numerische Dimensionen werden durch die folgenden Parameter definiert:
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -38,7 +39,7 @@ Numerische Dimensionen werden durch die folgenden Parameter definiert:
   </tr> 
   <tr> 
    <td colname="col1"> Clip-Werte </td> 
-   <td colname="col2"> True oder false. Gibt an, ob der Eingabewert (nach Operation) zwischen den Werten Min. und Max abgeschnitten werden soll. Wenn "Clip-Werte"true ist, wird der Wert auf diesen Bereich gekürzt. Wenn "Clip-Werte"den Wert "false"hat, wird kein Wert für das Element der übergeordneten Dimension zurückgegeben. </td> 
+   <td colname="col2"> Wahr oder falsch. Gibt an, ob der Eingabewert (nach Operation) zwischen den Werten Min. und Max abgeschnitten werden soll. Wenn "Clip-Werte"true ist, wird der Wert auf diesen Bereich gekürzt. Wenn "Clip-Werte"den Wert "false"hat, wird kein Wert für das Element der übergeordneten Dimension zurückgegeben. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -53,7 +54,7 @@ Numerische Dimensionen werden durch die folgenden Parameter definiert:
   </tr> 
   <tr> 
    <td colname="col1"> Feste Größe </td> 
-   <td colname="col2"> True oder false. Steuert die Anzahl der Elemente in einer Dimension (Kardinalität). Wenn "true", werden alle Elemente von "Min."bis "Max."in die Dimension einbezogen. Bei "false"wächst die Größe der Dimension, wenn Werte hinzugefügt werden. </td> 
+   <td colname="col2"> Wahr oder falsch. Steuert die Anzahl der Elemente in einer Dimension (Kardinalität). Wenn "true", werden alle Elemente von "Min."bis "Max."in die Dimension einbezogen. Bei "false"wächst die Größe der Dimension, wenn Werte hinzugefügt werden. </td> 
    <td colname="col3"> false (falsch) </td> 
   </tr> 
   <tr> 
@@ -85,13 +86,13 @@ Numerische Dimensionen werden durch die folgenden Parameter definiert:
    <td colname="col1"> Vorgang </td> 
    <td colname="col2"> <p>Folgende Vorgänge stehen zur Verfügung: </p> <p> 
      <ul id="ul_E04733E5E8824A2BAAB90D9356078D99"> 
-      <li id="li_CAEE9167D45540BEAC538345F250B509"> COUNT: Es wird die Gesamtanzahl der nicht leeren Werte im Feld " <span class="wintitle"> Eingabe</span> "für alle Protokolleinträge verwendet, die die Bedingung der Dimension erfüllen. Wenn das <span class="wintitle"> Eingabefeld</span> ein Vektorfeld ist, wird die Gesamtzahl der nicht leeren Werte in jedem Protokolleintrag gezählt. </li> 
-      <li id="li_64A4D671E78642BD9A9334F8098450B9"> ERSTE NONBLANK: Der erste nicht-leere Eingabewert wird verwendet, unabhängig davon, ob er vom ersten Protokolleintrag stammt. Wenn <span class="wintitle"> Eingabe</span> ein Vektorfeld ist, wird die erste Zeile im Vektor für den relevanten Protokolleintrag verwendet. Wenn der Wert keine Zahl ist, wird kein Wert verwendet. </li> 
-      <li id="li_C967964729BD4A638FF78D8883CE513F"> ERSTE ZEILE: Der Wert für den ersten Protokolleintrag im Zusammenhang mit dem übergeordneten Dimensionselement wird verwendet, auch wenn die Eingabe leer ist. Wenn <span class="wintitle"> Eingabe</span> ein Vektorfeld ist, wird die erste Zeile im Vektor für den relevanten Protokolleintrag verwendet. Wenn dieser Wert leer ist oder keine Zahl ist oder der relevante Protokolleintrag nicht der Bedingung der Dimension entspricht, wird kein Wert verwendet. </li> 
-      <li id="li_74171B17F480478B8547E1A361B22DA4"> LETZTES NONBLANK: Der letzte nicht leere Eingabewert wird verwendet, unabhängig davon, ob er vom letzten Protokolleintrag stammt. Wenn <span class="wintitle"> Eingabe</span> ein Vektorfeld ist, wird die erste Zeile im Vektor für den relevanten Protokolleintrag verwendet. Wenn der Wert keine Zahl ist, wird kein Wert verwendet. </li> 
-      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> LETZTE ZEILE: Der Wert für den letzten Protokolleintrag im Zusammenhang mit dem übergeordneten Dimensionselement wird verwendet, auch wenn die Eingabe leer ist. Wenn <span class="wintitle"> Eingabe</span> ein Vektorfeld ist, wird die erste Zeile im Vektor für den relevanten Protokolleintrag verwendet. Wenn dieser Wert leer ist oder keine Zahl ist oder der relevante Protokolleintrag nicht der Bedingung der Dimension entspricht, wird kein Wert verwendet. </li> 
-      <li id="li_20819E3944544F98853D6A02814F47B2"> SUM: Es wird die Summe aller numerischen Werte im Feld " <span class="wintitle"> Eingabe</span> "für alle Protokolleinträge verwendet, die die Bedingung der Dimension erfüllen. Wenn keine derartigen Protokolleinträge oder keine numerischen Werte gefunden wurden, wird der numerische Wert 0 verwendet. </li> 
-      <li id="li_086C2E57604B4645A9203A984C6F9A04">MIN oder MAX: Es wird der minimale oder maximale numerische Wert verwendet, der im Feld " <span class="wintitle"> Eingabe</span> "für alle Protokolleinträge gefunden wird, die die Bedingung der Dimension erfüllen. Wenn es keine derartigen Protokolleinträge oder keine numerischen Werte gibt, wird kein Wert verwendet. </li> 
+      <li id="li_CAEE9167D45540BEAC538345F250B509"> COUNT: Es wird die Gesamtanzahl der nicht leeren Werte im Feld <span class="wintitle"> Eingabe</span> für alle Protokolleinträge verwendet, die die Bedingung der Dimension erfüllen. Wenn das Feld <span class="wintitle"> Eingabe</span> ein Vektor ist, wird die Gesamtzahl der nicht leeren Werte in jedem Protokolleintrag gezählt. </li> 
+      <li id="li_64A4D671E78642BD9A9334F8098450B9"> ERSTE NONBLANK: Der erste nicht-leere Eingabewert wird verwendet, unabhängig davon, ob er vom ersten Protokolleintrag stammt. Ist <span class="wintitle"> Input</span> ein Vektorfeld, wird die erste Zeile im Vektor für den relevanten Protokolleintrag verwendet. Wenn der Wert keine Zahl ist, wird kein Wert verwendet. </li> 
+      <li id="li_C967964729BD4A638FF78D8883CE513F"> ERSTE ZEILE: Der Wert für den ersten Protokolleintrag im Zusammenhang mit dem übergeordneten Dimensionselement wird verwendet, auch wenn die Eingabe leer ist. Ist <span class="wintitle"> Input</span> ein Vektorfeld, wird die erste Zeile im Vektor für den relevanten Protokolleintrag verwendet. Wenn dieser Wert leer ist oder keine Zahl ist oder der relevante Protokolleintrag nicht der Bedingung der Dimension entspricht, wird kein Wert verwendet. </li> 
+      <li id="li_74171B17F480478B8547E1A361B22DA4"> LETZTES NONBLANK: Der letzte nicht leere Eingabewert wird verwendet, unabhängig davon, ob er vom letzten Protokolleintrag stammt. Ist <span class="wintitle"> Input</span> ein Vektorfeld, wird die erste Zeile im Vektor für den relevanten Protokolleintrag verwendet. Wenn der Wert keine Zahl ist, wird kein Wert verwendet. </li> 
+      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> LETZTE ZEILE: Der Wert für den letzten Protokolleintrag im Zusammenhang mit dem übergeordneten Dimensionselement wird verwendet, auch wenn die Eingabe leer ist. Ist <span class="wintitle"> Input</span> ein Vektorfeld, wird die erste Zeile im Vektor für den relevanten Protokolleintrag verwendet. Wenn dieser Wert leer ist oder keine Zahl ist oder der relevante Protokolleintrag nicht der Bedingung der Dimension entspricht, wird kein Wert verwendet. </li> 
+      <li id="li_20819E3944544F98853D6A02814F47B2"> SUM: Es wird die Summe aller numerischen Werte im Feld <span class="wintitle"> Eingabe</span> für alle Protokolleinträge verwendet, die die Bedingung der Dimension erfüllen. Wenn keine derartigen Protokolleinträge oder keine numerischen Werte gefunden wurden, wird der numerische Wert 0 verwendet. </li> 
+      <li id="li_086C2E57604B4645A9203A984C6F9A04">MIN oder MAX: Es wird der minimale oder maximale numerische Wert verwendet, der im Feld <span class="wintitle"> Eingabe</span> für alle Protokolleinträge gefunden wird, die die Bedingung der Dimension erfüllen. Wenn es keine derartigen Protokolleinträge oder keine numerischen Werte gibt, wird kein Wert verwendet. </li> 
      </ul> </p> <p> <p>Hinweis:  Sie sollten einen Vorgang angeben, um sicherzustellen, dass die Dimension wie gewünscht definiert ist. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -110,9 +111,8 @@ Numerische Dimensionen werden durch die folgenden Parameter definiert:
 
 >[!NOTE]
 >
->Wenn [!DNL Operation] kein Wert zurückgegeben wird oder [!DNL Clip Values] &quot;false&quot;lautet und der Wert nicht zwischen [!DNL Min] [!DNL Max]und liegt, ist kein Element der numerischen Dimension mit dem Element der übergeordneten Dimension verknüpft.
+>Wenn [!DNL Operation] keinen Wert ergibt oder [!DNL Clip Values] den Wert false hat und der Wert nicht zwischen [!DNL Min] und [!DNL Max] liegt, ist kein Element der numerischen Dimension mit dem Element der übergeordneten Dimension verknüpft.
 
-In diesem Beispiel wird die Definition einer numerischen Dimension anhand von Ereignisdaten veranschaulicht, die aus dem Website-Traffic erfasst wurden. Diese numerische Dimension mit dem Namen &quot;Anzeigenanzeigezähler&quot;zählt, wie oft der Besucher während einer bestimmten Sitzung eine Werbung sieht. Es wird davon ausgegangen, dass alle Werbemittel vom Webserver mit ad= als Teil der cs-uri-Abfrage angefordert werden. In diesem Beispiel ist die Anzahl der Male (COUNT), die dem Besucher eine Anzeige präsentiert wird, der Wert des Interesses, nicht der tatsächliche Wert im Feld.
+In diesem Beispiel wird die Definition einer numerischen Dimension anhand von Ereignis-Daten veranschaulicht, die aus dem Website-Traffic erfasst wurden. Diese numerische Dimension mit dem Namen &quot;Anzeigenzähler&quot;zählt, wie oft der Besucher während einer bestimmten Ansicht eine Werbung sieht. Es wird davon ausgegangen, dass alle Werbemittel vom Webserver mit ad= als Teil der cs-uri-Abfrage angefordert werden. In diesem Beispiel ist die Anzahl der Male (COUNT), die dem Besucher eine Werbung präsentiert wird, der Wert des Interesses und nicht der tatsächliche Wert im Feld.
 
 ![](assets/cfg_Transformation_Dim_Numeric.png)
-
