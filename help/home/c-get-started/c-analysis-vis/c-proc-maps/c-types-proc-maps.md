@@ -1,14 +1,15 @@
 ---
 description: Informationen zu den verschiedenen Typen von Prozesskarten.
-solution: Analytics
 title: Typen von Prozesskarten
-topic: Data workbench
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
+exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 1%
 
 ---
-
 
 # Typen von Prozesskarten{#types-of-process-maps}
 
@@ -16,33 +17,33 @@ Informationen zu den verschiedenen Typen von Prozesskarten.
 
 ## 2D-Prozesszuordnungen {#section-ea7fbdb80b1b44aebcd9e4090b6540bf}
 
-Zweidimensionale Prozesszuordnungen bieten eine zweidimensionale Ansicht der Aktivität zwischen Dimensionselementen. Die Größe einer Node in einer 2D-Prozesszuordnung ist proportional zum Wert der Metrik, die dieser Node zugeordnet ist. Darüber hinaus sind sowohl die Stärke als auch die Intensität eines Pfeils zwischen zwei Knoten proportional zum Durchschnitt der Metrikwerte für diese Knoten.
+Zweidimensionale Prozesskarten bieten eine zweidimensionale Ansicht der Aktivität zwischen Dimensionselementen. Die Größe einer Node in einer 2D-Prozesszuordnung ist proportional zum Wert der Metrik, die dieser Node zugeordnet ist. Darüber hinaus sind sowohl die Stärke als auch die Intensität eines Pfeils zwischen zwei Knoten proportional zum Durchschnitt der Metrikwerte für diese Knoten.
 
 In einer 2D-Prozesszuordnung können Sie eine der folgenden Aufgaben ausführen:
 
 * Auswählen, Verschieben, Entfernen und Bezeichnen von Knoten
-* Auswahl vornehmen
+* Auswählen von Elementen
 * Dimensionen speichern
 * Erstellen anderer Visualisierungen
 * Farbverknüpfungen aktivieren
 * Anzeigemetrikmengen
-* Callouts hinzufügen
+* hinzufügen
 
 Die 2D-Prozesszuordnung im folgenden Beispiel zeigt Knoten, die den Namen von Filmen entsprechen. Jeder Filmname ist ein Element der Dimension &quot;Film&quot;, das in einem Datensatz aus Filmdaten definiert ist. Die Movie-Dimension ist die Basisdimension für diese Prozesszuordnung.
 
 ![](assets/vis_2DProcessMap_MovieNodes.png)
 
-In diesem Beispiel sind die Größe der einzelnen Knoten sowie die Stärke und Intensität der einzelnen Pfeile proportional zur Metrik &quot;Bewertungen&quot;, d. h. der Anzahl der Bewertungen, die ein Film erhalten hat. Daher hat ein Film mit einem großen Knoten, wie z. B. *Unabhängigkeitstag*, mehr Bewertungen als ein Film mit einem kleinen Knoten, wie z. B. *Event Horizon*. Sie können auch sehen, dass mehr Zuschauer den *Unabhängigkeitstag* vor *Cold Mountain* bewertet haben, als die gleichen Filme in umgekehrter Reihenfolge. Beachten Sie, dass die Pfeile nicht angeben, dass die Betrachter den *Unabhängigkeitstag* bewertet und dann unmittelbar danach den *Cold Mountain* bewertet haben oder umgekehrt. Die Zuschauer haben vielleicht dazwischen noch andere Filme bewertet, aber diese Filme werden nicht auf dieser Karte angezeigt.
+In diesem Beispiel sind die Größe der einzelnen Knoten sowie die Stärke und Intensität der einzelnen Pfeile proportional zur Metrik &quot;Bewertungen&quot;, d. h. der Anzahl der Bewertungen, die ein Film erhalten hat. Daher hat ein Film mit einem großen Knoten, z. B. *Unabhängigkeitstag*, mehr Bewertungen als ein Film mit einem kleinen Knoten, wie z. B. *Ereignis Horizon*. Sie können auch sehen, dass mehr Film-Viewer *Unabhängigkeitstag* vor *Cold Mountain* bewertet haben, als die gleichen Filme in umgekehrter Reihenfolge bewertet haben. Beachten Sie, dass die Pfeile nicht anzeigen, dass die Viewer unmittelbar danach *Unabhängigkeitstag* bewertet und dann *Kaltes Berg* bewertet haben oder umgekehrt. Die Zuschauer haben vielleicht dazwischen noch andere Filme bewertet, aber diese Filme werden nicht auf dieser Karte angezeigt.
 
 ## 2D-Metrikzuordnungen {#section-a9b846fc71224058918fbc378315effe}
 
-Zweidimensionale Metrikzuordnungen sind ein Typ von 2D-Prozesszuordnung, die Positionsknoten basierend auf dem Wert einer bestimmten Metrik darstellt. In vielen Fällen ist die Metrik, die mit der 2D-Metrikzuordnung verwendet wird, entweder Konversion oder Treue. Umrechnungs- und Aufbewahrungskarten helfen Ihnen zu verstehen, welche Schritte in den Prozessen Ihrer kundenorientierten Kanäle die Kundenumrechnung und -bindung beeinflussen.
+Zweidimensionale Metrikzuordnungen sind ein Typ von 2D-Prozesszuordnung, die Positionsknoten basierend auf dem Wert einer bestimmten Metrik darstellt. In vielen Fällen ist die Metrik, die mit der 2D-Metrikzuordnung verwendet wird, entweder Konversion oder Treue. Umrechnungs- und Aufbewahrungskarten helfen Ihnen, zu verstehen, welche Schritte in den Prozessen Ihrer kundenorientierten Kanal die Kundenumrechnung und -bindung beeinflussen.
 
 >[!NOTE]
 >
 >Die Metrik, die Sie mit einer 2D-Metrikzuordnung verwenden, muss als Prozentsatz ausgedrückt werden.
 
-In einer Konversionsmetrikzuordnung werden Knoten mit 0 % Konversion links im Diagramm dargestellt und Seiten mit 100 % Konversion werden rechts dargestellt. Die Aktivität zwischen Knoten wird angezeigt, sodass Sie leicht erkennen können, welche Schritte in einem Prozess zu einer erhöhten oder verringerten Umrechnung führen und welche Schritte zum Abbruch führen. Eine Prozesskonversionsanalyse ist eine effektive Methode zum Vergleichen von Prozessen oder zum Vergleichen verschiedener Implementierungen desselben Prozesses.
+In einer Konversionsmetrikzuordnung werden Knoten mit 0 % Konversion links im Diagramm dargestellt und Seiten mit 100 % Konversion werden rechts dargestellt. Es wird eine Aktivität zwischen Knoten angezeigt, sodass Sie leicht erkennen können, welche Schritte in einem Prozess zu einer erhöhten oder verringerten Umrechnung führen und welche Schritte zum Abbruch führen. Eine Process-Conversion-Analyse ist eine effektive Methode zum Vergleichen von Prozessen oder zum Vergleichen verschiedener Implementierungen desselben Prozesses.
 
 ![](assets/vis_2DMetricMap_Conversion.png)
 
@@ -59,7 +60,7 @@ Auf ähnliche Weise zeigen Retentionskarten Elemente mit einer 0-prozentigen Bei
 Dreidimensionale Prozesskarten bieten eine dreidimensionale Ansicht der Aktivität zwischen Dimensionselementen. Die Höhe einer Leiste in einer 3D-Prozesszuordnung ist proportional zum Wert der Metrik, die dieser Node zugeordnet ist. Wie bei 2D-Prozesszuordnungen sind sowohl die Stärke als auch die Intensität der Verbindungen zwischen zwei Knoten proportional zum Durchschnitt der Metrikwerte für diese Knoten. In einer 3D-Prozesszuordnung können Sie eine der folgenden Aufgaben ausführen:
 
 * Auswählen, Verschieben, Entfernen und Bezeichnen von Knoten
-* Auswahl vornehmen
+* Auswählen von Elementen
 * Dimensionen speichern
 * Erstellen anderer Visualisierungen
 * Farbverknüpfungen aktivieren
