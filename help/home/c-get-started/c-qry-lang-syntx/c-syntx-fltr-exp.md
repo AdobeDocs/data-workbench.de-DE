@@ -1,24 +1,25 @@
 ---
 description: Ein Filter ist ein Ausdruck, der eine Untergruppe der Daten in einem Datensatz definiert.
-solution: Analytics
-title: Syntax für Filterausdrücke
-topic: Data workbench
+title: Syntax für Ausdrücke zu Filtern
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
+exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 1%
 
 ---
 
-
-# Syntax für Filterausdrücke{#syntax-for-filter-expressions}
+# Syntax für Ausdrücke zu Filtern{#syntax-for-filter-expressions}
 
 Ein Filter ist ein Ausdruck, der eine Untergruppe der Daten in einem Datensatz definiert.
 
 Ein Filter erlaubt oder lehnt jedes Element jeder Dimension entsprechend den Beziehungen zwischen Dimensionen ab.
 
-Filter können mit der [!DNL Filter Editor]Option bearbeitet werden. Siehe [Filter-Editoren](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
+Filter können mit dem [!DNL Filter Editor] bearbeitet werden. Siehe [Filter-Editoren](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-In der folgenden Tabelle enthält jede Syntaxbeschreibung ein Beispiel für einen Metrikausdruck, der diesen Filter verwendet. Beispielsweise ist[SessionsTrue] eine Metrik, die mit dem Filter &quot;True&quot;definiert wird. Die Metrik[SessionsTrue] ist identisch mit der Metrik Sitzungen, da der Filter True jedes Element der Dimension Sitzung zulässt.
+In der folgenden Tabelle enthält jede Syntaxbeschreibung ein Beispiel für einen Metrikfilter, der diesen Ausdruck verwendet. Sessions[True] sind beispielsweise eine Metrik, die mit dem Filter &quot;True&quot;definiert wird. Die Metrik &quot;Sitzungen[True]&quot;ist identisch mit der Metrik &quot;Sitzungen&quot;, da der Filter &quot;True&quot;jedes Element der Dimension &quot;Sitzung&quot;zulässt.
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 
@@ -40,15 +41,15 @@ In der folgenden Tabelle enthält jede Syntaxbeschreibung ein Beispiel für eine
   </tr> 
   <tr> 
    <td colname="col1"> <p>FilterA oder FilterB </p> </td> 
-   <td colname="col2"> <p>Ermöglicht Elemente, die FilterA oder FilterB zugeben. </p> <p>Beispiel: Sitzungen[ Seite="A" oder Seite="B" ] ist die Anzahl der Sitzungen, die Seite A, Seite B oder beide besucht haben. </p> </td> 
+   <td colname="col2"> <p>Lässt Elemente zu, die FilterA oder FilterB zugeben. </p> <p>Beispiel: Sitzungen[ Seite="A" oder Seite="B" ] ist die Anzahl der Sitzungen, die Seite A, Seite B oder beide besucht haben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Nach Dim filtern </p> </td> 
-   <td colname="col2"> <p>Ermöglicht den Satz von Elementen der Dimension Dim, die von Filter zugelassen werden. </p> <p>Beispiel: Sitzungen[ Seite="/Startseite" von Besucher ] ist die Anzahl der Sitzungen eines Besuchers, bei denen die Seite "/home"angezeigt wurde. </p> </td> 
+   <td colname="col2"> <p>Ermöglicht den Satz von Elementen der Dimension Dim, die von Filter zugelassen werden. </p> <p>Beispiel: Sessions[ Page="/home" von Besucher ] ist die Anzahl der Sitzungen, die zu einem Besucher gehören, der die Seite "/home"gesehen hat. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID </p> </td> 
-   <td colname="col2"> <p>Referenzfilter, die im Profil anders definiert sind. </p> <p>Beispiel: Sessions[ Broken_Sitzung_Filter ] ist die Anzahl der Sitzungen, die vom Filter für ungültige Sitzungen zugelassen werden. </p> </td> 
+   <td colname="col2"> <p>Referenz-Filter, die im Profil anders definiert sind. </p> <p>Beispiel: Sessions[ Broken_Sitzung_Filter ] ist die Anzahl der Sitzungen, die vom Filter für ungültige Sitzungen zugelassen werden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Dim = "Value" </p> </td> 
@@ -68,7 +69,7 @@ In der folgenden Tabelle enthält jede Syntaxbeschreibung ein Beispiel für eine
   </tr> 
   <tr> 
    <td colname="col1"> <p>Dim stimmt mit "Expr"überein </p> </td> 
-   <td colname="col2"> <p>Die Elemente der Dimension Dim, die mit dem angegebenen regulären Ausdruck übereinstimmen, werden zugelassen. Dim darf keine denormale oder zählbare Dimension sein. </p> <p>Beispiel: Sitzung[ URI stimmt überein mit ".*/Produkt/.*" ] ist die Anzahl der Sitzungen, die eine Seite in einem Produktverzeichnis besucht haben. </p> </td> 
+   <td colname="col2"> <p>Die Elemente der Dimension Dim, die mit dem angegebenen regulären Ausdruck übereinstimmen, werden zugelassen. Dim darf keine denormale oder zählbare Dimension sein. </p> <p>Beispiel: Sitzung[ URI stimmt überein mit ".*/product/.*" ] ist die Anzahl der Sitzungen, die eine Seite in einem Produktverzeichnis besucht haben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Dim entspricht nicht "Expr" </p> </td> 
@@ -92,16 +93,15 @@ In der folgenden Tabelle enthält jede Syntaxbeschreibung ein Beispiel für eine
   </tr> 
   <tr> 
    <td colname="col1"> <p>beliebige Dim </p> </td> 
-   <td colname="col2"> <p>Lässt alle Elemente der Dimension Dim zu. </p> <p>Beispiel: Sitzungen[ beliebige Seitenansichten ] ist die Anzahl der Sitzungen mit mindestens einer Seitenansicht. </p> </td> 
+   <td colname="col2"> <p>Lässt alle Elemente der Dimension Dim zu. </p> <p>Beispiel: Sitzungen[ beliebige Page_Ansicht ] ist die Anzahl der Sitzungen mit mindestens einer Ansicht. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nein Dim </p> </td> 
-   <td colname="col2"> <p>Lässt Elemente zu, die von Dim abgelehnt werden. </p> <p>Beispiel: Sitzungen[ keine Seitenansicht ] ist die Anzahl der Sitzungen ohne Seitenansicht. </p> </td> 
+   <td colname="col2"> <p>Lässt Elemente zu, die von Dim abgelehnt werden. </p> <p>Beispiel: Sessions[ no Page_Ansicht ] ist die Anzahl der Sitzungen ohne Ansicht einer Seite. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(FILTER) </p> </td> 
-   <td colname="col2"> <p>Dasselbe wie FILTER; zum Gruppieren eines Teils eines Filterausdrucks verwendet. </p> </td> 
+   <td colname="col2"> <p>Dasselbe wie FILTER; zum Gruppieren eines Teils eines Ausdrucks verwendet. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
