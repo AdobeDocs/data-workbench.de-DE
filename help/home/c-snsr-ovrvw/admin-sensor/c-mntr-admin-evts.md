@@ -1,16 +1,15 @@
 ---
 description: Um Sensorfehler so schnell wie möglich zu erkennen und zu beheben, bevor sie zu größeren Problemen oder Ausfällen führen, sollten Sie Ihre Ereignis-Protokolle regelmäßig überwachen.
-solution: Analytics
 title: Überwachen administrativer Ereignisse
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
+exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
 
 ---
-
 
 # Überwachen administrativer Ereignisse{#monitoring-administrative-events}
 
@@ -18,7 +17,7 @@ Um Sensorfehler so schnell wie möglich zu erkennen und zu beheben, bevor sie zu
 
 **Empfohlene Häufigkeit:** Mindestens stündlich
 
-Sie können diese Ereignisse mithilfe der Windows Ereignis Viewer- oder Unix-Syslog-Datei und der [!DNL *.sensor-log] Dateien überwachen, die sich standardmäßig im [!DNL Logs] Installationsordner befinden [!DNL Sensor] . Diese Dateien weisen auf Fehler bei der Datenerfassung hin, insbesondere wenn eine Verbindung zur Zielgruppe nicht hergestellt werden kann [!DNL Sensor] [!DNL data workbench server] und Beginn Daten in die Warteschlange stellen.
+Sie können diese Ereignisse mit der Windows Ereignis Viewer- oder Unix-Syslog-Datei und den [!DNL *.sensor-log]-Dateien überwachen, die sich standardmäßig im [!DNL Logs]-Ordner im [!DNL Sensor]-Installationsordner befinden. Diese Dateien weisen auf Fehler bei der Datenerfassung hin, insbesondere wenn ein [!DNL Sensor] keine Verbindung zur Zielgruppe [!DNL data workbench server] herstellen kann und Beginn Daten in die Warteschlange stellen.
 
 ## Überwachen von Ereignissen unter Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
@@ -30,9 +29,9 @@ Nachrichten werden je nach Schweregrad als &quot;Informationen&quot;, &quot;Warn
 
 * Klicken Sie auf **Beginn > Systemsteuerung > Verwaltung > Ereignis-Viewer**.
 
-## Ereignisse unter Unix überwachen {#section-5de3947891fb47ac88b7c855e545d54a}
+## Überwachen von Ereignissen unter Unix {#section-5de3947891fb47ac88b7c855e545d54a}
 
-Sensor protokolliert Fehler im [!DNL syslog] Daemon.
+Sensor protokolliert Fehler beim [!DNL syslog]-Daemon.
 
 Der syslog-Daemon schreibt Fehlermeldungen in Protokolldateien, die auf den Regeln basieren, die Sie in der Datei syslog.conf angegeben haben. Fehler werden mit den Flags &quot;LOG_DAEMON&quot;und entweder &quot;LOG_NOTICE&quot;oder &quot;LOG_ERR&quot;je nach Schweregrad protokolliert.
 
@@ -48,11 +47,11 @@ Alle Sensormeldungen enthalten die Zeichenfolge &quot;Sensor&quot; und werden nu
 
 | Nummer der Meldung | Nachrichtenbedeutet | Meldungszeichenfolge |
 |---|---|---|
-| 1xxx | Informativ | Sensor Info Nr. |
-| 2xxx | Warnung | Sensorwarnung Nr. |
-| 3xxx | Konfigurationsfehler | Sensorfehler Nr. |
-| 4xxx | Operationsfehler | Sensorfehler Nr. |
-| 5xxx | Interner Fehler | Sensorfehler Nr. |
+| 1 xxx | Informativ | Sensor Info Nr. |
+| 2 xxx | Warnung | Sensorwarnung Nr. |
+| 3 xxx | Konfigurationsfehler | Sensorfehler Nr. |
+| 4 xxx | Operationsfehler | Sensorfehler Nr. |
+| 5 xxx | Interner Fehler | Sensorfehler Nr. |
 
 >[!NOTE]
 >
@@ -64,9 +63,9 @@ Ihr Netzwerk-Management-Tool kann so eingestellt werden, dass Ihre Nachrichten a
 
 In Ihren Ereignis-Protokollen sollten Sie besonders auf Meldungen bezüglich der Warteschlangengröße achten und diese sofort bearbeiten.
 
-Zum Beispiel brauchen Nachrichten wie &quot; [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot;Aufmerksamkeit.
+Beispielsweise müssen Meldungen wie &quot;[!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot;aufmerksam verfolgt werden.
 
-## Reagieren auf Sensor-Ereignis-Meldungen {#section-0004c4a169dc4a8882d9bd87dd326ad4}
+## Antworten auf Sensor-Ereignis-Meldungen {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
 Tabellen, die Sensor-Ereignis und empfohlene Aktionen für die unterstützten Webserverplattformen beschreiben.
 
@@ -195,10 +194,10 @@ Tabellen, die Sensor-Ereignis und empfohlene Aktionen für die unterstützten We
 
 | Ereignis-Nachricht | Vorgeschlagene Aktion |
 |---|---|
-| Sensorfehler 3015: Der Abschnitt &quot;ns/server/[server]/module/[module] &quot;fehlt in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
+| Sensorfehler 3015: s/server/[server]/module/[module] -Abschnitt fehlt in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
 | Sensorfehler 3019: vys-cookie wurde nicht vor vys-log aufgerufen. Bitte wenden Sie sich an den Support. Wenden Sie sich an Adobe ClientCare. | Bitte wenden Sie sich an den Support. Wenden Sie sich an Adobe ClientCare. |
-| Sensorfehler 3020: VisualSciencesConfig fehlt als erster Eintrag im [Abschnittsabschnitt] in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
-| Sensorfehler 3021: VisualSciencesConfig fehlt ein Wert im [Abschnittsabschnitt] in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
+| Sensorfehler 3020: VisualSciencesConfig fehlt als erster Eintrag im Abschnitt [section] in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
+| Sensorfehler 3021: VisualSciencesConfig fehlt ein Wert im Abschnitt [section] in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
 
 **iPlanet- und Java-System-Webserver**
 
@@ -207,4 +206,3 @@ Tabellen, die Sensor-Ereignis und empfohlene Aktionen für die unterstützten We
 | Sensorfehler 3011: Init-Richtlinie erforderlich. Beispiel: Init fn=vys-init config-file=&quot;/mypath/myfile&quot; | Dies ist ein Konfigurationsfehler. Die iPlanet Init-Richtlinie fehlt. |
 | Sensorfehler 3015: config-file ist nicht in der iPlanet Init-Direktive angegeben | Dies ist ein Konfigurationsfehler. Der Pfad zur Konfigurationsdatei wurde in der iPlanet Init-Richtlinie nicht angegeben. |
 | Sensorfehler 3019: vys-cookie wurde nicht vor vys-log aufgerufen. Bitte überprüfen Sie die Konfigurationsdatei | vys-cookie muss als First NameTrans-Direktive für jeden virtuellen Software-Server angegeben werden. |
-
