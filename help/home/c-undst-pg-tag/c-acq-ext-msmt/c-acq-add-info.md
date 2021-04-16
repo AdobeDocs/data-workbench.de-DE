@@ -1,18 +1,19 @@
 ---
-description: Abfragezeichenfolgen-Variablen können einer JavaScript-Anforderung hinzugefügt werden, um bei einer Anforderung zusätzliche Messungen zu erfassen.
-solution: Analytics
-title: Zusätzliche Informationen abrufen
-topic: Data workbench
+description: Abfragen-Zeichenfolgenvariablen können einer JavaScript-Anforderung hinzugefügt werden, um zusätzliche Messungen bei einer Anforderung zu erfassen.
+title: Erfassen zusätzlicher Informationen
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
+exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 4%
 
 ---
 
+# Erfassen zusätzlicher Informationen{#acquiring-additional-information}
 
-# Zusätzliche Informationen abrufen{#acquiring-additional-information}
-
-Abfragezeichenfolgen-Variablen können einer JavaScript-Anforderung hinzugefügt werden, um bei einer Anforderung zusätzliche Messungen zu erfassen.
+Abfragen-Zeichenfolgenvariablen können einer JavaScript-Anforderung hinzugefügt werden, um zusätzliche Messungen bei einer Anforderung zu erfassen.
 
 Diese Variablen können manuell oder durch Skript auf der Seite selbst hinzugefügt werden.
 
@@ -40,7 +41,6 @@ In diesem Beispiel können die Skriptvariablen für v_1 und v_2 von einer andere
 
 | Erfasste Daten | Erklärung | Beispiel |
 |---|---|---|
-| v_pn= | Mit der Abfragezeichenfolgen-Variable v_pn verknüpfter Wert | v_pn=Antragsformular |
-| v_1= | Mit der Abfragezeichenfolgen-Variable v_1 verknüpfter Wert | v_1=99.99 |
-| v_2= | Mit der Abfragezeichenfolgen-Variable v_2 verknüpfter Wert | v_2=visa |
-
+| v_pn= | Mit der Zeichenfolgenvariable v_pn verknüpfter Wert | v_pn=Antragsformular |
+| v_1= | Der mit der Zeichenfolgenvariable v_1 verknüpfte Abfrage | v_1=99.99 |
+| v_2= | Der mit der Zeichenfolgenvariable v_2 verknüpfte Abfrage | v_2=visa |
