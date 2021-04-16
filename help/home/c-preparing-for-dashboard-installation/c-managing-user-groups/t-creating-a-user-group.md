@@ -1,18 +1,19 @@
 ---
-description: 'null'
-solution: Analytics
-title: Erstellen einer Benutzergruppe
-topic: Data workbench
+description: Erstellen von Benutzergruppen
+title: Erstellen von Benutzergruppen
 uuid: 8a474480-81fa-4a86-9937-2fb82e949436
+exl-id: 8af9d635-ff07-486f-845a-44541d577fad
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 9%
 
 ---
 
+# Erstellen von Benutzergruppen{#creating-a-user-group}
 
-# Erstellen einer Benutzergruppe{#creating-a-user-group}
-
-1. Klicken Sie auf **[!UICONTROL Create Group]** , um das **[!UICONTROL New Group]** Formular aufzurufen.
+1. Klicken Sie auf **[!UICONTROL Create Group]**, um das **[!UICONTROL New Group]**-Formular anzuzeigen.
 
    ![](assets/create_user_group.png)
 
@@ -24,7 +25,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
     <th class="chdeschd"> Beschreibung</th> 
     </thead> 
     <tr class="chrow strow"> 
-    <td class="choption"><strong>Gruppenname</strong></td> 
+    <td class="choption"><strong>Gruppe Name</strong></td> 
     <td class="chdesc stentry"> Geben Sie einen eindeutigen Gruppennamen ein.</td> 
     </tr> 
     <tr class="chrow strow"> 
@@ -32,19 +33,19 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
     <td class="chdesc stentry"> Geben Sie eine kurze Beschreibung der Gruppe ein (optional).</td> 
     </tr> 
     <tr class="chrow strow"> 
-    <td class="choption"><strong>Profilzugriff</strong></td> 
-    <td class="chdesc stentry"> Wählen Sie die Profile aus, auf die diese Gruppe Zugriff haben soll.</td> 
+    <td class="choption"><strong>Zugriff auf Profile</strong></td> 
+    <td class="chdesc stentry"> Wählen Sie aus, auf welche Profil diese Gruppe zugreifen soll.</td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Zugriffsberechtigung</strong></td> 
-    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administrator</span>: Speichern, anzeigen, ändern und löschen Sie alle Dashboards für alle Profile. Administratorberechtigungen ermöglichen es einem Benutzer, sich im Verwaltungsbereich anzumelden und alle Verwaltungsfunktionen auszuführen. </p> <p> <span class="uicontrol"> Schreibgeschützt</span>: Berechtigungen auf schreibgeschützt für Dashboards beschränken. Der Benutzer kann keine Visualisierungen hinzufügen oder ändern oder Dashboards speichern. </p> <p> <b>Keine Berechtigungen aktiviert </b>(Standard): Keine aktivierten Berechtigungen gewähren normalen Benutzern Berechtigungen für die Gruppe. Diese Benutzer können Visualisierungen erstellen und ändern, Dashboards speichern und die Dashboards anzeigen, auf die sie Zugriff haben. </p> </td> 
+    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administrator</span>: Speichern, Ansicht, Ändern und Löschen aller Dashboard für alle Profil. Administratorberechtigungen ermöglichen es einem Benutzer, sich im Verwaltungsbereich anzumelden und alle Verwaltungsfunktionen auszuführen. </p> <p> <span class="uicontrol"> Schreibgeschützt</span>: Berechtigungen auf schreibgeschützt für Dashboard beschränken. Der Benutzer kann keine Visualisierungen hinzufügen oder ändern oder Dashboard speichern. </p> <p> <b>Keine Berechtigungen aktiviert  </b>(Standard): Keine aktivierten Berechtigungen gewähren normalen Benutzern Berechtigungen für die Gruppe. Diese Benutzer können Visualisierungen erstellen und ändern, Dashboards speichern und die Dashboard, auf die sie Zugriff haben, Ansicht geben. </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Verfügbare Benutzer/Gruppenmitglieder</strong></td> 
-    <td class="chdesc stentry">Ziehen Sie Benutzer per Drag &amp; Drop aus der Liste der <span class="uicontrol"> verfügbaren Benutzer</span> in den <span class="uicontrol"> Abschnitt " </span>Gruppenmitglieder". Die Gruppenmitglieder können jederzeit geändert werden. </td> 
+    <td class="chdesc stentry">Ziehen Sie Benutzer per Drag &amp; Drop aus der Liste <span class="uicontrol"> Verfügbare Benutzer</span> in den Bereich <span class="uicontrol"> Gruppenmitglieder </span>. Die Gruppenmitglieder können jederzeit geändert werden. </td> 
     </tr> 
     </table>
 
-1. Klicken Sie auf **[!UICONTROL Create Group]** , um die Benutzergruppe zu erstellen.
+1. Klicken Sie auf **[!UICONTROL Create Group]**, um die Benutzergruppe zu erstellen.
 
    Wenn der Vorgang erfolgreich war, wird eine Meldung angezeigt, die angibt, dass die Benutzergruppe erfolgreich erstellt wurde.
