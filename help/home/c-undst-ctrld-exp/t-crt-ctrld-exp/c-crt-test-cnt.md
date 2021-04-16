@@ -2,16 +2,15 @@
 description: Bevor Sie das Experiment konfigurieren, sollten Sie den alternativen Inhalt erstellen, den Sie im Experiment verwenden möchten.
 solution: Analytics,Analytics
 title: Erstellen des Testinhalts
-topic: Data workbench
 uuid: d7996522-38a6-4bb8-9736-d71157c17b45
+exl-id: fd46c6af-37e8-452a-880d-147b7d0cfe21
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 4%
 
 ---
-
 
 # Erstellen des Testinhalts{#creating-the-test-content}
 
@@ -19,6 +18,6 @@ Bevor Sie das Experiment konfigurieren, sollten Sie den alternativen Inhalt erst
 
 Die Kontrollgruppe wird an den ursprünglichen URI gesendet, während die Testgruppe an den neuen alternativen URI gesendet wird.
 
-Um Verwirrung zu vermeiden, sollten Sie die Namen der Testgruppen-Dateien nicht wiederverwenden. Wenn Sie z. B. ein Experiment mit einer Testgruppendatei mit dem Namen [!DNL test2.asp]ausführen, sollten Sie nicht [!DNL test2.asp] als Name für die Testdatei im nächsten Experiment verwenden.
+Um Verwirrung zu vermeiden, sollten Sie die Namen der Testgruppen-Dateien nicht wiederverwenden. Wenn Sie beispielsweise ein Experiment mit einer Testgruppendatei mit dem Namen [!DNL test2.asp] ausführen, verwenden Sie im nächsten Experiment nicht [!DNL test2.asp] als Namen für die Testdatei.
 
-Für die Hypothese, dass sich das Verschieben des grafischen Links &quot;Demo anfordern&quot;auf Ihrer Startseite auf die Besucher-Umrechnung auswirkt, erstellen wir die alternative Startseite, die den grafischen Link &quot;Demo anfordern&quot;in der neuen Position enthält. Im folgenden Abschnitt wird beschrieben, wie Sie dann angeben, dass der URI der Kontrollgruppe für einen bestimmten Prozentsatz von Besuchern durch den URI der Testgruppe ersetzt [!DNL index.asp] werden [!DNL index2.asp] soll.
+Für die Hypothese, dass sich das Verschieben des grafischen Links &quot;Demo anfordern&quot;auf Ihrer Startseite auf die Besucher-Umrechnung auswirkt, erstellen wir die alternative Startseite, die den grafischen Link &quot;Demo anfordern&quot;in der neuen Position enthält. Im folgenden Abschnitt wird beschrieben, wie Sie dann angeben, dass der Kontrollgruppen-URI [!DNL index.asp] für einen bestimmten Prozentsatz von Besuchern durch die Testgruppe URI [!DNL index2.asp] ersetzt werden soll.
