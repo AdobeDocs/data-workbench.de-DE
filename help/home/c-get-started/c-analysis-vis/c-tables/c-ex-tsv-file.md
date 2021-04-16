@@ -1,16 +1,17 @@
 ---
 description: Link zu Informationen zum Exportieren in eine TSV-Datei.
-solution: Analytics
-title: In eine TSV-Datei exportieren
-topic: Data workbench
+title: Exportieren in eine TSV-Datei
 uuid: aa21dd0f-aaf7-44c5-947d-74010cb440fa
+exl-id: 3bf08a79-6b4c-4172-83c7-320ab9b5642a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '37'
+ht-degree: 27%
 
 ---
 
-
-# In eine TSV-Datei exportieren{#export-to-a-tsv-file}
+# Exportieren in eine TSV-Datei{#export-to-a-tsv-file}
 
 Link zu Informationen zum Exportieren in eine TSV-Datei.
 
