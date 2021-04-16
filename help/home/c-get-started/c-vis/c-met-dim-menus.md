@@ -1,26 +1,27 @@
 ---
 description: Die Menüs, die durch Rechtsklick auf die Metrik oder den Dimensionsbereich innerhalb einer Visualisierung aufgerufen werden, bieten Zugriff auf Aktionen, die sich auf die Metrik oder Dimension in dieser Visualisierung beziehen.
-solution: Analytics
-title: Metrik- und Dimensionsmenüs
-topic: Data workbench
+title: Menüs für Metriken und Dimensionen
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
+exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 3%
 
 ---
 
-
-# Metrik- und Dimensionsmenüs{#metric-and-dimension-menus}
+# Menüs für Metriken und Dimensionen{#metric-and-dimension-menus}
 
 Die Menüs, die durch Rechtsklick auf die Metrik oder den Dimensionsbereich innerhalb einer Visualisierung aufgerufen werden, bieten Zugriff auf Aktionen, die sich auf die Metrik oder Dimension in dieser Visualisierung beziehen.
 
-Weitere Informationen zur Verwendung dieser Menüoptionen mit einem bestimmten Visualisierungstyp finden Sie im Abschnitt zur entsprechenden Visualisierung unter [Analytics-Visualisierungen](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
+Weitere Informationen zur Verwendung dieser Menüoptionen mit einem bestimmten Visualisierungstyp finden Sie im entsprechenden Abschnitt zur Visualisierung unter [Analyse Visualisierungen](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
 
-## Das Menü &quot;Metrik&quot; {#section-115db63a26f04b57ac954a69972c6291}
+## Das Menü Metrik {#section-115db63a26f04b57ac954a69972c6291}
 
 Sie können das Metrikmenü aufrufen, indem Sie mit der rechten Maustaste auf einen Metrikbereich innerhalb einer Visualisierung klicken.
 
-In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, unterschiedliche Optionen zur Verfügung. Das folgende Beispiel zeigt einige der verfügbaren Menüoptionen, während die folgende Tabelle alle verfügbaren Menüoptionen auflistet.
+In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, unterschiedliche Optionen zur Verfügung. Das folgende Beispiel zeigt einige der verfügbaren Menüoptionen, während in der folgenden Tabelle alle verfügbaren Menüoptionen Liste werden.
 
 ![](assets/mnu_Metric.png)
 
@@ -49,11 +50,11 @@ In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, un
    <td colname="col2"> <p>Ermöglicht die Bearbeitung der Definition der Metrik, die durch das Feld Metrikname identifiziert wird. Siehe <a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797"> Bearbeiten vorhandener abgeleiteter Metriken</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Metriken </p> </td> 
+   <td colname="col1"> <p>Metriken   </p> </td> 
    <td colname="col2"> <p>Überschrift für die folgenden metrikbezogenen Menüoptionen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Metrik hinzufügen </p> </td> 
+   <td colname="col1"> <p>hinzufügen </p> </td> 
    <td colname="col2"> <p>Fügt der Visualisierung links neben der ausgewählten Metrik eine neue Metrik hinzu. </p> </td> 
   </tr> 
   <tr> 
@@ -69,7 +70,7 @@ In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, un
    <td colname="col2"> <p>Überschrift für die folgenden layoutbezogenen Menüoptionen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dimension hinzufügen </p> </td> 
+   <td colname="col1"> <p>hinzufügen Dimension </p> </td> 
    <td colname="col2"> <p>Fügt der Visualisierung eine weitere Dimension hinzu. </p> </td> 
   </tr> 
   <tr> 
@@ -79,11 +80,11 @@ In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, un
  </tbody> 
 </table>
 
-## Verwenden des Dimensionsmenüs {#section-e09de0aa6b74459a957b627ff7d07979}
+## Verwenden Sie das Dimensionsmenü {#section-e09de0aa6b74459a957b627ff7d07979}
 
 Sie können das Dimensionsmenü aufrufen, indem Sie mit der rechten Maustaste auf einen beliebigen Dimensionsbereich innerhalb einer Visualisierung klicken.
 
-In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, unterschiedliche Optionen zur Verfügung. Das folgende Beispiel zeigt einige der verfügbaren Menüoptionen, während die folgende Tabelle alle verfügbaren Menüoptionen auflistet.
+In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, unterschiedliche Optionen zur Verfügung. Das folgende Beispiel zeigt einige der verfügbaren Menüoptionen, während in der folgenden Tabelle alle verfügbaren Menüoptionen Liste werden.
 
 ![](assets/mnu_Dimension.png)
 
@@ -101,14 +102,14 @@ In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, un
   </tr> 
   <tr> 
    <td colname="col1"> <p>Element umbenennen </p> </td> 
-   <td colname="col2"> <p>Benennt das Element um. Klicken Sie auf <span class="uicontrol"> Zurück</span> , um zum ursprünglichen Namen zurückzukehren. </p> </td> 
+   <td colname="col2"> <p>Benennt das Element um. Klicken Sie auf <span class="uicontrol"> Umkehren</span>, um zum ursprünglichen Namen zurückzukehren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Dimensionsname</i> </p> </td> 
    <td colname="col2"> <p>Überschrift für die folgenden dimensionsbezogenen Menüoptionen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>SORTIEREN </p> </td> 
+   <td colname="col1"> <p>Sortieren </p> </td> 
    <td colname="col2"> <p>Sortiert die Elemente der ausgewählten Dimension nach Bedarf. </p> </td> 
   </tr> 
   <tr> 
@@ -129,10 +130,10 @@ In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, un
   </tr> 
   <tr> 
    <td colname="col1"> <p>Serienlegende </p> </td> 
-   <td colname="col2"> <p>Farbkodiert die Elemente innerhalb der ausgewählten Dimension als Serie. Siehe <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12"> Verwenden von SerienLegenden</a>. </p> </td> 
+   <td colname="col2"> <p>Farbkodiert die Elemente innerhalb der ausgewählten Dimension als Serie. Siehe <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12"> Verwenden von Series-Legenden</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Visualisierung hinzufügen </p> </td> 
+   <td colname="col1"> <p>hinzufügen </p> </td> 
    <td colname="col2"> <p>Fügt eine Visualisierung hinzu, die die ausgewählte Dimension verwendet. </p> </td> 
   </tr> 
   <tr> 
@@ -140,19 +141,19 @@ In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, un
    <td colname="col2"> <p>Speichert die ausgewählte Dimension aus der Visualisierung. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Hierarchieansicht </p> </td> 
-   <td colname="col2"> <p>Ändert die Visualisierung der aktuellen Seite in eine Visualisierung der Seitenhierarchie, die die Seiten einer Site hierarchisch nach Dateinamen geordnet und alphabetisch sortiert anzeigt. Siehe <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff"> Anwenden von Hierarchieansichten</a>. </p> </td> 
+   <td colname="col1"> <p>Hierarchie-Ansicht </p> </td> 
+   <td colname="col2"> <p>Ändert die Visualisierung der aktuellen Seite in eine Visualisierung der Seitenhierarchie, die die Seiten einer Site hierarchisch nach Dateinamen geordnet und alphabetisch sortiert anzeigt. Siehe <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff"> Anwenden von Hierarchie-Ansichten</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Layout </p> </td> 
    <td colname="col2"> <p>Überschrift für die folgenden layoutbezogenen Menüoptionen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dimension hinzufügen </p> </td> 
+   <td colname="col1"> <p>hinzufügen Dimension </p> </td> 
    <td colname="col2"> <p>Fügt der Visualisierung eine weitere Dimension hinzu. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dimension ändern </p> </td> 
+   <td colname="col1"> <p>Dimensionsänderung </p> </td> 
    <td colname="col2"> <p>Ändert die Dimension in der Visualisierung. </p> </td> 
   </tr> 
   <tr> 
@@ -165,4 +166,3 @@ In diesem Menü stehen Ihnen je nach Visualisierungstyp, in dem Sie arbeiten, un
   </tr> 
  </tbody> 
 </table>
-
