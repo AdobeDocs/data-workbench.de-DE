@@ -1,32 +1,33 @@
 ---
 description: Data Workbench unterstützt sowohl Breiten- und Längengradprojektionen als auch UTM-Projektionen (Universal Transverse Mercator) für alle Bodenbildquellen.
-solution: Analytics
-title: Projektionsinformationen für Geländebilder angeben
-topic: Data workbench
+title: Festlegen von Projektionsinformationen für Topografiebilder
 uuid: cc1e1e35-6b23-4121-a9f5-489001cb2ef8
+exl-id: 2638c5d4-164d-411b-8464-0a3af81b6537
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 3%
 
 ---
 
-
-# Projektionsinformationen für Geländebilder angeben{#specify-projection-information-for-terrain-images}
+# Festlegen von Projektionsinformationen für Topografiebilder{#specify-projection-information-for-terrain-images}
 
 Data Workbench unterstützt sowohl Breiten- und Längengradprojektionen als auch UTM-Projektionen (Universal Transverse Mercator) für alle Bodenbildquellen.
 
-Projektionsinformationen sind für unprojizierte und nicht projizierte Rohdaten und allgemeine Bilder erforderlich. Sie können Projektionsinformationen für Bilder mit eingebetteten Projektionsinformationen angeben, die jedoch normalerweise nicht erforderlich sind, da die Parameter der Projektion automatisch anhand der im Bild selbst eingebetteten geodätischen Daten bestimmt werden. In den folgenden Abschnitten finden Sie Informationen zum Festlegen dieser Projektionsformate in der [!DNL Terrain Images.cfg] Datei.
+Projektionsinformationen sind für unprojizierte und nicht projizierte Rohdaten und allgemeine Bilder erforderlich. Sie können Projektionsinformationen für Bilder mit eingebetteten Projektionsinformationen angeben, die jedoch normalerweise nicht erforderlich sind, da die Parameter der Projektion automatisch anhand der im Bild selbst eingebetteten geodätischen Daten bestimmt werden. Die folgenden Abschnitte enthalten Details zum Festlegen dieser Projektionsformate in der Datei [!DNL Terrain Images.cfg].
 
-## Breitengradprojektionen {#section-6e335357ec28462ba39c565e0a5986c7}
+## Breitengrad-Längengrad-Projektionen {#section-6e335357ec28462ba39c565e0a5986c7}
 
-Das Projektionsformat für Längen- und Breitengrad (LatLonProjection) in der [!DNL Terrain Images.cfg] Datei wird durch vier Parameter für Längen- und Breitengrad definiert.
+Das Projektionsformat &quot;LatLonProjection&quot;in der Datei [!DNL Terrain Images.cfg] wird durch vier Parameter für Längen- und Breitengrad definiert.
 
-Um eine LatLonProjection für nicht projizierte Bilder (unprojizierte unprojizierte Bitmaps und allgemeine Bilder, nicht projiziert) anzugeben, können Sie die Einstellungen für LatLonProject im [!DNL Terrain Images.cfg] Fenster in Data Workbench eingeben.
+Um eine LatLonProjection für nicht projizierte Bilder (unprojizierte unprojizierte Bitmaps und allgemeine Bilder, nicht projiziert) anzugeben, können Sie die Einstellungen für LatLonProjection im Fenster [!DNL Terrain Images.cfg] in der Data Workbench eingeben.
 
-Um für Bilder mit eingebetteten Projektionsinformationen eine LatLonProjection- [!DNL Terrain Images.cfg] Datei anzugeben, müssen Sie die Datei in einem Texteditor wie Notepad öffnen, den Parameter Projektionsinformationen auf LatLonProjection festlegen und Einstellungen für die [!DNL LatLonProjection]Projektion hinzufügen.
+Um für Bilder mit eingebetteten Projektionsinformationen eine LatLonProjection-Datei anzugeben, müssen Sie die Datei [!DNL Terrain Images.cfg] in einem Texteditor wie Notepad öffnen, den Parameter Projektionsinformationen auf LatLonProjection einstellen und Einstellungen für [!DNL LatLonProjection] hinzufügen.
 
 **So legen Sie eine LatLonProjection für nicht projizierte Bilder fest**
 
-1. Öffnen Sie die [!DNL Terrain Images.cfg] Datei in Data Workbench und fügen Sie eine Bodenbildebenenquelle hinzu, wie unter [So definieren Sie eine Terrain-Bildebene](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f)definiert.
+1. Öffnen Sie die Datei [!DNL Terrain Images.cfg] in Data Workbench und fügen Sie eine Bildschichtquelle für Geländebilder hinzu, wie unter [So definieren Sie eine Terrain-Bildebene](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f) beschrieben.
 1. Bearbeiten Sie die Parameter für Projektinformationen mithilfe der folgenden Parametertabelle als Anleitung:
 
 <table id="table_32F6EADB2DA34592ABD6FFAC9E00BB27"> 
@@ -56,16 +57,16 @@ Um für Bilder mit eingebetteten Projektionsinformationen eine LatLonProjection-
  </tbody> 
 </table>
 
-1. Speichern Sie die Datei, indem Sie mit der rechten Maustaste **[!UICONTROL (modified)]** am oberen Rand des Fensters klicken und auf **[!UICONTROL Save]**.
-1. Um die lokal vorgenommenen Änderungen am Data Workbench-Servercomputer zu speichern, klicken Sie mit der rechten Maustaste auf das [!DNL Server Files Manager]Häkchen für [!DNL Terrain Images.cfg] die [!DNL Temp] Spalte und klicken Sie dann auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+1. Speichern Sie die Datei, indem Sie mit der rechten Maustaste auf **[!UICONTROL (modified)]** oben im Fenster klicken und auf **[!UICONTROL Save]** klicken.
+1. Klicken Sie zum Speichern der lokal vorgenommenen Änderungen auf dem Servercomputer der Data Workbench in der Spalte [!DNL Server Files Manager] mit der rechten Maustaste auf das Häkchen für [!DNL Terrain Images.cfg] in der Spalte [!DNL Temp] und klicken Sie dann auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]***.
 
 **So legen Sie eine LatLonProjection für Bilder in eingebetteten Projektionsinformationen fest**
 
-Klicken Sie im [!DNL Server Files Manager]Fenster auf **[!UICONTROL Components]** , um den Inhalt anzuzeigen. Die [!DNL Terrain Images.cfg] Datei befindet sich in diesem Ordner.
+Klicken Sie in [!DNL Server Files Manager] auf **[!UICONTROL Components]**, um den Inhalt Ansicht. Die Datei [!DNL Terrain Images.cfg] befindet sich in diesem Verzeichnis.
 
-Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte Servername für [!DNL Terrain Images.cfg]und klicken Sie dann auf **[!UICONTROL Make Local]**. In der [!DNL Temp] Spalte für wird ein Häkchen angezeigt [!DNL Terrain Images.cfg].
+Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte Servername für [!DNL Terrain Images.cfg] und klicken Sie dann auf **[!UICONTROL Make Local]**. In der Spalte [!DNL Temp] für [!DNL Terrain Images.cfg] wird ein Häkchen angezeigt.
 
-Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen in der [!DNL Temp] Spalte und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Die [!DNL Terrain Images.cfg] Datei wird in einem Editor-Fenster angezeigt.
+Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen in der Spalte [!DNL Temp] und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Die Datei [!DNL Terrain Images.cfg] wird in einem Editor-Fenster angezeigt.
 
 Bearbeiten Sie die Parameter &quot;Projektinfo&quot;mithilfe des folgenden Musterdateifragments als Anleitung. Achten Sie darauf, den Projektionstyp wie unten hervorgehoben anzugeben. Beschreibungen der Parameter finden Sie in der Tabelle LatLonProjection Parameters im vorherigen Verfahren.
 
@@ -77,17 +78,17 @@ Projection Info = LatLonProjection:
   Lon1 = double: 180
 ```
 
-## Universelle Transverse-Mercator-Projektionen {#section-606df0ed1c2d4a6bac3ff0fa2cfb3e82}
+## Universelle Transversal-Mercatorprojektionen {#section-606df0ed1c2d4a6bac3ff0fa2cfb3e82}
 
 Die UTM-Projektion (Universal Transverse Mercator) wird durch acht Parameter definiert. Wenn Sie eine universelle Transverse-Mercator-Projektion für eine Terrain-Bildebene festlegen, müssen Ihre Terrain-Bilddateien mit &quot;false&quot;(projiziert) nach Norden gegen den oberen Bildrand und &quot;false east&quot;rechts neben dem Bild ausgerichtet werden.
 
-Um eine UTM-Projektion für eine beliebige Terrain-Bildquelle anzugeben, müssen Sie die [!DNL Terrain Images.cfg] Datei in einem Texteditor wie Notepad öffnen, den Parameter Projektionsinformationen auf &quot;TransverseMercatorProjection&quot;setzen und Einstellungen für die UTM-Projektion hinzufügen.
+Um eine UTM-Projektion für eine beliebige Terrain-Bildquelle anzugeben, müssen Sie die Datei [!DNL Terrain Images.cfg] in einem Texteditor wie Notepad öffnen, den Parameter Projektionsinformationen auf &quot;TransverseMercatorProjection&quot;setzen und Einstellungen für die UTM-Projektion hinzufügen.
 
 **So legen Sie eine universelle Transverse-Mercator-Projektion fest**
 
-1. Klicken Sie im [!DNL Server Files Manager]Fenster auf **[!UICONTROL Components]** , um den Inhalt anzuzeigen. Die [!DNL Terrain Images.cfg] Datei befindet sich in diesem Ordner.
-1. Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte Servername für [!DNL Terrain Images.cfg]und klicken Sie dann auf **[!UICONTROL Make Local]**. Ein Häkchen wird in der [!DNL Temp] Spalte für [!DNL Terrain Images.cfg.]
-1. Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen in der [!DNL Temp] Spalte und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Die [!DNL Terrain Images.cfg] Datei wird in einem Editor-Fenster angezeigt.
+1. Klicken Sie in [!DNL Server Files Manager] auf **[!UICONTROL Components]**, um den Inhalt Ansicht. Die Datei [!DNL Terrain Images.cfg] befindet sich in diesem Verzeichnis.
+1. Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte Servername für [!DNL Terrain Images.cfg] und klicken Sie dann auf **[!UICONTROL Make Local]**. In der Spalte [!DNL Temp] für [!DNL Terrain Images.cfg.] wird ein Häkchen angezeigt.
+1. Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen in der Spalte [!DNL Temp] und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Die Datei [!DNL Terrain Images.cfg] wird in einem Editor-Fenster angezeigt.
 1. Bearbeiten Sie die Parameter &quot;Projektinfo&quot;mithilfe des folgenden Beispieldateifragments und der Parametertabelle als Hilfslinien. Achten Sie darauf, den Projektionstyp wie unten hervorgehoben anzugeben.
 
    ```
@@ -136,4 +137,3 @@ Um eine UTM-Projektion für eine beliebige Terrain-Bildquelle anzugeben, müssen
   </tr> 
  </tbody> 
 </table>
-
