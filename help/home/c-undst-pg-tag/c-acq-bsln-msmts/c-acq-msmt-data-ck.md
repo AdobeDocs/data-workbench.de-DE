@@ -1,26 +1,27 @@
 ---
-description: Als Teil der erfassten Basismessdaten sammelt Sensor die Domänencookies, die von einem Besuchercomputer gesendet werden, wenn eine Anforderung von Ihrem Webserver gesendet wird.
-solution: Analytics
-title: Erfassen von Messungsdaten über Cookies
-topic: Data workbench
+description: Als Teil der erfassten Basismessdaten sammelt Sensor die Domänencookies, die vom Computer eines Besuchers gesendet werden, wenn eine Anforderung von Ihrem Webserver gesendet wird.
+title: Erfassen von Messdaten anhand von Cookies
 uuid: 34cd6baf-6317-4774-8165-58208698b53c
+exl-id: 37c7b5f6-33bf-4373-963a-e08a826e05df
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 2%
 
 ---
 
+# Erfassen von Messdaten anhand von Cookies{#acquiring-measurement-data-through-cookies}
 
-# Erfassen von Messungsdaten über Cookies{#acquiring-measurement-data-through-cookies}
-
-Als Teil der erfassten Basismessdaten sammelt Sensor die Domänencookies, die von einem Besuchercomputer gesendet werden, wenn eine Anforderung von Ihrem Webserver gesendet wird.
+Als Teil der erfassten Basismessdaten sammelt Sensor die Domänencookies, die vom Computer eines Besuchers gesendet werden, wenn eine Anforderung von Ihrem Webserver gesendet wird.
 
 Dazu gehören sowohl beständige als auch Sitzungs-Cookies, die Ihre Website einrichtet, wenn ein Besucher mit Ihrem System interagiert.
 
-In den meisten Fällen setzen Websites beständige Cookies, um Besucher zu identifizieren oder Benutzereingaben zur Verwendung in nachfolgenden Besuchersitzungen zu erfassen. Alle in beständigen Cookies geschriebenen und gespeicherten Informationen können zusammen mit allen anderen Messungsdaten innerhalb des Data Workbench-Servers erfasst und verwendet werden.
+In den meisten Fällen setzen Websites beständige Cookies, um Besucher zu identifizieren oder Benutzereingaben zur Verwendung in nachfolgenden Besuchern zu erfassen. Alle in beständigen Cookies geschriebenen und gespeicherten Informationen können zusammen mit allen anderen Messungsdaten innerhalb des Data Workbench-Servers erfasst und verwendet werden.
 
-Ein Beispiel für ein solches beständiges Cookie könnte eine Kundenkennung in Form eines numerischen Schlüssels beinhalten, der in einem domänenspezifischen Cookie auf dem Computer des Besuchers vorhanden ist. Neben der Identifizierung des Benutzers als wiederkehrender Besucher könnte das beständige Cookie auch dazu verwendet werden, den Besucher als wiederkehrenden Kunden weiter zu identifizieren oder den Besucher mit Informationen in einer Kundendatenbank zu verknüpfen, damit demografische Offline-Daten von Kunden innerhalb einer Datenbank angezeigt [!DNL Site] und für interaktive Analysen verwendet werden können.
+Ein Beispiel für ein solches beständiges Cookie könnte eine Kundenkennung in Form eines numerischen Schlüssels beinhalten, der in einem domänenspezifischen Cookie auf dem Computer des Besuchers vorhanden ist. Neben der Identifizierung des Benutzers als rückkehrender Besucher kann das beständige Cookie auch verwendet werden, um den Besucher als wiederkehrender Kunde weiter zu identifizieren oder den Besucher mit den in einer Kundendatenbank enthaltenen Informationen zu verknüpfen, damit die demografischen Offline-Daten des  innerhalb von [!DNL Site] angezeigt und für die interaktive Analyse verwendet werden können.
 
-Sitzungs-Cookies können ein guter Mechanismus sein, um Benutzereingaben über Formularfelder oder andere dynamische interaktive Elemente auf Ihrer Website zu erfassen. Bei einer Website, die Formulare zur Erfassung benutzerspezifischer Eingabedaten implementiert, bleiben die Informationen nur so lange im Sitzungs-Cookie, wie die Sitzung aktiv ist. Wenn ein Benutzer Ihre Website verlässt oder anschließend eine Sitzung beendet, werden die Informationen nicht mehr auf dem Computer des Benutzers gespeichert. Die eingegebenen Informationen werden jedoch von erfasst [!DNL Sensor] und als Messdaten innerhalb von [!DNL Site]bereitgestellt.
+Sitzungs-Cookies können ein guter Mechanismus sein, um Benutzereingaben über Formularfelder oder andere dynamische interaktive Elemente auf Ihrer Website zu erfassen. Bei einer Website, die Formulare zur Erfassung benutzerspezifischer Eingabedaten implementiert, bleiben die Informationen nur so lange im Sitzungs-Cookie, wie die Sitzung aktiv ist. Wenn ein Benutzer Ihre Website verlässt oder anschließend eine Sitzung beendet, werden die Informationen nicht mehr auf dem Computer des Benutzers gespeichert. Die eingegebenen Informationen werden jedoch von [!DNL Sensor] erfasst und als Messdaten innerhalb von [!DNL Site] bereitgestellt.
 
 Im Folgenden finden Sie ein Beispiel für die Verwendung eines Sitzungs-Cookies zur Erfassung einer einzelnen Formularvariable, die von einem Besucher eingegeben wurde.
 
@@ -56,7 +57,7 @@ testform.submit();
 </html> 
 ```
 
-In diesem Beispiel wird eine Funktion aufgerufen, um ein Sitzungs-Cookie auf dem Computer des Besuchers mit dem Namen des Felds und dem in das Formularfeld eingegebenen Wert festzulegen. Während das Formular gesendet und die nachfolgende Webseite angefordert wird, wird der Sitzungs-Cookie-Satz an den Webserver übergeben und von [!DNL Sensor]diesem erfasst. Die folgenden Daten stehen daher im Data Workbench-Server zur Verwendung in der Datenanalyse zur Verfügung:
+In diesem Beispiel wird eine Funktion aufgerufen, um ein Sitzungs-Cookie auf dem Computer des Besuchers mit dem Feldnamen und dem im Formularfeld eingegebenen Wert festzulegen. Wenn das Formular gesendet und die nachfolgende Webseite angefordert wird, wird der Sitzungs-Cookie-Satz an den Webserver übergeben und von [!DNL Sensor] erfasst. Die folgenden Daten stehen daher im Data Workbench-Server zur Verwendung bei der Analyse von Daten zur Verfügung:
 
 | Erfasste Daten | Erklärung | Beispiel |
 |---|---|---|
