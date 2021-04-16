@@ -2,16 +2,15 @@
 description: Diese Datei funktioniert nicht nur als Arbeitsblatt, sondern auch als Aufzeichnung Ihrer Experimententscheidungen.
 solution: Analytics,Analytics
 title: Tabelle für den Experimentaufbau
-topic: Data workbench
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
+exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
 
 ---
-
 
 # Tabelle für den Experimentaufbau{#experiment-design-spreadsheet}
 
@@ -23,7 +22,7 @@ Die Tabelle zum Testentwurf kann nur dann nützliche statistische Schlussfolgeru
 
 **So entwerfen Sie Ihr Experiment mit der Experimententwurfdatei**
 
-1. Wenn Sie über Administratorzugriff auf Ihre Web- oder Anwendungsserver verfügen, navigieren Sie zum [!DNL Sensor] Installationsordner auf einem beliebigen [!DNL Sensor] Computer im Webcluster. Wenn Sie keinen Administratorzugriff haben, wenden Sie sich an Ihren Kundenbetreuer, um die Adobe anzufordern.
+1. Wenn Sie über Administratorzugriff auf Ihre Web- oder Anwendungsserver verfügen, navigieren Sie auf einem beliebigen [!DNL Sensor]-Computer im Webcluster zum Installationsordner [!DNL Sensor]. Wenn Sie keinen Administratorzugriff haben, wenden Sie sich an Ihren Kundenbetreuer, um die Adobe anzufordern.
 1. Öffnen Sie die Datei &quot;VS Controlled Experiment Design.xls&quot;. (Sie können diese Datei bei Bedarf umbenennen.)
 
    Die Tabelle auf der folgenden Seite zeigt Ihnen, wie Sie die Tabelle bei der Vorbereitung zum Testen der in diesem Handbuch verwendeten Hypothese ausfüllen würden.
@@ -156,7 +155,7 @@ Sie müssen sich den Wert im Feld Erforderliche Besucher (Test+Kontrollgruppen) 
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-und mit dem Wert im Feld &quot;Gesamt&quot;in der [!DNL Visitors] Spalte vergleichen.
+und mit dem Wert im Feld &quot;Gesamt&quot;in der Spalte [!DNL Visitors] vergleichen.
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 
