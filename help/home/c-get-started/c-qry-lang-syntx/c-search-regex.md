@@ -1,20 +1,21 @@
 ---
-description: Data Workbench verwendet reguläre Ausdrücke (regex) für Such- und Sortiervorgänge.
-solution: Analytics
+description: Data Workbench verwendet reguläre Ausdruck (regex) für Such- und Sortiervorgänge.
 title: Reguläre Ausdrücke
-topic: Data workbench
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
+exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 3%
 
 ---
 
+# Reguläre Ausdrücke{#regular-expressions}
 
-# Regular expressions{#regular-expressions}
+Data Workbench verwendet reguläre Ausdruck (regex) für Such- und Sortiervorgänge.
 
-Data Workbench verwendet reguläre Ausdrücke (regex) für Such- und Sortiervorgänge.
-
-Innerhalb des **[!UICONTROL Search]** Felds können Sie eine Suche nach der Anweisung &quot;re:&quot;durchführen, indem Sie z. B. allgemeine Ausdrücke verwenden:
+Im Feld **[!UICONTROL Search]** können Sie eine Suche nach der Anweisung &quot;re:&quot;durchführen, indem Sie z. B. gängige Ausdruck verwenden:
 
 ```
 <b>re: *.s</b>
@@ -29,20 +30,20 @@ Innerhalb des **[!UICONTROL Search]** Felds können Sie eine Suche nach der Anwe
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>. (Punkt) </p> </td> 
-   <td colname="col2"> <p>Entspricht einem einzelnen Zeichen, z. B.: " <span class="filepath"> re:x.z" </span> entspricht "xyz"oder "xxz". </p> </td> 
+   <td colname="col1"> <p>  (Punkt) </p> </td> 
+   <td colname="col2"> <p>Entspricht einem einzelnen Zeichen, z. B.: <span class="filepath"> re:x.z </span> entspricht "xyz"oder "xxz". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>* (Stern) </p> </td> 
-   <td colname="col2"> <p>Entspricht einem oder mehreren Zeichen, z. B.: <span class="filepath"> re:Z* </span> findet "ZZZ". </p> </td> 
+   <td colname="col2"> <p>Entspricht einem oder mehreren Zeichen, z. B.: <span class="filepath"> re:Z* </span> stimmt mit "ZZZ"überein. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>? (Platzhalter) </p> </td> 
-   <td colname="col2"> <p>Sucht nach 0 oder 1 des vorherigen Ausdrucks, um eine minimale Übereinstimmung zu erzwingen, z. B.: <span class="filepath"> xy?z </span> findet "xy"und "xyz". </p> </td> 
+   <td colname="col2"> <p>Sucht nach 0 oder 1 des vorherigen Ausdrucks, um eine minimale Übereinstimmung zu erzwingen. Beispiel: <span class="filepath"> xy?z </span> stimmt mit "xy"und "xyz"überein. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Zusätzliche reguläre Ausdrücke können auch verwendet werden, um komplexere Suchzeichenfolgen zu erstellen. Reguläre Ausdrücke werden in allen Data Workbench-Suchfeldern einschließlich der Abfrageentitätsbedienfelder verwendet.
+Zusätzliche reguläre Ausdruck können auch verwendet werden, um komplexere Suchzeichenfolgen zu erstellen. Reguläre Ausdruck werden in allen Suchfeldern der Data Workbench verwendet, einschließlich der Bereiche für die Abfrage.
 
-Detaillierte Informationen finden Sie unter [Reguläre Ausdrücke](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
+Detaillierte Informationen finden Sie unter [Reguläre Ausdruck](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
