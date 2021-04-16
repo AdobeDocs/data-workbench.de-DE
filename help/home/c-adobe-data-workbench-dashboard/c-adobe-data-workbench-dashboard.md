@@ -1,17 +1,18 @@
 ---
-description: 'null'
-solution: Analytics
-title: Benutzerhandbuch zum Data Workbench-Dashboard
-topic: Data workbench
+description: Data Workbench Dashboard-Benutzerhandbuch
+title: Data Workbench Dashboard-Benutzerhandbuch
 uuid: 1d577535-feb4-4fae-aadd-2ad233e565f7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
 
 
-# Benutzerhandbuch zum Data Workbench-Dashboard{#data-workbench-dashboard-user-guide}
+# Data Workbench Dashboard Benutzerhandbuch{#data-workbench-dashboard-user-guide}
 
-Das Adobe Data Workbench-Dashboard ist eine interaktive Analyseanwendung, die webbasierte Analyse- und Thin-Client-Funktionen in Data Workbench bereitstellt. Damit können Sie Daten aus Data Workbench einfach visualisieren und Geschäftstrends über eine browserbasierte Oberfläche analysieren, die auf Ihre spezifischen Anforderungen zugeschnitten ist.
+Das Adobe Data Workbench Dashboard ist eine interaktive Analyseanwendung, die webbasierte Analysefunktionen und Thin-Client-Funktionen zur Data Workbench bietet. Damit können Sie einfach Daten zur Data Workbench visualisieren und Geschäftstrends über eine browserbasierte Oberfläche analysieren, die auf Ihre spezifischen Anforderungen zugeschnitten ist.
 
-Mithilfe des Data Workbench-Dashboards können Fachkräfte auf webbasierte Ansichten von Analyseinformationen zugreifen, die leicht verständlich und dynamisch über kritische Datenfeeds segmentiert sind. Diese Dashboards sind optimiert, um Business Intelligence- und Analysedaten zu konsolidieren, die über Adobe Data Workbench erfasst und in einen bestimmten Kontext gestellt wurden.
+Mithilfe des Data Workbench-Dashboards können Fachkräfte auf webbasierte Ansichten analytischer Informationen zugreifen, die leicht verständlich und dynamisch über kritische Datenfeeds hinweg segmentiert sind. Diese Dashboard wurden optimiert, um Business Intelligence- und Analysedaten zu konsolidieren, die durch die Data Workbench der Adobe erfasst und kontextbezogen wurden.
