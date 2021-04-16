@@ -1,14 +1,15 @@
 ---
 description: Sie können das Menü "Arbeitsbereich exportieren"verwenden, um Arbeitsflächen in PNG-Dateien oder in Excel zu exportieren.
-solution: Analytics
 title: Freigeben eines Arbeitsbereichs
-topic: Data workbench
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
+exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 4%
 
 ---
-
 
 # Freigeben eines Arbeitsbereichs{#share-a-workspace}
 
@@ -49,11 +50,11 @@ Klicken Sie in einem Arbeitsbereich auf **[!UICONTROL Export]**.
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> Wenn Microsoft Excel auf dem Data Workbench-Computer installiert ist, wird Microsoft Excel automatisch gestartet und exportiert die Daten aus bestimmten Visualisierungen, bestimmten Legenden und Textanmerkungen in eine neue Excel-Datei (.xls oder .xlsx). Siehe <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Exportieren von Workspace-Daten in Microsoft Excel</a>. </td> 
+   <td colname="col2"> Wenn Microsoft Excel auf dem Data Workbench-Computer installiert ist, wird Microsoft Excel automatisch Beginn und die Daten aus bestimmten Visualisierungen, bestimmten Legenden und Textkommentaren in eine neue Excel-Datei (.xls oder .xlsx) exportiert. Siehe <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Exportieren von Workspace-Daten in Microsoft Excel</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Exportieren (Excel) aus Vorlage </td> 
-   <td colname="col2"> Wenn Microsoft Excel auf dem Data Workbench-Computer installiert ist, wird Microsoft Excel automatisch gestartet und exportiert die Daten aus bestimmten Visualisierungen, bestimmten Legenden und Textanmerkungen in die ausgewählte Excel-Vorlagendatei (<span class="filepath"> .xls</span> oder <span class="filepath"> .xlsx</span>). Siehe <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exportieren in eine Excel-Vorlagendatei</a>. </td> 
+   <td colname="col2"> Wenn Microsoft Excel auf dem Data Workbench-Computer installiert ist, wird Microsoft Excel automatisch Beginn und die Daten aus bestimmten Visualisierungen, bestimmten Legenden und Textkommentaren werden in die Excel-Vorlagendatei (<span class="filepath"> .xls</span> oder <span class="filepath"> .xlsx</span>) exportiert, die Sie auswählen. Siehe <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exportieren in eine Excel-Vorlagendatei</a>. </td> 
   </tr> 
  </tbody> 
 </table>
