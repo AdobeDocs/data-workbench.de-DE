@@ -1,16 +1,17 @@
 ---
 description: Zu den Informationen über den Datensatz gehören Dateien und die Auswirkungen ihrer Parameter auf die Protokollverarbeitungs- und Transformationsphasen des Datensatzerstellungsprozesses.
-solution: Analytics
-title: Datenbestand einschließlich Dateien
-topic: Data workbench
+title: Datensatzaufnahme-Dateien
 uuid: 0f729537-e001-4536-bb40-bb4d043dd109
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 12%
 
 ---
 
 
-# Datenbestand einschließlich Dateien{#dataset-include-files}
+# Datensatzaufnahme-Dateien{#dataset-include-files}
 
 Zu den Informationen über den Datensatz gehören Dateien und die Auswirkungen ihrer Parameter auf die Protokollverarbeitungs- und Transformationsphasen des Datensatzerstellungsprozesses.
 
