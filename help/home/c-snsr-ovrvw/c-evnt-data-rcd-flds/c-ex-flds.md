@@ -1,41 +1,40 @@
 ---
 description: Sensor kann bei Verwendung auf einem Server Ereignis-Datenfelder aus jeder gültigen HTTP-Anforderung oder Antwort-Kopfzeile oder -Variable erfassen, die über die Server-API verfügbar sind.
-solution: Analytics
 title: Erweiterbare Felder
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
+exl-id: e783d073-cf06-4415-80e1-567b55fdee12
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 1%
 
 ---
 
-
 # Erweiterbare Felder{#extensible-fields}
 
 Sensor kann bei Verwendung auf einem Server Ereignis-Datenfelder aus jeder gültigen HTTP-Anforderung oder Antwort-Kopfzeile oder -Variable erfassen, die über die Server-API verfügbar sind.
 
-Um solche Datenfelder zu erfassen, müssen Sie die gewünschten Kopfzeilenfelder oder Variablen in der [!DNL txlogd.conf] Konfigurationsdatei für [!DNL Sensor]angeben.
+Um solche Datenfelder zu erfassen, müssen Sie die gewünschten Kopfzeilenfelder oder Variablen in der Konfigurationsdatei [!DNL txlogd.conf] für [!DNL Sensor] angeben.
 
 * [Anforderungsheader](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f)
 * [Servervariablen](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-74b258bc3e8a4a93a0ee9fb01c067e4b)
 
 ## Anforderungsheader {#section-22766692b45546d8bfc93dbe3bc9368f}
 
-Im Folgenden finden Sie die Syntax zum Festlegen eines Anforderungs-Header-Felds, das erfasst werden soll (z. B. Host, Accept-Encoding, Keep-Alive usw.) in [!DNL txlogd.conf]:
+Die folgende Syntax dient zum Angeben eines Anforderungs-Header-Felds, das erfasst werden soll (z. B. Host, Accept-Encoding, Keep-Alive usw.), in [!DNL txlogd.conf]:
 
 ```
 LogHeader RequestHeaderName
 ```
 
-Die erfassten Daten werden von einem Feld [!DNL Sensor] mit dem Namen &quot;cs(RequestHeaderName)&quot;in den [!DNL .vsl] Dateien aufgezeichnet, die vom [!DNL data workbench server]. Wenn Sie beispielsweise den jeweiligen Anforderungsheader-Wert aus dem Anforderungsheader &quot;Host&quot;erfassen möchten, geben Sie &quot;LogHeader-Host&quot;in [!DNL txlogd.conf]ein. Die Daten werden in das Feld &quot;cs(Host)&quot;im Ereignis-Datensatz aufgezeichnet.
+Die erfassten Daten werden von [!DNL Sensor] in ein Feld namens &quot;cs(RequestHeaderName)&quot;in den [!DNL .vsl]-Dateien aufgezeichnet, die von [!DNL data workbench server] erstellt wurden. Um beispielsweise den spezifischen Anforderungs-Header-Wert aus dem Anforderungsheader &quot;Host&quot;zu erfassen, geben Sie &quot;LogHeader Host&quot;in [!DNL txlogd.conf] ein. Die Daten werden in das Feld &quot;cs(Host)&quot;im Ereignis-Datensatz aufgezeichnet.
 
 ## Servervariablen {#section-74b258bc3e8a4a93a0ee9fb01c067e4b}
 
-[!DNL Sensor] kann Datenfelder aus Antwortheadern oder API-zugänglichen Servervariablen mithilfe von SpecialLogField-Einträgen erfassen, die Sie in die [!DNL txlogd.conf] Datei einschließen. Sie können auch &quot;SpecialLogField&quot;-Einträge zusätzlich zu oder anstelle von &quot;LogHeader&quot;-Einträgen verwenden, um Anforderungsheader zu erfassen. Siehe [Anforderungsheader](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f). Die Option für Anforderungsheader bleibt für Abwärtskompatibilität verfügbar.
+[!DNL Sensor] kann Datenfelder aus Antwortheadern oder API-zugänglichen Servervariablen mithilfe von SpecialLogField-Einträgen erfassen, die Sie in die  [!DNL txlogd.conf] Datei einschließen. Sie können auch &quot;SpecialLogField&quot;-Einträge zusätzlich zu oder anstelle von &quot;LogHeader&quot;-Einträgen verwenden, um Anforderungsheader zu erfassen. Siehe [Anforderungsheader](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f). Die Option für Anforderungsheader bleibt für Abwärtskompatibilität verfügbar.
 
-Die folgende Syntax dient zum Festlegen eines &quot;SpecialLogField&quot;in [!DNL txlogd.conf]:
+Die folgende Syntax dient zum Festlegen eines &quot;SpecialLogField&quot; in [!DNL txlogd.conf]:
 
 ```
 SpecialLogField cs(log field) = serverVariable stage
@@ -53,11 +52,11 @@ Die folgende Tabelle enthält Beschreibungen der Komponenten eines Eintrags &quo
  <tbody> 
   <tr> 
    <td colname="col1"> cs(Protokollfeld) </td> 
-   <td colname="col2"> Der Name des Felds, in das die erfassten Daten im Ereignis-Datensatz aufgezeichnet werden, sowie die <span class="filepath"> .vsl- </span> Dateien, die vom <span class="keyword"> Data Workbench-Server erstellt werden </span>. </td> 
+   <td colname="col2"> Der Name des Felds, in das die erfassten Daten im Ereignis-Datensatz aufgezeichnet werden, und die <span class="filepath"> .vsl </span>-Dateien, die vom <span class="keyword">-Data Workbench-Server </span> erstellt werden. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> serverVariable </td> 
-   <td colname="col2"> <p>Jede Servervariable, die über die Server-API für <span class="wintitle"> Sensor verfügbar </span> ist </p> <p>Beispiel: response.p3p </p> </td> 
+   <td colname="col2"> <p>Jede Servervariable, die für Sensor <span class="wintitle"> </span> über die API des Servers verfügbar ist </p> <p>Beispiel: response.p3p </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> stage </td> 
@@ -66,4 +65,4 @@ Die folgende Tabelle enthält Beschreibungen der Komponenten eines Eintrags &quo
  </tbody> 
 </table>
 
-Wenden Sie sich an Adobe Consulting Services, [!DNL Sensor] um die Erfassung erweiterbarer Ereignis-Datensatzfelder zu unterstützen.
+Wenden Sie sich zwecks Hilfe bei der Konfiguration von [!DNL Sensor] zur Erfassung erweiterbarer Ereignis-Datenerfassungsfelder an Adobe Consulting Services.
