@@ -1,15 +1,16 @@
 ---
-description: Identifizieren Sie neue Funktionen, Aktualisierungsanweisungen und Fehlerkorrekturen für veröffentlichte Versionen von Data Workbench.
-solution: Analytics
-title: Versionshinweise zu Data Workbench
-topic: Data workbench
+description: Identifizieren Sie neue Funktionen, Aktualisierungsanweisungen und Fehlerkorrekturen für veröffentlichte Versionen der Data Workbench.
+title: 'Versionshinweise zu Data Workbench '
 uuid: 6b3fd8c9-ad25-4205-a1a9-593a1e7cae28
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '36'
+ht-degree: 22%
 
 ---
 
 
-# Data Workbench Release Notes{#data-workbench-release-notes}
+# Versionshinweise zu Data Workbench {#data-workbench-release-notes}
 
-Identifizieren Sie neue Funktionen, Aktualisierungsanweisungen und Fehlerkorrekturen für veröffentlichte Versionen von Data Workbench.
+Identifizieren Sie neue Funktionen, Aktualisierungsanweisungen und Fehlerkorrekturen für veröffentlichte Versionen der Data Workbench.
