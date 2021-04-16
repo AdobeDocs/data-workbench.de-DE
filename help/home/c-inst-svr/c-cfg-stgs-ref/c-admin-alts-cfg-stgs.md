@@ -1,16 +1,15 @@
 ---
 description: Anweisungen zum Konfigurieren von Administratorwarnungen für Insight Server, Repeater oder Transform.
-solution: Analytics
 title: Konfigurationseinstellungen für Administrator-Warnhinweise
 uuid: c2be2d1e-d81d-4d9f-ac94-4b642dad90b9
+exl-id: c75e442e-33e6-4fc8-8368-29482f09e1cc
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 4%
 
 ---
-
 
 # Konfigurationseinstellungen für Administrator-Warnhinweise{#administrative-alerts-configuration-settings}
 
@@ -34,11 +33,11 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
   <tr> 
    <td colname="col1"> Fehler-Kategorien </td> 
-   <td colname="col2"> Ermöglicht die Kategorisierung von Fehlern in Verbindung mit der Datei zur Fehlerkategorisierung. Jede Error-Kategorie kann über einen eigenen Satz von Empfängern und eine eigene Throttle-Verzögerung verfügen. Sie können beispielsweise eine kritische Kategorie mit einer Drosselverzögerung von 0 erstellen, sodass jede Fehlermeldung sofort an die in der Liste "Empfänger"angegebenen Empfänger gesendet wird. Fehler, die nicht mit einer Unterzeichenfolge in der Fehlerkategorisierungsdatei übereinstimmen, werden der Kategorie "Standard"zugewiesen. Um eine neue Kategorie hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Nummer und klicken Sie auf <span class="uicontrol"> Hinzufügen Neu </span> &gt; <span class="uicontrol"> Kategorie </span>. Sie können sie auch mit der Aktion mit der rechten Maustaste kopieren oder entfernen. </td> 
+   <td colname="col2"> Ermöglicht die Kategorisierung von Fehlern in Verbindung mit der Datei zur Fehlerkategorisierung. Jede Error-Kategorie kann über einen eigenen Satz von Empfängern und eine eigene Throttle-Verzögerung verfügen. Sie können beispielsweise eine kritische Kategorie mit einer Drosselverzögerung von 0 erstellen, sodass jede Fehlermeldung sofort an die in der Liste "Empfänger"angegebenen Empfänger gesendet wird. Fehler, die nicht mit einer Unterzeichenfolge in der Fehlerkategorisierungsdatei übereinstimmen, werden der Kategorie "Standard"zugewiesen. Um eine neue Kategorie hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Zahl und klicken Sie auf <span class="uicontrol"> Hinzufügen Neu </span> &gt; <span class="uicontrol"> Fehlermeldung Kategorie </span>. Sie können sie auch mit der Aktion mit der rechten Maustaste kopieren oder entfernen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Fehlerkategorisierungsdatei </td> 
-   <td colname="col2"> <p>Der Name der Datei, die Sie zur Kategorisierung der einzelnen Warnungen verwenden möchten. Sie erstellen diese Datei mit Notepad. Diese Datei sollte in jeder Zeile drei Spalten enthalten, die durch Registerkarten voneinander getrennt sind. Die erste Spalte ist eine Zeichenfolge, die bei Fehlern übereinstimmt. Ein ^-Zeichen entspricht dem Anfang und ein $ entspricht dem Ende der Zeichenfolge; alle anderen Zeichen wörtlich übereinstimmen. Die zweite Spalte enthält eine Kategorie für übereinstimmende Fehler, die sich in den Kategorien "Fehler"befinden. Die dritte ist eine alternative Meldung, die der eigentlichen Fehlermeldung in gesendeten E-Mails vorangestellt wird. Wenn keine Datei angegeben ist, werden alle Fehler als Standard kategorisiert. </p> <p>Ein Beispiel für diese Datei finden Sie in der Datei <span class="filepath"> Error Kategorien.txt </span> im Suchverzeichnis. </p> </td> 
+   <td colname="col2"> <p>Der Name der Datei, die Sie zur Kategorisierung der einzelnen Warnungen verwenden möchten. Sie erstellen diese Datei mit Notepad. Diese Datei sollte drei Spalten in jeder Zeile enthalten, die durch Registerkarten voneinander getrennt sind. Die erste Spalte ist eine Zeichenfolge, die bei Fehlern übereinstimmt. Ein ^-Zeichen entspricht dem Anfang und ein $ entspricht dem Ende der Zeichenfolge; alle anderen Zeichen wörtlich übereinstimmen. Die zweite Spalte enthält eine Kategorie für übereinstimmende Fehler, die sich in den Kategorien "Fehler"befinden. Die dritte ist eine alternative Meldung, die der eigentlichen Fehlermeldung in gesendeten E-Mails vorangestellt wird. Wenn keine Datei angegeben ist, werden alle Fehler als Standard kategorisiert. </p> <p>Ein Beispiel für diese Datei finden Sie im Ordner "Suchen"in der Datei <span class="filepath"> Error Kategorien.txt </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Von </td> 
@@ -50,7 +49,7 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
   <tr> 
    <td colname="col1"> Sensor Alert Timeout (min) </td> 
-   <td colname="col2"> <p>Der Server generiert eine E-Mail-Warnung, wenn er innerhalb dieses Zeitfensters keine Daten von einem konfigurierten und zuvor angeschlossenen <span class="wintitle"> Sensor </span> erhalten hat. Der Standardwert lautet 15. </p> <p> <p>Hinweis:  <span class="wintitle"> Zeitlimit für Sensorwarnung </span> funktioniert nur, wenn eine bestehende Verbindung zu einem <span class="wintitle"> Sensor </span> abgebrochen wird. Wenn der Dienst des Servers beendet und neu gestartet wird und die <span class="wintitle"> Sensoren </span> keine Verbindung herstellen, generiert der Server keine E-Mail-Warnungen. </p> </p> </td> 
+   <td colname="col2"> <p>Der Server generiert eine E-Mail-Warnung, wenn innerhalb dieses Zeitfensters keine Daten von einem konfigurierten und zuvor verbundenen Sensor <span class="wintitle"> empfangen wurden. </span> Der Standardwert lautet 15. </p> <p> <p>Hinweis:  <span class="wintitle"> Sensor </span> Warnungszeitlimit funktioniert nur, wenn eine bestehende Verbindung zu einem <span class="wintitle"> Sensor </span> abgebrochen wird. Wenn der Dienst des Servers beendet und neu gestartet wird und die Sensoren <span class="wintitle"> keine Verbindung herstellen, generiert der Server keine E-Mail-Warnungen.</span> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Server-Adresse </td> 
@@ -70,4 +69,3 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
  </tbody> 
 </table>
-
