@@ -1,20 +1,21 @@
 ---
 description: Eine einfache Dimension hat eine Eins-zu-viele-Beziehung zu ihrer übergeordneten zählbaren Dimension.
-solution: Analytics
 title: Einfache Dimensionen
-topic: Data workbench
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
+exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 1%
 
 ---
-
 
 # Einfache Dimensionen{#simple-dimensions}
 
 Eine einfache Dimension hat eine Eins-zu-viele-Beziehung zu ihrer übergeordneten zählbaren Dimension.
 
-Eine einfache Dimension ist immer ein untergeordnetes Element einer zählbaren Dimension. Sie können sich eine einfache Dimension als Darstellung einer Eigenschaft der Elemente in ihrer übergeordneten Dimension vorstellen. Wenn Sie z. B. mit Webdaten arbeiten, können Sie die Dimension &quot;Referrer&quot;des Besuchers definieren, bei der es sich um eine einfache Dimension mit einer übergeordneten Dimension des Besuchers handelt. Es stellt den ersten HTTP-Referrer für jeden Besucher in der Besucherdimension dar. Jeder Besucher in der Besucherdimension hat nur einen Referrer, aber viele Besucher können denselben Referrer haben. Die Dimension &quot;Referrer&quot;des Besuchers hat daher eine Eins-zu-viele-Beziehung zur Dimension &quot;Besucher&quot;.
+Eine einfache Dimension ist immer ein untergeordnetes Element einer zählbaren Dimension. Sie können sich eine einfache Dimension als Darstellung einer Eigenschaft der Elemente in ihrer übergeordneten Dimension vorstellen. Wenn Sie beispielsweise mit Webdaten arbeiten, können Sie die Dimension &quot;Besucher-Werber&quot;definieren, bei der es sich um eine einfache Dimension mit einer übergeordneten Dimension des Besuchers handelt. Es stellt den ersten HTTP-Werber für jeden Besucher in der Dimension &quot;Besucher&quot;dar. Jeder Besucher in der Dimension &quot;Besucher&quot;hat nur einen Besucher-Werber, aber viele Besucher können denselben Besucher-Werber haben. Die Dimension &quot;Besucher-Werber&quot;hat daher eine Eins-zu-viele-Beziehung zur Dimension &quot;Besucher&quot;.
 
 Einfache Dimensionen werden durch die folgenden Parameter definiert:
 
@@ -23,7 +24,7 @@ Einfache Dimensionen werden durch die folgenden Parameter definiert:
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -80,11 +81,11 @@ Einfache Dimensionen werden durch die folgenden Parameter definiert:
  </tbody> 
 </table>
 
-In diesem Beispiel wird die Definition einer einfachen Dimension anhand von Ereignisdaten veranschaulicht, die aus dem Website-Traffic und einer Ladedatei erfasst wurden.
+In diesem Beispiel wird die Definition einer einfachen Dimension anhand von Ereignis-Daten veranschaulicht, die aus dem Website-Traffic und einer Ladedatei erfasst wurden.
 
-Betrachten Sie das Beispiel einer Umfrage zu den Lieblings-Girl-Scout-Cookies der Site-Besucher. Eine Webseite erfasst diese Abstimmung und gibt sie an den Webserver im Namen-Wert-Paar favoritecookie zurück. Es wird nur eine Stimme pro Besucher gezählt, aber Besucher können ihre Meinung ändern und bei Bedarf erneut abstimmen. Dies ist eine Eins-zu-viele-Beziehung: Ein Besucher kann viele Stimmen haben, aber jede Stimme ist nur mit einem Besucher verbunden. Daher ist das übergeordnete Element der Dimension Besucher (nur eine Stimme pro Besucher) und der Vorgang ist LAST ROW (sodass sie ihre Meinung ändern und erneut abstimmen können).
+Betrachten Sie das Beispiel einer Umfrage der Lieblingskekse von Girl-Scout-Besuchern. Eine Webseite erfasst diese Abstimmung und gibt sie an den Webserver im Namen-Wert-Paar favoritecookie zurück. Es wird nur eine Stimme pro Besucher gezählt, aber die Besucher können ihre Meinung ändern und bei Bedarf erneut abstimmen. Dies ist eine Eins-zu-viele-Beziehung: ein Besucher kann viele Stimmen haben, aber jede Stimme ist mit nur einem Besucher verbunden. Daher ist die Dimension übergeordnet Besucher (nur eine Stimme pro Besucher) und der Vorgang ist LAST ROW (sodass sie ihre Meinung ändern und erneut abstimmen können).
 
-Platzhalter müssen für alle Cookie-Typen vorhanden sein, damit Cookie-Typen, die keine Stimmen erhalten, in der Data Workbench-Anzeige angezeigt werden. Aus diesen Gründen wurde eine Load-Datei definiert, die die Liste der möglicherweise ausgewählten Cookie-Typen enthält. Der Inhalt dieser Datei, der in einer Datei mit dem Namen [!DNL cookietypes.txt]gespeichert ist, sieht wie folgt aus:
+Platzhalter müssen für alle Cookie-Typen vorhanden sein, damit Cookie-Typen, die keine Stimmen erhalten, in der Data Workbench-Anzeige angezeigt werden. Aus diesen Gründen wurde eine Datei zum Laden definiert, die die Liste der ggf. ausgewählten Cookie-Typen enthält. Der in einer Datei mit dem Namen [!DNL cookietypes.txt] gespeicherte Inhalt dieser Datei sieht wie folgt aus:
 
 Tierschätze
 
@@ -101,4 +102,3 @@ Dünne Minzen
 Die endgültige Dimension wird wie folgt definiert:
 
 ![](assets/cfg_Transformation_Dim_Simple.png)
-
