@@ -1,31 +1,32 @@
 ---
 description: Sie können mehrere Arbeitsbereiche für einen einzelnen Berichtsatz direkt in der Arbeitsfläche erstellen.
-solution: Analytics
-title: Report Server-Arbeitsbereiche erstellen
-topic: Data workbench
+title: Erstellen der Report Server-Arbeitsbereiche
 uuid: 818569c7-fff9-4277-996b-8c47e4ef1dbc
+exl-id: 2bc068f1-c32f-4c14-b3fa-6b46e950abc7
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 10%
 
 ---
 
-
-# Report Server-Arbeitsbereiche erstellen{#create-the-report-server-workspaces}
+# Erstellen der Report Server-Arbeitsbereiche{#create-the-report-server-workspaces}
 
 Sie können mehrere Arbeitsbereiche für einen einzelnen Berichtsatz direkt in der Arbeitsfläche erstellen.
 
-Informationen zur Data Workbench und zur Verwendung der Oberfläche finden Sie im [Data Workbench Client Guide](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html).
+Informationen zur Data Workbench und zur Verwendung der Oberfläche finden Sie im [Data Workbench Client Guide](https://docs.adobe.com/content/help/de-DE/data-workbench/using/client/t-open-ins.html).
 
 **So erstellen Sie eine Berichtsarbeitsfläche mit der[!DNL Worktop]**
 
-1. Wählen Sie in Data Workbench auf der [!DNL Reports] Registerkarte den Berichtsatzordner (Register- oder Dropdown-Unterordner) aus, dem Sie die neuen Berichte hinzufügen möchten.
-1. Fügen Sie eine Berichtsarbeitsfläche mit einer der folgenden Methoden hinzu:
+1. Wählen Sie in Data Workbench auf der Registerkarte [!DNL Reports] den Berichtssatzordner (Register- oder Dropdown-Unterordner) aus, dem Sie die neuen Berichte hinzufügen möchten.
+1. hinzufügen einer Berichtsarbeitsfläche mit einer der folgenden Methoden:
 
-   * Klicken Sie mit der rechten Maustaste in das gewünschte Unterverzeichnis des Berichtssatzes und klicken Sie auf **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]** oder **[!UICONTROL New]** > **[!UICONTROL Report Template]**.
+   * Klicken Sie mit der rechten Maustaste in den gewünschten Unterordner des Berichtssatzes und klicken Sie auf **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]** oder **[!UICONTROL New]** > **[!UICONTROL Report Template]**.
 
       -oder-
 
-   * Kopieren Sie eine Arbeitsfläche von einem anderen Speicherort und fügen Sie sie in den entsprechenden Berichtsatzordner auf der [!DNL Reports] Registerkarte ein.
+   * Kopieren Sie eine Arbeitsfläche von einem anderen Speicherort und fügen Sie sie in den entsprechenden Berichtsatzordner auf der Registerkarte [!DNL Reports] ein.
 
 1. Klicken Sie auf die Miniaturansicht, um den Arbeitsbereich zu öffnen und dem Bericht die gewünschten Visualisierungen, Legenden und Anmerkungen hinzuzufügen.
 1. Klicken Sie zum Benennen des Berichts auf den Text in der Titelleiste des Berichts, um in den Bearbeitungsmodus zu wechseln, und geben Sie den neuen Titel ein.
