@@ -1,20 +1,21 @@
 ---
 description: Formatierungsinformationen zur Elementpunktebenendatei.
-solution: Analytics
-title: Dateiformat des Elementpunktes
-topic: Data workbench
+title: Format der Elementpunkt-Schichtdatei
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
+exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 5%
 
 ---
 
-
-# Dateiformat des Elementpunktes{#element-point-layer-file-format}
+# Format der Elementpunkt-Schichtdatei{#element-point-layer-file-format}
 
 Formatierungsinformationen zur Elementpunktebenendatei.
 
-Jede Elementpunktebenendatei, [!DNL .layer] die auf eine Lookup-Datei verweist, muss mithilfe der folgenden Vorlage formatiert werden:
+Jede Elementpunktebene [!DNL .layer], die auf eine Lookup-Datei verweist, muss mit der folgenden Vorlage formatiert werden:
 
 ```
 Layer = ElementPointLayer:
@@ -57,22 +58,22 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Schlüsselspalte </td> 
-   <td colname="col2"> <p>Der Name der Spalte in der Lookup-Datei, die die allgemeinen Schlüsseldaten enthält, wodurch der Data Workbench-Server die Daten in die Lookup-Datei in den Datensatz integrieren kann. Dies muss die erste Spalte in der Lookup-Datei sein. </p> <p>Jede Zeile in dieser Spalte ist ein Element einer Dimension. Diese Dimension muss in der Datei " <span class="filepath"> Transformation.cfg</span> "oder in einem Transformationsdataset definiert und im Parameter "Dimension"dieser Datei angegeben werden. Weitere Informationen zu Transformationskonfigurationsdateien finden Sie im Handbuch zur Konfiguration von <i>DataSet</i>. </p> </td> 
+   <td colname="col2"> <p>Der Name der Spalte in der Lookup-Datei, die die allgemeinen Schlüsseldaten enthält, wodurch der Data Workbench-Server die Daten in die Lookup-Datei in den Datensatz integrieren kann. Dies muss die erste Spalte in der Lookup-Datei sein. </p> <p>Jede Zeile in dieser Spalte ist ein Element einer Dimension. Diese Dimension muss in der Datei <span class="filepath"> Transformation.cfg</span> oder in einem Transformationsdataset definiert und im Dateiparameter "Dimension"angegeben werden. Weitere Informationen zu Transformationskonfigurationsdateien finden Sie im Handbuch <i>Dataset Configuration Guide</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">Der Name der Dimension (in einer Konvertierungskonfigurationsdatei definiert), die Elemente enthält, die den Datenzeilen in der Spalte " <span class="wintitle"> Schlüssel</span> "entsprechen. </td> 
+   <td colname="col2">Der Name der Dimension (in einer Konvertierungskonfigurationsdatei definiert), die Elemente enthält, die den Datenzeilen in der Spalte <span class="wintitle"> Schlüssel</span> entsprechen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Metrik </td> 
-   <td colname="col2"> Der Name der Metrik, die über die im Parameter Dimension angegebene Dimension ausgewertet wird. </td> 
+   <td colname="col2"> Der Name der Metrik, die über die im Parameter "Dimension"angegebene Dimension ausgewertet wird. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Skalierung </td> 
    <td colname="col2"> Optional. Der Wert, der zur Größe der Punkte in der Ebene verwendet wird. Der Standardwert lautet 100. Größere Werte machen die Punkte größer und kleinere Werte verkleinern sie. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Kanalfarbe </td> 
+   <td colname="col1"> Farbe </td> 
    <td colname="col2"> Optional. Der RGB-Farbvektor, der als (rot, grün, blau) ausgedrückt wird. Für jede Farbe im Vektor können Sie einen Wert zwischen 0,0 und 1,0 eingeben. (1.0, 0.0, 0.0) ist beispielsweise hellrot und (0.5, 0.5, 0.5) grau. </td> 
   </tr> 
   <tr> 
@@ -87,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Die [!DNL Zip Points.layer] Datei ist wie folgt formatiert:
+Die Datei [!DNL Zip Points.layer] ist wie folgt formatiert:
 
 ```
 Layer = ElementPointLayer:
@@ -100,4 +101,3 @@ Layer = ElementPointLayer:
   Dimension = ref: wdata/model/dim/Zipcode
   Metric = ref: wdata/model/metric/Sessions
 ```
-
