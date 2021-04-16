@@ -1,17 +1,15 @@
 ---
 description: Reguläre Ausdruck werden in allen Datenbasis-Suchfeldern einschließlich der Abfragen-Entitätsbedienfelder verwendet.
-solution: Analytics
 title: Reguläre Ausdrücke
-topic: Data workbench
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
+exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 2%
 
 ---
-
 
 # Reguläre Ausdrücke{#regular-expressions}
 
@@ -29,16 +27,16 @@ Ein regulärer Ausdruck ist ein Textmuster, das aus einer Kombination aus alphan
 
 Zur Identifizierung und Extrahierung komplexer Zeichenfolgen-Muster verwendet der Data Workbench-Server in einigen der Transformationen und Bedingungen reguläre Ausdruck. Im Folgenden finden Sie eine kurze Anleitung zu regulären Ausdrücken.
 
-Dieser Anhang stellt keine umfassende Einführung in reguläre Ausdrücke dar. Eine besonders gute Referenz ist die O&#39;Reilly Veröffentlichung *Mastering Regular Ausdrucks, 2. Ausgabe* von Jeffrey E. F. Friedl.
+Dieser Anhang stellt keine umfassende Einführung in reguläre Ausdrücke dar. Eine besonders gute Referenz ist die O&#39;Reilly-Veröffentlichung *Reguläre Ausdruck beherrschen, 2nd Edition* von Jeffrey E. F. Friedl.
 
 ## Terminologie regulärer Ausdruck {#section-80b0d54f731e448391532ab3eb3c525c}
 
 | Begriff | Definition |
 |---|---|
-| Literal | Ein Literal ist ein Zeichen, das wir in einem regulären Ausdruck verwenden, um eine bestimmte Zeichenfolge zu finden. Um zum Beispiel ein Produkt in zu finden, [!DNL shop/products.html]ist das String-Produkt ein Literal oder was wir buchstäblich in der Zeichenfolge suchen. |
+| Literal | Ein Literal ist ein Zeichen, das wir in einem regulären Ausdruck verwenden, um eine bestimmte Zeichenfolge zu finden. Wenn Sie z. B. ein Produkt in [!DNL shop/products.html] suchen, ist das String-Produkt ein Literal oder das, wonach wir in der Zeichenfolge suchen. |
 | Metazeichen | Ein Metazeichen ist ein Sonderzeichen mit einer eindeutigen Interpretation im Kontext regulärer Ausdruck. Beispiel: Der Zeitraum (.) ist ein Metazeichen, mit dem einem beliebigen Zeichen entsprochen wird. |
 | Escape-Sequenz | Eine Escape-Sequenz ist einfach eine Möglichkeit, der normalen Ausdruck-Engine zu sagen, dass wir eines der Metazeichen als Literal verwenden möchten. Escape-Sequenzen werden immer mit dem umgekehrten Schrägstrich (`\`) Beginn. Durch Platzierung des Backslash (der auch ein Metazeichen ist) vor einem Metazeichen interpretiert die Engine des regulären Ausdrucks das mit Escapezeichen versehene Metazeichen als Literal. Wenn Sie beispielsweise den Metazeichenzeitraum (`.`) einhalten möchten, müssen Sie eine Escape-Sequenz verwenden. Um jedoch einem der Punkte in der Zeichenfolge 168.196.0.11 zu entsprechen, können Sie den regulären Ausdruck verwenden, der aus einem umgekehrten Schrägstrich und einem Punkt (`\.`) besteht. |
-| Muster | Dies ist eine kurze Terminologie für den regulären Ausdruck. Ein regulärer Ausdruck ist im Wesentlichen ein Muster, das Sie mit der Zielgruppe-Zeichenfolge abgleichen möchten. |
+| Muster | Dies ist eine kurze Terminologie für den regulären Ausdruck. Im Wesentlichen ist ein regulärer Ausdruck ein Muster, das Sie mit der Zielgruppe-Zeichenfolge abgleichen möchten. |
 | Zielgruppe-Zeichenfolge | Dieser Begriff bezieht sich auf die Zeichenfolge, in der wir nach dem gewünschten Muster suchen. |
 
 ## Grundlagen zur Literalübereinstimmung {#section-ec4497e3160c47ba9b828d939761b3e0}
@@ -61,14 +59,14 @@ Wenn Sie also versuchen, festzustellen, welche Sitzungen aufgrund einer bestimmt
 
 Sie haben keine Kontrolle über die URLs, die andere zum Erstellen von Links zur Site verwenden. Die wörtliche Abstimmung ist zu einfach, um Sitzungen zu finden, die aufgrund der Kampagne der Werbung gestartet wurden. Im folgenden Abschnitt wird erläutert, wie Sie Metazeichen für flexiblere und leistungsfähigere Übereinstimmungen verwenden können.
 
-## Metazeichen verwenden {#section-e29a804336304ea1ba33d40d60139aa2}
+## Metazeichen {#section-e29a804336304ea1ba33d40d60139aa2}
 
 Ein Metazeichen ist ein Sonderzeichen in einem Programm oder Datenfeld, das Informationen zu anderen Zeichen bereitstellt.
 
 | Metazeichen | Beschreibung |
 |---|---|
 |   (Punkt) | Entspricht einem einzelnen Zeichen, z. B.: `re:x.z` entspricht &quot;xyz&quot;oder &quot;xxz&quot;. |
-| * (Stern) | Entspricht einem oder mehreren Zeichen, z. B.: `re:Z*` findet &quot;ZZZ&quot;. |
+| * (Stern) | Entspricht einem oder mehreren Zeichen, z. B.: `re:Z*` entspricht &quot;ZZZ&quot;. |
 | ? (Platzhalter) | Sucht nach 0 oder 1 des vorherigen Ausdrucks, um eine minimale Übereinstimmung zu erzwingen. Beispiel: `xy?z` entspricht &quot;xy&quot;und &quot;xyz&quot;. |
 
 Zusätzliche reguläre Ausdruck können auch verwendet werden, um komplexere Suchzeichenfolgen zu erstellen.
@@ -111,7 +109,7 @@ Sehen Sie sich folgende Beispiele an:
 
 **Negation**
 
-Negation ist eine Möglichkeit, zu sagen, dass Sie alles mit Ausnahme der angegebenen Zeichen übereinstimmen möchten. Das Negations-Metazeichen Zirkumflex oder Caret (`^`) wird als erstes Zeichen in Klammern verwendet, um zu sagen, dass es sich bei der Übereinstimmung um alles andere als die restlichen Zeichen in den Klammern handeln soll. Wenn Sie beispielsweise ein beliebiges Zeichen außer einem Semikolon (`;`) abgleichen möchten, schreiben Sie
+Negation ist eine Möglichkeit, zu sagen, dass Sie alles mit Ausnahme der angegebenen Zeichen übereinstimmen möchten. Das Negations-Metazeichen Zirkumflex oder Caret (`^`) wird als erstes Zeichen in Klammern verwendet, um zu sagen, dass die Übereinstimmung alles andere als die verbleibenden Zeichen in den Klammern sein soll. Um beispielsweise einem beliebigen Zeichen mit Ausnahme eines Semikolons (`;`) zu entsprechen, würden Sie
 
 [`^;`]
 
@@ -124,7 +122,7 @@ Um eine Übereinstimmung am Anfang oder am Ende einer Zielgruppe-Zeichenfolge zu
 | Für dieses Metazeichen... | Der reguläre Ausdruck-Prozessor wird... |
 |---|---|
 | Circumflex oder Caret (`^`) | Übereinstimmung mit dem Anfang der Zeichenfolge. Beispiel: ^`[Tt]`er würde mit der Zielgruppe-Zeichenfolge &quot;Der Anfang&quot;übereinstimmen, aber nicht mit &quot;Dies ist der Anfang&quot;. |
-| Dollarzeichen (`$`) | Übereinstimmung mit dem Ende der Zeichenfolge. So würde `[Ee]`nd$ z. B. mit &quot;This is the end&quot;übereinstimmen, aber nicht mit &quot;The end is a special time&quot;. |
+| Dollarzeichen (`$`) | Übereinstimmung mit dem Ende der Zeichenfolge. Beispiel: `[Ee]`nd$ stimmt mit &quot;This is the end&quot; überein, stimmt aber nicht mit &quot;The end is a special time&quot; überein. |
 
 >[!NOTE]
 >
@@ -160,7 +158,7 @@ Mit Metazeichen für Iterationen können Sie ein Muster mehrmals abgleichen.
   </tr> 
   <tr> 
    <td colname="col1"> {n} </td> 
-   <td colname="col2"> <p>Ordnen Sie dem Zeichen oder Bereich des Vorgangs exakt n Mal zu. Das folgende Muster stimmt mit den Telefonnummern in den USA überein: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Es ist zwar kein optimales Muster, bestimmt aber, ob die Zielgruppe im richtigen Format vorliegt. </p> </td> 
+   <td colname="col2"> <p>Ordnen Sie dem Zeichen oder Bereich des Vorgangs exakt n Male zu. Das folgende Muster stimmt mit den Telefonnummern in den USA überein: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Es ist zwar kein optimales Muster, bestimmt aber, ob die Zielgruppe im richtigen Format vorliegt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> {n,m} </td> 
@@ -171,7 +169,7 @@ Mit Metazeichen für Iterationen können Sie ein Muster mehrmals abgleichen.
 
 ## Extraktion des Musters {#section-4389779653b64f6cb7c47615b25c1a79}
 
-Die Musterübereinstimmung ist nur ein Teil der Leistungsfähigkeit regulärer Ausdruck. Reguläre Ausdruck bieten auch einen Mechanismus zum Extrahieren von Schlüsselteilen einer Zielgruppe-Zeichenfolge. Dies geschieht mithilfe der Klammern links und rechts. Diese Extraktionen werden in der Regel als Eingabe in einen anderen Prozess verwendet und über *%position%* aufgerufen, wobei die Position eine Ganzzahl ist, die auf die Anzahl der Klammern verweist, die übereinstimmen.
+Die Musterübereinstimmung ist nur ein Teil der Leistungsfähigkeit regulärer Ausdruck. Reguläre Ausdruck bieten auch einen Mechanismus zum Extrahieren von Schlüsselteilen einer Zielgruppe-Zeichenfolge. Dies geschieht mithilfe der Klammern links und rechts. Diese Extraktionen werden in der Regel als Eingabe in einen anderen Prozess verwendet und über *%position%* aufgerufen, wobei die Position eine Ganzzahl ist, die sich auf die Anzahl der Klammern bezieht, die übereinstimmen.
 
 Betrachten Sie die folgenden Beispiele für die Extraktion von Mustern:
 
@@ -211,4 +209,3 @@ Betrachten Sie die folgenden Beispiele für die Extraktion von Mustern:
   </tr> 
  </tbody> 
 </table>
-
