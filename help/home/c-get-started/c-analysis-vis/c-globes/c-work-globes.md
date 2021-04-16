@@ -1,16 +1,17 @@
 ---
 description: Wenn Sie den Mauszeiger über die Karte bewegen, werden alle verfügbaren Daten, die der geografischen Position Ihres Zeigers entsprechen, in der oberen rechten Ecke der Visualisierung angezeigt.
-solution: Analytics
-title: Arbeiten mit globalen
-topic: Data workbench
+title: Arbeiten mit Globen
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
+exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '227'
+ht-degree: 2%
 
 ---
 
-
-# Arbeiten mit globalen{#working-with-globes}
+# Arbeiten mit Globen{#working-with-globes}
 
 Wenn Sie den Mauszeiger über die Karte bewegen, werden alle verfügbaren Daten, die der geografischen Position Ihres Zeigers entsprechen, in der oberen rechten Ecke der Visualisierung angezeigt.
 
@@ -39,4 +40,3 @@ Sie können den Globus auch heranzoomen und drehen, um sich auf eine gewünschte
 Sie können die Beleuchtung in einem Globus je nach Position der Sonne je nach Tageszeit ein- oder ausschalten. Die Uhrzeit wird vom Data Workbench-Server festgelegt.
 
 * Klicken Sie mit der rechten Maustaste in die Visualisierung und klicken Sie auf **[!UICONTROL Toggle Lighting]**. Ein X links neben dem Menüelement gibt an, dass die Beleuchtung aktiviert ist.
-
