@@ -1,20 +1,20 @@
 ---
 description: Informationen zum Erweitern eines Pfads in einem Pfadbrowser.
-solution: Analytics
-title: Pfade erweitern
-topic: Data workbench
+title: Erweitern von Pfaden
 uuid: 335fe6c2-4d8a-46f8-8e4e-d496f8e34373
+exl-id: 8b00e903-5318-456e-b439-56bbfb1308da
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '44'
+ht-degree: 13%
 
 ---
 
-
-# Pfade erweitern{#extend-a-paths}
+# Erweitern von Pfaden{#extend-a-paths}
 
 Informationen zum Erweitern eines Pfads in einem Pfadbrowser.
 
 Klicken Sie auf ein Element im Pfadbrowser, um den angezeigten Pfad nach links oder rechts vom Stamm zu erweitern.
 
 ![](assets/vis_PathBrowser_ExplorePaths.png)
-
