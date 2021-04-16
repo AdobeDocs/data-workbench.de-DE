@@ -1,30 +1,29 @@
 ---
 description: Standardmäßig überwacht Insight Server die Anschlüsse 80 (für HTTP) und 443 (für HTTPS).
-solution: Analytics
 title: Überprüfen der Port-Einstellungen
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
+exl-id: 924860e3-5afa-4c0f-bb7a-d38d5c1355b7
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 7%
 
 ---
 
-
 # Überprüfen der Port-Einstellungen{#checking-the-port-settings}
 
 Standardmäßig überwacht Insight Server die Anschlüsse 80 (für HTTP) und 443 (für HTTPS).
 
-Wenn diese Anschlüsse bereits durch einen anderen Prozess auf dem Computer, auf dem Sie installiert haben, zugeordnet sind, ändern Sie [!DNL Insight Server]die [!DNL Insight Server’s] Anschlusszuweisungen wie folgt:
+Wenn diese Anschlüsse bereits durch einen anderen Prozess auf dem Computer zugeordnet sind, auf dem Sie [!DNL Insight Server] installiert haben, ändern Sie die Zuweisungen für [!DNL Insight Server’s] mit dem folgenden Verfahren.
 
 **So ändern Sie die Anschlusszuweisungen**
 
-1. Navigieren Sie zu dem [!DNL Components] Ordner, in dem Sie installiert haben [!DNL Insight Server].
+1. Navigieren Sie zum Ordner [!DNL Components] in dem Ordner, in dem Sie [!DNL Insight Server] installiert haben.
 
    Beispiel: [!DNL C:\Adobe\Server\Components]
 
-1. Öffnen Sie die [!DNL Communications.cfg] Datei in einem Texteditor wie Notepad.
+1. Öffnen Sie die Datei [!DNL Communications.cfg] in einem Texteditor wie Notepad.
 1. Suchen Sie den Anschluss und die SSL-Port-Einträge, wie unten dargestellt:
 
    ```
@@ -41,4 +40,4 @@ Wenn diese Anschlüsse bereits durch einen anderen Prozess auf dem Computer, auf
      . . .
    ```
 
-1. Wenn dies nicht die Anschlüsse sind, die Sie verwenden möchten, ändern Sie die Anschlusszuweisungen, speichern und schließen Sie die Datei. [!DNL Insight Server]
+1. Wenn dies nicht die Anschlüsse sind, die [!DNL Insight Server] verwendet werden sollen, ändern Sie die Anschlusszuweisungen und speichern und schließen Sie die Datei.
