@@ -1,20 +1,20 @@
 ---
-description: Mit dem Report Portal können Sie Berichte anzeigen, die von Report Server über Ihren Webbrowser generiert wurden.
-solution: Analytics
-title: Verwenden des Report Portals
-topic: Data workbench
+description: Das Report Portal ermöglicht die Ansicht von Berichten, die vom Report Server über Ihren Webbrowser generiert wurden.
+title: Verwenden von Report Portal
 uuid: 0d0b5e27-6e30-439b-8a95-f00c062dbfda
+exl-id: fdcea598-5b79-4e86-97b0-8886aaf9e1e0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 14%
 
 ---
 
+# Verwenden von Report Portal{#using-the-report-portal}
 
-# Verwenden des Report Portals{#using-the-report-portal}
+Das Report Portal ermöglicht die Ansicht von Berichten, die vom Report Server über Ihren Webbrowser generiert wurden.
 
-Mit dem Report Portal können Sie Berichte anzeigen, die von Report Server über Ihren Webbrowser generiert wurden.
-
-Die [!DNL Report Portal] ist eine webbasierte Anwendung, die auf einem Microsoft Internet Information Services (IIS)-Webserver ausgeführt wird.
+Das [!DNL Report Portal] ist eine webbasierte Anwendung, die auf einem Microsoft Internet Informationsdiensts (IIS)-Webserver ausgeführt wird.
 
 ![](assets/report_portal_home.png)
-
