@@ -1,23 +1,21 @@
 ---
 description: Metriken können mit dem Metrik-Editor bearbeitet und im Metrikverzeichnis eines Profils gespeichert werden.
-solution: Analytics
 title: Syntax für Ausdrücke zu Metriken
-topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
+exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
 
 ---
 
-
 # Syntax für Ausdrücke zu Metriken{#syntax-for-metric-expressions}
 
 Metriken können mit dem Metrik-Editor bearbeitet und im Metrikverzeichnis eines Profils gespeichert werden.
 
-Weitere Informationen finden Sie unter [Erstellen und Bearbeiten abgeleiteter Metriken](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Metrische Ausdruck können auch in Arbeitsblättern verwendet werden. For more information, see [Worksheets](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). Die folgende Syntax dient zum Definieren von metrischen Ausdrücken.
+Weitere Informationen finden Sie unter [Erstellen und Bearbeiten von abgeleiteten Metriken](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Metrische Ausdruck können auch in Arbeitsblättern verwendet werden. Weitere Informationen finden Sie unter [Arbeitsblätter](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). Die folgende Syntax dient zum Definieren von metrischen Ausdrücken.
 
 Hinweise:
 
@@ -25,7 +23,7 @@ Hinweise:
 1. Das Formular `{TEXT}?` stellt optionalen Text dar.
 1. Das Formular `{TEXT}*` stellt Text dar, der null oder mehr Mal auftreten kann.
 1. Das Formular `{A | B | C |...}` stellt Text dar, der aus genau einer der angegebenen Optionen besteht, z. B. A oder B oder C....
-1. Das Formular `[A,B)` stellt einen Zahlenbereich dar, von A bis B, jedoch nicht einschließlich B.
+1. Das Formular `[A,B)` stellt einen Zahlenbereich dar, von A bis B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
@@ -119,4 +117,3 @@ Hinweise:
   </tr> 
  </tbody> 
 </table>
-
