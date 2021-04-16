@@ -1,22 +1,23 @@
 ---
-description: Zeigen Sie eine Liste der Aktionen und Tastenkombinationen der Data Workbench-Client-Benutzeroberfläche an.
-solution: Analytics
-title: Schnellverweis
-topic: Data workbench
+description: Ansicht einer Liste von Benutzeroberflächenaktionen und Tastenkombinationen der Data Workbench-Client-Benutzeroberfläche.
+title: Kurzübersicht
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
+exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 6%
 
 ---
 
+# Kurzübersicht{#quick-reference}
 
-# Schnellverweis{#quick-reference}
+Ansicht einer Liste von Benutzeroberflächenaktionen und Tastenkombinationen der Data Workbench-Client-Benutzeroberfläche.
 
-Zeigen Sie eine Liste der Aktionen und Tastenkombinationen der Data Workbench-Client-Benutzeroberfläche an.
+Siehe auch [Tastaturbefehle](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a).
 
-Siehe auch [Tastaturkürzel](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a).
-
-## Aktionen für den Data Workbench-Client {#section-dfea35452c2e4f0b92229a4974bc24fa}
+## Aktionen für den Data Workbenchs-Client {#section-dfea35452c2e4f0b92229a4974bc24fa}
 
 Verwenden Sie diese Aktionen, wenn Sie Aufgaben in der Client-Benutzeroberfläche ausführen.
 
@@ -36,7 +37,7 @@ Verwenden Sie diese Aktionen, wenn Sie Aufgaben in der Client-Benutzeroberfläch
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Klicken Sie auf das Data Workbench-Logo in der oberen linken Ecke des Arbeitsbereichs </td> 
+   <td colname="col1"> Klicken Sie links oben im Arbeitsbereich auf das Data Workbench-Logo. </td> 
    <td colname="col2"> <p>Speichert Ihre Änderungen </p> </td> 
   </tr> 
   <tr> 
@@ -54,9 +55,9 @@ Verwenden Sie diese Aktionen, wenn Sie Aufgaben in der Client-Benutzeroberfläch
 
 | Aktion | Ergebnis |
 |---|---|
-| Klicken und Ziehen | Zur Seitenhierarchie hinzufügen |
-| Strg + Alt + Klicken + Ziehen | Hinzufügen einer Seite zu einem Balkendiagramm |
-| Strg + Alt + Klicken + Ziehen | Zur Seitentabelle hinzufügen |
+| Klicken und Ziehen | hinzufügen in der Seitenhierarchie |
+| Strg + Alt + Klicken + Ziehen | hinzufügen Seite in ein Balkendiagramm |
+| Strg + Alt + Klicken + Ziehen | hinzufügen in die Seitentabelle |
 
 | Aktion | Ergebnis |
 |---|---|
@@ -65,7 +66,7 @@ Verwenden Sie diese Aktionen, wenn Sie Aufgaben in der Client-Benutzeroberfläch
 | Strg+Auswahl | Fügt Text zur Auswahl hinzu |
 | Umschalttaste + Auswahl | Entfernt Text aus Auswahl |
 
-## Tastaturbefehle für den Data Workbench-Client {#section-0597bf92e1af4bcf9f1c8ceffe52649a}
+## Tastaturbefehle für den Data Workbenchs-Client {#section-0597bf92e1af4bcf9f1c8ceffe52649a}
 
 Verwenden Sie diese Tastenkombinationen für Arbeitsbereiche und Konfigurationsdateien.
 
@@ -91,7 +92,7 @@ Verwenden Sie diese Tastenkombinationen für Arbeitsbereiche und Konfigurationsd
 | Aktion | Ergebnis |
 |---|---|
 | Strg+X | Schneidet Text |
-| Strg+Z | Aktion für zuvor eingegebene Zeichen rückgängig machen |
+| Strg + Z | Rückgängig Aktion für zuvor eingegebene Zeichen |
 | Strg+Umschalt+Z | Wiederholen: Aktion für eingegebene Zeichen |
 | Strg+A | Wählt alle |
 
@@ -105,7 +106,7 @@ Verwenden Sie diese Tastenkombinationen für Arbeitsbereiche und Konfigurationsd
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b>Vollbildansicht</b>. Workspace füllt den Bildschirm aus und nimmt die neue Größe an. </td> 
+   <td colname="col1"><b>Ansicht</b> im Vollbildmodus. Workspace füllt den Bildschirm aus und nimmt die neue Größe an. </td> 
    <td colname="col2"><b>Strg+</b> <p>Strg + (auf der Tastatur) </p> <p><i>oder</i> </p> <p>Strg+Umschalt+5 (auf der Tastatur) </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
@@ -114,7 +115,7 @@ Verwenden Sie diese Tastenkombinationen für Arbeitsbereiche und Konfigurationsd
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b>Fensteransicht</b>. Workspace wird in einer Standardansicht des Fensters angezeigt und bezieht sich auf die neue Größe. </td> 
+   <td colname="col1"><b>Ansicht</b> des Fensters. Workspace wird in einer Ansicht des Standardfensters angezeigt und bezieht sich auf die neue Größe. </td> 
    <td colname="col2"><b>Strg minus</b> <p>Strg - </p> </td> 
    <td colname="col3"> 
     <ul id="ul_3474B9EFD69343C09BC84E485D896C28"> 
@@ -129,10 +130,10 @@ Verwenden Sie diese Tastenkombinationen für Arbeitsbereiche und Konfigurationsd
 |---|---|
 | Strg+P | Druckt eine Arbeitsfläche. |
 | Strg+W | Schließt eine Arbeitsfläche ohne Speichern. |
-| Strg+S | Speichert eine Arbeitsfläche. |
+| Strg + S | Speichert eine Arbeitsfläche. |
 | Strg+O | Öffnet eine Visualisierungsdatei. Es entspricht der Auswahl von Hinzufügen > Öffnen im Menü &quot;Arbeitsbereich&quot;. |
 | Strg+E | Öffnen Sie eine Konfiguration (standardmäßig) oder andere Dateien. Es entspricht der Auswahl von Hinzufügen > Bearbeiten im Menü &quot;Arbeitsbereich&quot;. Wählen Sie Alle, um andere Dateien zu öffnen. |
-| Menü &quot;Häufig verwendete Dateien&quot; | Klicken Sie auf **Hinzufügen > Öffnen** aus einem Arbeitsbereich, um kürzlich geöffnete Dateien (speichert die letzten zehn) oder Dateien zu öffnen, die Sie in das neue Menü &quot;veröffentlichen&quot;. Im Menü können Sie auf das Pin-Symbol in der Liste klicken, um die Visualisierung zu speichern. |
+| Menü &quot;Häufig verwendete Dateien&quot; | Klicken Sie in einem Arbeitsbereich auf **Hinzufügen > Öffnen**, um kürzlich geöffnete Dateien (speichert die letzten zehn) oder Dateien zu öffnen, die Sie in das neue Menü veröffentlichen. Klicken Sie im Menü auf das Pin-Symbol in der Liste, um die Visualisierung zu speichern. |
 
 <table id="table_99414A5999F94A2EAB2BBBA27EE487F5"> 
  <thead> 
@@ -143,13 +144,12 @@ Verwenden Sie diese Tastenkombinationen für Arbeitsbereiche und Konfigurationsd
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Klicken Sie mit der rechten Maustaste auf eine Node und klicken Sie auf <span class="uicontrol"> Einfügen</span> </p> </td> 
-   <td colname="col2"> <p>Fügt einen Knoten in eine <span class="filepath"> .cfg</span> -Datei ein </p> </td> 
+   <td colname="col1"> <p>Klicken Sie mit der rechten Maustaste auf einen Knoten und klicken Sie auf <span class="uicontrol"> Einfügen</span> </p> </td> 
+   <td colname="col2"> <p>Fügt einen Knoten in eine Datei <span class="filepath"> .cfg</span> ein </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1">Klicken Sie mit der rechten Maustaste auf den Vektor und klicken Sie auf Als untergeordnetes Element <span class="uicontrol"> einfügen</span> </td> 
-   <td colname="col2">Fügt einen Vektor auf Vektorebene in eine <span class="filepath"> .cfg</span> -Datei ein </td> 
+   <td colname="col1">Klicken Sie mit der rechten Maustaste auf den Vektor und klicken Sie auf <span class="uicontrol"> Als untergeordnetes Element einfügen</span> </td> 
+   <td colname="col2">Fügt einen Vektor in eine Datei <span class="filepath"> .cfg</span> auf Vektorebene ein </td> 
   </tr> 
  </tbody> 
 </table>
-
