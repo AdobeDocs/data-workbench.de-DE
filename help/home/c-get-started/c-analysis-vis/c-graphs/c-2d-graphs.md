@@ -1,14 +1,15 @@
 ---
 description: Zweidimensionale Diagramme (2D) zeigen eine Metrik über zwei Dimensionen hinweg an.
-solution: Analytics
 title: 2D-Diagramme
-topic: Data workbench
 uuid: f8860fff-4614-4b1a-b217-760bf4d48f20
+exl-id: 9767124b-8507-4b25-842b-8e2729e57461
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 5%
 
 ---
-
 
 # 2D-Diagramme{#d-graphs}
 
