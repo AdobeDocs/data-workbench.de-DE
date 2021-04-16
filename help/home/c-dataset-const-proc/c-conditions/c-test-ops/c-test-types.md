@@ -1,20 +1,21 @@
 ---
 description: Die Bedingung "Vergleichen"und "Bereich"erfordern, dass Sie den Vergleichstyp für die Bedingung angeben.
-solution: Analytics
-title: Testtypen für Testvorgänge
-topic: Data workbench
+title: Typen von Tests für Testoperationen
 uuid: dc0433dd-a35e-472e-8975-f58347512c11
+exl-id: 8abed46e-e76d-47c0-bbe9-cf98cf2d61e8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
-
-# Testtypen für Testvorgänge{#test-types-for-test-operations}
+# Typen von Tests für Testoperationen{#test-types-for-test-operations}
 
 Die Bedingung &quot;Vergleichen&quot;und &quot;Bereich&quot;erfordern, dass Sie den Vergleichstyp für die Bedingung angeben.
 
-Die folgende Tabelle beschreibt die verfügbaren Typen ( [!DNL LEXICAL], [!DNL NUMERIC]und [!DNL DATETIME]).
+Die folgende Tabelle beschreibt die verfügbaren Typen ( [!DNL LEXICAL], [!DNL NUMERIC] und [!DNL DATETIME]).
 
 <table id="table_1B3AD8BDF0414D0AB8EE0E6D1B53E2CE"> 
  <thead> 
@@ -42,8 +43,7 @@ Die folgende Tabelle beschreibt die verfügbaren Typen ( [!DNL LEXICAL], [!DNL N
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> LEXISCH</span> </p> </td> 
    <td colname="col2"> <p>Gibt "true"nur dann zurück, wenn das Eingabefeld lexikalisch größer oder gleich der als Minimum angegebenen Zeichenfolge und kleiner als oder gleich der im Maximalwert angegebenen Zeichenfolge ist. </p> </td> 
-   <td colname="col3"> <p>Beim Lexischen Vergleich wird der ASCII-Wert der Zeichen in den Zeichenfolgen verwendet, die von links nach rechts verschoben werden, und die Zeichen werden verglichen. Für das erste Zeichen, das nicht übereinstimmt, wird das mit dem größeren ASCII-Wert als das größere von beiden betrachtet. Wenn eine Zeichenfolge kürzer als die andere ist, bis zu diesem Zeitpunkt jedoch alle Zeichen gleich waren, gilt die längere Zeichenfolge als der größere der beiden Zeichen. Wenn die Zeichenfolgen Zeichen für Entsprechungen und exakt dieselbe Länge sind, werden sie als wörtlich gleichwertig betrachtet. </p> </td> 
+   <td colname="col3"> <p>Beim Lexischen Vergleich wird der ASCII-Wert der Zeichen in den Zeichenfolgen verwendet, die von links nach rechts verschoben werden, und die Zeichen werden verglichen. Für das erste Zeichen, das nicht übereinstimmt, wird das mit dem größeren ASCII-Wert als das größere von beiden betrachtet. Im Ereignis, dass eine Zeichenfolge kürzer als die andere ist, bis zu diesem Zeitpunkt jedoch alle Zeichen gleich waren, gilt die längere Zeichenfolge als der größere der beiden Zeichen. Wenn die Zeichenfolgen Zeichen für Entsprechungen und exakt dieselbe Länge sind, werden sie als wörtlich gleichwertig betrachtet. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
