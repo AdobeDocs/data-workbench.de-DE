@@ -1,28 +1,27 @@
 ---
 description: Detaillierte Anweisungen zum Installieren und Konfigurieren von Sensor für WebSphere 5.x unter AIX 5.1 oder höher.
-solution: Analytics
 title: WebSphere unter AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
+exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
 
 ---
 
-
 # WebSphere unter AIX{#websphere-on-aix}
 
 Detaillierte Anweisungen zum Installieren und Konfigurieren von Sensor für WebSphere 5.x unter AIX 5.1 oder höher.
 
-Die Programm-Dateien für [!DNL Sensor] werden in einer Installationsdatei gepackt, die Sie von der Adobe-Download-Site erhalten. Wenn Sie noch nicht über die [!DNL Sensor] Installationsdatei für den jeweiligen Webserver verfügen, laden Sie diese herunter (oder rufen Sie sie von Ihrem Kundenbetreuer ab), bevor Sie die folgenden Schritte durchführen.
+Die Programm-Dateien für [!DNL Sensor] werden in einer Installationsdatei gepackt, die Sie von der Adobe-Download-Site erhalten. Wenn Sie noch nicht über die Installationsdatei [!DNL Sensor] für Ihren Webserver verfügen, laden Sie sie herunter (oder rufen Sie sie von Ihrem Kundenbetreuer ab), bevor Sie die folgenden Schritte durchführen.
 
 >[!NOTE]
 >
->Die [!DNL Sensor] für WebSphere-Server unterstützen keine kontrollierte Experimentierung. Informationen zum kontrollierten Experimentieren finden Sie im Handbuch *Data Workbench Controlled Experiments.*
+>Das [!DNL Sensor] für WebSphere-Server unterstützt keine kontrollierte Experimentierung. Weitere Informationen zum kontrollierten Experimentieren finden Sie im Handbuch *Data Workbench Controlled Experiments.*
 
-## Installieren der Programm-Dateien {#section-86f69127278c41bc90b97b68bb40bc6e}
+## Installieren Sie die Programm-Dateien {#section-86f69127278c41bc90b97b68bb40bc6e}
 
 Verfahren zum Extrahieren und Installieren der Programm-Dateien von Sensorto Server Machine.
 
@@ -101,7 +100,7 @@ Um die Berechtigungen auf die empfohlenen Standardeinstellungen zurückzusetzen,
 
 Wenn Sie andere als die empfohlenen Standardberechtigungen verwenden möchten, lesen Sie die Informationen in den Sensor-UNIX-Dateiberechtigungen, um sicherzustellen, dass Sie wissen, wie diese Dateien verwendet werden.
 
-## Edit the Sensor Configuration file {#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## Bearbeiten Sie die Datei für die Sensorkonfiguration {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 Die Datei &quot;txlogd.conf&quot;enthält die Konfigurationsparameter für Sensor.
 
@@ -147,7 +146,7 @@ Bei WebSphere-Servern fungiert der Collector als Filter im Servlet-Container.
 Um den Collector der Webanwendung hinzuzufügen, fügen Sie den Filter dem Web.xml-Bereitstellungsdeskriptor der Webanwendung hinzu und starten Sie die Webanwendung neu.
 
 1. Öffnen Sie in einem Texteditor die Datei &quot;web.xml&quot;für den Webserver, dessen Ereignisse Sensor erfasst.
-1. hinzufügen Sie die folgenden `<filter>` und die `<filter-mapping>` Elemente in die Deskriptordatei ein. Wenn Sie txlogd.conf nicht im Ordner /etc installiert haben, müssen Sie den richtigen Pfad zu dieser Datei im `<param-value>` Element eingeben.
+1. hinzufügen Sie die folgenden `<filter>`- und `<filter-mapping>`-Elemente in die Deskriptordatei ein. Wenn Sie txlogd.conf nicht im Ordner /etc installiert haben, müssen Sie den richtigen Pfad zu dieser Datei im Element `<param-value>` eingeben.
 
    ```
    <filter>
@@ -175,7 +174,7 @@ Um den Collector der Webanwendung hinzuzufügen, fügen Sie den Filter dem Web.x
 
 1. Starten Sie die Webanwendung neu. Der Collector wird mit der Anwendung geladen und beginnt mit der Erfassung von Ereignis-Daten und dem Schreiben in die Disk-Warteschlange.
 
-## Speicherort der Sammlungs- und freigegebenen Objektdateien deklarieren {#section-e641f08999d34a648aaee2111b69ca25}
+## Speicherort der Sammlungs- und freigegebenen Objektdateien {#section-e641f08999d34a648aaee2111b69ca25} deklarieren
 
 Verfahren zum Bearbeiten des Websphere-Startskripts, um den Speicherort der Dateien J2EECollector.jar und libvisual_sciences.so zu deklarieren.
 
@@ -192,9 +191,9 @@ Verfahren zum Bearbeiten des Websphere-Startskripts, um den Speicherort der Date
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. Save the [!DNL setupCmdLine.sh] file.
+1. Speichern Sie die Datei [!DNL setupCmdLine.sh].
 
-## Sensor testen {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
+## Sensor {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5} testen
 
 Verfahren zum Beginn des Senders und zur Überprüfung, ob er erfolgreich eine Verbindung zum Insight-Server herstellen und Ereignis-Daten an ihn übertragen kann.
 
@@ -216,7 +215,7 @@ Verfahren zum Beginn des Senders und zur Überprüfung, ob er erfolgreich eine V
    * Die Parameter ServerAddress und ServerPort werden in txtlogd.conf korrekt eingestellt. Wenn Sie &quot;ServerAddress&quot;unter einem Servernamen angegeben haben, versuchen Sie stattdessen, die zugehörige numerische IP-Adresse zu verwenden.
    * Der Wert des CertName-Parameters entspricht dem allgemeinen Namen, der im digitalen Zertifikat der Zielgruppe Insight Server exakt angegeben ist.
 
-## Transmitter in Ihr Systemstartskript Hinzufügen {#section-23bb905100d04f018af93873dd4d5f68}
+## hinzufügen Sie den Transmitter an Ihr Systemstartskript {#section-23bb905100d04f018af93873dd4d5f68}
 
 Informationen, die sicherstellen, dass der Transmitter beim Neustart des Webservercomputers automatisch geladen wird.
 
@@ -242,7 +241,7 @@ Der J2EE-Collector kann beispielsweise zur Erfassung von CPC-Daten (Cost per Cli
 
 Wenn ein Sensor für die J2EE-Plattform eine Anforderung empfängt, ruft er eine Collector-Klasse auf, die die Funktion appendToLog importiert. Die Funktion appendToLog hängt an die ursprüngliche Anforderung die in der Funktion appendToLog angegebenen Zeichenfolgenparameter der Abfrage an. Dies führt dazu, dass der URI der ursprünglichen Anforderung zusätzliche Abfragen-Zeichenfolgennamenpaare enthält, die den Namen und Werten der erfassten Daten entsprechen. Beispiel: CPC=20 wird an die ursprüngliche Anforderung angehängt, wenn der Wert einer bestimmten Anzeigenplatzierung oder eines Clickthrough-Links 20 Cent beträgt. Insight Server verarbeitet diese Werte zur Analyse in den Datensatz. Ein weiterer Vorteil dieser Erfassungsmethodik besteht darin, dass sie die Erfassung zusätzlicher Daten ohne Erstellung zusätzlicher Protokolleinträge ermöglicht, da diese möglicherweise mit Seitenmarkierungsmethoden erstellt werden.
 
-Weitere Informationen zur Verarbeitung finden Sie im Handbuch zur Konfiguration von *Datasets*.
+Weitere Informationen zur Verarbeitung finden Sie im Handbuch *Konfiguration von Datasets*.
 
 1. hinzufügen Sie den folgenden Code oben auf der JSP-Seite, von der Sie Daten erfassen möchten:
 
@@ -250,7 +249,7 @@ Weitere Informationen zur Verarbeitung finden Sie im Handbuch zur Konfiguration 
    <%@ page import="com.visualsciences.collector.VSCollector" %>
    ```
 
-1. Verwenden Sie die Methode appendToLog() des Collector-Objekts, um die gewünschten Name-Wert-Paare an die Abfrage-Zeichenfolge der angeforderten JSP-Seite anzuhängen. Im folgenden Beispiel werden &quot;A=1&quot;und &quot;B=2&quot;an die Abfrage-Zeichenfolge der angeforderten JSP-Seite für die Seite /index.jsp angehängt:
+1. Verwenden Sie die Methode appendToLog() des Collector-Objekts, um die gewünschten Name-Wert-Paare an die Abfrage-Zeichenfolge der angeforderten JSP-Seite anzuhängen. Im folgenden Beispiel werden die Abfragen &quot;A=1&quot;und &quot;B=2&quot;an die Zeichenfolge der angeforderten JSP-Seite für die Seite /index.jsp angehängt:
 
    ```
    <html> 
@@ -268,4 +267,3 @@ Weitere Informationen zur Verarbeitung finden Sie im Handbuch zur Konfiguration 
    Die resultierende Anforderungs-URI lautet /index.jsp?A=1&amp;B=2.
 
 1. Wiederholen Sie diesen Vorgang für jede JSP-Seite, von der Sie zusätzliche Daten erfassen möchten.
-
