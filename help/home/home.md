@@ -1,17 +1,16 @@
 ---
-description: 'null'
-solution: Analytics
+description: Dokumentation zur Data Workbench
 title: Data Workbench-Hilfe
-topic: Reports and analytics
+topic: Reports and Analytics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
-translation-type: ht
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
-workflow-type: ht
-source-wordcount: '268'
-ht-degree: 100%
+exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 98%
 
 ---
-
 
 # Data Workbench-Hilfe {#data-workbench-help}
 
@@ -37,7 +36,7 @@ Data Workbench umfasst die folgenden Funktionen für Predictive Analytics, Daten
 
 ## Weitere Benutzerhandbücher für Analytics
 
-[Analytics-Benutzerhandbücher](https://docs.adobe.com/content/help/de-DE/analytics/landing/home.html)
+[Analytics-Benutzerhandbücher](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 
 ## Versionshinweise und neue Funktionen für Data Workbench
 
