@@ -1,17 +1,15 @@
 ---
 description: Nachdem der HTML-Code einer Seite von einem Browser angefordert wurde, fordert der Browser die eingebetteten Objekte, auf die im HTML-Code dieser Seite verwiesen wird, von einem Webserver an, die vom Browser angezeigte Seite auszufüllen.
-solution: Analytics
 title: Erfassen eingebetteter Objektanfragen (Seiten-Tags)
-topic: Data workbench
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
+exl-id: 593e49bc-9619-4e85-8ce3-2e9d23d175c9
 translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 4%
 
 ---
-
 
 # Erfassen eingebetteter Objektanfragen (Seiten-Tags){#acquiring-embedded-object-requests-page-tags}
 
@@ -19,11 +17,11 @@ Nachdem der HTML-Code einer Seite von einem Browser angefordert wurde, fordert d
 
 Solche Anforderungen an eingebettete Objekte sind am häufigsten Anforderungen für Bilddateien oder JavaScript-Dateien, obwohl heute Hunderte oder vielleicht Tausende von Arten von eingebetteten Objekten im Internet verwendet werden. Viele dieser Anforderungen an eingebettete Objekte sind im Allgemeinen nicht für die Analyse oder den Berichte auf der geschäftlichen Aktivität einer Website nützlich. Viele solcher Anfragen sind daher für den Erwerb nicht wünschenswert, es sei denn, sie haben einen bestimmten Geschäftszweck, wie z.B. die Anzeige einer Werbung oder die Durchführung einer anderen Messung der Site-Aktivität.
 
-Ein Bild kann beispielsweise eine Werbung sein, und Sie möchten vielleicht wissen, dass die Werbung auf einem Besucher beeindruckt war. Ein JavaScript-Snippet kann verwendet werden, um eine Messung durchzuführen, die eine bestimmte Eigenschaft des jeweiligen Browsers aufweist, und es zur Akquise an einen [!DNL Sensor] weiterzuleiten. Jede Seite auf einer Site kann 10 oder 100 eingebettete Objektanforderungen enthalten. Wenn eine Site die Protokollinformationen für jede dieser Anforderungen speichert, wird die erforderliche Datenmenge, um die Protokolldaten für die zukünftige Analyse verfügbar zu halten, mit der Anzahl der eingebetteten Objektanforderungen für jede angeforderte Seite multipliziert. Aus diesem Grund [!DNL Site] können Sie die Anforderungen, die für die Analyse wichtig sind, behalten und andere verwerfen, bevor Sie unnötige Kosten für die Datenspeicherung verursachen.
+Ein Bild kann beispielsweise eine Werbung sein, und Sie möchten vielleicht wissen, dass die Werbung auf einem Besucher beeindruckt war. Ein JavaScript-Snippet kann verwendet werden, um eine Messung durchzuführen, die besagt, dass der jeweilige Browser eine bestimmte Eigenschaft aufweist, und es zur Akquise an ein [!DNL Sensor] zurückzusenden. Jede Seite auf einer Site kann 10 oder 100 eingebettete Objektanforderungen enthalten. Wenn eine Site die Protokollinformationen für jede dieser Anforderungen speichert, wird die Datenspeicherung der Daten, die erforderlich ist, um die Protokolldaten für die zukünftige Analyse verfügbar zu halten, mit der Anzahl der eingebetteten Objektanforderungen für jede angeforderte Seite multipliziert. [!DNL Site] ermöglicht Ihnen daher, die für die Analyse wichtigen Anforderungen zu behalten und andere zu verwerfen, bevor Sie unnötige Kosten für die Datenspeicherung verursachen.
 
-Durch Verwendung der Funktion zum Überschreiben von Daten, die in den Filterfunktionen für den Content-Typ bereitgestellt wird [!DNL Sensor] (indem &quot;Log=1&quot;an die Abfrage-Zeichenfolge einer eingebetteten Objekt-Anforderungs-URL angehängt wird), können diese spezielle eingebettete Objektanforderung und die zugehörigen Messungsdaten erfasst werden, ohne dass der Site-Manager alle Anforderungen dieses Typs (z. B. alle `<image>` Anforderungen) speichern muss.
+Durch die Verwendung der Funktion zum Überschreiben von Daten, die in den Filterfunktionen für Inhaltstypen von [!DNL Sensor] bereitgestellt wird (Anfügen von &quot;Log=1&quot;an die Abfrage-Zeichenfolge einer URL für eine eingebettete Objektanforderung), können diese spezielle eingebettete Objektanforderung und die zugehörigen Messungsdaten erfasst werden, ohne dass der Site-Manager alle Anforderungen dieses Typs speichern muss (z. B. alle `<image>`-Anforderungen).
 
-[!DNL Sensor] erfasst die Messungsdaten in der folgenden Tabelle für jede vom Webserver erstellte eingebettete Objektanforderung, vorausgesetzt, dass sie nicht für das Herausfiltern konfiguriert [!DNL Sensor] ist oder der Filter überschrieben wurde. Die erfassten Informationen beziehen sich auf den Besucher und die Sitzung und die nachfolgenden Sitzungen über die Einträge im Feld x-trackingid oder cs(cookie).
+[!DNL Sensor] erfasst die Messungsdaten in der folgenden Tabelle für jede vom Webserver erstellte eingebettete Objektanforderung, vorausgesetzt, dass sie nicht für das Herausfiltern konfiguriert  [!DNL Sensor] ist oder der Filter überschrieben wurde. Die erfassten Informationen beziehen sich auf den Besucher und die Sitzung und die nachfolgenden Sitzungen über die Einträge im Feld x-trackingid oder cs(cookie).
 
 <table id="table_11BE08A798E743EC8E76F738F0CE5884"> 
  <thead> 
@@ -38,7 +36,7 @@ Durch Verwendung der Funktion zum Überschreiben von Daten, die in den Filterfun
   <tr> 
    <td colname="col1"> x-trackingid </td> 
    <td colname="col2"> Tracking-ID (eindeutiger Besucher) </td> 
-   <td colname="col3"> Kennung, die von einem Cookie gelesen wird, das bei einer ersten Anforderung vom <span class="wintitle"> Sensor </span> im Browser des Benutzers platziert wird </td> 
+   <td colname="col3"> Bezeichner, der von einem Cookie gelesen wird, das bei einer ersten Anforderung von <span class="wintitle"> Sensor </span> im Browser des Benutzers platziert wurde </td> 
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td> 
   </tr> 
   <tr> 
@@ -69,19 +67,19 @@ Durch Verwendung der Funktion zum Überschreiben von Daten, die in den Filterfun
    <td colname="col1"> c-ip </td> 
    <td colname="col2"> Client-IP </td> 
    <td colname="col3"> IP-Adresse des anfordernden Kunden </td> 
-   <td colname="col4"> 127.0.0.1 </td> 
+   <td colname="col4"> 127,0,0,1 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> s-dns </td> 
    <td colname="col2"> Servername </td> 
    <td colname="col3"> Domänenname des Webservers, der die Anforderung verarbeitet </td> 
-   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td> 
+   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(Werber) </td> 
    <td colname="col2"> Verweisende URL </td> 
    <td colname="col3"> Inhalt des vom Client gesendeten HTTP-Werber-Felds </td> 
-   <td colname="col4"> <span class="filepath"> http://www.referringsite.com </span> </td> 
+   <td colname="col4"> <span class="filepath"> http://www.referringsite.com  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
@@ -103,4 +101,3 @@ Durch Verwendung der Funktion zum Überschreiben von Daten, die in den Filterfun
   </tr> 
  </tbody> 
 </table>
-
