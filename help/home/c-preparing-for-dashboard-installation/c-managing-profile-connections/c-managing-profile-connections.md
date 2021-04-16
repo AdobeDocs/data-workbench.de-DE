@@ -1,17 +1,18 @@
 ---
-description: 'null'
-solution: Analytics
+description: Verwalten von Profilverbindungen
 title: Verwalten von Profilverbindungen
-topic: Data workbench
 uuid: 244ced13-2185-4347-bd0a-d8471daafe7b
+exl-id: 94f302d5-ee40-41c8-9b94-811fea915ecb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '92'
+ht-degree: 9%
 
 ---
 
-
 # Verwalten von Profilverbindungen{#managing-profile-connections}
 
-Verbindungen zwischen dem Data Workbench-Dashboard-Server und Datenbasisdatenprofilen der Datenbasis werden mithilfe des Profilmanagers in der Administrationskonsole verwaltet. Die im Dashboard verwendeten Data Workbench-Profile müssen nicht zentral platziert werden und können überall gehostet werden, wenn eine geeignete Verbindung zwischen dem Dashboard-Server und den Data Workbench-Servern besteht, auf denen das Profil bzw. die Profile gehostet werden.
+Verbindungen zwischen Data Workbench Dashboard Server und Data Workbench Data Profils werden über den Profil Manager in Administration Console verwaltet. Die im Dashboard verwendeten Data Workbench-Profil müssen nicht zentral platziert werden und können überall gehostet werden, wenn eine geeignete Verbindung zwischen dem Dashboard-Server und den Datenbasis-Servern besteht, auf denen die Profil gehostet werden.
 
-Nur Administratoren sind berechtigt, Profilverbindungen zu erstellen und zu ändern. Zum Verwalten von Profilverbindungen verwenden Sie die Registerkarte &quot;Profile&quot;in der Administrationskonsole.
+Nur Administratoren sind berechtigt, Profil-Verbindungen zu erstellen und zu ändern. Zum Verwalten von Profil-Verbindungen verwenden Sie die Registerkarte &quot;Profil&quot;in der Administrationskonsole.
