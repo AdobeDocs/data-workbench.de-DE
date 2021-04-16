@@ -1,14 +1,15 @@
 ---
 description: Die Elemente einer zählbaren Dimension können vom System gezählt werden.
-solution: Analytics
 title: Zählbare Dimensionen
-topic: Data workbench
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
+exl-id: c607c15d-de85-4daf-af76-79b460f51b38
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '685'
+ht-degree: 4%
 
 ---
-
 
 # Zählbare Dimensionen{#countable-dimensions}
 
@@ -29,7 +30,7 @@ Zählbare Dimensionen werden durch die folgenden Parameter definiert:
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -45,7 +46,7 @@ Zählbare Dimensionen werden durch die folgenden Parameter definiert:
   </tr> 
   <tr> 
    <td colname="col1"> Bedingung </td> 
-   <td colname="col2"> Die Bedingungen, unter denen das Eingabefeld zur Erstellung der zählbaren Dimension beiträgt. Wenn eine Bedingung angegeben ist, beschränkt sie die Gruppe der Protokolleinträge, die für die Dimension und alle untergeordneten Elemente im Datensatzschema sichtbar sind. </td> 
+   <td colname="col2"> Die Bedingungen, unter denen das Eingabefeld zur Erstellung der zählbaren Dimension beiträgt. Wenn eine Bedingung angegeben ist, beschränkt sie den Satz der Protokolleinträge, die für die Dimension und alle untergeordneten Elemente im DataSet-Schema sichtbar sind. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -55,22 +56,21 @@ Zählbare Dimensionen werden durch die folgenden Parameter definiert:
   </tr> 
   <tr> 
    <td colname="col1"> Schlüssel </td> 
-   <td colname="col2"> <p>Optional. Der Name des Felds, das als Schlüssel verwendet werden soll. Wenn Sie diesen Parameter definieren, besteht für jede Kombination eines Elements der übergeordneten zählbaren Dimension und eines eindeutigen Werts des als Schlüssel angegebenen Felds ein Element der zählbaren Dimension. </p> <p> Jedes Element der zählbaren Dimension muss sich auf einen zusammenhängenden Satz von Protokolleinträgen beziehen. Wenn die Protokolleinträge daher nicht nach Schlüssel geordnet sind, wird jedes Mal, wenn sich das Schlüsselfeld ändert, ein Element der zählbaren Dimension erstellt. Um dies zu verhindern, empfiehlt Adobe, einen eindeutigen Schlüssel zu verwenden, der zeitlich aufeinander abgestimmt ist. </p> </td> 
+   <td colname="col2"> <p>Optional. Der Name des Felds, das als Schlüssel verwendet werden soll. Wenn Sie diesen Parameter definieren, besteht für jede Kombination eines Elements der übergeordneten zählbaren Dimension und eines eindeutigen Werts des als Schlüssel angegebenen Felds ein Element der zählbaren Dimension. </p> <p> Jedes Element der zählbaren Dimension muss sich auf einen zusammenhängenden Satz von Protokolleinträgen beziehen. Wenn die Protokolleinträge daher nicht nach Schlüssel geordnet sind, wird jedes Mal, wenn sich das Schlüsselfeld ändert, ein Element der zählbaren Dimension erstellt. Um dies zu verhindern, empfiehlt Adobe die Verwendung eines eindeutigen Schlüssels, der zeitlich aufeinander abgestimmt ist. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Übergeordnet </td> 
-   <td colname="col2"> <p>Der Name der übergeordneten Dimension. Jede zählbare Dimension kann eine übergeordnete Dimension sein. Um eine Dimension zur Dimension der obersten Ebene im Schema des Datensatzes zu machen, setzen Sie den Parameter auf "root". Die definierte Dimension wird zur zählbaren Dimension für den Dataset. Wenn Sie beispielsweise mit Site arbeiten, ist die Besucherdimension die zählbare Dimension für Ihren Datensatz. </p> <p> <p>Hinweis:  Obwohl Ihre zählbare Dimension für den Stammordner nicht mit den Tracking-IDs in den Daten verknüpft werden muss, empfiehlt Adobe, die zählbare Dimension für den Stammordner des Datensatzes zu konfigurieren, um das Verfolgungs-ID-Feld (x-trackingid) als Schlüssel zu verwenden. Daher wird jedes Element der Stamm-Zählung mit dem eindeutigen Wert x-trackingid verknüpft und alle Daten zu jedem Element werden gruppiert. Wenden Sie sich an Adobe, wenn Sie Ihren Datensatz anders konfigurieren möchten. </p> </p> </td> 
+   <td colname="col2"> <p>Der Name der übergeordneten Dimension. Jede zählbare Dimension kann eine übergeordnete Dimension sein. Um eine Dimension zur Dimension der obersten Ebene im Schema des Datensatzes zu machen, setzen Sie den Parameter auf "root". Die definierte Dimension wird zur zählbaren Dimension für den Dataset. Wenn Sie beispielsweise mit Site arbeiten, ist die Dimension "Besucher"die zählbare Dimension für Ihren Datensatz. </p> <p> <p>Hinweis:  Obwohl Ihre zählbare Dimension für den Stammordner nicht mit den Tracking-IDs in den Daten verknüpft werden muss, empfiehlt Adobe, die zählbare Dimension des Datensatzes zu konfigurieren, um das Verfolgungs-ID-Feld (x-trackingid) als Schlüssel zu verwenden. Daher wird jedes Element der Stamm-Zählung mit dem eindeutigen Wert x-trackingid verknüpft und alle Daten zu jedem Element werden gruppiert. Wenn Sie Ihren Datensatz anders konfigurieren möchten, wenden Sie sich an die Adobe. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-In diesem Beispiel wird die Definition einer zählbaren Dimension anhand von Ereignisdaten veranschaulicht, die aus dem Website-Traffic erfasst wurden. Die zählbare Dimension zählt die Webkampagnenereignisse innerhalb einer bestimmten Sitzung. Es wird davon ausgegangen, dass alle E-Mail-Kampagnenressourcen vom Webserver mit &quot;email=&quot;als Teil der cs-uri-Abfrage angefordert werden. In diesem Beispiel ist die Häufigkeit, mit der der Besucher während einer bestimmten Sitzung auf eine E-Mail-Kampagne reagiert, von Interesse, nicht der tatsächliche Wert des Felds cs-uri-query(email).
+In diesem Beispiel wird die Definition einer zählbaren Dimension anhand von Ereignis-Daten veranschaulicht, die aus dem Website-Traffic erfasst wurden. Die zählbare Dimension zählt die Ereignis der Web-Kampagne innerhalb einer bestimmten Sitzung. Es wird davon ausgegangen, dass alle E-Mail-Kampagnen vom Webserver mit &quot;email=&quot;als Teil der cs-uri-Abfrage angefordert werden. In diesem Beispiel ist die Häufigkeit, mit der der Besucher während einer bestimmten Sitzung auf eine E-Mail-Kampagne antwortet, von Interesse, nicht der tatsächliche Wert des Felds &quot;cs-uri-Abfrage(E-Mail)&quot;.
 
 ![](assets/cfg_Transformation_Dim_Countable.png)
 
-In diesem Beispiel wird auch die Definition einer zählbaren Dimension anhand von Ereignisdaten veranschaulicht, die aus dem Website-Traffic gesammelt wurden, es gibt jedoch einen definierten Schlüsselparameter. Die zählbare Dimension &quot;Sitzung&quot;verwendet das Feld mit dem X-Sitzungsschlüssel als Schlüssel. (Das Feld x-session-key ist die Ausgabe der [!DNL Sessionize] Transformation und hat einen eindeutigen Wert für jede Sitzung.) Jede eindeutige Kombination eines Elements der Besucherdimension (übergeordnetes Element) und des Felds x-Sitzung-Schlüssel ist ein Element der Sitzungsdimension.
+In diesem Beispiel wird auch die Definition einer zählbaren Dimension anhand von Ereignis-Daten veranschaulicht, die aus dem Website-Traffic gesammelt wurden, jedoch über einen definierten Schlüsselparameter verfügen. Die zählbare Dimension &quot;Sitzung&quot;verwendet das Feld mit dem X-Sitzungsschlüssel als Schlüssel. (Das Feld x-session-key ist die Ausgabe der [!DNL Sessionize]-Transformation und hat einen eindeutigen Wert für jede Sitzung.) Jede eindeutige Kombination eines Elements der Dimension &quot;Besucher&quot;(das übergeordnete Element) und des Felds &quot;x-session-key&quot;ist ein Element der Dimension &quot;Sitzung&quot;.
 
 ![](assets/cfg_Transformation_Dim_Countable2.png)
-
