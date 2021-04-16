@@ -1,18 +1,19 @@
 ---
-description: Durch die Auswahl von Elementen in einer Visualisierung wird der Datensatz dynamisch gefiltert.
-solution: Analytics
-title: Treffen von Auswahlen in Visualisierungen
-topic: Data workbench
+description: Beim Auswählen von Elementen innerhalb einer Visualisierung wird der Datensatz dynamisch Filter.
+title: Auswahlen von Elementen in Visualisierungen
 uuid: 3900354f-826b-41e8-9bc2-e4856928bad5
+exl-id: bb1dd7e4-a9f8-48b5-a12d-433c601b455b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 3%
 
 ---
 
+# Auswahlen von Elementen in Visualisierungen{#make-selections-in-visualizations}
 
-# Treffen von Auswahlen in Visualisierungen{#make-selections-in-visualizations}
-
-Durch die Auswahl von Elementen in einer Visualisierung wird der Datensatz dynamisch gefiltert.
+Beim Auswählen von Elementen innerhalb einer Visualisierung wird der Datensatz dynamisch Filter.
 
 Wenn Sie eine Auswahl in einer Visualisierung vornehmen, werden alle anderen Visualisierungen im Arbeitsbereich automatisch aktualisiert, um die Daten widerzuspiegeln, die nur mit den ausgewählten Elementen verknüpft sind.
 
@@ -20,7 +21,7 @@ Der folgende Arbeitsbereich zeigt eine Filmtabelle, in der der Film *Cocktail* a
 
 ![](assets/wsp_selection_Basic.png)
 
-Wie im Beispiel oben gezeigt, wird bei einer Auswahl ein Schein um die Visualisierung und die nicht ausgewählten Elemente innerhalb dieses Visualisierungsabstands angezeigt. Um den Vergleich mit dem vollständigen Datensatz zu erleichtern, werden im Balkendiagramm schmale weiße Linien, die als Benchmarks bezeichnet werden, angezeigt, um die Form der ursprünglichen, ungefilterten Daten zu kennzeichnen. Weitere Informationen zu Benchmarks finden Sie unter [Benchmarks](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914).
+Wie im Beispiel oben gezeigt, wird bei einer Auswahl ein Schein um die Visualisierung und die nicht ausgewählten Elemente innerhalb dieses Visualisierungsabstands angezeigt. Um den Vergleich mit dem vollständigen Datensatz zu erleichtern, werden im Balkendiagramm schmale weiße Linien, die als Benchmarks bezeichnet werden, angezeigt, um die Form der ursprünglichen, ungefilterten Daten zu kennzeichnen. Weitere Informationen zu Benchmarks finden Sie unter [Grundlegendes zu Benchmarks](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914).
 
 **So treffen Sie eine Auswahl**
 
@@ -32,7 +33,7 @@ Verwenden Sie die folgenden Maus- und Tastenfolgen, um das/die gewünschte(n) El
 |---|---|
 | Auswählen eines einzelnen Elements | Klicken Sie auf |
 | Auswählen eines Elementbereichs | Klicken und Ziehen |
-| Element zur aktuellen Auswahl hinzufügen | Strg+Klicken |
+| hinzufügen eines Elements zur aktuellen Auswahl | Strg+Klicken |
 | Löschen einer einzelnen Auswahl | Umschalt+Klicken |
 | Alle Auswahlen löschen (d. h. alle Elemente erneut auswählen) | Klicken Sie mit der rechten Maustaste auf einen beliebigen Wert in der Visualisierung |
 
@@ -44,4 +45,3 @@ Verwenden Sie die folgenden Maus- und Tastenfolgen, um eine Auswahl zu löschen:
 |---|---|
 | Löschen einer einzelnen Auswahl | Umschalt+Klicken |
 | Alle Auswahlen löschen (d. h. alle Elemente erneut auswählen) | Klicken Sie mit der rechten Maustaste auf einen beliebigen Wert in der Visualisierung |
-
