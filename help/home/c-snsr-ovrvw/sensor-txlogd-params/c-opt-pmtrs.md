@@ -1,16 +1,15 @@
 ---
 description: Informationen zu optionalen Sensor txlogd.conf-Dateiparametern.
-solution: Analytics
 title: Optionale Parameter
 uuid: 8515a571-93ce-49cd-9ded-c9273259d0ee
+exl-id: 5141f215-979c-4eb8-8c2c-94eef5815743
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 1%
 
 ---
-
 
 # Optionale Parameter{#optional-parameters}
 
@@ -26,7 +25,7 @@ Informationen zu optionalen Sensor txlogd.conf-Dateiparametern.
  <tbody> 
   <tr> 
    <td colname="col1"> AddressFilter </td> 
-   <td colname="col2"> <p>Ermöglicht das Filtern bestimmter IP-Adressen. </p> <p>Wenn Sie eine bestimmte Adresse filtern, wird ein "Paket"nicht protokolliert. Durch diese Funktion werden interne oder überwachte Agenten vor der Protokollverarbeitung eliminiert, wodurch die Protokollverarbeitung beschleunigt und die Datenspeicherung von Daten verringert wird. Sie können beim Festlegen von Adressen Platzhalter verwenden. </p> <p>Beispiel: <span class="filepath"> AddressFilter 10.0.000</span> </p> </td> 
+   <td colname="col2"> <p>Ermöglicht das Filtern bestimmter IP-Adressen. </p> <p>Wenn Sie eine bestimmte Adresse filtern, wird ein "Paket"nicht protokolliert. Durch diese Funktion werden interne oder überwachte Agenten vor der Protokollverarbeitung eliminiert, wodurch die Protokollverarbeitung beschleunigt und die Datenspeicherung von Daten verringert wird. Sie können beim Festlegen von Adressen Platzhalter verwenden. </p> <p>Beispiel: <span class="filepath"> AddressFilter 10.0.0.000</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ContentFilterInclude </p> <p>ContentFilterExclude </p> </td> 
@@ -34,7 +33,7 @@ Informationen zu optionalen Sensor txlogd.conf-Dateiparametern.
   </tr> 
   <tr> 
    <td colname="col1"> DebugLogPath </td> 
-   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Aktiviert die Debug-Protokollierung für das Webmodul und den Transmitter. </p> <p>Sie verwenden diesen Parameter, wenn der <span class="wintitle"> Sensor</span> nicht richtig funktioniert. Nachdem dieser Parameter festgelegt wurde, müssen Sie eine leere Datei am angegebenen Pfad erstellen und für alle Benutzer Schreibrechte festlegen. Beispiel (innerhalb einer Unix-Shell auf dem Webserver): 
+   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Aktiviert die Debug-Protokollierung für das Webmodul und den Transmitter. </p> <p>Sie verwenden diesen Parameter, wenn der Sensor <span class="wintitle"></span> nicht richtig funktioniert. Nachdem dieser Parameter festgelegt wurde, müssen Sie eine leere Datei am angegebenen Pfad erstellen und für alle Benutzer Schreibrechte festlegen. Beispiel (innerhalb einer Unix-Shell auf dem Webserver): 
      <ul id="ul_7A067014A78048BF9D2F23DC66FF9E24"> 
       <li id="li_11C51EB9B9CC431585ECE9E8648F6122"><span class="filepath"> % cd /var/log</span> </li> 
       <li id="li_C56B2B5D49A543DBB258C5DE099B4AE5"><span class="filepath"> % touch vslog.txt</span> </li> 
@@ -76,7 +75,7 @@ Informationen zu optionalen Sensor txlogd.conf-Dateiparametern.
   </tr> 
   <tr> 
    <td colname="col1"> LogAllNewUsers </td> 
-   <td colname="col2"> <p>Legt fest, ob der erste Klick eines neuen Benutzers protokolliert wird, selbst wenn der Benutzer einen Dokument-Typ anfordert, der vom ContentFilterExclude-Parameter herausgefiltert wird. </p> <p>Die Standardeinstellung ist "Nein". </p> <p>Normalerweise werden Bilddateien vom ContentFilterExclude-Parameter herausgefiltert. Wenn LogAllNewUsers auf "yes"gesetzt ist und das erste Dokument, das ein neuer Benutzer vom Server erhält, ein Image ist, wird diese Anforderung protokolliert. Wenn der Parameter LogAllNewUsers entweder auf "no"oder gar nicht eingestellt ist (und davon ausgegangen wird, dass Bilder vom ContentFilterExclude-Parameter herausgefiltert werden) und das erste Dokument, das ein neuer Benutzer vom Server erhält, ein Image ist, wird diese Anforderung nicht protokolliert. </p> <p>Beispiel: <span class="filepath"> LogAllNewUsers</span> </p> </td> 
+   <td colname="col2"> <p>Legt fest, ob der erste Klick eines neuen Benutzers protokolliert wird, selbst wenn der Benutzer einen Dokument-Typ anfordert, der vom ContentFilterExclude-Parameter herausgefiltert wird. </p> <p>Die Standardeinstellung ist "Nein". </p> <p>Normalerweise werden Bilddateien vom ContentFilterExclude-Parameter herausgefiltert. Wenn LogAllNewUsers auf "yes"gesetzt ist und das erste Dokument, das ein neuer Benutzer vom Server erhält, ein Image ist, wird diese Anforderung protokolliert. Wenn der Parameter LogAllNewUsers entweder auf "no"oder gar nicht eingestellt ist (und davon ausgegangen wird, dass Bilder vom ContentFilterExclude-Parameter herausgefiltert werden) und das erste Dokument, das ein neuer Benutzer vom Server erhält, ein Image ist, wird diese Anforderung nicht protokolliert. </p> <p>Beispiel: <span class="filepath"> LogAllNewUsers no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> MaxPageLoadTime </td> 
@@ -84,19 +83,19 @@ Informationen zu optionalen Sensor txlogd.conf-Dateiparametern.
   </tr> 
   <tr> 
    <td colname="col1"> PrivacyID </td> 
-   <td colname="col2"> <p>Ermöglicht die Deaktivierung der Verfolgung von Besuchern, die zur Einhaltung der Ausschluss-Richtlinien verwendet werden können. </p> <p>Bei Aktivierung protokolliert <span class="wintitle"> Sensor</span> kein "Paket"für Besucher, deren V1st-Cookie auf die angegebene PrivacyID eingestellt ist. Da für diese Besucher keine Informationen protokolliert werden, werden keine Informationen zu diesen Besuchern zur Verarbeitung an den <span class="keyword"> Data Workbench-Server</span> gesendet. </p> <p>Um diese Funktion zu aktivieren, müssen Sie die folgenden Schritte ausführen: 
+   <td colname="col2"> <p>Ermöglicht die Deaktivierung der Verfolgung von Besuchern, die zur Einhaltung der Ausschluss-Richtlinien verwendet werden können. </p> <p>Ist diese Option aktiviert, protokolliert der Sensor</span> für keinen Besucher, dessen V1st-Cookie auf die angegebene PrivacyID eingestellt ist, ein "Paket". <span class="wintitle"> Da für diese Besucher keine Informationen protokolliert werden, werden keine Informationen zu diesen Besuchern zur Verarbeitung an den <span class="keyword">-Data Workbench-Server</span> gesendet. </span></p> <p>Um diese Funktion zu aktivieren, müssen Sie die folgenden Schritte ausführen: 
      <ol id="ol_5D658C5E4AB14F419029E0FFC52F1310"> 
-      <li id="li_BF056439F92148169BF592731264C3CD"> PrivacyID muss mit dem Wert 0 (zero) in der Datei <span class="filepath"> txlogd.conf</span> für den <span class="wintitle"> Sensor</span>definiert werden. <p>Beispiel: <span class="filepath"> PrivacyID 0</span> </p> </li> 
-      <li id="li_3E20F068C2F94512A92F284C80273B1C">Website-Eigentümer müssen Code schreiben, um Besucher-Cookies (V1st) so einzustellen, dass der Cookie-ID-Wert mit dem "<span class="filepath"> txlogd.conf</span>"definierten PrivacyID-Wert übereinstimmt. </li> 
+      <li id="li_BF056439F92148169BF592731264C3CD"> PrivacyID muss mit dem Wert 0 (zero) in der Datei <span class="filepath"> txlogd.conf</span> für den Sensor<span class="wintitle"></span> definiert werden. <p>Beispiel: <span class="filepath"> PrivacyID 0</span> </p> </li> 
+      <li id="li_3E20F068C2F94512A92F284C80273B1C">Website-Eigentümer müssen Code schreiben, um Besucher-Cookies (V1st) so einzustellen, dass der Cookie-ID-Wert mit dem Wert der PrivacyID übereinstimmt, der definiert wurde "<span class="filepath"> txlogd.conf</span>". </li> 
      </ol> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SiteTest </td> 
-   <td colname="col2"> <p>Ort, an den der Sender (txlogd) regelmäßig Anfragen sendet, um zu sehen, ob die Website korrekt funktioniert. </p> <p>Beachten Sie, dass der Speicherort im folgenden Format und nicht als URL angegeben wird: </p> <p>http,<i>serverAddress,port/resource</i> </p> <p>wobei <i>serverAddress</i> Servername oder IP-Adresse ist, <i>port</i> der HTTP-Listening-Anschluss des Servers und <i>resource</i> die spezifische Ressource, die angefordert werden soll (kann eine Abfrage-Zeichenfolge enthalten). </p> <p>Sie können mehrere SiteTest-Zeilen angeben. </p> <p>Beispiel: <span class="filepath"> SiteTest http,localhost,80,/test.html</span> </p> <p> <p>Hinweis:  Derzeit wird nur HTTP unterstützt. </p> </p> </td> 
+   <td colname="col2"> <p>Ort, an den der Sender (txlogd) regelmäßig Anfragen sendet, um zu sehen, ob die Website korrekt funktioniert. </p> <p>Beachten Sie, dass der Speicherort im folgenden Format und nicht als URL angegeben wird: </p> <p>http,<i>serverAddress,port/resource</i> </p> <p>wobei <i>serverAddress</i> Servername oder IP-Adresse ist, <i>port</i> der HTTP-Listening-Anschluss des Servers ist und <i>resource</i> die gewünschte Ressource ist (kann eine Abfrage-Zeichenfolge enthalten). </p> <p>Sie können mehrere SiteTest-Zeilen angeben. </p> <p>Beispiel: <span class="filepath"> SiteTest http,localhost,80,/test.html</span> </p> <p> <p>Hinweis:  Derzeit wird nur HTTP unterstützt. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> TrackingCookie </td> 
-   <td colname="col2"> <p>Der Name des im Browser des Besuchers eingestellten Cookies. </p> <p>Der Standardwert ist "v1st". </p> <p>Beispiel: <span class="filepath"> TrackingCookie v1</span> </p> </td> 
+   <td colname="col2"> <p>Der Name des im Browser des Besuchers eingestellten Cookies. </p> <p>Der Standardwert ist "v1st". </p> <p>Beispiel: <span class="filepath"> TrackingCookie v1st</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> VerifyCertName </td> 
@@ -115,15 +114,15 @@ Informationen zu optionalen Sensor txlogd.conf-Dateiparametern.
  <tbody> 
   <tr> 
    <td colname="col1"> IISCaptureBytesSent </td> 
-   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den IIS- <span class="wintitle"> Sensor</span> an, welcher von zwei möglichen Protokollierungs-"Haken" zur Protokollierung eines Pakets verwendet werden sollte </p> <p>Verwenden Sie diesen Parameter, wenn der IIS- <span class="wintitle"> Sensor</span> die Pakete nicht korrekt protokolliert. Dieser Parameter wurde auf "off"gesetzt, wenn der standardmäßige Protokollierungshaken nicht ordnungsgemäß funktioniert hat. Die Standardeinstellung ist "on". </p> <p>Beispiel: <span class="filepath"> IISCaptureBytesSent on</span> </p> </td> 
+   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den IIS <span class="wintitle">-Sensor</span> an, welcher von zwei möglichen Protokollierungs-"Haken" zur Protokollierung eines Pakets verwendet werden soll </p> <p>Verwenden Sie diesen Parameter, wenn der IIS <span class="wintitle"> Sensor</span> die Pakete nicht korrekt protokolliert. Dieser Parameter wurde auf "off"gesetzt, wenn der standardmäßige Protokollierungshaken nicht ordnungsgemäß funktioniert hat. Die Standardeinstellung ist "on". </p> <p>Beispiel: <span class="filepath"> IISCaptureBytesSent on</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> IISUseAlternateHandler </td> 
-   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den <span class="wintitle"> Sensor</span> an, welcher von zwei möglichen "Haken" verwendet werden soll, um das v1st-Cookie einzustellen. </p> <p>Sie verwenden diesen Parameter, wenn der IIS- <span class="wintitle"> Sensor</span> das v1st-Cookie nicht korrekt einstellt. Dieser Parameter wird auf "yes"gesetzt, wenn der Standard-Haken das v1st-Cookie nicht korrekt eingestellt hat. Die Standardeinstellung ist "Nein". </p> <p>Beispiel: <span class="filepath"> IISUseAlternateHandler</span> </p> </td> 
+   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den Sensor<span class="wintitle"> an, welcher von zwei möglichen "Haken"zum Setzen des v1. Cookies verwendet werden soll.</span> </p> <p>Sie verwenden diesen Parameter, wenn der IIS <span class="wintitle"> Sensor</span> das v1. Cookie nicht korrekt einstellt. Dieser Parameter wird auf "yes"gesetzt, wenn der Standard-Haken das v1st-Cookie nicht korrekt eingestellt hat. Die Standardeinstellung ist "Nein". </p> <p>Beispiel: <span class="filepath"> IISUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>NewUserCacheControl </p> <p>CacheControl </p> </td> 
-   <td colname="col2"> <p>Standardmäßig sendet <span class="wintitle"> Sensor</span> bei jeder Anforderung die Cache-Steuerungs-Antwortheader. Wenn die Cachesteuerungs-Funktion aktiviert ist, sendet <span class="wintitle"> Sensor</span> einen abgelaufenen Header mit dem Wert Thu, 01 Dec 1994 16:00:00 GMT an den Browser. </p> <p>Sie können die Antwortzeichenfolgen nach Bedarf ändern, indem Sie die folgenden beiden Zeilen in der Datei <span class="filepath"> txlogd.conf</span> bearbeiten: </p> <p> <span class="filepath"> NewUserCacheControl</span> <i>&lt;<span class="filepath"> string1</span>&gt;</i> </p> <p> <span class="filepath"> CacheControl</span> <i>&lt;<span class="filepath"> string2</span>&gt;</i> </p> <p>Beispiel:  </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl privat,max-age=0,must-revalidate</span> </p> <p>Um das Senden von Cache-Steuerelement-Antwort-Kopfzeilen zu deaktivieren, geben Sie für jede Zeile einen Bindestrich ein: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> </td> 
+   <td colname="col2"> <p>Standardmäßig sendet der Sensor <span class="wintitle"> Sensor</span> Cache-Kontroll-Antwortheader bei jeder Anforderung. Wenn die Cachesteuerungs-Funktion <span class="wintitle"> Sensor</span> aktiviert ist, wird ein Läuft ab-Header mit dem Wert Thu, 01. Dezember 1994 16:00:00 GMT an den Browser gesendet. </p> <p>Sie können die Antwortzeichenfolgen nach Bedarf ändern, indem Sie die folgenden beiden Zeilen in der Datei <span class="filepath"> txlogd.conf</span> bearbeiten: </p> <p> <span class="filepath"> </span> <i>&lt;&gt; NewUserCacheControlString1</span>&gt;</i><span class="filepath"> </span></p> <p> <span class="filepath"> </span> <i>&lt;&gt; CacheControlString2</span>&gt;</i><span class="filepath"> </span></p> <p>Beispiel:  </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl privat,max-age=0,must-revalidate</span> </p> <p>Um das Senden von Cache-Steuerelement-Antwort-Kopfzeilen zu deaktivieren, geben Sie für jede Zeile einen Bindestrich ein: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -138,15 +137,15 @@ Informationen zu optionalen Sensor txlogd.conf-Dateiparametern.
  <tbody> 
   <tr> 
    <td colname="col1"> ApacheUseAlternateHandler </td> 
-   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den <span class="wintitle"> Sensor</span> an, welcher von zwei möglichen "Haken" verwendet werden soll, um das v1st-Cookie einzustellen. </p> <p>Sie verwenden diesen Parameter, wenn der Apache- <span class="wintitle"> Sensor</span> das v1st-Cookie nicht korrekt einstellt. Dieser Parameter wird auf "yes"gesetzt, wenn der Standard-Haken das v1st-Cookie nicht korrekt eingestellt hat. Die Standardeinstellung ist "Nein". </p> <p>Beispiel: <span class="filepath"> ApacheUseAlternateHandler</span> </p> </td> 
+   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den Sensor<span class="wintitle"> an, welcher von zwei möglichen "Haken"zum Setzen des v1. Cookies verwendet werden soll.</span> </p> <p>Sie verwenden diesen Parameter, wenn der Apache <span class="wintitle"> Sensor</span> das v1st-Cookie nicht korrekt einstellt. Dieser Parameter wird auf "yes"gesetzt, wenn der Standard-Haken das v1st-Cookie nicht korrekt eingestellt hat. Die Standardeinstellung ist "Nein". </p> <p>Beispiel: <span class="filepath"> ApacheUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ApacheUseTwoHandlers </td> 
-   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den <span class="wintitle"> Sensor</span> an, zu versuchen, das v1st-Cookie in beiden Haken einzustellen. </p> <p>Sie verwenden diesen Parameter, wenn der Apache- <span class="wintitle"> Sensor</span> das v1st-Cookie nicht korrekt einstellt. Die Standardeinstellung ist "Ja". </p> <p>Wenn "ja"festgelegt ist und das v1st-Cookie im ersten Haken nicht korrekt gesetzt ist, wird der zweite Haken verwendet. Bei Festlegung auf "Nein"würden Sie den ApacheUseAlternateHandler-Parameter so einstellen, dass er angibt, welcher Haken zum Setzen des v1st-Cookies verwendet werden soll. </p> <p>Beispiel: <span class="filepath"> ApacheUseBeidesHandlers yes</span> </p> </td> 
+   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den Sensor<span class="wintitle"> an, den v1/&gt;-Cookie in beiden Haken einzustellen.</span> </p> <p>Sie verwenden diesen Parameter, wenn der Apache <span class="wintitle"> Sensor</span> das v1st-Cookie nicht korrekt einstellt. Die Standardeinstellung ist "Ja". </p> <p>Wenn "ja"festgelegt ist und das v1st-Cookie im ersten Haken nicht korrekt gesetzt ist, wird der zweite Haken verwendet. Bei Festlegung auf "Nein"würden Sie den ApacheUseAlternateHandler-Parameter so einstellen, dass er angibt, welcher Haken zum Setzen des v1st-Cookies verwendet werden soll. </p> <p>Beispiel: <span class="filepath"> ApacheUseBeidesHandlers yes</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>NewUserCacheControl </p> <p>CacheControl </p> </td> 
-   <td colname="col2"> <p>Standardmäßig sendet <span class="wintitle"> Sensor</span> bei jeder Anforderung die Cache-Steuerungs-Antwortheader. Wenn die Cachesteuerungs-Funktion aktiviert ist, sendet <span class="wintitle"> Sensor</span> einen abgelaufenen Header mit dem Wert Thu, 01 Dec 1994 16:00:00 GMT an den Browser. </p> <p>Sie können die Antwortzeichenfolgen nach Bedarf ändern, indem Sie die folgenden beiden Zeilen in der Datei <span class="filepath"> txlogd.conf</span> bearbeiten: </p> <p> <span class="filepath"> NewUserCacheControl</span> <i>&lt;<span class="filepath"> string1</span>&gt;</i> </p> <p> <span class="filepath"> CacheControl</span> <i>&lt;<span class="filepath"> string2</span>&gt;</i> </p> <p>Beispiel:  </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl privat,max-age=0,must-revalidate</span> </p> <p>Um das Senden von Cache-Steuerelement-Antwort-Kopfzeilen zu deaktivieren, geben Sie für jede Zeile einen Bindestrich ein: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> <p> <p>Hinweis:  Adobe empfiehlt, diese Funktion nicht zu deaktivieren. </p> </p> </td> 
+   <td colname="col2"> <p>Standardmäßig sendet der Sensor <span class="wintitle"> Sensor</span> Cache-Kontroll-Antwortheader bei jeder Anforderung. Wenn die Cachesteuerungs-Funktion <span class="wintitle"> Sensor</span> aktiviert ist, wird ein Läuft ab-Header mit dem Wert Thu, 01. Dezember 1994 16:00:00 GMT an den Browser gesendet. </p> <p>Sie können die Antwortzeichenfolgen nach Bedarf ändern, indem Sie die folgenden beiden Zeilen in der Datei <span class="filepath"> txlogd.conf</span> bearbeiten: </p> <p> <span class="filepath"> </span> <i>&lt;&gt; NewUserCacheControlString1</span>&gt;</i><span class="filepath"> </span></p> <p> <span class="filepath"> </span> <i>&lt;&gt; CacheControlString2</span>&gt;</i><span class="filepath"> </span></p> <p>Beispiel:  </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl privat,max-age=0,must-revalidate</span> </p> <p>Um das Senden von Cache-Steuerelement-Antwort-Kopfzeilen zu deaktivieren, geben Sie für jede Zeile einen Bindestrich ein: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> <p> <p>Hinweis:  Adobe empfiehlt, diese Funktion nicht zu deaktivieren. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -161,12 +160,11 @@ Informationen zu optionalen Sensor txlogd.conf-Dateiparametern.
  <tbody> 
   <tr> 
    <td colname="col1"> ApacheUseAlternateHandler </td> 
-   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den <span class="wintitle"> Sensor</span> an, welcher von zwei möglichen "Haken" verwendet werden soll, um das v1st-Cookie einzustellen. </p> <p>Sie verwenden diesen Parameter, wenn der Apache- <span class="wintitle"> Sensor</span> das v1st-Cookie nicht korrekt einstellt. Dieser Parameter wird auf "yes"gesetzt, wenn der Standard-Haken das v1st-Cookie nicht korrekt eingestellt hat. Die Standardeinstellung ist "Nein". </p> <p>Beispiel: <span class="filepath"> ApacheUseAlternateHandler</span> </p> </td> 
+   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den Sensor<span class="wintitle"> an, welcher von zwei möglichen "Haken"zum Setzen des v1. Cookies verwendet werden soll.</span> </p> <p>Sie verwenden diesen Parameter, wenn der Apache <span class="wintitle"> Sensor</span> das v1st-Cookie nicht korrekt einstellt. Dieser Parameter wird auf "yes"gesetzt, wenn der Standard-Haken das v1st-Cookie nicht korrekt eingestellt hat. Die Standardeinstellung ist "Nein". </p> <p>Beispiel: <span class="filepath"> ApacheUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ApacheUseTwoHandlers </td> 
-   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den <span class="wintitle"> Sensor</span> an, zu versuchen, das v1st-Cookie in beiden Haken einzustellen. </p> <p>Sie verwenden diesen Parameter, wenn der Apache- <span class="wintitle"> Sensor</span> das v1st-Cookie nicht korrekt einstellt. Die Standardeinstellung ist "Ja". </p> <p>Wenn "ja"festgelegt ist und das v1st-Cookie im ersten Haken nicht korrekt gesetzt ist, wird der zweite Haken verwendet. Bei Festlegung auf "Nein"würden Sie den ApacheUseAlternateHandler-Parameter so einstellen, dass er angibt, welcher Haken zum Setzen des v1st-Cookies verwendet werden soll. </p> <p>Beispiel: <span class="filepath"> ApacheUseBeidesHandlers yes</span> </p> </td> 
+   <td colname="col2"> <p>Legen Sie diesen Parameter nur beim Arbeiten mit Adobe Consulting Services fest. </p> <p>Weist den Sensor<span class="wintitle"> an, den v1/&gt;-Cookie in beiden Haken einzustellen.</span> </p> <p>Sie verwenden diesen Parameter, wenn der Apache <span class="wintitle"> Sensor</span> das v1st-Cookie nicht korrekt einstellt. Die Standardeinstellung ist "Ja". </p> <p>Wenn "ja"festgelegt ist und das v1st-Cookie im ersten Haken nicht korrekt gesetzt ist, wird der zweite Haken verwendet. Bei Festlegung auf "Nein"würden Sie den ApacheUseAlternateHandler-Parameter so einstellen, dass er angibt, welcher Haken zum Setzen des v1st-Cookies verwendet werden soll. </p> <p>Beispiel: <span class="filepath"> ApacheUseBeidesHandlers yes</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
