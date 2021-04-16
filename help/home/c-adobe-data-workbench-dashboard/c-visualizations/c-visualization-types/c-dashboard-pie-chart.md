@@ -1,16 +1,17 @@
 ---
-description: 'null'
-solution: Analytics
-title: Kreisdiagramm
-topic: Data workbench
+description: Tortendiagramm
+title: Tortendiagramm
 uuid: 94387e7f-ce54-44fc-bfb8-b079e59aee02
+exl-id: 7f0876cc-a7f6-4cca-b09e-b6d9836b1cce
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '95'
+ht-degree: 6%
 
 ---
 
-
-# Kreisdiagramm{#pie-chart}
+# Tortendiagramm{#pie-chart}
 
 Kreisdiagrammdarstellungen ermöglichen Ihnen die Anzeige relativer Prozentwerte der Metrikwerte für eine begrenzte Anzahl von Dimensionen. Mit einem Kreisdiagramm können bis zu 20 eindeutige Datenelemente gleichzeitig im Diagramm angezeigt werden. Jeder Keil des Kreisdiagramms stellt eine Dimension im Datensatz zusammen mit seinem Prozentwert dar. Jeder Prozentsatz wird relativ zu den Metrikwerten der anderen im Kreisdiagramm angezeigten Dimensionen berechnet, bei denen es sich möglicherweise nicht unbedingt um den gesamten Datensatz handelt.
 
