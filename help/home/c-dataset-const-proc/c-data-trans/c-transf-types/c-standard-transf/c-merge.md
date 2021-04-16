@@ -1,14 +1,15 @@
 ---
 description: Die Merge-Transformation nimmt die Werte aus dem Eingabefeld (normalerweise ein Vektor von Zeichenfolgen), kombiniert sie in eine einzige Zeichenfolge, die durch das angegebene Trennzeichen getrennt ist, und platziert die resultierende Zeichenfolge in das angegebene Ausgabefeld.
-solution: Analytics
-title: Zusammenführen
-topic: Data workbench
+title: Merge
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
+exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 4%
 
 ---
-
 
 # Merge{#merge}
 
@@ -19,7 +20,7 @@ Die Merge-Transformation nimmt die Werte aus dem Eingabefeld (normalerweise ein 
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -39,13 +40,13 @@ Die Merge-Transformation nimmt die Werte aus dem Eingabefeld (normalerweise ein 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Standardeinstellung </td> 
+   <td colname="col1"> Standard </td> 
    <td colname="col2"> Der Standardwert, der verwendet wird, wenn die Bedingung erfüllt ist und der Eingabewert nicht verfügbar ist. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Trennzeichen </td> 
-   <td colname="col2"> <p>String, der verwendet wird, um die einzelnen Elemente des Eingabestring-Vektors in der einzelnen Ausgabestrategie zu trennen. </p> <p> Wenn Sie die Strg-Taste gedrückt halten und mit der rechten Maustaste in den Trennzeichner-Parameter klicken, wird ein Menü " <span class="wintitle"> Einfügen</span> "angezeigt. Dieses Menü enthält eine Liste von Sonderzeichen, die häufig als Trennzeichen verwendet werden. </p> </td> 
+   <td colname="col2"> <p>String, der verwendet wird, um die einzelnen Elemente des Eingabestring-Vektors in der einzelnen Ausgabestrategie zu trennen. </p> <p> Wenn Sie die Strg-Taste gedrückt halten und mit der rechten Maustaste in den Trennzeichner-Parameter klicken, wird das Menü <span class="wintitle"> Einfügen</span> angezeigt. Dieses Menü enthält eine Liste von Sonderzeichen, die häufig als Trennzeichen verwendet werden. </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
