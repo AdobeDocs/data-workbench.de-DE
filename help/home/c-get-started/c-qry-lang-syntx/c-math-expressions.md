@@ -1,14 +1,15 @@
 ---
 description: Mit Data Workbench können Sie zusätzliche mathematische Berechnungen durchführen.
-solution: Analytics
 title: Syntax für mathematische Ausdrücke
-topic: Data workbench
 uuid: 63eee559-edfc-4efc-a6c8-66689d156701
+exl-id: a1433258-d3e8-4515-a1ae-00f9108e98c0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 15%
 
 ---
-
 
 # Syntax für mathematische Ausdrücke{#syntax-for-math-expressions}
 
@@ -31,13 +32,13 @@ Mathematische Funktionen können in Mathematik-Transformationen, Metrik-Editor-V
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Arckosinus </p> </td> 
-   <td colname="col02"> <p>acos() </p> </td> 
+   <td colname="col1"> <p>Arccosin </p> </td> 
+   <td colname="col02"> <p>acos( ) </p> </td> 
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Arcsin </p> </td> 
-   <td colname="col02"> <p>asin() </p> </td> 
+   <td colname="col02"> <p>asin( ) </p> </td> 
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
   <tr> 
@@ -77,7 +78,7 @@ Mathematische Funktionen können in Mathematik-Transformationen, Metrik-Editor-V
   </tr> 
   <tr> 
    <td colname="col1"> <p>sine </p> </td> 
-   <td colname="col02"> <p>sin() </p> </td> 
+   <td colname="col02"> <p>sin( ) </p> </td> 
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
   <tr> 
@@ -87,4 +88,3 @@ Mathematische Funktionen können in Mathematik-Transformationen, Metrik-Editor-V
   </tr> 
  </tbody> 
 </table>
-
