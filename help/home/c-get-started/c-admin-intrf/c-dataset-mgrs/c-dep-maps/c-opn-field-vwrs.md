@@ -1,16 +1,17 @@
 ---
 description: Informationen zum Öffnen eines field Viewers für eine Protokollquelle, Transformation oder erweiterte Dimension.
-solution: Analytics
-title: Öffnen eines field-Viewers
-topic: Data workbench
+title: Öffnen einer Feld-Viewers
 uuid: fcc839cd-21dc-4eb0-9b8e-55fc92e6d400
+exl-id: 32a7418e-ca31-4d56-89a4-11416135f3e2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 5%
 
 ---
 
-
-# Öffnen eines field-Viewers{#open-a-field-viewer}
+# Öffnen einer Feld-Viewers{#open-a-field-viewer}
 
 Informationen zum Öffnen eines field Viewers für eine Protokollquelle, Transformation oder erweiterte Dimension.
 
@@ -20,5 +21,4 @@ Informationen zum Öffnen eines field Viewers für eine Protokollquelle, Transfo
 
    >[!NOTE]
    >
-   >Um einen field Viewer zu öffnen, muss Ihr Data Workbench-Computer Netzwerkzugriff auf den Data Workbench-Server haben, auf dem sich der Datensatz befindet. Wenn sich Ihr Datensatz in einem Data Workbench-Servercluster befindet, muss Ihr Data Workbench-Computer Netzwerkzugriff auf den Master-Data Workbench-Server im Cluster haben.
-
+   >Um einen field Viewer zu öffnen, muss Ihr Data Workbench-Computer Netzwerkzugriff auf den Data Workbench-Server haben, auf dem sich der Datensatz befindet. Wenn sich Ihr Datensatz auf einem Servercluster der Data Workbench befindet, muss Ihr Data Workbench-Computer Netzwerkzugriff auf den Übergeordnet-Data Workbench-Server im Cluster haben.
