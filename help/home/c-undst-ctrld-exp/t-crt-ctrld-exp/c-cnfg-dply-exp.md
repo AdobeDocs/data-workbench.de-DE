@@ -2,16 +2,15 @@
 description: Nachdem Sie Ihre Ziel-, Hypothese- und Experimentdetails definiert und Ihre Testinhalte erstellt haben, müssen Sie Sensor konfigurieren, um das gesteuerte Experiment bereitzustellen.
 solution: Analytics,Analytics
 title: Konfigurieren und Implementieren des Experiments
-topic: Data workbench
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
+exl-id: 957c2ea2-72a5-4bb2-af1d-65187613c26d
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 1%
 
 ---
-
 
 # Konfigurieren und Implementieren des Experiments{#configuring-and-deploying-the-experiment}
 
@@ -19,7 +18,7 @@ Nachdem Sie Ihre Ziel-, Hypothese- und Experimentdetails definiert und Ihre Test
 
 ## Konfigurieren der Experimentkonfigurationsdatei {#section-037fe7dea9c94aee9cdc354dafdb7c03}
 
-Um das Experiment zu konfigurieren, müssen Sie die von der Adobe bereitgestellte Tabelle zur Testkonfiguration ( [!DNL TestExperiment.xls] standardmäßig benannt) ausfüllen. Diese Datei konfiguriert [!DNL Sensor] die Durchführung des Experiments und ist die Excel-Version der Textdatei, die Sie unter [Ändern des ExpFile-Parameters](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)angegeben haben.
+Um das Experiment zu konfigurieren, müssen Sie die von der Adobe bereitgestellte Tabelle zur Experimentkonfiguration (standardmäßig mit dem Namen [!DNL TestExperiment.xls]) ausfüllen. Diese Datei konfiguriert [!DNL Sensor] für das Experiment und ist die Excel-Version der Textdatei, die Sie unter [Ändern des ExpFile-Parameters](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28) angegeben haben.
 
 Diese Datei kann Informationen über mehrere Experimente enthalten, die gleichzeitig oder zu unterschiedlichen Zeitpunkten ausgeführt werden können und verschiedene Gruppen und Prozentsätze verwenden. Diese Experimente werden jedoch in keiner Weise korreliert.
 
@@ -37,9 +36,9 @@ Sie sollten diese Datei vor Beginn des Experiments abschließen und die Informat
 >
 >Ein Experiment ist sofort ungültig, wenn sich die Definition des Experiments ändert, nachdem das Experiment begonnen hat.
 
-1. Wenn Sie über Administratorzugriff auf Ihre Web- oder Anwendungsserver verfügen, navigieren Sie zum [!DNL Sensor] Installationsordner auf einem beliebigen [!DNL Sensor] Computer im Webcluster, um auf die [!DNL TestExperiment.xls] Datei zuzugreifen. Wenn Sie keinen Administratorzugriff haben, wenden Sie sich an Ihren Kundenbetreuer, um die [!DNL TestExperiment.xls] Datei anzufordern.
+1. Wenn Sie über Administratorzugriff auf Ihre Web- oder Anwendungsserver verfügen, navigieren Sie auf einem [!DNL Sensor]-Computer im Webcluster zum Installationsordner [!DNL Sensor], um auf die Datei [!DNL TestExperiment.xls] zuzugreifen. Wenn Sie keinen Administratorzugriff haben, wenden Sie sich an Ihren Kundenbetreuer, um die [!DNL TestExperiment.xls]-Adobe anzufordern.
 
-1. Öffnen Sie die [!DNL TestExperiment.xls] Datei (Sie können diese Datei bei Bedarf umbenennen) und füllen Sie die folgenden Felder aus:
+1. Öffnen Sie die Datei [!DNL TestExperiment.xls] (Sie können diese Datei bei Bedarf umbenennen) und füllen Sie die folgenden Felder aus:
 
 <table id="table_FDD6AE631C614F97AD7AE8829E53CCAC"> 
  <thead> 
@@ -51,25 +50,25 @@ Sie sollten diese Datei vor Beginn des Experiments abschließen und die Informat
  <tbody> 
   <tr> 
    <td colname="col1"> Experiment </td> 
-   <td colname="col2"> <p>Ein beschreibender Name für das Experiment. Jeder Experimentname muss eindeutig sein und darf keine Leerzeichen enthalten. </p> <p>Experimentnamen werden verwendet, wenn die Ergebnisse von Experimenten in <span class="keyword"> Insight angezeigt werden </span>. Die Namen werden in der ersten Hälfte der Elementnamen in der Dimension für kontrolliertes Experiment angezeigt. Die zweite Hälfte des Elementnamens ist der Gruppenname aus dem Feld Gruppe in dieser Datei. Jede Gruppe wird im folgenden Format mit dem Experimentnamen gefolgt vom Gruppennamen benannt: </p> <p><i>ExperimentName.Gruppenname</i> </p> <p>Beispiel: <span class="filepath"> New_Homepage.Control </span> </p> </td> 
+   <td colname="col2"> <p>Ein beschreibender Name für das Experiment. Jeder Experimentname muss eindeutig sein und darf keine Leerzeichen enthalten. </p> <p>Experimentnamen werden verwendet, wenn die Ergebnisse von Experimenten in <span class="keyword"> Insight </span> angezeigt werden. Die Namen werden in der ersten Hälfte der Elementnamen in der Dimension für kontrolliertes Experiment angezeigt. Die zweite Hälfte des Elementnamens ist der Gruppenname aus dem Feld Gruppe in dieser Datei. Jede Gruppe wird im folgenden Format mit dem Experimentnamen gefolgt vom Gruppennamen benannt: </p> <p><i>ExperimentName.Gruppenname</i> </p> <p>Beispiel: <span class="filepath"> New_Homepage.Control </span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Start </td> 
    <td colname="col2"> <p>Datum und Uhrzeit des Beginns des Experiments. Wenn Sie keine Werte eingeben, beginnt das Experiment unmittelbar nach der Bereitstellung der Datei. </p> <p>Format: MM/TT/JJJJ H:MM </p> 
     <ul id="ul_FB8B50C688584683AC2226FCBED40AF9"> 
      <li id="li_223EF962CFC64454965444E66284F670">Wenn Sie den Beginn leer lassen und die Stoppzeiten leer lassen, wird das Experiment unbegrenzt ausgeführt. </li> 
-     <li id="li_0544C9A98635418CAECD85B67F345772">Sie können Beginns- und Stoppzeiten frühzeitig festlegen. Daher können Sie alle Experimente für das nächste Jahr auf Wunsch gleichzeitig konfigurieren. </li> 
+     <li id="li_0544C9A98635418CAECD85B67F345772">Sie können die Beginns- und Stoppzeiten frühzeitig festlegen. Daher können Sie alle Experimente für das nächste Jahr auf Wunsch gleichzeitig konfigurieren. </li> 
      <li id="li_BDFBB74B1D134E57B37DC5C3457AA1A9">Beginns- und Stoppzeiten basieren auf der Systemzeit des Webservers. Ändert sich diese Uhr aus irgendeinem Grund, wird Ihr Experiment möglicherweise unerwartet Beginn oder beendet. </li> 
      <li id="li_3295FE5B2AC64B6CA90CC7F31B808EB9">Wenn Sie ein Experiment als Konfigurationsdateieintrag hinzufügen möchten, das Experiment jedoch in naher Zukunft nicht ausführen möchten, können Sie die Experimentinformationen mit dem Nummernzeichen "#"auskommentieren oder Beginn- und Stoppzeiten in der Vergangenheit definieren. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Stop </td> 
-   <td colname="col2"> <p>Datum und Uhrzeit des Endes des Experiments. Wenn das Enddatum und die Uhrzeit eintreten, <span class="wintitle"> beendet Sensor </span> das Senden der als Testgruppe identifizierten Cookie-Werte an die Test-URIs und sendet alle Cookies an die Kontrollgruppe-URIs. </p> <p>Format: MM/TT/JJJJ H:MM </p> <p>Siehe Hinweise zum <span class="wintitle"> Beginn- </span> Feld. </p> </td> 
+   <td colname="col2"> <p>Datum und Uhrzeit des Endes des Experiments. Wenn das Enddatum und die Endzeit eintreten, beendet der Sensor <span class="wintitle"> den Senden der als Testgruppe identifizierten Cookie-Werte an die Test-URIs und sendet alle Cookies an die Kontrollgruppen-URIs.</span> </p> <p>Format: MM/TT/JJJJ H:MM </p> <p>Siehe die Hinweise für das Feld <span class="wintitle"> Beginn </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Gruppe </td> 
-   <td colname="col2"> <p>Ein beschreibender Name für jede Gruppe von Besuchern im Experiment. Gruppennamen dürfen keine Leerzeichen enthalten. </p> <p>Gruppennamen werden verwendet, wenn die Ergebnisse von Experimenten in <span class="keyword"> Insight angezeigt werden </span>. Weitere Informationen finden Sie in der Beschreibung des Experimentfelds. </p> <p>Eine Kontrollgruppe kann implizit oder explizit definiert werden, basierend auf dem Wert, der in das Prozentfeld eingegeben wird. </p> <p> <p>Hinweis:  Um die Anzahl der Besucher zu erfüllen, die während des festgelegten Zeitraums erforderlich sind, damit der Versuch statistisch gültig ist, müssen Sie möglicherweise das Konfidenzniveau senken oder den Zeitraum erhöhen. Wenn Ihr Zeitraum z. B. fünf Tage beträgt, Ihr Konfidenzniveau bei 98 % liegt und die Anzahl der benötigten Besucher die für diesen Zeitraum erwartete Anzahl überschreitet, müssen Sie entweder den Zeitraum erhöhen oder das Konfidenzniveau verringern, bis die Anzahl der erwarteten Besucher die für ein statistisch gültiges Experiment erforderliche Anzahl übersteigt. </p> </p> </td> 
+   <td colname="col2"> <p>Ein beschreibender Name für jede Gruppe von Besuchern im Experiment. Gruppennamen dürfen keine Leerzeichen enthalten. </p> <p>Gruppennamen werden verwendet, wenn die Ergebnisse von Experimenten in <span class="keyword"> Insight </span> angezeigt werden. Weitere Informationen finden Sie in der Beschreibung des Experimentfelds. </p> <p>Eine Kontrollgruppe kann implizit oder explizit definiert werden, basierend auf dem Wert, der in das Prozentfeld eingegeben wird. </p> <p> <p>Hinweis:  Um die Anzahl der Besucher zu erfüllen, die während des festgelegten Zeitraums erforderlich sind, damit der Versuch statistisch gültig ist, müssen Sie möglicherweise das Konfidenzniveau senken oder den Zeitraum erhöhen. Wenn Ihr Zeitraum z. B. fünf Tage beträgt, Ihr Konfidenzniveau bei 98 % liegt und die Anzahl der benötigten Besucher die für diesen Zeitraum erwartete Anzahl überschreitet, müssen Sie entweder den Zeitraum erhöhen oder das Konfidenzniveau verringern, bis die Anzahl der erwarteten Besucher die für ein statistisch gültiges Experiment erforderliche Anzahl übersteigt. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Prozentsatz </td> 
@@ -77,7 +76,7 @@ Sie sollten diese Datei vor Beginn des Experiments abschließen und die Informat
   </tr> 
   <tr> 
    <td colname="col1"> Ursprüngliche URL </td> 
-   <td colname="col2"> <p>Der URI des zu entfernenden Inhalts, gefolgt von $. Bei diesem Wert wird zwischen Groß- und Kleinschreibung unterschieden. </p> <p>Format: index.asp$ </p> <p>Ursprüngliche URIs können mit einem Dollarzeichen ($) am Ende des URI angegeben werden, um anzugeben, dass eine exakte Übereinstimmung mit dem Dateinamen erforderlich ist. Der Ausdruck <span class="filepath"> /product/product_view.asp$ </span> stimmt beispielsweise nur mit der exakten Seite überein, während <span class="filepath"> /product mit jeder Seite im Verzeichnis </span> /product <span class="filepath"> </span> übereinstimmt und verwendet werden könnte, um die gesamte Unterstruktur neu zu ordnen. Ursprüngliche URL-Einträge, die das $-Zeichen am Ende des Dateinamens nicht angeben, werden vom Experiment ignoriert, es sei denn, der Parameter ExpPartialMatch wurde auf "on"gesetzt. Weitere Informationen zu diesem Parameter finden Sie unter <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> Modifizieren des ExpPartialMatch-Parameters (Optional) </a>. </p> <p>Die Funktion für das kontrollierte Experiment ignoriert alle an den URI-Stamm angehängten Zeichenfolgen der Abfrage. Die Seite </p> <p> <span class="filepath"> /product/product_view.asp?productid=53982 </span> ist kein gültiger URI, aber die Seite <span class="filepath"> /product/product_view.asp </span> ist ein gültiger URI. </p> </td> 
+   <td colname="col2"> <p>Der URI des zu entfernenden Inhalts, gefolgt von $. Bei diesem Wert wird zwischen Groß- und Kleinschreibung unterschieden. </p> <p>Format: index.asp$ </p> <p>Ursprüngliche URIs können mit einem Dollarzeichen ($) am Ende des URI angegeben werden, um anzugeben, dass eine exakte Übereinstimmung mit dem Dateinamen erforderlich ist. Der Ausdruck <span class="filepath"> /product/product_view.asp$ </span> stimmt beispielsweise nur mit dieser exakten Seite überein, während <span class="filepath"> /product </span> mit einer beliebigen Seite im Ordner <span class="filepath"> /product </span> übereinstimmt und verwendet werden könnte, um die gesamte Unterstruktur neu zu erstellen. Ursprüngliche URL-Einträge, die das $-Zeichen am Ende des Dateinamens nicht angeben, werden vom Experiment ignoriert, es sei denn, der Parameter ExpPartialMatch wurde auf "on"gesetzt. Weitere Informationen zu diesem Parameter finden Sie unter <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> Ändern des ExpPartialMatch-Parameters (Optional) </a>. </p> <p>Die Funktion für das kontrollierte Experiment ignoriert alle an den URI-Stamm angehängten Zeichenfolgen der Abfrage. Die Seite </p> <p> <span class="filepath"> /product/product_view.asp?productid=53982  </span> ist kein gültiger URI, aber die Seite  <span class="filepath"> /product/product_view.asp  </span> ist ein gültiger URI. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Entfernte URL </td> 
@@ -86,7 +85,7 @@ Sie sollten diese Datei vor Beginn des Experiments abschließen und die Informat
  </tbody> 
 </table>
 
-Die folgende Tabelle ist ein Beispiel für eine abgeschlossene [!DNL TextExperiment.xls] Tabelle:
+Das folgende Beispiel zeigt eine abgeschlossene Tabelle [!DNL TextExperiment.xls]:
 
 ![](assets/TestExperimentSpreadsheet.png)
 
@@ -101,7 +100,7 @@ Dieses Beispiel zeigt an, dass die Beginn für das Experiment &quot;New_Homepage
 >Obwohl die obige Beispieldatei eine explizite Kontrollgruppe definiert hat, ist es nicht erforderlich, eine Kontrollgruppe explizit zu definieren — erstellt das Experiment automatisch die Kontrollgruppe. Wenn die Summe der Prozentsätze für alle Gruppen in einem Experiment weniger als 100 % beträgt, wird Benutzern, die nicht in eine der expliziten Gruppen fallen, eine implizite Kontrollgruppe zugewiesen.
 
 1. Um Kommentare einzufügen, um weitere Informationen zu bestimmten Experimenten bereitzustellen, beginnen Sie die Zelle mit einem Nummernzeichen (#) und folgen Sie Ihren Kommentaren. Kommentare können an einer beliebigen Stelle in die Datei eingefügt werden.
-1. Nachdem Sie die Variablen im Arbeitsblatt für die Experimentkonfiguration abgeschlossen haben, speichern Sie die Änderungen und speichern Sie die Datei dann im tabulatorgetrennten Textformat ( [!DNL *.txt]) unter dem Namen, den Sie im Parameter ExpFile in der [!DNL Sensor] Konfigurationsdatei angegeben haben. See [Modifying the ExpFile Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
+1. Nachdem Sie die Variablen im Arbeitsblatt zur Experimentkonfiguration abgeschlossen haben, speichern Sie die Änderungen und speichern Sie die Datei dann im tabulatorgetrennten Textformat ( [!DNL *.txt]) unter dem Namen, den Sie im Parameter &quot;ExpFile&quot;in der Konfigurationsdatei [!DNL Sensor] angegeben haben. Siehe [Ändern des ExpFile-Parameters](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
    Im Folgenden finden Sie ein Beispiel für eine Textdatei mit einer Experimentkonfiguration:
 
@@ -115,13 +114,13 @@ Wenn Sie Beginns- und Stoppzeiten definiert haben, besteht kein Grund, ein Exper
 
 ## Bereitstellen der Konfigurationsdatei und Testinhalte {#section-34ff29649f584b93bc6129b75084b37c}
 
-Sie müssen die Experimentkonfigurationsdatei auf jedem Computer im Webcluster bereitstellen, auf dem ein [!DNL Sensor] und die an dem Experiment beteiligten Seiten bereitgestellt werden. Dazu verwenden Sie entweder ein manuelles Verfahren oder das vorhandene Content-Management-System.
+Sie müssen die Experimentkonfigurationsdatei auf jedem Computer im Webcluster bereitstellen, auf dem ein [!DNL Sensor] ausgeführt wird und die an dem Experiment beteiligten Seiten bereitgestellt werden. Dazu verwenden Sie entweder ein manuelles Verfahren oder das vorhandene Content-Management-System.
 
 **So stellen Sie Testinhalte bereit**
 
-* Verwenden Sie auf jeder Anwendung oder jedem Webserver, auf [!DNL Sensor] der Seiten bereitgestellt werden, die am Experiment beteiligt sind, Ihren vorhandenen Veröffentlichungsprozess, um den Testinhalt am entsprechenden Speicherort bereitzustellen.
+* Verwenden Sie auf jeder Anwendung oder jedem Webserver, auf der ein [!DNL Sensor] ausgeführt wird, das bzw. der Seiten bereitstellt, die am Experiment beteiligt sind, Ihren vorhandenen Veröffentlichungsprozess, um den Testinhalt am entsprechenden Speicherort bereitzustellen.
 
-   Wenn Sie z. B. die Testgruppenseite [!DNL index2.asp] im Testordner Ihrer Website veröffentlichen möchten ( [!DNL mysite.com]), veröffentlichen Sie die Datei in [!DNL www.mysite.com/test].
+   Wenn Sie beispielsweise die Testgruppenseite [!DNL index2.asp] im Testordner Ihrer Website ( [!DNL mysite.com]) veröffentlichen möchten, veröffentlichen Sie die Datei auf [!DNL www.mysite.com/test].
 
    >[!NOTE]
    >
@@ -129,6 +128,6 @@ Sie müssen die Experimentkonfigurationsdatei auf jedem Computer im Webcluster b
 
 **So stellen Sie Ihr Experiment bereit**
 
-* Platzieren Sie auf jeder Anwendung oder jedem Webserver, [!DNL Sensor] die bzw. der eine Seite bereitstellt, die am Experiment beteiligt ist, die Testkonfigurationstextdatei in dem Ordner, den Sie im Parameter ExpFile in der [!DNL Sensor] Konfigurationsdatei angegeben haben. See [Modifying the ExpFile Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
+* Platzieren Sie auf jeder Anwendung oder jedem Webserver, auf der ein [!DNL Sensor] ausgeführt wird, das bzw. der die an dem Experiment beteiligten Seiten beliefert, die Testkonfigurationstextdatei in dem Verzeichnis, das Sie im Parameter ExpFile in der Konfigurationsdatei [!DNL Sensor] angegeben haben. Siehe [Ändern des ExpFile-Parameters](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
 [!DNL Sensor] wählt nach dem Zufallsprinzip die Besucher der einzelnen Kontrollgruppen auf der Grundlage der in der Datei definierten Prozentsätze aus und stellt ihnen den Test- bzw. Testinhalt zur Verfügung.
