@@ -1,16 +1,17 @@
 ---
 description: Die Mathematik-Transformation ermöglicht die Verwendung von arithmetischen Operationen in Feldern in den Protokolleinträgen.
-solution: Analytics
-title: Mathematik
-topic: Data workbench
+title: Math
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
+exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 7%
 
 ---
 
-
-# Mathematik{#math}
+# Math{#math}
 
 Die Mathematik-Transformation ermöglicht die Verwendung von arithmetischen Operationen in Feldern in den Protokolleinträgen.
 
@@ -21,7 +22,7 @@ Die Vorgänge können Dezimalzahlen und Fließkommakonstanten enthalten.
   <tr> 
    <th colname="col1" class="entry"> Feld </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -42,7 +43,7 @@ Die Vorgänge können Dezimalzahlen und Fließkommakonstanten enthalten.
   </tr> 
   <tr> 
    <td colname="col1"> Ausdruck </td> 
-   <td colname="col2"> <p>Ein arithmetischer Ausdruck, der die Berechnung beschreibt, die durchgeführt werden soll. </p> <p> Sie können die unten aufgeführten Vorgänge und Funktionen verwenden und Feldnamen in den Ausdruck integrieren: </p> <p> Aktivitäten 
+   <td colname="col2"> <p>Ein arithmetischer Ausdruck, der die Berechnung beschreibt. </p> <p> Sie können die unten aufgeführten Vorgänge und Funktionen verwenden und Feldnamen in den Ausdruck integrieren: </p> <p> Betrieb 
      <ul id="ul_DB5915FADA0A41A3B11F1F48615F40A9">
       <li id="li_CA9EA97243F04760A81313C17EE057B3"> Addition (+) </li>
       <li id="li_908A272EBA2340098C20F22AA8D9ED26"> Subtraktion (-) </li>
@@ -70,8 +71,8 @@ Die Vorgänge können Dezimalzahlen und Fließkommakonstanten enthalten.
  </tbody> 
 </table>
 
-In diesem Beispiel, das Datenfelder verwendet, die aus dem Website-Traffic erfasst wurden, wird ein neues Feld namens x-page-duration berechnet, indem x-last-pv-timestamp von x-timestamp subtrahiert und dann 1 hinzugefügt wird. Die Ausgabe wird nur berechnet, wenn das benutzerdefinierte Feld x-last-pv-timestamp (das den Zeitstempel der letzten Seitenansicht eines Besuchers darstellt) ausgefüllt oder &quot;nicht leer&quot;ist.
+In diesem Beispiel, das Datenfelder verwendet, die aus dem Website-Traffic erfasst wurden, wird ein neues Feld namens x-page-duration berechnet, indem x-last-pv-timestamp von x-timestamp subtrahiert und dann 1 hinzugefügt wird. Die Ausgabe wird nur berechnet, wenn das benutzerdefinierte Feld x-last-pv-timestamp (das den Zeitstempel der letzten Ansicht eines Besuchers darstellt) ausgefüllt oder &quot;nicht leer&quot;ist.
 
 ![](assets/cfg_TransformationType_Math.png)
 
-Informationen zur [!DNL Not Empty] Bedingung finden Sie unter [Bedingungen](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).
+Weitere Informationen zur Bedingung [!DNL Not Empty] finden Sie unter [Bedingungen](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).
