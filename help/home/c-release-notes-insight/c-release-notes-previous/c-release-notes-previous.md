@@ -1,17 +1,18 @@
 ---
-description: Zeigen Sie die vorherigen Versionshinweise zu Data Workbench an.
-solution: Analytics
-title: Data Workbench 6.0 - Versionshinweise
-topic: Data workbench
+description: Ansicht der Versionshinweise zur vorherigen Data Workbench.
+title: Versionshinweise zu Data Workbench 6.0
 uuid: 36f518a1-7964-4380-9cfe-38950126bbb4
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '40'
+ht-degree: 20%
 
 ---
 
 
-# Data Workbench 6.0 Release Notes{#data-workbench-release-notes}
+# Versionshinweise zu Data Workbench 6.0{#data-workbench-release-notes}
 
-Zeigen Sie die vorherigen Versionshinweise zu Data Workbench an.
+Ansicht der Versionshinweise zur vorherigen Data Workbench.
 
-Siehe auch die [vorherigen Versionshinweise](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/c-release-notes-insight-600.html)zu Data Workbench.
+Siehe auch die Versionshinweise zur vorherigen Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/c-release-notes-insight-600.html).[
