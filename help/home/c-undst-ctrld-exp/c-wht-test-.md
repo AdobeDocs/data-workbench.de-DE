@@ -2,22 +2,21 @@
 description: Die Testergebnisse müssen klar und aussagekräftig sein, damit Sie sich darauf verlassen können, auf der Grundlage dieser Ergebnisse große Dollarentscheidungen zu treffen.
 solution: Analytics,Analytics
 title: Was soll getestet werden?
-topic: Data workbench
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
+exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
 
 ---
 
-
 # Was soll getestet werden?{#what-should-i-test}
 
 Die Testergebnisse müssen klar und aussagekräftig sein, damit Sie sich darauf verlassen können, auf der Grundlage dieser Ergebnisse große Dollarentscheidungen zu treffen.
 
-Obwohl Sie verschiedene Seitenlayouts mit [!DNL Sensor] und Site testen können, legt Adobe nahe, dass Sie sich auf das Testen von hochwertigen, strategischen Geschäftsinitiativen oder neuen oder neu gestalteten Website-Funktionen konzentrieren, die die Ziele, die Sie für Ihre Website und Ihr Unternehmen festgelegt haben, ansprechen. Sie können Tests auf beste Preisgarantien, Personalisierungsfunktionalität, Angebot auf dem Markt (z. B. Pakete oder Pakete), kreatives Design und Anwendungsprozesse durchführen.
+Obwohl Sie verschiedene Seitenlayouts mit [!DNL Sensor] und Site testen können, legt die Adobe nahe, dass Sie sich auf das Testen von hochwertigen, strategischen Geschäftsinitiativen oder auf neue oder neu gestaltete Website-Funktionen konzentrieren, die die Ziele, die Sie für Ihre Website und Ihr Unternehmen festgelegt haben, ansprechen. Sie können Tests auf beste Preisgarantien, Personalisierungsfunktionalität, Angebot auf dem Markt (z. B. Pakete oder Pakete), kreatives Design und Anwendungsprozesse durchführen.
 
 Die folgenden Konzepte sind bei der Entwicklung Ihres kontrollierten Experiments besonders wichtig:
 
@@ -34,11 +33,11 @@ Viele Arten von Experimenten mit vielen verschiedenen Zielen können mithilfe vo
 
 Um diese Ziele zu erreichen, unterstützt Site die folgenden Methoden für kontrolliertes Experimentieren und Testen:
 
-* **Seitenaustausch:** Ersetzen Sie die statische URL X durch die statische URL Y. Diese Methodik ist in einer dynamischen Umgebung nur begrenzt einsetzbar.
-* **Dynamischer URI-Austausch:** Dies ist eine Variante des Seitenaustauschs, die die statische Seite X durch die dynamische Seite Y ersetzt, um dynamischen Inhalt zu rendern.
-* **Objektaustausch:** Ersetzen Sie das feste Objekt X durch das feste Objekt Y.
-* **Inhaltsersetzung:** Ersetzen Sie den Inhaltssatz X (mehrere Objekte, Seiten, Tabellen usw.) durch den Inhaltssatz Y.
-* **Ersetzen von Experimentvariablen:** Ersetzen Sie das JavaScript-Objekt /writeCookie_X.js durch das JavaScript-Objekt /writeCookie_Y.js, um ein Cookie zu schreiben, das von einem Back-End-System zur Bereitstellung bestimmter Inhalte verwendet werden kann.
+* **Seitenaustausch: statische URL X durch statische URL Y** ersetzen. Diese Methodik ist in einer dynamischen Umgebung nur begrenzt einsetzbar.
+* **Dynamischer URI-Austausch:** Diese Variante des Seitenaustauschs ersetzt statische Seite X durch dynamische Seite Y, um dynamischen Inhalt zu rendern.
+* **Objekt ersetzen: Festes Objekt X durch ein festes Objekt Y** ersetzen.
+* **Inhaltsersetzung: Inhaltssatz X (mehrere Objekte, Seiten, Tabellen usw.) durch Inhaltssatz Y** ersetzen.
+* **Ersetzen von Experimentvariablen:JavaScript-Objekt /writeCookie_X.js durch JavaScript-Objekt /writeCookie_Y.js** ersetzen, um ein Cookie zu schreiben, das von einem Back-End-System zur Bereitstellung bestimmter Inhalte verwendet werden kann.
 
 >[!NOTE]
 >
@@ -46,4 +45,4 @@ Um diese Ziele zu erreichen, unterstützt Site die folgenden Methoden für kontr
 >
 >`http://www.omniture.com/index.asp?id=1`
 >
->Beispielsweise können Sie in Ihrem kontrollierten Experiment angeben, dass der URI der Kontrollgruppe durch den URI der Testgruppe ersetzt [!DNL index.asp] werden soll, [!DNL index2.asp] um festzustellen, welcher Seitenentwurf zu mehr Wert führt.
+>Beispielsweise können Sie in Ihrem kontrollierten Experiment angeben, dass die Kontrollgruppen-URI [!DNL index.asp] durch die Testgruppe URI [!DNL index2.asp] ersetzt werden soll, um festzustellen, welcher Seitenentwurf zu mehr Wert führt.
