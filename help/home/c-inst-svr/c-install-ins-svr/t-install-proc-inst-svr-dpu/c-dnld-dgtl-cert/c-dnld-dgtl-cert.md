@@ -1,16 +1,15 @@
 ---
 description: Allgemeine Informationen zu digitalen Zertifikaten und Verfahren zum Herunterladen und Installieren.
-solution: Analytics
 title: Herunterladen und Installieren der digitalen Zertifikate
 uuid: ac484e96-21dc-4643-ae74-01ac957e30ee
-translation-type: ht
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
-workflow-type: ht
+exl-id: 8aae9b63-7df0-4725-9833-711246bbe746
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 100%
 
 ---
-
 
 # Herunterladen und Installieren der digitalen Zertifikate {#downloading-and-installing-the-digital-certificates}
 
@@ -86,4 +85,3 @@ Wenn Sie das vorgesperrte Zertifikat erhalten, installieren Sie es wie in den le
 1. Benennen Sie die heruntergeladene Zertifikatdatei um und geben Sie ihr den folgenden Namen:
 
 [!DNL server_cert.pem]
-
