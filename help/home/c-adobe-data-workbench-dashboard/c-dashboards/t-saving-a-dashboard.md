@@ -1,28 +1,29 @@
 ---
-description: 'null'
-solution: Analytics
+description: Speichern eines Dashboards
 title: Speichern eines Dashboards
-topic: Data workbench
 uuid: 50dd713a-f7ce-4b53-8ba6-398643d2eef2
+exl-id: 4affc287-470b-47c6-af55-c0b6919321b0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 4%
 
 ---
 
-
 # Speichern eines Dashboards{#saving-a-dashboard}
 
-1. Um ein neues Dashboard zu speichern, wählen Sie entweder **[!UICONTROL Save]** oder **[!UICONTROL Save As…]** im Dashboard-Menü oben auf der Dashboard-Oberfläche aus. Bei einem neuen Dashboard haben beide Optionen dasselbe Ergebnis.
+1. Um ein neues Dashboard zu speichern, wählen Sie entweder **[!UICONTROL Save]** oder **[!UICONTROL Save As…]** aus dem Menü &quot;Dashboard&quot;oben auf der Benutzeroberfläche des Dashboards. Bei einem neuen Dashboard haben beide Optionen das gleiche Ergebnis.
 
-   Dadurch wird das **[!UICONTROL Save New Dashboard]** Fenster geöffnet, in dem Sie einen Titel, eine kurze Beschreibung und den Speicherort des Dashboards eingeben können.
+   Dadurch wird das Fenster **[!UICONTROL Save New Dashboard]** geöffnet, in dem Sie einen Titel, eine kurze Beschreibung und einen Speicherort für das Dashboard eingeben können.
 
    >[!NOTE]
    >
-   >Dashboards können privat oder gemeinsam genutzt werden. Wenn ein Dashboard **[!UICONTROL Private]** im **[!UICONTROL Visibility]** Feld beschriftet ist, können nur Sie (oder ein Systemadministrator) das Dashboard anzeigen und bearbeiten. Wenn ein Dashboard **[!UICONTROL Shared]** im **[!UICONTROL Visibility]** Feld beschriftet ist, kann jeder Benutzer des Systems das Dashboard anzeigen und bearbeiten.
+   >Dashboard können privat oder gemeinsam genutzt werden. Wenn ein Dashboard im Feld **[!UICONTROL Visibility]** mit **[!UICONTROL Private]** beschriftet ist, können nur Sie (oder ein Systemadministrator) das Dashboard Ansicht und bearbeiten. Wenn ein Dashboard im Feld **[!UICONTROL Visibility]** mit **[!UICONTROL Shared]** beschriftet ist, kann jeder Systembenutzer das Dashboard Ansicht und bearbeiten.
 
-1. Wählen Sie unter dem **[!UICONTROL Source]** Feld eine Miniaturansicht für das Dashboard aus. Standardmäßig wird ein Screenshot des Dashboards aufgenommen und als Miniaturansicht des Dashboards verwendet.
+1. Wählen Sie unter dem Feld **[!UICONTROL Source]** eine Miniaturansicht für das Dashboard aus. Standardmäßig wird ein Screenshot des Dashboards als Miniaturansicht für das Dashboard verwendet.
 
-   Diese Miniaturansicht wird verwendet, wenn die **[!UICONTROL Captured Screenshot]** Option ausgewählt ist. Wenn Sie eine andere Bilddatei verwenden möchten, wählen Sie die **[!UICONTROL Image File]** Option aus und wählen Sie das Bild, das Sie für das Dashboard verwenden möchten.
+   Diese Miniaturansicht wird verwendet, wenn die Option **[!UICONTROL Captured Screenshot]** ausgewählt ist. Wenn Sie eine andere Bilddatei verwenden möchten, wählen Sie die Option **[!UICONTROL Image File]** und wählen Sie das Dashboard aus, das Sie darstellen möchten.
 
    >[!NOTE]
    >
@@ -30,4 +31,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/save.png)
 
-1. Klicken Sie auf **[!UICONTROL Save]** , um das Dashboard auf dem Server zu speichern. Sie werden Eigentümer dieses Dashboards sein und in Zukunft die volle Kontrolle darüber haben.
+1. Klicken Sie auf **[!UICONTROL Save]**, um das Dashboard auf dem Server zu speichern. Sie werden Eigentümer dieses Dashboards sein und in Zukunft die volle Kontrolle darüber haben.
