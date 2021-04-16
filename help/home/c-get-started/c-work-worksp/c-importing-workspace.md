@@ -1,29 +1,29 @@
 ---
 description: Sie können eine Arbeitsfläche in Ihre Arbeitsfläche importieren.
-solution: Analytics
-title: Arbeitsbereich importieren
-topic: Data workbench
+title: Importieren eines Arbeitsbereichs
 uuid: 9f9f0da8-0806-45fe-90b4-d5bc635958e7
+exl-id: 8f589540-9f1c-4776-8815-48d4cfbc5aa6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 5%
 
 ---
 
-
-# Arbeitsbereich importieren{#import-a-workspace}
+# Importieren eines Arbeitsbereichs{#import-a-workspace}
 
 Sie können eine Arbeitsfläche in Ihre Arbeitsfläche importieren.
 
 **So importieren Sie eine Arbeitsfläche**
 
-1. Klicken Sie mit der rechten Maustaste in die Arbeitsfläche (außerhalb der Workspace-Miniaturansicht), um ein Menü zu öffnen.
+1. Klicken Sie mit der rechten Maustaste in die Arbeitsfläche (außerhalb einer Workspace-Miniaturansicht), um ein Menü zu öffnen.
 
    ![](assets/import_workspace.png)
 
-1. Klicken Sie auf **Importieren** , um ein Dateiauswahlfenster zu öffnen.
-1. Wählen Sie eine **.vw** -Datei aus und drücken Sie **Öffnen** oder **Öffnen als schreibgeschützt**.
+1. Klicken Sie auf **Import**, um ein Dateiauswahlfenster zu öffnen.
+1. Wählen Sie eine Datei **.vw** aus und drücken Sie **Öffnen** oder **Als schreibgeschützt öffnen**.
 
 >[!NOTE]
 >
->Visualisierungen können nicht wie Arbeitsbereiche importiert werden. Wenn Sie mit der rechten Maustaste auf die Arbeitsfläche klicken und diese Option auswählen, **[!UICONTROL Import]** können Sie einen vorhandenen Arbeitsbereich importieren, jedoch keine außerhalb des Arbeitsbereichs befindliche Visualisierung. Wenn Sie versuchen, eine Visualisierung zu importieren, erhalten Sie die Fehlermeldung &quot;Kein gültiger Arbeitsbereich&quot;.
-
+>Visualisierungen können nicht wie Arbeitsbereiche importiert werden. Wenn Sie mit der rechten Maustaste auf die Arbeitsfläche klicken und **[!UICONTROL Import]** auswählen, können Sie einen vorhandenen Arbeitsbereich importieren, jedoch keine außerhalb des Arbeitsbereichs befindliche Visualisierung. Wenn Sie versuchen, eine Visualisierung zu importieren, erhalten Sie die Fehlermeldung &quot;Kein gültiger Arbeitsbereich&quot;.
