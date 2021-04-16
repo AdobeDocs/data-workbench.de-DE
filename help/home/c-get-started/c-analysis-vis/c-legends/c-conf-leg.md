@@ -1,17 +1,15 @@
 ---
 description: Vertrauenslegenden helfen Ihnen, die Wahrscheinlichkeit zu ermitteln, dass die Zahlen, die Sie sehen, zufällig sind, und die möglichen Abweichungen in den Daten zu verstehen.
-solution: Analytics
 title: Konfidenzlegenden
-topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
+exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
 translation-type: tm+mt
-source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
 
 ---
-
 
 # Konfidenzlegenden{#confidence-legends}
 
@@ -35,7 +33,7 @@ Die folgende Konfidenzlegende enthält Konfidenzdetails zur Konversionsmetrik, w
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Metrik oder Formel </p> </td> 
-   <td colname="col2"> <p>Der Metrikname oder Metrikname, für den Sie Konfidenzinformationen Ansicht haben möchten. Jede Auswahl, die Sie in Ihrem Arbeitsbereich treffen, wird in der Legende widergespiegelt. In diesem Beispiel werden Details zur Konversionsmetrik angezeigt. </p> <p>Weitere Informationen zu Syntaxregeln für die Eingabe eines Ausdrucks finden Sie unter <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> Syntax</a>der Abfrage. </p> </td> 
+   <td colname="col2"> <p>Der Metrikname oder Metrikname, für den Sie Konfidenzinformationen Ansicht haben möchten. Jede Auswahl, die Sie in Ihrem Arbeitsbereich treffen, wird in der Legende widergespiegelt. In diesem Beispiel werden Details zur Konversionsmetrik angezeigt. </p> <p>Weitere Informationen zu Syntaxregeln für die Eingabe eines Ausdrucks finden Sie unter <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> Abfrage-Syntax</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Gemessener Wert </p> </td> 
@@ -47,7 +45,7 @@ Die folgende Konfidenzlegende enthält Konfidenzdetails zur Konversionsmetrik, w
   </tr> 
   <tr> 
    <td colname="col1"> <p>Der Wert "true" </p> </td> 
-   <td colname="col2"> <p>Die Wahrscheinlichkeit, dass der gemessene Wert in den für jede Wahrscheinlichkeit aufgelisteten Bereich fällt. In diesem Beispiel könnte man, wenn sich dieses "Experiment in der realen Welt"wiederholt, 90 % sicher sein, dass der gemessene Wert zwischen 2,1 % und 2,4 % liegt. </p> </td> 
+   <td colname="col2"> <p>Die Wahrscheinlichkeit, dass der gemessene Wert in den für jede Wahrscheinlichkeit aufgelisteten Bereich fällt. In diesem Beispiel könnte man, wenn sich dieses "Experiment in der realen Welt"immer wieder wiederholt, 90 % sicher sein, dass der gemessene Wert zwischen 2,1 % und 2,4 % liegt. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -62,9 +60,9 @@ Die folgende Konfidenzlegende enthält Konfidenzdetails zur Konversionsmetrik, w
 >
 Wenn Sie genauere Zahlen benötigen, sollten Sie sich an einen Experten für Statistik wenden.
 
-## Metriken oder Formeln ändern {#section-7f09ff84c3514f26b78d29294e1f03d9}
+## Metriken oder Formeln {#section-7f09ff84c3514f26b78d29294e1f03d9} ändern
 
-* Klicken Sie in der Konfidenzlegende auf das **[!UICONTROL Metric or Formula]** Feld und geben Sie die gewünschte Metrik oder den gewünschten Ausdruck ein. Informationen zu Ausdruck-Syntaxregeln finden Sie unter [Abfrage-Sprachsyntax](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+* Klicken Sie in der Konfidenzlegende auf das Feld **[!UICONTROL Metric or Formula]** und geben Sie die gewünschte Metrik oder den gewünschten Ausdruck ein. Weitere Informationen zu Ausdruck-Syntaxregeln finden Sie unter [Abfrage-Syntax](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 ## Exportieren in Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
