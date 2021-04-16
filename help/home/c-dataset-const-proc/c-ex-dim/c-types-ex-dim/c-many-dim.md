@@ -1,14 +1,15 @@
 ---
 description: Eine Viele-zu-viele-Dimension hat eine Viele-zu-viele-Beziehung zu ihrer übergeordneten zählbaren Dimension.
-solution: Analytics
 title: Viele-zu-viele-Dimensionen
-topic: Data workbench
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
+exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 3%
 
 ---
-
 
 # Viele-zu-viele-Dimensionen{#many-to-many-dimensions}
 
@@ -23,7 +24,7 @@ Viele-zu-viele-Dimensionen werden durch die folgenden Parameter definiert:
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -60,7 +61,7 @@ Viele-zu-viele-Dimensionen werden durch die folgenden Parameter definiert:
  </tbody> 
 </table>
 
-In diesem Beispiel wird die Definition einer Viele-zu-viele-Dimension anhand von Ereignisdaten veranschaulicht, die aus dem Website-Traffic erfasst wurden. Diese Viele-zu-viele-Dimension mit der Bezeichnung &quot;Ausgewähltes Produkt&quot;bezieht sich auf Sitzungen mit den Produkten, die der Besucher während dieser Sitzung gekauft hat. Das Feld &quot;x-products&quot;enthält einen Wertevektor, der jeweils mit einer Seitenansicht verknüpft ist, die wiederum mit einer Sitzung verknüpft ist.
+In diesem Beispiel wird die Definition einer Viele-zu-viele-Dimension anhand von Ereignis-Daten veranschaulicht, die aus dem Website-Traffic erfasst wurden. Diese Viele-zu-viele-Dimension, &quot;Ausgewähltes Produkt&quot;genannt, bezieht sich auf Sitzungen mit den Produkten, die der Besucher während dieser Sitzung gekauft hat. Das Feld &quot;x-products&quot;enthält einen Wertevektor, der jeweils mit einer Ansicht verknüpft ist, die wiederum einer Sitzung zugeordnet ist.
 
 ![](assets/cfg_Transformation_Dim_ManytoMany.png)
 
