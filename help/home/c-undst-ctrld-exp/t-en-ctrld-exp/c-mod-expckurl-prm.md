@@ -2,16 +2,15 @@
 description: Mit dem Parameter ExpCookieURL können Sie testen, ob Ihr kontrolliertes Experiment ordnungsgemäß funktioniert.
 solution: Analytics,Analytics
 title: Bearbeiten des ExpCookieURL-Parameters (optional)
-topic: Data workbench
 uuid: 0c160c26-f9de-4e41-a05d-bf7bb32395bb
+exl-id: fe3dadab-890d-4426-b6f5-8ffd1cd38c69
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 6%
 
 ---
-
 
 # Bearbeiten des ExpCookieURL-Parameters (optional){#modifying-the-expcookieurl-paramter-optional}
 
@@ -19,7 +18,7 @@ Mit dem Parameter ExpCookieURL können Sie testen, ob Ihr kontrolliertes Experim
 
 Dieser Parameter definiert die URL einer virtuellen Seite, die Sie auf Anforderung in ein bestimmtes Experiment und eine bestimmte Gruppe setzt und Sie dann an den Stammordner Ihrer Website weiterleitet. Von diesem Punkt bis zum Ende des Experiments sind Sie Teil des angegebenen Experiments und der angegebenen Gruppe.
 
-Die Standardseite für diesen Parameter ist [!DNL setcookie.htm]festgelegt, Sie können jedoch eine beliebige gültige virtuelle URL verwenden.
+Die Standardseite für diesen Parameter ist [!DNL setcookie.htm], Sie können jedoch eine beliebige gültige virtuelle URL verwenden.
 
 >[!NOTE]
 >
