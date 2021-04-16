@@ -1,25 +1,26 @@
 ---
-description: Statistische Berechnungen messen aussagekräftige Beziehungen, um verborgene Gelegenheiten und Variablen von Interesse für erweiterte Data-Mining-Funktionen im Zielgruppen-Clustering und bei der Bewertung der Besucherreaktion zu identifizieren.
-solution: Analytics
-title: Statistische Berechnungen
-topic: Data workbench
+description: Statistische Berechnungen erfassen aussagekräftige Beziehungen, um versteckte Gelegenheiten und Interessensvariablen für erweiterte Data Mining-Funktionen bei der Audience-Clustering und der Bewertung der Reaktionsfähigkeit von Besuchern zu identifizieren.
+title: Hinweise zu Statistiken
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
+exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 23%
 
 ---
 
+# Hinweise zu Statistiken{#statistical-callouts}
 
-# Statistische Berechnungen{#statistical-callouts}
-
-Statistische Berechnungen messen aussagekräftige Beziehungen, um verborgene Gelegenheiten und Variablen von Interesse für erweiterte Data-Mining-Funktionen im Zielgruppen-Clustering und bei der Bewertung der Besucherreaktion zu identifizieren.
+Statistische Berechnungen erfassen aussagekräftige Beziehungen, um versteckte Gelegenheiten und Interessensvariablen für erweiterte Data Mining-Funktionen bei der Audience-Clustering und der Bewertung der Reaktionsfähigkeit von Besuchern zu identifizieren.
 
 Statistische Berechnungen erweitern die Algorithmen, sodass mehr Datentypen korreliert werden können, wie z. B. binomielle Variablen (ja/nein, 0/1 oder Käufer/Nicht-Käufer), die mit zählbaren Metriken (Besuche, Bestellungen oder Downloads) korreliert sind.
 
 So fügen Sie statistische Berechnungen hinzu:
 
 1. Klicken Sie in einer Tabelle mit der rechten Maustaste auf die Metriküberschrift.
-1. Markieren **[!UICONTROL Statistics]** Sie die Auswahlfelder für jede erforderliche Einstellung und wählen Sie sie aus oder löschen Sie sie. Alle Elemente im Anzeigeaufruf sind als Standardeinstellung ausgewählt.
+1. Wählen Sie **[!UICONTROL Statistics]** aus und wählen Sie dann die Auswahlfelder für jede erforderliche Einstellung aus oder löschen Sie sie. Alle Elemente im Anzeigeaufruf sind als Standardeinstellung ausgewählt.
 
    ![](assets/statistical_callouts.png)
 
@@ -46,7 +47,7 @@ Der Callout kann statistische Werte zurückgeben, die in die Datensatzspalten ei
    <td colname="col2"><p> Identifiziert den Mindestmetrikwert für alle Elemente der Dimension. </p></td>
   </tr>
   <tr>
-   <td colname="col1"> Arithmetisches Mittel </td>
+   <td colname="col1"> Mittel </td>
    <td colname="col2"><p> Das Mittel ist der arithmetische Durchschnitt der Metrikwerte der Elemente in der Dimension, berechnet durch die Summe geteilt durch die Anzahl (Summe/Anzahl). </p></td>
   </tr>
   <tr>
@@ -63,4 +64,3 @@ Der Callout kann statistische Werte zurückgeben, die in die Datensatzspalten ei
   </tr>
  </tbody>
 </table>
-
