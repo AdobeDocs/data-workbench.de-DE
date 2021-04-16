@@ -2,16 +2,15 @@
 description: Der Parameter ExpFile verweist auf den Speicherort der Experimentkonfigurationsdatei, die Ihr Experiment definiert.
 solution: Analytics,Analytics
 title: Bearbeiten des ExpFile-Parameters
-topic: Data workbench
 uuid: bf146f46-f541-4969-8d90-af1a0c969344
+exl-id: 9c527ef9-aeda-4d83-8b98-a7dccbd55fe8
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 3%
 
 ---
-
 
 # Bearbeiten des ExpFile-Parameters{#modifying-the-expfile-parameter}
 
@@ -25,12 +24,12 @@ Im Folgenden finden Sie ein Beispiel für den Parameter ExpFile:
 ExpFile /home/experiment.txt
 ```
 
-Diese tabulatorgetrennte Textdatei ( [!DNL .txt]) kann sich an einer beliebigen Stelle im [!DNL Sensor] Ordner befinden und einen beliebigen Namen haben.
+Diese tabulatorgetrennte Textdatei ( [!DNL .txt]) kann sich an einer beliebigen Stelle im Ordner [!DNL Sensor] befinden und einen beliebigen bequemen Namen haben.
 
 Vergewissern Sie sich, dass Sie den Speicherort des Experimentverzeichnisses und den Namen der angegebenen Konfigurationsdatei aufzeichnen, da Sie die Experimentkonfigurationsdatei (die später in diesem Handbuch beschrieben wird) unter diesem Namen und in diesem Verzeichnis speichern müssen.
 
 >[!NOTE]
 >
->Wenn Sie diesen Parameter nicht auf allen Computern im Webcluster, auf denen ein Webcluster installiert [!DNL Sensor] ist, identisch einstellen, funktioniert das kontrollierte Experimentieren nicht.
+>Wenn Sie diesen Parameter nicht identisch auf jedem Computer im Webcluster festlegen, auf dem ein [!DNL Sensor] installiert ist, funktioniert das kontrollierte Experimentieren nicht.
 
-Dieser Eintrag kann vorkonfiguriert werden und dauerhaft in der [!DNL Sensor] Konfigurationsdatei bleiben, ohne dass dies negative Auswirkungen hat. Wenn der angegebene Name der Experimentkonfigurationsdatei nicht von gefunden wird [!DNL Sensor] oder leer ist (d. h., er existiert, hat aber keinen Inhalt), [!DNL Sensor] führt das Experiment nicht durch, protokolliert ein Fehlerfehler-Ereignis auf dem HTTP-Server und funktioniert in jeder anderen Hinsicht normal weiter.
+Dieser Eintrag kann vorkonfiguriert werden und in der Konfigurationsdatei [!DNL Sensor] dauerhaft und ohne nachteilige Auswirkungen bleiben. Wenn der angegebene Name der Experimentkonfigurationsdatei nicht von [!DNL Sensor] gefunden wird oder leer ist (das heißt, er existiert, hat aber keinen Inhalt), führt [!DNL Sensor] keinen Versuch durch, protokolliert ein Ereignis mit Fehler auf dem HTTP-Server und funktioniert weiterhin normal in allen anderen Aspekten.
