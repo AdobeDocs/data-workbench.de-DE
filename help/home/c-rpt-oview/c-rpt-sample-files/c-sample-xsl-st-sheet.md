@@ -1,16 +1,17 @@
 ---
 description: Codebeispiel für XSL-Stylesheet.
-solution: Analytics
-title: Beispiel-XSL-Stylesheet
-topic: Data workbench
+title: Beispiel für XSL-Stylesheet
 uuid: cac5c5ad-b0ec-45d8-901d-e39ce1f6d61a
+exl-id: 688b0ce5-999b-4cfc-9228-146450132aee
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '20'
+ht-degree: 40%
 
 ---
 
-
-# Beispiel-XSL-Stylesheet{#sample-xsl-style-sheet}
+# Beispiel für XSL-Stylesheet{#sample-xsl-style-sheet}
 
 Codebeispiel für XSL-Stylesheet.
 
@@ -34,4 +35,3 @@ Codebeispiel für XSL-Stylesheet.
 </xsl:template>
 </xsl:stylesheet>
 ```
-
