@@ -1,30 +1,31 @@
 ---
 description: Die Data Workbench-Client-Anwendung unterstützt jetzt vereinfachtes Chinesisch.
-solution: Analytics
-title: Vereinfachte Chinesisch-Lokalisierung
-topic: Data workbench
+title: Vereinfachte chinesische lokale Anpassung
 uuid: ddf4eade-7c5f-4ccf-aa9f-dd8d109a059f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '79'
+ht-degree: 1%
 
 ---
 
 
-# Vereinfachte Chinesisch-Lokalisierung{#simplified-chinese-localization}
+# Vereinfachte chinesische lokale Anpassung{#simplified-chinese-localization}
 
 Die Data Workbench-Client-Anwendung unterstützt jetzt vereinfachtes Chinesisch.
 
 **So installieren Sie vereinfachtes Chinesisch**:
 
-Bevor Sie Dateien konfigurieren [!DNL Insight.exe] und unterstützen, müssen Sie die Clientanwendung beenden.
+Bevor Sie [!DNL Insight.exe] und unterstützende Dateien konfigurieren, müssen Sie die Clientanwendung beenden.
 
-1. Erstellen Sie eine Verknüpfung, die die Befehlszeileneinstellung an die [!DNL insight.exe] Datei übergibt.
+1. Erstellen Sie eine Verknüpfung, die die Befehlszeileneinstellung an die Datei [!DNL insight.exe] übergibt.
 
    ```
    Insight.exe -zh-cn
    ```
 
-1. Konfigurieren Sie [!DNL Insight.cfg] die Unterstützung von Einzel- und Doppelbyte-Schriftzeichen.
+1. Konfigurieren Sie [!DNL Insight.cfg], um Einzel- und Dublette-Byte-Schriftzeichen zu unterstützen.
 
    Data Workbench unterstützt derzeit sowohl Englisch als auch vereinfachtes Chinesisch. Sie können Schriftarten auswählen, um beide Sprachen zu unterstützen:
 
