@@ -1,16 +1,17 @@
 ---
 description: Sie können Daten in Diagrammen, Globes, Prozesskarten und Streudiagrammen vergrößern oder verkleinern.
-solution: Analytics
-title: Ein- oder Auszoomen in einer Visualisierung
-topic: Data workbench
+title: Heran- und Herauszoomen in einer Visualisierung
 uuid: bc28f759-c4d3-4340-8ec7-27cf6aaf21e6
+exl-id: 27072e6b-3102-40b2-a617-3cd26bf6e840
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 3%
 
 ---
 
-
-# Ein- oder Auszoomen in einer Visualisierung{#zoom-in-or-out-in-a-visualization}
+# Heran- und Herauszoomen in einer Visualisierung{#zoom-in-or-out-in-a-visualization}
 
 Sie können Daten in Diagrammen, Globes, Prozesskarten und Streudiagrammen vergrößern oder verkleinern.
 
@@ -30,9 +31,9 @@ Sowohl Diagramme als auch Streudiagramme haben Achsen, auf denen Sie separat her
 
 >[!NOTE]
 >
->Für die Y-Achse in einem Liniendiagramm und die X- oder Y-Achse in einem Streudiagramm wird der Zoom bei jeder Änderung der zugrunde liegenden Daten zurückgesetzt. Da dies beim Online-Arbeiten recht häufig geschieht, empfiehlt Adobe, dass Sie offline arbeiten, wenn Sie diese Achsen heranzoomen müssen. Siehe [Offline- und Online-Arbeit](../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
+>Für die Y-Achse in einem Liniendiagramm und die X- oder Y-Achse in einem Streudiagramm wird der Zoom bei jeder Änderung der zugrunde liegenden Daten zurückgesetzt. Da dies bei der Online-Arbeit sehr häufig geschieht, empfiehlt Adobe, dass Sie offline arbeiten, wenn Sie diese Achsen heranzoomen müssen. Siehe [Offline und Online arbeiten](../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
 
-**Zum Vergrößern auf der X- oder Y-Achse eines Diagramms** Wenn Sie vertikal (entlang der Y-Achse) zoomen, bleibt die X-Achse fixiert und die Daten werden nach oben gestreckt.
+**Zum Vergrößern auf der X- oder Y-Achse eines** DiagrammsBeim vertikalen Zoomen (entlang der Y-Achse) bleibt die X-Achse fixiert und die Daten werden nach oben gestreckt.
 
 1. Setzen Sie den Mauszeiger auf die Metrik- oder Dimensionsbeschriftungsfläche des Diagramms auf der x- oder y-Achse.
 1. Drücken Sie beide Maustasten und bewegen Sie die Maus nach vorne (weg von Ihnen). Auf der Achse werden Pfeile angezeigt, die darauf hinweisen, dass über den derzeit angezeigten Teil der Visualisierung hinaus weitere Daten verfügbar sind.
@@ -42,9 +43,9 @@ Sowohl Diagramme als auch Streudiagramme haben Achsen, auf denen Sie separat her
 1. Setzen Sie den Mauszeiger auf die Metrik- oder Dimensionsbeschriftungsfläche des Diagramms auf der x- oder y-Achse.
 1. Drücken Sie beide Maustasten und bewegen Sie die Maus nach hinten (zu Ihnen).
 
-**Zum Vergrößern aller Daten auf der X- oder Y-Achse eines Diagramms** Der Menübefehl [!DNL Zoom to All] kehrt zur Anzeige aller Daten auf der ausgewählten Achse zurück.
+**Zum Vergrößern aller Daten auf der X- oder Y-Achse eines** DiagrammsDer  [!DNL Zoom to All] Menübefehl kehrt zur Anzeige aller Daten auf der ausgewählten Achse zurück.
 
-* Klicken Sie mit der rechten Maustaste auf die Randbereiche der X- oder Y-Achse (neben den Datenbeschriftungen) und klicken Sie auf **[!UICONTROL Zoom to All]**.
+* Klicken Sie mit der rechten Maustaste auf die Randbereiche der x- oder y-Achse (neben den Datenbeschriftungen) und klicken Sie auf **[!UICONTROL Zoom to All]**.
 
    ![](assets/vis_ZoomToAll.png)
 
