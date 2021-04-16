@@ -1,18 +1,19 @@
 ---
-description: Bevor Sie Berichte und Warnungen erstellen können, müssen Sie Report Server konfigurieren, um die Adresse des Insight-Servers anzugeben und die Profile zu identifizieren, über die Sie Berichte erstellen möchten.
-solution: Analytics
-title: Verbindung zum Insight Server konfigurieren
-topic: Data workbench
+description: Bevor Sie Berichte und Warnungen erstellen können, müssen Sie Report Server konfigurieren, um die Adresse des Insight-Servers anzugeben und die Profil zu identifizieren, über die Sie Berichte erstellen möchten.
+title: Konfigurieren der Verbindung zu Insight Server
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
+exl-id: a398a665-fe09-448a-977c-b0f9de4add09
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
+# Konfigurieren der Verbindung zu Insight Server{#configuring-the-connection-to-the-insight-server}
 
-# Verbindung zum Insight Server konfigurieren{#configuring-the-connection-to-the-insight-server}
-
-Bevor Sie Berichte und Warnungen erstellen können, müssen Sie Report Server konfigurieren, um die Adresse des Insight-Servers anzugeben und die Profile zu identifizieren, über die Sie Berichte erstellen möchten.
+Bevor Sie Berichte und Warnungen erstellen können, müssen Sie Report Server konfigurieren, um die Adresse des Insight-Servers anzugeben und die Profil zu identifizieren, über die Sie Berichte erstellen möchten.
 
 >[!NOTE]
 >
@@ -21,9 +22,9 @@ Bevor Sie Berichte und Warnungen erstellen können, müssen Sie Report Server ko
 **So konfigurieren Sie Report Server**
 
 1. Navigieren Sie in Windows Explorer zu dem Ordner, in dem Sie Report Server installiert haben.
-1. Öffnen Sie die [!DNL ReportServer.cfg] Datei im Editor und ändern Sie die Datei nach Bedarf.
+1. Öffnen Sie die Datei [!DNL ReportServer.cfg] in Notepad und ändern Sie die Datei nach Bedarf.
 
-   Das folgende Beispiel [!DNL Report Server.cfg] enthält standardmäßig nur die in der [!DNL Report Server.cfg] Datei enthaltenen Parameter (und hebt die erforderlichen Parametereinstellungen hervor). Wenn Sie den Adobe License Server über einen Proxyserver kontaktieren, müssen Sie den Lizenzvektor und dessen Parameter hinzufügen. Eine ausführliche Beschreibung finden Sie unter [Report Server.cfg-Parameter](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) .
+   Das folgende Beispiel [!DNL Report Server.cfg] enthält standardmäßig nur die Parameter, die in der Datei [!DNL Report Server.cfg] enthalten sind (und hebt die erforderlichen Parametereinstellungen hervor). Wenn Sie den Adobe License Server über einen Proxyserver kontaktieren, müssen Sie den Lizenzvektor und dessen Parameter hinzufügen. Eine ausführliche Beschreibung finden Sie unter [Report Server.cfg-Parameter](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06).
 
    ```
    Fonts = vector: 0 items
