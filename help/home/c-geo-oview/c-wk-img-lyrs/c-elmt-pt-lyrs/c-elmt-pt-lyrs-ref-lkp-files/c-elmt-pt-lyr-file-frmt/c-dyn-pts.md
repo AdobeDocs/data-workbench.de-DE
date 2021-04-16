@@ -1,34 +1,35 @@
 ---
 description: Beim Erstellen einer Elementpunktebene mit dynamischen Punkten werden die Breiten- und Längengraddaten in jedes Element der Dimension eingebettet.
-solution: Analytics
-title: Definieren von Elementpunktebenen mithilfe von dynamischen Punkten
-topic: Data workbench
+title: Definieren von Elementpunktebenen anhand von dynamischen Punkten
 uuid: 5f1b4638-fe45-40be-b963-18dcd5d09afa
+exl-id: ad849fe7-b909-40ef-835f-f1764e008de9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 7%
 
 ---
 
-
-# Definieren von Elementpunktebenen mithilfe von dynamischen Punkten{#defining-element-point-layers-using-dynamic-points}
+# Definieren von Elementpunktebenen anhand von dynamischen Punkten{#defining-element-point-layers-using-dynamic-points}
 
 Beim Erstellen einer Elementpunktebene mit dynamischen Punkten werden die Breiten- und Längengraddaten in jedes Element der Dimension eingebettet.
 
 Um eine Elementpunktebene mit dynamischen Punkten zu definieren, müssen Sie Folgendes erstellen oder bereits verfügbar sein:
 
-* **Eine Dimension**[!DNL Transformation.cfg] , die in der Datei oder in einem Transformationsdataset definiert ist, enthält die Datei, in der jedes Element die Zeichenfolge &quot;Breitengrad,Längengrad&quot;oder &quot;Breitengrad,Längengrad,Name&quot;enthält.
+* **Eine Dimension**, die in der  [!DNL Transformation.cfg] Datei oder in einem Transformationsdataset definiert ist, enthält die Datei, in der jedes Element die Zeichenfolge &quot;Breitengrad, Längengrad&quot;oder &quot;Breitengrad, Längengrad, Name&quot;enthält.
 
-   Anweisungen zum Erstellen einer Dimension finden Sie im Handbuch zur Konfiguration von *Datasets*.
+   Anweisungen zum Erstellen einer Dimension finden Sie im Handbuch *Konfiguration von Datasets*.
 
-* **Eine Ebenendatei** , die die zugehörige Dimension angibt.
+* **Eine Ebenendatei,** die die zugehörige Dimension angibt.
 
-   Weitere Informationen zum erforderlichen Format der Ebenendatei finden Sie unter Dateiformat für [Elementpunkte](../../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-elmt-pt-lyr-file-frmt.md#concept-678a95cb69644105a7af1b86ad5a5981).
+   Weitere Informationen zum erforderlichen Format der Ebenendatei finden Sie unter [Element Point Layer File Format](../../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-elmt-pt-lyr-file-frmt.md#concept-678a95cb69644105a7af1b86ad5a5981).
 
 >[!NOTE]
 >
->Bei der Verwendung [!DNL Dynamic Points]muss unbedingt sichergestellt werden, dass die Kardinalität der in der Ebenendatei angegebenen Dimension angemessen ist. Wenn jede Zeile eines Datensatzes einen anderen Breiten- und Längengrad aufweist, füllt sich die Dimension schnell und die meisten Zeilen werden in ein Element mit kleinen Elementen umgewandelt. Da das Element &quot;Kleine Elemente&quot;keine Längen- und Breitengrad aufweist, wird es nicht auf der Welt angezeigt.
+>Bei Verwendung von [!DNL Dynamic Points] muss unbedingt sichergestellt werden, dass die Kardinalität der in der Ebenendatei angegebenen Dimension angemessen ist. Wenn jede Zeile eines Datensatzes einen anderen Breiten- und Längengrad aufweist, füllt sich die Dimension schnell und die meisten Zeilen werden in ein Element mit kleinen Elementen umgewandelt. Da das Element &quot;Kleine Elemente&quot;keine Längen- und Breitengrad aufweist, wird es nicht auf der Welt angezeigt.
 
-## Dateiformat des Elementpunktes {#section-bbcc2baa2f754dba81eba93339a97cbd}
+## Format der Elementpunkt-Schichtdatei {#section-bbcc2baa2f754dba81eba93339a97cbd}
 
 Jede Elementpunktebenendatei mit dynamischen Punkten muss mit der folgenden Vorlage formatiert werden:
 
@@ -54,13 +55,13 @@ Layer = ElementPointLayer:
    <td colname="col1"> Dimension </td> 
    <td colname="col2"> <p>Der Name der Dimension (in einer Konvertierungskonfigurationsdatei definiert), die Elemente mit der Zeichenfolge "latitude,Längengrad"oder "latitude,Längengrad,name"enthalten muss, wie in den folgenden Beispielen dargestellt: 
      <ul id="ul_49069B74AF5A4CE28E20BB3B98BB2D89"> 
-      <li id="li_296010E3A513424A86AFA09E4DA2DFA4">37.5181,-77.1903 </li> 
+      <li id="li_296010E3A513424A86AFA09E4DA2DFA4">37.5.181, 7.1903 </li> 
       <li id="li_352D380B55044DD5AAB9B6FF8335AAC6">35.3317,-77.8126, irgendwo </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Metrik </td> 
-   <td colname="col2"> Der Name der Metrik, die über die im Parameter Dimension angegebene Dimension ausgewertet wird. </td> 
+   <td colname="col2"> Der Name der Metrik, die über die im Parameter "Dimension"angegebene Dimension ausgewertet wird. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dynamische Punkte </td> 
@@ -71,7 +72,7 @@ Layer = ElementPointLayer:
    <td colname="col2"> Optional. Der Wert, der zur Größe der Punkte in der Ebene verwendet wird. Der Standardwert lautet 100. Größere Werte machen die Punkte größer und kleinere Werte verkleinern sie. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Kanalfarbe </td> 
+   <td colname="col1"> Farbe </td> 
    <td colname="col2"> Optional. Der RGB-Farbvektor, der als (rot, grün, blau) ausgedrückt wird. Für jede Farbe im Vektor können Sie einen Wert zwischen 0,0 und 1,0 eingeben. (1.0, 0.0, 0.0) ist beispielsweise hellrot und (0.5, 0.5, 0.5) grau. </td> 
   </tr> 
   <tr> 
@@ -86,7 +87,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Die [!DNL IP Coordinates.layer] Datei ist wie folgt formatiert:
+Die Datei [!DNL IP Coordinates.layer] ist wie folgt formatiert:
 
 ```
 Layer = ElementPointLayer:
@@ -94,4 +95,3 @@ Layer = ElementPointLayer:
   Metric = ref: wdata/model/metric/Visitors
   Dynamic Points = bool: true
 ```
-
