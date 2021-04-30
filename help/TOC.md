@@ -5,7 +5,7 @@ audience: end-user
 feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench-Hilfe
-user-guide-description: Erfahren Sie mehr über die Mehrkanal-Funktionen der Data Workbench. Beinhaltet Leitfäden für den Data Workbench-Client sowie Installation, Datensatzkonfiguration usw.
+user-guide-description: Erfahren Sie mehr über die Mehrkanal-Funktionen der Data Workbench. Beinhaltet Leitfäden für den Data Workbench-Client, die Installation, die Datensatzkonfiguration usw.
 translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
