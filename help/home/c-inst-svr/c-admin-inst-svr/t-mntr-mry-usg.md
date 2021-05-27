@@ -3,7 +3,6 @@ description: Informationen zur Bewertung und Überwachung der Adressraumlast.
 title: Überwachen der Speichernutzung
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
 exl-id: b8c0b33b-dbec-4947-911b-11c8a83bbc9c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '581'
@@ -15,48 +14,48 @@ ht-degree: 2%
 
 Informationen zur Bewertung und Überwachung der Adressraumlast.
 
-**Überwachen des Ladevorgangs des Adressraums**
+**Überwachen der Adressspeicherlast**
 
 **Empfohlene Häufigkeit:** Täglich
 
-Die Adressraumlast ist ein Maß für den Anteil des maximalen Adressraums, den ein richtig konfiguriertes [!DNL Insight Server] verwendet. Selbst wenn die Konfigurationsparameter geändert werden, um die Speicherbelegung zu reduzieren, wird sie in der Regel erst nach dem Neustart des [!DNL Insight Server]-Dienstes verringert.
+Die Belastung des Adressenraums ist ein Maß für den Anteil des maximalen Adressenraums, den ein ordnungsgemäß konfiguriertes [!DNL Insight Server] verwendet. Selbst wenn die Konfigurationsparameter geändert werden, um die Speichernutzung zu reduzieren, wird dies in der Regel erst reduziert, wenn der [!DNL Insight Server]-Dienst neu gestartet wird.
 
-Eine Sicherheitsmarge ist in der maximalen Adressenraumlast integriert, um unerwartete Erhöhungen der Adressenraumnutzung zu berücksichtigen. Sie sollten diese Sicherheitsmarge niemals bewusst eingrenzen. Es ist in Notsituationen und nicht zur Unterstützung von Funktionen vorhanden, die zu Ihrer Adobe hinzugefügt wurden.
-
->[!NOTE]
->
->Um mehr Adressraum verfügbar zu machen und Speichererschöpfungsfehler zu vermeiden, stellen Sie sicher, dass auf Ihrem Betriebssystem der /3GB-Switch aktiviert ist und dass Low-Fragmentation Heap in Betrieb ist.
-
-Fehler, die beim [!DNL Insight Server]-Ereignis-Datenprotokoll protokolliert werden, können einen Hinweis darauf bieten, dass Probleme bei der Belastung mit dem Adressraum auftreten:
-
-* Die Fehler &quot;Der angeforderte X-Byteblock ist zu groß&quot;deuten darauf hin, dass sich etwas übermäßig auf die Adressraumlast, Leistung und Netzwerkbandbreite auswirkt. Solche großen Blöcke können erheblich zur Nutzung des Address Space beitragen, sowohl durch den Einsatz von viel Speicher als auch durch die Notwendigkeit großer zusammenhängender Blöcke des Address Space.
-
-   Um dieses Problem zu beheben, können Sie die Kardinalität Ihrer größten Dimensionen reduzieren, wodurch sich die Belastung des Adressraums erhöht. Wenn Sie die Kardinalität der Dimensionen nicht reduzieren können, sollten Sie versuchen, die Belastung des Adressraums so gering wie möglich zu halten, dass Sie eine unerwartete Erhöhung bewältigen können.
-* Die Fehlermeldung &quot;Speicherbudget überschritten&quot;deutet möglicherweise darauf hin, dass Sie die Abfrage-Speichergrenze erhöhen müssen. Der von Abfragen verwendete Arbeitsspeicher ist proportional zur Dimensionskardinalität und in einigen Fällen auch zur Länge der Elementnamen. Wenn Sie die Speicherplatzbeschränkung für Abfragen erhöhen, erhöhen Sie die Gesamtlast des Adressraums und verkleinern Sie die Größe.
+Eine Sicherheitsmarge wird in die maximale Adressraum-Auslastung integriert, um unerwartete Erhöhungen der Adressenraumauslastung zu berücksichtigen. Sie sollten diese Sicherheitsmarge nie bewusst in die Hand nehmen. Sie ist in Notfällen verfügbar und nicht für die Unterstützung von Funktionen, die zu Ihrer Adobe App hinzugefügt wurden.
 
 >[!NOTE]
 >
->Standardmäßig ist die Verwendung großer Seiten zulässig und die Suche mit Speicherzuordnung ist deaktiviert. In DWB 6.7 und höher kann dies in der Datensatzkonfiguration geändert werden. Änderungen erfordern einen Neustart des Servers.
+>Um mehr Adressenspeicher zur Verfügung zu stellen und Fehler bei der Speichererschöpfung zu vermeiden, stellen Sie sicher, dass auf Ihrem Betriebssystem der /3GB-Switch aktiviert ist und dass Low Fragmentation Heap in Betrieb ist.
 
-**So bewerten Sie die Auslastung des Adressraums**
+Fehler, die im Ereignisdatenprotokoll [!DNL Insight Server] protokolliert werden, können Hinweise darauf liefern, dass Probleme mit der Belastung des Adressenraums auftreten:
 
-Um die Adressraumlast für Ihr System genau zu bewerten, empfiehlt Adobe die erneute Verarbeitung des Datensatzes, indem Sie einige normale Abfragen durchführen, ohne danach [!DNL Insight Server] neu zu starten, und dann die gemessene Adressraum-Belastung anzeigen, indem Sie die folgenden Schritte ausführen.
+* Fehler vom Typ &quot;Angeforderter X-Byte-Block ist zu groß&quot;weisen darauf hin, dass sich etwas übermäßig auf die Auslastung des Adressraums, die Leistung und die Netzwerkbandbreite auswirken kann. Solche großen Blöcke können erheblich zur Nutzung von Address Space beitragen, sowohl durch den Einsatz von viel Speicher als auch durch die Anforderung großer zusammenhängender Blöcke von Address Space.
 
-Wenn ein [!DNL Insight Server] seit dem letzten Neustart nicht signifikant neu verarbeitet und abgefragt wurde, sollten Sie keine Schlussfolgerungen aus der Address Space-Last ziehen.
+   Um dieses Problem zu beheben, können Sie die Kardinalität Ihrer größten Dimensionen reduzieren, wodurch sich die Auslastung Ihres Adressraums erhöht. Wenn Sie die Kardinalität der Dimensionen nicht reduzieren können, sollten Sie versuchen, die Adressraum-Last so klein wie möglich zu halten, damit Sie eine unerwartete Zunahme verarbeiten können.
+* Die Fehler &quot;Speicherbudget überschritten&quot;weisen darauf hin, dass Sie möglicherweise die Speicherbegrenzung für die Abfrage erhöhen müssen. Der von Abfragen verwendete Speicher ist proportional zur Kardinalität der Dimensionen und in einigen Fällen auch zu den Längen der Elementnamen. Wenn Sie die Speicherbegrenzung für die Abfrage erhöhen, erhöhen Sie die Gesamtauslastung des Adressraums und verkleinern Sie die großen Dimensionen.
 
-1. Klicken Sie in [!DNL Insight] auf der Registerkarte [!DNL Admin] > [!DNL Dataset and Profile] auf die Miniaturansicht **[!UICONTROL Servers Manager]**, um den Arbeitsbereich &quot;Server Manager&quot;zu öffnen.
+>[!NOTE]
+>
+>Standardmäßig ist die Verwendung großer Seiten zulässig und die Suche mit Speicherzuordnung ist deaktiviert. In DWB 6.7 und höher kann dies in der Datensatzkonfiguration geändert werden. Alle Änderungen erfordern einen Neustart des Servers.
+
+**Bewertung der Adressenraumlast**
+
+Um die Auslastung des Adressenraums für Ihr System genau zu bewerten, empfiehlt Adobe, den Datensatz erneut zu verarbeiten, einige normale Abfragen durchzuführen, ohne [!DNL Insight Server] anschließend neu zu starten, und dann die gemessene Auslastung des Adressenraums anzuzeigen, indem Sie diese Schritte ausführen.
+
+Wenn ein [!DNL Insight Server] seit dem letzten Neustart nicht signifikant neu verarbeitet und abgefragt wurde, sollten Sie keine Schlussfolgerungen aus der Adressenraumlast ziehen.
+
+1. Klicken Sie in [!DNL Insight] auf der Registerkarte [!DNL Admin] > [!DNL Dataset and Profile] auf die Miniaturansicht **[!UICONTROL Servers Manager]** , um den Arbeitsbereich &quot;Server Manager&quot;zu öffnen.
 1. Klicken Sie mit der rechten Maustaste auf das Symbol des zu konfigurierenden [!DNL Insight Server] und klicken Sie auf **[!UICONTROL Detailed Status]**.
-1. Klicken Sie in der Detaillierten Statusoberfläche auf **[!UICONTROL Memory Status]**, um den Inhalt Ansicht. Im Parameter &quot;Adressraum laden&quot;können Sie die Adressraumlast als Prozentsatz und eine in Klammern eingeschlossene Beschreibung als Status anzeigen.
+1. Klicken Sie in der Oberfläche für den detaillierten Status auf **[!UICONTROL Memory Status]** , um den Inhalt anzuzeigen. Im Parameter &quot;Adressraum laden&quot;können Sie die Adressspeicherlast als Prozentsatz und eine in Klammern eingeschlossene Beschreibung sehen, die den Status angibt.
 
-   In der folgenden Tabelle sind die Bereiche und der Status für die Belastung mit dem Adressraum aufgeführt. Für jeden Bereich wird eine empfohlene Aktion angezeigt.
+   Die folgende Tabelle zeigt Bereiche und Status für die Belastung des Adressenraums. Für jeden Bereich wird eine empfohlene Aktion aufgelistet.
 
-   | Adressraum-Ladevorgang (%) | Status | Empfohlene Aktion |
+   | Laden des Adressraums (%) | Status | Empfohlene Aktion |
    |---|---|---|
-   | 0-15 | Muskel- und Mittelwert | Keine. |
-   | 15-33 | light | Keine. |
-   | 33-66 | mäßig | Keine. |
-   | 66-100 | schwer | Fügen Sie zur Vermeidung von Fehlern bei der Speichererschöpfung keine zusätzlichen Funktionen hinzu oder versuchen Sie nicht, weitere Daten zu verarbeiten. |
-   | 100-125 | Zuverlässigkeit beeinträchtigt | Passen Sie Ihre Datensatzkonfiguration an, um die Belastung mit dem Adressraum zu verringern. |
-   | 125 oder höher | Fehler unmittelbar | Passen Sie Ihre Datensatzkonfiguration an, um die Belastung mit dem Adressraum zu verringern. Möglicherweise wird der sofortige Status des Fehlers nicht angezeigt, bevor ein Fehler auftritt. |
+   | 0-15 | Lee und Mittelwert | Keine. |
+   | 33.15. | light | Keine. |
+   | 33-66 | moderieren | Keine. |
+   | 66-100 | schwer | Um Speichererschöpfungsfehler zu vermeiden, fügen Sie keine wesentlichen zusätzlichen Funktionen hinzu oder versuchen Sie nicht, mehr Daten zu verarbeiten. |
+   | 100-125 | Ausfallsicherheit | Passen Sie Ihre Datensatzkonfiguration an, um die Auslastung des Adressraums zu reduzieren. |
+   | 125 oder höher | Fehlschlag unmittelbar | Passen Sie Ihre Datensatzkonfiguration an, um die Auslastung des Adressraums zu reduzieren. Möglicherweise wird der unmittelbar bevorstehende Fehlerstatus nicht angezeigt, bevor ein Fehler auftritt. |
 
-   Wenn Sie einen Adressraum von über 100 % haben, sollten Sie die Konfiguration so bald wie möglich ändern, um die Verwendung des Adressraums zu reduzieren.
+   Wenn die Belastung des Adressenraums über 100 % liegt, sollten Sie die Konfiguration so bald wie möglich ändern, um die Auslastung des Adressenraums zu reduzieren.
