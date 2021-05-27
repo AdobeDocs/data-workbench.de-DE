@@ -1,10 +1,9 @@
 ---
-description: Eine Hypothese ist eine Annahme, die als stichhaltig betrachtet werden kann und die eine vorsichtige Erklärung liefert, die durch eine weitere Untersuchung geprüft werden kann.
+description: Eine Hypothese ist eine Annahme, die zum Zweck der Argumentation als wahr betrachtet werden kann und eine provisorische Erklärung liefert, die durch weitere Untersuchungen getestet werden kann.
 solution: Analytics,Analytics
 title: Formulieren einer Hypothese
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
 exl-id: d7e77d85-4655-49c5-adeb-15402e48dd7b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '189'
@@ -14,17 +13,17 @@ ht-degree: 3%
 
 # Formulieren einer Hypothese{#forming-a-hypothesis}
 
-Eine Hypothese ist eine Annahme, die als stichhaltig betrachtet werden kann und die eine vorsichtige Erklärung liefert, die durch eine weitere Untersuchung geprüft werden kann.
+Eine Hypothese ist eine Annahme, die zum Zweck der Argumentation als wahr betrachtet werden kann und eine provisorische Erklärung liefert, die durch weitere Untersuchungen getestet werden kann.
 
-Versuchen Sie, Ihre Hypothese in Bezug auf alternative Seiten, Bilder oder Prozesse zu betrachten, die problemlos durch vorhandene ersetzt werden können.
+Versuchen Sie, an Ihre Hypothese zu denken, indem Sie alternative Seiten, Bilder oder Prozesse verwenden, die vorhandene leicht ersetzen können.
 
-Ihre Hypothese muss in der Lage sein, ein Ergebnis mit statistischer Bedeutung zu erzielen. Dies kann erreicht werden, indem der Prozentsatz der Besucher, die im Test enthalten sind, erhöht oder der Test länger ausgeführt wird.
+Ihre Hypothese muss in der Lage sein, ein Ergebnis mit statistischer Bedeutung zu erzielen. Dies kann erreicht werden, indem der Prozentsatz der Besucher erhöht wird, die in den Test einbezogen werden, oder indem der Test über einen längeren Zeitraum ausgeführt wird.
 
-An dieser Stelle sollten Sie auch Ihre Besucher-basierten Erfolgsmetriken entweder als Teil der Hypothese oder als zusätzliche Matrix definieren.
+An dieser Stelle sollten Sie auch Ihre besucherbasierten Erfolgsmetriken definieren, entweder als Teil der Hypothese oder als zusätzliche Matrix.
 
-**Hypothese:Wenn Sie den grafischen Link &quot;Anforderung einer Demo&quot;näher an den Anfang der Seite** verschieben, erhöht sich die Umrechnung des Besuchers um mindestens 1,5 %.
+**Hypothese:** Wenn Sie den grafischen Link &quot;Demo anfordern&quot;näher an den Anfang der Seite verschieben, erhöht sich die Besucherkonversion um mindestens 1,5 %.
 
-In unserer Hypothese haben wir das Erfolgskriterium für dieses Experiment als eine Steigerung der Besucher-Umrechnung von mindestens 1,5 % definiert.
+In unserer Beispielhypothese haben wir das Erfolgskriterium für dieses Experiment als einen Anstieg der Besucherkonversion um mindestens 1,5 % definiert.
 
 ![](assets/ControlPage.png)
 
