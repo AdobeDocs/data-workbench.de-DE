@@ -1,9 +1,8 @@
 ---
-description: Text oder Ausdrücke können in eine beliebige Zelle eines Arbeitsblatts eingegeben werden.
+description: Text oder Ausdrücke können in beliebige Zellen eines Arbeitsblatts eingegeben werden.
 title: Arbeiten mit Daten in Arbeitsblättern
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '710'
@@ -13,16 +12,16 @@ ht-degree: 3%
 
 # Arbeiten mit Daten in Arbeitsblättern{#work-with-data-in-worksheets}
 
-Text oder Ausdrücke können in eine beliebige Zelle eines Arbeitsblatts eingegeben werden.
+Text oder Ausdrücke können in beliebige Zellen eines Arbeitsblatts eingegeben werden.
 
-Allen Ausdrücken in einem Arbeitsblatt wird ein Gleichheitszeichen (=) vorangestellt, es sei denn, es wird [!DNL eval( )] verwendet, wodurch der Text in der referenzierten Zelle als Ausdruck behandelt wird.
+Allen Ausdrücken in einem Arbeitsblatt vorangestellt wird ein Gleichheitszeichen (=), es sei denn, [!DNL eval( )] wird verwendet, wodurch der Text in der referenzierten Zelle als Ausdruck behandelt wird.
 
-Eine vollständige Liste der Metrik-, Dimensions- und Filtersyntax-Regeln finden Sie unter [Abfrage-Syntax](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+Eine vollständige Liste der Syntax-Regeln für Metriken, Dimensionen und Filter finden Sie unter [Syntax für Abfragesprachen](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 **So geben Sie Daten in ein Arbeitsblatt ein**
 
 1. Klicken Sie zweimal auf eine Zelle im Arbeitsblatt, um in den Bearbeitungsmodus zu wechseln. Die ausgewählte Zelle wird hervorgehoben.
-1. Geben Sie die gewünschten Daten in die Zelle ein oder fügen Sie sie ein.
+1. Geben oder fügen Sie die gewünschten Daten in die Zelle ein.
 
 **So kopieren Sie eine Zelle in eine andere**
 
@@ -31,7 +30,7 @@ Eine vollständige Liste der Metrik-, Dimensions- und Filtersyntax-Regeln finden
 
 Data Workbench aktualisiert automatisch die Verweise in der neuen Zelle, um auf die entsprechenden Spalten und Zeilen zu verweisen.
 
-**So kopieren Sie Zellen aus einer Gruppe in eine andere**
+**So kopieren Sie und fügen aus einer Gruppe von Zellen in eine andere ein**
 
 1. Wählen Sie die Zellen aus, die die zu kopierenden Daten enthalten.
 1. Klicken Sie mit der rechten Maustaste auf die Zellen, die die zu kopierenden Daten enthalten, und klicken Sie auf **[!UICONTROL Copy]**.
@@ -57,10 +56,10 @@ Data Workbench aktualisiert automatisch die Verweise in der neuen Zelle, um auf 
 
 **So ändern Sie die Größe einer Spalte**
 
-1. Platzieren Sie in der Spaltenüberschrift den Cursor über die Trennlinie rechts neben der Spalte, deren Größe Sie ändern möchten.
-1. Klicken und ziehen Sie nach rechts, um die Spaltenbreite zu erhöhen, oder nach links, um die Spaltenbreite zu verringern.
+1. Setzen Sie den Cursor in der Spaltenüberschriftszeile über die Trennlinie rechts neben der Spalte, deren Größe Sie ändern möchten.
+1. Klicken Sie auf die rechte Seite, um die Spaltenbreite zu vergrößern, oder auf die linke Seite, um die Spaltenbreite zu verkleinern.
 
-**So formatieren Sie eine Zelle**
+**So formatieren Sie Zellen**
 
 1. Klicken Sie mit der rechten Maustaste auf die Zelle und klicken Sie auf **[!UICONTROL Format]**.
 
@@ -78,32 +77,32 @@ Data Workbench aktualisiert automatisch die Verweise in der neuen Zelle, um auf 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Nummer </p> </td> 
-   <td colname="col2"> <p>Wendet das ausgewählte numerische Format auf Ihre Daten an, z. B. Uhrzeit, Datum, Prozentsatz oder Dezimalzahl. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span>, um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Wendet das ausgewählte numerische Format auf Ihre Daten an, z. B. Uhrzeit, Datum, Prozentsatz oder Dezimalzahl. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Blocksatz </p> </td> 
-   <td colname="col2"> <p>Richtet die Daten in der Zelle links, zentriert oder rechts aus. Die Standardausrichtung bleibt erhalten. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span>, um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Richtet die Daten in der Zelle links, zentriert oder rechts aus. Die Standardausrichtung bleibt erhalten. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Farbe </p> </td> 
-   <td colname="col2"> <p>Wendet die ausgewählte Schriftfarbe auf die Daten in der Zelle an. Die Standardschriftfarbe ist weiß. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span>, um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Wendet die ausgewählte Schriftfarbe auf die Daten in der Zelle an. Die Standardschriftfarbe ist weiß. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Indikator </p> </td> 
-   <td colname="col2"> <p>Erstellt eine Metrikanzeige mithilfe dieser Zelle. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Erstellen von Metrikindikatoren</a>. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span>, um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Erstellt mithilfe dieser Zelle eine Metrikanzeige. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Erstellen von Metrikindikatoren</a>. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Eingabezelle </p> </td> 
-   <td colname="col2"> <p>Macht die ausgewählte Zelle zu einer Eingabezelle. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Erstellen von Eingabezellen</a>. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span>, um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Macht die ausgewählte Zelle zu einer Eingabezelle. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Erstellen von Eingabezellen</a>. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Tastaturbefehle {#section-05301f4d2c60418e86902635a7aeee20}
 
-In Arbeitsblättern können Sie viele der grundlegenden Tastenkombinationen zur Bearbeitung verwenden, die Sie in jedem Texteditor wie Notepad oder Microsoft Word verwenden können.
+In Arbeitsblättern können Sie viele der grundlegenden Tastaturbefehle für die Bearbeitung verwenden, die Sie in jedem Texteditor wie Notepad oder Microsoft Word verwenden können.
 
-In der folgenden Tabelle werden die grundlegenden Tastaturbefehle Liste, die Sie bei der Eingabe von Daten in ein Arbeitsblatt verwenden können.
+In der folgenden Tabelle sind die grundlegenden Tastaturbefehle aufgeführt, die Sie bei der Eingabe von Daten in ein Arbeitsblatt verwenden können.
 
 <table id="table_8E6F73F253B3451CA1DE45EE4F4E69EF"> 
  <thead> 
@@ -115,7 +114,7 @@ In der folgenden Tabelle werden die grundlegenden Tastaturbefehle Liste, die Sie
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Pfeiltasten </p> </td> 
-   <td colname="col2"> <p>Wechseln Sie mit den Pfeiltasten nach oben, unten, links und rechts von der Zelle zur Zelle im Arbeitsblatt. </p> </td> 
+   <td colname="col2"> <p>Verschieben Sie mithilfe der Pfeiltasten nach oben, unten, links und rechts von einer Zelle in das Arbeitsblatt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>F2 </p> </td> 
@@ -127,7 +126,7 @@ In der folgenden Tabelle werden die grundlegenden Tastaturbefehle Liste, die Sie
   </tr> 
   <tr> 
    <td colname="col1"> <p>Esc </p> </td> 
-   <td colname="col2"> <p>Abbrechen der Bearbeitung der ausgewählten Zelle Der Cursor wird aus der Zelle entfernt, und der Zelleninhalt wird auf das zurückgesetzt, was er vor Beginn der Bearbeitung war. </p> </td> 
+   <td colname="col2"> <p>Abbrechen der Bearbeitung der ausgewählten Zelle Der Cursor wird aus der Zelle entfernt und der Zelleninhalt wird auf den Inhalt zurückgesetzt, der vor dem Bearbeitungsbeginn angezeigt wurde. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Löschen </p> </td> 
@@ -139,7 +138,7 @@ In der folgenden Tabelle werden die grundlegenden Tastaturbefehle Liste, die Sie
   </tr> 
   <tr> 
    <td colname="col1"> <p>Strg+c </p> </td> 
-   <td colname="col2"> <p>Kopieren Sie den Inhalt der Zelle(n). </p> </td> 
+   <td colname="col2"> <p>Kopieren Sie den Inhalt der Zellen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Strg+x </p> <p>Umschalt+Löschen </p> </td> 
@@ -150,7 +149,7 @@ In der folgenden Tabelle werden die grundlegenden Tastaturbefehle Liste, die Sie
    <td colname="col2"> <p>Fügen Sie den Inhalt der Zellen ein, die Sie in die ausgewählten Zellen kopiert haben. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Strg+z </p> </td> 
+   <td colname="col1"> <p>Strg+Z </p> </td> 
    <td colname="col2"> <p>Rückgängigmachen der Eingabe. </p> </td> 
   </tr> 
   <tr> 
