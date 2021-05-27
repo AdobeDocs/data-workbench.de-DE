@@ -1,9 +1,8 @@
 ---
-description: Die Merge-Transformation nimmt die Werte aus dem Eingabefeld (normalerweise ein Vektor von Zeichenfolgen), kombiniert sie in eine einzige Zeichenfolge, die durch das angegebene Trennzeichen getrennt ist, und platziert die resultierende Zeichenfolge in das angegebene Ausgabefeld.
+description: Bei der Umwandlung "Zusammenführen"werden die Werte aus dem Eingabefeld (normalerweise ein Zeichenfolgenvektor) übernommen, zu einer durch das angegebene Trennzeichen getrennten Zeichenfolge kombiniert und die resultierende Zeichenfolge in das angegebene Ausgabefeld eingefügt.
 title: Merge
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
 exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '254'
@@ -11,9 +10,9 @@ ht-degree: 4%
 
 ---
 
-# Merge{#merge}
+# Zusammenführen{#merge}
 
-Die Merge-Transformation nimmt die Werte aus dem Eingabefeld (normalerweise ein Vektor von Zeichenfolgen), kombiniert sie in eine einzige Zeichenfolge, die durch das angegebene Trennzeichen getrennt ist, und platziert die resultierende Zeichenfolge in das angegebene Ausgabefeld.
+Bei der Umwandlung &quot;Zusammenführen&quot;werden die Werte aus dem Eingabefeld (normalerweise ein Zeichenfolgenvektor) übernommen, zu einer durch das angegebene Trennzeichen getrennten Zeichenfolge kombiniert und die resultierende Zeichenfolge in das angegebene Ausgabefeld eingefügt.
 
 <table id="table_2458E008C9A14B31A774E6819D07E9BE"> 
  <thead> 
@@ -26,7 +25,7 @@ Die Merge-Transformation nimmt die Werte aus dem Eingabefeld (normalerweise ein 
  <tbody> 
   <tr> 
    <td colname="col1"> Name </td> 
-   <td colname="col2"> Beschreibender Name der Transformation. Sie können hier einen beliebigen Namen eingeben. </td> 
+   <td colname="col2"> Deskriptiver Name der Transformation. Hier können Sie einen beliebigen Namen eingeben. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -46,12 +45,12 @@ Die Merge-Transformation nimmt die Werte aus dem Eingabefeld (normalerweise ein 
   </tr> 
   <tr> 
    <td colname="col1"> Trennzeichen </td> 
-   <td colname="col2"> <p>String, der verwendet wird, um die einzelnen Elemente des Eingabestring-Vektors in der einzelnen Ausgabestrategie zu trennen. </p> <p> Wenn Sie die Strg-Taste gedrückt halten und mit der rechten Maustaste in den Trennzeichner-Parameter klicken, wird das Menü <span class="wintitle"> Einfügen</span> angezeigt. Dieses Menü enthält eine Liste von Sonderzeichen, die häufig als Trennzeichen verwendet werden. </p> </td> 
+   <td colname="col2"> <p>Zeichenfolge, die verwendet wird, um die einzelnen Elemente des Eingabe-String-Vektors in der einzelnen Ausgabe-Zeichenfolge zu trennen. </p> <p> Wenn Sie die Strg-Taste gedrückt halten und mit der rechten Maustaste im Trennzeichen-Parameter klicken, wird das Menü <span class="wintitle"> Einfügen</span> angezeigt. Dieses Menü enthält eine Liste von Sonderzeichen, die häufig als Trennzeichen verwendet werden. </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Eingabe </td> 
-   <td colname="col2"> Ein Vektor von Zeichenfolgenwerten, die zu einer Ausgabestrategie kombiniert werden. </td> 
+   <td colname="col2"> Ein Vektor von Zeichenfolgenwerten, die kombiniert werden, um die Ausgabezeichenfolge zu bilden. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -62,8 +61,8 @@ Die Merge-Transformation nimmt die Werte aus dem Eingabefeld (normalerweise ein 
  </tbody> 
 </table>
 
-In diesem Beispiel wird davon ausgegangen, dass ein EingabekVektor von Zeichenfolgen eine Reihe von Produkten enthält, die zum Kauf ausgewählt wurden. Diese Produkte werden in einer einzigen Ausgabestrategie platziert und durch &quot;:&quot;(zwei Doppelpunkte) getrennt.
+In diesem Beispiel wird davon ausgegangen, dass ein Eingabefeld von Zeichenfolgen einen Satz von Produkten enthält, die zum Kauf ausgewählt wurden. Diese Produkte werden in einer einzelnen Ausgabezeichenfolge platziert und durch &quot;::&quot;getrennt (zwei Doppelpunkte).
 
 ![](assets/cfg_TransformationType_Merge.png)
 
-Wenn also das Eingabefeld x-products die Zeichenfolgenwerte B57481, C46355 und Z97123 enthielt, wäre die resultierende Ausgabezeichenfolge x-show-products B57481::C46355::Z97123.
+Wenn also das Eingabefeld x-products die Zeichenfolgenwerte B57481, C46355 und Z97123 enthielt, wäre die resultierende Ausgabestruktur x-show-products B57481::C46355::Z97123.
