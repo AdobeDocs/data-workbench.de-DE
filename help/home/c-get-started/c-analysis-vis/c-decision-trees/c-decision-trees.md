@@ -1,9 +1,8 @@
 ---
-description: Entscheidungsbäume sind eine Visualisierung der Analyse, die zur Auswertung von Merkmalen und Beziehungen der Besucher verwendet wird. Der Entscheidungsbaum-Aufbau erzeugt eine Entscheidungsbaumdarstellung basierend auf einem angegebenen positiven Fall und einer Reihe von Eingaben.
+description: Entscheidungsbäume sind eine prädiktive Analysevisualisierung, die zur Bewertung von Besuchermerkmalen und -beziehungen verwendet wird. Der Entscheidungsbaum-Aufbau erzeugt eine Entscheidungsbaumdarstellung basierend auf einem angegebenen positiven Fall und einer Reihe von Eingaben.
 title: Decision Tree Builder
 uuid: 1f7e91ea-e5d9-4d8e-9fcf-cae4de42dfdd
 exl-id: d93e6a34-be59-4af5-84c3-c13deb98b57b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '445'
@@ -13,29 +12,29 @@ ht-degree: 23%
 
 # Decision Tree Builder{#decision-tree-builder}
 
-Entscheidungsbäume sind eine Visualisierung der Analyse, die zur Auswertung von Merkmalen und Beziehungen der Besucher verwendet wird. Der Entscheidungsbaum-Aufbau erzeugt eine Entscheidungsbaumdarstellung basierend auf einem angegebenen positiven Fall und einer Reihe von Eingaben.
+Entscheidungsbäume sind eine prädiktive Analysevisualisierung, die zur Bewertung von Besuchermerkmalen und -beziehungen verwendet wird. Der Entscheidungsbaum-Aufbau erzeugt eine Entscheidungsbaumdarstellung basierend auf einem angegebenen positiven Fall und einer Reihe von Eingaben.
 
 Ein Entscheidungsbaum ist ein binärer Klassifizierer mit einem Satz von Regeln (oder Filtern), der Benutzer erkennt, die basierend auf einem positiven Fall bestimmte Regeln erfüllen. Ein Entscheidungsbaum legt Regeln zur Classification von Besuchern fest, die diesem positiven Fall entsprechen (oder nicht). Diese Regeln erzeugen eine Tree Map, die ein Konfidenzniveau bietet, das diesen positiven Fallergebnissen entspricht.
 
-Eine Entscheidungsstruktur wird erstellt, indem die Eingaben auf jeder Ebene geprüft und die Ebene gewählt wird, die eine maximale Informationsmenge an einem bestimmten Aufteilungspunkt bietet. Die geteilten Punkte für jede Variablenebene erzeugen zwei Sätze:
+Ein Entscheidungsbaum wird erstellt, indem die Eingaben auf jeder Ebene geprüft und die Ebene ausgewählt wird, die einen maximalen Informationsgewinn an einem bestimmten Aufspaltungspunkt ermöglicht. Aufspaltungspunkte für jede Variablenebene erzeugen zwei Sätze:
 
-* Werte kleiner als oder gleich dem Teilungspunkt und
-* Werte größer als der Spaltpunkt.
+* Werte kleiner oder gleich dem Aufteilungspunkt und
+* Werte, die größer als der Trennpunkt sind.
 
 Verwenden Sie Entscheidungsbäume, um
 
-* Führen Sie sinnvolle Analyse und Interpretation in kürzerer Zeit durch.
-* Einsatz der automatisierten Segmentgenerierung.
-* Erstellen Sie schnell Rückschlüsse aus einem Modell, das auf einer großen Datenmenge basiert.
+* Führen Sie in kürzerer Zeit eine aussagekräftige Analyse und Interpretation durch.
+* Verwenden Sie die automatisierte Segmenterstellung.
+* Sie können schnell Rückschlüsse aus einem Modell ziehen, das auf einer großen Datenmenge basiert.
 
 ![](assets/decision_tree_parts.png)
 
 <table id="table_FCC5D63EF8A843D79B2338BD951025EA"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>Symbolleiste und Menüs</b> </p> <p>Die Symbolleiste enthält Schaltflächen und Menübefehle für die Entscheidungsstruktur, einschließlich Funktionen zum Festlegen der Groß-/Kleinschreibung und zum Hinzufügen von Eingabeauflistungen. </p> <p>Wie bei anderen Visualisierungen können Sie mit dem Feld <span class="uicontrol"> Element</span> Dimension und Elemente per Drag &amp; Drop verschieben. Sie können auch direkt aus dem Finder-Bereich ziehen. </p> <p>Weitere Informationen finden Sie unter <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> Decision Tree Options</a>. </p> </td> 
-   <td colname="col2"> <p><b>Eingabe-Auflistung</b> </p> <p>In diesem Bereich werden die Eingaben in das Baummodell angezeigt. Sie sind farbkodiert, um Nodes im Baumanzeigebereich zuzuordnen. </p> <p>Wenn Sie mit der rechten Maustaste auf eine Eingabe klicken, können Sie die Eingabe aus dem Modell entfernen und zurücksetzen. </p> <p>Wenn Sie den Mauszeiger über einen Strukturknoten bewegen, werden die Teilungsbedingungen entlang der Verzweigung zu diesem Knoten und die Vorhersage an diesem Knoten mit dem Vertrauenswert angezeigt. </p> </td> 
-   <td colname="col3"> <p><b>Baumanzeige</b> </p> <p>In diesem Bereich wird das Baummodell mit Blattknoten basierend auf der Vorhersage farbkodiert angezeigt: grün für eine echte Prognose des positiven Falls und rot für eine falsche Prognose. </p> <p>Die geteilten Nodes sind farbkodiert für die Eingaben, die ihrer Auswahlbedingung entsprechen. Wenn Sie den Mauszeiger über einen Knoten halten, werden Informationen zur Teilung angezeigt und die Liste der Eingaben erweitert, um die geteilten Punkte entlang der Verzweigung und die Verteilung des Schulungssatzes anzuzeigen. </p> <p>Knoten unter einem Schwellenwert werden standardmäßig nicht angezeigt. Klicken Sie auf einen erweiterbaren Knoten (durch ein +-Symbol gekennzeichnet), um eine Verzweigung zu erkunden. Klicken Sie auf die Stamm-Node, um zur vollständigen Baumanzeige zurückzukehren. </p> </td> 
+   <td colname="col1"> <p><b>Symbolleiste und Menüs</b> </p> <p>Die Symbolleiste enthält Schaltflächen und Menübefehle für den Entscheidungsbaum, einschließlich Funktionen zum Festlegen der Groß-/Kleinschreibung und Hinzufügen von Eingabeauflistungen. </p> <p>Wie bei anderen Visualisierungen können Sie mit dem Feld <span class="uicontrol"> Element</span> Dimension und Elemente per Drag-and-Drop verschieben. Sie können aber auch direkt aus dem Bereich Finder ziehen. </p> <p>Weitere Informationen finden Sie unter <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> Decision Tree Options</a>. </p> </td> 
+   <td colname="col2"> <p><b>Input Listing</b> </p> <p>In diesem Bereich werden die Eingaben in das Baummodell angezeigt. Sie sind farbcodiert, um Knoten im Anzeigebereich "Baum"abzugleichen. </p> <p>Wenn Sie mit der rechten Maustaste auf eine Eingabe klicken, können Sie die Eingabe aus dem Modell entfernen und zurücksetzen. </p> <p>Wenn Sie den Mauszeiger über einen Strukturknoten bewegen, werden die Aufspaltungsbedingungen entlang des Zweigs zu diesem Knoten und die Prognose an diesem Knoten mit dem Vertrauenswert angezeigt. </p> </td> 
+   <td colname="col3"> <p><b>Baumanzeige</b> </p> <p>In diesem Bereich wird das Baummodell mit Blattknoten angezeigt, die basierend auf ihrer Prognose farbcodiert sind: grün für eine True-Prognose für den positiven Fall und rot für eine False-Prognose. </p> <p>Die Aufspaltungsknoten sind farbkodiert für die Eingaben, die ihren Auswahlbedingungen entsprechen. Wenn Sie den Mauszeiger über einen Knoten bewegen, werden Informationen über die Aufspaltung angezeigt und die Eingabeauflistung erweitert, um die Aufspaltungspunkte entlang des Zweigs und die Verteilung des Trainings-Sets anzuzeigen. </p> <p>Knoten unterhalb eines Schwellenwerts werden nicht standardmäßig angezeigt. Klicken Sie auf einen erweiterbaren Knoten (durch ein "+"-Symbol gekennzeichnet), um eine Verzweigung zu untersuchen. Klicken Sie auf den Stammknoten, um zur vollständigen Baumanzeige zurückzukehren. </p> </td> 
   </tr> 
  </tbody> 
 </table>
