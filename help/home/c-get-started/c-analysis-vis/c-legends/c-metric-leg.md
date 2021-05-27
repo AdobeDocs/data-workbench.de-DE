@@ -1,9 +1,8 @@
 ---
-description: Anhand von Metriklegenden können Sie die grundlegenden Metriken zu Ihrem Profil und Statistiken zum Datensatz (oder zur aktuellen Auswahl, falls vorhanden) sehen.
+description: Anhand von Metriklegenden können Sie die Basismetriken für Ihr Profil und Statistiken bezüglich des Datensatzes (bzw. der aktuellen Auswahl, falls vorhanden) anzeigen.
 title: Metriklegenden
 uuid: 72de7b0e-0a71-4465-baaf-d515fe474e0d
 exl-id: 1f2e58e2-44ea-4760-a504-2ed3a80c8b19
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '165'
@@ -13,15 +12,15 @@ ht-degree: 7%
 
 # Metriklegenden{#metric-legends}
 
-Anhand von Metriklegenden können Sie die grundlegenden Metriken zu Ihrem Profil und Statistiken zum Datensatz (oder zur aktuellen Auswahl, falls vorhanden) sehen.
+Anhand von Metriklegenden können Sie die Basismetriken für Ihr Profil und Statistiken bezüglich des Datensatzes (bzw. der aktuellen Auswahl, falls vorhanden) anzeigen.
 
-Metriklegenden in Ihrer Adobe zeigen die Metriken an, die für Ihren Datensatz relevant sind, wie in der folgenden [!DNL Site]-Metriklegende.
+Metriklegenden in Ihrer Adobe App zeigen die Metriken an, die für Ihren Datensatz relevant sind, wie in der folgenden [!DNL Site] Metriklegende.
 
 ![](assets/lgd_MetricLegend.png)
 
-Metriklegenden sind eigentlich ein Sonderfall einer Tabellenvisualisierung. Daher stehen für Metriklegenden dieselben Funktionen wie für Tabellen zur Verfügung. Siehe [Tabellen](../../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f).
+Metriklegenden sind eigentlich ein Sonderfall einer Tabellenvisualisierung. Daher sind für Metriklegenden dieselben für Tabellen verfügbaren Funktionen verfügbar. Siehe [Tabellen](../../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f).
 
-## hinzufügen einer Metrik {#section-6655470bf06c4d2b82f7a01784552d1e}
+## Metrik hinzufügen {#section-6655470bf06c4d2b82f7a01784552d1e}
 
 * Klicken Sie in der Metriklegende mit der rechten Maustaste auf einen Metriknamen und klicken Sie auf **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]***.
 
