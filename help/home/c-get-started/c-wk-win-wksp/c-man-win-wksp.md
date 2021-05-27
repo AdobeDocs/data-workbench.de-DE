@@ -3,7 +3,6 @@ description: Die verfügbaren Fenstertypen hängen vom Profil und der Anwendung 
 title: Anpassen von Fenstern in einem Arbeitsbereich
 uuid: a7f9b132-999a-4ba8-9e34-1d41075f9e13
 exl-id: 0bedc792-c05b-4f7c-ac1e-f2d5c66e440d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '201'
@@ -17,18 +16,18 @@ Die verfügbaren Fenstertypen hängen vom Profil und der Anwendung ab, mit der S
 
 **So fügen Sie ein Fenster hinzu**
 
-1. Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und klicken Sie auf die gewünschte Menüoption.
-1. Wählen Sie in den angezeigten Menüs den Fenstertyp aus, der Ansicht werden soll.
+1. Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und wählen Sie die gewünschte Menüoption aus.
+1. Wählen Sie aus den angezeigten Menüs den Fenstertyp aus, den Sie anzeigen möchten.
 
 **So verschieben Sie ein Fenster**
 
-Setzen Sie den Mauszeiger auf den oberen Rand des Fensters, bis er als Vierfachpfeil dargestellt wird, und ziehen Sie ihn dann an die gewünschte Position in Ihrer Arbeitsfläche.
+Setzen Sie den Mauszeiger auf den oberen Rand des Fensters, bis es zu einem vierzeiligen Pfeil wird, und ziehen Sie es dann an die gewünschte Position in Ihrem Arbeitsbereich.
 
 ![](assets/vis_moving.png)
 
 **So ändern Sie die Größe eines Fensters**
 
-Setzen Sie den Mauszeiger auf eine beliebige Seite oder Ecke des Fensters, bis er zu einem zweizeiligen Pfeil wird, und ziehen Sie dann die Ecke oder Seite des Fensters, bis die gewünschte Größe erreicht ist.
+Setzen Sie den Mauszeiger auf eine beliebige Seite oder Ecke des Fensters, bis es zu einem zweizeigenden Pfeil wird, und ziehen Sie dann die Fensterecke oder Seite, bis das Fenster die gewünschte Größe aufweist.
 
 ![](assets/vis_resize.png)
 
