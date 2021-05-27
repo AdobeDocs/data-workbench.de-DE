@@ -1,9 +1,8 @@
 ---
-description: Beim Erstellen einer Vektorebene, die auf eine tabulatorgetrennte Datei (.tsv) verweist, werden die Vektordaten durch Abrufen von Zeichenanweisungen sowie von Längen- und Breitendaten aus der .tsv-Datei abgerufen.
+description: Beim Erstellen einer Vektorebene, die auf eine tabulatorgetrennte Datei (.tsv) verweist, werden die Vektordaten durch Abrufen von Zeichenanweisungen sowie Längen- und Breitengraddaten aus der .tsv-Datei abgerufen.
 title: Vektorebenen mit Verweis auf Dateien mit tabulatorgetrennten Werten
 uuid: 42607b34-e9f2-420a-ba5a-05562598b480
 exl-id: be16ba73-4a98-472b-98f1-1b32e671b763,7b0b0286-072b-4b31-b6ec-ced322da5236
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '352'
@@ -13,13 +12,13 @@ ht-degree: 6%
 
 # Vektorebenen mit Verweis auf Dateien mit tabulatorgetrennten Werten{#vector-layers-referencing-tab-separated-values-files}
 
-Beim Erstellen einer Vektorebene, die auf eine tabulatorgetrennte Datei (.tsv) verweist, werden die Vektordaten durch Abrufen von Zeichenanweisungen sowie von Längen- und Breitendaten aus der .tsv-Datei abgerufen.
+Beim Erstellen einer Vektorebene, die auf eine tabulatorgetrennte Datei (.tsv) verweist, werden die Vektordaten durch Abrufen von Zeichenanweisungen sowie Längen- und Breitengraddaten aus der .tsv-Datei abgerufen.
 
-Um eine Vektorebene zu definieren, die auf eine [!DNL .tsv]-Datei verweist, müssen Sie über Folgendes verfügen:
+Um eine Vektorebene zu definieren, die auf [!DNL .tsv]-Dateien verweist, müssen Sie über Folgendes verfügen:
 
-* **Eine  [!DNL .tsv]** Datei mit den Daten, die zum Zeichnen der Vektoren auf der Welt verwendet werden, einschließlich Längen- und Breitendaten. Weitere Informationen zum erforderlichen Format der Datei [!DNL .tsv] finden Sie unter [Vector TSV-Dateiformat](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e).
+* **Eine  [!DNL .tsv]** Datei mit den Daten, die zum Zeichnen der Vektoren auf der Welt verwendet werden, einschließlich Längen- und Breitengraddaten. Weitere Informationen zum erforderlichen Format der Datei [!DNL .tsv] finden Sie unter [Vector TSV File Format](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e).
 
-* **Eine Ebenendatei,** die den Speicherort der  [!DNL .tsv] Datei angibt. Weitere Informationen zum erforderlichen Format der Ebenendatei finden Sie unter [Vektorschichtdateiformat](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf).
+* **Eine Ebenendatei,** die den Speicherort der  [!DNL .tsv] Datei angibt. Weitere Informationen zum erforderlichen Format der Ebenendatei finden Sie unter [Vector Layer File Format](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf).
 
 ## Vector TSV-Dateiformat {#section-a29012c9ff4444ac8a6d41c68482828e}
 
@@ -33,13 +32,13 @@ Die Datei [!DNL .tsv] muss die folgenden drei tabulatorgetrennten Spalten enthal
 >
 >Alle weiteren Spalten werden ignoriert.
 
-Im Folgenden finden Sie eine Beispieldatei [!DNL .tsv] mit Daten für eine Vektorebene:
+Im Folgenden finden Sie eine [!DNL .tsv]-Beispieldatei, die Daten für eine Vektorebene enthält:
 
 ![](assets/tsv_vectorlayer.png)
 
-## Vektorschichtdateiformat {#section-c430923f341f4c93852e9f24b61e82bf}
+## Vektorebenen-Dateiformat {#section-c430923f341f4c93852e9f24b61e82bf}
 
-Jede Vektorschichtdatei, die auf [!DNL .tsv]-Dateien verweist, muss mit der folgenden Vorlage formatiert werden:
+Jede Vektorebenen-Datei, die auf [!DNL .tsv]-Dateien verweist, muss mit der folgenden Vorlage formatiert werden:
 
 ```
 Layer = VectorLayer:
@@ -64,19 +63,19 @@ Layer = VectorLayer:
  <tbody> 
   <tr> 
    <td colname="col1"> TSV-Dateien </td> 
-   <td colname="col2"> <p>Pfad(e) zu der (den) Datei(en) <span class="filepath"> .tsv</span>, die die Vektordaten enthält. </p> <p>Beispiel: <span class="filepath"> Maps\\USVectorData.tsv</span> </p> </td> 
+   <td colname="col2"> <p>Pfad(e) zu der Datei(en) <span class="filepath"> .tsv</span>, die die Vektordaten enthält. </p> <p>Beispiel: <span class="filepath"> Maps\\USVectorData.tsv</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Farbe </td> 
-   <td colname="col2"> Der RGB-Farbvektor, der als (rot, grün, blau) ausgedrückt wird. Für jede Farbe im Vektor können Sie einen Wert zwischen 0,0 und 1,0 eingeben. (1.0, 0.0, 0.0) ist beispielsweise hellrot und (0.5, 0.5, 0.5) grau. </td> 
+   <td colname="col2"> Der RGB-Farbvektor, der als (rot, grün, blau) angegeben wird. Für jede Farbe im Vektor können Sie einen Wert zwischen 0,0 und 1,0 eingeben. (1,0, 0,0, 0,0) ist beispielsweise hellrot und (0,5, 0,5, 0,5) grau. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Alpha </td> 
-   <td colname="col2"> Steuert die Transparenz der Vektoren auf der Welt. Der Bereich liegt zwischen 0 und 1, wobei 0 der transparenteste Wert ist. </td> 
+   <td colname="col2"> Steuert die Transparenz der weltweit angezeigten Vektoren. Der Bereich liegt zwischen 0 und 1, wobei 0 der transparenteste ist. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Breite </td> 
-   <td colname="col2"> Optional. Legt die Breite der Daten in Pixel fest. Der empfohlene Bereich ist 1 bis 4. </td> 
+   <td colname="col2"> Optional. Legt die Breite der Daten in Pixel fest. Der empfohlene Bereich beträgt 1 bis 4. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Fehlerfaktor </td> 
