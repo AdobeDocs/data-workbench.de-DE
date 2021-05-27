@@ -3,7 +3,6 @@ description: Schritte, die die Erfassung von Link-Klicks mithilfe des Referenzse
 title: Tracking von Link-Klicks
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
 exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '207'
@@ -15,7 +14,7 @@ ht-degree: 3%
 
 Schritte, die die Erfassung von Link-Klicks mithilfe des Referenzseiten-Tags erleichtern.
 
-Durch die Bereitstellung von [!DNL Reference Page Tag] ist es möglich, Messungsdaten mit den Links (oder href-Werten) zu erfassen, auf die Besucher beim Besuch bestimmter Seiten klicken. Normalerweise umfasst diese Sammlung nicht die Implementierung zusätzlicher Link-IDs in Ihre HTML-Seiten.
+Durch die Implementierung von [!DNL Reference Page Tag] können Messdaten erfasst werden, die die Links (oder href-Werte) angeben, auf die Besucher beim Besuch bestimmter Seiten klicken. Normalerweise umfasst diese Sammlung nicht die Implementierung zusätzlicher Link-IDs in Ihre HTML-Seiten.
 
 Um die Erfassung von Link-Klicks mithilfe von [!DNL Reference Page Tag] zu erleichtern, führen Sie die folgenden Schritte aus:
 
@@ -78,12 +77,12 @@ Um die Erfassung von Link-Klicks mithilfe von [!DNL Reference Page Tag] zu erlei
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. Erstellen oder platzieren Sie die Bilddatei mit dem Namen [!DNL zag2.gif] um 1 Pixel in einem Verzeichnis, das auf Ihrem Webserver vorhanden ist.
+1. Erstellen oder platzieren Sie die Bilddatei mit dem Namen [!DNL zag2.gif] 1 Pixel pro Pixel in einem Verzeichnis auf Ihrem Webserver.
 1. Ändern Sie die Variable [!DNL lc.src], um auf die entsprechende Domäne Ihrer Website zu verweisen, von der aus auf die Datei [!DNL zag2.gif]verwiesen wird.
 
-1. Stellen Sie sicher, dass für die Dateien [!DNL zag.gif] und [!DNL zig.js] entsprechende Cache-Control-Header eingerichtet sind.
+1. Stellen Sie sicher, dass geeignete Cache-Control-Header für die Dateien [!DNL zag.gif] und [!DNL zig.js] eingerichtet sind.
 
-1. In den HTML-Dateien, aus denen Sie Link-Klickwerte erfassen möchten, muss das [!DNL Reference Page Tag Execution Call] geändert werden, um die [!DNL Page Tag Execution Script]-Variable darüber zu informieren, dass Link-Klicks für diese Seite erfasst werden. Ändern Sie dazu den Variablenwert vlc in &quot;1&quot;, wie im folgenden Codebeispiel hervorgehoben:
+1. In den HTML-Dateien, aus denen Sie Link-Klickwerte erfassen möchten, muss das [!DNL Reference Page Tag Execution Call] so geändert werden, dass es die [!DNL Page Tag Execution Script] informiert, dass Klicks auf Links für diese Seite erfasst werden. Ändern Sie dazu den Wert der vlc-Variablen in &quot;1&quot;, wie im folgenden Codebeispiel hervorgehoben:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -104,4 +103,4 @@ var v = {};
 
 | Erfasste Daten | Erklärung | Beispiel |
 |---|---|---|
-| v_ln= | Wert, der die Impression-Kampagne angibt | v_ln=&quot;About%20us&quot; |
+| v_ln= | Wert, der die Impressionskampagne angibt | v_ln=&quot;About%20US&quot; |
