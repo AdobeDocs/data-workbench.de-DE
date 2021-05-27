@@ -1,9 +1,8 @@
 ---
-description: Die Mathematik-Transformation ermöglicht die Verwendung von arithmetischen Operationen in Feldern in den Protokolleinträgen.
+description: Die Mathematische Transformation ermöglicht die Verwendung von arithmetischen Operationen für Felder in den Protokolleinträgen.
 title: Math
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
 exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '256'
@@ -11,11 +10,11 @@ ht-degree: 7%
 
 ---
 
-# Math{#math}
+# Mathematisch{#math}
 
-Die Mathematik-Transformation ermöglicht die Verwendung von arithmetischen Operationen in Feldern in den Protokolleinträgen.
+Die Mathematische Transformation ermöglicht die Verwendung von arithmetischen Operationen für Felder in den Protokolleinträgen.
 
-Die Vorgänge können Dezimalzahlen und Fließkommakonstanten enthalten.
+Die Vorgänge können Dezimalzahlen und Fließkommastenkonstanten enthalten.
 
 <table id="table_FDF3DDF1960E43E391A67C9DC2A0E302"> 
  <thead> 
@@ -28,7 +27,7 @@ Die Vorgänge können Dezimalzahlen und Fließkommakonstanten enthalten.
  <tbody> 
   <tr> 
    <td colname="col1"> Name </td> 
-   <td colname="col2"> Beschreibender Name der Transformation. Sie können hier einen beliebigen Namen eingeben. </td> 
+   <td colname="col2"> Deskriptiver Name der Transformation. Hier können Sie einen beliebigen Namen eingeben. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -43,7 +42,7 @@ Die Vorgänge können Dezimalzahlen und Fließkommakonstanten enthalten.
   </tr> 
   <tr> 
    <td colname="col1"> Ausdruck </td> 
-   <td colname="col2"> <p>Ein arithmetischer Ausdruck, der die Berechnung beschreibt. </p> <p> Sie können die unten aufgeführten Vorgänge und Funktionen verwenden und Feldnamen in den Ausdruck integrieren: </p> <p> Betrieb 
+   <td colname="col2"> <p>Ein arithmetischer Ausdruck, der die auszuführende Berechnung beschreibt. </p> <p> Sie können alle unten aufgeführten Vorgänge und Funktionen verwenden und Feldnamen in den Ausdruck integrieren: </p> <p> Betrieb 
      <ul id="ul_DB5915FADA0A41A3B11F1F48615F40A9">
       <li id="li_CA9EA97243F04760A81313C17EE057B3"> Addition (+) </li>
       <li id="li_908A272EBA2340098C20F22AA8D9ED26"> Subtraktion (-) </li>
@@ -55,11 +54,11 @@ Die Vorgänge können Dezimalzahlen und Fließkommakonstanten enthalten.
      <ul id="ul_E335AE8D684340AA998C4A2633FFDEE1">
       <li id="li_E036FF0B5DF244DDBFEDA9BFEDC62251"> sgn(x). Gibt 1 zurück, wenn x positiv ist, 0, wenn x null ist, oder -1, wenn x negativ ist. </li>
       <li id="li_90CD8899DDC14778A95930C2768C82BC"> abs(x). Gibt den absoluten Wert von x zurück. </li>
-      <li id="li_F4AF23F343F74BD88B7166B1C2BB065E"> floor(x). Gibt die größte Ganzzahl von kleiner oder gleich x zurück. </li>
-      <li id="li_A31379A3659240C3A629BFAF19A6DDF1"> round(x). Gibt die nächste Ganzzahl zu x zurück. </li>
+      <li id="li_F4AF23F343F74BD88B7166B1C2BB065E"> floor(x). Gibt die größte ganze Zahl zurück, die kleiner oder gleich x ist. </li>
+      <li id="li_A31379A3659240C3A629BFAF19A6DDF1"> round(x). Gibt die nächste Ganzzahl bis x zurück. </li>
       <li id="li_9C0A0F3A4A304026B543F2A64B98B922"> log(b,x). Gibt den Logarithmus von x Basis b zurück. </li>
-      <li id="li_124D62C2CA5A42CBBCC5DB18FAA8920E"> min(x,y,...) Gibt die kleinste aller Argumente zurück. </li>
-      <li id="li_3B7B9FC1C0BF4E7688F9F49130B97B7F"> max(x,y,...) Gibt das größte aller Argumente zurück. </li>
+      <li id="li_124D62C2CA5A42CBBCC5DB18FAA8920E"> min(x, y,...). Gibt die kleinste aller zugehörigen Argumente zurück. </li>
+      <li id="li_3B7B9FC1C0BF4E7688F9F49130B97B7F"> max(x,y,...). Gibt die größte aller Argumente zurück. </li>
      </ul></p> </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -71,7 +70,7 @@ Die Vorgänge können Dezimalzahlen und Fließkommakonstanten enthalten.
  </tbody> 
 </table>
 
-In diesem Beispiel, das Datenfelder verwendet, die aus dem Website-Traffic erfasst wurden, wird ein neues Feld namens x-page-duration berechnet, indem x-last-pv-timestamp von x-timestamp subtrahiert und dann 1 hinzugefügt wird. Die Ausgabe wird nur berechnet, wenn das benutzerdefinierte Feld x-last-pv-timestamp (das den Zeitstempel der letzten Ansicht eines Besuchers darstellt) ausgefüllt oder &quot;nicht leer&quot;ist.
+In diesem Beispiel, das Felder von Daten verwendet, die aus dem Website-Traffic erfasst wurden, wird ein neues Feld mit dem Namen x-page-duration berechnet, indem x-last-pv-timestamp von x-timestamp subtrahiert und 1 hinzugefügt wird. Die Ausgabe wird nur berechnet, wenn das benutzerdefinierte Feld x-last-pv-timestamp (das den Zeitstempel der letzten Seitenansicht eines Besuchers darstellt) ausgefüllt oder &quot;nicht leer&quot;ist.
 
 ![](assets/cfg_TransformationType_Math.png)
 
