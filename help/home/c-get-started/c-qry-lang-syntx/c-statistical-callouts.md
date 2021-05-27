@@ -1,9 +1,8 @@
 ---
-description: Statistische Berechnungen erfassen aussagekräftige Beziehungen, um versteckte Gelegenheiten und Interessensvariablen für erweiterte Data Mining-Funktionen bei der Audience-Clustering und der Bewertung der Reaktionsfähigkeit von Besuchern zu identifizieren.
+description: Statistische Berechnungen messen aussagekräftige Beziehungen, um versteckte Gelegenheiten und Variablen von Interesse für erweiterte Data-Mining-Funktionen im Zielgruppen-Clustering und der Bewertung der Besucherantworten zu identifizieren.
 title: Hinweise zu Statistiken
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
 exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '273'
@@ -13,18 +12,18 @@ ht-degree: 23%
 
 # Hinweise zu Statistiken{#statistical-callouts}
 
-Statistische Berechnungen erfassen aussagekräftige Beziehungen, um versteckte Gelegenheiten und Interessensvariablen für erweiterte Data Mining-Funktionen bei der Audience-Clustering und der Bewertung der Reaktionsfähigkeit von Besuchern zu identifizieren.
+Statistische Berechnungen messen aussagekräftige Beziehungen, um versteckte Gelegenheiten und Variablen von Interesse für erweiterte Data-Mining-Funktionen im Zielgruppen-Clustering und der Bewertung der Besucherantworten zu identifizieren.
 
-Statistische Berechnungen erweitern die Algorithmen, sodass mehr Datentypen korreliert werden können, wie z. B. binomielle Variablen (ja/nein, 0/1 oder Käufer/Nicht-Käufer), die mit zählbaren Metriken (Besuche, Bestellungen oder Downloads) korreliert sind.
+Statistische Berechnungen erweitern die Algorithmen, sodass mehr Datentypen korreliert werden können, wie z. B. Binärvariablen (Ja/Nein, 0/1 oder Käufer/Nicht-Käufer), die mit zählbaren Metriken (Besuche, Bestellungen oder Downloads) korreliert sind.
 
 So fügen Sie statistische Berechnungen hinzu:
 
-1. Klicken Sie in einer Tabelle mit der rechten Maustaste auf die Metriküberschrift.
-1. Wählen Sie **[!UICONTROL Statistics]** aus und wählen Sie dann die Auswahlfelder für jede erforderliche Einstellung aus oder löschen Sie sie. Alle Elemente im Anzeigeaufruf sind als Standardeinstellung ausgewählt.
+1. Klicken Sie in einer Tabelle mit der rechten Maustaste auf die Metrikkopfzeile.
+1. Wählen Sie **[!UICONTROL Statistics]** aus und wählen oder löschen Sie dann die Häkchen für jede erforderliche Einstellung. Alle im Anzeigekalender sind als Standardeinstellung ausgewählt.
 
    ![](assets/statistical_callouts.png)
 
-Der Callout kann statistische Werte zurückgeben, die in die Datensatzspalten einfließen.
+Die Berechnung kann statistische Werte zurückgeben, die in die Datensatzspalten einfließen.
 
 <table id="table_B2A4F9D5938D4756A81ACF6F4D77E63D">
  <thead>
@@ -48,7 +47,7 @@ Der Callout kann statistische Werte zurückgeben, die in die Datensatzspalten ei
   </tr>
   <tr>
    <td colname="col1"> Mittel </td>
-   <td colname="col2"><p> Das Mittel ist der arithmetische Durchschnitt der Metrikwerte der Elemente in der Dimension, berechnet durch die Summe geteilt durch die Anzahl (Summe/Anzahl). </p></td>
+   <td colname="col2"><p> Der Mittelwert ist der arithmetische Mittelwert der Metrikwerte der Elemente in der Dimension, berechnet durch die Summe geteilt durch die Anzahl (Summe/Anzahl). </p></td>
   </tr>
   <tr>
    <td colname="col1"> Standardabweichung </td>
@@ -60,7 +59,7 @@ Der Callout kann statistische Werte zurückgeben, die in die Datensatzspalten ei
   </tr>
   <tr>
    <td colname="col1"> Schwankung </td>
-   <td colname="col2"><p> Ein Maß für die Varianz der Metrikwerte aus dem Metrikmittel für diese Dimension. Sie ist gleich dem Quadrat der Standardabweichung. </p></td>
+   <td colname="col2"><p> Ein Maß für die Varianz der Metrikwerte vom Metrikmittelwert für diese Dimension. Sie entspricht dem Quadrat der Standardabweichung. </p></td>
   </tr>
  </tbody>
 </table>
