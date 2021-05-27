@@ -1,10 +1,9 @@
 ---
-description: Nachdem Sie das neue Feld der Datei "Log Processing.cfg"hinzugefügt und die neue Split-Transformation und die erweiterte Dimension erstellt haben, können Sie die neue erweiterte Dimension, die Sie erstellt haben, nach Abschluss der Verarbeitung der schnellen Eingabe Ansicht haben.
+description: Nachdem Sie das neue Feld zu Log Processing.cfg hinzugefügt und die neue Aufspaltungs- und erweiterte Dimension erstellt haben, können Sie die neue erweiterte Dimension anzeigen, die Sie erstellt haben, sobald die Phase der schnellen Eingabe der Datenerneuerung abgeschlossen ist.
 solution: Analytics,Analytics
 title: Einsehen der Ergebnisse des Experiments
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 exl-id: cada693c-79cb-4f49-a2f0-6ff60425be1c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '241'
@@ -14,11 +13,11 @@ ht-degree: 4%
 
 # Einsehen der Ergebnisse des Experiments{#viewing-the-experiment-results}
 
-Nachdem Sie das neue Feld der Datei &quot;Log Processing.cfg&quot;hinzugefügt und die neue Split-Transformation und die erweiterte Dimension erstellt haben, können Sie die neue erweiterte Dimension, die Sie erstellt haben, nach Abschluss der Verarbeitung der schnellen Eingabe Ansicht haben.
+Nachdem Sie das neue Feld zu Log Processing.cfg hinzugefügt und die neue Aufspaltungs- und erweiterte Dimension erstellt haben, können Sie die neue erweiterte Dimension anzeigen, die Sie erstellt haben, sobald die Phase der schnellen Eingabe der Datenerneuerung abgeschlossen ist.
 
 Diese Dimension zeigt standardmäßig die Anzahl der Sitzungen für jede Ihrer Experimentgruppen an.
 
-**So Ansicht Sie die Experimentdimension**
+**So zeigen Sie die Experimentdimension an**
 
 * Öffnen Sie in einem beliebigen Arbeitsbereich in [!DNL Insight] eine Tabelle mit der von Ihnen erstellten Experimentdimension.
 
@@ -28,9 +27,9 @@ Diese Dimension zeigt standardmäßig die Anzahl der Sitzungen für jede Ihrer E
 
    Beispiel: [!DNL New Homepage.Control]
 
-Die folgende Tabelle zeigt die Dimension &quot;Controlled Experiment Groups&quot;, die in [!DNL Transformation.cfg] erstellt wurde, sowie die einzelnen Experimente und ihre Gruppen.
+Die folgende Tabelle zeigt die Dimension &quot;Kontrollierte Experimentgruppen&quot;, die in [!DNL Transformation.cfg] erstellt wurde, sowie die einzelnen Experimente und deren Gruppen.
 
-Das Experiment Neue Homepage wird unten in der Tabelle mit zwei Gruppen angezeigt: Control und index2.
+Das Experiment Neue Startseite wird unten in der Tabelle mit den beiden Gruppen angezeigt: Kontrolle und Index2.
 
 ![](assets/controlledexpgrps.png)
 
