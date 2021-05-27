@@ -3,7 +3,6 @@ description: Sie können die Benutzeroberfläche der Data Workbench an Ihre Anfo
 title: Funktionen rund um die Benutzeroberfläche und Analysen
 uuid: a0298c35-1be6-4491-b3d0-e374bd75a542
 exl-id: 90edf4f3-87d0-4239-a614-98ac397315aa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '74'
