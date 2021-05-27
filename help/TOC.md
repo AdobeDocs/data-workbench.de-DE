@@ -6,9 +6,8 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench-Hilfe
 user-guide-description: Erfahren Sie mehr über die Mehrkanal-Funktionen der Data Workbench. Beinhaltet Leitfäden für den Data Workbench-Client, die Installation, die Datensatzkonfiguration usw.
-translation-type: ht
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -408,7 +407,7 @@ ht-degree: 100%
          + Standardumwandlungen {#standard-transformations}
             + [Standardumwandlungen](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-standard-transf.md)
             + [ChangeCase](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-chgcase.md)
-            + [Copy](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-copy.md)
+            + [Kopieren](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-copy.md)
             + [CrossRows](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md)
             + [ExtractValue](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-exvalue.md)
             + [Flatten](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md)
@@ -480,7 +479,7 @@ ht-degree: 100%
          + [Typen von Tests für Testoperationen](home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md)
          + [Boolesche Operationen](home/c-dataset-const-proc/c-conditions/c-test-ops/c-boolean-ops.md)
    + [Reguläre Ausdrücke](home/c-dataset-const-proc/c-reg-exp.md)
-   + [Felder für Ereignisdaten](home/c-dataset-const-proc/c-ev-data-rec-fields.md)
+   + [Felder für Ereignisdatensätze](home/c-dataset-const-proc/c-ev-data-rec-fields.md)
    + Konfigurationseinstellungen für Web-Daten {#config-web-data}
       + [Konfigurationseinstellungen für Web-Daten ](home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md)
       + [Web-spezifische Einstellungen für die Protokollverarbeitung](home/c-dataset-const-proc/c-config-web-data/c-web-spec-log-proc.md)
