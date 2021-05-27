@@ -3,7 +3,6 @@ description: Sie können die in einem Feld-Viewer angezeigten Werte filtern, ind
 title: Filtern in einem Feld-Viewer
 uuid: 3788fa03-c898-4e9d-81a0-ecf90376cac6
 exl-id: 0bb781e7-8c1c-4a74-882f-410470782ad2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '173'
@@ -17,19 +16,19 @@ Sie können die in einem Feld-Viewer angezeigten Werte filtern, indem Sie nach e
 
 **So filtern Sie in einem Feld-Viewer**
 
-1. Klicken Sie mit der rechten Maustaste in die Spalte des Felds, dessen Werte Sie suchen möchten.
+1. Klicken Sie mit der rechten Maustaste in die Spalte für das Feld, dessen Werte Sie suchen möchten.
 1. I
 
-   Geben Sie im Textfeld unter [!DNL Search for rows with] den zu suchenden Text ein. Sie können auch reguläre Ausdruck für die Musterzuordnung eingeben.
+   Geben Sie im Textfeld unter [!DNL Search for rows with] den Text ein, nach dem gesucht werden soll. Sie können auch reguläre Ausdrücke für die Musterzuordnung eingeben.
 
 ![](assets/vis_FieldViewer_Search.png)
 
-Feldwerte, die den Text enthalten oder dem regulären Ausdruck entsprechen, werden im Feld-Viewer angezeigt. Wenn die Suchergebnisse angezeigt werden, wird der Spaltenname rot markiert.
+Feldwerte, die den Text enthalten oder dem regulären Ausdruck entsprechen, werden im Feld-Viewer angezeigt. Wenn die Suchergebnisse angezeigt werden, wird der Spaltenname rot hervorgehoben.
 
-Weitere Informationen zu regulären Ausdrücken finden Sie im Handbuch *Konfiguration von Datasets*.
+Informationen zu regulären Ausdrücken finden Sie im *Handbuch zur Datensatzkonfiguration*.
 
 **So filtern Sie leere Zeilen aus**
 
 * Klicken Sie mit der rechten Maustaste in die Spalte für das Feld, für das Sie leere Zeilen herausfiltern möchten, und klicken Sie auf **[!UICONTROL Filter out blank rows]**.
 
-Wenn diese Option aktiviert ist, wird links neben der Option ein X angezeigt, und der Spaltenname wird rot markiert.
+Wenn diese Option aktiviert ist, wird links neben der Option ein X angezeigt und der Spaltenname wird rot hervorgehoben.
