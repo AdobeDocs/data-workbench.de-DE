@@ -1,9 +1,8 @@
 ---
-description: Pfadbrowser können so konfiguriert werden, dass sie mit einer beliebigen Kombination aus Basisdimension, Gruppendimension, Ebenendimension und Metrik arbeiten, die für Ihre Anwendung und Ihren Datensatz sinnvoll ist.
+description: Pfadbrowser können so konfiguriert werden, dass sie mit jeder Kombination aus Basisdimension, Gruppendimension, Ebenendimension und Metrik arbeiten, die für Ihre Anwendung und Ihren Datensatz sinnvoll ist.
 title: Konfigurieren von Pfad-Browsern
 uuid: 1ba3fb6e-b76f-428f-b6ec-077669c3b305
 exl-id: be6a68f7-e3e3-4207-a112-3a4fdd5c5f57
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '422'
@@ -13,17 +12,17 @@ ht-degree: 2%
 
 # Konfigurieren von Pfad-Browsern{#configure-a-path-browser}
 
-Pfadbrowser können so konfiguriert werden, dass sie mit einer beliebigen Kombination aus Basisdimension, Gruppendimension, Ebenendimension und Metrik arbeiten, die für Ihre Anwendung und Ihren Datensatz sinnvoll ist.
+Pfadbrowser können so konfiguriert werden, dass sie mit jeder Kombination aus Basisdimension, Gruppendimension, Ebenendimension und Metrik arbeiten, die für Ihre Anwendung und Ihren Datensatz sinnvoll ist.
 
-Nachdem Sie einen Pfadbrowser konfiguriert haben, wird er mit anderen Pfadbrowsern im Menü [!DNL Add Visualization] aufgeführt.
+Nachdem Sie einen Pfad-Browser konfiguriert haben, wird er mit anderen Pfad-Browsern im Menü [!DNL Add Visualization] aufgeführt.
 
 1. Klicken Sie in [!DNL Profile Manager] auf **[!UICONTROL Menu]** und dann auf **[!UICONTROL Add Visualization]** und **[!UICONTROL Path Browser]**.
 
-   Mindestens eine [!DNL *.vw]-Datei befindet sich im Pfad-Browser-Verzeichnis.
+   Mindestens eine [!DNL *.vw] -Datei befindet sich im Verzeichnis &quot;Pfad-Browser&quot;.
 
 1. Klicken Sie mit der rechten Maustaste auf das Häkchen für die gewünschte Datei und klicken Sie auf **[!UICONTROL Make Local]**.
 1. Klicken Sie mit der rechten Maustaste auf das Häkchen für die Datei in der Spalte [!DNL User] und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
-1. Bearbeiten Sie die Parameter der Datei mithilfe der folgenden Beispieldatei und Tabelle als Hilfslinien:
+1. Bearbeiten Sie die Parameter der Datei mithilfe der folgenden Beispieldatei und Tabelle als Handbücher:
 
    ```
    window = simpleBorderWindow: 
@@ -42,26 +41,26 @@ Nachdem Sie einen Pfadbrowser konfiguriert haben, wird er mit anderen Pfadbrowse
 <table id="table_1DCCB4B24B554B72A781B304B5EB155E"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Für diesen Parameter... </th> 
-   <th colname="col2" class="entry"> Geben Sie diese Informationen ein... </th> 
+   <th colname="col1" class="entry"> Für diesen Parameter ... </th> 
+   <th colname="col2" class="entry"> Geben Sie diese Informationen an... </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><i>Basisdimensionsname</i> </p> </td> 
-   <td colname="col2"> <p>Der Name der Dimension, deren Elemente im Pfadbrowser angezeigt werden. </p> </td> 
+   <td colname="col1"> <p><i>Name der Basisdimension</i> </p> </td> 
+   <td colname="col2"> <p>Der Name der Dimension, deren Elemente im Pfad-Browser angezeigt werden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Name der Gruppendimension</i> </p> </td> 
-   <td colname="col2"> <p>Der Name der Dimension, die bestimmt, wie die Elemente der Dimension "Ebene"gruppiert werden, um die Pfade in einem Pfadbrowser zu bilden. Insbesondere dürfen die Dimensionselemente der Ebene, die mit einem einzelnen Pfad in einem Pfadbrowser verknüpft sind, nicht mehr als ein Element einer Gruppendimension umfassen. </p> </td> 
+   <td colname="col2"> <p>Der Name der Dimension, der bestimmt, wie die Elemente der Ebenendimension gruppiert werden, um die Pfade in einem Pfadbrowser zu bilden. Insbesondere dürfen die Dimensionselemente der Ebene, die mit einem einzelnen Pfad in einem Pfadbrowser verknüpft sind, nicht mehr als ein Element einer Gruppendimension umfassen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>Level Dimensionsname</i> </p> </td> 
-   <td colname="col2"> <p>Der Name der Ebene (übergeordnet) der Basisdimension, deren Elemente Sie in den Pfadbrowser ziehen. Wenn Sie einem Pfad von einem grundlegenden Dimensionselement zum nächsten folgen, wechseln Sie von einem Dimensionselement auf die nächste Ebene. Wenn Sie einen Pfad mit grundlegenden Dimensionselementen auswählen, wählen Sie Daten für die entsprechenden Elemente der Dimension "Ebene"aus. Die Auswahl enthält immer die Elemente der Dimension "Ebene", die mit dem Stammordner in Verbindung stehen, und wird durch Hinzufügen weiterer Elemente zum Pfad verfeinert. </p> </td> 
+   <td colname="col1"> <p><i>Level dimension name</i> </p> </td> 
+   <td colname="col2"> <p>Der Name der Ebene (übergeordnet) der Basisdimension, deren Elemente Sie in den Pfad-Browser ziehen. Wenn Sie einem Pfad von einem grundlegenden Dimensionselement zum nächsten folgen, wechseln Sie von einem Dimensionselement auf der Ebene zum nächsten. Wenn Sie einen Pfad von grundlegenden Dimensionselementen auswählen, wählen Sie Daten für die entsprechenden Elemente der Ebenendimension aus. Die Auswahl umfasst immer die Elemente der Ebenendimension, die sich auf den Stamm beziehen, und wird durch Hinzufügen weiterer Elemente zum Pfad verfeinert. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Name der Metrik</i> </p> </td> 
-   <td colname="col2"> <p>Der Name der Metrik, deren Wert für ein bestimmtes Element proportional zur Stärke des Pfads ist, der zu diesem Element führt. </p> </td> 
+   <td colname="col2"> <p>Der Name der Metrik, deren Wert für ein bestimmtes Element proportional zur Dicke des Pfads ist, der zu diesem Element führt. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -70,12 +69,12 @@ Nachdem Sie einen Pfadbrowser konfiguriert haben, wird er mit anderen Pfadbrowse
 >
 >Weitere Informationen zur Basisdimension, Gruppendimension, Ebenendimension und Metrik für einen Pfadbrowser finden Sie unter [Pfadbrowser](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b).
 
-1. Klicken Sie in Notepad auf **[!UICONTROL File]** > **[!UICONTROL Save As]**, um die Datei mit einem neuen Namen zu speichern, der auf der Gruppendimension basiert, d. h. *Gruppenname*.vw.
+1. Klicken Sie im Notepad auf **[!UICONTROL File]** > **[!UICONTROL Save As]** , um die Datei mit einem neuen Namen zu speichern, der auf der Gruppendimension *Group dimension name*.vw basiert.
 
-   Achten Sie darauf, die Datei im Ordner &quot;Path Browser&quot;zu speichern.
+   Speichern Sie die Datei im Verzeichnis &quot;Pfad-Browser&quot;.
 
    >[!NOTE]
    >
-   >Um sicherzustellen, dass Ihr Pfadbrowser als [!DNL *.vw]-Datei gespeichert wird, stellen Sie im Fenster [!DNL Save As] &quot;Speichern als&quot;auf &quot;Alle Dateien&quot;ein.
+   >Um sicherzustellen, dass Ihr Pfad-Browser als [!DNL *.vw]-Datei gespeichert wird, setzen Sie im Fenster [!DNL Save As] den Typ Speichern als auf Alle Dateien .
 
-1. (Optional) Um die Änderungen allen Benutzern des funktionierenden Profils zur Verfügung zu stellen, klicken Sie in der Spalte [!DNL Profile Manager] mit der rechten Maustaste auf das Häkchen für die Datei und klicken Sie auf [!DNL User] und dann auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. (Optional) Um die Änderungen allen Benutzern des Arbeitsprofils zur Verfügung zu stellen, klicken Sie in der Spalte [!DNL Profile Manager] mit der rechten Maustaste auf das Häkchen für die Datei in der Spalte [!DNL User] und klicken Sie auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
