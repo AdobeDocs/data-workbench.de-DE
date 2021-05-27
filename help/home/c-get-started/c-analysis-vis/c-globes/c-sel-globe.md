@@ -3,7 +3,6 @@ description: Wenn Sie eine Auswahl auf einem Globus aus einer bestimmten Ebene t
 title: Auswahl von Elementen auf einem Globus
 uuid: 265206f8-2437-4490-8e7c-0a00ce56fd7f
 exl-id: 83e3b08b-b2a8-455b-87a4-bf48c619b3b9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '80'
@@ -15,4 +14,4 @@ ht-degree: 12%
 
 Wenn Sie eine Auswahl auf einem Globus aus einer bestimmten Ebene treffen, zeigen alle anderen Ebenen nur Daten an, die sich auf die ausgewählten Daten beziehen.
 
-Sie können mehrere Kugeln gleichzeitig verwenden, um verschiedene Untergruppen von Ebenen nebeneinander anzuzeigen. Siehe [Vornehmen von Auswahlen in Visualisierungen](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
+Sie können mehrere Globen zusammen verwenden, um verschiedene Teilmengen von Ebenen nebeneinander anzuzeigen. Siehe [Auswahlen in Visualisierungen](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
