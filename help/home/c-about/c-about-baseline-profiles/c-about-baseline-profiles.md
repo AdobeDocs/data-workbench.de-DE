@@ -1,9 +1,8 @@
 ---
-description: Für jede Anwendung wurde eine Reihe von Standardanwendungen erstellt, damit ein oder mehrere Profil jederzeit installiert werden können.
+description: Für jede Anwendung wurde ein Satz von Standardprofilen erstellt, mit denen ein oder mehrere Profile gleichzeitig installiert werden können.
 title: Standardprofile
 uuid: ff76ff7e-ccde-4d99-9109-8612a4a83183
 exl-id: f1bd5c1d-5f79-4b8c-9928-97169d553631
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '625'
@@ -13,31 +12,31 @@ ht-degree: 0%
 
 # Standardprofile{#baseline-profiles}
 
-Für jede Anwendung wurde eine Reihe von Standardanwendungen erstellt, damit ein oder mehrere Profil jederzeit installiert werden können.
+Für jede Anwendung wurde ein Satz von Standardprofilen erstellt, um die gleichzeitige Installation eines oder mehrerer Profile zu ermöglichen.
 
-Zu diesen Profilen gehören die Definitionen von Standardmetriken, Dimensionen, Filtern, Berichten, Arbeitsbereichen und Dashboards. Adobe aktualisiert diese Profil kontinuierlich und stellt sie ihren Lizenznehmern über ihr Software Support-Programm zur Verfügung. Darüber hinaus können Anwender von Adobe-Anwendungen zusätzliche Profil definieren und mit oder anstelle der von der Adobe bereitgestellten Profil verwenden.
+Zu diesen Grundlinienprofilen gehören die Definitionen von Standardmetriken, Dimensionen, Filtern, Berichten, Arbeitsbereichen und Dashboards. Adobe aktualisiert diese Profile kontinuierlich und stellt sie seinen Lizenznehmern über das Software Support-Programm zur Verfügung. Darüber hinaus können Anwender von Adobe Apps zusätzliche Profile definieren und diese mit oder anstelle der von Adobe bereitgestellten Profile verwenden.
 
-Das Profil-Management-System ermöglicht die Außerkraftsetzung der Konfigurationen eines Profils durch Profil auf höherer Ebene. Verwenden Sie diese Funktion, wenn Sie eine der in diesen Profilen enthaltenen Definitionen überschreiben möchten, nachdem sie installiert wurden. Bei der Installation neuer Versionen dieser Profil werden alle früheren Versionen überschrieben. Änderungen, die direkt an diesen Profilen vorgenommen wurden, würden daher bei der Installation der neuen Profil überschrieben.
+Das Profilverwaltungssystem ermöglicht das Überschreiben der Konfigurationen eines Profils durch Profile der höheren Ebene. Verwenden Sie diese Funktion, wenn Sie eine der Definitionen überschreiben möchten, die in diesen Profilen enthalten sind, nachdem sie installiert wurden. Durch die Installation neuer Versionen dieser Profile werden alle früheren Versionen überschrieben. Daher würden Änderungen, die direkt an diesen Profilen vorgenommen werden, bei der Installation der neuen Profile überschrieben.
 
-Profil für vertikale Märkte oder bestimmte Firmen oder Branchen stehen auch bei Adobe ClientCare zur Verfügung. Im Folgenden werden die grundlegenden Profil beschrieben:
+Profile für vertikale Märkte oder bestimmte Arten von Unternehmen oder Branchen können auch bei Adobe ClientCare erhältlich sein. Im Folgenden werden die Grundlinienprofile beschrieben:
 
-* Das **Base-Profil** enthält Konfigurationsdateien, die im Lieferumfang von Insight Server enthalten sind. Das Base-Profil sollte vom Benutzer oder Administrator nicht geändert werden. Änderungen, die im Base-Profil vorgenommen werden, können überschrieben werden, wenn Adobe eine nächste Version von Insight Server oder einer anderen Softwareanwendung veröffentlicht.
-* Das **Traffic-Profil** enthält einen Satz fundamentaler Metriken, Dimensionen und Filter für Webanalysen. Er umfasst auch Vorlagenarbeitsbereiche, Berichte und Dashboard, die die Analyse, den Berichte und das allgemeine Verständnis der Trends und Aktivitäten der Internetseite insgesamt erleichtern. Dieses Profil funktioniert standardmäßig mit einer Basisinstallation von Site.
-* Das **Value-Profil** umfasst einen Satz von Metriken und Dimensionen sowie Vorlagenarbeitsbereiche, Berichte und Dashboard, die mit dem integrierten Site-Geschäftswert und dem Konversionsmodell verknüpft sind. Mit diesem Profil können Benutzer Wertewerte auf der Site identifizieren und diesen Ereignissen einen Geldwert zuordnen.
+* Das **Basisprofil** enthält Konfigurationsdateien, die mit Insight Server geliefert werden. Das Basisprofil sollte vom Benutzer oder Administrator nicht geändert werden. Alle im Basisprofil vorgenommenen Änderungen können überschrieben werden, wenn Adobe eine nächste Version von Insight Server oder einer anderen Softwareanwendung veröffentlicht.
+* Das **Traffic-Profil** enthält eine Reihe grundlegender Metriken, Dimensionen und Filter für Webanalysen. Er enthält auch Vorlagen-Arbeitsbereiche, Berichte und Dashboards, die die Analyse, Berichterstellung und das allgemeine Verständnis der gesamten Aktivitätstrends und -muster auf der Website erleichtern. Dieses Profil funktioniert &quot;nativ&quot; mit einer Grundinstallation von Site.
+* Das **Werteprofil** enthält eine Reihe von Metriken und Dimensionen sowie Vorlagen-Arbeitsbereichen, Berichten und Dashboards, die mit dem integrierten Site-Geschäftswert und Konversionsmodell verknüpft sind. Mit diesem Profil können Benutzer Wertereignisse auf der Site identifizieren und diesen Ereignissen einen Geldwert zuordnen.
 
-   Dieses Profil erweitert Ihre Site-Analyse um ein Geschäftswertmodell, eine erweiterte Methode zur Messung und Verfolgung der von Ihrer Site generierten Wertschöpfung. Ereignis mit Werten und deren relativer Wert werden über eine einfache Drag &amp; Drop-Oberfläche innerhalb der Site definiert. Site verwendet diese Definitionen, um den Geschäftswert zu berechnen, der von jeder Sitzung generiert wurde. Diese Informationen werden wiederum verwendet, um Metriken wie Werte, Ereignis, Konversion usw. zu definieren. Mit diesen Metriken können Sie Fragen wie die folgenden beantworten:
+   Dieses Profil erweitert Ihre Site-Analysefunktionen, indem es ein Business Value-Modell bereitstellt, eine erweiterte Methode zur Messung und Verfolgung der von Ihrer Site generierten Wertmenge. Wertereignisse und ihr relativer Wert werden über eine einfache Drag &amp; Drop-Oberfläche innerhalb der Site definiert. Site verwendet diese Definitionen zur Berechnung des von jeder Sitzung generierten Geschäftswerts. Diese Informationen werden wiederum verwendet, um Metriken wie Werte, Wertereignisse, Konversion usw. zu definieren. Mit diesen Metriken können Sie Fragen beantworten, z. B.:
 
-   * Welcher ist der rentabelste Pfad durch die Site?
-   * Welcher Werber oder welche Kampagne hat den meisten Wert generiert?
-   * Wie hoch ist die durchschnittliche Anzahl der Käufe auf der Site pro Tag? (Wie viele Ereignis werden durchschnittlich pro Tag angezeigt?)
+   * Welcher ist der profitabelste Pfad durch die Site?
+   * Welcher Referrer oder welche Kampagne hat den höchsten Wert generiert?
+   * Wie hoch ist die durchschnittliche Anzahl der Käufe auf der Site pro Tag? (Wie viele Wertereignisse treten im Durchschnitt pro Tag auf?)
 
-   Nachdem Sie ein Geschäftswertmodell in der Site definiert haben, können Sie die Wertmetriken und Dimensionen in Ihrer Analyse verwenden.
+   Nachdem Sie ein Geschäftswertmodell in Site definiert haben, können Sie die Wertmetriken und -dimensionen in Ihrer Analyse verwenden.
 
-* Das **Marketing-Profil** umfasst Metriken und Dimensionen sowie Vorlagenarbeitsbereiche, Berichte und Dashboard, die mit der Analyse von Internet-Marketing-Kampagnen verknüpft sind, einschließlich der Analyse der Suche und der Analyse erweiterter Werber.
+* Das **Marketing-Profil** umfasst Metriken und Dimensionen sowie Vorlagen-Arbeitsbereiche, Berichte und Dashboards, die mit der Analyse von Internet-Marketing-Kampagnen verknüpft sind, einschließlich Suchanalyse und erweiterter Referrer-Analyse.
 
-Die Adobe bietet außerdem die folgenden optionalen Profil:
+Adobe bietet außerdem die folgenden optionalen Profile, die verwendet werden können:
 
-* Das **IP-Geo-Position-Profil** enthält Dimensionen- und Ebenendateien, die sich auf die Analyse der Standorte der Besucher beziehen, basierend auf IP-Geo-Standortdaten, die von Quova, Inc. zur Adobe bereitgestellt und in Data Workbench integriert wurden.
-* Das IP-Geo-Intelligence-Profil umfasst Dimensionen und Ebenendateien, die mit der Analyse der Standorte des Besuchers zusammenhängen, basierend auf IP-Geo-Intelligence-Daten, die von Digital Envoy, Inc. zur Adobe bereitgestellt und in Data Workbench integriert wurden.
+* Das **IP-Geostandortprofil** umfasst Dimensionen und Ebenendateien im Zusammenhang mit der Standortanalyse von Besuchern basierend auf IP-Geostandortdaten, die von Quova, Inc. für die Adobe bereitgestellt und in Data Workbench integriert wurden.
+* Das IP-Geo-Intelligenzprofil umfasst Dimensionen und Ebenendateien, die mit der Standortanalyse von Besuchern auf der Grundlage von IP-Geo-Intelligence-Daten verknüpft sind, die der Adobe von Digital Envoy, Inc. bereitgestellt und in Data Workbench integriert wurden.
 
-Informationen zu IP-Geolocation und IP-Geo-Intelligence-Profilen erhalten Sie von Ihrem Adobe Support-Team. Die folgenden Abschnitte beschreiben die in den einzelnen Profilen definierten Metriken und Dimensionen.
+Informationen zu IP-Geo-Standorten und IP-Geo-Intelligence-Profilen erhalten Sie von Ihrem Support-Mitarbeiter für Adoben. In den folgenden Abschnitten werden die in den einzelnen Basisprofilen definierten Metriken und Dimensionen beschrieben.
