@@ -1,9 +1,8 @@
 ---
-description: Abfragen-Zeichenfolgenvariablen können einer JavaScript-Anforderung hinzugefügt werden, um zusätzliche Messungen bei einer Anforderung zu erfassen.
+description: Abfragezeichenfolgenvariablen können zu einer JavaScript-Anforderung hinzugefügt werden, um zusätzliche Messungen bei einer Anforderung zu erfassen.
 title: Erfassen zusätzlicher Informationen
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
 exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '173'
@@ -13,11 +12,11 @@ ht-degree: 4%
 
 # Erfassen zusätzlicher Informationen{#acquiring-additional-information}
 
-Abfragen-Zeichenfolgenvariablen können einer JavaScript-Anforderung hinzugefügt werden, um zusätzliche Messungen bei einer Anforderung zu erfassen.
+Abfragezeichenfolgenvariablen können zu einer JavaScript-Anforderung hinzugefügt werden, um zusätzliche Messungen bei einer Anforderung zu erfassen.
 
-Diese Variablen können manuell oder durch Skript auf der Seite selbst hinzugefügt werden.
+Diese Variablen können manuell oder durch ein Skript auf der Seite selbst hinzugefügt werden.
 
-Zusätzliche Informationen, die von einer Seite erfasst werden können, können dem eingebetteten Objekt mithilfe eines Skripts hinzugefügt werden, wobei der folgende Code als Beispiel verwendet wird:
+Zusätzliche Informationen, die von einer Seite erfasst werden können, können dem eingebetteten Objekt über ein Skript hinzugefügt werden. Verwenden Sie dazu als Beispiel den folgenden Code:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -37,10 +36,10 @@ v["_2"] = "visa";
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-In diesem Beispiel können die Skriptvariablen für v_1 und v_2 von einer anderen Funktion auf Ihrer Webseite abgeleitet werden. Die Variablen wurden als Beispiele eingefügt. Zusätzlich zu den bei jeder Anforderung gewonnenen Basiswerten werden die folgenden erweiterten Messungen mit der oben genannten URL-Anforderung erfasst:
+In diesem Beispiel können die Skriptvariablen für v_1 und v_2 von einer anderen Funktion auf Ihrer Webseite abgeleitet werden. Die Variablen wurden als Beispiele eingefügt. Zusätzlich zu den bei jeder Anfrage erfassten Grundlinienmessungen werden die folgenden erweiterten Messungen mit der obigen Anfrage der URL erfasst:
 
 | Erfasste Daten | Erklärung | Beispiel |
 |---|---|---|
-| v_pn= | Mit der Zeichenfolgenvariable v_pn verknüpfter Wert | v_pn=Antragsformular |
-| v_1= | Der mit der Zeichenfolgenvariable v_1 verknüpfte Abfrage | v_1=99.99 |
-| v_2= | Der mit der Zeichenfolgenvariable v_2 verknüpfte Abfrage | v_2=visa |
+| v_pn= | Wert, der der Abfragezeichenfolgenvariable v_pn zugeordnet ist | v_pn=Antragsformular |
+| v_1= | Wert, der der Abfragezeichenfolgenvariable v_1 zugeordnet ist | v_1=99.99 |
+| v_2= | Wert, der der Abfragezeichenfolgenvariablen v_2 zugeordnet ist | v_2=visa |
