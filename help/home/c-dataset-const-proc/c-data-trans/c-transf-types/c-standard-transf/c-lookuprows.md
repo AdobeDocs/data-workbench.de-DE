@@ -1,9 +1,8 @@
 ---
-description: Die LookupRows-Transformation betrachtet andere Protokolleinträge mit derselben Tracking-ID und stellt den Wert des Ausgabefelds auf den Wert eines angegebenen Felds in der Eingabelzeile ein.
+description: Die LookupRows-Transformation betrachtet andere Protokolleinträge mit derselben Tracking-ID und setzt den Wert des Ausgabefelds auf den Wert eines angegebenen Felds in der Eingabezeile.
 title: LookupRows
 uuid: 4cff7cf1-00c8-4ab1-8adc-3805518226d3
 exl-id: caa9a311-b056-4fe8-bb11-1605cc690375
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '946'
@@ -13,16 +12,16 @@ ht-degree: 1%
 
 # LookupRows{#lookuprows}
 
-Die LookupRows-Transformation betrachtet andere Protokolleinträge mit derselben Tracking-ID und stellt den Wert des Ausgabefelds auf den Wert eines angegebenen Felds in der Eingabelzeile ein.
+Die LookupRows-Transformation betrachtet andere Protokolleinträge mit derselben Tracking-ID und setzt den Wert des Ausgabefelds auf den Wert eines angegebenen Felds in der Eingabezeile.
 
-Da die Transformation [!DNL LookupRows] ihre Suche nach Protokolleinträgen und nicht nach Lookup-Dateien durchführt, ist sie der Transformation [!DNL CrossRows] sehr ähnlich. Siehe [CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2).
+Da die Umwandlung [!DNL LookupRows] die Suche nach Protokolleinträgen und nicht nach Lookup-Dateien durchführt, ähnelt sie der Umwandlung [!DNL CrossRows]. Siehe [CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2).
 
-Für die Umwandlung von [!DNL LookupRows] ist es erforderlich, dass die Daten in der Zeit angeordnet und nach der Tracking-ID in den Quelldaten gruppiert werden. [!DNL LookupRows] funktioniert daher nur, wenn sie in der Datei [!DNL Transformation.cfg] oder in einer Datei [!DNL Transformation Dataset Include] definiert ist.
+Für die Umwandlung von [!DNL LookupRows] ist es erforderlich, dass die Daten in der Zeit sortiert und nach der Tracking-ID in den Quelldaten gruppiert werden. Daher funktioniert [!DNL LookupRows] nur, wenn sie in der Datei [!DNL Transformation.cfg] oder in der Datei [!DNL Transformation Dataset Include] definiert ist.
 
-Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabelle Folgendes:
+Beachten Sie beim Überprüfen der Beschreibungen der Parameter in der folgenden Tabelle Folgendes:
 
-* Die Ausgabezeile ist die Datenzeile, an der die Transformation zu einem bestimmten Zeitpunkt arbeitet.
-* Eingabezeilen sind alle anderen Datenzeilen (vor, nach oder einschließlich der Ausgabezeile), deren Werte des Eingabefelds als Eingabe für die Transformation dienen.
+* Die Ausgabezeile ist die Datenzeile, an der die Umwandlung zu einem bestimmten Zeitpunkt arbeitet.
+* Eingabezeilen sind alle anderen Datenzeilen (vor, nach oder einschließlich der Ausgabenzeile), deren Werte des Eingabefelds als Eingaben für die Transformation dienen.
 
 <table id="table_AB68A89ECD5C45F39B8433F994BBD7D8"> 
  <thead> 
@@ -35,7 +34,7 @@ Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabell
  <tbody> 
   <tr> 
    <td colname="col1"> Name </td> 
-   <td colname="col2"> Beschreibender Name der Transformation. Sie können hier einen beliebigen Namen eingeben. </td> 
+   <td colname="col2"> Deskriptiver Name der Transformation. Hier können Sie einen beliebigen Namen eingeben. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -45,82 +44,82 @@ Beachten Sie beim Lesen der Beschreibungen der Parameter in der folgenden Tabell
   </tr> 
   <tr> 
    <td colname="col1"> Bedingung </td> 
-   <td colname="col2"> Begrenzt die Ausgabe der Transformation auf bestimmte Protokolleinträge. Wenn die Bedingung für einen bestimmten Protokolleintrag nicht erfüllt ist, bleibt das Feld im Ausgabezeichenwertausgabeparameter unverändert. Die Eingabe kann weiterhin verwendet werden, um andere Protokolleinträge zu beeinflussen. </td> 
+   <td colname="col2"> Beschränkt die Ausgabe der Transformation auf bestimmte Protokolleinträge. Wenn die Bedingung für einen bestimmten Protokolleintrag nicht erfüllt ist, bleibt das Feld im Ausgabezeichenwertparameter unverändert. Die Eingabe kann weiterhin verwendet werden, um andere Protokolleinträge zu beeinflussen. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Eingabebedingung </td> 
-   <td colname="col2">Akzeptiert Eingaben für die Transformation nur aus bestimmten Eingabezeilen. Wenn die Bedingung <span class="wintitle"> Eingabe</span> für eine bestimmte Eingabezeile nicht erfüllt ist, wird das Eingabefeld aus dieser Zeile ignoriert und wirkt sich nicht auf andere Ausgabezeilen aus. Das Ausgabefeld aus dieser Zeile wird jedoch weiterhin gemäß der angegebenen Bedingung geändert. </td> 
+   <td colname="col2">Akzeptiert die Eingabe für die Umwandlung nur aus bestimmten Eingabezeilen. Wenn die Bedingung <span class="wintitle"> Eingabe</span> für eine bestimmte Eingabezeile nicht erfüllt ist, wird das Eingabefeld aus dieser Zeile ignoriert und wirkt sich nicht auf andere Ausgabezeilen aus. Das Ausgabefeld aus dieser Zeile wird jedoch weiterhin gemäß der angegebenen Bedingung geändert. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Eingabe des Zeilenschlüssels </td> 
-   <td colname="col2"> Der Name des Felds, das als Schlüssel für die Eingabezeilen verwendet wird. </td> 
+   <td colname="col1"> Eingabe des Eingabezeilenschlüssels </td> 
+   <td colname="col2"> Der Name des Felds, das als Schlüssel für die Eingabezeilen verwendet werden soll. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Eingabe des Zeilenwertes </td> 
-   <td colname="col2"> Der Name des Felds in der Eingabezeile, dessen Wert in das Feld im Ausgabezeichenwert-Ausgabeparameter kopiert wird, wenn alle Bedingungen erfüllt sind. </td> 
+   <td colname="col1"> Eingabe des Eingabezeilenwerts </td> 
+   <td colname="col2"> Der Name des Felds in der Eingabezeile, dessen Wert in das Feld im Ausgabezeilenwert-Ausgabeparameter kopiert wird, wenn alle Bedingungen erfüllt sind. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Vorgang </td> 
-   <td colname="col2"> <p>Ein Vorgang, der für jede Ausgabezeile auf alle Eingabezeilen angewendet wird, die alle Bedingungen erfüllen, die mit den Eingabeparametern <span class="wintitle"> Eingabe</span> Bedingung und Eingabe-Zeilenschlüssel für die Ausgabe definiert wurden: 
+   <td colname="col2"> <p>Ein Vorgang, der für jede Ausgabezeile auf alle Eingabezeilen angewendet wird, die alle Bedingungen erfüllen, die durch die Eingabeparameter <span class="wintitle"> Eingabe</span> Bedingung und Eingabezeilenschlüssel definiert sind, um eine Ausgabe zu generieren: 
      <ul id="ul_16FB152CB558497794DDED72A2F05CDD"> 
-      <li id="li_22DA9F814E4E42D0B21E90B63A2A7A0E"> ERST gibt den Wert des Felds im Eingabezeilenwert-Eingabeparameter aus der ersten übereinstimmenden Eingabezeile in den Daten aus (nicht die erste übereinstimmende Zeile nach der Ausgabezeile). </li> 
-      <li id="li_45E00C3DE0494A1CB5C09B942088F161"> LAST gibt den Wert des Felds im Eingabezeileneingabewert-Parameter aus der letzten Eingabezeile in den Daten aus (nicht die letzte übereinstimmende Zeile vor der Ausgabezeile). </li> 
+      <li id="li_22DA9F814E4E42D0B21E90B63A2A7A0E"> FIRST gibt den Wert des Felds im Eingabeparameter Eingabewert der Eingabezeile aus der ersten übereinstimmenden Eingabezeile in den Daten aus (nicht die erste übereinstimmende Zeile nach der Ausgabezeile). </li> 
+      <li id="li_45E00C3DE0494A1CB5C09B942088F161"> LAST gibt den Wert des Felds im Eingabeparameter Eingabewert der Eingabezeile aus der letzten Eingabezeile in den Daten aus (nicht die letzte übereinstimmende Zeile vor der Ausgabezeile). </li> 
      </ul> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Eingabe des Ausgabezeilenschlüssels </td> 
-   <td colname="col2"> Der Name des Felds, das als Schlüssel für die Ausgabezeile verwendet wird. </td> 
+   <td colname="col2"> Der Name des Felds, das als Schlüssel für die Ausgabezeile verwendet werden soll. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Ausgabe des Zeilenwertes </td> 
-   <td colname="col2">Der Name des Felds in der Ausgabezeile, dessen Wert aus dem Feld im Eingabewert des Eingabeparameters kopiert wird, wenn alle Bedingungen erfüllt sind. Alle Ausgabezeilen mit denselben x-trackingid- und <span class="wintitle">-Eingabe des Ausgabezeilenschlüssels </span>haben denselben Wert <span class="wintitle"> Ausgabe-Zeilenwert-Ausgabe</span>. </td> 
+   <td colname="col1"> Ausgabe des Ausgabezeilenwerts </td> 
+   <td colname="col2">Der Name des Felds in der Ausgabezeile, dessen Wert aus dem Feld im Eingabewertparameter kopiert wird, wenn alle Bedingungen erfüllt sind. Alle Ausgabezeilen mit derselben x-trackingid und <span class="wintitle"> Ausgabezeilen-Schlüsseleingabe </span>haben denselben Wert <span class="wintitle"> Ausgabezeilenwert Output</span> . </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Die Parameter &quot;Eingabe des Zeilenschlüssels&quot;, &quot;Eingabe des Zeilenwertes&quot;und &quot;Eingabebedingung&quot;definieren zusammen die Abfragedatei für jede Verfolgungs-ID, während die Parameter &quot;Eingabe des Zeileneintrags&quot;, &quot;Eingabe des Ausgabezeilenwerts&quot;und &quot;Bedingung&quot;steuern, was in der Datei nachgeschlagen wird und welcher Wert in dem Feld gespeichert wird, das in der Ausgabe des Ausgabezeilenwerts angegeben ist.
+Die Parameter Eingabe-Zeilenschlüssel, Eingabe-Zeilenwert und Eingabebedingung definieren zusammen die Suchdatei für jede Tracking-ID, während die Parameter Eingabe des Ausgabezeilenschlüssels, Eingabe des Ausgabezeilenwerts und Bedingung steuern, was in der Datei nachgeschlagen wird und welcher Wert in dem von Ausgabe-Zeilenwertausgabe angegebenen Feld gespeichert wird.
 
-Um die Funktionsweise der Transformation besser zu verstehen, beachten Sie die folgende Übersicht:
+Gehen Sie wie folgt vor, um die Funktionsweise der Umwandlung besser zu verstehen:
 
-* Für jede Ausgabezeile, die die Bedingung erfüllt und einen nicht leeren Eingabe für die Ausgabezeichenfolge enthält:
+* Für jede Ausgabezeile, die die Bedingung erfüllt und eine nicht leere Ausgabe-Zeileneingabe enthält:
 
-   * Suchen Sie die erste oder letzte Eingabezeile, sodass
+   * Suchen Sie die erste oder letzte Eingabezeile so, dass
 
-      * die Eingabezeile die Eingabebedingung erfüllt und
-      * die x-trackingid der Eingabezeile gleich der x-trackingid der Ausgabezeile und
-      * die Eingabe des Eingangszeilenschlüssels der Eingabezeile entspricht der Eingabe des Ausgabezeilenschlüssels in der Ausgabezeile;
+      * die Eingabezeile erfüllt die Eingabebedingung und
+      * die x-trackingid der Eingabezeile entspricht der x-trackingid der Ausgabezeile und
+      * die Eingabe des Eingabezeilenschlüssels der Eingabezeile entspricht der Eingabe des Ausgabezeilenschlüssels der Ausgabezeile;
 
-* und legen Sie die Ausgabe des Ausgabezeilenwerts der Ausgabezeile auf die Eingabe des Eingabezeilenwerts der Eingabezeile fest.
+* und legen Sie die Ausgabe des Ausgabezeilenwerts der Ausgabenzeile auf die Eingabewerteingabe der Eingabezeile fest.
 
 Überlegungen zu [!DNL LookupRows]
 
-* Leere Schlüsselwerte stimmen nie überein. Auch wenn es Eingabezeilen mit leeren Schlüsseln und nicht leeren Werten gibt, die mit [!DNL Input Condition] übereinstimmen, erzeugt ein [!DNL Output Row Key Input] von &quot;&quot; immer einen [!DNL Output Row Value Output] von &quot;&quot;.
+* Leere Schlüsselwerte stimmen nie überein. Selbst wenn es Eingabezeilen mit leeren Schlüsseln und nicht leeren Werten gibt, die mit [!DNL Input Condition] übereinstimmen, erzeugt ein [!DNL Output Row Key Input] von &quot;&quot;immer einen [!DNL Output Row Value Output] von &quot;&quot;.
 
-* Wenn [!DNL Input Condition] nicht verboten ist, kann eine Zeile selbst nachschlagen, wenn die Werte [!DNL Input Row Key Input] und [!DNL Output Row Key Input] identisch sind.
+* Wenn die Werte [!DNL Input Condition] nicht verbieten, kann sich eine Zeile selbst nachschlagen, wenn die Werte [!DNL Input Row Key Input] und [!DNL Output Row Key Input] identisch sind.
 
-Wenn Sie mehrere Schlüsselwerte haben, können Sie diese mit einer [!DNL Format]-Transformation kombinieren (siehe [Format](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)), bevor Sie eine [!DNL LookupRows]-Transformation anwenden.
+Wenn Sie mehrere Schlüsselwerte haben, können Sie diese mithilfe einer [!DNL Format] -Umwandlung kombinieren (siehe [Format](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)), bevor Sie eine [!DNL LookupRows] -Transformation anwenden.
 
-Angenommen, Sie haben eine Website mit einer Registrierungsseite für Haustiere, auf der der Name und die Rasse eingegeben werden, und eine spätere Seite &quot;Spielzeug kaufen&quot;, auf der nur der Name des Tieres verwendet wird. Sie möchten den Namen des Tieres mit der auf der Registrierungsseite eingetragenen Tierrasse verknüpfen können. Dazu können Sie die folgende [!DNL LookupRows]-Transformation erstellen:
+Angenommen, Sie haben eine Website mit einer Registrierungsseite für Haustiere, auf der der Name und die Rasse eingegeben werden, und eine spätere &quot;Spielzeug kaufen&quot;-Seite, auf der nur der Name des Tieres verwendet wird. Sie möchten den Namen des Tieres mit der auf der Registrierungsseite angegebenen Tierrasse verknüpfen können. Dazu können Sie die folgende [!DNL LookupRows]-Umwandlung erstellen:
 
 ![](assets/cfg_TransformationType_LookupRows.png)
 
-Analysieren wir dieses Beispiel anhand der vorherigen Gliederung:
+Analysieren wir dieses Beispiel anhand des vorherigen Entwurfs:
 
-* Für jede Ausgabezeile mit einem nicht leeren Wert von cs-uri-Abfrage(petname):
+* Für jede Ausgabenzeile, die einen nicht leeren Wert von cs-uri-query(petname) aufweist:
 
-   * Suchen Sie die letzte Eingabezeile, sodass
+   * Suchen Sie die letzte Eingabezeile so, dass
 
-      * die Eingabezeile einen nicht leeren Wert von cs-uri-Abfrage (mit Stempel) enthält und
-      * die x-trackingid der Eingabezeile gleich der x-trackingid der Ausgabezeile und
-      * der Wert von cs-uri-Abfrage(Petname) der Eingabezeile gleich dem Wert von cs-uri-Abfrage(Petname) der Ausgabezeile;
+      * die Eingabezeile enthält einen nicht leeren Wert von cs-uri-query(petbreed) und
+      * die x-trackingid der Eingabezeile entspricht der x-trackingid der Ausgabezeile und
+      * der Wert von cs-uri-query(petname) der Eingabezeile entspricht dem Wert von cs-uri-query(petname) der Ausgabezeile;
 
-* und legen Sie den Wert der X-Tier-Rasse der Ausgabezeile auf den Wert von cs-uri-Abfrage(petbreed) der Eingabezeile fest.
+* und legen Sie den Wert von x-pet-breed der Ausgabenzeile auf den Wert von cs-uri-query(petbreed) der Eingabezeile fest.
 
-Die [!DNL LookupRows]-Transformation verwendet den Namen des Tieres (den Schlüssel), um sicherzustellen, dass die Heimtierrasse sowohl mit der Registrierung des Tieres als auch mit dem Kauf von Spielzeugseiten verknüpft ist, damit Sie die für jede Tierrasse gekauften Spielzeuge analysieren können, auch für Besucher mit mehreren Haustieren.
+Die Umwandlung von [!DNL LookupRows] verwendet den Haustiernamen (den Schlüssel), um sicherzustellen, dass die Heimtierrasse sowohl mit der Heimtierregistrierung als auch mit den Seiten zum Kauf von Spielzeug verknüpft ist, sodass Sie die für jede Tierrasse gekauften Spielzeuge analysieren können, selbst für Besucher mit mehreren Haustieren.
