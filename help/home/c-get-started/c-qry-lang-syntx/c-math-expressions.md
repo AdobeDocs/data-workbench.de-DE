@@ -1,9 +1,8 @@
 ---
-description: Mit Data Workbench können Sie zusätzliche mathematische Berechnungen durchführen.
+description: Data Workbench ermöglicht Ihnen die Verwendung zusätzlicher mathematischer Berechnungen.
 title: Syntax für mathematische Ausdrücke
 uuid: 63eee559-edfc-4efc-a6c8-66689d156701
 exl-id: a1433258-d3e8-4515-a1ae-00f9108e98c0
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '152'
@@ -13,9 +12,9 @@ ht-degree: 15%
 
 # Syntax für mathematische Ausdrücke{#syntax-for-math-expressions}
 
-Mit Data Workbench können Sie zusätzliche mathematische Berechnungen durchführen.
+Data Workbench ermöglicht Ihnen die Verwendung zusätzlicher mathematischer Berechnungen.
 
-Mathematische Funktionen können in Mathematik-Transformationen, Metrik-Editor-Visualisierungen und Arbeitsblattdaten verwendet werden.
+Mathematische Funktionen können bei der mathematischen Transformation, den Visualisierungen des Metrik-Editors und den Arbeitsblattdaten verwendet und angezeigt werden.
 
 <table id="table_B2A4F9D5938D4756A81ACF6F4D77E63D"> 
  <thead> 
@@ -32,7 +31,7 @@ Mathematische Funktionen können in Mathematik-Transformationen, Metrik-Editor-V
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Arccosin </p> </td> 
+   <td colname="col1"> <p>Arkuskosinus </p> </td> 
    <td colname="col02"> <p>acos( ) </p> </td> 
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
@@ -42,7 +41,7 @@ Mathematische Funktionen können in Mathematik-Transformationen, Metrik-Editor-V
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Tangente </p> </td> 
+   <td colname="col1"> <p>arctangent </p> </td> 
    <td colname="col02"> <p>atan( ) </p> </td> 
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
@@ -64,12 +63,12 @@ Mathematische Funktionen können in Mathematik-Transformationen, Metrik-Editor-V
   <tr> 
    <td colname="col1"> <p>maximum </p> </td> 
    <td colname="col02"> <p>max( ) </p> </td> 
-   <td colname="col2"> <p>mathematische Transformation und Statistik-Callout </p> </td> 
+   <td colname="col2"> <p>Berechnung der Mathematischen Transformation und Statistiken </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Minimum </p> </td> 
    <td colname="col02"> <p>min( ) </p> </td> 
-   <td colname="col2"> <p>mathematische Transformation und Statistik-Callout </p> </td> 
+   <td colname="col2"> <p>Berechnung der Mathematischen Transformation und Statistiken </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ln (natürlicher Logarithmus) </p> </td> 
@@ -77,12 +76,12 @@ Mathematische Funktionen können in Mathematik-Transformationen, Metrik-Editor-V
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>sine </p> </td> 
+   <td colname="col1"> <p>Sinus </p> </td> 
    <td colname="col02"> <p>sin( ) </p> </td> 
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Tangente </p> </td> 
+   <td colname="col1"> <p>Tangens </p> </td> 
    <td colname="col02"> <p>tan( ) </p> </td> 
    <td colname="col2"> <p>Mathematische Transformation, Metrik-Editor und Arbeitsblattzelle </p> </td> 
   </tr> 
