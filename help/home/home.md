@@ -5,7 +5,7 @@ feature: Grundlegendes zu Reports & Analytics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Data Workbench umfasst die folgenden Funktionen für Predictive Analytics, Daten
 
 ## Weitere Benutzerhandbücher für Analytics
 
-[Analytics-Benutzerhandbücher](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
+[Analytics-Benutzerhandbücher](https://docs.adobe.com/content/help/de-DE/analytics/landing/home.html)
 
 ## Versionshinweise und neue Funktionen für Data Workbench
 
