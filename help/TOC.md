@@ -7,7 +7,7 @@ feature: Data Workbench
 user-guide-title: Data Workbench-Hilfe
 user-guide-description: Erfahren Sie mehr über die Mehrkanal-Funktionen der Data Workbench. Beinhaltet Leitfäden für den Data Workbench-Client, die Installation, die Datensatzkonfiguration usw.
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -258,7 +258,7 @@ ht-degree: 100%
    + Bildebenen {#imagery-layers}
       + [Über Bildebenen](home/c-get-started/c-im-layers/c-ustd-img-layers.md)
       + Topografie-Bildebenen {#terrain-image-layers}
-         + [Topografiebildebenen ](home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md)
+         + [Topografiebildebenen](home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md)
          + [Festlegen von Projektionsinformationen für Topografiebilder](home/c-get-started/c-im-layers/c-ter-img-layers/c-proj-info-ter-imgs.md)
          + [Verfügbar machen von neuen Topografiebildebenen](home/c-get-started/c-im-layers/c-ter-img-layers/t-new-ter-img-layer.md)
       + Elementpunktebenen {#elmt-pt-layers}
@@ -335,7 +335,7 @@ ht-degree: 100%
          + [Ausblenden oder Entfernen von Registerkarten](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-hide-rmv-tabs.md)
       + [Einrichten lokalisierter Sprachen](home/c-get-started/c-intf-anlys-ftrs/c-localized-ime/c-localized-ime-config.md)
       + Konfigurieren gesperrter Arbeitsbereiche {#config-locked-wkspc}
-         + [Konfigurieren gesperrter Arbeitsbereiche ](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md)
+         + [Konfigurieren gesperrter Arbeitsbereiche](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md)
          + [Dateien „folder.lock“ und „workspace.lock“](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-fldr-wksp-files.md)
          + [Einrichten des Entsperrungsparameters](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-unlck-param.md)
       + [Konfigurieren der Funktion zum Öffnen](home/c-get-started/c-intf-anlys-ftrs/c-config-open-funct.md)
@@ -481,7 +481,7 @@ ht-degree: 100%
    + [Reguläre Ausdrücke](home/c-dataset-const-proc/c-reg-exp.md)
    + [Felder für Ereignisdatensätze](home/c-dataset-const-proc/c-ev-data-rec-fields.md)
    + Konfigurationseinstellungen für Web-Daten {#config-web-data}
-      + [Konfigurationseinstellungen für Web-Daten ](home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md)
+      + [Konfigurationseinstellungen für Web-Daten](home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md)
       + [Web-spezifische Einstellungen für die Protokollverarbeitung](home/c-dataset-const-proc/c-config-web-data/c-web-spec-log-proc.md)
       + [Web-spezifische Einstellungen für Umwandlungen](home/c-dataset-const-proc/c-config-web-data/c-web-spec-transf.md)
    + [Zeitzonencodes](home/c-dataset-const-proc/c-time-zone.md)
@@ -504,7 +504,7 @@ ht-degree: 100%
       + [Überprüfen des Status von Berichtssätzen](home/c-rpt-oview/c-work-rpt-sets/c-rev-rpt-set-stat.md)
       + Bearbeiten vorhandener Report.cfg-Dateien {#edit-existing-report-files}
          + [Bearbeiten vorhandener Report.cfg-Dateien](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md)
-         + [Erneutes Versenden von Berichten per E-Mail ](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-res-rpts-email.md)
+         + [Erneutes Versenden von Berichten per E-Mail](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-res-rpts-email.md)
          + [E-Mail-Benachrichtigung bezüglich fertiggestelltem Bericht](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-email-not-comp-rpt.md)
    + Report Portal {#report-portal}
       + [Verwenden von Report Portal](home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md)
@@ -743,7 +743,7 @@ ht-degree: 100%
       + [Konfigurieren des Replikations-Services](home/c-inst-svr/c-ins-svr-rep-svc/t-config-rep-svc.md)
       + [Nächste Schritte](home/c-inst-svr/c-ins-svr-rep-svc/c-nxt-stps-rep-svc.md)
    + Repeater {#repeater}
-      + [Repeater-Funktion ](home/c-inst-svr/c-rptr-fntly/c-rptr-fntly.md)
+      + [Repeater-Funktion](home/c-inst-svr/c-rptr-fntly/c-rptr-fntly.md)
       + Konfiguration {#configure}
          + [Konfigurieren der Repeater-Funktion](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-cnfg-rptr-fntly.md)
          + [Konfigurieren einer Insight Server-FSU für Repeater](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-fsu-rptr.md)
@@ -808,7 +808,7 @@ ht-degree: 100%
          + [Lösung des Problems](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-slv-pblm.md)
          + [Arbeiten mit mehreren Instanzen eines Web-Servers](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-mltpl-inst-web-svr.md)
    + Datei „Sensor Txlogd.conf“ {#sensor-txlogd-params}
-      + [Parameter für die Datei „Sensor Txlogd.conf“ ](home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md)
+      + [Parameter für die Datei „Sensor Txlogd.conf“](home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md)
       + [Erforderliche Parameter](home/c-snsr-ovrvw/sensor-txlogd-params/c-rqrd-prmtrs.md)
       + [Optionale Parameter](home/c-snsr-ovrvw/sensor-txlogd-params/c-opt-pmtrs.md)
    + Felder für Ereignisdatensätze {#event-data-record}
