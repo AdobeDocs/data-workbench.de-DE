@@ -2,9 +2,9 @@
 description: Adobe Data Workbench bietet Tools und Prozesse, mit denen Sie Ihre Daten gemäß den Datenschutz-Grundverordnung (DSGVO) bereitstellen können.
 title: Data Workbench und die DSGVO
 exl-id: fdc43567-0c57-4851-9073-e295258a8074
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ In der DSGVO-Verordnung werden die Rollen und Pflichten der verschiedenen für d
 
 * Ihr Unternehmen fungiert als **Datenverantwortlicher**, um den Kontext und die Aufbewahrung personenbezogener Daten basierend auf Ihren Anforderungen und Einschränkungen zu bestimmen. Adobe verarbeitet und speichert diese Daten dann in Ihrem Namen.
 * Adobe fungiert als **Datenverarbeiter**, der die Software und Dienste bereitstellt, um DSGVO-Anforderungen auf der Grundlage Ihrer Vereinbarung mit Adobe zu implementieren.
-* Nach Integration der Data Workbench in den DSGVO-Dienst und gemäß den DSGVO-Standards können Besucher einer Site (die **Datensubjekte**) ihr &quot;Recht auf Vergessenwerden&quot;von der Adobe, dem Datenverarbeiter, ausüben. Um das Recht auf Vergessenwerden zu erreichen, können Sie als Datenverantwortlicher herausfordernde Besucher-IDs von einer Benutzeroberfläche oder API in die Adobe hochladen. Weitere Informationen finden Sie in der Dokumentation [Adobe Analytics DSGVO-Workflow](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) , einschließlich des Abschnitts [Zugriffs- und Löschanfragen senden](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html) .
+* Nach Integration der Data Workbench in den DSGVO-Dienst und gemäß den DSGVO-Standards können Besucher einer Site (die **Datensubjekte**) ihr &quot;Recht auf Vergessenwerden&quot;von der Adobe, dem Datenverarbeiter, ausüben. Um das Recht auf Vergessenwerden zu erreichen, können Sie als Datenverantwortlicher herausfordernde Besucher-IDs von einer Benutzeroberfläche oder API in die Adobe hochladen. Weitere Informationen finden Sie in der Dokumentation [Adobe Analytics DSGVO-Workflow](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=en) , einschließlich des Abschnitts [Zugriffs- und Löschanfragen senden](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html) .
 
 >[!NOTE]
 >

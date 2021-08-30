@@ -3,9 +3,9 @@ description: Im Folgenden finden Sie Anforderungen und Empfehlungen für die Ins
 title: Workstation-Anforderungen
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 exl-id: 35e259e3-3d6d-45c8-a923-2f8de117489d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '525'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Im Folgenden finden Sie Anforderungen und Empfehlungen für die Installation der Workstation (Client) in Data Workbench.
 
-Weitere Informationen zu den Systemanforderungen für Data Workbenchs finden Sie unter [Serversystemanforderungen](https://docs.adobe.com/help/en/data-workbench/using/server-admin-install/c-msr-server.html) .
+Weitere Informationen zu den Systemanforderungen für Data Workbenchs finden Sie unter [Serversystemanforderungen](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/c-msr-server.html?lang=en) .
 
 >[!IMPORTANT]
 >

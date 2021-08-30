@@ -3,9 +3,9 @@ description: Nach der Einrichtung von DWB können Sie diese Funktionen implement
 title: Implementierung von Funktionen in Data Workbench
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -22,11 +22,11 @@ Nach der Einrichtung von DWB können Sie diese Funktionen implementieren.
 
 * Informationen zur Implementierung der **Globalen Visualisierung** finden Sie unter [Globen](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html).
 
-* Informationen zum Implementieren von **Arbeitsbereiche für Attribution** finden Sie unter [Regelbasierte Zuordnung](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-rules-attrib.html) und [Best Fit Attribution](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html).
+* Informationen zum Implementieren von **Arbeitsbereiche für Attribution** finden Sie unter [Regelbasierte Zuordnung](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-rules-attrib.html?lang=en) und [Best Fit Attribution](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html?lang=en).
 
 * Informationen zur Implementierung der Arbeitsbereiche **Prädiktive Analyse** finden Sie unter [Visualisierungen](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-vis.html) und die unten aufgeführte Visualisierung.
 
-* Informationen zur Implementierung von **Predictive Intelligence mit Clustering-Visualisierungen** finden Sie unter [Clustering](https://docs.adobe.com/help/en/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html).
+* Informationen zur Implementierung von **Predictive Intelligence mit Clustering-Visualisierungen** finden Sie unter [Clustering](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en).
 
 * Informationen zur Implementierung von **Predictive Intelligence mit Tendenzauswertung** finden Sie unter [Tendenzauswertung](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-propensity/c-visitor-propensity.html).
 
