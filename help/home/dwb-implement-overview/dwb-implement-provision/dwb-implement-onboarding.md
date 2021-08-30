@@ -1,84 +1,86 @@
 ---
-description: Führen Sie die folgenden Schritte aus, um den Onboarding-Prozess für Adobe Data Workbench (DWB), eine Komponente von Adobe Analytics Premium (AAP), zu starten.
-title: Grundlegende Anweisungen für DWB Managed Services
+description: Führen Sie diese Schritte aus, um das Onboarding für die Adobe Data Workbench (DWB), eine Komponente von Adobe Analytics Premium (AAP), zu starten.
+title: Grundlegende Onboarding-Anweisungen für DWB Managed Services
 uuid: ad44a4eb-00ea-49c7-8401-58976d8fe39e
-translation-type: tm+mt
-source-git-commit: ded50c4eeadea80156c17a4cad985d0ceddd5500
+exl-id: 49fb6afe-b417-4554-9238-fd6381c00029
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '922'
+ht-degree: 2%
 
 ---
 
+# Grundlegende Onboarding-Anweisungen für DWB Managed Services{#basic-onboarding-instructions-for-dwb-managed-services}
 
-# Grundlegende Anweisungen für DWB Managed Services{#basic-onboarding-instructions-for-dwb-managed-services}
+Führen Sie diese Schritte aus, um das Onboarding für die Adobe Data Workbench (DWB), eine Komponente von Adobe Analytics Premium (AAP), zu starten.
 
-Führen Sie die folgenden Schritte aus, um den Onboarding-Prozess für Adobe Data Workbench (DWB), eine Komponente von Adobe Analytics Premium (AAP), zu starten.
+Diese Onboarding-Anweisungen richten sich an Kunden, die Data Workbench mit einer einzelnen Report Suite implementieren, indem sie Adobe Managed Services ohne Beratungsdienste nutzen. Wenn Sie ein neuer AAP-Kunde sind, der DWB implementiert, ist das Adobe Onboarding-Team Ihr erster Ansprechpartner. Bei der Aktualisierung vom Adobe Analytics-Standard oder von einer früheren DWB-Version unterstützt Sie ein Adobe Customer Success Manager.
 
-Diese Anweisungen zum Einstieg richten richten sich an Kunden, die Data Workbench mit einer einzigen Report Suite implementieren, indem sie von Adobe verwaltete Dienste ohne Beratungsdienste nutzen. Wenn Sie ein neuer AAP-Kunde sind, der DWB implementiert, ist das Adobe Onboarding-Team Ihr erster Ansprechpartner. Wenn Sie ein Upgrade vom Adobe Analytics-Standard oder von einer früheren Version von DWB durchführen, hilft Ihnen ein Adobe-Kundenbetreuer.
+## Onboarding-Informationen: Was wir von Ihnen brauchen {#section-bdeb9aa26dc14e45a6c90920832becaa}
 
-## Informationen zum Einstieg: Was wir von Ihnen brauchen {#section-bdeb9aa26dc14e45a6c90920832becaa}
+Adobe wird Sie kontaktieren, um:
 
-Adobe wird Sie kontaktieren unter:
-
-* Identifizieren Sie einen primären Benutzer für DWB, um ein Zertifikat speziell für diesen Benutzer im Netzwerkverzeichnis zu generieren. Der Hauptbenutzer fungiert auch als Ansprechpartner für die Interaktion mit der Adobe-Kundenunterstützung.
+* Identifizieren Sie einen Primären Benutzer für DWB, um ein Zertifikat speziell für diesen Benutzer im Netzwerkverzeichnis zu generieren. Der primäre Anwender fungiert außerdem als Ansprechpartner für die Interaktion mit der Kundenunterstützung von Adobe.
 * Identifizieren Sie die Report Suite, die in DWB geladen werden soll.
 
 Die Adobe Digital Marketing-Teams verwenden dann Ihre Informationen, um Profile zu erstellen, Konten einzurichten und eine Konfigurationsdatei für DWB bereitzustellen.
 
-**Adobe Onboarding Tasks**
+**Adobe Onboarding-Aufgaben**
 
-* Der Adobe-Kundendienst erstellt ein lizenziertes DWB-Konto. Der Adobe-Kundendienst generiert ein DWB-Zertifikat für den primären Benutzer.
-* Der Adobe-Kundendienst definiert den primären Benutzer als &quot;unterstützten Benutzer&quot;, d. h. die für unterstützte Aufrufe und Problemlösungen identifizierte Person.
-* Der Adobe-Kundendienst lädt das Softwarepaket in das DWB-Lizenz- und Softwareportal (SoftDocs/Software- und Docs-Profil), das Sie in Ihr Unternehmen herunterladen können.
+* Adobe-Kundenunterstützung erstellt ein lizenziertes DWB-Konto. Die Adobe-Kundenunterstützung generiert ein DWB-Zertifikat für den primären Benutzer.
+* Die Adobe-Kundenunterstützung definiert den primären Benutzer als &quot;unterstützten Benutzer&quot;, die Person, die für unterstützte Aufrufe und Problemlösungen identifiziert wurde.
+* Die Adobe-Kundenunterstützung lädt das Softwarepaket in das DWB-Lizenz- und Softwareportal (SoftDocs/Software und Docs-Profil) zum Herunterladen in Ihr Unternehmen.
 * Das Adobe TechOps-Team bereitet die Produktions- und Entwicklungsumgebungen und deren Profile (pro Vertrag) für DWB vor.
-* Das Adobe TechOps-Team konfiguriert Datenfeeds und Profilverwaltungsskripte.
-* Das Adobe TechOps-Team erstellt die DWB-Konfigurationsdatei (Insight.cfg) und sendet sie an das Adobe Onboarding-Team, das für die mit Ihrem Unternehmen verbundenen Einstiegsaufgaben zuständig ist.
+* Das Adobe TechOps-Team konfiguriert Daten-Feeds und Profilverwaltungsskripte.
+* Das Adobe TechOps-Team erstellt und sendet die DWB-Konfigurationsdatei (Insight.cfg) an das Adobe Onboarding-Team, das für Onboarding-Aufgaben im Zusammenhang mit Ihrem Unternehmen zuständig ist.
 
-Nach der Anpassung Ihrer Datenfeeds und der Generierung von Berechtigungen, Zertifikaten und einer Profilkonfiguration sendet der Adobe-Kundendienst Ihre Konfigurationsdatei und Ihre Anmeldeinformationen, um den nächsten Schritt durchzuführen.
+Nachdem Sie Ihre Daten-Feeds angepasst und Anmeldeinformationen, Zertifikate und eine Profilkonfiguration generiert haben, sendet die Adobe-Kundenunterstützung Ihre Konfigurationsdatei und Ihre Anmeldeinformationen, um den nächsten Schritt zu tun.
 
 ## Zugriff auf benutzerdefinierte Installationsdateien {#section-26962bf57fef435dbd1c5486d4b6f688}
 
-Sie erhalten diese Setupdateien vom Adobe-Kundendienst, um die DWB-Workstation auf Ihrem Clientcomputer zu installieren.
+Sie erhalten diese Setupdateien von der Adobe-Kundenunterstützung, um die DWB-Workstation auf Ihrem Clientcomputer zu installieren.
 
 * Ihre benutzerdefinierte DWB-Konfigurationsdatei (Insight.cfg)
 
    Diese Konfigurationsdatei auf dem Clientcomputer enthält Verbindungen zu Ihren verwalteten DWB-Servern.
 
-* Melden Sie sich für das Lizenzportal an, um den DWB Setup Wizard und das erforderliche Zertifikat (PEM-Datei) mit dem Namen Ihres primären Benutzers herunterzuladen.
+* Melden Sie sich für das Lizenzportal an, um den DWB-Einrichtungs-Assistenten und das erforderliche Zertifikat (.pem-Datei) mit dem Namen Ihres primären Benutzers herunterzuladen.
 
-**Herunterladen zusätzlicher Setupdateien**
+**Herunterladen zusätzlicher Setup-Dateien**
 
-1. Gehen Sie zu: license.visualsciences.com zum Herunterladen des Lizenzzertifikats und der ausführbaren Datei des DWB Setup Wizard.
-1. Geben Sie Ihre Organisation (Kontoname), den Namen des primären Benutzers und das Passwort ein, das Sie vom Adobe-Kundendienst erhalten haben, und klicken Sie dann auf Anmelden.
+1. Navigieren Sie zu: license.visualsciences.com , um Ihr Lizenzzertifikat und die ausführbare Datei des DWB-Einrichtungs-Assistenten herunterzuladen.
+1. Geben Sie Ihr Unternehmen (Kontoname), den Namen des Primärbenutzers und das Passwort ein, das Sie von der Kundenunterstützung von Adobe erhalten haben, und klicken Sie dann auf &quot;Anmelden&quot;.
 
    >[!NOTE]
    >
-   >Ihr Browser fordert Sie möglicherweise auf, zu diesem Zeitpunkt ein digitales Zertifikat vorzulegen. Wenn dies der Fall ist, klicken Sie auf &quot;Abbrechen&quot;, um das Dialogfeld zu schließen.
+   >Ihr Browser fordert Sie an dieser Stelle möglicherweise auf, ein digitales Zertifikat vorzulegen. Wenn dies der Fall ist, klicken Sie auf Abbrechen , um das Dialogfeld zu schließen.
 
-1. Suchen Sie im Abschnitt Downloads das für Ihre Instanz von Adobe Data Workbench (`<PrimaryUser>`.pem) ausgestellte Zertifikat und laden Sie es herunter.
-1. Suchen Sie im Abschnitt Downloads nach dem Standard-Client-Installationsprogramm, um den DWB Setup Wizard (InsightSetup-x.xx.exe-Datei) herunterzuladen.
-1. Nachdem Sie Dateien vom Adobe-Kundendienst erhalten und heruntergeladen haben, führen Sie den DWB-Setup-Assistenten aus, um die Workstation-Software auf Ihrem Clientcomputer zu installieren.
-
->[!NOTE]
-Der DWB-Setup-Assistent führt Sie durch die Installation der DWB-Client-Workstation und hilft Ihnen bei der Suche der Insight.cfg- und `<PrimaryUser>`.pem-Dateien, die in den erforderlichen Ordnern platziert werden sollen. Die Datei &quot;Insight.cfg&quot;befindet sich zusammen mit der Datei &quot;Insight.exe&quot;in Ihrer installierten Client-Workstation. Die Datei `<PrimaryUser>`.pem befindet sich im Ordner &quot;Certificates&quot;mit der Datei &quot;trust_ca_cert.pem&quot;. Alle Zertifikat- und Konfigurationsdateien müssen vorhanden sein, damit DWB funktioniert.
-
-Weitere Informationen finden Sie im [DWB-Setup-Assistenten](https://docs.adobe.com/content/help/en/data-workbench/using/install/workstation-setup/install-setup.html).
-
-## Verbindung zu DWB-Servern {#section-8e79c4e07c2a4342a5bb8af6ee7be3c9}
-
-Ihre verwalteten Server werden in der Datei Insight.cfg identifiziert, die Sie vom Adobe-Kundendienst erhalten, und befinden sich auf Ihrer Client-Workstation. Adobe TechOps richtet Ihre Server ein, und der Adobe-Kundendienst fügt der Datei Insight.cfg Verweise auf diese verwalteten Server und Profile hinzu, bevor sie an Sie gesendet wird. (Die Dokumentation zum DWB-Setup-Assistenten zum Konfigurieren von Verbindungen mit dem Server in Schritt 12 wird abgeschlossen.)
+1. Suchen Sie das für Ihre Instanz der Adobe-Data Workbench ausgestellte Zertifikat (`<PrimaryUser>`.pem) im Abschnitt Downloads und laden Sie es herunter.
+1. Suchen Sie im Abschnitt Downloads nach dem Standard-Client-Installationsprogramm , um den DWB-Einrichtungs-Assistenten (InsightSetup-x.xx.exe-Datei) herunterzuladen.
+1. Nachdem Sie Dateien von der Adobe-Kundenunterstützung erhalten und heruntergeladen haben, führen Sie den DWB-Einrichtungs-Assistenten aus, um die Workstation-Software auf Ihrem Clientcomputer zu installieren.
 
 >[!NOTE]
-Im Arbeitsbereich &quot;Workstation-Konfiguration&quot;auf der DWB-Client-Workstation können Sie Ihre angeschlossenen Server und Profile sehen.
+Der DWB-Einrichtungs-Assistent führt Sie durch die Installation der DWB-Client-Workstation und hilft Ihnen, die Dateien Insight.cfg und `<PrimaryUser>`.pem zu finden, die in den erforderlichen Ordnern platziert werden sollen. Die Datei Insight.cfg befindet sich zusammen mit der Datei Insight.exe in Ihrer installierten Client-Workstation. Die Datei `<PrimaryUser>`.pem befindet sich im Ordner Zertifikate mit der Datei trust_ca_cert.pem . Damit DWB funktioniert, müssen alle Zertifikat- und Konfigurationsdateien vorhanden sein.
+
+Weitere Informationen finden Sie unter [DWB-Einrichtungs-Assistent](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
+
+## Verbindung zu Ihren DWB-Servern {#section-8e79c4e07c2a4342a5bb8af6ee7be3c9}
+
+Ihre verwalteten Server werden in der Datei Insight.cfg identifiziert, die Sie von der Adobe-Kundenunterstützung erhalten und sich auf Ihrer Client-Workstation befindet. Adobe TechOps richtet Ihre Server ein und die Adobe-Kundenunterstützung fügt der Datei Insight.cfg Verweise auf diese verwalteten Server und Profile hinzu, bevor sie sie an Sie sendet. (Die Konfiguration der Verbindungen zum Server in Schritt 12 der Dokumentation zum DWB-Einrichtungs-Assistenten wird abgeschlossen.)
+
+>[!NOTE]
+Im Arbeitsbereich Workstation-Konfiguration auf der DWB-Client-Workstation können Sie Ihre verbundenen Server und Profile sehen.
 
 **Adobe Managed Services**
 
-・ Adobe TechOps verwaltet die Infrastruktur einschließlich Netzwerk, Rechenzentrum, Server und Speicher. Die Überwachung der Infrastruktur und die Reaktion auf Warnungen erfolgen rund um die Uhr bei Warnungen, die eine TechOps-Aktion erfordern. Bei anderen Warnungen benachrichtigt TechOps den Adobe-Kundendienst, sich mit Ihnen abzustimmen.
+・ Adobe TechOps verwaltet die Infrastruktur einschließlich Netzwerk, Rechenzentrum, Server und Speicher. Die Überwachung der Infrastruktur und die Reaktion auf Warnhinweise erfolgen rund um die Uhr, wenn Warnhinweise erforderlich sind, die Maßnahmen von TechOps erfordern. Für andere Warnhinweise benachrichtigt TechOps die Kundenunterstützung der Adobe, um sich mit Ihnen abzustimmen.
 
-・ Adobe TechOps führt Wartungs- und Firmware-Updates für Ihre verwalteten Server durch. Für Wartungsarbeiten, die zu Ausfallzeiten führen, erhalten Sie vom Kundendienst mindestens zwei Wochen im Voraus Benachrichtigungen über das Wartungsfenster. Adobe TechOps wird so schnell wie möglich auf dringende Bedürfnisse eingehen. Die Benachrichtigung hängt von der Dringlichkeit ab und wird nach Bekanntwerden des Zeitplans gelöst.
+・ Adobe TechOps führt Wartungs- und Firmware-Updates für Ihre verwalteten Server durch. Für Wartungsarbeiten, die zu Ausfallzeiten führen, erhalten Sie mindestens zwei Wochen im Voraus Wartungsfenster von der Kundenunterstützung. Adobe TechOps wird so schnell wie möglich auf dringende Bedürfnisse eingehen. Die Benachrichtigung hängt von der Dringlichkeit ab und wird aufgelöst, sobald der Zeitplan bekannt ist.
 
-・ Adobe TechOps richtet eine geplante Aufgabe ein, um Daten automatisch zu verwalten. Analytische Feed-Daten werden jeden Abend ab 21:00 Uhr zur Verarbeitung und Konvertierung in DWB verschoben.
+・ Adobe TechOps richtet eine geplante Aufgabe ein, um Daten automatisch zu verwalten. Analytische Feed-Daten werden jeden Abend ab 21:00 Uhr in die DWB verschoben, um verarbeitet und umgewandelt zu werden.
 
-・ Adobe TechOps verarbeitet bei Bedarf andere Adobe Managed Services wie Datensicherungen, FTP-Konten, Datenarchivierung und Datenübertragung.
+・ Adobe TechOps verarbeitet bei Bedarf weitere Adobe Managed Services, einschließlich Datensicherungen, FTP-Konten, Datenarchivierung und Datenübertragung.
 
-・ Adobe TechOps konfiguriert den primären Produktionscluster so, dass er drei Monate rollierende Daten enthält, die monatlich zurückgesetzt und erneut verarbeitet werden. Aktualisierungen der Suche (Geografie, DeviceAtlas, Standard-Klassifizierungen) werden ebenfalls im Rahmen der Wiederaufbereitung vorgenommen. Die Aufgabe wird standardmäßig am ersten Freitag eines jeden Monats ausgeführt. Bei Bedarf kann der Zeitplan vom Kundendienst geändert werden.
+・ Adobe TechOps konfiguriert den primären Produktionscluster so, dass er drei Monate rollierende Daten enthält, die monatlich zurückgesetzt und erneut verarbeitet werden. Aktualisierungen der Suche (Geografie, DeviceAtlas, Standardklassifizierungen) werden ebenfalls im Rahmen der Neuverarbeitungsaufgabe vorgenommen. Standardmäßig wird die Aufgabe am ersten Freitag eines jeden Monats ausgeführt. Bei Bedarf kann der Zeitplan von der Kundenunterstützung geändert werden.
 
-Weitere Informationen erhalten Sie beim [Adobe-Kundendienst](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).

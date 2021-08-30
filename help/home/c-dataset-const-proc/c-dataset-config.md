@@ -3,9 +3,9 @@ description: Die Datensatzkonfiguration bezieht sich auf den Prozess der Bearbei
 title: Grundlagen zur Konfiguration von Datensätzen
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 7%
 
 ---
@@ -16,7 +16,7 @@ Die Datensatzkonfiguration bezieht sich auf den Prozess der Bearbeitung der Konf
 
 Der erstellte Datensatz befindet sich physisch in der auf dem Data Workbench-Server-Computer gespeicherten Datei [!DNL temp.db], die Konfigurationsdateien für den Datensatz befinden sich jedoch in einem Verzeichnis für ein Profil. Ein Profil enthält eine Reihe von Konfigurationsdateien, die einen Datensatz (einschließlich erweiterter Dimensionen) für einen bestimmten Analysezweck erstellen. Darüber hinaus enthält ein Profil die Definitionen von Entitäten wie Metriken, abgeleitete Dimensionen, Arbeitsbereiche, Berichten und Visualisierungen, die es Analysten ermöglichen, mit dem Datensatz zu interagieren und Informationen aus ihm zu erhalten.
 
-Das Profil, dessen Datensatzkonfigurationsdateien Sie bearbeiten, wird als Datensatzprofil bezeichnet. Ein Datensatzprofil verweist auf mehrere geerbte Profile. Dabei kann es sich um beliebige Adobe-Profile handeln, die Sie erstellen und verwalten. Auf diese Weise können Sie Ihre Anwendung so konfigurieren, dass sie Ihren Analyseanforderungen am besten entspricht. Ein Datensatzprofil kann auch auf interne Profile verweisen, die mit Ihrer Adobe App bereitgestellt werden, um die Grundlage für alle in Ihrer Anwendung verfügbaren Funktionen zu bilden.
+Das Profil, dessen Datensatzkonfigurationsdateien Sie bearbeiten, wird als Datensatzprofil bezeichnet. Ein Datensatzprofil verweist auf mehrere geerbte Profile. Dabei kann es sich um beliebige Adobe-Profile handeln, die Sie erstellen und verwalten. So können Sie Ihre App so konfigurieren, dass sie Ihren Analyseanforderungen am besten entspricht. Ein Datensatzprofil kann auch auf interne Profile verweisen, die mit Ihrer Adobe App bereitgestellt werden, um die Grundlage für alle in Ihrer Anwendung verfügbaren Funktionen zu bilden.
 
 Weitere Informationen zu den verschiedenen Profiltypen, die in Adobe-Anwendungen verfügbar sind, finden Sie im *Data Workbench-Benutzerhandbuch*.
 
@@ -50,7 +50,7 @@ Obwohl dies nicht für alle Datensätze erforderlich ist, können Sie mit diesen
 
 * **Server.cfg:** Die  [!DNL Server.cfg] Datei gibt die standardmäßige Datencache-Größe (in Bytes) für Data Workbench-Computer an, die eine Verbindung zum Data Workbench-Server herstellen. Siehe [Zusätzliche Konfigurationsdateien](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **Transform.cfg und Transform Mode.cfg:** Diese Dateien sind nur verfügbar, wenn Sie die Datenumwandlungsfunktion lizenziert haben, die mit Ihrer Adobe App verwendet werden kann. Die Datei [!DNL Transform.cfg] enthält die Parameter, die die Protokollquellen und Datenumwandlungen für die Umwandlungsfunktion definieren. Die von Ihnen definierten Umwandlungen manipulieren die Quelldaten und geben sie in einem von Ihnen angegebenen Format aus. Die [!DNL Insight Transform Mode.cfg]-Datei ermöglicht es Ihnen, die Verarbeitung von Daten in einem Datensatz anzuhalten, Offline-Quellen anzugeben oder die Häufigkeit anzugeben, mit der die Umwandlungsfunktion von Insight Server, die die Umwandlungsfunktion ausführt, seine Statusdateien speichert. Siehe [Umwandlungsfunktion](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
+* **Transform.cfg und Transform Mode.cfg:** Diese Dateien sind nur verfügbar, wenn Sie die Datenumwandlungsfunktion lizenziert haben, die mit Ihrer Adobe App verwendet werden kann. Die Datei [!DNL Transform.cfg] enthält die Parameter, die die Protokollquellen und Datenumwandlungen für die Umwandlungsfunktion definieren. Die von Ihnen definierten Umwandlungen manipulieren die Quelldaten und geben sie in einem von Ihnen angegebenen Format aus. Die [!DNL Insight Transform Mode.cfg]-Datei ermöglicht es Ihnen, die Verarbeitung von Daten in einem Datensatz anzuhalten, Offline-Quellen anzugeben oder die Häufigkeit anzugeben, mit der die Umwandlungsfunktion von Insight Server, die die Umwandlungsfunktion ausführt, seine Statusdateien speichert. Siehe [Umwandlungsfunktion](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
 
 <!--
 c_next_steps.xml

@@ -3,9 +3,9 @@ description: Informationen zu den Parametern von Report Server.cfg.
 title: Parameter für „Report Server.cfg“
 uuid: 506f30f7-c8c6-4580-8423-7da8d00b0d57
 exl-id: 339e4219-ff4d-4df6-b45a-7144927a843b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 2%
 
 ---
@@ -166,7 +166,7 @@ Die folgende Tabelle enthält Beschreibungen der [!DNL Report Server.cfg]-Dateip
   </tr> 
   <tr> 
    <td colname="col1"> Statusintervall </td> 
-   <td colname="col2"> <p>Die Häufigkeit (in Sekunden), mit der <span class="wintitle"> Report Server </span> Statusinformationen generiert und an den Data Workbench-Server sendet, um in <span class="wintitle"> Detaillierter Status </span> angezeigt zu werden. </p> <p>Der Standardwert ist 120 Sekunden. Es wird nicht empfohlen, diesen Wert auf einen kleinen Wert festzulegen, z. B. zwei Minuten, da die Ausführung einer Berichtswarteschlange Stunden dauern kann. In diesem Fall können Sie eine Einstellung von 600 bis 1200 Sekunden in Erwägung ziehen. </p> <p>Weitere Informationen zu <span class="wintitle"> Detaillierter Status </span> finden Sie im Kapitel "Verwaltungsschnittstellen"des <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Insight-Benutzerhandbuchs </a>. </p> </td> 
+   <td colname="col2"> <p>Die Häufigkeit (in Sekunden), mit der <span class="wintitle"> Report Server </span> Statusinformationen generiert und an den Data Workbench-Server sendet, um in <span class="wintitle"> Detaillierter Status </span> angezeigt zu werden. </p> <p>Der Standardwert ist 120 Sekunden. Es wird nicht empfohlen, diesen Wert auf einen kleinen Wert festzulegen, z. B. zwei Minuten, da die Ausführung einer Berichtswarteschlange Stunden dauern kann. In diesem Fall können Sie eine Einstellung von 600 bis 1200 Sekunden in Erwägung ziehen. </p> <p>Weitere Informationen zu <span class="wintitle"> Detaillierter Status </span> finden Sie im Kapitel "Verwaltungsschnittstellen"des <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Insight-Benutzerhandbuchs </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Aktualisierungsintervall </td> 

@@ -3,9 +3,9 @@ description: Dieser Abschnitt enthält detaillierte Informationen zu den integri
 title: Über integrierte Metriken, Dimensionen und Filter
 uuid: 05676254-f6f5-4cb1-a664-da96d5b965db
 exl-id: d581a029-fd59-47c5-b832-64407102ace7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 8%
 
 ---
@@ -18,4 +18,4 @@ Fast alle Metriken werden im Metrikverzeichnis eines Profils definiert. Es werde
 
 >[!NOTE]
 >
->Die Protokollverarbeitungsphase bedeutet nicht, dass alle Ereignisdaten aus Protokolldateien stammen. Auch wenn dies manchmal der Fall ist, können Ereignisdaten aus einer anderen Quelle stammen, z. B. einer ODBC-Datenquelle. Weitere Informationen zu Datenquellen finden Sie im [Handbuch zur Datensatzkonfiguration](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html).
+>Die Protokollverarbeitungsphase bedeutet nicht, dass alle Ereignisdaten aus Protokolldateien stammen. Auch wenn dies manchmal der Fall ist, können Ereignisdaten aus einer anderen Quelle stammen, z. B. einer ODBC-Datenquelle. Weitere Informationen zu Datenquellen finden Sie im [Handbuch zur Datensatzkonfiguration](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html).

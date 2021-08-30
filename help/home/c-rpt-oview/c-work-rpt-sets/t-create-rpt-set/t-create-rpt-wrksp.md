@@ -3,10 +3,10 @@ description: Sie können mehrere Arbeitsbereiche für einen einzelnen Berichtssa
 title: Erstellen der Report Server-Arbeitsbereiche
 uuid: 818569c7-fff9-4277-996b-8c47e4ef1dbc
 exl-id: 2bc068f1-c32f-4c14-b3fa-6b46e950abc7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 10%
+source-wordcount: '185'
+ht-degree: 9%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Sie können mehrere Arbeitsbereiche für einen einzelnen Berichtssatz direkt in der Arbeitsfläche erstellen.
 
-Informationen zu Data Workbench und zur Verwendung der Benutzeroberfläche finden Sie im [Data Workbench Client Guide](https://docs.adobe.com/content/help/de-DE/data-workbench/using/client/t-open-ins.html).
+Informationen zu Data Workbench und zur Verwendung der Benutzeroberfläche finden Sie im [Data Workbench Client Guide](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html?lang=de).
 
 **So erstellen Sie einen Berichtsarbeitsbereich mit dem[!DNL Worktop]**
 

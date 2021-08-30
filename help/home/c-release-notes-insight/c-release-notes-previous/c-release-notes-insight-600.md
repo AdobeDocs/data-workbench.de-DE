@@ -3,9 +3,9 @@ description: Neue Funktionen, die in Data Workbench 6.0.4 eingeführt wurden, ei
 title: Versionshinweise zu Data Workbench 6.0
 uuid: b348425e-3304-4db7-a280-479a34452bdb
 exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1677'
 ht-degree: 2%
 
 ---
@@ -258,7 +258,7 @@ So verwenden Sie den neuen SiteCatalyst-Daten-Feed:
 
 Neue Funktionen, die in Data Workbench 6.0.4 eingeführt wurden, einschließlich Fehlerbehebungen und bekannter Probleme.
 
-Informationen zu früheren Funktionen und Fehlerbehebungen, die auf jeder früheren Version basieren, finden Sie in den Archiven der Versionshinweise [a1/>.](https://docs.adobe.com/content/help/de-DE/data-workbench/using/release-notes/release-notes.html)
+Informationen zu früheren Funktionen und Fehlerbehebungen, die auf jeder früheren Version basieren, finden Sie in den Archiven der Versionshinweise [a1/>.](https://experienceleague.adobe.com/docs/data-workbench/using/release-notes/release-notes.html)
 
 ## Neue Funktionen {#section-2-1225066ea8f44cf68e42e019d0bca816}
 

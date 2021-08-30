@@ -3,9 +3,9 @@ description: Damit einige Funktionen von Report Server funktionieren, müssen Si
 title: Vorabinformationen
 uuid: cb464fb6-3109-4eff-9c95-f0cf1f8a8c66
 exl-id: 5c8bb4c3-fe76-4b4e-960d-113a9927ad59
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Damit einige Funktionen von Report Server funktionieren, müssen Sie vor der Ins
 
 ## Grundlegende Anforderungen an Report Server {#section-e891eaee79fe4fa98e658426dc3b2777}
 
-Die Berichte, die ausgegeben werden, können entweder in Form von PNG-Bildern oder .XLS-Tabellen in einem Dateisystem oder in Form von E-Mails erstellt werden. Die Hardwareanforderungen sind mit dem [Data Workbench-Client](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html#Data_Workbench_Client_Minimum_System_Requirements) identisch.
+Die Berichte, die ausgegeben werden, können entweder in Form von PNG-Bildern oder .XLS-Tabellen in einem Dateisystem oder in Form von E-Mails erstellt werden. Die Hardwareanforderungen sind mit dem [Data Workbench-Client](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html#Data_Workbench_Client_Minimum_System_Requirements) identisch.
 
 Die folgenden Anforderungen sind für Report Server vorhanden:
 

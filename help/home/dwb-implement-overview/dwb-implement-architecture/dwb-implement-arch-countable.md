@@ -1,30 +1,32 @@
 ---
-description: Erläuterung von Countables in DataWorkbench (DWB) zum Entwerfen und Implementieren des Schemas.
-title: Tabellenstrukturen für Schema-Design
+description: Erläuterung der Tabellen in DataWorkbench (DWB) zur Erstellung und Implementierung des Schemas.
+title: Schema-Aufbau von zählbaren Strukturen
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
-translation-type: tm+mt
-source-git-commit: 8b0e9c8855a7c7228393dfab4bf78645f1953794
+exl-id: 4f2a2f8a-7b42-42bb-8ba1-2675ffe6b2c2
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 3%
 
 ---
 
+# Schema-Aufbau von zählbaren Strukturen{#schema-design-countable-structures}
 
-# Tabellenstrukturen für Schema-Design{#schema-design-countable-structures}
-
-Erläuterung von Countables in DataWorkbench (DWB) zum Entwerfen und Implementieren des Schemas.
+Erläuterung der Tabellen in DataWorkbench (DWB) zur Erstellung und Implementierung des Schemas.
 
 ## Grundlagen zur Zählung in Data Workbench {#section-6e6b8d1c17634d669e62c91a80a0bc62}
 
-Auf der höchsten Ebene befinden sich zählbare Dimensionen. Zählbare Dimensionen dienen zwei Hauptfunktionen. Zunächst sind es Dimensionen, deren Elemente Sie zählen möchten. Mit anderen Worten beantworten die Tabellen die folgenden Fragen:
+Auf der höchsten Ebene sind zählbare Dimensionen. Zählbare Dimensionen bieten zwei Hauptfunktionen. Zunächst handelt es sich um Dimensionen, deren Elemente Sie zählen möchten. Mit anderen Worten: Zählungen beantworten Fragen wie:
 
 * Wie viele Besucher haben Ihre Homepage besucht?
 
 * Wie viele Besuche kamen von Google.com?
 
-`<discoiqbr>`Zählbare Dimensionen werden normalerweise zur Erstellung von Summenmetriken verwendet, die die Anzahl oder Summe aller Elemente der Dimension zurückgeben. Sie können zählbare Dimensionen definieren, um z. B. Reservierungen oder Produktbestellungen zu zählen. Sie können beispielsweise zählbare Dimensionstregeln definieren, deren Elemente (Protokolleinträge, die den Bestellungen aus Ihrem Online-Store entsprechen) gezählt werden können. Wenn Sie eine Anzahl von Bestellungen innerhalb einer Visualisierung anzeigen möchten, definieren Sie die Metrik &quot;Bestellsumme&quot;, die über eine Dimension ausgewertet werden kann oder auf die Filter angewendet werden sollen.
+`<discoiqbr>`Zählbare Dimensionen werden normalerweise verwendet, um Summenmetriken zu erstellen, die die Anzahl oder Summe aller Elemente der Dimension zurückgeben. Sie können zählbare Dimensionen definieren, um Instanzen wie Reservierungen oder Produktbestellungen zu zählen. Sie können beispielsweise die zählbaren Dimensionsbestellungen definieren, deren Elemente (Protokolleinträge, die den Bestellungen aus Ihrem Online-Store entsprechen) gezählt werden können. Wenn Sie innerhalb einer Visualisierung eine Anzahl von Bestellungen anzeigen möchten, definieren Sie die Metrik der Bestellsumme, die über eine Dimension ausgewertet werden kann oder auf die Filter angewendet werden sollen.
 
 Zählbare Dimensionen können übergeordnete Elemente anderer Dimensionen oder untergeordnete Elemente anderer zählbarer Dimensionen sein.
 
-Obwohl Ihre zählbare Dimension für den Stammordner nicht mit den Tracking-IDs in den Daten verknüpft werden muss, empfiehlt Adobe, die zählbare Dimension für den Stammordner des Datensatzes zu konfigurieren, um das Verfolgungs-ID-Feld (x-trackingid) als Schlüssel zu verwenden. Daher wird jedes Element der Stamm-Zählung mit dem eindeutigen Wert x-trackingid verknüpft und alle Daten zu jedem Element werden gruppiert.
+Obwohl Ihre zählbare Stammdimension nicht mit den Tracking-IDs in den Daten verknüpft werden muss, empfiehlt Adobe, die zählbare Stammgruppendimension Ihres Datensatzes so zu konfigurieren, dass das Tracking-ID-Feld (x-trackingid) als Schlüssel verwendet wird. Daher wird jedes Element der Stammzählung mit einem eindeutigen Wert von x-trackingid verknüpft und alle Daten zu jedem Element werden gruppiert.
 
 Zählbare Dimensionen werden durch die folgenden Parameter definiert:
 
@@ -33,62 +35,62 @@ Zählbare Dimensionen werden durch die folgenden Parameter definiert:
   <tr> 
    <th colname="col1" class="entry"> Parameter </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
-   <th colname="col3" class="entry"> Standardeinstellung </th> 
+   <th colname="col3" class="entry"> Standard </th> 
   </tr>
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> Name </td> 
-   <td colname="col2"> Beschreibender Name der Dimension, wie er dem Benutzer in Data Workbench angezeigt wird. Der Dimensionsname darf keinen Bindestrich (-) enthalten. </td> 
+   <td colname="col2"> Deskriptiver Name der Dimension, wie er dem Benutzer in Data Workbench angezeigt wird. Der Dimensionsname darf keinen Bindestrich (-) enthalten. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kommentare </p> </td> 
-   <td colname="col2"> <p>Optional. Anmerkungen zur erweiterten Dimension.
+   <td colname="col2"> <p>Optional. Hinweise zur erweiterten Dimension.
 
     &lt;/p> &lt;/td>
 <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bedingung </p> </td> 
-   <td colname="col2"> <p>Die Bedingungen, unter denen das Eingabefeld zur Erstellung der zählbaren Dimension beiträgt. Wenn eine Bedingung angegeben ist, beschränkt sie den Satz der Protokolleinträge, die für die Dimension und alle untergeordneten Elemente im DataSet-Schema sichtbar sind. </p> </td> 
+   <td colname="col2"> <p>Die Bedingungen, unter denen das Eingabefeld zur Erstellung der zählbaren Dimension beiträgt. Sofern angegeben, beschränkt eine Bedingung den Satz von Protokolleinträgen, der für die Dimension und alle untergeordneten Elemente im Datensatzschema sichtbar ist. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Verborgen </td> 
-   <td colname="col2"> Bestimmt, ob die Dimension in der Data Workbench-Oberfläche angezeigt wird. Standardmäßig ist dieser Parameter auf false festgelegt. Wenn die Dimension beispielsweise nur als Grundlage für eine Metrik verwendet werden soll, können Sie diesen Parameter auf "true"setzen, um die Dimension aus der Datenbasis-Anzeige auszublenden. </td> 
+   <td colname="col2"> Bestimmt, ob die Dimension in der Data Workbench-Benutzeroberfläche angezeigt wird. Standardmäßig ist dieser Parameter auf false gesetzt. Wenn die Dimension beispielsweise nur als Grundlage einer Metrik verwendet werden soll, können Sie diesen Parameter auf "true"setzen, um die Dimension aus der Data Workbench-Anzeige auszublenden. </td> 
    <td colname="col3"> false (falsch) </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Schlüssel </td> 
-   <td colname="col2"> <p>Optional. Der Name des Felds, das als Schlüssel verwendet werden soll. Wenn Sie diesen Parameter definieren, besteht für jede Kombination eines Elements der übergeordneten zählbaren Dimension und eines eindeutigen Werts des als Schlüssel angegebenen Felds ein Element der zählbaren Dimension. </p> <p>Jedes Element der zählbaren Dimension muss sich auf einen zusammenhängenden Satz von Protokolleinträgen beziehen. Wenn die Protokolleinträge daher nicht nach Schlüssel geordnet sind, wird jedes Mal, wenn sich das Schlüsselfeld ändert, ein Element der zählbaren Dimension erstellt. Um dies zu verhindern, empfiehlt Adobe, einen eindeutigen Schlüssel zu verwenden, der zeitlich aufeinander abgestimmt ist. </p> </td> 
+   <td colname="col2"> <p>Optional. Der Name des Felds, das als Schlüssel verwendet werden soll. Wenn Sie diesen Parameter definieren, ist für jede Kombination eines Elements der übergeordneten zählbaren Dimension ein Element der zählbaren Dimension und für das als Schlüssel angegebene Feld ein eindeutiger Wert vorhanden. </p> <p>Jedes Element der zählbaren Dimension muss sich auf einen zusammenhängenden Satz von Protokolleinträgen beziehen. Wenn die Protokolleinträge daher nicht nach Schlüssel geordnet werden, wird jedes Mal, wenn sich das Schlüsselfeld ändert, ein Element der zählbaren Dimension erstellt. Um dies zu verhindern, empfiehlt Adobe die Verwendung eines eindeutigen Schlüssels, der zeitlich aufeinander folgt. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Übergeordnet </td> 
-   <td colname="col2"> <p> Der Name der übergeordneten Dimension. Jede zählbare Dimension kann eine übergeordnete Dimension sein. Um eine Dimension zur Dimension der obersten Ebene im Schema des Datensatzes zu machen, setzen Sie den Parameter auf "root". Die definierte Dimension wird zur zählbaren Dimension für den Dataset. Wenn Sie beispielsweise mit Site arbeiten, ist die Dimension "Besucher"die zählbare Dimension für Ihren Datensatz. </p> <p>Hinweis: Obwohl Ihre zählbare Dimension für den Stammordner nicht mit den Tracking-IDs in den Daten verknüpft werden muss, empfiehlt Adobe, die zählbare Dimension für den Stammordner des Datensatzes zu konfigurieren, um das Verfolgungs-ID-Feld (x-trackingid) als Schlüssel zu verwenden. Daher wird jedes Element der Stamm-Zählung mit dem eindeutigen Wert x-trackingid verknüpft und alle Daten zu jedem Element werden gruppiert. Wenden Sie sich an Adobe, wenn Sie Ihren Datensatz anders konfigurieren möchten. </p> </td> 
+   <td colname="col2"> <p> Der Name der übergeordneten Dimension. Jede zählbare Dimension kann eine übergeordnete Dimension sein. Um eine Dimension zur Dimension der obersten Ebene im Schema des Datensatzes zu machen, setzen Sie den Parameter auf "root". Die definierte Dimension wird zur zählbaren Stammdimension für den Datensatz. Wenn Sie beispielsweise mit Site arbeiten, ist die Dimension Besucher die Dimension Stamm-Zählung für Ihren Datensatz. </p> <p>Hinweis: Obwohl Ihre zählbare Stammdimension nicht mit den Tracking-IDs in den Daten verknüpft werden muss, empfiehlt Adobe, die zählbare Stammdimension Ihres Datensatzes so zu konfigurieren, dass das Tracking-ID-Feld (x-trackingid) als Schlüssel verwendet wird. Daher wird jedes Element der Stammzählung mit einem eindeutigen Wert von x-trackingid verknüpft und alle Daten zu jedem Element werden gruppiert. Wenn Sie Ihren Datensatz anders konfigurieren möchten, wenden Sie sich an Adobe. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-In diesem Beispiel wird die Definition einer zählbaren Dimension anhand von Ereignis-Daten veranschaulicht, die aus dem Website-Traffic erfasst wurden. Die zählbare Dimension zählt die Ereignis der Web-Kampagne innerhalb einer bestimmten Sitzung. Es wird davon ausgegangen, dass alle E-Mail-Kampagnen vom Webserver mit &quot;email=&quot;als Teil der cs-uri-Abfrage angefordert werden. In diesem Beispiel ist die Anzahl der Male, die der Besucher während einer bestimmten Sitzung auf eine E-Mail-Kampagne antwortet, von Interesse, nicht der tatsächliche Wert des Felds &quot;cs-uri-Abfrage (E-Mail)&quot;.
+In diesem Beispiel wird die Definition einer zählbaren Dimension anhand von Ereignisdaten veranschaulicht, die aus dem Website-Traffic erfasst wurden. Die zählbare Dimension zählt die Webkampagnenereignisse innerhalb einer bestimmten Sitzung. Es wird angenommen, dass alle E-Mail-Kampagnenressourcen vom Webserver mit &quot;email=&quot;als Teil der cs-uri-Abfrage angefordert werden. Im Beispiel ist die Anzahl der Antworten des Besuchers auf eine E-Mail-Kampagne während einer bestimmten Sitzung interessant, nicht der tatsächliche Wert des Felds cs-uri-query(email) .
 
 ![](assets/dwb_impl_arch_1.png)
 
-Die zweite wichtige Funktion von Countables ist, dass sie das Rückgrat Ihrer DataSet-Schema-Struktur bilden. Ihr Schema und alle anderen Dimensionen sind gruppiert und gehören zu einer zählbaren Tabelle. Mit anderen Worten, wenn wir Dimensionen als &quot;Kategorien&quot;betrachten, dann sind Zähler die Art und Weise, wie wir diese &quot;Kategorien&quot;in Gruppen organisieren.
-Wenn Dimensionen unter einer zählbaren Dimension gruppiert werden, werden sie als &quot;Ebene&quot;der zählbaren Dimension bezeichnet. In der folgenden Abbildung sehen Sie beispielsweise, dass &quot;E-Mail-Adresse&quot;auf der Ebene des Besuchers und &quot;Browser&quot;auf der Ebene des Besuchs liegt. &quot;Übergeordnet&quot;und &quot;untergeordnet&quot;beziehen sich auf die Beziehung zwischen der zählbaren und den darunter gruppierten Dimensionen. Besucher ist beispielsweise ein &quot;übergeordnetes&quot;Element der E-Mail-Adresse. Umgekehrt ist die E-Mail-Adresse ein untergeordnetes Element des Besuchers. ![](assets/dwb_impl_arch_2.png) ![](assets/dwb_impl_arch_3.png)
+Die zweite wichtige Funktion von zählbaren Elementen besteht darin, dass sie das Rückgrat Ihrer Datensatzschemastruktur bilden. Ihr Datenschema und alle anderen Dimensionen sind so strukturiert, dass sie unter einer Tabelle gruppiert werden und zu einer Tabelle gehören. Mit anderen Worten, wenn wir Dimensionen als &quot;Kategorien&quot;betrachten, dann sind Zählungen die Art und Weise, wie wir diese &quot;Kategorien&quot;in Gruppen organisieren.
+Wenn Dimensionen unter einer zählbaren Dimension gruppiert werden, befinden sie sich auf der &quot;Ebene&quot;der zählbaren Dimension. In der folgenden Abbildung sehen Sie beispielsweise, dass sich &quot;E-Mail-Adresse&quot;auf Besucherebene und &quot;Browser&quot;auf Besuchsebene befindet. &quot;Übergeordnetes Element&quot;und &quot;untergeordnetes Element&quot;beziehen sich auf die Beziehung zwischen der zählbaren Tabelle und den darunter gruppierten Dimensionen. Beispielsweise ist Besucher ein &quot;übergeordnetes&quot;Element der E-Mail-Adresse. Umgekehrt ist die E-Mail-Adresse ein &quot;untergeordnetes Element&quot;des Besuchers. ![](assets/dwb_impl_arch_2.png) ![](assets/dwb_impl_arch_3.png)
 
-## Erstellen von zählbaren Elementen in Data Workbench {#section-491f3e8e4fbc429e95d6c97f012a208e}
+## Erstellung von Zählern in Data Workbench {#section-491f3e8e4fbc429e95d6c97f012a208e}
 
-Führen Sie die folgenden Schritte aus, um die Tabelle in DataWorkbench zu erstellen:
+Führen Sie die folgenden Schritte aus, um die Tabelle in Data Workbench zu erstellen:
 
 1. Profil-Manager öffnen
-1. Erstellen Sie unter &quot;Transformation&quot;eine Konfigurationsdatei und öffnen Sie sie auf der Workstation.
-1. Klicken Sie unter Erweiterte Dimensionen mit der rechten Maustaste und wählen Sie Hinzufügen neue -> Zählbar wie unten dargestellt: ![](assets/dwb_impl_arch_4.png)
+1. Erstellen Sie unter dem Ordner &quot;Transformation&quot;eine Konfigurationsdatei und öffnen Sie sie auf der Workstation.
+1. Klicken Sie unter Erweiterte Dimensionen mit der rechten Maustaste und wählen Sie Neue hinzufügen -> Zählbar wie unten dargestellt: ![](assets/dwb_impl_arch_4.png)
 
-1. Geben Sie den Namen für die neue Tabelle Zählung ein. Im folgenden Beispiel wird die Kundenzählung definiert. Wenn es die höchste Zählungsebene ist, schreiben Sie im übergeordneten Stammordner. ![](assets/dwb_impl_arch_5.png)
+1. Geben Sie den Namen für die neue Tabelle &quot;Zählung&quot;ein. Im folgenden Beispiel ist Customer Countable definiert. Wenn es die höchste zählbare Ebene ist, dann schreiben Sie im übergeordneten Stamm. ![](assets/dwb_impl_arch_5.png)
 
-   Wenn die Tabelle &quot;Zählbar&quot;nicht die oberste Ebene ist, geben Sie im übergeordneten Feld den Namen der übergeordneten Zählung an. Im folgenden Beispiel wird die &quot;Interaktionszählung&quot;erstellt und die übergeordnete Komponente für diese zählbare Tabelle ist &quot;Kunde&quot;. ![](assets/dwb_impl_arch_5.png)
+   Wenn die Tabelle Zählung nicht die oberste Ebene ist, geben Sie im übergeordneten Feld den Namen der übergeordneten Tabelle an. Im folgenden Beispiel wird die Interaktionszählung erstellt und das übergeordnete Element für diese zählbare Tabelle ist &quot;Kunde&quot;. ![](assets/dwb_impl_arch_5.png)
 
-Weitere Informationen zur Data Workbench-Architektur für Schema-Design, zählbare Strukturen und Offline-Data Feed-Konfigurationen finden Sie in der Benutzeroberfläche des [DataSet-Schemas](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).
+Weitere Informationen zur Data Workbench-Architektur für Schemadesign, zählbare Strukturen und Offline-Daten-Feed-Konfigurationen finden Sie in der [Datensatzschema-Schnittstelle](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).

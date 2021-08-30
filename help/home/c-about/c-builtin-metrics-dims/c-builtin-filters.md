@@ -3,9 +3,9 @@ description: Profilfilter beschränken den Umfang der Daten, die aus einem Daten
 title: Integrierte Profilfilter
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Benutzer können selbst Datenuntergruppen erstellen oder auf in einem geerbten o
 >
 >Sie können mehrere Datenuntergruppen erstellen und sie so umschalten, dass sie verschiedene Teile der Daten anzeigen können. Denken Sie daran, die Datenunterteilung zu deaktivieren, wenn Sie alle Daten anzeigen möchten. Andernfalls sind Ihre Metrikwerte nicht für alle Daten im Datensatz repräsentativ.
 
-## Beschädigter Sitzungsfilter {#section-1608e97da6464b11aea27cbb7f3160e4}
+## defekter Sitzungsfilter {#section-1608e97da6464b11aea27cbb7f3160e4}
 
 Der Filter &quot;Beschädigte Sitzung&quot;ist eine Metrikformel, die einfach an beliebige Filteranforderungen angepasst werden kann. In den Standard-Site-Profilen ist der Filter &quot;Beschädigte Sitzung&quot;so konfiguriert, dass er alle Besucher mit einer auf 1 festgelegten Kennzeichnung &quot;Besucht&quot;einbezieht. Der Wert 1 zeigt das Vorhandensein eines Tracking-Cookies für diesen Besucher an.
 
@@ -51,4 +51,4 @@ entity = derived_filter:
 
 In Arbeitsbereichen wird standardmäßig der Filter &quot;Beschädigte Sitzung&quot;sowohl auf ihre Auswahl als auch auf ihre Benchmarks angewendet. Er kann ein-/ausgeblendet werden, indem Sie mit der rechten Maustaste in den Arbeitsbereich klicken und auf &quot;Daten&quot;> &quot;Beschädigte Sitzungsfilter&quot;klicken.
 
-Der Filter &quot;Beschädigte Sitzung&quot;kann in Filterausdrücken als &quot;Broken_Session_Filter&quot;referenziert werden, auch wenn er für den aktuellen Arbeitsbereich nicht aktiviert ist. Weitere Informationen finden Sie unter [Filterausdrücke](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) .
+Der Filter &quot;Beschädigte Sitzung&quot;kann in Filterausdrücken als &quot;Broken_Session_Filter&quot;referenziert werden, auch wenn er für den aktuellen Arbeitsbereich nicht aktiviert ist. Weitere Informationen finden Sie unter [Filterausdrücke](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) .

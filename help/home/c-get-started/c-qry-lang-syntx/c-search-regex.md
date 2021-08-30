@@ -3,9 +3,9 @@ description: Data Workbench verwendet reguläre Ausdrücke (Regex) für Such- un
 title: Reguläre Ausdrücke
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Im Feld **[!UICONTROL Search]** können Sie eine Suche nach der Anweisung &quot;
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> metacharacter </th> 
-   <th colname="col2" class="entry"> Beschreibung </th> 
+   <th colname="col2" class="entry"> description </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -45,4 +45,4 @@ Im Feld **[!UICONTROL Search]** können Sie eine Suche nach der Anweisung &quot;
 
 Zusätzliche häufige reguläre Ausdrücke können auch verwendet werden, um komplexere Suchzeichenfolgen zu erstellen. Reguläre Ausdrücke werden in allen Suchfeldern der Data Workbench verwendet, einschließlich der Bedienfelder der Abfrageentitäten.
 
-Detaillierte Informationen finden Sie unter [Reguläre Ausdrücke](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
+Detaillierte Informationen finden Sie unter [Reguläre Ausdrücke](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).

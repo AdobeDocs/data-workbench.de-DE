@@ -2,9 +2,9 @@
 description: Verwenden Sie Finder-Bedienfelder in Data Workbench, um Metriken, Dimensionen und Filter auszuwählen. Diese Bedienfelder bieten Suchunterstützung, Sortierungsoptionen und Drag & Drop-Funktionen.
 title: Finder
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Ein Finder-Bedienfeld kann in der linken Seitenleiste oder in einem Arbeitsberei
     <ul id="ul_0F6F377E9906472E99008EBE7483F689"> 
      <li id="li_75857895EDB045C8B2960393854B257D"> <p>Musterabgleich (einfache glob-Suche). Beginnen Sie mit der Eingabe des Namens einer erforderlichen Dimension, Metrik oder Filterentität in das Suchfeld. Nur übereinstimmende Zeichenfolgen, die an einer beliebigen Stelle im Namen enthalten sind, werden gefiltert und im Bereich Finder angezeigt. </p> <p>Geben Sie beispielsweise Folgendes ein: </p> <code><b>Search:</b>click</code> <p>Sie können die folgenden Ergebnisse im Dimensionen-Finder erhalten: </p> <p><img placement="break" id="image_7CBAAABA92BB47658B7F9F5C0263CF20" src="assets/finders_glob_search.png" /> </p> <p>Bei der Standardmusterübereinstimmung können Sie die Platzhalterzeichen verwenden, z. B. . (Punkt), "?" , und "*" (Stern). </p> </li> 
      <li id="li_044F9EC1399B44CD81E1852F85137704"> <p>Reguläre Ausdrücke. Komplexere reguläre Ausdrücke werden auch für zusätzliche Suchfunktionen unterstützt. Fügen Sie das Präfix "re:"vor Ihrem Suchbegriff (keine Leerzeichen) hinzu, um es als regulären Ausdruck zu interpretieren. </p> <p>Geben Sie beispielsweise Folgendes ein: </p> <code><b>Search:</b>re.*ip</code> <p>Sie können die folgenden Ergebnisse im Dimensionen-Finder erhalten: </p> <p><img placement="break" id="image_F47DB90B36504997AA1C509855B89A47" src="assets/finders_regex_search.png" /> </p> </li> 
-    </ul> <p>Detaillierte Suchinformationen finden Sie unter <a href="https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external"> reguläre Ausdrücke</a>. </p> </td> 
+    </ul> <p>Detaillierte Suchinformationen finden Sie unter <a href="https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external"> reguläre Ausdrücke</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>Dimension Typ</b> </td> 
@@ -94,7 +94,7 @@ Ein Finder-Bedienfeld kann in der linken Seitenleiste oder in einem Arbeitsberei
    <td colname="col2">Klicken Sie mit der rechten Maustaste in die Leiste <span class="uicontrol"> Finders</span> in der linken Seitenleiste, um ein Menü für zusätzliche Funktionen zu öffnen. <p><img placement="break" id="image_4DA4930294B84308A1E627C828C35663" src="assets/finders_menu.png" /> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b>Close</b> </td> 
+   <td colname="col1"><b>Schließen</b> </td> 
    <td colname="col2">Klicken Sie mit der rechten Maustaste in die Leiste <span class="uicontrol"> Finders</span> und wählen Sie <span class="uicontrol"> Schließen</span> aus, um einen Finder-Bereich zu schließen. </td> 
   </tr> 
   <tr> 

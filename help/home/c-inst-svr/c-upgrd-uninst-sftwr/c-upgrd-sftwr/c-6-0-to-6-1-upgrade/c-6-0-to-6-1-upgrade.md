@@ -3,9 +3,9 @@ description: Führen Sie diese Schritte aus, um von Ihrer Data Workbench v6.0x-I
 title: 'Data Workbench-Upgrade: 6.0 auf 6.1'
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Führen Sie diese Schritte aus, um von Ihrer Data Workbench v6.0x-Installation a
 >
 >Die Server-, Report Server- und Client-Komponenten werden aktualisiert, um unter 64-Bit-Windows-Betriebssystemen ausgeführt zu werden.
 
-## Server-Upgrade {#section-7845393f76214aa7ad53ac4b2cca9e5b}
+## Serveraktualisierung {#section-7845393f76214aa7ad53ac4b2cca9e5b}
 
 Führen Sie die folgenden Schritte aus, um die **[!UICONTROL Server v6.1]**-Komponenten zu aktualisieren:
 
@@ -52,7 +52,7 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL Server v6.1]**-Komp
    1. Ersetzen Sie den Ordner [!DNL Server\Software] , um [!DNL Insight.exe] und [!DNL ReportServer.exe] zu aktualisieren.
    1. Aktualisieren Sie den Ordner [!DNL Server\Scripts], um [!DNL TnTSend.exe] zu aktualisieren.
 
-1. Wenn Sie **[!UICONTROL DeviceAtlas]** verwenden, müssen Sie [das Bundle](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) im Ordner [!DNL Server\Lookups] aktualisieren.
+1. Wenn Sie **[!UICONTROL DeviceAtlas]** verwenden, müssen Sie [das Bundle](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) im Ordner [!DNL Server\Lookups] aktualisieren.
 
 1. Konfigurieren Sie die Datei [!DNL Profile.cfg], um sicherzustellen, dass der Vektor aktualisiert wird, um die Anzahl der Elemente für jedes Profil widerzuspiegeln.
 
@@ -98,7 +98,7 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL Server v6.1]**-Komp
 
 Die Serverinstallation ist jetzt abgeschlossen.
 
-## Report Server-Upgrade {#section-afd9560a446242e9b06490e5f98aaaec}
+## Aktualisierung des Report Servers {#section-afd9560a446242e9b06490e5f98aaaec}
 
 >[!IMPORTANT]
 >
@@ -145,7 +145,7 @@ Die Serverinstallation ist jetzt abgeschlossen.
 
 Die Installation des Berichtsservers ist jetzt abgeschlossen.
 
-## Client-Upgrade {#section-c896e57ecd2847afb18f4d8ef7cc0e06}
+## Client Upgrade {#section-c896e57ecd2847afb18f4d8ef7cc0e06}
 
 >[!IMPORTANT]
 >

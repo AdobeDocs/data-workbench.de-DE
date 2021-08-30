@@ -3,9 +3,9 @@ description: Informationen über die Verwaltungsschnittstellen, über die Sie Ih
 title: Administrationsoberflächen
 uuid: bd587f01-7edc-44e8-b4d4-f74f94f5d60f
 exl-id: 109e30da-9ccb-4349-865a-dff9c05fe37a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '88'
 ht-degree: 23%
 
 ---
@@ -19,5 +19,5 @@ Informationen über die Verwaltungsschnittstellen, über die Sie Ihre Implementi
 * [Abfragewarteschlange](c-query-que/c-query-que.md)
 * [Verarbeitungslegende](c-pro-lgd.md)
 * [Oberfläche zu Statusdetails](c-det-stat-interf.md)
-* [Profil-Manager](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)
+* [Profil-Manager](https://experienceleague.adobe.com/docs/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)
 * [Datensatz-Manager](c-dataset-mgrs/c-dataset-mgrs.md)
