@@ -3,9 +3,9 @@ description: Öffnen Sie im Premium-Menü die Best Fit Attribution und führen S
 title: Erstellen eines Best-Fit-Attributionsmodells
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Sehen Sie sich einen Überblick über [Best Fit Attribution](../../../../home/c-
 
    >[!NOTE]
    >
-   >Die optimale Zuordnung ist eine Adobe Analytics Premium-Funktion, für die Sie Premium in Ihrem Profil aktivieren müssen. Dazu müssen Sie Ihr Zertifikat aktualisieren und das Premium-Profil Ihrer Datei profile.cfg hinzufügen. Siehe [DWB-Server-Upgrade: 6.2 bis 6.3](https://experienceleague.adobe.com/docs/data-workbench/using/install/upgrade-dwb/c-6-2-to-6-3-upgrade.html) für DWB 6.3.
+   >Die optimale Zuordnung ist eine Adobe Analytics Premium-Funktion, für die Sie Premium in Ihrem Profil aktivieren müssen. Dazu müssen Sie Ihr Zertifikat aktualisieren und das Premium-Profil Ihrer Datei profile.cfg hinzufügen. Siehe [DWB-Server-Upgrade: 6.2 bis 6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md) für DWB 6.3.
 
 1. Legen Sie die Metrik **[!UICONTROL Success]** fest.
 
@@ -108,54 +108,54 @@ Nach Abschluss des Vorgangs zeigt ein Diagramm ein pro Kanal berechnetes Attribu
 
 Das Menü **Optionen** bietet erweiterte Funktionen zum Einrichten und Anzeigen der Analyse der besten Zuordnung.
 
-<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Optionen, Menü </th> 
-   <th colname="col2" class="entry"> Beschreibung </th> 
+<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Optionen, Menü </th>
+   <th colname="col2" class="entry"> Beschreibung </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Trainings-Filter festlegen  </span> </td> 
-   <td colname="col2"> Der Schulungsfilter wird zusammen mit dem Erfolgsfenster verwendet, um die Population beim Erstellen des Attributionsmodells zu filtern. Dadurch erhalten Sie eine Teilmenge von Daten, die nur die Besucher enthält, die Sie analysieren möchten. <p>Hinweis: Erfahrene Benutzer können auch die Flexibilität von Filtern nutzen, um sich über die Zeitleiste von "Erfolg"und "Touch Windows"hinaus zu konzentrieren. Sie können beispielsweise nicht nur einen Zeitraum auswählen, sondern auch einen Satz von <i>Verweisende Domänen</i> auswählen, um nur die Attribution für Benutzer aus diesen Domänen zu untersuchen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Beschreibung komplexer Filter anzeigen  </span> </td> 
-   <td colname="col2"> Zeigt den Filtercode für Trainings-Filter, Erfolgsfenster und Touch-Fenster an. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Modell speichern  </span> </td> 
-   <td colname="col2"> Speichert das aktuelle Attributionsmodell für die zukünftige Verwendung. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Lademodell  </span> </td> 
-   <td colname="col2"> Öffnet ein zuvor gespeichertes Attributionsmodell. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Präsentationsansicht  </span> </td> 
-   <td colname="col2"> Blendet die obere Menüleiste für die Präsentation aus. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Optionen &gt; </b> Erweitert umfasst Funktionen zum Festlegen der Trainings-Set-Größe und zum Festlegen des Ansatzes für den Fall eines Klassenungleichgewichts. </p> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Erweitert &gt; Größe des Trainings-Sets  </span> </td> 
-   <td colname="col2"> <p>Legt die Größe des Trainings-Sets fest. </p> <p>Hinweis:  Die standardmäßige Trainings-Größe ist groß für 250.000 Besucher. </p> 
-    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD"> 
-     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Tiny = 50.000 </li> 
-     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Klein = 75.000 </li> 
-     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normal = 100.000 </li> 
-     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Groß = 250,00 </li> 
-     <li id="li_34B60233C84F48F1BCB8040C5195411A">Huge = 500.000 </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><b>Erweitert &gt; Klassenausgleich  </b> </td> 
-   <td colname="col2"> <p>Identifiziert und definiert die Anzahl der Eingabedaten, die für ein Klassenungleichgewicht-Problem basierend auf der Datensatzgröße generiert werden sollen. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Trainings-Filter festlegen  </span> </td>
+   <td colname="col2"> Der Schulungsfilter wird zusammen mit dem Erfolgsfenster verwendet, um die Population beim Erstellen des Attributionsmodells zu filtern. Dadurch erhalten Sie eine Teilmenge von Daten, die nur die Besucher enthält, die Sie analysieren möchten. <p>Hinweis: Erfahrene Benutzer können auch die Flexibilität von Filtern nutzen, um sich über die Zeitleiste von "Erfolg"und "Touch Windows"hinaus zu konzentrieren. Sie können beispielsweise nicht nur einen Zeitraum auswählen, sondern auch einen Satz von <i>Verweisende Domänen</i> auswählen, um nur die Attribution für Benutzer aus diesen Domänen zu untersuchen. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Beschreibung komplexer Filter anzeigen  </span> </td>
+   <td colname="col2"> Zeigt den Filtercode für Trainings-Filter, Erfolgsfenster und Touch-Fenster an. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Modell speichern  </span> </td>
+   <td colname="col2"> Speichert das aktuelle Attributionsmodell für die zukünftige Verwendung. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Lademodell  </span> </td>
+   <td colname="col2"> Öffnet ein zuvor gespeichertes Attributionsmodell. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Präsentationsansicht  </span> </td>
+   <td colname="col2"> Blendet die obere Menüleiste für die Präsentation aus. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p><b>Optionen &gt; </b> Erweitert umfasst Funktionen zum Festlegen der Trainings-Set-Größe und zum Festlegen des Ansatzes für den Fall eines Klassenungleichgewichts. </p> </td>
+   <td colname="col2"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Erweitert &gt; Größe des Trainings-Sets  </span> </td>
+   <td colname="col2"> <p>Legt die Größe des Trainings-Sets fest. </p> <p>Hinweis:  Die standardmäßige Trainings-Größe ist groß für 250.000 Besucher. </p>
+    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD">
+     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Tiny = 50.000 </li>
+     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Klein = 75.000 </li>
+     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normal = 100.000 </li>
+     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Groß = 250,00 </li>
+     <li id="li_34B60233C84F48F1BCB8040C5195411A">Huge = 500.000 </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><b>Erweitert &gt; Klassenausgleich  </b> </td>
+   <td colname="col2"> <p>Identifiziert und definiert die Anzahl der Eingabedaten, die für ein Klassenungleichgewicht-Problem basierend auf der Datensatzgröße generiert werden sollen. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 | Optionen zum Zurücksetzen und Entfernen | Beschreibung |
