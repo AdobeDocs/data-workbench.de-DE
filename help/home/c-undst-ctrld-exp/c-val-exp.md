@@ -4,7 +4,7 @@ solution: Analytics,Analytics
 title: Validieren des Experiments
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 exl-id: 6dfd01ca-288d-40fd-aad4-75a588902ebd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 2%
@@ -27,17 +27,17 @@ Jedes Mal, wenn Sie eine neue Gruppe testen möchten, müssen Sie die Cookies f�
 
 Um sich in einer bestimmten Gruppe innerhalb eines bestimmten Experiments zu platzieren, fordern Sie die Testseite mit einer Abfragezeichenfolge im folgenden Formular an:
 
-[!DNL http://] *&lt; [!DNL sitename/?Experiment Name=Group Name]>*
+[!DNL https://] *&lt; [!DNL sitename/?Experiment Name=Group Name]>*
 
 Beispiel:
 
-[!DNL http://www.omniture.com/setcookie.htm?New_Homepage=index2]
+[!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
 Wenn die virtuelle URL-Anforderung an den Server gesendet wird, identifiziert [!DNL Sensor] Sie innerhalb des angegebenen Experiments als Mitglied der angegebenen Gruppe und leitet Sie dann zum Stammverzeichnis der Website weiter. Sie können jetzt zur entsprechenden Stelle auf der Website navigieren, um zu überprüfen, ob der richtige Inhalt für dieses Experiment und diese Gruppe angezeigt wird.
 
 Wenn Sie Folgendes in Ihren Browser eingeben würden, würde der Browser die Startseite der Website anzeigen und Sie in die Gruppe index2 innerhalb des Experiments New_Homepage einfügen:
 
-[!DNL http://www.omniture.com/setcookie.htm?New_Homepage=index2]
+[!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
 Wenn Besucher der Gruppe index2 die Startseite anfordern, wird der grafische Link &quot;Demo anfordern&quot;höher auf der Seite angezeigt, wie in der folgenden Abbildung dargestellt:
 

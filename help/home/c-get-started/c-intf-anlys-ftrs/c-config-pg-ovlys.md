@@ -3,7 +3,7 @@ description: Seitenüberlagerungen werden nur in der Site-Anwendung konfiguriert
 title: Konfigurieren von Seitenüberlagerungen
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
 exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Die Seitenüberlagerung zeigt nur Daten an, wenn Sie dem Arbeitsbereich, der die
 
 >[!NOTE]
 >
->Die Konfiguration von Seitenüberlagerungen erfordert eine sorgfältige Konfiguration und es ist möglich, irreführende Ergebnisse zu erstellen, wenn Links nicht den Daten angemessen zugeordnet sind. Die Arbeit beim Konfigurieren von Seitenüberlagerungen für eine bestimmte Site hängt davon ab, wie Links im HTML-Code auf den Seiten der Site dargestellt werden.
+>Die Konfiguration von Seitenüberlagerungen erfordert eine sorgfältige Konfiguration und es ist möglich, irreführende Ergebnisse zu erstellen, wenn Links nicht den Daten angemessen zugeordnet sind. Die Arbeit beim Konfigurieren von Seitenüberlagerungen für eine bestimmte Site hängt davon ab, wie Links im HTML-Code auf den Seiten der Site angezeigt werden.
 
 Seitenüberlagerungen weisen dem Benutzer naturgemäß das mentale Modell darauf hin, dass es anzeigt, &quot;wo die Benutzer klicken&quot;. Wenn die Daten, die die Visualisierung unterstützen, nicht mit diesem Modell übereinstimmen, ist das Verwirrungspotenzial hoch.
 
@@ -54,11 +54,11 @@ Um die Seitenüberlagerung für [!DNL Site] zu konfigurieren, müssen Sie zwei D
 1. Geben Sie die Domäne (und ggf. die Browserhöhe) an.
 
    ```
-   window = simpleBorderWindow: 
-     client = scrollWindow: 
-       client = PageOverlay: 
-         URI Template = string: http://%Domain%%Element%
-         URI Parameters = map: 
+   window = simpleBorderWindow:
+     client = scrollWindow:
+       client = PageOverlay:
+         URI Template = string: https://%Domain%%Element%
+         URI Parameters = map:
            Domain = string: domain name
            Element = ref: Element/Name
          Dim = ref: wdata/model/dim/URI
@@ -68,9 +68,9 @@ Um die Seitenüberlagerung für [!DNL Site] zu konfigurieren, müssen Sie zwei D
          Browser Height = int: browser height
      pos = v3d: (518, 202, 0)
      size = v3d: (810, 610, 0)
-     titleBar = editor: 
+     titleBar = editor:
        size = v3d: (61, 19, 0)
-       text = string: 
+       text = string:
    ```
 
 1. Speichern Sie die Datei.
@@ -88,27 +88,27 @@ Um die Seitenüberlagerung für [!DNL Site] zu konfigurieren, müssen Sie zwei D
 1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL Link Templates]** und klicken Sie auf **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
 1. Bearbeiten Sie die Parameter für den LinkRegex-Vektor nach Bedarf:
 
-<table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Für diesen Parameter ... </th> 
-   <th colname="col2" class="entry"> Geben Sie diese Informationen an... </th> 
+<table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Für diesen Parameter ... </th>
+   <th colname="col2" class="entry"> Geben Sie diese Informationen an... </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Dimension </p> </td> 
-   <td colname="col2"> <p>Die Dimension (normalerweise die Dimension "Nächster URI"), die durch den Link dargestellt wird. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Ausdruck </p> </td> 
-   <td colname="col2"> <p>Der reguläre Ausdruck, mit dem der relevante Teil des HTML-Links ausgewählt wird, um das nächste Element aus der Dimension zu finden. Der reguläre Ausdruck muss eine exakte Übereinstimmung aufweisen, und das gewünschte Ausgabemuster ist in Klammern gruppiert. Weitere Informationen zu regulären Ausdrücken finden Sie im <i>Handbuch zur Datensatzkonfiguration</i>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Ausgabemuster </p> </td> 
-   <td colname="col2"> <p>Das Ausgabemuster des regulären Ausdrucks, mit dem das resultierende Element des Dimension-Parameters extrahiert wird. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Dimension </p> </td>
+   <td colname="col2"> <p>Die Dimension (normalerweise die Dimension "Nächster URI"), die durch den Link dargestellt wird. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Ausdruck </p> </td>
+   <td colname="col2"> <p>Der reguläre Ausdruck, der verwendet wird, um den entsprechenden Teil des HTML-Links auszuwählen und das nächste Element aus der Dimension zu finden. Der reguläre Ausdruck muss eine exakte Übereinstimmung aufweisen, und das gewünschte Ausgabemuster ist in Klammern gruppiert. Weitere Informationen zu regulären Ausdrücken finden Sie im <i>Handbuch zur Datensatzkonfiguration</i>. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Ausgabemuster </p> </td>
+   <td colname="col2"> <p>Das Ausgabemuster des regulären Ausdrucks, mit dem das resultierende Element des Dimension-Parameters extrahiert wird. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 Die folgende Beispieldatei zeigt drei reguläre Ausdrücke:

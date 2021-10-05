@@ -4,7 +4,7 @@ solution: Analytics,Analytics
 title: Was soll getestet werden?
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -42,6 +42,6 @@ Um diese Ziele zu erreichen, unterstützt Site die folgenden Arten von Methoden 
 >
 >Kontrollierte Experimente basieren auf der URI-Ersetzung, nicht auf der Ersetzung der Abfragezeichenfolge. Der URI innerhalb einer bestimmten URL wird im folgenden Beispiel hervorgehoben:
 >
->`http://www.omniture.com/index.asp?id=1`
+>`https://www.omniture.com/index.asp?id=1`
 >
 >Beispielsweise können Sie in Ihrem kontrollierten Experiment festlegen, dass der Kontrollgruppen-URI [!DNL index.asp] durch den Testgruppen-URI [!DNL index2.asp] ersetzt wird, um zu bestimmen, welcher Seitenentwurf zu mehr Wert führt.

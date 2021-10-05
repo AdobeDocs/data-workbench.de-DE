@@ -3,7 +3,7 @@ description: Der letzte Schritt besteht darin, das Dashboard zum ersten Mal ausz
 title: Initialisieren des Dashboards
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 exl-id: 47098d73-d8c4-4d14-964f-108a731d3733
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Der letzte Schritt besteht darin, das Dashboard zum ersten Mal auszuführen, damit es initialisiert werden kann.
 
-1. Öffnen Sie einen Webbrowser und geben Sie die URL zur neu bereitgestellten Site ein (z. B. http://localhost/dashboard).
+1. Öffnen Sie einen Webbrowser und geben Sie die URL zur neu bereitgestellten Site ein (z. B. https://localhost/dashboard).
 1. Beim erstmaligen Verbinden werden die Datenbanktabellen eingerichtet, sodass Sie eine geringfügige Verzögerung feststellen können.
 1. Die ersten Anmeldedaten lauten:
 

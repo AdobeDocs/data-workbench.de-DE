@@ -3,7 +3,7 @@ description: Sie können einen Arbeitsbereich als .png-Bilddatei exportieren ode
 title: Exportieren eines Arbeitsbereichs
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -36,15 +36,14 @@ Beim Exportieren eines Arbeitsbereichs in Excel exportiert Data Workbench Daten 
 
 Um Arbeitsbereiche und einzelne Fenster in Microsoft Excel zu exportieren, müssen die folgenden Anforderungen erfüllt sein:
 
-* Microsoft Excel muss auf demselben Computer wie Data Workbench installiert sein.
+* Microsoft Excel muss auf demselben Computer installiert sein wie Data Workbench.
 * Das Benutzerkonto, unter dem die Data Workbench ausgeführt wird, muss über die Berechtigung zum Zugriff auf Microsoft Excel verfügen.
 
 >[!NOTE]
 >
->* Wenn Sie Daten als Excel-Dateien exportieren, öffnen Sie eine neue Instanz von Excel. Weitere Informationen zu diesem Prozess finden Sie unter [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
+>* Wenn Sie Daten als Excel-Dateien exportieren, öffnen Sie eine neue Instanz von Excel. Weitere Informationen zu diesem Prozess finden Sie unter [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
 >* Data Workbench unterstützt zwar mehr als 256 Spalten und 65.536 Datenzeilen, Versionen von Microsoft Excel vor 8.0 jedoch nicht.
 >
-
 
 
 Wenn diese Anforderungen erfüllt sind, startet Data Workbench automatisch Microsoft Excel und exportiert die Daten in eine neue Excel-Arbeitsmappe. Daten werden nicht aus den folgenden Visualisierungen exportiert: Grafiken, Pfadbrowser, Prozesskarten, Streudiagramme und Globen.

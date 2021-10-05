@@ -3,7 +3,7 @@ description: Verwenden Sie den Metrikdimensionsassistenten, um eine neue Metrik-
 title: Assistent für Metrikdimensionen
 uuid: 77b9bc8e-7625-4fef-9de4-f113f9b2debd
 exl-id: 109fbefc-5608-493d-aec9-8337f21eaa70
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 3%
@@ -60,7 +60,7 @@ Sie können das Metrikformat auswählen und die Behälterwerte für einen Dimens
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Das Format definiert, wie die Metrik angezeigt wird, wenn sie in einer Visualisierung geöffnet wird. Diese Formate werden ausgewählt [printf standards](http://www.cplusplus.com/reference/cstdio/printf/), wie unten definiert:
+   Das Format definiert, wie die Metrik angezeigt wird, wenn sie in einer Visualisierung geöffnet wird. Diese Formate werden ausgewählt [printf standards](https://www.cplusplus.com/reference/cstdio/printf/), wie unten definiert:
 
    ```
    %[flags][width][.precision][length][specifier]

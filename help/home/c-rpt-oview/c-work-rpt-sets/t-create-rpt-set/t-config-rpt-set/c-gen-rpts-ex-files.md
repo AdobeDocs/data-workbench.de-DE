@@ -3,7 +3,7 @@ description: Informationen zum Generieren von Berichten als Excel-Dateien.
 title: Erstellen von Berichten als Microsoft Excel-Dateien
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 4%
@@ -17,15 +17,15 @@ Informationen zum Generieren von Berichten als Excel-Dateien.
 Die folgenden Anforderungen müssen erfüllt sein:
 
 * Microsoft Excel muss auf demselben Computer installiert sein wie [!DNL Report Server].
-* Das Benutzerkonto, unter dem der [!DNL Report Server]-Prozess ausgeführt wird, muss über Berechtigungen für den Zugriff auf Microsoft Excel verfügen.
+* Das Benutzerkonto, unter dem der [!DNL Report Server]-Prozess ausgeführt wird, muss über die Berechtigung für den Zugriff auf Microsoft Excel verfügen.
 
    >[!NOTE]
    >
    >
-   >    
-   >    
-   >    * Wenn Sie Berichte als Excel-Dateien generieren, öffnen Sie eine neue Instanz von Excel. Weitere Informationen zu diesem Prozess finden Sie unter [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
-   >    * Obwohl Data Workbench mehr als 256 Spalten und 65.536 Zeilen mit Daten unterstützt, unterstützt Microsoft Excel dies nicht.
+   >
+   >
+   >    * Wenn Sie Berichte als Excel-Dateien generieren, öffnen Sie eine neue Instanz von Excel. Weitere Informationen zu diesem Prozess finden Sie unter [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
+   >    * Obwohl Data Workbench mehr als 256 Spalten und 65.536 Datenzeilen unterstützt, ist dies in Microsoft Excel nicht der Fall.
 
 
 Wenn diese Anforderungen erfüllt sind, startet [!DNL Report Server] automatisch Microsoft Excel und gibt Daten aus bestimmten Visualisierungen, Dimensions- und Wertlegenden sowie Textanmerkungen aus einer neuen Excel-Arbeitsmappe mit einer Visualisierung pro Arbeitsblatt aus.

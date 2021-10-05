@@ -3,7 +3,7 @@ description: Das Report Portal verwendet die Informationen in einer Konfiguratio
 title: Bearbeiten der Datei für die Sitzungskonfiguration
 uuid: c1bcd4d2-9bf5-425a-bda2-7f805983cdc6
 exl-id: 98cf2e11-afb8-4530-aaa4-ea3c913effc1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -30,8 +30,8 @@ Wenn Sie [!DNL Report Portal] installieren, müssen Sie diese Datei wie angegebe
 1. Speichern Sie die Datei.
 1. Um sicherzustellen, dass die [!DNL Report Portal]-Dateien ordnungsgemäß installiert wurden und über das dafür vorgesehene virtuelle Verzeichnis erreicht werden können, öffnen Sie die folgende Seite in Ihrem Browser:
 
-   http://*YourServerAddress*/*YourPortalName*
+   https://*YourServerAddress*/*YourPortalName*
 
-   Beispiel: [!DNL http://localhost/VisualReportPortal]
+   Beispiel: [!DNL https://localhost/VisualReportPortal]
 
    Wenn die [!DNL Report Portal] ASPs korrekt installiert wurden, sollte die Portal-Anmeldeseite angezeigt werden. Wenn diese Seite nicht angezeigt wird, überprüfen Sie, ob ASPs in Ihrem IIS aktiviert sind, und überprüfen Sie Ihre virtuellen Ordnerzuordnungen.

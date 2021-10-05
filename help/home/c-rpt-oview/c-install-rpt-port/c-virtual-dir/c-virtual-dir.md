@@ -3,7 +3,7 @@ description: Um Report Portal zu konfigurieren, müssen Sie die Anwendungsdateie
 title: Zuordnen von Report Portal-Seiten zu virtuellen Verzeichnissen
 uuid: 75ca85d5-d526-48f9-b2c4-ca77c903c6af
 exl-id: 13e457d4-7039-491a-a65d-f23ad7e9fe77
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 18%
@@ -18,7 +18,7 @@ Ein virtuelles Verzeichnis definiert die Adresse, die Browser-Clients zum Suchen
 
 Der Name des virtuellen Verzeichnisses, das Sie [!DNL Report Portal] zuweisen, muss mit dem Namen übereinstimmen, den Sie in Schritt 3 des vorherigen Abschnitts für den Ordner VSVirtualPortalName verwendet haben. Wenn Sie beispielsweise &quot;Portal&quot;als Namen Ihres [!DNL Report Portal] verwenden möchten, müssen Sie die Dateien des Portals einem virtuellen Verzeichnis mit dem Namen &quot;Portal&quot;zuordnen. Das folgende Beispiel zeigt den URI, den Clients verwenden würden, um auf einen [!DNL Report Portal] zuzugreifen, der dem virtuellen Verzeichnis [!DNL VisualReportPortal] auf einem Server namens myWebServer zugewiesen ist:
 
-[!DNL http://myWebServer/VisualReportPortal]
+[!DNL https://myWebServer/VisualReportPortal]
 
 Die folgenden Verfahren beschreiben, wie Sie [!DNL Report Portal] einem virtuellen Verzeichnis auf IIS 5.0, 6.0 und 7.0 oder höher zuordnen.
 

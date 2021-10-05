@@ -3,7 +3,7 @@ description: Mit der Funktion "Öffnen"können Sie Elemente wie Dokumente oder U
 title: Konfigurieren der Funktion zum Öffnen
 uuid: dfa79a2b-e9ff-4e62-b15b-ae7911adeafd
 exl-id: c807a284-b544-41cf-958b-27b47d2142ce
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 3%
@@ -28,23 +28,23 @@ Um einen URI aus einer Visualisierung zu öffnen, müssen Sie zunächst die [!DN
 1. Klicken Sie auf **[!UICONTROL Command]** und dann auf **[!UICONTROL Parameters]** , um den Inhalt der Datei anzuzeigen.
 1. Ändern Sie den Parameter [!DNL Site] und den Parameter Template nach Bedarf:
 
-<table id="table_CDB316DB271F476AB9F9B557B86AFD25"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Für diesen Parameter ... </th> 
-   <th colname="col2" class="entry"> Geben Sie diese Informationen an... </th> 
+<table id="table_CDB316DB271F476AB9F9B557B86AFD25">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Für diesen Parameter ... </th>
+   <th colname="col2" class="entry"> Geben Sie diese Informationen an... </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Site </p> </td> 
-   <td colname="col2"> <p>Der Speicherort der URIs, die Sie öffnen möchten. </p> <p>Beispiel: mysite.com </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Vorlage </p> </td> 
-   <td colname="col2"> <p>Die Parameter, die von Data Workbench zum Suchen und Öffnen der URIs verwendet werden sollen. </p> <p>Beispiel: <span class="filepath"> http://%Site%%URI%</span> </p> <p>Die im Beispiel dargestellte Standardvorlage weist Data Workbench an, einen Webbrowser zu öffnen, nach dem im Parameter <span class="wintitle"> Site</span> definierten Speicherort zu suchen und dann das URI-Dimensionselement zu suchen, das Sie öffnen möchten. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Site </p> </td>
+   <td colname="col2"> <p>Der Speicherort der URIs, die Sie öffnen möchten. </p> <p>Beispiel: mysite.com </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Vorlage </p> </td>
+   <td colname="col2"> <p>Die Parameter, die von Data Workbench zum Suchen und Öffnen der URIs verwendet werden sollen. </p> <p>Beispiel: <span class="filepath"> https://%Site%%URI%</span> </p> <p>Die im Beispiel dargestellte Standardvorlage weist Data Workbench an, einen Webbrowser zu öffnen, nach dem im Parameter <span class="wintitle"> Site</span> definierten Speicherort zu suchen und dann das URI-Dimensionselement zu suchen, das Sie öffnen möchten. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 1. Speichern Sie die Datei.

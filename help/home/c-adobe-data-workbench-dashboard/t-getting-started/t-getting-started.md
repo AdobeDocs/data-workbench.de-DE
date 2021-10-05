@@ -3,7 +3,7 @@ description: Gehen Sie wie folgt vor, um mit der Verwendung des Adobe Data Workb
 title: Erste Schritte
 uuid: 9e2ed5fd-29d7-4e06-ad55-c4a35a9043c8
 exl-id: acaa7563-d462-4838-b2b5-3c010382da34
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 2%
@@ -21,9 +21,9 @@ Gehen Sie wie folgt vor, um mit der Verwendung des Adobe Data Workbench-Dashboar
    Zwar können viele Browserversionen funktionieren, doch werden offiziell nur die folgenden Webbrowser unterstützt:
 
    * Google Chrome 15 und höher (verfügbar unter [https://www.google.com/chrome/](https://www.google.com/intl/de/chrome/))
-   * Microsoft Internet Explorer 9 und höher (verfügbar unter [http://www.microsoft.com/windows/ie/](http://www.microsoft.com/windows/ie/))
-   * Mozilla Firefox 3.6 und höher (verfügbar unter [http://www.mozilla.org/en-US/firefox/all-older.html](http://www.mozilla.org/en-US/firefox/all-older.html))
-   * Safari 5.1 und höher (verfügbar unter [http://www.apple.com/safari](http://www.apple.com/safari))
+   * Microsoft Internet Explorer 9 und höher (verfügbar unter [https://www.microsoft.com/windows/ie/](https://www.microsoft.com/windows/ie/))
+   * Mozilla Firefox 3.6 und höher (verfügbar unter [https://www.mozilla.org/en-US/firefox/all-older.html](https://www.mozilla.org/en-US/firefox/all-older.html))
+   * Safari 5.1 und höher (verfügbar unter [https://www.apple.com/safari](https://www.apple.com/safari))
 
    Über einen kompatiblen Webbrowser hinaus muss keine zusätzliche Software heruntergeladen werden, um das Dashboard verwenden zu können. 1. Fordern Sie ein Konto an.
 

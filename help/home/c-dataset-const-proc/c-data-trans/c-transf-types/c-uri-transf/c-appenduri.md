@@ -3,7 +3,7 @@ description: Die AppendURI-Transformation bietet eine Möglichkeit, Informatione
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Die Umwandlung von [!DNL AppendURI] funktioniert nur, wenn sie in der Datei [!DN
 
 Nehmen wir eine Website, die mit einem herkömmlichen Modell-View-Controller-Ansatz erstellt wurde. In solchen Systemen ist es üblich, dass eine einzelne Webseite als Zugriffspunkt für das System dient. Für eine solche Site wären Visualisierungen von Traffic-Mustern im System sehr uninteressant und würden keine Einblicke in die Besuchernutzung und den Traffic-Fluss liefern. Betrachten Sie beispielsweise eine Website, die alle Webanfragen über einen URI des folgenden Formulars durchführt:
 
-* [!DNL http://www.examplesite.com/modelview.asp?id=login&name=bob]
+* [!DNL https://www.examplesite.com/modelview.asp?id=login&name=bob]
 
 Die ASP-Seite für die Modellansicht empfängt den gesamten Traffic und bestimmt ihre Aktionen basierend auf dem Wert des ID-Felds in der Abfrage. Standardmäßig enthält die URI-Dimension einen einzelnen Eintrag:
 

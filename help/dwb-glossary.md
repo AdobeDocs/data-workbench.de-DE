@@ -3,14 +3,14 @@ description: Data Workbench-Glossar
 title: Data Workbench-Glossar
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
 exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+workflow-type: tm+mt
 source-wordcount: '4201'
 ht-degree: 100%
 
 ---
 
-# Data Workbench-Glossar {#data-workbench-glossary}
+# Data Workbench-Glossar{#data-workbench-glossary}
 
 **Warnhinweis**
 
@@ -62,11 +62,11 @@ Eine Variable, die eine gemeinsame Beziehung zwischen den Zeilen in zwei tabella
 
 **Konfidenzintervall**
 
-Ein Wertebereich, in dem eine Rate oder ein Trend mit einer bestimmten Wahrscheinlichkeit auftritt. Am häufigsten werden Konfidenzintervalle von 80 % (p-Wert = 0,20), 95 % (p-Wert = 0,05) und 99 % (p-Wert = 0,01) verwendet. (Quelle: `http://www.nci.nih.gov/statistics/glossary`)
+Ein Wertebereich, in dem eine Rate oder ein Trend mit einer bestimmten Wahrscheinlichkeit auftritt. Am häufigsten werden Konfidenzintervalle von 80 % (p-Wert = 0,20), 95 % (p-Wert = 0,05) und 99 % (p-Wert = 0,01) verwendet. (Quelle: `https://www.nci.nih.gov/statistics/glossary`)
 
 **Konfidenzniveau**
 
-Die Wahrscheinlichkeit, dass der Sampling-Fehler in einem Umfrageergebnis innerhalb eines bestimmten Bereichs liegt. Ausgedrückt wird dieser in der Regel anhand von Standardfehlern (z. B. 1 Standardfehler ist gleich einer Wahrscheinlichkeit von 68 %, 2 Standardfehler sind gleich einer Wahrscheinlichkeit von 95,4 %). (Quelle: `http://www.magazine.org/research/3410.cfm`)
+Die Wahrscheinlichkeit, dass der Sampling-Fehler in einem Umfrageergebnis innerhalb eines bestimmten Bereichs liegt. Ausgedrückt wird dieser in der Regel anhand von Standardfehlern (z. B. 1 Standardfehler ist gleich einer Wahrscheinlichkeit von 68 %, 2 Standardfehler sind gleich einer Wahrscheinlichkeit von 95,4 %). (Quelle: `https://www.magazine.org/research/3410.cfm`)
 
 **Konversionskarte**
 
@@ -218,7 +218,7 @@ Ein Fenster in Data Workbench, in dem die vom aktiven Profil definierten Metrike
 
 **Metrik-Arbeitsblatt**
 
-Ein Fenster in Data Workbench, in dem Analysten für einen Datensatz ihre eigenen Metriken definieren können. Metrik-Arbeitsblätter sind mit Tabellen vergleichbar. Analysten können unter Verwendung der Formelsyntax von Data Workbench Ausdrücke angeben, die die quantitativen Werte beschreiben, die sie aus dem Datensatz ableiten möchten. So kann ein Analyst etwa eine Metrik definieren, die den Prozentsatz der Besucher abbildet, die eine Seite aus einer bestimmten Domäne geöffnet haben. In einem Metrik-Arbeitsblatt festgelegte Formeln werden genauso wie Standardmetriken auf die ausgewählte Untergruppe angewendet, wenn eine Auswahl im Arbeitsbereich aktiv ist. Metrik-Arbeitsblätter können so wie alle Fenster in Data Workbench von Report erstellt und bereitgestellt werden.
+Ein Fenster in Data Workbench, in dem Analysten für einen Datensatz ihre eigenen Metriken definieren können. Metrik-Arbeitsblätter sind mit Tabellen vergleichbar. Analysten können unter Verwendung der Formelsyntax von Data Workbench Ausdrücke angeben, die die quantitativen Werte beschreiben, die sie aus dem Datensatz ableiten möchten. So kann ein Analyst etwa eine Metrik definieren, die den Prozentsatz der Besucher abbildet, die eine Seite aus einer bestimmten Domain geöffnet haben. In einem Metrik-Arbeitsblatt festgelegte Formeln werden genauso wie Standardmetriken auf die ausgewählte Untergruppe angewendet, wenn eine Auswahl im Arbeitsbereich aktiv ist. Metrik-Arbeitsblätter können so wie alle Fenster in Data Workbench von Report erstellt und bereitgestellt werden.
 
 **Bedingung für neuen Besucher**
 
@@ -238,7 +238,7 @@ Eine Beziehung zwischen zwei Datendimensionen, bei der ein einzelnes Element in 
 
 **Ordinal**
 
-Das Vorhandensein oder die Notierung einer numerischen Reihenfolge in einer Reihe. (Quelle: `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Bei einer in Data Workbench ordinal sortierten Dimension werden ihre Elemente in der Reihenfolge angezeigt, in der sie intern dargestellt werden.
+Das Vorhandensein oder die Notierung einer numerischen Reihenfolge in einer Reihe. (Quelle: `https://wordnet.princeton.edu/perl/webwn?s=ordinal`) Bei einer in Data Workbench ordinal sortierten Dimension werden ihre Elemente in der Reihenfolge angezeigt, in der sie intern dargestellt werden.
 
 **Ausreißer**
 

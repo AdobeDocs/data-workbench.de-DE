@@ -3,7 +3,7 @@ description: Schritte zum Öffnen von Report Portal und Sicherstellen, dass Sie 
 title: Testen von Report Portal
 uuid: eee0df5e-78e0-49b2-853c-40f1b332328b
 exl-id: 197ff815-9234-4dce-b30f-b9cacf259634
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 6%
@@ -20,9 +20,9 @@ Schritte zum Öffnen von Report Portal und Sicherstellen, dass Sie die Berichte 
 
 1. Öffnen Sie in Ihrem Webbrowser den [!DNL Report Portal] mithilfe des folgenden URI-Formats:
 
-   http://*ServerAddress*/*PortalName*
+   https://*ServerAddress*/*PortalName*
 
-   Beispiel: [!DNL http://localhost/VisualReportPortal]
+   Beispiel: [!DNL https://localhost/VisualReportPortal]
 
 1. Wenn [!DNL Report Portal] Sie zur Eingabe der Anmeldedaten auffordert, geben Sie einen Kontonamen und ein Passwort ein (z. B. Konto &quot;test&quot; und Passwort &quot;user&quot; für das Standardkonto).
 1. Wenn [!DNL Report Portal] angezeigt wird, überprüfen Sie Folgendes:

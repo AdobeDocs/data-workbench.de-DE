@@ -3,7 +3,7 @@ description: Ermitteln Sie Mindestanforderungen und Empfehlungen für die Server
 title: Systemanforderungen von Servern
 uuid: c4487c76-03b9-4755-893b-555d451b1e69
 exl-id: 6dd78331-8370-400e-b580-9b9bad13e62c
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 1%
@@ -40,55 +40,55 @@ Wenn ein einzelner Datensatz durch die Kapazität oder Geschwindigkeit einer ein
 
 Um die bestmögliche Leistung Ihrer DPU-Investition zu erzielen, empfiehlt Adobe die folgenden Hochleistungskomponenten, die in der folgenden Tabelle beschrieben werden:
 
-<table id="table_DA0A60CFBA7D4EF98B5ED5A3D8D6777B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> </th> 
-   <th colname="col2" class="entry"> erforderlich </th> 
-   <th colname="col3" class="entry"> Empfohlen </th> 
-  </tr> 
+<table id="table_DA0A60CFBA7D4EF98B5ED5A3D8D6777B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> </th>
+   <th colname="col2" class="entry"> erforderlich </th>
+   <th colname="col3" class="entry"> Empfohlen </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Betriebssystem </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2008 x64 </p> </td> 
-   <td colname="col3"> <p>Microsoft Windows Server 2012 x64 </p> <p> Microsoft Windows Server 2016 x 64 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>CPU </p> </td> 
-   <td colname="col2"> <p>Siehe Empfehlungen. </p> </td> 
-   <td colname="col3"> Es wird empfohlen, 4-Core+-Prozessoren der neuesten Generation von Intel oder AMD zu verwenden. für optimale Leistung 8-Kerne; für einen Kompromiss zwischen Geschwindigkeit und Kosten werden 4 Kerne empfohlen. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>RAM </p> </td> 
-   <td colname="col2"> <p>8 GB </p> </td> 
-   <td colname="col3"> <p>12 GB </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Arbeitsdatenspeicher </p> </td> 
-   <td colname="col2"> <p>1 TB+ des gesamten logischen temporären Speichers. </p> <p>Geringe Latenz beim Zugriff auf das Festplattenuntersystem </p> </td> 
-   <td colname="col3"> <p>Für die temporäre Speicherung empfiehlt die Adobe Folgendes: </p> 
-    <ul id="ul_F3D033B90CF94F44A2A773B3F6852283"> 
-     <li id="li_B902CF7CC6A44F02838B285ADC725A75">(4 bis 8) * (750 GB oder höher) SATA-Festplatten (3,5" Spindel) </li> 
-     <li id="li_A378F4E1443F4BB2B54DC7E8372EE572">(6 bis 10) * (300 GB oder höher) SATA-HDDs (2,5"-Spindel) </li> 
-    </ul> <p>Diese sollten in einem JBOD-Array konfiguriert werden. Wenn die Brutto-Festplattenkapazität 2 TB überschreitet, kann alternativ ein Array von 2-Festplatten-RAID1-Volumes verwendet werden. Konfigurieren Sie beispielsweise sechs Festplatten als 3*(2*750GB RAID 1-Paar). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Systemdatenspeicher </p> </td> 
-   <td colname="col2"> <p>Darüber hinaus erfordert die Adobe einen hochverfügbaren Speicher von bescheidener Größe (20 GB) für Betriebssystem, DPU-Software und andere Systemsoftware. </p> </td> 
-   <td colname="col3"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Clustering-Hardware </p> </td> 
-   <td colname="col2"> <p>Siehe Empfehlungen. </p> </td> 
-   <td colname="col3"> <p>Verwenden Sie einen homogenen Satz von Servern. In einem DPU-Cluster reduziert der langsamste Server die Leistung des gesamten Datensatzes. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Clustering der Netzwerkleistung </td> 
-   <td colname="col2"> Switch-Gigabit-Ethernet-Verbindung oder höher. </td> 
-   <td colname="col3"> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Betriebssystem </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2008 x 64 </p> </td>
+   <td colname="col3"> <p>Microsoft Windows Server 2012 x 64 </p> <p> Microsoft Windows Server 2016 x 64 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>CPU </p> </td>
+   <td colname="col2"> <p>Siehe Empfehlungen. </p> </td>
+   <td colname="col3"> Es wird empfohlen, 4-Core+-Prozessoren der neuesten Generation von Intel oder AMD zu verwenden. für optimale Leistung 8-Kerne; für einen Kompromiss zwischen Geschwindigkeit und Kosten werden 4 Kerne empfohlen. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>RAM </p> </td>
+   <td colname="col2"> <p>8 GB </p> </td>
+   <td colname="col3"> <p>12 GB </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Arbeitsdatenspeicher </p> </td>
+   <td colname="col2"> <p>1 TB+ des gesamten logischen temporären Speichers. </p> <p>Geringe Latenz beim Zugriff auf das Festplattenuntersystem </p> </td>
+   <td colname="col3"> <p>Für die temporäre Speicherung empfiehlt die Adobe Folgendes: </p>
+    <ul id="ul_F3D033B90CF94F44A2A773B3F6852283">
+     <li id="li_B902CF7CC6A44F02838B285ADC725A75">(4 bis 8) * (750 GB oder höher) SATA-Festplatten (3,5" Spindel) </li>
+     <li id="li_A378F4E1443F4BB2B54DC7E8372EE572">(6 bis 10) * (300 GB oder höher) SATA-HDDs (2,5"-Spindel) </li>
+    </ul> <p>Diese sollten in einem JBOD-Array konfiguriert werden. Wenn die Brutto-Festplattenkapazität 2 TB überschreitet, kann alternativ ein Array von 2-Festplatten-RAID1-Volumes verwendet werden. Konfigurieren Sie beispielsweise sechs Festplatten als 3*(2*750GB RAID 1-Paar). </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Systemdatenspeicher </p> </td>
+   <td colname="col2"> <p>Darüber hinaus erfordert die Adobe einen hochverfügbaren Speicher von bescheidener Größe (20 GB) für Betriebssystem, DPU-Software und andere Systemsoftware. </p> </td>
+   <td colname="col3"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Clustering-Hardware </p> </td>
+   <td colname="col2"> <p>Siehe Empfehlungen. </p> </td>
+   <td colname="col3"> <p>Verwenden Sie einen homogenen Satz von Servern. In einem DPU-Cluster reduziert der langsamste Server die Leistung des gesamten Datensatzes. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Clustering der Netzwerkleistung </td>
+   <td colname="col2"> Switch-Gigabit-Ethernet-Verbindung oder höher. </td>
+   <td colname="col3"> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Alternative Datenträger-Subsysteme {#section-6f984eabe8074759aa9deaf17e3a68b7}
@@ -116,35 +116,35 @@ Adobe kann keine Garantie oder Darstellung hinsichtlich der Geschwindigkeit der 
 
 Die File Serving Unit (FSU) des Servers ist die wichtigste Datenspeicherungs- und Verwaltungskomponente von Data Workbench. Das FSU fungiert als Dateiserver für Rohquelldaten an die DPU und koordiniert gegebenenfalls das Clustering von DPUs. Jede FSU ist lizenziert, Quelldaten für bis zu fünf (5) DPUs bereitzustellen.
 
-<table id="table_45CF36583DFE4536BB31F6A1F6CC181E"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> FSU-Komponenten </th> 
-   <th colname="col2" class="entry"> Empfehlungen </th> 
-   <th colname="col3" class="entry"> </th> 
-  </tr> 
+<table id="table_45CF36583DFE4536BB31F6A1F6CC181E">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> FSU-Komponenten </th>
+   <th colname="col2" class="entry"> Empfehlungen </th>
+   <th colname="col3" class="entry"> </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Betriebssystem, CPU, RAM </p> </td> 
-   <td colname="col2"> <p>Diese Anforderungen entsprechen denen der DPU. Für das FSU empfiehlt Adobe jedoch, die Mindestanforderungen zu verwenden, anstatt die Empfehlungen zu befolgen. </p> </td> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Betriebssystem, CPU, RAM </p> </td>
+   <td colname="col2"> <p>Diese Anforderungen entsprechen denen der DPU. Für das FSU empfiehlt Adobe jedoch, die Mindestanforderungen zu verwenden, anstatt die Empfehlungen zu befolgen. </p> </td>
    <td colname="col3"> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Datenträgersystem </p> <p>Das FSU benötigt hochverfügbare, redundante Datenspeicherung für große Datenmengen. Adobe wird mit Ihnen zusammenarbeiten, um Ihre Anforderungen genau zu bestimmen. </p> </td> 
-   <td colname="col1"> <p>Adobe empfiehlt: </p> 
-    <ul id="ul_FFEEE5052FFD4876BA9A6476DD096539"> 
-     <li id="li_F98750D509D640C68885D53FC691ED43">(12 oder mehr) * (750 GB oder höher) SATA-Festplatten in einer RAID 5/6-Konfiguration. </li> 
-     <li id="li_3F84F63F9541476987015C27FDE8251B">Hochleistungsfähige SAN-Verbindung mit 100 MB/s+ nachhaltiger Bandbreite. </li> 
-    </ul> <p>Da das FSU die Rohquellendaten speichert, wäre jeder Verlust nicht rückgängig zu machen, und die Adobe legt nahe, diese Daten regelmäßig zu sichern. </p> </td> 
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Datenträgersystem </p> <p>Das FSU benötigt hochverfügbare, redundante Datenspeicherung für große Datenmengen. Adobe wird mit Ihnen zusammenarbeiten, um Ihre Anforderungen genau zu bestimmen. </p> </td>
+   <td colname="col1"> <p>Adobe empfiehlt: </p>
+    <ul id="ul_FFEEE5052FFD4876BA9A6476DD096539">
+     <li id="li_F98750D509D640C68885D53FC691ED43">(12 oder mehr) * (750 GB oder höher) SATA-Festplatten in einer RAID 5/6-Konfiguration. </li>
+     <li id="li_3F84F63F9541476987015C27FDE8251B">Hochleistungsfähige SAN-Verbindung mit 100 MB/s+ nachhaltiger Bandbreite. </li>
+    </ul> <p>Da das FSU die Rohquellendaten speichert, wäre jeder Verlust nicht rückgängig zu machen, und die Adobe legt nahe, diese Daten regelmäßig zu sichern. </p> </td>
    <td colname="col2"> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Netzwerkleistung </p> </td> 
-   <td colname="col2"> <p>Für die Adobe sind Switch-Gigabit-Ethernet-Verbindungen zwischen FSUs und DPUs erforderlich, die zusammenarbeiten. </p> </td> 
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Netzwerkleistung </p> </td>
+   <td colname="col2"> <p>Für die Adobe sind Switch-Gigabit-Ethernet-Verbindungen zwischen FSUs und DPUs erforderlich, die zusammenarbeiten. </p> </td>
    <td colname="col3"> </td>
-  </tr> 
- </tbody> 
+  </tr>
+ </tbody>
 </table>
 
 ## Sensoranforderungen{#sensor-requirements}
@@ -155,74 +155,74 @@ Data Workbench Sensor erfasst Ereignisdaten von Web-, Anwendungs- und Datenerfas
 
 In der folgenden Tabelle werden Systemempfehlungen für [!DNL Sensor] beschrieben:
 
-<table id="table_A132E06D6B8146C1B199B82464EA0898"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Funktionen </th> 
-   <th colname="col2" class="entry"> Empfohlen </th> 
-  </tr> 
+<table id="table_A132E06D6B8146C1B199B82464EA0898">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Funktionen </th>
+   <th colname="col2" class="entry"> Empfohlen </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Festplattenspeicher </p> </td> 
-   <td colname="col2"> <p>Mindestens 512 MB. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>RAM </p> </td> 
-   <td colname="col2"> <p>32 MB RAM müssen für <span class="wintitle"> Sensor </span> auf dem HTTP- oder anderen Servercomputer verfügbar sein, der der Host ist. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Netzwerkleistung </p> </td> 
-   <td colname="col2"> <p>1 MBit/s oder eine größere Netzwerkverbindung zu einem Repeater-Server oder <span class="keyword"> Data Workbench-Server </span>. <span class="wintitle"> Der Sensor verbraucht  </span> in der Regel deutlich weniger Bandbreite als ein (1) MBit/s. Ihre Adobe-Berater helfen Ihnen dabei, die tatsächlich benötigte Bandbreite routinemäßig abzuschätzen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Netzwerkports und Firewalls </p> </td> 
-   <td colname="col2"> <p> <span class="wintitle"> Sensor  </span> stellt eine Verbindung zum  <span class="keyword"> Data Workbench-Server  </span> über HTTPS (normalerweise Port 443, obwohl dies konfigurierbar ist) oder HTTP (normalerweise Port 80, obwohl dies konfigurierbar ist) her. </p> <p>Der entsprechende Anschluss in einer beliebigen Firewall, die zwischen einem <span class="wintitle"> Sensor </span> und dem <span class="keyword"> Data Workbench-Server </span> oder Repeater-Server der Zielgruppe <span class="wintitle"> oder des Hostcomputers </span> und dem <span class="keyword"> Data Workbench-Server </span> oder Repeater-Server vor Beginn des <span class="wintitle"> Sensors </span> befindet, sollte geöffnet werden. Installationsprozess. <span class="wintitle"> Sensor  </span> führt eine unidirektionale HTTPS- oder HTTP-Verbindung zu einem  <span class="keyword"> Data Workbench-Server  </span> oder Repeater-Server durch. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Netzwerkverwaltungssysteme </p> </td> 
-   <td colname="col2"> <p>Bestehende Netzwerkverwaltungssysteme sollten den Zustand der zugrunde liegenden Computerhardware (z. B. Festplattenspeicher, Netzwerkdienst) und die Netzwerkverbindung sowie das Windows-Ereignisprotokoll oder das UNIX-Syslog überwachen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Serverzeitsynchronisierung </p> </td> 
-   <td colname="col2"> <p>Stellen Sie sicher, dass die Systemzeit des Computers kontinuierlich auf allen Computern synchronisiert wird, die einen <span class="wintitle"> Sensor </span> hosten. Die Webserver-Anwendungen und Computer, die von <span class="wintitle"> Sensor </span> überwacht werden, müssen über synchronisierte Systemzeiten verfügen, damit die von ihnen erfassten Ereignisdaten präzise sind. Anweisungen zum kontinuierlichen Synchronisieren der Systemzeiten mit NTP oder einer anderen solchen Zeitsynchronisierungsfunktion finden Sie in der Dokumentation Ihres Betriebssystems . </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Nutzung des DNS-Namens </p> </td> 
-   <td colname="col2"> <p>Adobe empfiehlt, dass <span class="wintitle"> Sensoren </span> einen DNS-Namen (anstelle einer IP-Adresse) verwenden, um die Netzwerkadresse eines <span class="keyword"> Data Workbench-Servers </span> oder Repeater-Servers aufzulösen. Wenn ein <span class="wintitle"> Sensor </span> einen DNS-Namen verwendet, muss die DNS- oder lokale Hostdatei des Host-Webservers so konfiguriert werden, dass der Name des <span class="keyword"> Data Workbench-Servers </span> oder Repeater-Servers aufgelöst wird. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Festplattenspeicher </p> </td>
+   <td colname="col2"> <p>Mindestens 512 MB. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>RAM </p> </td>
+   <td colname="col2"> <p>32 MB RAM müssen für <span class="wintitle"> Sensor </span> auf dem HTTP- oder anderen Servercomputer verfügbar sein, der der Host ist. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Netzwerkleistung </p> </td>
+   <td colname="col2"> <p>1 MBit/s oder eine größere Netzwerkverbindung zu einem Repeater-Server oder <span class="keyword"> Data Workbench-Server </span>. <span class="wintitle"> Der Sensor verbraucht  </span> in der Regel deutlich weniger Bandbreite als ein (1) MBit/s. Ihre Adobe-Berater helfen Ihnen dabei, die tatsächlich benötigte Bandbreite routinemäßig abzuschätzen. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Netzwerkports und Firewalls </p> </td>
+   <td colname="col2"> <p> <span class="wintitle"> Sensor  </span> stellt eine Verbindung zum  <span class="keyword"> Data Workbench-Server  </span> über HTTPS (normalerweise Port 443, obwohl dies konfigurierbar ist) oder HTTP (normalerweise Port 80, obwohl dies konfigurierbar ist) her. </p> <p>Der entsprechende Anschluss in einer beliebigen Firewall, die zwischen einem <span class="wintitle"> Sensor </span> und dem <span class="keyword"> Data Workbench-Server </span> oder Repeater-Server der Zielgruppe <span class="wintitle"> oder des Hostcomputers </span> und dem <span class="keyword"> Data Workbench-Server </span> oder Repeater-Server vor Beginn des <span class="wintitle"> Sensors </span> befindet, sollte geöffnet werden. Installationsprozess. <span class="wintitle"> Sensor  </span> führt eine unidirektionale HTTPS- oder HTTP-Verbindung zu einem  <span class="keyword"> Data Workbench-Server  </span> oder Repeater-Server durch. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Netzwerkverwaltungssysteme </p> </td>
+   <td colname="col2"> <p>Bestehende Netzwerkverwaltungssysteme sollten den Zustand der zugrunde liegenden Computerhardware (z. B. Festplattenspeicher, Netzwerkdienst) und die Netzwerkverbindung sowie das Windows-Ereignisprotokoll oder das UNIX-Syslog überwachen. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Serverzeitsynchronisierung </p> </td>
+   <td colname="col2"> <p>Stellen Sie sicher, dass die Systemzeit des Computers kontinuierlich auf allen Computern synchronisiert wird, die einen <span class="wintitle"> Sensor </span> hosten. Die Webserver-Anwendungen und Computer, die von <span class="wintitle"> Sensor </span> überwacht werden, müssen über synchronisierte Systemzeiten verfügen, damit die von ihnen erfassten Ereignisdaten präzise sind. Anweisungen zum kontinuierlichen Synchronisieren der Systemzeiten mit NTP oder einer anderen solchen Zeitsynchronisierungsfunktion finden Sie in der Dokumentation Ihres Betriebssystems . </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Nutzung des DNS-Namens </p> </td>
+   <td colname="col2"> <p>Adobe empfiehlt, dass <span class="wintitle"> Sensoren </span> einen DNS-Namen (anstelle einer IP-Adresse) verwenden, um die Netzwerkadresse eines <span class="keyword"> Data Workbench-Servers </span> oder Repeater-Servers aufzulösen. Wenn ein <span class="wintitle"> Sensor </span> einen DNS-Namen verwendet, muss die DNS- oder lokale Hostdatei des Host-Webservers so konfiguriert werden, dass der Name des <span class="keyword"> Data Workbench-Servers </span> oder Repeater-Servers aufgelöst wird. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Support-Server-Software {#section-d6071706539f49d9a861d87b98e6f382}
 
 In der folgenden Tabelle sind die häufigsten Kombinationen aufgeführt, die [!DNL Sensor] unterstützt:
 
-<table id="table_99EA23BBC1A148B49643F4B5E4341C08"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Webserver-Software </th> 
-   <th colname="col2" class="entry"> Betriebssystem </th> 
-  </tr> 
+<table id="table_99EA23BBC1A148B49643F4B5E4341C08">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Webserver-Software </th>
+   <th colname="col2" class="entry"> Betriebssystem </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Apache Server/IBM HTTP Server 2.2 </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2003 oder höher; RedHat Enterprise Linux 6.x oder höher; Sun Solaris 8.x oder höher; IBM AIX 5.1x oder höher. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Apache Server 2.4 </p> </td> 
-   <td colname="col2"> <p>RedHat Enterprise Linux 6.x oder höher </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Microsoft IIS </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2003 oder höher </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Java-Anwendungsserver (Tomcat, JBoss, iPlanet, Weblogic) </p> </td> 
-   <td colname="col2"> <p>Microsoft Windows Server 2003 oder höher; RedHat Enterprise Linux 6.x oder höher; Sun Solaris 8.x oder höher; IBM AIX 5.1x oder höher. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Apache Server/IBM HTTP Server 2.2 </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2003 oder höher; RedHat Enterprise Linux 6.x oder höher; Sun Solaris 8.x oder höher; IBM AIX 5.1x oder höher. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Apache Server 2.4 </p> </td>
+   <td colname="col2"> <p>RedHat Enterprise Linux 6.x oder höher </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Microsoft IIS </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2003 oder höher </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Java-Anwendungsserver (Tomcat, JBoss, iPlanet, Weblogic) </p> </td>
+   <td colname="col2"> <p>Microsoft Windows Server 2003 oder höher; RedHat Enterprise Linux 6.x oder höher; Sun Solaris 8.x oder höher; IBM AIX 5.1x oder höher. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 Für andere Server- und Betriebssystemkombinationen konsultieren Sie bitte die Adobe bezüglich der Verfügbarkeit. Nicht alle Funktionen von [!DNL Sensor] sind für alle Kombinationen von Web/Application Server und Betriebssystem verfügbar. Weitere Informationen zu bestimmten [!DNL Sensor]-Versionen erhalten Sie beim Support für Adoben.
@@ -235,7 +235,7 @@ Die folgenden Anforderungen sind für [!DNL report server] vorhanden:
 
 * Zugriff auf das Dateisystem für die Ausgabe von Daten (Netzwerkfreigabe oder lokales Laufwerk).
 * Zugriff auf den konfigurierten SMTP-Server.
-* Microsoft Excel 2003 oder höher auf dem [!DNL report]-Server installiert. Weitere Informationen finden Sie unter [Überlegungen zur serverseitigen Automatisierung von Office](http://support.microsoft.com/kb/257757) .
+* Microsoft Excel 2003 oder höher auf dem [!DNL report]-Server installiert. Weitere Informationen finden Sie unter [Überlegungen zur serverseitigen Automatisierung von Office](https://support.microsoft.com/kb/257757) .
 
 ## Netzwerkverwaltung{#network-management}
 

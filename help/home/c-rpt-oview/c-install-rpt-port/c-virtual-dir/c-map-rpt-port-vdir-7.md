@@ -3,7 +3,7 @@ description: Schritte zum Zuordnen des Report Portals zu einem virtuellen Verzei
 title: Zuordnen von Report Portal zu einem virtuellen Verzeichnis (IIS 7.0 oder höher)
 uuid: 9d18fb85-f9d7-48b6-a19b-1e7b68a5adca
 exl-id: 2fa3439a-1fe5-4a20-83db-d233ae8b5263
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 5%
@@ -54,11 +54,11 @@ Derzeit verfügen die meisten Managed Service-Clients über Server mit dem Windo
 1. Klicken Sie auf **[!UICONTROL Advanced Settings]** und wählen Sie True für die Option &quot;32-Bit-Anwendungen aktivieren&quot;.
 1. Damit [!DNL Portal] funktioniert, müssen Sie es in eine Anwendung konvertieren. Nachdem Sie die virtuellen Verzeichnisse eingerichtet haben, klicken Sie mit der rechten Maustaste auf das virtuelle Portal-Verzeichnis und wählen Sie **[!UICONTROL Convert to Application]** aus.
 
-## Zusätzliche Tipps und Tricks {#section-ff84ab3f66c94620a6a11f0e60471d44}
+## Weitere Tipps und Tricks {#section-ff84ab3f66c94620a6a11f0e60471d44}
 
 * Sie können [!DNL Portal] von Software unter **[!UICONTROL Softdocs]** > **[!UICONTROL Report Portal]** herunterladen. Sie können einfach [!DNL ReportPortal-Release-1-0-0-7.zip] herunterladen.
 
 * Sie benötigen den [!DNL ReportPortalSetup.xml] nicht mehr, daher kann er gelöscht werden.
 * Der Standardisierung halber platzieren Sie den Inhalt dieser ZIP-Datei in [!DNL E:\Portal].
 * Um den SMTP-Server für Clients mit verwalteten Diensten zu ermitteln, können Sie hier nachsehen.
-* Stellen Sie eine Anfrage mit NetOps, um den Domänennameneintrag in IIS für den Berichtsserver in etwas Freundlicheres zu ändern, z. B. [!DNL reports.clientname.insight.omniture.com], sodass Ihre Portal-URL [!DNL http://reports.clientname.insight.omniture.com/Portal] lautet. Konfigurieren Sie Ihre [!DNL email.asa]-Datei, nachdem diese Änderung vorgenommen wurde.
+* Stellen Sie eine Anfrage mit NetOps, um den Domänennameneintrag in IIS für den Berichtsserver in etwas Freundlicheres zu ändern, z. B. [!DNL reports.clientname.insight.omniture.com], sodass Ihre Portal-URL [!DNL https://reports.clientname.insight.omniture.com/Portal] lautet. Konfigurieren Sie Ihre [!DNL email.asa]-Datei, nachdem diese Änderung vorgenommen wurde.
