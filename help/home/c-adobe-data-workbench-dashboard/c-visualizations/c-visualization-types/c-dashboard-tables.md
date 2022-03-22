@@ -1,12 +1,12 @@
 ---
 description: Tabellen
-title: Tabellen
+title: Dashboard-Tabellen
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
 exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 1%
+source-wordcount: '212'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,6 @@ Tabellen sind die detailliertesten Visualisierungen, die in der Dashboard-Anwend
 
 Die Spaltenreihenfolge kann durch Klicken und Ziehen einer Spaltenüberschrift an eine andere Position im Spaltenüberschriftsbereich neu angeordnet werden. Die Sortierung kann jederzeit durch Anklicken der entsprechenden Spaltenüberschrift erfolgen. Durch erneutes Klicken auf die Spaltenüberschrift wird die Sortierreihenfolge umgekehrt.
 
-Die Auswahl kann in Tabellen erfolgen, indem Sie auf eine bestimmte Zeile klicken. Durch Drücken und Halten der **[!UICONTROL Control]**-Taste bleiben die Auswahlmöglichkeiten erhalten, wenn Sie auf zusätzliche Elemente klicken. Durch Drücken und Halten der **[!UICONTROL Control]**-Taste beim Klicken wird auch der Wert einer Auswahl umgeschaltet. Dies ist nützlich, um nur eine Auswahl aus einer Gruppe bereits ausgewählter Elemente zu entfernen. Sie können einen Zeilenbereich auswählen, indem Sie zuerst auf eine Zeile klicken und diese markieren, dann die **[!UICONTROL Shift]**-Taste drücken, während Sie auf die letzte Zeile klicken.
+Die Auswahl kann in Tabellen erfolgen, indem Sie auf eine bestimmte Zeile klicken. Drücken und Halten der **[!UICONTROL Control]** -Schlüssel behält die Auswahl bei, wenn Sie auf zusätzliche Elemente klicken. Drücken und Halten der **[!UICONTROL Control]** beim Klicken wird auch der Wert einer Auswahl umgeschaltet. Dies ist nützlich, um nur eine Auswahl aus einer Gruppe bereits ausgewählter Elemente zu entfernen. Sie können einen Zeilenbereich auswählen, indem Sie zuerst auf eine Zeile klicken und anschließend die **[!UICONTROL Shift]** beim Klicken auf die letzte Zeile.
 
 ![](assets/table.png)

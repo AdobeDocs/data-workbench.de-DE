@@ -1,11 +1,11 @@
 ---
 description: Nachdem Sie die Insight-Programmdateien installiert haben, müssen Sie das von Adobe bereitgestellte digitale Zertifikat herunterladen und installieren.
-title: Herunterladen und Installieren des digitalen Zertifikats
+title: Herunterladen und Installieren des digitalen Zertifikats (Insight)
 uuid: 93ab2222-a977-4279-9e1e-71038b1d1cfa
 exl-id: 0dff95ae-880b-45d5-96df-4eb6bea58891
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2744'
 ht-degree: 39%
 
 ---
@@ -42,7 +42,7 @@ Neben der Sicherheit dient das von Ihnen installierte digitale Zertifikat auch a
 
 Ein knotenspezifisches Zertifikat ist ein digitales Zertifikat, das auf dem Computer registriert wurde, auf dem es installiert ist. Durch die Knotensperrung wird ein Zertifikat dauerhaft mit einer bestimmten Knotenkennung (einem Wert, der einen bestimmten Computer eindeutig identifiziert) verknüpft. Um das Zertifikat knotenspezifisch zu gestalten, muss Ihr Computer über Internetzugriff auf den Adobe License Server oder einen Proxyserver verfügen, der Zugriff auf den Lizenzserver hat.
 
-Wenn Sie eine Installation auf einem Computer durchführen, der nicht auf das Internet zugreifen kann, müssen Sie ein spezielles vorgesperrtes Zertifikat abrufen und installieren, wie unter [Verwenden digitaler Zertifikate auf Computern ohne Internetzugang](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#section-d3c060131d7f45cda27f68848b704fa1) beschrieben.
+Wenn Sie eine Installation auf einem Computer durchführen, der nicht auf das Internet zugreifen kann, müssen Sie ein spezielles vorgesperrtes Zertifikat abrufen und installieren, wie unter [Verwenden digitaler Zertifikate auf Computern ohne Internetzugang](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#section-d3c060131d7f45cda27f68848b704fa1).
 
 Wenn Sie eine Installation auf einem Computer durchführen, der auf das Internet zugreifen kann, wird Ihr digitales Zertifikat automatisch knotenspezifisch, wenn Sie Insight zum ersten Mal starten. Nachdem das Zertifikat knotenspezifisch war, kann es auf keinem anderen Computer verwendet werden. Wenn Sie Insight auf einen anderen Computer migrieren müssen, müssen Sie ein neues, entsperrtes Zertifikat von Adobe erhalten.
 
@@ -54,7 +54,7 @@ Ihr digitales Zertifikat muss nicht nur knotenspezifisch, sondern auch aktuell s
 
 Wenn Sie eine Installation auf einem Computer durchführen, der nicht auf das Internet zugreifen kann, müssen Sie ein vorgesperrtes Zertifikat für Ihre Installation von Insight anfordern. Ein vorgesperrtes Zertifikat ist ein digitales Zertifikat, das von Adobe manuell mit der Knotenkennung für den Computer gesperrt wird.
 
-Um ein vorgesperrtes Zertifikat anzufordern, müssen Sie die Knoten-ID und Ihre Zertifikatnummer an die Adobe-Kundenunterstützung senden. Wenden Sie sich an die Kundenunterstützung von Adobe, um die Adobe [!DNL Node Identifier] anzufordern, um die Knoten-ID für Ihren Computer abzurufen. Sie können die Knoten-ID auch aus der Warnung abrufen, die Insight auslöst, wenn versucht wird, eine Verbindung zum Lizenzserver herzustellen, aber nicht kann. Wenn Sie das vorgesperrte Zertifikat erhalten, installieren Sie es wie in den letzten beiden Schritten von [Installieren digitaler Zertifikate](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#task-1dad1e1d86d04100a7bcf87f26303c38) beschrieben.
+Um ein vorgesperrtes Zertifikat anzufordern, müssen Sie die Knoten-ID und Ihre Zertifikatnummer an die Adobe-Kundenunterstützung senden. Wenden Sie sich an die Kundenunterstützung von Adobe, um die Adobe anzufordern, um die Knotenkennung für Ihren Computer zu erhalten [!DNL Node Identifier] verwenden. Sie können die Knoten-ID auch aus der Warnung abrufen, die Insight auslöst, wenn versucht wird, eine Verbindung zum Lizenzserver herzustellen, aber nicht kann. Wenn Sie das vorgesperrte Zertifikat erhalten, installieren Sie es wie in den letzten beiden Schritten von [Installieren digitaler Zertifikate](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#task-1dad1e1d86d04100a7bcf87f26303c38).
 
 Wenn das Zertifikat erneut validiert werden muss, müssen Sie ein neues, validiertes Zertifikat vom Lizenzserver herunterladen und auf Ihrem Computer neu installieren (sofern Ihre Vereinbarung mit Adobe nichts anderes vorsieht).
 
@@ -66,16 +66,16 @@ t_install_dgtl_crtf.xml
 
 **So laden Sie das digitale Zertifikat herunter und installieren es**
 
-1. Öffnen Sie Ihren Webbrowser auf [!DNL https:\\license.visualsciences.com].
+1. Öffnen Sie den Webbrowser in [!DNL https:\\license.visualsciences.com].
 
    >[!NOTE]
    >
    >Ihr Browser fordert Sie an dieser Stelle möglicherweise auf, ein digitales Zertifikat vorzulegen. Wenn dies der Fall ist, klicken Sie auf **[!UICONTROL Cancel]** , um das Dialogfeld zu schließen.
 
 1. Geben Sie auf dem Anmeldebildschirm die von Adobe erhaltenen Werte für [!DNL Account Name] und [!DNL Password] ein, und klicken Sie dann auf **[!UICONTROL login]**.
-1. Suchen Sie das Zertifikat, das für Ihre Instanz von Insight ausgestellt wurde ( *Ihr Name*.pem), und klicken Sie auf das Symbol ![](assets/btn_save_certificatedownload.PNG), das diesem Zertifikat zugeordnet ist.
+1. Suchen Sie nach dem Zertifikat, das für Ihre Instanz von Insight ausgestellt wurde ( *Ihr Name*.pem) und klicken Sie auf das ![](assets/btn_save_certificatedownload.PNG) mit diesem Zertifikat verknüpftes Symbol.
 1. Wenn Sie aufgefordert werden, das Zertifikat zu speichern, klicken Sie auf **[!UICONTROL Save]**.
-1. Laden Sie die Datei in den Ordner [!DNL Certificates] in dem Verzeichnis herunter, in dem Insight installiert ist.
+1. Laden Sie die Datei in die [!DNL Certificates] in dem Ordner, in dem Sie Insight installiert haben.
 
    Dieser Ordner enthält eine Zertifikatdatei mit dem Namen [!DNL trust_ca_cert.pem]. Beide Zertifikatdateien müssen immer vorhanden sein, damit Insight funktioniert.
 
@@ -98,7 +98,7 @@ Der Windows-Zertifikatspeicher für den Client ist eine neue Funktion, mit der S
 1. Sie müssen Zugriff auf die [!DNL certmgr.msc]-Datei haben, damit Sie ein Zertifikat und einen Schlüssel in den **persönlichen** Speicher importieren können. (Dies sollte für die meisten Windows-Benutzer standardmäßig der Fall sein.)
 
 1. Der Benutzer, der die Konfiguration durchführt, muss über eine Kopie des **OpenSSL** -Befehlszeilenwerkzeugs verfügen.
-1. Server und Client müssen bereits für die Verwendung eines benutzerdefinierten SSL-Zertifikats konfiguriert sein und Anweisungen zum Speichern des Clientzertifikats im Windows-Zertifikatspeicher geben, anstatt es im Ordner **Zertifikate** zu speichern.
+1. Server und Client müssen bereits für die Verwendung eines benutzerdefinierten SSL-Zertifikats konfiguriert sein und Anweisungen zum Speichern des Client-Zertifikats im Windows-Zertifikatspeicher geben, anstatt es im **Zertifikate** Verzeichnis.
 
 ## Konfigurieren des Windows-Zertifikatspeichers {#section-3629802122e947d4b4f63e8b732cfe27}
 
@@ -106,7 +106,7 @@ Der Windows-Zertifikatspeicher für Clients wird wie folgt aktiviert:
 
 **Schritt 1: Importieren Sie das SSL-Zertifikat und den privaten Schlüssel des Benutzers in den Windows-Zertifikatspeicher.**
 
-Unter [Verwenden benutzerdefinierter Zertifikate in Data Workbench](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd) werden Sie angewiesen, das SSL-Zertifikat und den SSL-Schlüssel im folgenden Ordner abzulegen:
+In [Verwenden benutzerdefinierter Zertifikate in Data Workbench](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd) Sie werden angewiesen, das SSL-Zertifikat und den SSL-Schlüssel im folgenden Ordner abzulegen:
 
 ```
 <
@@ -115,7 +115,7 @@ Unter [Verwenden benutzerdefinierter Zertifikate in Data Workbench](../../../hom
 </filepath>>\Certificates\
 ```
 
-Der Name des Zertifikats lautet `<Common Name>.pem`, z. B. Analytics Server 1.pem (nicht die Datei &quot;trust_ca_cert.pem&quot;).
+Der Name des Zertifikats lautet `<Common Name>.pem` z. B. Analytics Server 1.pem (nicht die Datei &quot;trust_ca_cert.pem&quot;)
 
 Bevor das Zertifikat und der private Schlüssel importiert werden können, müssen sie aus dem . [!DNL pem]-Format in ein [!DNL .pfx]-Format konvertiert werden, z. B. [!DNL pkcs12.pfx]).
 
@@ -210,19 +210,19 @@ Anweisungen zur Verwendung benutzerdefinierter Zertifikate.
 using-custom-certificates-DWB.xml
 -->
 
-Ein Zertifikat, das entweder vom Data Workbench-Client oder -Server verwendet wird, muss von einer vertrauenswürdigen Zertifizierungsstelle (Certificate Authority) signiert werden. Data Workbench-Kunden erhalten Zertifikate, die von der Visual Sciences CA signiert werden. Diese Zertifikate werden von der Data Workbench-Software als vertrauenswürdig eingestuft, da das [!DNL trust_ca_cert.pem] (zusammen mit der Insight-Software bereitgestellt und im **Zertifikate**-Verzeichnis von Servern und Clients gespeichert) ein *Stammzertifikat* für die Visual Sciences-Zertifizierungsstelle enthält. Diese Zertifikate werden sowohl für die Lizenzierung der Software als auch für die Authentifizierung verwendet, wenn Clients und Server mithilfe von SSL miteinander kommunizieren. Nur von der Zertifizierungsstelle der Visual Sciences ausgestellte Zertifikate können für die Lizenzierung verwendet werden, andere Zertifikate können jedoch für die Kommunikation und Authentifizierung verwendet werden. Zertifikate, die von anderen Zertifizierungsstellen als Visual Sciences ausgestellt werden, werden im Folgenden als *benutzerdefinierte Zertifikate bezeichnet.*
+Ein Zertifikat, das entweder vom Data Workbench-Client oder -Server verwendet wird, muss von einer vertrauenswürdigen Zertifizierungsstelle (Certificate Authority) signiert werden. Data Workbench-Kunden erhalten Zertifikate, die von der Visual Sciences CA signiert werden. Diese Zertifikate werden von der Data Workbench-Software als vertrauenswürdig eingestuft, da die [!DNL trust_ca_cert.pem] (zusammen mit der Insight-Software bereitgestellt und im **Zertifikate** Verzeichnis der Server und Clients) enthält eine *CA-Stammzertifikat* für die Visual Sciences CA. Diese Zertifikate werden sowohl für die Lizenzierung der Software als auch für die Authentifizierung verwendet, wenn Clients und Server mithilfe von SSL miteinander kommunizieren. Nur von der Zertifizierungsstelle der Visual Sciences ausgestellte Zertifikate können für die Lizenzierung verwendet werden, andere Zertifikate können jedoch für die Kommunikation und Authentifizierung verwendet werden. Die von anderen Zertifizierungsstellen als Visual Sciences ausgestellten Bescheinigungen werden im Folgenden als *benutzerdefinierte Zertifikate.*
 
-**Wichtiger Hinweis:** Bei Servern und Clients verwendet die Data Workbench-Software die Zertifikatdateien, die im  **** Zertifikatverzeichnis des Clients oder Servers installiert sind, bzw. die Zertifikate, die explizit in der Konfiguration angegeben sind. Sie können jedoch auch den Windows-Zertifikatspeicher für Clients verwenden.
+**Wichtiger Hinweis:** Bei Servern und Clients verwendet die Data Workbench-Software die im Client- oder Server-Fenster installierten Zertifikatdateien **Zertifikate** -Ordner oder -Zertifikate, die explizit in der Konfiguration angegeben sind. Sie können jedoch auch den Windows-Zertifikatspeicher für Clients verwenden.
 
 In den folgenden Anweisungen werden die Verfahren beschrieben, nach denen benutzerdefinierte Zertifikate für die Kommunikation zwischen Data Workbench-Clients und -Servern verwendet werden. Nicht jedes Detail ist eine schwierige Anforderung, und es können unterschiedliche Prozessvarianten eingesetzt werden. Die folgenden Verfahren wurden jedoch getestet, um zu funktionieren.
 
 ## Einrichten benutzerdefinierter Client-Zertifikate {#section-2083fd41973e451fa404e7a4ae4da591}
 
-1. Fügen Sie das Zertifikat der ausstellenden Zertifizierungsstelle zum Ordner [!DNL trust_cert_ca.pem] hinzu, der im Ordner **Zertifikate** des Clients installiert ist, sowie zum Zertifikat jedes Servers in jedem Cluster, auf den mit diesem benutzerdefinierten Zertifikat zugegriffen werden soll.
+1. Fügen Sie die Bescheinigung der ausstellenden Zertifizierungsstelle der [!DNL trust_cert_ca.pem], die in der **Zertifikate** Verzeichnis des Clients und des jedes Servers in jedem Cluster, auf den mit diesem benutzerdefinierten Zertifikat zugegriffen werden soll.
 
 1. Rufen Sie für jeden Server im Cluster ein benutzerdefiniertes Zertifikat mit den folgenden Bedingungen ab:
 
-   1. Zertifikat ist als [!DNL .pem]-Zertifikat formatiert.
+   1. Zertifikat ist als [!DNL .pem] Zertifikat.
    1. Das Zertifikat enthält seinen Schlüssel und ist unverschlüsselt (d. h. es hat kein Kennwort/keine Passwort-Phrase).
 
       Ein Zertifikat enthält seinen Schlüssel mit einer der folgenden Zeilen:
@@ -232,15 +232,15 @@ In den folgenden Anweisungen werden die Verfahren beschrieben, nach denen benutz
       BEGIN RSA PRIVATE KEY
       ```
 
-      Eine Möglichkeit, den Kennwortsatz aus einem [!DNL .pem]-Zertifikat zu entfernen:
+      Eine Möglichkeit, den Kennwortsatz aus einem [!DNL .pem] certificate:
 
       ```
       openssl rsa  -in password-protected-cert.pem -out no-password-cert.pem
       openssl x509 -in password-protected-cert.pem >> no-password.pem
       ```
 
-   1. Das Zertifikat umfasst die Felder CN, O, OU usw. wie für diesen Client in der [!DNL Access Control.cfg]-Datei des Servers erforderlich.
-   1. Das Zertifikat wurde mit einem *Zweck *** von *client* (oder sowohl *server* **als auch** *client*) ausgestellt.
+   1. Das Zertifikat umfasst die Felder CN, O, OU usw. wie für diesen Client in der [!DNL Access Control.cfg] -Datei.
+   1. Das Zeugnis wurde mit einem *Zweck *** von *client* (oder beides) *server* **und** *client*).
 
       Um zu überprüfen, ob ein Zertifikat über einen Zielcode des Servers und/oder Clients verfügt, können die folgenden Befehle verwendet werden:
 
@@ -255,10 +255,10 @@ In den folgenden Anweisungen werden die Verfahren beschrieben, nach denen benutz
       custom_communications_cert.pem: OK
       ```
 
-      Für ein Client-Zertifikat ist nur der zweite Befehl erforderlich, um [!DNL OK] auszugeben.
+      Für ein Client-Zertifikat ist nur der zweite Befehl erforderlich, um [!DNL OK].
 
-1. Platzieren Sie das Zertifikat im Verzeichnis **Zertifikate** des Clients.
-1. Stellen Sie in [!DNL Insight.cfg] unter *serverInfo* für jeden Cluster, den Sie dieses Zertifikat verwenden möchten, sicher, dass das *benutzerdefinierte Client-Zertifikat* benannt ist, z. B.:
+1. Platzieren Sie das Zertifikat im **Zertifikate** Verzeichnis.
+1. In [!DNL Insight.cfg] unter *serverInfo* Stellen Sie für jeden Cluster, den Sie dieses Zertifikat verwenden möchten, sicher, dass die *Benutzerdefinierte Client-Zertifikate* benannt ist, z. B.:
 
    ```
    Servers = vector: 1 items
@@ -269,12 +269,12 @@ In den folgenden Anweisungen werden die Verfahren beschrieben, nach denen benutz
 
 ## Einrichten benutzerdefinierter Serverzertifikate {#setting-up-custom-server-certificates}
 
-In diesem Abschnitt wird davon ausgegangen, dass Sie über einen Cluster verfügen, der aktiv ist und von Visual Sciences ausgestellte Zertifikate verwendet wird. Die Konfiguration folgt gängigen Verfahren (z. B. wird der Ordner *Komponenten für Verarbeitungsserver* auf dem Übergeordneten mit den Ordnern *Komponenten* aller DPUs synchronisiert).
+In diesem Abschnitt wird davon ausgegangen, dass Sie über einen Cluster verfügen, der aktiv ist und von dem Zertifikate verwendet werden, die von Visual Sciences ausgestellt wurden. Die Konfiguration folgt gängigen Verfahren (z. B. dem *Komponenten für Verarbeitungsserver* -Verzeichnis auf dem Übergeordneten wird mit dem *Komponenten* -Verzeichnissen aller DPUs).
 
-1. Fügen Sie das Zertifikat der ausstellenden Zertifizierungsstelle zum [!DNL trust_cert_ca.pem] hinzu, das auf jedem Server im Cluster und jedem Client installiert ist, der mit diesem Cluster kommunizieren muss.
+1. Fügen Sie die Bescheinigung der ausstellenden Zertifizierungsstelle der [!DNL trust_cert_ca.pem] wird auf jedem Server im Cluster installiert und auf jedem Client, der mit diesem Cluster kommunizieren muss.
 1. Rufen Sie für jeden Server im Cluster ein benutzerdefiniertes Zertifikat mit den folgenden Anforderungen ab:
 
-   1. Benutzerdefiniertes Zertifikat ist als [!DNL .pem]-Zertifikat formatiert.
+   1. Benutzerdefiniertes Zertifikat wird als [!DNL .pem] Zertifikat.
    1. Das Zertifikat enthält seinen Schlüssel und ist unverschlüsselt (d. h. es hat kein Kennwort/keine Passwort-Phrase).
 
       Ein Zertifikat enthält seinen Schlüssel, wenn er eine Zeile wie die folgende enthält:
@@ -284,15 +284,15 @@ In diesem Abschnitt wird davon ausgegangen, dass Sie über einen Cluster verfüg
       BEGIN RSA PRIVATE KEY
       ```
 
-      Eine Möglichkeit, den Kennwortsatz aus einem [!DNL .pem]-Zertifikat zu entfernen:
+      Eine Möglichkeit, den Kennwortsatz aus einem [!DNL .pem] certificate:
 
       ```
       openssl rsa  -in password-protected-cert.pem -out no-password-cert.pem
       openssl x509 -in password-protected-cert.pem >> no-password.pem
       ```
 
-   1. Das Zertifikat hat dieselbe KN wie das derzeit auf dem Server installierte [!DNL server_cert.pem].
-   1. Das Zertifikat wurde mit dem Zweck *server* und *client* ausgestellt.
+   1. Das Zertifikat hat dieselbe KN wie das [!DNL server_cert.pem] derzeit auf dem Server installiert ist.
+   1. Die Bescheinigung wurde mit dem Ziel ausgestellt, *server* und *client*.
 
       Um zu überprüfen, ob ein Zertifikat über einen Zielcode des Servers und/oder Clients verfügt, können die folgenden Befehle verwendet werden:
 
@@ -307,11 +307,11 @@ In diesem Abschnitt wird davon ausgegangen, dass Sie über einen Cluster verfüg
       custom_communications_cert.pem: OK
       ```
 
-      Für ein Client-Zertifikat ist nur der zweite Befehl erforderlich, um [!DNL OK] auszugeben.
+      Für ein Client-Zertifikat ist nur der zweite Befehl erforderlich, um [!DNL OK].
 
-1. Installieren Sie das benutzerdefinierte Zertifikat jedes Servers im Verzeichnis **Zertifikate** des Servers als [!DNL custom_communications_cert.pem].
+1. Installieren Sie das benutzerdefinierte Zertifikat jedes Servers im **Zertifikate** Verzeichnis des Servers als [!DNL custom_communications_cert.pem].
 
-1. Fügen Sie mithilfe eines Texteditors die folgende Zeile zur Datei **Communications.cfg** in den Verzeichnissen *Komponenten* und *Komponenten für Verarbeitungsserver* direkt unterhalb der ersten Zeile ( [!DNL component = CommServer]) hinzu:
+1. Fügen Sie mithilfe eines Texteditors die folgende Zeile hinzu **Communications.cfg** -Datei in beiden *Komponenten* und *Komponenten für Verarbeitungsserver* Verzeichnisse direkt unterhalb der ersten Zeile ( [!DNL component = CommServer]):
 
    ```
    Certificate = string: Certificates\\custom_communications_cert.pem
@@ -321,7 +321,7 @@ In diesem Abschnitt wird davon ausgegangen, dass Sie über einen Cluster verfüg
 
 **Über Zertifikatfehlerwarnung**
 
-Wenn der Insight-Server oder -Client nach einem **license**-Zertifikat im Verzeichnis **Certificates** sucht, versucht er, alle Zertifikate (außer [!DNL trust_ca_cert.pem]) anhand einer hartcodierten Kopie des Insight CA-Zertifikats zu validieren, was bei einem im Verzeichnis vorhandenen benutzerdefinierten Zertifikat fehlschlägt. Der Server gibt diese Warnung aus:
+Wenn der Insight-Server oder -Client nach einer **Lizenz** Zertifikat im **Zertifikate** Verzeichnis, versucht es, alle Zertifikate zu validieren (mit Ausnahme von [!DNL trust_ca_cert.pem]), gegen eine hartcodierte Kopie des Insight CA-Zertifikats, die bei einem im Verzeichnis vorhandenen benutzerdefinierten Zertifikat fehlschlägt. Der Server gibt diese Warnung aus:
 
 ```
 Certificate failed to verify. Error 20 at 0 depth. Desc: unable to get local issuer certificate. Cert details:
@@ -337,24 +337,24 @@ Verschlüsseln Sie bei der Kommunikation zwischen Client und Server Passwörter 
 string_encryption.xml
 -->
 
-Bei der Kommunikation zwischen dem Data Workbench-Client (Workstation) und dem Server können Sie einen Value-Parameter (z. B. ein Kennwort) mit dem Typ *EncryptedString* speichern. Dadurch wird der Parameter ausgeblendet und die Zeichenfolge im *Windows Credential Store* auf dem Server mit dem entsprechenden Schlüssel gespeichert. Dadurch werden hauptsächlich in Exporten verwendete Anmeldeinformationen gespeichert, können jedoch zum Verschlüsseln beliebiger Parameter verwendet werden.
+Bei der Kommunikation zwischen dem Data Workbench-Client (Workstation) und dem Server können Sie einen Value-Parameter (z. B. ein Kennwort) mit dem Typ *EncryptedString*. Dadurch wird der Parameter ausgeblendet und der String im *Windows Credential Store* auf dem Server mit dem entsprechenden Schlüssel zurückgegeben. Dadurch werden hauptsächlich in Exporten verwendete Anmeldeinformationen gespeichert, können jedoch zum Verschlüsseln beliebiger Parameter verwendet werden.
 
-* Unter Server\**EncryptStrings** wurde ein neuer Ordner hinzugefügt.
+* Unter Server\* wurde ein neuer Ordner hinzugefügt.*EncryptStrings**.
 
    Hier legen Sie die Konfigurationsdatei fest, um Zeichenfolgen zu verschlüsseln.
 
-* Eine neue Konfigurationsdatei wurde unter Server\Component\**EncryptedStrings.cfg** hinzugefügt.
+* Eine neue Konfigurationsdatei wurde unter Server\Component\* hinzugefügt.*EncryptedStrings.cfg**.
 
    ```
    component = EncryptionComponent:
      Path = Path: EncryptStrings\\*.cfg
    ```
 
-   Diese Datei fragt den Ordner *Server*\*EncryptStrings* nach Verschlüsselungskonfigurationsdateien ab.
+   Diese Datei fragt die *Server* Ordner \*EncryptStrings* für Verschlüsselungskonfigurationsdateien.
 
 **Verschlüsseln einer Zeichenfolge**:
 
-1. Erstellen Sie eine Konfigurationsdatei **EncryptedStrings.cfg** für eine Zeichenfolge mit den folgenden Feldern:
+1. Erstellen Sie eine **EncryptedStrings.cfg** Konfigurationsdatei für eine Zeichenfolge mit den folgenden Feldern:
 
    ```
    Names = vector: 1 items
@@ -364,21 +364,21 @@ Bei der Kommunikation zwischen dem Data Workbench-Client (Workstation) und dem S
      Value = string: // Value to be encrypted
    ```
 
-   * *Wert*  - Dieses Feld enthält die Nur-Text-Zeichenfolge, die verschlüsselt werden muss.
+   * *Wert* - Dieses Feld enthält die Nur-Text-Zeichenfolge, die verschlüsselt werden muss.
 
-      Dies ist nur serverseitige Verschlüsselung. Die Einstellung *Wert* wird nur auf dem Servercomputer verschlüsselt.
+      Dies ist nur serverseitige Verschlüsselung. Die *Wert* -Einstellung ist nur auf dem Servercomputer verschlüsselt.
 
-   * *Name*  - Dieses Feld enthält einen Wert, der die verschlüsselte Zeichenfolge identifiziert.
-   * *EncryptValue*  - Dieses Feld bleibt in der Eingabekonfiguration leer. Der verschlüsselte Wert wird in diesem Feld zurückgegeben.
+   * *Name* - Dieses Feld enthält einen Wert, der die verschlüsselte Zeichenfolge identifiziert.
+   * *EncryptValue* - Dieses Feld wird in der Eingabekonfiguration leer gelassen. Der verschlüsselte Wert wird in diesem Feld zurückgegeben.
 
-   Sie können mehrere **NameEncryptValuePair**-Werte für verschiedene Felder zur Verschlüsselung hinzufügen.
+   Sie können mehrere **NameEncryptValuePair** Werte für verschiedene Felder zur Verschlüsselung.
 
    >[!NOTE]
    >
    >Alle leeren Wertfelder werden entfernt.
 
-1. Speichern Sie die Datei **EncryptedStrings.cfg** im Ordner Server\**EncryptStrings** .
+1. Speichern Sie die **EncryptedStrings.cfg** Datei auf den Server\**EncryptStrings** Ordner.
 
 **Ausgabedatei**
 
-Eine Ausgabedatei wird mit demselben Namen wie die Eingabedatei mit einem &lt;*Dateinamen*> generiert.** verschlüsselt. Wenn die Eingabedatei beispielsweise *sample.cfg* heißt, erhält die Ausgabedatei den Namen *sample.cfg.encrypted*.
+Eine Ausgabedatei wird mit demselben Namen wie die Eingabedatei mit einem &lt;*filename*>.*verschlüsselt* -Erweiterung. Wenn die Eingabedatei beispielsweise *sample.cfg* dann erhält die Ausgabedatei den Namen *sample.cfg.encrypted*.

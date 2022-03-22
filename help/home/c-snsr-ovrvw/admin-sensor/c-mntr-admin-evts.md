@@ -1,11 +1,11 @@
 ---
 description: Um Sensorfehler so schnell wie möglich zu erkennen und zu beheben, bevor sie zu größeren Problemen oder Ausfällen führen, sollten Sie regelmäßig Ihre Ereignisprotokolle überwachen.
-title: Überwachen administrativer Ereignisse
+title: Überwachen administrativer Ereignisse (Sensor)
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1093'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Um Sensorfehler so schnell wie möglich zu erkennen und zu beheben, bevor sie zu
 
 **Empfohlene Häufigkeit:** Mindestens stündlich
 
-Sie können diese Ereignisse mithilfe der Windows Event Viewer- oder Unix Syslog-Datei und der [!DNL *.sensor-log] -Dateien überwachen, die sich standardmäßig im Ordner [!DNL Logs] im Installationsverzeichnis [!DNL Sensor] befinden. Diese Dateien weisen auf das Vorhandensein von Fehlern während der Datenerfassung hin, insbesondere wenn [!DNL Sensor] keine Verbindung zum Ziel [!DNL data workbench server] herstellen kann und mit der Warteschlange für Daten beginnt.
+Sie können diese Ereignisse mithilfe der Windows Event Viewer- oder Unix Syslog-Datei und der [!DNL *.sensor-log] -Dateien, die sich standardmäßig im [!DNL Logs] -Ordner in [!DNL Sensor] Installationsverzeichnis. Diese Dateien weisen auf Fehler während der Datenerfassung hin, insbesondere wenn eine [!DNL Sensor] keine Verbindung zum Ziel herstellen kann [!DNL data workbench server] und beginnt mit der Datenwarteschlange.
 
 ## Überwachen von Ereignissen unter Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
@@ -24,23 +24,23 @@ Der Sensor protokolliert Fehler im Anwendungsprotokoll des Windows Event Viewers
 
 Nachrichten werden je nach Schweregrad als &quot;Informationen&quot;, &quot;Warnung&quot;oder &quot;Fehler&quot;protokolliert.
 
-**So öffnen Sie die Windows Event Viewer**:
+**So öffnen Sie den Windows Event Viewer**:
 
-* Klicken Sie auf **Start > Systemsteuerung > Verwaltung > Ereignis-Viewer**.
+* Klicken **Start > Systemsteuerung > Verwaltung > Ereignis-Viewer**.
 
-## Überwachung von Ereignissen unter Unix {#section-5de3947891fb47ac88b7c855e545d54a}
+## Ereignisse unter Unix überwachen {#section-5de3947891fb47ac88b7c855e545d54a}
 
-Der Sensor protokolliert Fehler beim [!DNL syslog]-Daemon.
+Der Sensor protokolliert Fehler an die [!DNL syslog] Daemon.
 
 Der syslog-Daemon schreibt Fehlermeldungen in Protokolldateien basierend auf den Regeln, die Sie in Ihrer syslog.conf-Datei angegeben haben. Fehler werden mit den Flags &quot;LOG_DAEMON&quot;und entweder &quot;LOG_NOTICE&quot;oder &quot;LOG_ERR&quot;je nach Schweregrad protokolliert.
 
 **Öffnen des Unix-Syslog**
 
-Das Unix-Syslog befindet sich normalerweise in [!DNL /var/adm/messages] oder [!DNL /var/log/messages].
+Das Unix-Syslog befindet sich normalerweise unter [!DNL /var/adm/messages] oder [!DNL /var/log/messages].
 
 Navigieren Sie zum entsprechenden Verzeichnis und öffnen Sie das syslog.
 
-## Nachrichtenformate {#section-a0899add30fd4b2da58a23b9e3324693}
+## Grundlagen zu Nachrichtenformaten {#section-a0899add30fd4b2da58a23b9e3324693}
 
 Alle Sensormeldungen enthalten die Zeichenfolge &quot;Sensor&quot; und sind nummeriert, um die Wichtigkeit der angezeigten Nachricht widerzuspiegeln.
 
@@ -58,13 +58,13 @@ Alle Sensormeldungen enthalten die Zeichenfolge &quot;Sensor&quot; und sind numm
 
 Ihr Netzwerk-Management-Tool kann so eingestellt werden, dass Ihre Nachrichten alle 5-10 Minuten auf Fehler mit der Quelle &quot;Sensor&quot;überwacht und geeignete Mitarbeiter auf Probleme aufmerksam gemacht werden, die möglicherweise eine Intervention erfordern. Sie können das System nur auf bestimmte Arten von Ereignismeldungen überwachen, wie z. B. die Zeichenfolge &quot;Sensor Error&quot;. Alternativ können Sie unterschiedliche Regeln auf Ereignisse anwenden, die den Zeichenfolgen &quot;Sensor Info&quot;, &quot;Sensor Warning&quot;und &quot;Sensor Error&quot;vorangestellt sind.
 
-## Identifizieren wichtiger Nachrichten {#section-5a20f5dc18ca4012931d194db855e54e}
+## Wichtige Nachrichten identifizieren {#section-5a20f5dc18ca4012931d194db855e54e}
 
 In Ihren Ereignisprotokollen sollten Sie auf alle Nachrichten bezüglich der Warteschlangengröße achten und diese sofort bearbeiten.
 
-Beispielsweise müssen Nachrichten wie &quot;[!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot;aufmerksam verfolgt werden.
+Beispielsweise Meldungen wie [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; muss beachtet werden.
 
-## Antwort auf Sensor-Ereignismeldungen {#section-0004c4a169dc4a8882d9bd87dd326ad4}
+## Reaktion auf Sensor-Ereignismeldungen {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
 Tabellen, die Sensor-Ereignisse und empfohlene Aktionen für die unterstützten Webserverplattformen beschreiben.
 
@@ -139,7 +139,7 @@ Tabellen, die Sensor-Ereignisse und empfohlene Aktionen für die unterstützten 
    <td colname="col2"> Wenden Sie sich an Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensor-Fehler 4022: Arbeitsspeicherblock der Länge &lt;x&gt; kann nicht mit Versatz &lt;y&gt; zugeordnet werden </td> 
+   <td colname="col1"> Sensor-Fehler 4022: Speicherblock der Länge kann nicht zugeordnet werden &lt;x&gt; offset &lt;y&gt; </td> 
    <td colname="col2"> Wenden Sie sich an Adobe ClientCare. </td> 
   </tr> 
   <tr> 
@@ -193,10 +193,10 @@ Tabellen, die Sensor-Ereignisse und empfohlene Aktionen für die unterstützten 
 
 | Ereignisnachricht | Vorgeschlagene Aktion |
 |---|---|
-| Sensor-Fehler 3015: ns/server/[server]/module/[module] -Abschnitt fehlt in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
+| Sensor-Fehler 3015: ns/server/[server]/module/[Modul] -Abschnitt fehlt in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
 | Sensor-Fehler 3019: vys-cookie wurde nicht vor vys-log aufgerufen. Wenden Sie sich an den Support. Wenden Sie sich an Adobe ClientCare. | Wenden Sie sich an den Support. Wenden Sie sich an Adobe ClientCare. |
-| Sensor-Fehler 3020: VisualSciencesConfig fehlt als erster Eintrag im Abschnitt [Abschnitt] in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
-| Sensor-Fehler 3021: In VisualSciencesConfig fehlt ein Wert im Abschnitt [Abschnitt] in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
+| Sensor-Fehler 3020: VisualSciencesConfig fehlt als erster Eintrag in [Abschnitt] in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
+| Sensor-Fehler 3021: In VisualSciencesConfig fehlt ein Wert in [Abschnitt] in der AOLServer-Konfigurationsdatei. | Dies ist ein Konfigurationsfehler. Richtig, wie im Fehler angegeben. |
 
 **iPlanet- und Java-System-Webserver**
 

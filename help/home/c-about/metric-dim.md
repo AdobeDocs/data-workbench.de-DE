@@ -1,11 +1,11 @@
 ---
 description: Erstellen Sie mithilfe eines schrittweisen Assistenten Dimensionen, die durch Metrikattribute definiert wurden (Metrikdimensionen). Testen, zeigen Sie die neue Metrikdimension in der Liste der Dimensionen an und speichern Sie sie.
-title: Assistent für Metrikdimensionen
+title: Assistent für Metrikdimensionen (Dimensionen)
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '486'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Eine Metrikdimension konvertiert eine Metrik in eine neue Dimension. Beispielswe
 
 1. Öffnen Sie den Assistenten für Metrikdimensionen .
 
-   Klicken Sie in einem Arbeitsbereich mit der rechten Maustaste und wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]** aus.
+   Klicken Sie in einem Arbeitsbereich mit der rechten Maustaste und wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**.
 
 1. Benennen Sie die Metrikdimension.
 
@@ -50,7 +50,7 @@ Eine Metrikdimension konvertiert eine Metrik in eine neue Dimension. Beispielswe
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   Sie können Ihren eigenen [Metrikausdruck](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) hinzufügen oder aus einem anderen Metrik-Editor oder einer anderen Visualisierung ausschneiden und einfügen. Syntaxfehler, Formelfehler, nicht definierte Filter und andere Fehler werden im Assistenten gemeldet.
+   Sie können Ihre eigenen [Metrikausdruck](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) oder aus einem anderen Metrik-Editor oder einer anderen Visualisierung ausschneiden und einfügen. Syntaxfehler, Formelfehler, nicht definierte Filter und andere Fehler werden im Assistenten gemeldet.
 
 1. Klicken Sie auf **[!UICONTROL Next]**.
 
@@ -60,26 +60,26 @@ Eine Metrikdimension konvertiert eine Metrik in eine neue Dimension. Beispielswe
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Das Format definiert, wie die Metrik angezeigt wird, wenn sie in einer Visualisierung geöffnet wird. Diese Formate werden ausgewählt [printf standards](https://www.cplusplus.com/reference/cstdio/printf/), wie unten definiert:
+   Das Format definiert, wie die Metrik angezeigt wird, wenn sie in einer Visualisierung geöffnet wird. Diese Formate werden ausgewählt [Printf-Standards](https://www.cplusplus.com/reference/cstdio/printf/), definiert unten:
 
    ```
    %[flags][width][.precision][length][specifier]
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   Im Feld **[!UICONTROL Preview]** wird ein Wert basierend auf der ausgewählten Metrik und dem ausgewählten Format angezeigt.
+   Im **[!UICONTROL Preview]** -Feld wird ein Wert basierend auf der ausgewählten Metrik und dem ausgewählten Format angezeigt.
 
 1. Ausdruck für die Behälteranzahl hinzufügen.
 
-   Sie können einen Metrikdim mit verschiedenen Bereichen oder Behältern definieren. Gibt Teilmengen von Elementen basierend auf der Größe zurück, z. B. [0-4], [5-10],...). Elemente der Dimension-Ebene beziehen sich auf die Elemente, deren Bereich den Metrikwert enthält. Siehe Beschreibung des Behälterausdrucks unter [Syntax für Dimension-Ausdrücke](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
+   Sie können einen Metrikdim mit verschiedenen Bereichen oder Behältern definieren. Dadurch werden basierend auf der Größe Teilmengen von Elementen zurückgegeben, z. B. [0-4], [5-10], ...). Elemente der Dimension-Ebene beziehen sich auf die Elemente, deren Bereich den Metrikwert enthält. Siehe Beschreibung des Behälterausdrucks unter [Syntax für Dimension-Ausdrücke](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
-1. Klicken Sie auf **[!UICONTROL Preview]** , um die Tabelle der Metrikdimensionswerte vor dem Speichern zu öffnen.
+1. Klicken **[!UICONTROL Preview]** , um vor dem Speichern eine Tabelle mit Metrikdimensionswerten zu öffnen.
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
    In der Tabelle werden die Metrikwerte pro Metrikdim detailliert beschrieben.
 
-1. Klicken Sie auf **[!UICONTROL Show in Dimension Menu]** , um die neu erstellte Dimension der Registerkarte **Dimension** im **Finder** hinzuzufügen.
+1. Klicken **[!UICONTROL Show in Dimension Menu]** , um die neu erstellte Dimension zum **Dimension** im **Finder**.
 
 1. Klicken Sie auf **[!UICONTROL Next]**.
 
@@ -93,6 +93,6 @@ Eine Metrikdimension konvertiert eine Metrik in eine neue Dimension. Beispielswe
    | **[!UICONTROL Launch Graph]** | Starten Sie eine PNG-Grafik der Tabelle. |
    | **[!UICONTROL Launch Table]** | Starten Sie eine Tabelle im Arbeitsbereich mit Werten in Spalten, die Werte des neuen Metrikabstands im Vergleich zu den Werten der ausgewählten Metrik auflisten. |
 
-1. Klicken Sie auf **[!UICONTROL Finish]** und speichern Sie.
+1. Klicken **[!UICONTROL Finish]** und speichern.
 
    Daraufhin wird ein Dialogfeld zum Speichern geöffnet, in dem Sie die Datei speichern können. Die ausgewählten Optionen zum Anzeigen von Werten werden im Arbeitsbereich geöffnet.

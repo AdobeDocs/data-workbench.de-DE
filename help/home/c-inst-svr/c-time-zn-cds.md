@@ -1,12 +1,12 @@
 ---
 description: Formatanweisungen zu zeitbasierten Parametern in Insight Server.
-title: Zeitzonencodes
+title: Zeitzonencodes (Insight Server)
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 exl-id: d8923b01-24fe-4a70-9800-f2eedf567c6a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 5%
+source-wordcount: '365'
+ht-degree: 4%
 
 ---
 
@@ -14,26 +14,26 @@ ht-degree: 5%
 
 Formatanweisungen zu zeitbasierten Parametern in Insight Server.
 
-Die meisten zeitbasierten Parameter in [!DNL Insight Server] sind im folgenden Format angegeben:
+Die meisten zeitbasierten Parameter in [!DNL Insight Server] werden im folgenden Format angegeben:
 
-*Monat DD, JJJJ HH:MM:SS TimeZone*
+*Monat DD, JJJJ HH:MM:SStimeZone*
 
 Beispiel: 13. August 2013 22:30:00 EST
 
 Zeitzonen werden in einem systemunabhängigen Zeitzonenformat (Coordinated Universal Time) mit folgendem Format ausgedrückt:
 
-UTC +hhmm *Strules*
+UTC +hhmm *dstrules*
 
-Das Zeichen (+) kann entweder ein Plus- (+) oder ein Minuszeichen (-) sein, und *hhmm* ist der Offset von UTC in Stunden und Minuten. Die optionale Variable *desstrules* gibt einen Regelsatz an, um die Sommerzeit oder eine ähnliche Richtlinie zur Uhrzeitverschiebung zu implementieren.
+Das Zeichen (+) kann ein Pluszeichen (+) oder ein Minuszeichen (-) sein und *hhmm* ist der Offset von UTC in Stunden und Minuten. Die optionale Variable *dstrules* gibt einen Regelsatz zur Implementierung der Sommerzeit oder einer ähnlichen Richtlinie zur Uhrzeitverschiebung an.
 
-Wenn Sie *Strings* angeben, muss eine tabulatorgetrennte Datei mit dem Namen *&lt; [!DNL dstrules]* [!DNL .dst] im Ordner Datensatz\TimeZone des Basisprofils (für Konfigurationsdateien, die nicht mit einem bestimmten Datensatz verknüpft sind) oder des Datensatzprofils (für Konfigurationsdateien, die datasetspezifisch sind) vorhanden sein. Die Datei gibt einen zeitzonenunabhängigen Regelsatz für die Sommerzeit an. Sie können für verschiedene Jahre unterschiedliche Regeln haben. Die von der Adobe im Basisprofil bereitgestellte [!DNL DST.dst]-Datei enthält die US-Standardregeln, die durch das Energy Policy Act von 2005 (in Kraft seit 2007) festgelegt wurden, und die US-Vorschriften für frühere Jahre.
+Wenn Sie *dstrules*, eine tabulatorgetrennte Datei mit dem Namen *&lt; [!DNL dstrules]>* [!DNL .dst] muss im Ordner &quot;Dataset\TimeZone&quot;des Basisprofils (für Konfigurationsdateien, die nicht mit einem bestimmten Datensatz verknüpft sind) oder des Datensatzprofils (für Konfigurationsdateien, die dataset-spezifisch sind) vorhanden sein. Die Datei gibt einen zeitzonenunabhängigen Regelsatz für die Sommerzeit an. Sie können für verschiedene Jahre unterschiedliche Regeln haben. Die [!DNL DST.dst] -Datei, die von der Adobe im Basisprofil bereitgestellt wird, die Standardregeln der USA, die durch das Energy Policy Act von 2005 (in Kraft seit 2007) festgelegt wurden, und die US-Vorschriften für frühere Jahre.
 
 Nachfolgend finden Sie Beispiele für Zeitzoneneinträge:
 
 * US Eastern Daylight Time: Zeitzone = Zeichenfolge: UTC -0500 DST
-* UTC-Zeit ohne Offset und keine *Strules* (entspricht GMT): Zeitzone = Zeichenfolge: UTC -0000
+* UTC-Zeit ohne Versatz und keine *dstrules* (entspricht GMT): Zeitzone = Zeichenfolge: UTC -0000
 
-Wenn dieses Format verwendet wird, muss die Systemzeitzone der Maschinen [!DNL Insight Server], [!DNL Insight] und [!DNL Report] nicht mit der angegebenen Zeitzone übereinstimmen. Darüber hinaus müssen alle aktiven Datensatzprofile auf einem [!DNL Insight Server]-Computer nicht dieselbe Zeitzoneneinstellung haben.
+Wenn dieses Format verwendet wird, wird die Systemzeitzone von [!DNL Insight Server], [!DNL Insight]und [!DNL Report] -Maschinen müssen nicht mit der angegebenen Zeitzone übereinstimmen. Darüber hinaus beziehen sich alle aktiven Datensatzprofile auf eine [!DNL Insight Server] Die Zeitzoneneinstellung für die Maschine muss nicht identisch sein.
 
 Die folgende Tabelle enthält die Liste der Codes, mit denen Sie Zeitzonen in zeitbasierten Parametern angeben können.
 
@@ -41,7 +41,7 @@ Die folgende Tabelle enthält die Liste der Codes, mit denen Sie Zeitzonen in ze
 
 >[!NOTE]
 >
->Wenn Sie die Sommerzeit oder eine ähnliche Richtlinie zum Wechsel der Uhr implementieren, müssen Sie die Datei [!DNL .dst] mit den entsprechenden Regeln auf dem Computer *Profilname*\Dataset\Timezone directory on the [!DNL Insight Server] speichern.
+>Wenn Sie die Sommerzeit oder eine ähnliche Uhrzeitverschiebungspolitik implementieren, müssen Sie die [!DNL .dst] -Datei, die die entsprechenden Regeln im *Profilname*\Datensatz\Zeitzone im Ordner [!DNL Insight Server] Maschine.
 
 | Code | Zeitzone | Versatz von GMT |
 |---|---|---|

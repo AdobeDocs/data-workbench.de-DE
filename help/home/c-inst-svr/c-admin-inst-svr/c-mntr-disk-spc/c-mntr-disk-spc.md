@@ -1,12 +1,12 @@
 ---
 description: Sie sollten regelmäßig den verfügbaren Speicherplatz überwachen, damit alle Insight Server-Computer weiterhin auf dem höchstmöglichen Niveau arbeiten.
-title: Überwachen des Festplattenspeichers
+title: Überwachen des Festplattenspeichers (Insight Server)
 uuid: 13248e36-4e88-4212-816e-bcc12deefcb4
 exl-id: c2198edc-3961-4845-97cf-0ebe039f9a66
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 4%
+source-wordcount: '126'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Sie sollten regelmäßig den verfügbaren Speicherplatz überwachen, damit alle Insight Server-Computer weiterhin auf dem höchstmöglichen Niveau arbeiten.
 
-Jeder Computer [!DNL Insight Server] speichert die folgenden Datentypen:
+Jeder [!DNL Insight Server] Machine speichert die folgenden Datentypen:
 
 * Datensatzdaten
 * Ereignisdaten
@@ -23,7 +23,7 @@ Jeder Computer [!DNL Insight Server] speichert die folgenden Datentypen:
 * Ausgabedaten
 * Systemdaten
 
-Weitere Informationen zu den Datenspeicheranforderungen als in diesem Abschnitt angegeben, finden Sie im Dokument *Mindestsystemanforderungen* .
+Weitere Informationen zu den Datenspeicheranforderungen, die in diesem Abschnitt bereitgestellt werden, finden Sie im Abschnitt *Mindestsystemanforderungen* Dokument.
 
 >[!NOTE]
 >

@@ -1,12 +1,12 @@
 ---
 description: Informationen zu den Zeitzonen-Codes und -Formaten.
-title: Zeitzonencodes
+title: Zeitzonencodes und -formate
 uuid: 5698882a-9682-41d8-88d3-8471578a22cc
 exl-id: 2829c4ca-af6f-4ddb-acce-b33c3b552ba7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 5%
+source-wordcount: '378'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ Zeitzonen werden in einem systemunabhängigen Zeitzonenformat (Coordinated Unive
 
 Das Zeichen (+) kann ein Plus- (+) oder Minuszeichen (-) sein und hmm ist der Offset von UTC in Stunden und Minuten. Die optionale Variable gibt einen Regelsatz an, um die Sommerzeit oder eine ähnliche Richtlinie zur Uhrzeitverschiebung zu implementieren.
 
-Wenn Sie Regeln angeben, muss im Verzeichnis Datensatz\TimeZone eine tabulatorgetrennte Datei mit dem Namen [!DNL dstrules.dst] entweder im Verzeichnis [!DNL Base] des Profils (für Konfigurationsdateien, die nicht mit einem bestimmten Datensatz verknüpft sind) oder im Datensatzprofil (für Konfigurationsdateien, die dataset-spezifisch sind) vorhanden sein. Die Datei gibt einen zeitzonenunabhängigen Regelsatz für die Sommerzeit an. Sie können für verschiedene Jahre unterschiedliche Regeln haben. Die von der Adobe im Profil [!DNL Base] bereitgestellte [!DNL DST.dst]-Datei enthält die US-Standardregeln, die durch das Energy Policy Act von 2005 (in Kraft seit 2007) festgelegt wurden, und die US-Vorschriften für frühere Jahre.
+Wenn Sie Module angeben, eine tabulatorgetrennte Datei mit dem Namen [!DNL dstrules.dst] muss im Ordner &quot;Dataset\TimeZone&quot;des [!DNL Base] Profil (für Konfigurationsdateien, die nicht mit einem bestimmten Datensatz verknüpft sind) oder das Datensatzprofil (für Konfigurationsdateien, die dataset-spezifisch sind). Die Datei gibt einen zeitzonenunabhängigen Regelsatz für die Sommerzeit an. Sie können für verschiedene Jahre unterschiedliche Regeln haben. Die [!DNL DST.dst] -Datei, die von der Adobe im [!DNL Base] profile gibt die Standardvorschriften der USA an, die durch das Energy Policy Act von 2005 (in Kraft seit 2007) festgelegt wurden, und die US-Vorschriften für frühere Jahre.
 
 Nachfolgend finden Sie Beispiele für Zeitzoneneinträge:
 
@@ -38,7 +38,7 @@ Die folgende Tabelle enthält die Liste der Codes, mit denen Sie Zeitzonen in ze
 
 ## Zeitzonen-Code-Tabelle {#section-b4f965b872c543e2ac52a3c94410d076}
 
-Wenn Sie die Sommerzeit oder eine ähnliche Richtlinie zum Wechsel der Uhr implementieren, müssen Sie die Datei [!DNL .dst] mit den entsprechenden Regeln im Profilnamen [!DNL \Dataset\Timezone] auf dem Data Workbench-Servercomputer speichern.
+Wenn Sie die Sommerzeit oder eine ähnliche Uhrzeitverschiebungspolitik implementieren, müssen Sie die [!DNL .dst] Datei mit den entsprechenden Regeln im Profilnamen [!DNL \Dataset\Timezone] auf dem Data Workbench-Servercomputer.
 
 | Code | Zeitzone | Versatz von GMT |
 |---|---|---|
