@@ -1,10 +1,10 @@
 ---
 description: Die Testergebnisse müssen klar und aussagekräftig sein, damit Sie sich darauf verlassen können, auf der Grundlage dieser Ergebnisse große Dollarentscheidungen zu treffen.
-solution: Analytics,Analytics
+solution: Analytics
 title: Was soll getestet werden?
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Die Testergebnisse müssen klar und aussagekräftig sein, damit Sie sich darauf verlassen können, auf der Grundlage dieser Ergebnisse große Dollarentscheidungen zu treffen.
 
-Obwohl Sie verschiedene Seitenlayouts mit [!DNL Sensor] und Site testen können, legt Adobe nahe, dass Sie sich auf das Testen von hochwertigen, strategischen Geschäftsinitiativen oder neuen oder neu gestalteten Website-Funktionen konzentrieren, die die Ziele ansprechen, die Sie für Ihre Website sowie für Ihr Unternehmen festgelegt haben. Sie können Probleme wie beste Preisgarantien, Personalisierungsfunktionalität, Marktangebote (z. B. Pakete oder Bundles), kreatives Design und Anwendungsprozesse testen.
+Sie können zwar verschiedene Seitenlayouts mit [!DNL Sensor] und Site, legt Adobe nahe, dass Sie sich auf das Testen von hochwertigen, strategischen Geschäftsinitiativen oder neuen oder neu gestalteten Website-Funktionen konzentrieren, die die Ziele ansprechen, die Sie für Ihre Website sowie für Ihr Unternehmen festgelegt haben. Sie können Probleme wie beste Preisgarantien, Personalisierungsfunktionalität, Marktangebote (z. B. Pakete oder Bundles), kreatives Design und Anwendungsprozesse testen.
 
 Die folgenden Konzepte sind bei der Entwicklung Ihres kontrollierten Experiments am wichtigsten:
 
@@ -32,11 +32,11 @@ Mit Site können viele Arten von Experimenten mit vielen verschiedenen Zielen du
 
 Um diese Ziele zu erreichen, unterstützt Site die folgenden Arten von Methoden für kontrollierte Experimentierungs- und Tests:
 
-* **Seitenersetzung:**  Ersetzen Sie die statische URL X durch die statische URL Y. Diese Methode ist in einer dynamischen Umgebung von begrenzter Bedeutung.
+* **Seitenaustausch:** Ersetzen Sie die statische URL X durch die statische URL Y. Diese Methode ist in einer dynamischen Umgebung von begrenzter Bedeutung.
 * **Dynamische URI-Ersetzung:** Dies ist eine Variante des Seitenaustauschs, die die statische Seite X durch die dynamische Seite Y ersetzt, um dynamischen Inhalt zu rendern.
-* **Objektersetzung:**  Ersetzen Sie das feste Objekt X durch das feste Objekt Y.
+* **Objektersetzung:** Ersetzen Sie das feste Objekt X durch das feste Objekt Y.
 * **Inhaltsersetzung:** Ersetzen Sie den Inhaltssatz X (mehrere Objekte, Seiten, Tabellen usw.) durch den Inhaltssatz Y.
-* **Ersetzen von Experimentvariablen:**  Ersetzen Sie das JavaScript-Objekt /writeCookie_X.js durch das JavaScript-Objekt /writeCookie_Y.js , um ein Cookie zu schreiben, das von einem Back-End-System zur Bereitstellung bestimmter Inhalte verwendet werden kann.
+* **Ersetzen von Experimentvariablen:** Ersetzen Sie das JavaScript-Objekt /writeCookie_X.js durch das JavaScript-Objekt /writeCookie_Y.js , um ein Cookie zu schreiben, das von einem Back-End-System zur Bereitstellung bestimmter Inhalte verwendet werden kann.
 
 >[!NOTE]
 >
@@ -44,4 +44,4 @@ Um diese Ziele zu erreichen, unterstützt Site die folgenden Arten von Methoden 
 >
 >`https://www.omniture.com/index.asp?id=1`
 >
->Beispielsweise können Sie in Ihrem kontrollierten Experiment festlegen, dass der Kontrollgruppen-URI [!DNL index.asp] durch den Testgruppen-URI [!DNL index2.asp] ersetzt wird, um zu bestimmen, welcher Seitenentwurf zu mehr Wert führt.
+>In Ihrem kontrollierten Experiment können Sie beispielsweise angeben, dass die Kontrollgruppe URI [!DNL index.asp] durch den URI der Testgruppe ersetzt werden. [!DNL index2.asp] , um zu bestimmen, welcher Seitenentwurf zu mehr Wert führt.

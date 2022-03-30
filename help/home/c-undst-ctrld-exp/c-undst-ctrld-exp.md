@@ -1,17 +1,17 @@
 ---
 description: Kontrollierte Experimente sind Tests, mit denen Sie die Ergebnisse einer experimentellen Stichprobengruppe mit denen einer Standardkontrollgruppe vergleichen können.
-solution: Analytics,Analytics
+solution: Analytics
 title: Data Workbench gesteuerte Experimente
 uuid: 5fce2d9e-4975-44e4-a7c0-11064d8d28b4
 exl-id: 40bcf6a4-c722-427c-81ac-45dec1eae0b5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
 
 ---
 
-# Von Data Workbench gesteuerte Experimente{#data-workbench-controlled-experiments}
+# Data Workbench gesteuerte Experimente{#data-workbench-controlled-experiments}
 
 Kontrollierte Experimente sind Tests, mit denen Sie die Ergebnisse einer experimentellen Stichprobengruppe mit denen einer Standardkontrollgruppe vergleichen können.
 
@@ -19,6 +19,6 @@ Mit Site können Sie kontrollierte Experimente und deren Ergebnisse implementier
 
 >[!NOTE]
 >
->Site-Experimente können nur in Datensätzen analysiert werden, in denen die einzige verwendete Methode zur Besucheridentifizierung die Methode [!DNL Sensor] zum Festlegen persistenter Cookies ist. Sensoren, die auf J2EE-Servern (JBoss, Tomcat, WebLogic und WebSphere) ausgeführt werden, unterstützen keine kontrollierte Experimentierung. Weitere Informationen finden Sie im folgenden Abschnitt.
+>Site-Experimente können nur in Datensätzen analysiert werden, in denen die einzige verwendete Methode zur Besucheridentifizierung die [!DNL Sensor] persistente Cookie-Methode festlegen. Sensoren, die auf J2EE-Servern (JBoss, Tomcat, WebLogic und WebSphere) ausgeführt werden, unterstützen keine kontrollierte Experimentierung. Weitere Informationen finden Sie im folgenden Abschnitt.
 
 Mithilfe von Site können Sie A/B-, A/B/A- und multivariate kontrollierte Experimente implementieren, um ausreichend Testdaten zu sammeln, um statistisch präzise Daten für eine detaillierte Auswertung Ihrer Hypothese bereitzustellen, ohne die aktuelle Website-Leistung zu beeinträchtigen.

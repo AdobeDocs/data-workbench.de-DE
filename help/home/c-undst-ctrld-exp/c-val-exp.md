@@ -1,10 +1,10 @@
 ---
 description: Nachdem Sie Ihr Experiment bereitgestellt haben, sollten Sie überprüfen, ob das Experiment ordnungsgemäß funktioniert.
-solution: Analytics,Analytics
+solution: Analytics
 title: Validieren des Experiments
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 exl-id: 6dfd01ca-288d-40fd-aad4-75a588902ebd
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 2%
@@ -15,9 +15,9 @@ ht-degree: 2%
 
 Nachdem Sie Ihr Experiment bereitgestellt haben, sollten Sie überprüfen, ob das Experiment ordnungsgemäß funktioniert.
 
-Wie unter [Bearbeiten des ExpCookieURL-Parameters (optional)](../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md#concept-215bf86bab4e4ec0b0cc803ec48a8fcf) beschrieben, kann die im Parameter ExpCookieURL in der Konfigurationsdatei [!DNL Sensor] angegebene Seite verwendet werden, um sich in einer bestimmten Experimentgruppe zu platzieren.
+Wie in [Bearbeiten des ExpCookieURL-Parameters (optional)](../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md#concept-215bf86bab4e4ec0b0cc803ec48a8fcf), die Seite, die im Parameter ExpCookieURL im [!DNL Sensor] Konfigurationsdatei kann verwendet werden, um sich in einer bestimmten Experimentgruppe zu platzieren.
 
-Die standardmäßige virtuelle Seite ist [!DNL /setcookie.htm], Sie müssen jedoch den Wert verwenden, den Sie im Parameter ExpCookieURL festgelegt haben.
+Die standardmäßige virtuelle Seite lautet [!DNL /setcookie.htm], aber Sie müssen den Wert verwenden, den Sie im Parameter ExpCookieURL festgelegt haben.
 
 ## Anfordern der Testseite {#section-8aed3b48d47f4e6c8869c0216f8781b1}
 
@@ -33,7 +33,7 @@ Beispiel:
 
 [!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
-Wenn die virtuelle URL-Anforderung an den Server gesendet wird, identifiziert [!DNL Sensor] Sie innerhalb des angegebenen Experiments als Mitglied der angegebenen Gruppe und leitet Sie dann zum Stammverzeichnis der Website weiter. Sie können jetzt zur entsprechenden Stelle auf der Website navigieren, um zu überprüfen, ob der richtige Inhalt für dieses Experiment und diese Gruppe angezeigt wird.
+Wenn die virtuelle URL-Anforderung an den Server gesendet wird, [!DNL Sensor] identifiziert Sie als Mitglied der angegebenen Gruppe innerhalb des angegebenen Experiments und leitet Sie dann zum Stammverzeichnis der Website weiter. Sie können jetzt zur entsprechenden Stelle auf der Website navigieren, um zu überprüfen, ob der richtige Inhalt für dieses Experiment und diese Gruppe angezeigt wird.
 
 Wenn Sie Folgendes in Ihren Browser eingeben würden, würde der Browser die Startseite der Website anzeigen und Sie in die Gruppe index2 innerhalb des Experiments New_Homepage einfügen:
 

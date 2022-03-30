@@ -1,10 +1,10 @@
 ---
 description: Diese Datei dient nicht nur als Arbeitsblatt, sondern auch als Datensatz Ihrer Experimententscheidungen.
-solution: Analytics,Analytics
+solution: Analytics
 title: Tabelle für den Experimentaufbau
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Die Tabelle mit dem Experimententwurf kann nur nützliche statistische Rückschl
 
 **So entwerfen Sie Ihr Experiment mit der Experimententwurfsdatei**
 
-1. Wenn Sie Administratorzugriff auf Ihre Web- oder Anwendungsserver haben, navigieren Sie auf einem beliebigen [!DNL Sensor]-Computer in Ihrem Webcluster zum Installationsordner [!DNL Sensor] . Wenn Sie keinen Administratorzugriff haben, wenden Sie sich an Ihren Adobe Account Manager, um die Datei anzufordern.
+1. Wenn Sie über Administratorzugriff auf Ihre Web- oder Anwendungsserver verfügen, navigieren Sie zum [!DNL Sensor] Installationsordner auf einem beliebigen [!DNL Sensor] Computer in Ihrem Webcluster. Wenn Sie keinen Administratorzugriff haben, wenden Sie sich an Ihren Adobe Account Manager, um die Datei anzufordern.
 1. Öffnen Sie die Datei VS Controlled Experiment Design.xls . (Sie können diese Datei bei Bedarf umbenennen.)
 
    Die Tabelle auf der folgenden Seite ist ein Beispiel dafür, wie Sie das Arbeitsblatt bei der Vorbereitung auf den Test der in diesem Handbuch verwendeten Beispielhypothese abschließen.
@@ -139,7 +139,7 @@ Die Berechnung der übrigen Felder erfolgt auf der Basis der eingegebenen Werte.
 | Berechnete z-Punktzahl für Fehler Typ II | Der z-Wert für ein falsch negatives Ergebnis. Dies ist eine statistische Zwischenberechnung. |
 | Erforderliche Mindestbesucher (Test- und Kontrollgruppen) | Mindestanzahl der Besucher, die in Ihrem Experiment benötigt werden, um Ihr spezifiziertes Konfidenzniveau, Leistungsniveau und Z-Wert zu erreichen, ausgedrückt als Prozentsatz des Werts im Feld Erwartete Besucher pro Zeitraum . |
 | Erforderliche Mindestbesucher (Test- und Kontrollgruppen) | Minimale Anzahl der Besucher, die für Ihr Experiment erforderlich sind, um Ihr spezifiziertes Konfidenzniveau, Leistungsniveau und z-Wert zu erreichen. Dieser Wert muss kleiner oder gleich dem Wert im Feld Gesamtsumme (normalerweise 100 %) im Abschnitt Besucher sein. |
-| Minimale Experimentdauer (Tage) | Mindestanzahl von Tagen, die Sie benötigen, um Ihr Experiment auszuführen, um Ihr spezifiziertes Konfidenzniveau, Leistungsniveau und z-Wert zu erreichen. Diese berechnete Zahl unterliegt denselben Problemen wie im Feld Erwartete Besucher pro Zeitraum beschrieben. Bei einer Website mit vielen wiederkehrenden Besuchern entspricht das Feld Mindestexperimentdauer (Tage) der erwarteten Anzahl von Tagen, bis eine Anzahl Unique Visitors dem Wert im Feld Erforderliche Mindestbesucher entspricht. |
+| Minimale Experimentdauer (Tage) | Die Mindestanzahl von Tagen, die Sie benötigen, um Ihr Experiment ausführen zu können, um Ihr bestimmtes Konfidenzniveau, Leistungsniveau und z-Wert zu erreichen. Diese berechnete Zahl unterliegt denselben Problemen wie im Feld Erwartete Besucher pro Zeitraum beschrieben. Bei einer Website mit vielen wiederkehrenden Besuchern entspricht das Feld Mindestexperimentdauer (Tage) der erwarteten Anzahl von Tagen, bis eine Anzahl Unique Visitors dem Wert im Feld Erforderliche Mindestbesucher entspricht. |
 | Besucher | Überschrift für die Besucherwerte. |
 | Testgruppe | Anzahl der in der Testgruppe benötigten Besucher. |
 | Kontrollgruppe | Anzahl der in der Kontrollgruppe benötigten Besucher. |
@@ -154,7 +154,7 @@ Sie müssen sich den Wert im Feld Erforderliche Mindestbesucher (Test+Kontrollgr
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-und vergleichen sie mit dem Wert im Feld Gesamt in der Spalte [!DNL Visitors] .
+und vergleichen sie mit dem Wert im Feld Gesamtsumme im [!DNL Visitors] Spalte.
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 

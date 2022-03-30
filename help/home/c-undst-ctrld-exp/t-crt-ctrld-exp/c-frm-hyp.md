@@ -1,10 +1,10 @@
 ---
 description: Eine Hypothese ist eine Annahme, die zum Zweck der Argumentation als wahr betrachtet werden kann und eine provisorische Erklärung liefert, die durch weitere Untersuchungen getestet werden kann.
-solution: Analytics,Analytics
+solution: Analytics
 title: Formulieren einer Hypothese
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
 exl-id: d7e77d85-4655-49c5-adeb-15402e48dd7b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 3%

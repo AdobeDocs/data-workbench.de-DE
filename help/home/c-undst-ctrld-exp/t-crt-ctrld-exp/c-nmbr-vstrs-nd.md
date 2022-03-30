@@ -1,10 +1,10 @@
 ---
 description: Um ein statistisch relevantes Experiment zu erstellen, müssen Sie festlegen, wie lange Sie das Experiment ausführen müssen, um genügend Besucher einzubeziehen, um die Ergebnisse der Änderungen an Ihrer Website effektiv zu bewerten.
-solution: Analytics,Analytics
+solution: Analytics
 title: Bestimmen der erforderlichen Besucheranzahl
 uuid: 07fca0aa-031a-4335-bba4-fb00cb90e29d
 exl-id: c23f4c21-21e5-4694-a500-efe1369cd4bf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 Um ein statistisch relevantes Experiment zu erstellen, müssen Sie festlegen, wie lange Sie das Experiment ausführen müssen, um genügend Besucher einzubeziehen, um die Ergebnisse der Änderungen an Ihrer Website effektiv zu bewerten.
 
-Wenn Sie Hilfe bei der Festlegung der Mindestlänge Ihres Experiments benötigen, können Sie die von Adobe bereitgestellte Tabelle zum Experimententwurf als Tool verwenden, um Ihr Experiment zu entwerfen. Diese Datei mit dem Namen [!DNL VS Controlled Experiment Design.xls] funktioniert standardmäßig nicht nur als Arbeitsblatt, sondern auch als Datensatz Ihrer Experimententscheidungen. Weitere Informationen zu dieser Datei finden Sie unter [Tabelle &quot;Experimentdesign&quot;](../../../home/c-undst-ctrld-exp/t-exp-dsn-spst.md#task-d7f674980fe9415d80371d6020bcf164).
+Wenn Sie Hilfe bei der Festlegung der Mindestlänge Ihres Experiments benötigen, können Sie die von Adobe bereitgestellte Tabelle zum Experimententwurf als Tool verwenden, um Ihr Experiment zu entwerfen. Diese Datei mit dem Namen [!DNL VS Controlled Experiment Design.xls] Standardmäßig dient dies nicht nur als Arbeitsblatt, sondern auch als Datensatz Ihrer Experimententscheidungen. Weitere Informationen zu dieser Datei finden Sie unter [Tabelle &quot;Experimentdesign&quot;](../../../home/c-undst-ctrld-exp/t-exp-dsn-spst.md#task-d7f674980fe9415d80371d6020bcf164).
 
 >[!NOTE]
 >

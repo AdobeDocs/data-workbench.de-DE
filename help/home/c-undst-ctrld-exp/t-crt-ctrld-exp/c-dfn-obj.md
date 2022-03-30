@@ -1,10 +1,10 @@
 ---
 description: Definieren Sie die primäre Funktion des Ziels und die Zielgruppe.
-solution: Analytics,Analytics
+solution: Analytics
 title: Definieren der Zielsetzung
 uuid: 4957b249-8790-4275-98ab-9c6398039a63
 exl-id: 6ee140ff-3cfb-45f8-9bce-f360fbb19322
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 3%

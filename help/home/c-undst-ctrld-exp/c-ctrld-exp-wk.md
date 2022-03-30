@@ -1,10 +1,10 @@
 ---
 description: In einem Experiment können Sie zusätzlich zur Kontrollgruppe eine beliebige Anzahl von Testgruppen definieren.
-solution: Analytics,Analytics
+solution: Analytics
 title: Wie funktionieren gesteuerte Experimente?
 uuid: 9549e2ab-dca9-4fb1-9729-65072f951900
 exl-id: 1d3af6a2-078e-4eb8-848e-685f531a60c5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 3%
@@ -17,11 +17,11 @@ In einem Experiment können Sie zusätzlich zur Kontrollgruppe eine beliebige An
 
 Wenn ein Experiment ausgeführt wird, werden alle Besucher Ihrer Website Teil des Experiments, entweder als Teil einer Testgruppe oder der Kontrollgruppe, sobald sie auf eine am Experiment beteiligte Seite zugreifen. Die Besucher werden Ihren Experimentgruppen zufällig in den während der Experimentkonfiguration definierten Proportionen zugeordnet.
 
-Kontrollierte Experimente werden mit der [!DNL Sensor]-Software implementiert, die auf jedem der Inhaltsserver in Ihrem Webcluster installiert ist. Während die Inhaltsserver Anforderungen empfangen, wählt [!DNL Sensor] zufällig Besucher für Ihre Testgruppen aus und leitet ihre Seitenanfragen an den experimentellen Inhalt weiter. Wenn [!DNL Sensor] einen Besucher auswählt, der den Testinhalt anzeigt, wird in der Adressleiste weiterhin der ursprünglich angeforderte URI aufgelistet, der Besucher wird jedoch zum Test-URI weitergeleitet. Da dieser Prozess intern in der Server-Anwendung stattfindet, wissen die Benutzer nicht, wann sie getestet werden. Dies ist eine wichtige Überlegung für unparteiische Experimente.
+Kontrollierte Experimente werden mit dem [!DNL Sensor] Software, die auf jedem der Inhaltsserver in Ihrem Webcluster installiert ist. Wenn die Inhaltsserver Anfragen erhalten, [!DNL Sensor] wählt zufällig Besucher für Ihre Testgruppen aus und leitet ihre Seitenanforderungen an den experimentellen Inhalt weiter. Wann [!DNL Sensor] wählt einen Besucher aus, um den Testinhalt anzuzeigen. Die Adressleiste listet weiterhin den ursprünglich angeforderten URI auf, der Besucher wird jedoch zum Test-URI weitergeleitet. Da dieser Prozess intern in der Server-Anwendung stattfindet, wissen die Benutzer nicht, wann sie getestet werden. Dies ist eine wichtige Überlegung für unparteiische Experimente.
 
 [!DNL Sensor] übergibt die Test-URIs, nicht den ursprünglichen URI, der dem Benutzer angezeigt wird, an die Protokolldateien, die in der Analyse verwendet werden sollen.
 
-Die Ergebnisse der Experimente können einfach mit [!DNL Insight] analysiert werden, um festzustellen, ob die von Ihnen getestete Versuchshypothese korrekt ist.
+Die Ergebnisse der Experimente lassen sich einfach analysieren, indem Sie [!DNL Insight] um festzustellen, ob die von Ihnen getestete experimentelle Hypothese korrekt ist.
 
 >[!NOTE]
 >
