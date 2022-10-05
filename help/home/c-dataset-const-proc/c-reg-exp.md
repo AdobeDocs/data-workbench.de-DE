@@ -3,7 +3,7 @@ description: Reguläre Ausdrücke werden in allen Data Workbench-Suchfeldern ver
 title: Reguläre Ausdrücke
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Reguläre Ausdrücke{#regular-expressions}
+
+{{eol}}
 
 Reguläre Ausdrücke werden in allen Data Workbench-Suchfeldern verwendet, einschließlich der Bedienfelder für die Abfrageentität.
 
@@ -26,15 +28,15 @@ Ein regulärer Ausdruck ist ein Textmuster, das aus einer Kombination aus alphan
 
 Um komplexe Zeichenfolgenmuster zu identifizieren und zu extrahieren, verwendet der Data Workbench-Server in einigen der Umwandlungen und Bedingungen reguläre Ausdrücke. Im Folgenden finden Sie eine kurze Anleitung zu regulären Ausdrücken.
 
-Dieser Anhang ist keine umfassende Einführung in reguläre Ausdrücke. Ein besonders guter Hinweis ist die O&#39;Reilly-Veröffentlichung *Mastering Regular Expressions, 2nd Edition* von Jeffrey E. F. Friedl.
+Dieser Anhang ist keine umfassende Einführung in reguläre Ausdrücke. Eine besonders gute Referenz ist die Veröffentlichung von O&#39;Reilly *Mastering Regulärer Ausdrücke, 2. Ausgabe* von Jeffrey E. F. Friedl.
 
 ## Terminologie für reguläre Ausdrücke {#section-80b0d54f731e448391532ab3eb3c525c}
 
 | Begriff | Definition |
 |---|---|
-| Literal | Ein Literal ist ein Zeichen, das wir in einem regulären Ausdruck verwenden, um eine bestimmte Folge von Zeichen zu finden. Um beispielsweise ein Produkt in [!DNL shop/products.html] zu finden, ist das String-Produkt ein Literal oder das, wonach wir buchstäblich in der Zeichenfolge suchen. |
+| Literal | Ein Literal ist ein Zeichen, das wir in einem regulären Ausdruck verwenden, um eine bestimmte Folge von Zeichen zu finden. So suchen Sie beispielsweise nach einem Produkt in [!DNL shop/products.html], ist das String-Produkt ein Literal oder was wir buchstäblich in der Zeichenfolge suchen. |
 | Metazeichen | Ein Metazeichen ist ein Sonderzeichen, das eine eindeutige Interpretation im Kontext regulärer Ausdrücke hat. Beispielsweise der Punkt (.) ist ein Metazeichen, mit dem ein beliebiges Zeichen abgeglichen wird. |
-| Escape-Sequenz | Eine Escape-Sequenz ist einfach eine Möglichkeit, der Engine für reguläre Ausdrücke mitzuteilen, dass wir eines der Metazeichen als Literal verwenden möchten. Escape-Sequenzen beginnen immer mit dem umgekehrten Schrägstrich (`\`). Durch Platzierung des umgekehrten Schrägstrichs (bei dem es sich auch um ein Metazeichen handelt) vor einem Metazeichen interpretiert die Engine für reguläre Ausdrücke das maskierte Metazeichen als Literal. Wenn Sie beispielsweise den Metazeichenzeitraum (`.`) abgleichen möchten, müssen Sie eine Escape-Sequenz verwenden. Um jedoch einem der Punkte in der Zeichenfolge 168.196.0.11 zu entsprechen, können Sie den regulären Ausdruck verwenden, der aus einem umgekehrten Schrägstrich und einem Punkt (`\.`) besteht. |
+| Escape-Sequenz | Eine Escape-Sequenz ist einfach eine Möglichkeit, der Engine für reguläre Ausdrücke mitzuteilen, dass wir eines der Metazeichen als Literal verwenden möchten. Escape-Sequenzen beginnen immer mit einem umgekehrten Schrägstrich (`\`). Durch Platzierung des umgekehrten Schrägstrichs (bei dem es sich auch um ein Metazeichen handelt) vor einem Metazeichen interpretiert die Engine für reguläre Ausdrücke das maskierte Metazeichen als Literal. Wenn Sie beispielsweise den Metazeichenzeitraum (`.`), müssen Sie eine Escape-Sequenz verwenden. Um jedoch einem der Punkte in der Zeichenfolge 168.196.0.11 zu entsprechen, können Sie den regulären Ausdruck verwenden, der aus einem umgekehrten Schrägstrich und einem Punkt (`\.`). |
 | Muster | Dies ist eine kurze Terminologie für den regulären Ausdruck. Ein regulärer Ausdruck ist im Wesentlichen ein Muster, das Sie mit der Zielzeichenfolge abgleichen möchten. |
 | Zielzeichenfolge | Dieser Begriff bezieht sich auf die Zeichenfolge, in der wir suchen, um das gewünschte Muster zu finden. |
 
@@ -88,7 +90,7 @@ Bei der Literalzuordnung können Sie nach einer einzelnen Zeichenfolge suchen. M
   </tr>
   <tr>
    <td colname="col1"> Bindestrich (-) </td>
-   <td colname="col2"> <p>Übereinstimmung mit einem Zeichenbereich. Anstatt also [0123456789] zu schreiben, konnten wir einfach [0-9] schreiben. </p> <p> Dies kann auf Zeichenbereiche und mehrere Bereiche innerhalb eines Satzes von Klammern erweitert werden. Beispielsweise entspricht [0-9A-C] den Zeichen 0 bis 9 und A bis C. </p> <p> <p>Hinweis:  Um auf einen Bindestrich (-) als Literal innerhalb der Klammern zu testen, muss er zuerst oder zuletzt kommen. Beispielsweise [-0-9] Tests für - und 0 bis 9. </p> </p> </td>
+   <td colname="col2"> <p>Übereinstimmung mit einem Zeichenbereich. Anstatt also [0123456789] zu schreiben, konnten wir einfach [0-9] schreiben. </p> <p> Dies kann auf Zeichenbereiche und mehrere Bereiche innerhalb eines Satzes von Klammern erweitert werden. Beispielsweise entspricht [0-9A-C] den Zeichen 0 bis 9 und A bis C. </p> <p> <p>Hinweis: Um auf einen Bindestrich (-) als Literal innerhalb der Klammern zu testen, muss er zuerst oder zuletzt kommen. Beispielsweise [-0-9] Tests für - und 0 bis 9. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> Verkettungszeichen (|) </td>
@@ -104,11 +106,11 @@ Sehen Sie sich folgende Beispiele an:
 | Win9`[58]` | OS=Win95 | Win95 |
 | Win95 | 8 | OS=Win98 | Win98 |
 | `[0-9]` | Mozilla/3.0 | 3 |
-| Lesson`[A-Z]` | Lektion a | Keine Übereinstimmung, da der niedrigere a-Wert nicht im Bereich der oberen A bis Z liegt. |
+| Lektion`[A-Z]` | Lektion a | Keine Übereinstimmung, da der niedrigere a-Wert nicht im Bereich der oberen A bis Z liegt. |
 
 **Negation**
 
-Negation ist eine Möglichkeit zu sagen, dass Sie alles mit Ausnahme der angegebenen Zeichen vergleichen möchten. Das Negations-Metazeichen Zirkumflex oder Caret (`^`) wird als erstes Zeichen in Klammern verwendet, um zu sagen, dass die Übereinstimmung alles andere als die restlichen Zeichen in den Klammern sein soll. Um beispielsweise ein beliebiges Zeichen außer einem Semikolon (`;`) abzugleichen, würden Sie
+Negation ist eine Möglichkeit zu sagen, dass Sie alles mit Ausnahme der angegebenen Zeichen vergleichen möchten. Die Negation Metacharacter, der Zirkumflex oder das Caret (`^`), wird als erstes Zeichen in Klammern verwendet, um anzugeben, dass die Übereinstimmung alles andere als die restlichen Zeichen in den Klammern sein soll. Beispiel: Übereinstimmung mit einem beliebigen Zeichen außer einem Semikolon (`;`), würden Sie schreiben
 
 [`^;`]
 
@@ -120,8 +122,8 @@ Um eine Übereinstimmung am Anfang oder Ende einer Zielzeichenfolge zu erzwingen
 
 | Für dieses Metazeichen ... | Der Prozessor für reguläre Ausdrücke ... |
 |---|---|
-| Circumflex oder Caret (`^`) | Übereinstimmung mit dem Anfang der Zeichenfolge. Beispiel: ^`[Tt]`er würde mit der Zielzeichenfolge &quot;The Beginning&quot; übereinstimmen, aber nicht mit &quot;This is the Anfang&quot;. |
-| Dollarzeichen (`$`) | Übereinstimmung mit dem Ende der Zeichenfolge Beispielsweise würde `[Ee]`nd$ mit &quot;This is the end&quot;übereinstimmen, jedoch nicht mit &quot;The end is a special time&quot;. |
+| Circumflex oder Caret (`^`) | Übereinstimmung mit dem Anfang der Zeichenfolge. Beispiel: ^`[Tt]`würde mit der Zielzeichenfolge &quot;Der Anfang&quot;übereinstimmen, aber nicht mit &quot;Dies ist der Anfang&quot;. |
+| Dollarzeichen (`$`) | Übereinstimmung mit dem Ende der Zeichenfolge Beispiel: `[Ee]`&quot;nd$&quot;würde mit &quot;This is the end&quot;übereinstimmen, würde jedoch nicht mit &quot;The end is a special time&quot;übereinstimmen. |
 
 >[!NOTE]
 >
@@ -129,7 +131,7 @@ Um eine Übereinstimmung am Anfang oder Ende einer Zielzeichenfolge zu erzwingen
 
 **Übereinstimmung**
 
-Der Zeitraum (.) ist ein spezielles Metazeichen, das mit einem beliebigen Zeichen in der Zielzeichenfolge übereinstimmt. Beispielsweise entspricht der reguläre Ausdruck `^…$` jeder Zielzeichenfolge, die genau drei Zeichen lang ist. Der reguläre Ausdruck &quot;...&quot;stimmt mit jeder Zielzeichenfolge überein, die mindestens drei Zeichen enthält.
+Der Zeitraum (.) ist ein spezielles Metazeichen, das mit einem beliebigen Zeichen in der Zielzeichenfolge übereinstimmt. Beispielsweise der reguläre Ausdruck `^…$` entspricht allen Zielzeichenfolgen, die genau drei Zeichen lang sind. Der reguläre Ausdruck &quot;...&quot;stimmt mit jeder Zielzeichenfolge überein, die mindestens drei Zeichen enthält.
 
 **Wiederholte Muster**
 
@@ -168,7 +170,7 @@ Mit Iterations-Metazeichen können Sie ein Muster mehrmals abgleichen.
 
 ## Musterextraktion {#section-4389779653b64f6cb7c47615b25c1a79}
 
-Die Musterzuordnung ist nur ein Teil der Leistungsfähigkeit regulärer Ausdrücke. Reguläre Ausdrücke bieten auch einen Mechanismus zum Extrahieren von Schlüsselteilen einer Zielzeichenfolge. Dies geschieht mithilfe der linken und rechten Klammern. Diese Auszüge werden in der Regel als Eingabe in einen anderen Prozess verwendet und werden mithilfe von *%position%* aufgerufen, wobei die Position eine Ganzzahl ist, die auf die Anzahl der Klammern verweist, mit denen eine Übereinstimmung gefunden wurde.
+Die Musterzuordnung ist nur ein Teil der Leistungsfähigkeit regulärer Ausdrücke. Reguläre Ausdrücke bieten auch einen Mechanismus zum Extrahieren von Schlüsselteilen einer Zielzeichenfolge. Dies geschieht mithilfe der linken und rechten Klammern. Diese Extraktionen werden in der Regel als Eingabe in einen anderen Prozess verwendet und durch die Verwendung von *%position%*, wobei position eine Ganzzahl ist, die darauf verweist, mit welcher Anzahl von Klammern übereinstimmt.
 
 Beachten Sie die folgenden Beispiele für die Musterextraktion:
 

@@ -3,7 +3,7 @@ description: Sie können das Menü "Arbeitsbereich exportieren"verwenden, um Arb
 title: Freigeben eines Arbeitsbereichs
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
 exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Freigeben eines Arbeitsbereichs{#share-a-workspace}
+
+{{eol}}
 
 Sie können das Menü &quot;Arbeitsbereich exportieren&quot;verwenden, um Arbeitsbereiche in PNG-Dateien oder Excel zu drucken und zu exportieren.
 
@@ -53,7 +55,7 @@ Klicken Sie in einem Arbeitsbereich auf **[!UICONTROL Export]**.
   </tr> 
   <tr> 
    <td colname="col1"> Aus Vorlage exportieren (Excel) </td> 
-   <td colname="col2"> Wenn Microsoft Excel auf dem Data Workbench-Computer installiert ist, startet Microsoft Excel automatisch und exportiert die Daten aus bestimmten Visualisierungen, bestimmten Legenden und Textanmerkungen in die von Ihnen ausgewählte Excel-Vorlagendatei (<span class="filepath"> .xls</span> oder <span class="filepath"> .xlsx</span>). Siehe <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exportieren in eine Excel-Vorlagendatei</a>. </td> 
+   <td colname="col2"> Wenn Microsoft Excel auf dem Data Workbench-Computer installiert ist, startet Microsoft Excel automatisch und exportiert die Daten aus bestimmten Visualisierungen, bestimmten Legenden und Textanmerkungen in die Excel-Vorlagendatei (<span class="filepath"> .xls</span> oder <span class="filepath"> .xlsx</span>), die Sie auswählen. Siehe <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exportieren in eine Excel-Vorlagendatei</a>. </td> 
   </tr> 
  </tbody> 
 </table>

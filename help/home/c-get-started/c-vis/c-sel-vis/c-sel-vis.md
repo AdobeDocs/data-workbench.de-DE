@@ -3,7 +3,7 @@ description: Durch die Auswahl von Elementen innerhalb einer Visualisierung wird
 title: Auswahlen von Elementen in Visualisierungen
 uuid: 3900354f-826b-41e8-9bc2-e4856928bad5
 exl-id: bb1dd7e4-a9f8-48b5-a12d-433c601b455b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 3%
@@ -12,11 +12,13 @@ ht-degree: 3%
 
 # Auswahlen von Elementen in Visualisierungen{#make-selections-in-visualizations}
 
+{{eol}}
+
 Durch die Auswahl von Elementen innerhalb einer Visualisierung wird der Datensatz dynamisch gefiltert.
 
 Wenn Sie eine Auswahl in einer Visualisierung treffen, werden alle anderen Visualisierungen im Arbeitsbereich automatisch aktualisiert, um die Daten widerzuspiegeln, die nur mit den von Ihnen ausgewählten Elementen verknüpft sind.
 
-Der folgende Arbeitsbereich zeigt eine Filmtabelle, in der der Film *Cocktail* ausgewählt ist. Im Arbeitsbereich filtern die Tabelle Punktzahl und die Metriklegende ihre Anzeigen automatisch nach dem ausgewählten Element (d. h. ihre Anzeigen spiegeln die Daten für den Film *Cocktail* wider).
+Der folgende Arbeitsbereich zeigt eine Filmtabelle, in der der Film gespeichert ist *Cocktail* ausgewählt ist. Im Arbeitsbereich filtern die Tabelle Punktzahl und die Metriklegende automatisch die Anzeige für das ausgewählte Element (d. h. ihre Anzeige spiegelt die Daten für den Film wider *Cocktail*).
 
 ![](assets/wsp_selection_Basic.png)
 
@@ -30,7 +32,7 @@ Verwenden Sie die folgenden Maus- und Tastenfolgen, um die gewünschten Elemente
 
 | Hierzu... | Verwenden Sie diese Sequenz... |
 |---|---|
-| Auswählen eines einzelnen Elements | Klicken Sie auf  ,  |
+| Auswählen eines einzelnen Elements | Klicken Sie auf , |
 | Auswahl eines Elementbereichs | Klicken und ziehen |
 | Element zur aktuellen Auswahl hinzufügen | Strg+Klicken |
 | Einzelauswahl löschen | Umschalt+Klick |

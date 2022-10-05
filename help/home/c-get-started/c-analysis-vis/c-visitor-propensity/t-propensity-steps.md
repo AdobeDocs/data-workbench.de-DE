@@ -3,7 +3,7 @@ description: Führen Sie diese Schritte aus, um die Visualisierung der Tendenzau
 title: Einrichten der Tendenzauswertung
 uuid: afc9aada-3bf9-4ce6-8c43-a955771065b4
 exl-id: e16a7062-636e-44a9-a07d-343d48bf1b4c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 2%
@@ -12,25 +12,27 @@ ht-degree: 2%
 
 # Einrichten der Tendenzauswertung{#setting-up-propensity-scoring}
 
+{{eol}}
+
 Führen Sie diese Schritte aus, um die Visualisierung der Tendenzauswertung zu verwenden.
 
 1. Öffnen Sie einen neuen Arbeitsbereich und klicken Sie auf **[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Predictive Analytics]** > **[!UICONTROL Scoring]** > **[!UICONTROL Propensity Score]**.
 
    ![](assets/propensity_visualization.png)
 
-1. Legen Sie **[!UICONTROL Target]** (die abhängige Variable) fest.
+1. Legen Sie die **[!UICONTROL Target]** (die abhängige Variable).
 
    Legen Sie die abhängige Variable fest, indem Sie Folgendes auswählen:
 
-* **Dimension-Elemente**: Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und wählen Sie  **[!UICONTROL Table]** aus. Wählen Sie dann eine Dimension als abhängige Variable aus.
+* **Dimensionen**: Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und wählen Sie **[!UICONTROL Table]**. Wählen Sie dann eine Dimension als abhängige Variable aus.
 
    OR
 
-* **[!UICONTROL Filter Editor]**. Klicken Sie auf **[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Filter Editor]** , um die Visualisierung des Filter-Editors zu öffnen.
+* **[!UICONTROL Filter Editor]**. Klicken **[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Filter Editor]** , um die Visualisierung des Filter-Editors zu öffnen.
 
    ![](assets/propensity_visualization_filter_editor.png)
 
-   Klicken Sie nach Auswahl eines Dimension-Elements oder Filtern als abhängige Variable auf **[!UICONTROL Set Target]** und geben Sie einen Namen ein, um die abhängige Variable zu beschreiben. Klicken Sie dann auf **[!UICONTROL OK]** (und stellen Sie sicher, dass das Filterfeld hervorgehoben ist), um die Zielgruppe festzulegen.
+   Nachdem Sie ein Dimension-Element oder Filter als abhängige Variable ausgewählt haben, klicken Sie auf **[!UICONTROL Set Target]** Geben Sie einen Namen ein, um die abhängige Variable zu beschreiben. Klicken Sie anschließend auf **[!UICONTROL OK]** (und stellen Sie sicher, dass das Filterfeld hervorgehoben ist), um Target festzulegen.
 
    ![](assets/propensity_visualization_setTarget.png)
 
@@ -41,16 +43,16 @@ Führen Sie diese Schritte aus, um die Visualisierung der Tendenzauswertung zu v
 
    ![](assets/propensity_visualization_metrics.png)
 
-* **Metriken**. Wählen Sie in der Symbolleiste Tendenzauswertung eine Metrik aus dem Menü **[!UICONTROL Metrics]** aus.
+* **Metriken**. Wählen Sie in der Symbolleiste Tendenzauswertung eine Metrik aus der **[!UICONTROL Metrics]** Menü.
 
-* **Dimension-Elemente**: Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und wählen Sie  **[!UICONTROL Table]** aus. Wählen Sie ein oder mehrere Dimension-Elemente aus und ziehen Sie mit den Tasten `<Ctrl>` + `<Alt>` in die linke Spalte unter **[!UICONTROL Independent Variables]** oder in das Feld **[!UICONTROL Element]** .
+* **Dimensionen**: Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und wählen Sie **[!UICONTROL Table]**. Wählen Sie ein oder mehrere Dimension -Elemente aus und ziehen Sie sie in die linke Spalte unter **[!UICONTROL Independent Variables]** oder **[!UICONTROL Element]** mit dem `<Ctrl>` + `<Alt>` Schlüssel.
 
-1. Festlegen **[!UICONTROL Training Filter]**. Sie können den Satz von Besuchern definieren, die Sie bewerten möchten, indem Sie in der Symbolleiste Tendenzauswertung auf **[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]** klicken. Dadurch erhalten Sie eine Untergruppe von Daten, die ausschließlich mit den Besuchern erstellt werden, die Sie bewerten möchten. Zum Beispiel Besucher, die im letzten Monat einen Besuch abgestattet haben, Besucher, die in Australien wohnen, oder Besucher, die bestimmte Produkte angesehen haben.
+1. Festlegen **[!UICONTROL Training Filter]**. Sie können den Besuchersatz definieren, den Sie bewerten möchten, indem Sie auf **[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]** in der Symbolleiste &quot;Tendenzauswertung&quot;. Dadurch erhalten Sie eine Untergruppe von Daten, die ausschließlich mit den Besuchern erstellt werden, die Sie bewerten möchten. Zum Beispiel Besucher, die im letzten Monat einen Besuch abgestattet haben, Besucher, die in Australien wohnen, oder Besucher, die bestimmte Produkte angesehen haben.
 
-   Der Standardfilter ist **[!UICONTROL Train on Everyone]**. Sie können ihn jedoch ändern, indem Sie **[!UICONTROL Dimension Elements]** in einer Tabelle aktivieren oder einen Filter mit **[!UICONTROL Filter Editor]** erstellen.
+   Der Standardfilter ist **[!UICONTROL Train on Everyone]** Sie können sie jedoch ändern, indem Sie **[!UICONTROL Dimension Elements]** in einer Tabelle oder beim Erstellen eines Filters mit der **[!UICONTROL Filter Editor]**.
 
-   Nachdem Sie ein Filterelement ausgewählt oder einen Dimension erstellt haben, klicken Sie auf **Options** > **Set Training Filter**, geben Sie einen Namen ein, um den Filter zu beschreiben, und klicken Sie auf **[!UICONTROL OK]**.
-1. Sobald Sie alle Eingaben identifiziert haben, drücken Sie **[!UICONTROL Go]**.
+   Nachdem Sie ein Filterelement ausgewählt oder einen Dimension erstellt haben, klicken Sie bei Aktivierung auf **Optionen** > **Trainings-Filter festlegen**, geben Sie einen Namen ein, um den Filter zu beschreiben, und klicken Sie dann auf **[!UICONTROL OK]**.
+1. Sobald Sie alle Eingaben identifiziert haben, drücken Sie die **[!UICONTROL Go]**.
 
    ![](assets/propensity_visualization_GO.png)
 
@@ -71,9 +73,9 @@ Führen Sie diese Schritte aus, um die Visualisierung der Tendenzauswertung zu v
    Die abgeleitete Metrik ist die zugehörige Metrik für das durchschnittliche Ergebnis.
 1. Prüfen Sie die Genauigkeit.
 
-   Das System zeigt **[!UICONTROL Model Complete]** an und generiert ein Scoring-Modell, wenn der Prozess abgeschlossen ist.
+   Das System zeigt **[!UICONTROL Model Complete]** und generieren ein Scoring-Modell, wenn der Prozess abgeschlossen ist.
 
-   Wenn Sie mit der rechten Maustaste auf **[!UICONTROL Model Complete]** klicken, wird die Genauigkeit des vom System definierten Scoring-Modells identifiziert. Werte von 0 bis 100 Prozent zeigen die Wahrscheinlichkeit der Besucher, die mit der **[!UICONTROL Target]** -Variablen übereinstimmen.
+   Rechtsklick auf **[!UICONTROL Model Complete]** erkennt die Genauigkeit des vom System definierten Scoring-Modells. Werte zwischen 0 Prozent und 100 Prozent identifizieren die Wahrscheinlichkeit, dass die Besucher die **[!UICONTROL Target]** -Variable.
 
    Die Konfusionsmatrix gibt vier Zählungen anhand der Kombination aus &quot;Tatsächlich positiv&quot;(AP), &quot;Aktiv Negativ&quot;(AN), &quot;Vorhersage positiv&quot;(PP) und &quot;Vorhersage negativ&quot;(PN). Diese Zahlen erhalten Sie, indem Sie das resultierende Scoring-Modell auf die 20 % zurückbehaltenen Testdaten anwenden, von denen wir die wahre Antwort kennen. Wenn der Wert größer als 50 % ist, wird er als positiver Fall prognostiziert (entspricht dem definierten Ereignis).
 
@@ -96,6 +98,6 @@ Führen Sie diese Schritte aus, um die Visualisierung der Tendenzauswertung zu v
  </tbody> 
 </table>
 
-1. Öffnen Sie ein [Lift- oder Gewinndiagramm](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a) oder den [Modell-Viewer](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9).
+1. Öffnen Sie eine [Diagramm für Steigerung oder Gewinn](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a)oder [Modell-Viewer](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9).
 
-   Klicken Sie mit der rechten Maustaste auf die Visualisierung **Modell Complete** und wählen Sie **[!UICONTROL Lift Chart]**, **[!UICONTROL Gain Chart]** oder **[!UICONTROL Model Viewer.]** aus.
+   Klicken Sie mit der rechten Maustaste auf die **Modell abgeschlossen** Visualisierung und Auswahl **[!UICONTROL Lift Chart]**, **[!UICONTROL Gain Chart]** oder **[!UICONTROL Model Viewer.]**

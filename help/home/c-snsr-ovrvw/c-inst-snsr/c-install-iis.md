@@ -3,7 +3,7 @@ description: Anleitung zum Installieren und Konfigurieren von Sensor für Intern
 title: Microsoft IIS unter Windows Server 2000 oder höher
 uuid: 26da0638-82c8-424f-9f00-aab3a940e5a9
 exl-id: e4b5ac44-b0ac-43be-9b9c-180a64354081
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Microsoft IIS unter Windows Server 2000 oder höher{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 Anleitung zum Installieren und Konfigurieren von Sensor für Internet Information Services (IIS) 5.x oder 6.x unter Microsoft Windows Server 2000 oder höher.
 
@@ -79,12 +81,12 @@ Die Datei txlogd.conf enthält die Konfigurationsparameter für Sensor.
 
 Sie müssen die Datei bearbeiten, um unter anderem die Größe der Festplattenwarteschlange, die Adresse des Insight Servers und die Kennung anzugeben, die an die von diesem Sensor erzeugten Daten angehängt werden soll. Die Konfigurationsdatei enthält die erforderlichen Parameter und optionalen Parameter.
 
-* **Erforderliche** Parameter sind Einstellungen, die Sie bei der Installation von Sensor angeben müssen. Ohne diese Einstellungen wird Sensor nicht erfolgreich ausgeführt.
-* **Optionale** Parameter sind Einstellungen, die standardmäßig vordefinierte Werte enthalten (die Sie ändern können) oder optionale Funktionen aktivieren.
+* **Erforderliche Parameter** sind Einstellungen, die Sie bei der Installation von Sensor angeben müssen. Ohne diese Einstellungen wird Sensor nicht erfolgreich ausgeführt.
+* **Optionale Parameter** sind Einstellungen, die standardmäßig vordefinierte Werte enthalten (die Sie ändern können) oder optionale Funktionen aktivieren.
 
 **Bearbeiten der Sensorkonfigurationsdatei**
 
-1. Öffnen Sie die Datei `<SensorDirectory>/txlogd.conf` in einem Texteditor und legen Sie die erforderlichen Parameter sowie die gewünschten optionalen Parameter fest.
+1. Öffnen Sie die `<SensorDirectory>/txlogd.conf` in einem Texteditor speichern und die erforderlichen Parameter sowie die gewünschten optionalen Parameter festlegen.
 
    Beschreibungen der Parameter txlogd.conf finden Sie unter Parameter für die Datei Sensor-Txlogd.conf .
 

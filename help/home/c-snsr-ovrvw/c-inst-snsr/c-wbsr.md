@@ -3,7 +3,7 @@ description: Detaillierte Anweisungen zum Installieren und Konfigurieren von Sen
 title: WebSphere unter AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
@@ -12,15 +12,17 @@ ht-degree: 0%
 
 # WebSphere unter AIX{#websphere-on-aix}
 
+{{eol}}
+
 Detaillierte Anweisungen zum Installieren und Konfigurieren von Sensor für WebSphere 5.x unter AIX 5.1 oder höher.
 
-Die Programmdateien für [!DNL Sensor] werden in einer Installationsdatei zusammengefasst, die Sie von der Adobe-Download-Site erhalten. Wenn Sie noch nicht über die Installationsdatei [!DNL Sensor] für Ihren Webserver verfügen, laden Sie sie herunter (oder rufen Sie sie von Ihrem Adobe-Support-Mitarbeiter ab), bevor Sie mit den folgenden Verfahren beginnen.
+Die Programmdateien für [!DNL Sensor] werden in einer Installationsdatei gepackt, die Sie von der Adobe-Download-Site erhalten. Wenn Sie noch nicht über die [!DNL Sensor] Installationsdatei für Ihren jeweiligen Webserver herunterladen (oder von Ihrem Adobe-Support-Mitarbeiter abrufen), bevor Sie mit den folgenden Schritten beginnen.
 
 >[!NOTE]
 >
->[!DNL Sensor] für WebSphere-Server unterstützt keine gesteuerte Experimentierung. Weitere Informationen zu kontrollierten Experimenten finden Sie im *Handbuch zu Data Workbench-gesteuerten Experimenten.*
+>Die [!DNL Sensor] für WebSphere-Server unterstützt keine kontrollierte Experimentierung. Informationen zu kontrollierten Experimenten finden Sie in der *Anleitung für durch Data Workbench gesteuerte Experimente.*
 
-## Installieren Sie die Programmdateien {#section-86f69127278c41bc90b97b68bb40bc6e}
+## Installieren der Programmdateien {#section-86f69127278c41bc90b97b68bb40bc6e}
 
 Verfahren zum Extrahieren und Installieren der Programmdateien für Sensorto auf dem Servercomputer.
 
@@ -99,7 +101,7 @@ Um die Berechtigungen auf die empfohlenen Standardeinstellungen zurückzusetzen,
 
 Wenn Sie andere Berechtigungen als die empfohlenen Standardberechtigungen verwenden möchten, lesen Sie die Informationen unter &quot;Berechtigungen für Sensor-UNIX-Dateien&quot;, um sicherzustellen, dass Sie wissen, wie diese Dateien verwendet werden.
 
-## Bearbeiten Sie die Datei für die Sensor-Konfiguration {#section-283c8a92fa8841c1b6034e5f834ef4e7} .
+## Bearbeiten der Datei &quot;Sensor Configuration&quot; {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 Die Datei txlogd.conf enthält die Konfigurationsparameter für Sensor.
 
@@ -115,7 +117,7 @@ Die Konfigurationsdatei enthält die erforderlichen Parameter und optionalen Par
 1. Öffnen Sie die Datei /etc/txlogd.conf in einem Texteditor und legen Sie die erforderlichen Parameter sowie die gewünschten optionalen Parameter fest.
 1. Speichern und schließen Sie die Datei.
 
-## Starten Sie den Transmitter und erstellen Sie die Festplattenwarteschlange {#section-63285a2328604f20a2cb31b3d5cb80e6}
+## Starten Sie den Transmitter und erstellen Sie die Festplattenwarteschlange. {#section-63285a2328604f20a2cb31b3d5cb80e6}
 
 Verfahren zum Erstellen der Festplattenwarteschlange, nachdem Sie die Datei txlogd.conf konfiguriert haben.
 
@@ -138,14 +140,14 @@ Verfahren zum Erstellen der Festplattenwarteschlange, nachdem Sie die Datei txlo
    1. Überprüfen Sie, ob das Gerät, dem die Festplattenwarteschlange zugewiesen ist, betriebsbereit ist und über ausreichend Speicherplatz verfügt, um eine Datei mit der im Parameter QueueSize angegebenen Größe zu speichern.
    1. Nehmen Sie die notwendigen Korrekturen vor und wiederholen Sie diesen Vorgang.
 
-## Fügen Sie den Kollektor zur Webanwendung {#section-d17297b1193f4e3cb150fb41f754ef12} hinzu.
+## Hinzufügen des Sammlers zur Webanwendung {#section-d17297b1193f4e3cb150fb41f754ef12}
 
 Bei WebSphere-Servern fungiert der Kollektor als Filter im Servlet-Container.
 
 Um den Kollektor zur Webanwendung hinzuzufügen, fügen Sie den Filter zum Bereitstellungsdeskriptor web.xml der Webanwendung hinzu und starten Sie die Webanwendung neu.
 
 1. Öffnen Sie mithilfe eines Texteditors die Datei web.xml für den Webserver, dessen Ereignisse Sensor erfasst.
-1. Fügen Sie die folgenden `<filter>`- und `<filter-mapping>`-Elemente zur Deskriptordatei hinzu. Wenn Sie txlogd.conf nicht im Verzeichnis /etc installiert haben, müssen Sie den richtigen Pfad zu dieser Datei im Element `<param-value>` eingeben.
+1. Fügen Sie Folgendes hinzu: `<filter>` und `<filter-mapping>` -Elemente in die Deskriptordatei ein. Wenn Sie txlogd.conf nicht im Verzeichnis /etc installiert haben, müssen Sie den richtigen Pfad zu dieser Datei im `<param-value>` -Element.
 
    ```
    <filter>
@@ -173,7 +175,7 @@ Um den Kollektor zur Webanwendung hinzuzufügen, fügen Sie den Filter zum Berei
 
 1. Starten Sie die Webanwendung neu. Der Kollektor wird mit der Anwendung geladen und beginnt mit der Erfassung von Ereignisdaten und dem Schreiben in die Datenträgerwarteschlange.
 
-## Deklarieren Sie den Speicherort der Sammlungs- und freigegebenen Objektdateien {#section-e641f08999d34a648aaee2111b69ca25}
+## Speicherort der Sammlungs- und freigegebenen Objektdateien deklarieren {#section-e641f08999d34a648aaee2111b69ca25}
 
 Verfahren zum Bearbeiten des Websphere-Startskripts, um den Speicherort der Dateien J2EECollector.jar und libvisual_sciences.so zu deklarieren.
 
@@ -190,9 +192,9 @@ Verfahren zum Bearbeiten des Websphere-Startskripts, um den Speicherort der Date
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. Speichern Sie die Datei [!DNL setupCmdLine.sh].
+1. Speichern Sie die [!DNL setupCmdLine.sh] -Datei.
 
-## Testen Sie den Sensor {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}.
+## Testen des Sensors {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
 Verfahren zum Starten des Senders und zur Überprüfung, ob er erfolgreich eine Verbindung zum Insight Server herstellen und Ereignisdaten an ihn übertragen kann.
 
@@ -214,7 +216,7 @@ Verfahren zum Starten des Senders und zur Überprüfung, ob er erfolgreich eine 
    * Die Parameter ServerAddress und ServerPort werden in txtlogd.conf korrekt festgelegt. Wenn Sie &quot;ServerAddress&quot;mit einem Servernamen angegeben haben, versuchen Sie stattdessen, die zugehörige numerische IP-Adresse zu verwenden.
    * Der Wert des CertName-Parameters entspricht dem allgemeinen Namen, der im digitalen Zertifikat des Ziel-Insight-Servers exakt angezeigt wird.
 
-## Fügen Sie den Transmitter zu Ihrem Systemstartskript hinzu {#section-23bb905100d04f018af93873dd4d5f68}
+## Hinzufügen des Transmitters zum Systemstartskript {#section-23bb905100d04f018af93873dd4d5f68}
 
 Informationen, die sicherstellen, dass der Transmitter automatisch geladen wird, wenn der Webserver-Computer neu gestartet wird.
 
@@ -240,7 +242,7 @@ Beispielsweise kann der J2EE-Sammler zur Erfassung von CPC-Daten (Cost per Click
 
 Wenn ein Sensor für die J2EE-Plattform eine Anforderung erhält, ruft er eine Sammlerklasse auf, die die Funktion appendToLog importiert. Die Funktion appendToLog hängt an die ursprüngliche Anfrage die in der Funktion appendToLog angegebenen Abfragezeichenfolgenparameter an. Dies führt zur URI der ursprünglichen Anfrage, die zusätzliche Name-Wert-Paare der Abfragezeichenfolge enthält, die den Namen und Werten der erfassten Daten entsprechen. Beispielsweise würde CPC=20 an die ursprüngliche Anfrage angehängt, wenn der Wert einer bestimmten Anzeigenplatzierung oder eines Clickthrough-Links 20 Cent beträgt. Insight Server verarbeitet diese Werte zur Analyse in den Datensatz. Ein weiterer Vorteil dieser Erfassungsmethodik besteht darin, dass sie die Erfassung zusätzlicher Daten ermöglicht, ohne zusätzliche Protokolleinträge zu erstellen, wie dies möglicherweise mithilfe von Methoden zum Taggen von Seiten möglich ist.
 
-Weitere Informationen zur Verarbeitung finden Sie im *Handbuch zur Datensatzkonfiguration*.
+Weitere Informationen zur Verarbeitung finden Sie unter *Anleitung zur Datensatzkonfiguration*.
 
 1. Fügen Sie oben auf der JSP-Seite, von der Sie Daten erfassen möchten, den folgenden Code hinzu:
 

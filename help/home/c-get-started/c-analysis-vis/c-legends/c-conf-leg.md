@@ -3,7 +3,7 @@ description: Konfidenzlegenden helfen Ihnen dabei, die Wahrscheinlichkeit zu erm
 title: Konfidenzlegenden
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
 exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Konfidenzlegenden{#confidence-legends}
+
+{{eol}}
 
 Konfidenzlegenden helfen Ihnen dabei, die Wahrscheinlichkeit zu ermitteln, dass die Zahlen, die Sie sehen, auf Zufälle zurückzuführen sind, und die möglichen Abweichungen in den Daten zu verstehen.
 
@@ -32,7 +34,7 @@ Die folgende Konfidenzlegende zeigt Konfidenzdetails zur Konversionsmetrik an, w
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Metrik oder Formel </p> </td> 
-   <td colname="col2"> <p>Der Metrikname oder Metrikausdruck, für den Sie Konfidenzinformationen anzeigen möchten. Jede Auswahl, die Sie in Ihrem Arbeitsbereich treffen, wird in der Legende widergespiegelt. In diesem Beispiel werden Details zur Konversionsmetrik angezeigt. </p> <p>Weitere Informationen zu Syntaxregeln für die Eingabe eines Ausdrucks finden Sie unter <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> Syntax der Abfragesprache</a>. </p> </td> 
+   <td colname="col2"> <p>Der Metrikname oder Metrikausdruck, für den Sie Konfidenzinformationen anzeigen möchten. Jede Auswahl, die Sie in Ihrem Arbeitsbereich treffen, wird in der Legende widergespiegelt. In diesem Beispiel werden Details zur Konversionsmetrik angezeigt. </p> <p>Informationen zu Syntaxregeln für die Eingabe eines Ausdrucks finden Sie unter <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> Syntax der Abfragesprache</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Gemessener Wert </p> </td> 
@@ -54,14 +56,12 @@ Die folgende Konfidenzlegende zeigt Konfidenzdetails zur Konversionsmetrik an, w
 >Bei der Analyse der Ergebnisse von Berechnungen müssen die folgenden Einschränkungen berücksichtigt werden:
 >* Die Zahlen sind Schätzungen. Wenn Sie dieselben Berechnungen mit einem anderen Datensatz wiederholt haben, erhalten Sie ein anderes Ergebnis. Dies wird als zufällige Variante bezeichnet.
 >* Extrapolationen auf höhere Wahrscheinlichkeiten hängen von der Annahme der Normalität ab, die nicht für alle Metriken korrekt ist. Daher sind die Werte für 99% Wahrscheinlichkeit weniger zuverlässig als die Werte für 90% Wahrscheinlichkeit.
-
 >
->
-Wenn Sie genauere Zahlen benötigen, sollten Sie sich an einen Experten für Statistik wenden.
+>Wenn Sie genauere Zahlen benötigen, sollten Sie sich an einen Experten für Statistik wenden.
 
-## Metriken oder Formeln {#section-7f09ff84c3514f26b78d29294e1f03d9} ändern
+## Metriken oder Formeln ändern {#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* Klicken Sie in der Konfidenzlegende in das Feld **[!UICONTROL Metric or Formula]** und geben Sie die gewünschte Metrik oder den Ausdruck ein. Informationen zu den Syntax-Regeln für Ausdrücke finden Sie unter [Syntax der Abfragesprache](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+* Klicken Sie in der Konfidenzlegende auf die Schaltfläche **[!UICONTROL Metric or Formula]** und geben Sie die gewünschte Metrik oder den Ausdruck ein. Informationen zu Syntax-Regeln für Ausdrücke finden Sie unter [Syntax der Abfragesprache](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 ## Exportieren in Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 

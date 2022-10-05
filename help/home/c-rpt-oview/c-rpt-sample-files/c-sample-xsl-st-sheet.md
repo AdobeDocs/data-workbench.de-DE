@@ -3,7 +3,7 @@ description: Codebeispiel für XSL-Stylesheet.
 title: Beispiel für XSL-Stylesheet
 uuid: cac5c5ad-b0ec-45d8-901d-e39ce1f6d61a
 exl-id: 688b0ce5-999b-4cfc-9228-146450132aee
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '20'
 ht-degree: 40%
@@ -11,6 +11,8 @@ ht-degree: 40%
 ---
 
 # Beispiel für XSL-Stylesheet{#sample-xsl-style-sheet}
+
+{{eol}}
 
 Codebeispiel für XSL-Stylesheet.
 

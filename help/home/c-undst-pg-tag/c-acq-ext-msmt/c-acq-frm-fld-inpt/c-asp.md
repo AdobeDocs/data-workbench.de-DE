@@ -3,7 +3,7 @@ description: Webseiten werden häufig mithilfe der Programmiersprache ASP (Activ
 title: ASP-spezifische Informationen
 uuid: 552288cb-b775-4121-8869-322f2a26932b
 exl-id: f73235e1-d44a-4056-b1f4-a86879c19483
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # ASP-spezifische Informationen{#asp-specific-information}
+
+{{eol}}
 
 Webseiten werden häufig mithilfe der Programmiersprache ASP (Active Server Pages) strukturiert.
 
@@ -32,7 +34,7 @@ Response.AppendToLog("&v_3=" +  sState);
 Response.AppendToLog("&v_4=" +  sZip);
 ```
 
-Durch diesen Prozess werden die Formularwerte, wie sie definiert sind, an die Anforderungsdaten für die Seite [!DNL Form Processing] angehängt. Innerhalb der Protokolldaten wären die angehängten Werte als Abfragezeichenfolgen der Seite [!DNL Form Processing] verfügbar, wie unten dargestellt. Beispielsweise wären v_1, v_2, v_3 und v_4 jetzt Abfragezeichenfolgen, die die in die entsprechenden Formularfelder eingegebenen Daten enthalten. Die im obigen Beispiel beschriebene Syntax kann für alle zusätzlichen Formularfelder und Werte dupliziert werden, die erfasst werden sollen.
+Durch diesen Prozess würden die Formularwerte, wie sie definiert sind, an die Anfragedaten für die [!DNL Form Processing] Seite. Innerhalb der Protokolldaten sind die angehängten Werte als Abfragezeichenfolgen der [!DNL Form Processing] wie unten dargestellt. Beispielsweise wären v_1, v_2, v_3 und v_4 jetzt Abfragezeichenfolgen, die die in die entsprechenden Formularfelder eingegebenen Daten enthalten. Die im obigen Beispiel beschriebene Syntax kann für alle zusätzlichen Formularfelder und Werte dupliziert werden, die erfasst werden sollen.
 
 ```
 https://www.myserver.com/path/to/formprocessingpage.asp?v_1=John+Smith&v_2=Los+Angeles&v_3=California&v_4=90210
@@ -45,7 +47,7 @@ var formvalues = Response.Form;
 Response.AppendToLog(formvalues);
 ```
 
-In diesem Beispiel würden alle im HTML vorhandenen Formularfelder zusammen mit den entsprechenden Werten genommen und als Abfragezeichenfolgen an den Protokolleintrag für die Seite [!DNL Form Processing] angehängt. Beachten Sie, dass dies alle im Formular vorhandenen ausgeblendeten Felder einschließen würde.
+In diesem Beispiel würden alle in der HTML vorhandenen Formularfelder zusammen mit den entsprechenden Werten genommen und als Abfragezeichenfolgen an den Protokolleintrag für die [!DNL Form Processing] Seite. Beachten Sie, dass dies alle im Formular vorhandenen ausgeblendeten Felder einschließen würde.
 
 Die Protokolldaten werden wie in der folgenden Tabelle beschrieben erweitert:
 

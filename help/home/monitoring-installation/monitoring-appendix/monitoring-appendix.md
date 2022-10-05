@@ -3,7 +3,7 @@ description: In diesem Dokument werden die Profile mit ihren Feldern, Dimensione
 title: Profildimensionen und Metriken in Data Workbench
 uuid: 42ef154f-fd8b-4609-8685-96d9dbf32a3d
 exl-id: cfad9897-2ea3-47e4-aa36-416e0fde9358
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Profildimensionen und Metriken in Data Workbench{#data-workbench-profile-dimensions-and-metrics}
+
+{{eol}}
 
 In diesem Dokument werden die Profile mit ihren Feldern, Dimensionen und Metriken beschrieben, die vom Data Workbench-Überwachungsprofil verwendet werden.
 
@@ -25,6 +27,6 @@ Diese Profile bieten Dimensionen und Metriken, mit denen Sie Serverstatus- und L
 * [Dimensionen im Profil &quot;Insight-Historie&quot;](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
 * [Metriken im Insight Historical Monitoring-Profil](../../../home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md#concept-8fece88b1f014637bbc7c8372ee93203)
 
-Mit den Statusprofilen können Sie die Leistung von Data Workbench aus betrieblicher Sicht anzeigen. Das Profil **Profilstatus** und das Profil **Serverstatus** erfassen Daten aus dem Detaillierten Status und den Data Workbench-Servern. Alle erfassten Daten werden zur Verwendung in das Feld `cs-uri-query` eingefügt.
+Mit den Statusprofilen können Sie die Leistung von Data Workbench aus betrieblicher Sicht anzeigen. Die **Profilstatus** und **Server-Status** -Profil Daten von den detaillierten Status- und Data Workbench-Servern erfassen. Alle erfassten Daten werden in die `cs-uri-query` zur Verwendung.
 
 Die **Historische Profile** ermöglichen es Ihnen, die Auswirkungen von Konfigurations- und Hardwareänderungen mithilfe von historischen Daten zu bewerten. Das Verlaufsprofil kann am nützlichsten sein, da es es Ihnen ermöglicht, die Auswirkungen von Konfigurations- und Hardwareänderungen im Laufe der Zeit zu bewerten.

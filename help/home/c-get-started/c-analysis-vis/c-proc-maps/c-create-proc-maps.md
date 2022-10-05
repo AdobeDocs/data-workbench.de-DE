@@ -3,7 +3,7 @@ description: Sie können 2D- und 3D-Prozesskarten erstellen, indem Sie Elemente 
 title: Erstellen von Prozesskarten
 uuid: dbcde637-0411-4296-99ca-5510e0285e4b
 exl-id: 2e417a8e-5b1c-4dce-9e4e-ac7ed044564c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Erstellen von Prozesskarten{#create-a-process-map}
+
+{{eol}}
 
 Sie können 2D- und 3D-Prozesskarten erstellen, indem Sie Elemente aus Balkendiagrammen, Tabellen und Hierarchieansichten auf eine leere Zuordnung ziehen und ablegen.
 
@@ -39,7 +41,7 @@ Die Elemente, die Sie hinzufügen können, müssen Elemente der Basisdimension d
    >
    >Die Elemente, die Sie hinzufügen können, müssen Elemente der Basisdimension der Prozesskarte sein.
 
-   Wenn Sie ein einzelnes Element auf eine Prozesszuordnung ziehen, wird nur ein Zuordnungsknoten für dieses Element erstellt. Wenn Sie jedoch mehrere Elemente (eine Gruppe) oder einen Ordner mit mehreren Elementen auswählen, wird durch Ziehen aus der Hierarchie ein einzelner Knoten für diese Gruppe oder diesen Ordner erstellt. Wenn Sie beispielsweise mit Website-Daten arbeiten, wird durch Ziehen eines Ordners mit dem Namen [!DNL site.com/cgi-bin] auf eine Zuordnung ein Knoten mit dem Namen [!DNL site.com/cgi-bin/*] erstellt, der alle Seiten und Verzeichnisse darstellt, die untergeordnete Elemente dieses Ordners sind.
+   Wenn Sie ein einzelnes Element auf eine Prozesszuordnung ziehen, wird nur ein Zuordnungsknoten für dieses Element erstellt. Wenn Sie jedoch mehrere Elemente (eine Gruppe) oder einen Ordner mit mehreren Elementen auswählen, wird durch Ziehen aus der Hierarchie ein einzelner Knoten für diese Gruppe oder diesen Ordner erstellt. Wenn Sie beispielsweise mit Website-Daten arbeiten, ziehen Sie einen Ordner mit dem Namen [!DNL site.com/cgi-bin] auf einer Zuordnung erstellt einen Knoten namens [!DNL site.com/cgi-bin/*], der alle Seiten und Verzeichnisse darstellt, die untergeordnete Elemente dieses Ordners sind.
 
 Weitere Informationen zu Seitenhierarchieansichten finden Sie unter [Anwenden von Hierarchieansichten](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff).
 

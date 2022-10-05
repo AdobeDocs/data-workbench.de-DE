@@ -3,7 +3,7 @@ description: Über das Dropdown-Menü Hilfe können Sie auf die Produktdokumenta
 title: Hilfemenü
 uuid: d94f8b9f-bfaa-43b4-ab64-1bd75ff54c7d
 exl-id: 86482588-bb9a-4e4c-bd01-b3bea6eaaa33
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Hilfemenü{#help-menu}
+
+{{eol}}
 
 Über das Dropdown-Menü Hilfe können Sie auf die Produktdokumentation für das Dashboard zugreifen
 

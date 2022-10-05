@@ -3,7 +3,7 @@ description: Websites, die mit Flash erstellt wurden, erfordern besondere Aufmer
 title: Tracking der Besucheraktivität in Flash-basierten Rich-Media-Inhalten
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 5%
@@ -12,13 +12,15 @@ ht-degree: 5%
 
 # Tracking der Besucheraktivität in Flash-basierten Rich-Media-Inhalten{#tracking-visitor-activity-within-flash-rich-media-content}
 
+{{eol}}
+
 Websites, die mit Flash erstellt wurden, erfordern besondere Aufmerksamkeit hinsichtlich der Erfassung von Besucheraktionen, die innerhalb der Rich-Media-Inhalte durchgeführt werden.
 
-Mit der ActionScript [!DNL Flash] können Sie einfache Änderungen an Ihren vorhandenen [!DNL Flash]-Filmen vornehmen, um die Verfolgung aller Besucherinteraktionen mit dem Film zu ermöglichen, z. B. Schaltflächen- oder Mausbewegungen.
+Verwenden [!DNL Flash] ActionScript: Sie können einfache Änderungen an Ihren vorhandenen [!DNL Flash] -Filme, die das Tracking aller Besucherinteraktionen mit dem Film ermöglichen, z. B. Schaltflächen- oder Mausbewegungen.
 
-Um das Tracking der Besucheraktivität in Ihrem [!DNL Flash]-Film zu erleichtern, führen Sie die folgenden Schritte aus:
+So erleichtern Sie die Verfolgung der Besucheraktivitäten in Ihrer [!DNL Flash] film, führen Sie die folgenden Schritte aus:
 
-1. Fügen Sie den folgenden ActionScript-Code zu Ihrem Film hinzu. Dieser Code stellt eine Funktion dar, die von Ereignissen im nachzuverfolgenden [!DNL Flash]-Film aufgerufen werden kann.
+1. Fügen Sie den folgenden ActionScript-Code zu Ihrem Film hinzu. Dieser Code stellt eine Funktion dar, die von Ereignissen innerhalb der Variablen [!DNL Flash] Film, den Sie verfolgen möchten.
 
    ```
    // FLASH TAG CODE BEGIN
@@ -30,7 +32,7 @@ Um das Tracking der Besucheraktivität in Ihrem [!DNL Flash]-Film zu erleichtern
    ```
 
 1. Erstellen Sie eine leere Datei mit dem Namen [!DNL flashtag.txt] und platzieren Sie die Datei auf Ihren Webservern.
-1. Ersetzen Sie in der Funktion in Schritt 1 den Platzhalter \[[!DNL PATH_TO_WEB_SERVER]\] durch den vollständig qualifizierten oder relativen Pfad zum Speicherort der Datei [!DNL flashtag.txt]. Beispiel:
+1. Ersetzen Sie in der Funktion in Schritt 1 die Variable \[[!DNL PATH_TO_WEB_SERVER]\] Platzhalter mit dem vollständig qualifizierten oder relativen Pfad zum Speicherort der [!DNL flashtag.txt] -Datei. Beispiel:
 
    ```
    var FLASHTAGURI = https://www.mysite.com/flashtag/flashtag.txt”;
@@ -44,7 +46,7 @@ Um das Tracking der Besucheraktivität in Ihrem [!DNL Flash]-Film zu erleichtern
 
    Dieses Beispiel zeigt die Verwendung des on(release)-Ereignisses. Die Funktion tag() kann jedoch durch jedes Ereignis referenziert werden, das Sie verfolgen möchten, z. B. ein on(press)-, on(rollover)-, on(rollout)- oder on(keypress)-Ereignis.
 
-   Der Platzhalter \[[!DNL PUT_PAGE_NAME_HERE]\] sollte durch eine Zeichenfolge ersetzt werden, die den Namen der Seite oder des Ereignisses darstellt, die/das Sie verfolgen. Die Variable \[[!DNL PUT_PAGE_NAME_HERE]\]kann entweder manuell oder über einen Variablenverweis geändert werden, um einen eindeutigen Namen für die Seite oder das Ereignis in der Anwendung [!DNL Flash] anzugeben. Der Wert, der den Platzhalter \[[!DNL PUT_PAGE_NAME_HERE]\] ersetzt, kann aus einem einfachen Namen bestehen oder so strukturiert sein, dass er eine hierarchische Struktur ähnlich einer vollständigen URI darstellt. Beispiel:
+   \[[!DNL PUT_PAGE_NAME_HERE]\] Platzhalter sollte durch eine Zeichenfolge ersetzt werden, die den Namen der Seite oder des Ereignisses darstellt, die/das Sie verfolgen. \[[!DNL PUT_PAGE_NAME_HERE]\]kann entweder manuell oder über einen Variablenverweis geändert werden, um einen eindeutigen Namen für die Seite oder das Ereignis innerhalb der Variablen [!DNL Flash] Anwendung. Der Wert, der &quot;\[&quot;ersetzt[!DNL PUT_PAGE_NAME_HERE]\] Platzhalter können aus einem einfachen Namen bestehen oder so strukturiert sein, dass sie eine hierarchische Struktur ähnlich einer vollständigen URI darstellen. Beispiel:
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
@@ -52,7 +54,7 @@ Um das Tracking der Besucheraktivität in Ihrem [!DNL Flash]-Film zu erleichtern
 
    Adobe empfiehlt, vor der Code-Implementierung eine schriftliche Spezifikation für Seitennamen und Ereignisnamen zu erstellen, um die Abstimmung von Geschäftsanforderungen und Entwicklungsaufgaben zu erleichtern und das Potenzial für zusätzliche Entwicklungszyklen zu reduzieren.
 
-1. Falls gewünscht, können zusätzliche Variablen erfasst und mit Seiten oder Ereignissen im [!DNL Flash] -Film verknüpft werden. Ersetzen Sie dazu den Platzhalter \[[!DNL PUT_ADDITIONAL_VAR_HERE]\] durch einen Satz aus Name=Wert-Paaren, getrennt durch ein kaufmännisches Und-Zeichen (&amp;). Beispiel:
+1. Falls gewünscht, können zusätzliche Variablen erfasst und mit Seiten oder Ereignissen in der Variablen [!DNL Flash] Film. Ersetzen Sie dazu &quot;\[&quot;[!DNL PUT_ADDITIONAL_VAR_HERE]\] Platzhalter mit einem Satz von Name=Wert-Paaren, getrennt durch ein kaufmännisches Und-Zeichen (&amp;). Beispiel:
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
@@ -60,13 +62,13 @@ Um das Tracking der Besucheraktivität in Ihrem [!DNL Flash]-Film zu erleichtern
 
    Die Variablen können entweder manuell oder über einen Variablenverweis geändert werden, um zusätzliche Attribute anzugeben, die erfasst und der Seite oder dem Ereignis zugeordnet werden. Wenn keine weiteren Variablen erfasst werden müssen, entfernen Sie \[[!DNL PUT_ADDITIONAL_VAR_HERE]\].
 
-   Ihre Einrichtung des Besucher-Trackings in [!DNL Flash] Rich-Media-Inhalten ist jetzt abgeschlossen. Wenn das Ereignis aufgerufen wird, wird die Funktion Tag [!DNL (PAGENAME,VARIABLES)] aufgerufen, was dazu führt, dass eine HTTP-Anforderung für die folgende Datei erstellt wird. Diese Funktion wird zusätzlich zu anderen Funktionen aufgerufen, die wie in Ihrem [!DNL Flash]-Film definiert ausgelöst werden können:
+   Ihre Einrichtung des Besucher-Trackings in [!DNL Flash] Rich-Media-Inhalte sind jetzt abgeschlossen. Wenn das Ereignis aufgerufen wird, wird das Tag [!DNL (PAGENAME,VARIABLES)] aufgerufen werden, was dazu führt, dass eine HTTP-Anfrage für die folgende Datei gestellt wird. Diese Funktion wird zusätzlich zu anderen Funktionen aufgerufen, die ausgelöst werden können, wie in Ihrer [!DNL Flash] movie:
 
    ```
    https://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
    ```
 
-Die HTTP-Anforderung, die aus der Tag-ActionScript-Funktion [!DNL Flash] resultiert, führt dazu, dass die folgenden Informationen zu jedem Ereignis im [!DNL Flash]-Film erfasst werden. Die letzte Zeile in der Tabelle (W3C Name cs-uri-query) stellt die Informationen dar, die für die zusätzlichen Variablen erfasst wurden, die in Ihrem Funktionsaufruf angegeben sind.
+Die HTTP-Anforderung, die aus der [!DNL Flash] Tag-ActionScript-Funktion führt dazu, dass die folgenden Informationen zu jedem Ereignis innerhalb der [!DNL Flash] Film. Die letzte Zeile in der Tabelle (W3C Name cs-uri-query) stellt die Informationen dar, die für die zusätzlichen Variablen erfasst wurden, die in Ihrem Funktionsaufruf angegeben sind.
 
 <table id="table_A7ED9D38F36B4405947B2F48EA94D3C4">
  <thead>
@@ -81,7 +83,7 @@ Die HTTP-Anforderung, die aus der Tag-ActionScript-Funktion [!DNL Flash] resulti
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> Tracking-ID (Unique Visitor) </td>
-   <td colname="col3"> Kennung, die von einem Cookie gelesen wird, das im Browser des Benutzers durch <span class="wintitle"> Sensor </span> auf der ursprünglichen Anforderung des Besuchers platziert wurde </td>
+   <td colname="col3"> Kennung, die aus einem Cookie gelesen wird, das im Browser des Benutzers platziert wurde durch <span class="wintitle"> Sensor </span> auf Anfrage des Besuchers </td>
    <td colname="col4"> v1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>

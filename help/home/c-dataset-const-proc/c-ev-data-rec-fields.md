@@ -3,7 +3,7 @@ description: Informationen zu den Datenfeldern, die der Data Workbench-Server zu
 title: Felder für Ereignisdatensätze
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
 exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Felder für Ereignisdatensätze{#event-data-record-fields}
+
+{{eol}}
 
 Informationen zu den Datenfeldern, die der Data Workbench-Server zum Erstellen eines Datensatzes verarbeiten kann.
 
@@ -22,13 +24,13 @@ Informationen zu den Datenfeldern, die der Data Workbench-Server zum Erstellen e
 
 Die zum Erstellen eines Datensatzes verwendeten Ereignisdaten befinden sich in Dateien, die als Protokollquellen bezeichnet werden. Die in den Protokollquellen verfügbaren Daten werden als Ereignisdaten bezeichnet, da jeder Datensatz einen Transaktionsdatensatz oder eine einzelne Instanz eines Ereignisses mit einem zugehörigen Zeitstempel darstellt.
 
-Die Ereignisdaten einer Protokollquelle werden in Echtzeit von [!DNL Sensors] erfasst. Ereignisdaten, die von [!DNL Sensors] von HTTP- und Anwendungsservern erfasst werden, werden an Data Workbench-Server übertragen, die die Daten in komprimierte Protokolldateien ( [!DNL .vsl]) konvertieren. Ereignisdaten, die sich in einer reduzierten Datei, XML-Datei oder einer ODBC-Datenquelle befinden, werden vom Data Workbench-Server gelesen, der Decoder bereitstellt, die Sie definieren, um einen gemeinsamen Satz von Datenfeldern aus diesen verschiedenen Formaten zu extrahieren.
+Die Ereignisdaten einer Protokollquelle werden in Echtzeit von [!DNL Sensors]. Von [!DNL Sensors] von HTTP- und Anwendungsservern an Data Workbench-Server übertragen werden, die die Daten in ein komprimiertes Protokoll ( [!DNL .vsl]). Ereignisdaten, die sich in einer reduzierten Datei, XML-Datei oder einer ODBC-Datenquelle befinden, werden vom Data Workbench-Server gelesen, der Decoder bereitstellt, die Sie definieren, um einen gemeinsamen Satz von Datenfeldern aus diesen verschiedenen Formaten zu extrahieren.
 
-Die folgenden Abschnitte enthalten Informationen zu den Datenfeldern (Ereignisdatensatzfelder oder Protokolleingabefelder genannt), die von [!DNL Sensors] erfasst oder gelesen und dem Data Workbench-Server zur Verfügung gestellt werden.
+Die folgenden Abschnitte enthalten Informationen zu den Datenfeldern (als Ereignisdatensatzfelder oder Protokolleingabefelder bezeichnet), die von erfasst werden [!DNL Sensors] oder lesen und dem Data Workbench-Server zur Verfügung stellen.
 
 >[!NOTE]
 >
->Die Namen der Felder folgen im Allgemeinen der Namenskonvention für das erweiterte W3C-Protokolldateiformat. Viele Felder weisen auf die Quelle der im Feld enthaltenen Informationen hin:
+>Die Namen der Felder folgen im Allgemeinen der Namenskonvention für das erweiterte W3C-Protokolldateiformat. Viele Felder weisen Präfixe auf, die die Quelle der im Feld enthaltenen Informationen angeben:
 
 * cs gibt die Kommunikation vom Client zum Server an.
 * sc gibt die Kommunikation vom Server zum Client an.
@@ -38,7 +40,7 @@ Die folgenden Abschnitte enthalten Informationen zu den Datenfeldern (Ereignisda
 
 ## Standardfelder für Ereignisdatensätze {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
-Protokolldateien ( [!DNL .vsl]) enthalten die Felder der Ereignisdaten, die von Servern von [!DNL Sensors] erfasst und vom Data Workbench-Server bei der Erstellung des Datensatzes verwendet werden. In der folgenden Tabelle sind die Felder in einem typischen Ereignisdatensatz aufgeführt, der von [!DNL Sensor] aufgezeichnet wurde:
+Protokoll ( [!DNL .vsl])-Dateien enthalten die Felder der Ereignisdaten, die von Servern von erfasst werden [!DNL Sensors] und vom Data Workbench-Server im Prozess der Datensatzerstellung verwendet werden. In der folgenden Tabelle sind die Felder in einem typischen Ereignisdatensatz aufgeführt, der von [!DNL Sensor]:
 
 <table id="table_98E135FE4EAF44D6ADEB3C6C1C0BF6A4">
  <thead>
@@ -102,7 +104,7 @@ Protokolldateien ( [!DNL .vsl]) enthalten die Felder der Ereignisdaten, die von 
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>Der 64-Bit-Hexadezimalwert der eindeutigen Browser-Kennung, die in einem persistenten Cookie gefunden wird, wie von einem <span class="wintitle"> Sensor </span> festgelegt und vom Client mit einer Anfrage an einen Server bereitgestellt. </p> <p> Beispiel: 42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>Der 64-Bit-Hexadezimalwert der eindeutigen Browser-Kennung, die in einem persistenten Cookie gefunden wird, wie von einem <span class="wintitle"> Sensor </span> und vom Client mit einer Anfrage an einen Server bereitgestellt werden. </p> <p> Beispiel: 42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -125,15 +127,15 @@ In der folgenden Tabelle finden Sie Beispiele für Felder, die vom Data Workbenc
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-domain) </td>
-   <td colname="col2"> <p>Der Domänenname oder die IP-Adresse des HTTP-Referrer-URI. </p> <p> <p>Hinweis:  Dieses Feld ist schreibgeschützt. </p> </p> </td>
+   <td colname="col2"> <p>Der Domänenname oder die IP-Adresse des HTTP-Referrer-URI. </p> <p> <p>Hinweis: Dieses Feld ist schreibgeschützt. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-host) </td>
-   <td colname="col2"> <p>Der gesamte Hostname des Referrers. </p> <p> Beispiel: Wenn cs(referrer) <span class="filepath"> https://my.domain.com/my/page </span> ist, ist cs(referrer-host) <span class="filepath"> my.domain.com </span>. </p> </td>
+   <td colname="col2"> <p>Der gesamte Hostname des Referrers. </p> <p> Beispiel: Wenn cs(referrer) <span class="filepath"> https://my.domain.com/my/page </span>, cs(referrer-host) ist <span class="filepath"> my.domain.com </span>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-query)(name) </td>
-   <td colname="col2"> <p>Der -Wert einer Abfragezeichenfolge des Referrers. </p> <p> <p>Hinweis:  Sie können nicht mit dem Feld cs(referrer)(name) auf einen Abfragezeichenfolgenwert des Referrers zugreifen. </p> </p> </td>
+   <td colname="col2"> <p>Der -Wert einer Abfragezeichenfolge des Referrers. </p> <p> <p>Hinweis: Sie können nicht mit dem Feld cs(referrer)(name) auf einen Abfragezeichenfolgenwert des Referrers zugreifen. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs-uri </td>
@@ -143,8 +145,8 @@ In der folgenden Tabelle finden Sie Beispiele für Felder, die vom Data Workbenc
    <td colname="col1"> cs-uri-query(name) </td>
    <td colname="col2"> <p>Der mit dem angegebenen Namen verknüpfte Wert. Wenn für den angegebenen Namen mehrere Werte vorhanden sind, gibt dieses Feld den letzten dieser Werte zurück. </p> Beispiele:
     <ul id="ul_47BBB2E3076A46629BFCDB2A460F700B">
-     <li id="li_AC9BB29505A54AE4AFF49438530C9EA4"> Für den URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span> gibt cs-uri-query(product3) cd zurück. </li>
-     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> Für den URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span> gibt <span class="wintitle"> cs-uri-query(product1) </span> eine Casette zurück. </li>
+     <li id="li_AC9BB29505A54AE4AFF49438530C9EA4"> Für den URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span>, würde cs-uri-query(product3) cd zurückgeben. </li>
+     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> Für den URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span>, <span class="wintitle"> cs-uri-query(product1) </span> würde Casette zurückgeben. </li>
     </ul> <p> </p> </td>
   </tr>
   <tr>
@@ -161,15 +163,15 @@ In der folgenden Tabelle finden Sie Beispiele für Felder, die vom Data Workbenc
   </tr>
   <tr>
    <td colname="col1"> x-local-timestring </td>
-   <td colname="col2"> <p>x-timestamp konvertiert in die lokale Zeitzone, die in der Datei <span class="filepath"> Transformation.cfg </span> für den Datensatz angegeben ist. Das Format lautet JJJ-MM-TT HH:MM:SS.mmm. </p> <p> <p>Hinweis:  Sie können auch Zeitkonvertierungen wie x-local-timestring in der Datei <span class="filepath"> Log Processing.cfg </span> definieren. Weitere Informationen finden Sie unter <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Konfigurationsdatei für die Protokollverarbeitung </a>. </p> </p> </td>
+   <td colname="col2"> <p>x-Zeitstempel, konvertiert in die lokale Zeitzone, die in der <span class="filepath"> Transformation.cfg </span> -Datei für den Datensatz. Das Format lautet JJJ-MM-TT HH .:MM:SS.mmm. </p> <p> <p>Hinweis: Sie können auch Zeitkonvertierungen wie x-local-timestring im <span class="filepath"> Log Processing.cfg </span> -Datei. Weitere Informationen finden Sie unter <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Konfigurationsdatei für die Protokollverarbeitung </a>. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-log-source-id </td>
-   <td colname="col2"> <p>Die Kennung, die der Protokollquelle für einen bestimmten Protokolleintrag entspricht. Damit die Kennung aufgezeichnet werden kann, müssen Sie sie im Feld <span class="wintitle"> Protokollquellen-ID </span> der Datei <span class="filepath"> Protokollverarbeitung.cfg </span> angeben, wenn Sie <span class="wintitle"> Sensor </span>, Protokolldatei oder ODBC-Datenquellen definieren. Weitere Informationen finden Sie unter <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Konfigurationsdatei für die Protokollverarbeitung </a>. </p> <p> Beispiel: von VSensor01. </p> </td>
+   <td colname="col2"> <p>Die Kennung, die der Protokollquelle für einen bestimmten Protokolleintrag entspricht. Damit die Kennung aufgezeichnet werden kann, müssen Sie sie im <span class="wintitle"> Protokollquellen-ID </span> des <span class="filepath"> Log Processing.cfg </span> Datei beim Definieren <span class="wintitle"> Sensor </span>, Protokolldatei oder ODBC-Datenquellen. Weitere Informationen finden Sie unter <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Konfigurationsdatei für die Protokollverarbeitung </a>. </p> <p> Beispiel: von VSensor01. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-mask </td>
-   <td colname="col2"> Das Maskenmuster der <span class="wintitle"> Sensor </span>-Datenquellen (abgeleitet aus den Dateinamen <span class="filepath"> .vsl </span> ). Für eine Datei mit dem Namen <span class="filepath"> YYYYMMDD-SENSORID.VSL </span> ist x-mask SENSORID. </td>
+   <td colname="col2"> Das Maskenmuster der <span class="wintitle"> Sensor </span> Datenquellen (abgeleitet aus dem <span class="filepath"> .vsl </span> Dateinamen). Für eine Datei, deren Name im Format <span class="filepath"> JJJJMMTT-SENSORID.VSL </span>, ist x-mask SENSORID. </td>
   </tr>
   <tr>
    <td colname="col1"> x-timestring </td>
@@ -182,4 +184,4 @@ In der folgenden Tabelle finden Sie Beispiele für Felder, die vom Data Workbenc
  </tbody>
 </table>
 
-[!DNL Sensor], kann bei Verwendung auf einem Server Ereignisdatenfelder aus jeder gültigen HTTP-Anfrage-, Antwort-Header oder -Variablen erfassen, die über die Server-API für diesen verfügbar sind. Um solche Datenfelder zu erfassen, müssen Sie die gewünschten Kopfzeilenfelder oder Variablen in der Konfigurationsdatei [!DNL txlogd.conf]für [!DNL Sensor] angeben. Weitere Informationen finden Sie in der *Data Workbench [!DNL Sensor] Guide*.
+[!DNL Sensor], kann bei Verwendung auf einem Server Ereignisdatenfelder aus jeder gültigen HTTP-Anfrage-, Antwort-Header oder -Variablen erfassen, die über die Server-API für diesen verfügbar sind. Um solche Datenfelder zu erfassen, müssen Sie die gewünschten Kopfzeilenfelder oder Variablen in der [!DNL txlogd.conf]Konfigurationsdatei für [!DNL Sensor]. Weitere Informationen finden Sie unter *Data Workbench [!DNL Sensor] Handbuch*.

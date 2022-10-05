@@ -3,7 +3,7 @@ description: Latenzdimensionen werden aus einer übergeordneten zählbaren Dimen
 title: Erstellen von Latenzdimensionen
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
 exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 2%
@@ -12,15 +12,17 @@ ht-degree: 2%
 
 # Erstellen von Latenzdimensionen{#create-a-latency-dimension}
 
+{{eol}}
+
 Latenzdimensionen werden aus einer übergeordneten zählbaren Dimension wie Sitzungen und einer Zeitdimension wie Tag erstellt.
 
 Wenn Sie eine Latenztabelle in Data Workbench erstellen, fügen Sie der Visualisierungsdatei (.vw) automatisch eine Latenzdimension hinzu. Sie können die Latenzdimension einer Tabelle bearbeiten, indem Sie die folgenden Schritte ausführen.
 
 **So bearbeiten Sie eine Latenzdimension**
 
-1. Öffnen Sie die von Ihnen erstellte Latenztabelle in einem Texteditor wie Notepad. Sie befindet sich im Ordner &quot;User&quot;> &quot;`working profile name`&quot;> &quot;Work&quot;im Installationsverzeichnis Ihrer Data Workbench.
+1. Öffnen Sie die von Ihnen erstellte Latenztabelle in einem Texteditor wie Notepad. Sie befindet sich unter Benutzer > `working profile name` > Arbeitsordner im Installationsordner Ihrer Data Workbench.
 
-   Die definierte Latenzdimension umfasst die im folgenden Beispiel dargestellten Parameter. (Die Definition Ihrer Latenzdimension kann zusätzliche Parameter enthalten.) [!DNL line entity = LatencyDim:] gibt den Beginn der Definition der Latenzdimension an.
+   Die definierte Latenzdimension umfasst die im folgenden Beispiel dargestellten Parameter. (Die Definition Ihrer Latenzdimension kann zusätzliche Parameter enthalten.) Die [!DNL line entity = LatencyDim:] gibt den Beginn der Definition der Latenzdimension an.
 
    ```
    entity = LatencyDim:
@@ -55,7 +57,7 @@ Wenn Sie eine Latenztabelle in Data Workbench erstellen, fügen Sie der Visualis
    </tr> 
    <tr> 
       <td colname="col1"> <p>Clip </p> </td> 
-      <td colname="col2"> <p>Eine zählbare Dimension, die eine Eins-zu-viele-Beziehung zur Ebene der Latenzdimension aufweist. Die Latenz wird nicht über die Grenzen dieser Dimension hinweg berechnet. Wenn Sie beispielsweise eine Seitenansichtsebene und einen Sitzungsabschnitt angeben, werden Latenzen für die Seitenansichten berechnet, die während derselben Sitzung wie das Ereignis aufgetreten sind. </p> <p>Weitere Informationen zu Eins-zu-viele-Dimensionen (einfach) finden Sie im <i>Handbuch zur Datensatzkonfiguration</i>. </p> </td> 
+      <td colname="col2"> <p>Eine zählbare Dimension, die eine Eins-zu-viele-Beziehung zur Ebene der Latenzdimension aufweist. Die Latenz wird nicht über die Grenzen dieser Dimension hinweg berechnet. Wenn Sie beispielsweise eine Seitenansichtsebene und einen Sitzungsabschnitt angeben, werden Latenzen für die Seitenansichten berechnet, die während derselben Sitzung wie das Ereignis aufgetreten sind. </p> <p>Informationen zu 1-zu-n-Dimensionen (einfach) finden Sie in der <i>Anleitung zur Datensatzkonfiguration</i>. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Zeit </p> </td> 
@@ -80,7 +82,7 @@ Wenn Sie eine Latenztabelle in Data Workbench erstellen, fügen Sie der Visualis
    </tbody> 
    </table>
 
-1. Speichern Sie die Datei [!DNL .vw] im Ordner Benutzer\*Arbeitsprofilname*\Work .
+1. Speichern Sie die [!DNL .vw] in den Ordner Benutzer\*Arbeitsprofilname*\Work .
 
    Im Folgenden finden Sie die Einstellungen für die standardmäßige Latenzdimension:
 

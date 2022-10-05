@@ -3,7 +3,7 @@ description: Anhand von Metriklegenden können Sie die Basismetriken für Ihr Pr
 title: Metriklegenden
 uuid: 72de7b0e-0a71-4465-baaf-d515fe474e0d
 exl-id: 1f2e58e2-44ea-4760-a504-2ed3a80c8b19
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 7%
@@ -12,9 +12,11 @@ ht-degree: 7%
 
 # Metriklegenden{#metric-legends}
 
+{{eol}}
+
 Anhand von Metriklegenden können Sie die Basismetriken für Ihr Profil und Statistiken bezüglich des Datensatzes (bzw. der aktuellen Auswahl, falls vorhanden) anzeigen.
 
-Metriklegenden in Ihrer Adobe App zeigen die Metriken an, die für Ihren Datensatz relevant sind, wie in der folgenden [!DNL Site] Metriklegende.
+Metriklegenden in Ihrer Adobe App zeigen die Metriken an, die für Ihren Datensatz relevant sind, wie im folgenden Beispiel: [!DNL Site] Metriklegende.
 
 ![](assets/lgd_MetricLegend.png)
 
@@ -22,7 +24,7 @@ Metriklegenden sind eigentlich ein Sonderfall einer Tabellenvisualisierung. Dahe
 
 ## Metrik hinzufügen {#section-6655470bf06c4d2b82f7a01784552d1e}
 
-* Klicken Sie in der Metriklegende mit der rechten Maustaste auf einen Metriknamen und klicken Sie auf **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]***.
+* Klicken Sie in der Metriklegende mit der rechten Maustaste auf einen Metriknamen und klicken Sie auf **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/lgd_MetricLegend_addMetric.png)
 

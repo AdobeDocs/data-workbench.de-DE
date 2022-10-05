@@ -3,7 +3,7 @@ description: Tabellen
 title: Dashboard-Tabellen
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
 exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Tabellen{#tables}
+
+{{eol}}
 
 Tabellen sind die detailliertesten Visualisierungen, die in der Dashboard-Anwendung verfügbar sind. Mit Tabellen können Sie Metrik- und Dimensionsdaten mit jedem Datenelement visualisieren, das als Zeile in einer Tabelle dargestellt wird. Eine Spalte enthält die Dimensionswerte, während die anderen Spalten die entsprechenden Metrikwerte enthalten. Es können mehrere Metriken angezeigt werden, und die Anzahl der in einer Tabelle angezeigten Dimensionswerte ist nicht beschränkt. Alle Werte für eine ausgewählte Dimension, die in den Data Workbench-Daten vorhanden sind, werden in der Tabelle angezeigt.
 

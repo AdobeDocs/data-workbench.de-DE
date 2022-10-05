@@ -1,31 +1,35 @@
 ---
-description: Anweisungen zur Verwendung von benutzerdefinierten Zertifikaten.
-title: Verwenden von benutzerdefinierten Zertifikaten in Data Workbench
+description: Anweisungen zur Verwendung benutzerdefinierter Zertifikate.
+title: Verwenden benutzerdefinierter Zertifikate in Data Workbench
 uuid: c3a2db27-bdb2-44b3-95dd-65eedd05c957
-translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+exl-id: f813d599-723f-4b5d-a0b5-f4d71c1b1a22
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 1%
 
 ---
 
+# Verwenden benutzerdefinierter Zertifikate in Data Workbench{#using-custom-certificates-in-data-workbench}
 
-# Verwenden von benutzerdefinierten Zertifikaten in Data Workbench{#using-custom-certificates-in-data-workbench}
+{{eol}}
 
-Anweisungen zur Verwendung von benutzerdefinierten Zertifikaten.
+Anweisungen zur Verwendung benutzerdefinierter Zertifikate.
 
-Ein Zertifikat, das entweder vom Data Workbench-Client oder vom Server verwendet wird, muss von einer vertrauenswürdigen Zertifizierungsstelle (Certificate Authority) signiert werden. Data Workbench-Kunden erhalten Zertifikate, die von der Visual Sciences-Zertifizierungsstelle signiert werden. Diese Zertifikate werden von der Data Workbench-Software als vertrauenswürdig eingestuft, da die [!DNL trust_ca_cert.pem] (zusammen mit der Insight-Software bereitgestellte und im **Zertifikatverzeichnis** von Servern und Clients gespeicherte) ein *Stammzertifikat* für die Visual Sciences-Zertifizierungsstelle enthält. Diese Zertifikate werden sowohl für die Lizenzierung der Software als auch für die Authentifizierung verwendet, wenn Clients und Server über SSL miteinander kommunizieren. Für die Lizenzierung können nur Zertifikate verwendet werden, die von der Visual Sciences CA ausgestellt wurden, andere Zertifikate dürfen jedoch für die Kommunikation und Authentifizierung verwendet werden. Zertifikate, die von anderen Zertifizierungsstellen als Visual Sciences ausgestellt wurden, werden nachstehend als *benutzerdefinierte Zertifikate bezeichnet.*
+Ein Zertifikat, das entweder vom Data Workbench-Client oder -Server verwendet wird, muss von einer vertrauenswürdigen Zertifizierungsstelle (Certificate Authority) signiert werden. Data Workbench-Kunden erhalten Zertifikate, die von der Visual Sciences CA signiert werden. Diese Zertifikate werden von der Data Workbench-Software als vertrauenswürdig eingestuft, da die [!DNL trust_ca_cert.pem] (zusammen mit der Insight-Software bereitgestellt und im **Zertifikate** Verzeichnis der Server und Clients) enthält eine *CA-Stammzertifikat* für die Visual Sciences CA. Diese Zertifikate werden sowohl für die Lizenzierung der Software als auch für die Authentifizierung verwendet, wenn Clients und Server mithilfe von SSL miteinander kommunizieren. Nur von der Zertifizierungsstelle der Visual Sciences ausgestellte Zertifikate können für die Lizenzierung verwendet werden, andere Zertifikate können jedoch für die Kommunikation und Authentifizierung verwendet werden. Die von anderen Zertifizierungsstellen als Visual Sciences ausgestellten Bescheinigungen werden im Folgenden als *benutzerdefinierte Zertifikate.*
 
-**Wichtiger Hinweis:** Bei Servern und Clients verwendet die Data Workbench-Software die Zertifikatdateien, die im **Zertifikatordner** des Clients oder des Servers installiert sind, oder die Zertifikate, die explizit in der Konfiguration angegeben sind. Sie können jedoch auch den [Windows-Zertifikatspeicher](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md#concept-4acb13b7de9340ea8cde8ad84b93358d) für Clients verwenden.
+**Wichtiger Hinweis:** Bei Servern und Clients verwendet die Data Workbench-Software die im Client- oder Server-Fenster installierten Zertifikatdateien **Zertifikate** -Ordner oder -Zertifikate, die explizit in der Konfiguration angegeben sind. Sie können jedoch auch die [Windows-Zertifikatspeicher](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md#concept-4acb13b7de9340ea8cde8ad84b93358d) für Clients.
 
-Die folgenden Anweisungen beschreiben die Verfahren, die bei der Verwendung von benutzerdefinierten Zertifikaten für die Kommunikation zwischen Data Workbench-Clients und -Servern befolgt werden müssen. Nicht jedes Detail ist eine schwierige Anforderung, und es können unterschiedliche Prozessvarianten eingesetzt werden. Die folgenden Verfahren wurden jedoch getestet, um zu funktionieren.
+In den folgenden Anweisungen werden die Verfahren beschrieben, nach denen benutzerdefinierte Zertifikate für die Kommunikation zwischen Data Workbench-Clients und -Servern verwendet werden. Nicht jedes Detail ist eine schwierige Anforderung, und es können unterschiedliche Prozessvarianten eingesetzt werden. Die folgenden Verfahren wurden jedoch getestet, um zu funktionieren.
 
-## Einrichten von benutzerdefinierten Clientzertifikaten {#section-2083fd41973e451fa404e7a4ae4da591}
+## Einrichten benutzerdefinierter Client-Zertifikate {#section-2083fd41973e451fa404e7a4ae4da591}
 
-1. Fügen Sie das Zertifikat der ausstellenden Zertifizierungsstelle dem [!DNL trust_cert_ca.pem]hinzu, das im **Zertifikatordner** des Clients installiert ist, und dem jedes Servers in jedem Cluster, auf den mit diesem benutzerdefinierten Zertifikat zugegriffen werden soll.
+1. Fügen Sie die Bescheinigung der ausstellenden Zertifizierungsstelle der [!DNL trust_cert_ca.pem], die in der **Zertifikate** Verzeichnis des Clients und des jedes Servers in jedem Cluster, auf den mit diesem benutzerdefinierten Zertifikat zugegriffen werden soll.
 
-1. Besorgen Sie sich ein benutzerdefiniertes Zertifikat für jeden Server im Cluster mit den folgenden Bedingungen:
+1. Rufen Sie für jeden Server im Cluster ein benutzerdefiniertes Zertifikat mit den folgenden Bedingungen ab:
 
-   1. Zertifikat ist als [!DNL .pem] Zertifikat formatiert.
-   1. Das Zertifikat enthält seinen Schlüssel und ist unverschlüsselt (d. h. es hat kein Kennwort und keinen Passwort).
+   1. Zertifikat ist als [!DNL .pem] Zertifikat.
+   1. Das Zertifikat enthält seinen Schlüssel und ist unverschlüsselt (d. h. es hat kein Kennwort/keine Passwort-Phrase).
 
       Ein Zertifikat enthält seinen Schlüssel mit einer der folgenden Zeilen:
 
@@ -34,33 +38,33 @@ Die folgenden Anweisungen beschreiben die Verfahren, die bei der Verwendung von 
       BEGIN RSA PRIVATE KEY
       ```
 
-      Eine Möglichkeit, den Passwortsatz aus einem [!DNL .pem] Zertifikat zu entfernen:
+      Eine Möglichkeit, den Kennwortsatz aus einem [!DNL .pem] certificate:
 
       ```
       openssl rsa  -in password-protected-cert.pem -out no-password-cert.pem 
       openssl x509 -in password-protected-cert.pem >> no-password.pem
       ```
 
-   1. Das Zertifikat hat die KN, O, OU usw. , wie für diesen Client in der [!DNL Access Control.cfg] Serverdatei erforderlich.
-   1. Das Zertifikat wurde mit einem *Zweck **** des *Clients* (oder sowohl *Server* **als auch** *Client*) ausgestellt.
+   1. Das Zertifikat umfasst die Felder CN, O, OU usw. wie für diesen Client in der [!DNL Access Control.cfg] -Datei.
+   1. Das Zeugnis wurde mit einem *Zweck&#42;&#42;&#42;* von *client* (oder beides) *server* **und** *client*).
 
-      Um zu überprüfen, ob ein Zertifikat über einen Zweckcode des Servers und/oder Clients verfügt, können die folgenden Befehle verwendet werden:
+      Um zu überprüfen, ob ein Zertifikat über einen Zielcode des Servers und/oder Clients verfügt, können die folgenden Befehle verwendet werden:
 
       ```
       openssl verify -CAfile trust_ca_cert.pem -purpose sslserver -x509_strict custom_communications_cert.pem 
       openssl verify -CAfile trust_ca_cert.pem -purpose sslclient -x509_strict custom_communications_cert.pem
       ```
 
-      Für Serverzertifikate sollten beide Befehle Folgendes ausgeben:
+      Für Serverzertifikate sollten beide Befehle Folgendes liefern:
 
       ```
       custom_communications_cert.pem: OK
       ```
 
-      Bei einem Client-Zertifikat ist nur der zweite Befehl erforderlich, um [!DNL OK]Ergebnisse zu liefern.
+      Für ein Client-Zertifikat ist nur der zweite Befehl erforderlich, um [!DNL OK].
 
-1. Platzieren Sie das Zertifikat im **Zertifikatverzeichnis** des Kunden.
-1. Stellen Sie [!DNL Insight.cfg] unter &quot; *serverInfo* &quot;für jeden Cluster, der dieses Zertifikat verwenden soll, sicher, dass der Name des *benutzerdefinierten Client-Zertifikats* angegeben ist, z. B.:
+1. Platzieren Sie das Zertifikat im **Zertifikate** Verzeichnis.
+1. In [!DNL Insight.cfg] unter *serverInfo* Stellen Sie für jeden Cluster, den Sie dieses Zertifikat verwenden möchten, sicher, dass die *Benutzerdefinierte Client-Zertifikate* benannt ist, z. B.:
 
    ```
    Servers = vector: 1 items 
@@ -69,51 +73,51 @@ Die folgenden Anweisungen beschreiben die Verfahren, die bei der Verwendung von 
    <my_custom_client_cert.pem>
    ```
 
-## Einrichten von benutzerdefinierten Serverzertifikaten {#setting-up-custom-server-certificates}
+## Einrichten benutzerdefinierter Serverzertifikate {#setting-up-custom-server-certificates}
 
-In diesem Abschnitt wird davon ausgegangen, dass Sie über einen Cluster verfügen, der mit von Visual Sciences ausgestellten Zertifikaten ausgeführt wird. Die Konfiguration folgt gängigen Verfahren (z. B. wird der Ordner &quot; *Komponenten für Verarbeitungsserver* &quot;auf dem Master mit den Ordnern &quot; *Komponenten* &quot;aller DPUs synchronisiert).
+In diesem Abschnitt wird davon ausgegangen, dass Sie über einen Cluster verfügen, der aktiv ist und von dem Zertifikate verwendet werden, die von Visual Sciences ausgestellt wurden. Die Konfiguration folgt gängigen Verfahren (z. B. dem *Komponenten für Verarbeitungsserver* -Verzeichnis auf dem Übergeordneten wird mit dem *Komponenten* -Verzeichnissen aller DPUs).
 
-1. Fügen Sie das Zertifikat der ausstellenden Zertifizierungsstelle der Datei hinzu, die auf jedem Server im Cluster und jedem Client installiert ist, der mit diesem Cluster kommunizieren muss. [!DNL trust_cert_ca.pem]
-1. Erstellen Sie für jeden Server im Cluster ein benutzerdefiniertes Zertifikat mit folgenden Anforderungen:
+1. Fügen Sie die Bescheinigung der ausstellenden Zertifizierungsstelle der [!DNL trust_cert_ca.pem] wird auf jedem Server im Cluster installiert und auf jedem Client, der mit diesem Cluster kommunizieren muss.
+1. Rufen Sie für jeden Server im Cluster ein benutzerdefiniertes Zertifikat mit den folgenden Anforderungen ab:
 
-   1. Benutzerdefiniertes Zertifikat wird als [!DNL .pem] Zertifikat formatiert.
-   1. Das Zertifikat enthält seinen Schlüssel und ist unverschlüsselt (d. h. es hat kein Kennwort und keinen Passwort).
+   1. Benutzerdefiniertes Zertifikat wird als [!DNL .pem] Zertifikat.
+   1. Das Zertifikat enthält seinen Schlüssel und ist unverschlüsselt (d. h. es hat kein Kennwort/keine Passwort-Phrase).
 
-      Ein Zertifikat enthält seinen Schlüssel, wenn es eine Zeile wie die folgende enthält:
+      Ein Zertifikat enthält seinen Schlüssel, wenn er eine Zeile wie die folgende enthält:
 
       ```
       BEGIN PRIVATE KEY 
       BEGIN RSA PRIVATE KEY
       ```
 
-      Eine Möglichkeit, den Passwortsatz aus einem [!DNL .pem] Zertifikat zu entfernen:
+      Eine Möglichkeit, den Kennwortsatz aus einem [!DNL .pem] certificate:
 
       ```
       openssl rsa  -in password-protected-cert.pem -out no-password-cert.pem 
       openssl x509 -in password-protected-cert.pem >> no-password.pem
       ```
 
-   1. Das Zertifikat hat dieselbe KN wie das derzeit auf dem Server installierte [!DNL server_cert.pem] .
-   1. Das Zertifikat wurde mit dem Zweck *Server* und *Client* ausgestellt.
+   1. Das Zertifikat hat dieselbe KN wie das [!DNL server_cert.pem] derzeit auf dem Server installiert ist.
+   1. Die Bescheinigung wurde mit dem Ziel ausgestellt, *server* und *client*.
 
-      Um zu überprüfen, ob ein Zertifikat über einen Zweckcode des Servers und/oder Clients verfügt, können die folgenden Befehle verwendet werden:
+      Um zu überprüfen, ob ein Zertifikat über einen Zielcode des Servers und/oder Clients verfügt, können die folgenden Befehle verwendet werden:
 
       ```
       openssl verify -CAfile trust_ca_cert.pem -purpose sslserver -x509_strict custom_communications_cert.pem 
       openssl verify -CAfile trust_ca_cert.pem -purpose sslclient -x509_strict custom_communications_cert.pem
       ```
 
-      Für Serverzertifikate sollten beide Befehle Folgendes ausgeben:
+      Für Serverzertifikate sollten beide Befehle Folgendes liefern:
 
       ```
       custom_communications_cert.pem: OK
       ```
 
-      Bei einem Client-Zertifikat ist nur der zweite Befehl erforderlich, um [!DNL OK]Ergebnisse zu liefern.
+      Für ein Client-Zertifikat ist nur der zweite Befehl erforderlich, um [!DNL OK].
 
-1. Installieren Sie das benutzerdefinierte Zertifikat jedes Servers im **Zertifikatordner** des Servers als [!DNL custom_communications_cert.pem].
+1. Installieren Sie das benutzerdefinierte Zertifikat jedes Servers im **Zertifikate** Verzeichnis des Servers als [!DNL custom_communications_cert.pem].
 
-1. Fügen Sie mithilfe eines Texteditors der Datei &quot; **Communications.cfg** &quot;in den Ordnern &quot; *Komponenten* &quot;und &quot; *Komponenten für Verarbeitungsserver* &quot;die folgende Zeile direkt unter der ersten Zeile ([!DNL component = CommServer]) hinzu:
+1. Fügen Sie mithilfe eines Texteditors die folgende Zeile hinzu **Communications.cfg** -Datei in beiden *Komponenten* und *Komponenten für Verarbeitungsserver* Verzeichnisse direkt unterhalb der ersten Zeile ([!DNL component = CommServer]):
 
    ```
    Certificate = string: Certificates\\custom_communications_cert.pem
@@ -121,12 +125,12 @@ In diesem Abschnitt wird davon ausgegangen, dass Sie über einen Cluster verfüg
 
 1. Starten Sie alle Server neu.
 
-**Warnung wegen Zertifikatfehlers**
+**Über Zertifikatfehlerwarnung**
 
-Wenn der Insight-Server oder -Client ein **Lizenzzertifikat** im Verzeichnis &quot; **Zertifikate** &quot;sucht, versucht er, alle Zertifikate (außer [!DNL trust_ca_cert.pem]) mit einer hartkodierten Kopie des Insight CA-Zertifikats zu validieren, was bei einem benutzerdefinierten Zertifikat im Ordner fehlschlägt. Der Server gibt folgende Warnung aus:
+Wenn der Insight-Server oder -Client nach einer **Lizenz** Zertifikat im **Zertifikate** Verzeichnis, versucht es, alle Zertifikate zu validieren (mit Ausnahme von [!DNL trust_ca_cert.pem]), gegen eine hartcodierte Kopie des Insight CA-Zertifikats, die bei einem im Verzeichnis vorhandenen benutzerdefinierten Zertifikat fehlschlägt. Der Server gibt diese Warnung aus:
 
 ```
 Certificate failed to verify. Error 20 at 0 depth. Desc: unable to get local issuer certificate. Cert details:
 ```
 
-Diese Warnung kann unbedenklich ignoriert werden.
+Diese Warnung kann ignoriert werden.

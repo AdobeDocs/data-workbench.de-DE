@@ -3,7 +3,7 @@ description: Mit einem Pfad-Browser können Sie die Sequenz analysieren, in der 
 title: Pfad-Browser
 uuid: 548091dc-935f-41ac-b67c-39080988f1ea
 exl-id: 563cf0e3-39d7-49b7-b808-b0233169fb1a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Pfad-Browser{#path-browsers}
 
+{{eol}}
+
 Mit einem Pfad-Browser können Sie die Sequenz analysieren, in der auf die Elemente einer bestimmten Dimension zugegriffen wurde.
 
 Sie erstellen einen Pfad-Browser, indem Sie ein Element einer Dimension auf eine leere Pfad-Browser-Visualisierung ziehen und dort ablegen. Das Element, das Sie per Drag-and-Drop in den Pfad-Browser ziehen, wird zum Stamm des Pfad-Browsers. Der Pfad-Browser zeigt Pfade an, die durch den Stamm führen, sodass Sie die Sequenz der Elemente sehen können, auf die vor und nach dem Stamm zugegriffen wurde.
 
-Der folgende Pfad-Browser zeigt die Abfolge von Filmen, die Betrachter vor und nach der Bewertung des Films *Der Aviator* bewertet haben, der die Wurzel des Pfad-Browsers ist. Jeder Filmname ist ein Element der Film-Dimension, die in einem Datensatz definiert ist, der aus Filmdaten besteht, die die Namen der Filme und die Anzeigereihenfolge der Betrachter dieser Filme enthalten.
+Der folgende Pfadbrowser zeigt die Abfolge von Filmen, die die Betrachter vor und nach der Filmerfassung bewertet haben *Der Aviator*, der der Stamm des Pfad-Browsers ist. Jeder Filmname ist ein Element der Film-Dimension, die in einem Datensatz definiert ist, der aus Filmdaten besteht, die die Namen der Filme und die Anzeigereihenfolge der Betrachter dieser Filme enthalten.
 
 ![](assets/vis_PathBrowser_Movies.png)
 
@@ -26,7 +28,7 @@ Sie können Pfadbrowser erstellen, um die Sequenz anzuzeigen, in der auf Element
 
 Jeder Pfadbrowser verfügt über eine zugehörige Basisdimension, Gruppendimension, Ebenendimension und Metrik, die Schlüssel zur Interpretation der im Pfadbrowser angezeigten Daten bereitstellen.
 
-* **Basisdimension:** Wenn Sie ein Stammelement per Drag-and-Drop in den Pfadbrowser ziehen, ziehen Sie ein Element der Basisdimension in den Arbeitsbereich. Alle anderen Elemente, die in den Pfaden angezeigt werden, sind Elemente der Basisdimension. Sie können die Basisdimension ändern, indem Sie ein Element einer anderen Dimension in den Pfad-Browser ziehen und dort ablegen.
+* **Basisdimension:** Wenn Sie ein Stammelement in den Pfad-Browser ziehen und dort ablegen, ziehen Sie ein Element der Basisdimension in den Arbeitsbereich. Alle anderen Elemente, die in den Pfaden angezeigt werden, sind Elemente der Basisdimension. Sie können die Basisdimension ändern, indem Sie ein Element einer anderen Dimension in den Pfad-Browser ziehen und dort ablegen.
 * **Ebenendimension:** Jede Dimension in Ihrem Datensatz hat eine zugeordnete Ebenendimension (auch als übergeordnetes Element bezeichnet). Die Ebenendimension für Ihren Pfadbrowser sollte mit der Ebenendimension (oder der übergeordneten Dimension) für die Basisdimension Ihres Pfadbrowsers übereinstimmen. Die Ebenendimension eines Pfad-Browsers ist aus zwei Hauptgründen wichtig:
 
    * Wenn Sie einem Pfad von einem grundlegenden Dimensionselement zum nächsten folgen, wechseln Sie von einem Dimensionselement auf der Ebene zum nächsten. Angenommen, Sie haben einen Pfad-Browser erstellt, der Seiten einer Website anzeigt. Jede Seite ist ein Element der Dimension Seite und die Ebenendimension für Seite ist Seitenansicht. Wenn Sie von einer Seite zur nächsten wechseln, wechseln Sie von einer Seitenansicht zur nächsten.
@@ -43,7 +45,7 @@ Jeder Pfadbrowser verfügt über eine zugehörige Basisdimension, Gruppendimensi
 
 * **Metrik**: Die Dicke des Pfads, der zu einem bestimmten Element führt, ist proportional zum Wert der Metrik für dieses Element. Je dicker die Pfade sind, desto größer sind die Metrikwerte als die dünnen Pfade.
 
-Die Beschriftung in der oberen linken Ecke des Pfadbrowsers benennt die Basis- und Gruppendimensionen, die in der Visualisierung dargestellt werden. Der Name der Ebenendimension ist in der Pfadbrowser-Visualisierung nicht sichtbar. Die Beschriftung hat die Form &quot;Sequenz von *Basisdimensionsname*+s für jeden *Gruppendimensionsnamen*&quot;. Die Beschriftung Sequenz von Filmen für jeden Benutzer beispielsweise gibt an, dass die grundlegende Dimension &quot;Film&quot;und die Gruppendimension &quot;Benutzer&quot;lautet.
+Die Beschriftung in der oberen linken Ecke des Pfadbrowsers benennt die Basis- und Gruppendimensionen, die in der Visualisierung dargestellt werden. Der Name der Ebenendimension ist in der Pfadbrowser-Visualisierung nicht sichtbar. Die Bezeichnung hat die Form &quot;Sequenz von *Basisdimensionsname*+s für jeden *Name der Gruppendimension*.&quot; Die Beschriftung Sequenz von Filmen für jeden Benutzer beispielsweise gibt an, dass die grundlegende Dimension &quot;Film&quot;und die Gruppendimension &quot;Benutzer&quot;lautet.
 
 ![](assets/vis_PathBrowser_Movies.png)
 

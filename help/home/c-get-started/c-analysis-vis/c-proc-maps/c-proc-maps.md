@@ -3,7 +3,7 @@ description: Mit Prozesskarten können Sie den Aktivitätsfluss zwischen Element
 title: Prozesskarte
 uuid: f1db41a9-400e-467a-ba59-39831fb166af
 exl-id: 019cee7b-a704-4b47-84c6-d3ddc277c43e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Prozesskarte{#process-map}
+
+{{eol}}
 
 Mit Prozesskarten können Sie den Aktivitätsfluss zwischen Elementen einer Dimension analysieren.
 
@@ -28,7 +30,7 @@ Im Gegensatz zu Pfadbrowsern können Prozesskarten so wenige oder so viele Eleme
 
 >[!NOTE]
 >
->Damit diese Maps am effektivsten funktionieren, sollten Sie eine Farblegende im Arbeitsbereich öffnen. Informationen zur Verwendung von Farblegenden mit Prozesskarten finden Sie unter [Aktivieren von Farblinks](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md#concept-2c9b9f67f2bd4cd7a5431fa21c094edc). Weitere Informationen zu Farblegenden finden Sie unter [Farblegenden](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
+>Damit diese Maps am effektivsten funktionieren, sollten Sie eine Farblegende im Arbeitsbereich öffnen. Informationen zur Verwendung von Farblegenden mit Prozesskarten finden Sie unter [Aktivieren von Farblinks](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md#concept-2c9b9f67f2bd4cd7a5431fa21c094edc). Weitere Informationen zu Farblegenden finden Sie unter [Farblegende](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
 
 Jede Prozesszuordnung verfügt über eine zugeordnete Basisdimension, Gruppendimension, Ebenendimension und Metrik, die Schlüssel zur Interpretation der in der Prozesszuordnung angezeigten Daten bereitstellen.
 
@@ -44,7 +46,7 @@ Die Standardeinstellungen für die Dimensionen und Metriken einer Prozesszuordnu
 
 * **Metrik:** Die Größe des Knotens für ein bestimmtes Element ist proportional zum Wert der Metrik für dieses Element. Größere Knoten geben größere Metrikwerte als kleinere Knoten an.
 
-Wenn Sie beispielsweise die Anwendung [!DNL Site] oder HBX verwenden, können Sie Elemente der Dimension &quot;Seite&quot;standardmäßig auf die Prozesskarte ziehen. Die Größe der einzelnen Knoten hängt von der Anzahl der Sitzungen ab (definiert durch die Sitzungsmetrik), in denen die Seite angezeigt wurde.
+Wenn Sie beispielsweise die [!DNL Site] oder HBX Anwendung können Sie standardmäßig Elemente der Dimension Seite auf die Prozesszuordnung ziehen. Die Größe der einzelnen Knoten hängt von der Anzahl der Sitzungen ab (definiert durch die Sitzungsmetrik), in denen die Seite angezeigt wurde.
 
 >[!NOTE]
 >

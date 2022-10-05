@@ -3,7 +3,7 @@ description: Führen Sie diese Schritte aus, um eine neue Trichtervisualisierung
 title: Erstellen eines Trichters
 uuid: 88afa09d-42ff-4e3b-b5cc-d74e01f4fc39
 exl-id: 24b63998-3aad-4ddf-b2d2-78dd0df9a510
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Erstellen eines Trichters{#building-a-funnel}
+
+{{eol}}
 
 Führen Sie diese Schritte aus, um eine neue Trichtervisualisierung zu erstellen
 
@@ -20,17 +22,17 @@ Führen Sie diese Schritte aus, um eine neue Trichtervisualisierung zu erstellen
 
    ![](assets/dimension_table_pagename.png)
 
-   Klicken Sie beispielsweise mit der rechten Maustaste auf den Arbeitsbereich und wählen Sie **[!UICONTROL Table > Site Content > Page Name]** aus.
+   Klicken Sie beispielsweise mit der rechten Maustaste auf den Arbeitsbereich und wählen Sie **[!UICONTROL Table > Site Content > Page Name]**
 
 1. Öffnen Sie eine Trichtervisualisierung.
 
-   Klicken Sie beispielsweise mit der rechten Maustaste auf den Arbeitsbereich und wählen Sie **[!UICONTROL Visualization > Funnel]** aus.
+   Klicken Sie beispielsweise mit der rechten Maustaste auf den Arbeitsbereich und wählen Sie **[!UICONTROL Visualization > Funnel]**.
 
    ![](assets/step2-funnel.png)
 
-1. Fügen Sie eine Dimension hinzu, indem Sie das Element auswählen, ziehen Sie dann die Maus und halten Sie dann **[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]** gedrückt.
+1. Fügen Sie eine Dimension hinzu, indem Sie das Element auswählen und dann ziehen und die **[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**.
 
-1. Ziehen Sie das Element über die Zielzone **[!UICONTROL Drag Dimension Element Here]** an die gewünschte Position.
+1. Ziehen Sie das Element über die Zielzone an die gewünschte Position, **[!UICONTROL Drag Dimension Element Here]**.
 
    ![](assets/step4-funnel.png)
 
@@ -46,6 +48,6 @@ Führen Sie diese Schritte aus, um eine neue Trichtervisualisierung zu erstellen
 
    ![](assets/last-image-funnel.png)
 
-Über den Trichter können Sie die Abbruch- und Durchfallraten sowie den Prozentsatz der Kunden identifizieren, die Umsätze umrechnen und Kampagnen oder Inhaltspfade folgen. Sie können einen [Pfad-Browser](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) öffnen, um eine detaillierte Liste der Seiten anzuzeigen, die vor dem Eintreffen auf die ausgewählte Seite aufgerufen wurden, sowie die Pfade, die nach dem Verlassen genutzt wurden.
+Über den Trichter können Sie die Abbruch- und Durchfallraten sowie den Prozentsatz der Kunden identifizieren, die Umsätze umrechnen und Kampagnen oder Inhaltspfade folgen. Für weitere Informationen können Sie eine [Pfadbrowser](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) um eine detaillierte Liste der Seiten anzuzeigen, die vor dem Eintreffen auf die ausgewählte Seite aufgerufen wurden, sowie die Pfade, die nach dem Verlassen der Seite eingeschlagen wurden.
 
-Weitere Informationen finden Sie unter [Trichterfunktionen](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).
+Siehe Zusätzliche Informationen [Trichterfunktionen](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).

@@ -3,7 +3,7 @@ description: Mit dem Dashboard-Browser können Sie auch nach vorhandenen Dashboa
 title: Suchen im Dashboard-Browser
 uuid: b11b024e-3876-48f2-85e2-a4af047e4985
 exl-id: f6dd923c-f98b-4ca0-a109-88b3988b9c95
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 4%
@@ -12,9 +12,11 @@ ht-degree: 4%
 
 # Suchen im Dashboard-Browser{#searching-within-the-dashboard-browser}
 
+{{eol}}
+
 Mit dem Dashboard-Browser können Sie auch nach vorhandenen Dashboards suchen.
 
-Verwenden Sie zum Durchführen einer Suche das Suchfeld in der Symbolleiste des Dashboard-Browsers. Ihre Suchergebnisse werden beim Eingeben im Dashboard-Browser angezeigt. Sie können eine Suche jederzeit löschen, indem Sie den Suchtext löschen oder auf das Symbol **[!UICONTROL X]** im Suchfeld klicken.
+Verwenden Sie zum Durchführen einer Suche das Suchfeld in der Symbolleiste des Dashboard-Browsers. Ihre Suchergebnisse werden beim Eingeben im Dashboard-Browser angezeigt. Sie können eine Suche jederzeit löschen, indem Sie den Suchtext löschen oder auf **[!UICONTROL X]** im Suchfeld.
 
 ![](assets/search.png)
 
@@ -22,7 +24,7 @@ Sie können Ihre Ergebnisse auch mithilfe der Sortierfunktionen in jeder Spalten
 
 ![](assets/sorting.png)
 
-In diesem Menü **[!UICONTROL Columns]** können Sie auch die sichtbaren Spalten in der Dashboard-Listenansicht ändern. Hier können Sie die Sichtbarkeit der Spalten umschalten, indem Sie die gewünschten Spalten auswählen oder deren Auswahl aufheben.
+Diese **[!UICONTROL Columns]** können Sie auch die sichtbaren Spalten in der Dashboard-Listenansicht ändern. Hier können Sie die Sichtbarkeit der Spalten umschalten, indem Sie die gewünschten Spalten auswählen oder deren Auswahl aufheben.
 
 ![](assets/sorting_columns.png)
 

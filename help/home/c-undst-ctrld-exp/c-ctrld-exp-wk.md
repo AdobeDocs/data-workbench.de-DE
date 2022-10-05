@@ -4,7 +4,7 @@ solution: Analytics
 title: Wie funktionieren gesteuerte Experimente?
 uuid: 9549e2ab-dca9-4fb1-9729-65072f951900
 exl-id: 1d3af6a2-078e-4eb8-848e-685f531a60c5
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 3%
@@ -12,6 +12,8 @@ ht-degree: 3%
 ---
 
 # Wie funktionieren gesteuerte Experimente?{#how-do-controlled-experiments-work}
+
+{{eol}}
 
 In einem Experiment können Sie zusätzlich zur Kontrollgruppe eine beliebige Anzahl von Testgruppen definieren.
 

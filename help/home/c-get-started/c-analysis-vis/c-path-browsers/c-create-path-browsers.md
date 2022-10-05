@@ -3,7 +3,7 @@ description: Sie können einen Pfadbrowser aus einem Diagramm, einer Tabelle ode
 title: Erstellen von Pfad-Browsern
 uuid: 84a5e587-fb02-461b-aec8-1b6ad473ebc3
 exl-id: 9fa11b84-da73-447a-8b10-7eab381e3f66
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Erstellen von Pfad-Browsern{#creating-path-browsers}
+
+{{eol}}
 
 Sie können einen Pfadbrowser aus einem Diagramm, einer Tabelle oder einer Prozesskarte erstellen.
 
@@ -22,7 +24,7 @@ Sie können einen Pfadbrowser aus einem Diagramm, einer Tabelle oder einer Proze
 
 >[!NOTE]
 >
->Das Ziehen eines Elements in einen Pfad-Browser kann die mit dem Pfad-Browser verknüpfte Basisdimension ändern, die Ebenendimension, Gruppendimension oder Metrik wird jedoch nicht geändert. Daher müssen Sie bei der Auswahl einer Basisdimension vorsichtig sein, die bei Verwendung mit der Ebenendimension, Gruppendimension und Metrik des Pfadbrowsers sinnvoll ist. Um die Ebenendimension, Gruppendimension oder Metrik zu ändern, müssen Sie die [!DNL *.vw]-Datei des Pfadbrowsers in einem Texteditor wie Notepad bearbeiten. Siehe [Konfigurieren von Pfad-Browsern](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+>Das Ziehen eines Elements in einen Pfad-Browser kann die mit dem Pfad-Browser verknüpfte Basisdimension ändern, die Ebenendimension, Gruppendimension oder Metrik wird jedoch nicht geändert. Daher müssen Sie bei der Auswahl einer Basisdimension vorsichtig sein, die bei Verwendung mit der Ebenendimension, Gruppendimension und Metrik des Pfadbrowsers sinnvoll ist. Um die Ebenendimension, Gruppendimension oder Metrik zu ändern, müssen Sie die [!DNL *.vw] in einem Texteditor wie Notepad. Siehe [Konfigurieren von Pfad-Browsern](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
 
 **So erstellen Sie einen Pfad-Browser aus einer Prozesszuordnung**
 

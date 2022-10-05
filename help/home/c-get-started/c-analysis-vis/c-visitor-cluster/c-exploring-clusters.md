@@ -3,7 +3,7 @@ description: Nachdem eine Cluster-Dimension erstellt wurde, können Sie sie spei
 title: Untersuchen von Clustern
 uuid: b0a07525-c586-466a-ac5e-7c7674cb58f8
 exl-id: d144f51c-8103-428d-801c-a12fb3ec5866
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Untersuchen von Clustern{#exploring-clusters}
+
+{{eol}}
 
 Nachdem eine Cluster-Dimension erstellt wurde, können Sie sie speichern und mithilfe des Cluster-Explorers untersuchen.
 

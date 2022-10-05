@@ -3,7 +3,7 @@ description: Erläutert die Miniaturansicht und die Listenansicht.
 title: Ansichten des Dashboard-Browsers
 uuid: 8e5ef06a-6c5a-4792-a732-fe7574aed8ab
 exl-id: 94da6ee1-30ab-426f-9be3-fd56f172aadb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Ansichten des Dashboard-Browsers{#dashboard-browser-views}
+
+{{eol}}
 
 Erläutert die Miniaturansicht und die Listenansicht.
 
@@ -30,7 +32,7 @@ Sie können auch Unterordner untersuchen, indem Sie auf den Pfeil links neben de
 
 Sie können dann das Dashboard auswählen, indem Sie darauf klicken. Nachdem Sie auf eine Dashboard-Miniaturansicht geklickt haben, wird der rechte Rahmen mit den Details zum Dashboard gefüllt. Die Dashboard-Details enthalten eine Miniaturansicht des ausgewählten Dashboards, dessen Name, eine kurze Beschreibung, den Eigentümer, das Erstellungsdatum, das Datum der letzten Änderung, die Profile, die zum Kompilieren der Daten verwendet werden, Sichtbarkeitskontrollen und eine Auswahl von Vorgängen.
 
-## Listenansicht{#section-aa79d51168a7430ea2816413dc6cc73a} erkennen 
+## Listenansicht {#section-aa79d51168a7430ea2816413dc6cc73a}
 
 Die Listenansicht enthält tabellenbasierte Informationen zu den Dashboards, auf die Sie Zugriff haben. Jede Zeile in der Tabelle der Listenansicht stellt ein eindeutiges Dashboard dar. Durch Klicken auf Spaltenüberschriften können Sie die Tabelle in absteigender oder aufsteigender Reihenfolge nach dieser Spalte sortieren.
 

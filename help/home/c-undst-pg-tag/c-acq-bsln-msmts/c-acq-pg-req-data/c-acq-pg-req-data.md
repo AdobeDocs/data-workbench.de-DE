@@ -3,7 +3,7 @@ description: Der Sensor erfasst alle Messdaten, die bei Seitenanfragen (GET-Anfr
 title: Erfassen von Daten zu Seitenanfragen
 uuid: 06cf2b14-8d2c-483e-8a75-ce772798978f
 exl-id: e42566a3-d5b4-4f1a-b8cd-1ea646041101
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 4%
@@ -12,15 +12,17 @@ ht-degree: 4%
 
 # Erfassen von Daten zu Seitenanfragen{#acquiring-page-request-data}
 
+{{eol}}
+
 Der Sensor erfasst alle Messdaten, die bei Seitenanfragen (GET-Anfragen) an die Webserver übertragen werden, auf denen er installiert ist.
 
-[!DNL Sensor] erfasst diese Messdaten über die Anwendungsprogrammierschnittstelle des Webservers, direkt von der oder den Instanzen der Webserver-Software, die auf Ihrem Webserver ausgeführt wird. [!DNL Sensor] greift nicht auf die vom Webserver generierten Protokolldateien zu. Nachdem [!DNL Sensor] installiert und der Data Workbench-Server getestet wurde, kann die native Protokollierungsfunktion des Webservers deaktiviert werden, ohne dass sich dies auf die Datenerfassung auswirkt. In vielen Fällen wird durch die Deaktivierung der Protokollierung von Dateien auf lokalen Festplatten der Webserver-Computer die Seitenbereitstellungskapazität dieser Webserver verbessert, da eine relativ große Menge von festem Datenträger-I/O erforderlich ist, um diese Informationen auf der lokalen Festplatte des Webserver-Computers zu protokollieren.
+[!DNL Sensor] erfasst diese Messdaten über die Anwendungsprogrammierschnittstelle des Webservers, direkt von der oder den Instanzen der Webserver-Software, die auf Ihrem Webserver ausgeführt wird. [!DNL Sensor] greift nicht auf die vom Webserver generierten Protokolldateien zu. In der Tat ist nach [!DNL Sensor] und der Data Workbench-Server installiert und getestet wurde, kann die native Protokollierungsfunktion des Webservers deaktiviert werden, ohne dass sich dies auf die Datenerfassung auswirkt. In vielen Fällen wird durch die Deaktivierung der Protokollierung von Dateien auf lokalen Festplatten der Webserver-Computer die Seitenbereitstellungskapazität dieser Webserver verbessert, da eine relativ große Menge von festem Datenträger-I/O erforderlich ist, um diese Informationen auf der lokalen Festplatte des Webserver-Computers zu protokollieren.
 
-[!DNL Sensor] erfasst Messungs- und Webanfragedaten direkt von jedem Webserverprozess und virtuellen Webserverprozess (falls zutreffend) und schreibt die Daten vorübergehend in eine Queue-Datei, eine fehlertolerante Speicherwarteschlange mit festem Festplattenabbau auf dem Webserver-Computer. Der Sensor Transmitter-Dienst (oder Daemon je nach Plattform) ruft Daten aus der Queue-Datei ab und komprimiert und verschlüsselt sie dann, bevor sie zur langfristigen Speicherung an den Data Workbench-Server übermittelt werden. Mit [!DNL Sensor] werden Daten nur dann auf Ihren Webserver-Computern in der Queue-Datei gesammelt, wenn Sie ein Netzwerk- oder ein anderes Problem haben, das die Übertragung verhindert. Die Queue-Datei ermöglicht die effiziente lokale Speicherung von Stunden bis Tagen von Web-Anfragedaten, um die Daten zu schützen, wenn ein Netzwerk- oder Systemfehler nicht zulässt, dass die Daten in Echtzeit an den Data Workbench-Server übermittelt werden.
+[!DNL Sensor] erfasst Messungs- und Webanfragedaten direkt von jedem Webserverprozess und virtuellen Webserverprozess (falls zutreffend) und schreibt die Daten vorübergehend in eine Queue-Datei, eine fehlertolerante Speicherwarteschlange mit festem Festplattenabbau auf dem Webserver-Computer. Der Sensor Transmitter-Dienst (oder Daemon je nach Plattform) ruft Daten aus der Queue-Datei ab und komprimiert und verschlüsselt sie dann, bevor sie zur langfristigen Speicherung an den Data Workbench-Server übermittelt werden. Mit [!DNL Sensor], werden die Daten nur dann auf Ihren Webserver-Computern in der Queue-Datei gesammelt, wenn Sie ein Netzwerk- oder ein anderes Problem haben, das die Übertragung verhindert. Die Queue-Datei ermöglicht die effiziente lokale Speicherung von Stunden bis Tagen von Web-Anfragedaten, um die Daten zu schützen, wenn ein Netzwerk- oder Systemfehler nicht zulässt, dass die Daten in Echtzeit an den Data Workbench-Server übermittelt werden.
 
 [!DNL Sensor] erfasst Messdaten aus jedem physischen und logischen Webserverprozess, filtert sie nach Inhaltstyp, komprimiert sie, verschlüsselt sie und streamt sie an den Data Workbench-Server.
 
-Die folgende Tabelle enthält die Protokollinformationen, die von [!DNL Sensor] für jede nicht anhand der Konfigurationsdatei [!DNL Sensor’s] herausgefilterte GET-Anfrage erfasst werden:
+Die folgende Tabelle enthält die Felder der Protokollinformationen, die von [!DNL Sensor] für jede nicht herausgefilterte GET-Anfrage [!DNL Sensor’s] Konfigurationsdatei:
 
 <table id="table_5F65474150EC41648B35D0B031FB9B15">
  <thead>
@@ -35,7 +37,7 @@ Die folgende Tabelle enthält die Protokollinformationen, die von [!DNL Sensor] 
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> Tracking-ID (Unique Visitor) </td>
-   <td colname="col3"> Kennung, die von einem Cookie gelesen wird, das im Browser des Benutzers durch <span class="wintitle"> Sensor </span> auf der ursprünglichen Anforderung des Besuchers platziert wurde </td>
+   <td colname="col3"> Kennung, die aus einem Cookie gelesen wird, das im Browser des Benutzers platziert wurde durch <span class="wintitle"> Sensor </span> auf Anfrage des Besuchers </td>
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
@@ -60,7 +62,7 @@ Die folgende Tabelle enthält die Protokollinformationen, die von [!DNL Sensor] 
    <td colname="col1"> cs-uri-system </td>
    <td colname="col2"> URI-Stem </td>
    <td colname="col3"> Der vom Client angeforderte Stammteil des URI </td>
-   <td colname="col4"> <span class="filepath"> pagedir/page.asp  </span> </td>
+   <td colname="col4"> <span class="filepath"> pagedir/page.asp </span> </td>
   </tr>
   <tr>
    <td colname="col1"> c-ip </td>
@@ -72,13 +74,13 @@ Die folgende Tabelle enthält die Protokollinformationen, die von [!DNL Sensor] 
    <td colname="col1"> s-dns </td>
    <td colname="col2"> Server Domain Name </td>
    <td colname="col3"> Domänenname des Webservers, der die Anforderung verarbeitet </td>
-   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer) </td>
    <td colname="col2"> Verweisende URL </td>
    <td colname="col3"> Inhalt des vom Client gesendeten HTTP-Referrer-Felds </td>
-   <td colname="col4"> <span class="filepath"> https://www.referringsite.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> https://www.referringsite.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(user-agent) </td>

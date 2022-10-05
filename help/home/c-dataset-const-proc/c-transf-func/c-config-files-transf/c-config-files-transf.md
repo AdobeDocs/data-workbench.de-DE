@@ -3,7 +3,7 @@ description: Die Umwandlungsfunktion umfasst drei Konfigurationsdateien, die die
 title: Konfigurationsdateien für Transform
 uuid: abb5b7a4-ade6-4658-b3a1-7ce4c2c17507
 exl-id: 9cd5ae3a-e3fc-466f-a6ab-20582001fb4a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 12%
@@ -11,6 +11,8 @@ ht-degree: 12%
 ---
 
 # Konfigurationsdateien für Transform{#configuration-files-for-transform}
+
+{{eol}}
 
 Die Umwandlungsfunktion umfasst drei Konfigurationsdateien, die die zum Lesen und Exportieren von Daten erforderlichen Parameter enthalten.
 
@@ -20,4 +22,4 @@ Die Umwandlungsfunktion umfasst drei Konfigurationsdateien, die die zum Lesen un
 
 >[!NOTE]
 >
->Bevor Sie mit der Konfiguration Ihrer Implementierung der Umwandlungsfunktion beginnen, überprüfen Sie, ob Sie die Data Workbench-Dateien [!DNL Transform.cfg] und Data Workbench T [!DNL ransform Mode.cfg] sowie alle für Ihre Implementierung erforderlichen Adobe-Softwareprodukte und -anwendungen ordnungsgemäß installiert haben. Installationsanweisungen finden Sie im *Handbuch zur Installation und Verwaltung von Serverprodukten*.
+>Bevor Sie mit der Konfiguration der Implementierung der Umwandlungsfunktion beginnen, überprüfen Sie, ob Sie die Data Workbench ordnungsgemäß installiert haben. [!DNL Transform.cfg] und Data Workbench T [!DNL ransform Mode.cfg] -Dateien sowie alle Adobe-Softwareprodukte und -anwendungen, die für Ihre Implementierung benötigt werden. Installationsanweisungen finden Sie in der *Handbuch zur Installation und Verwaltung von Serverprodukten*.

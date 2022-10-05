@@ -3,7 +3,7 @@ description: Sie können vorhandene Arbeitsbereiche anpassen, indem Sie vorhande
 title: Erstellen eines Arbeitsbereichs
 uuid: 8669b70f-5ddf-4424-9269-0e4860eac498
 exl-id: 9c1fb9e6-6cc8-4894-800b-187b047c41d2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Erstellen eines Arbeitsbereichs{#create-a-workspace}
+
+{{eol}}
 
 Sie können vorhandene Arbeitsbereiche anpassen, indem Sie vorhandene Visualisierungen hinzufügen oder ändern oder neue Arbeitsbereiche erstellen.
 
@@ -26,11 +28,11 @@ In diesem Abschnitt werden die folgenden Aufgaben beschrieben:
 
 ## Hinzufügen neuer Arbeitsbereiche {#section-4236ae30e2884ea08f0885bf329f0778}
 
-Klicken Sie auf der gewünschten Registerkarte [!DNL Worktop] mit der rechten Maustaste auf einen leeren Bereich auf der Registerkarte und klicken Sie auf eine der folgenden Optionen:
+Auf Wunsch [!DNL Worktop] klicken Sie mit der rechten Maustaste auf einen leeren Bereich auf der Registerkarte und klicken Sie auf eine der folgenden Optionen:
 
 * **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]**. Diese Option zeigt einen leeren Arbeitsbereich in Standardgröße an.
 
-* **[!UICONTROL New]** >  **[!UICONTROL Report Template]**. Diese Option zeigt eine Vorlage für die Standardgröße an, die Sie zum Erstellen von Berichten verwenden können.
+* **[!UICONTROL New]** > **[!UICONTROL Report Template]**. Diese Option zeigt eine Vorlage für die Standardgröße an, die Sie zum Erstellen von Berichten verwenden können.
 
 ![](assets/mnu_workspaceManager.png)
 
@@ -40,7 +42,7 @@ Die Miniaturansicht für den neuen Workspace-Typ wird auf der Registerkarte ange
 
 >[!NOTE]
 >
->Nach dem Öffnen eines neuen Arbeitsbereichs müssen Sie möglicherweise auf **Hinzufügen** > **Vorübergehendes Entsperren** klicken.
+>Nach dem Öffnen eines neuen Arbeitsbereichs müssen Sie möglicherweise auf **Hinzufügen** > **Vorübergehendes Entsperren**.
 
 ## Kopieren und Einfügen vorhandener Arbeitsbereiche {#section-f91ae89b845640c9a4a52820a6110e65}
 
@@ -48,7 +50,7 @@ Sie können einen vorhandenen Arbeitsbereich kopieren und in einen anderen Arbei
 
 **So kopieren Sie einen vorhandenen Arbeitsbereich und fügen ihn ein**
 
-1. Klicken Sie auf der gewünschten Registerkarte [!DNL Worktop] mit der rechten Maustaste auf den zu kopierenden Arbeitsbereich und klicken Sie auf **[!UICONTROL Copy]**.
+1. Auf Wunsch [!DNL Worktop] Registerkarte klicken Sie mit der rechten Maustaste auf den Arbeitsbereich, den Sie kopieren möchten, und klicken Sie auf **[!UICONTROL Copy]**.
 
    ![](assets/mnu_workspaceManager_Copywksp.png)
 
@@ -66,11 +68,11 @@ Das folgende Beispiel zeigt einen Arbeitsbereich, der auf einer Registerkarte de
 
 **So ändern Sie den Namen eines Arbeitsbereichs**
 
-1. Klicken Sie auf der gewünschten Registerkarte [!DNL Worktop] auf die Miniaturansicht des Workspace, den Sie anzeigen möchten.
+1. Auf Wunsch [!DNL Worktop] klicken Sie auf die Miniaturansicht des Arbeitsbereichs, den Sie anzeigen möchten.
 1. Klicken Sie im Arbeitsbereich auf den Titeltext in der Titelleiste und geben Sie den neuen Titel ein, wie im folgenden Beispiel gezeigt:
 
    ![](assets/wsp_changeTitle.png)
 
-## Löschen eines Workspace {#section-fb04cc195e1a4a5491ff634f5f3ca972}
+## Löschen eines Arbeitsbereichs {#section-fb04cc195e1a4a5491ff634f5f3ca972}
 
 **So ändern Sie den Namen eines Arbeitsbereichs**

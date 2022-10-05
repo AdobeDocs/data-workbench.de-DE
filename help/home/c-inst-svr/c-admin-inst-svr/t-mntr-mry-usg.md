@@ -3,7 +3,7 @@ description: Informationen zur Bewertung und Überwachung der Adressraumlast.
 title: Überwachen der Speichernutzung
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
 exl-id: b8c0b33b-dbec-4947-911b-11c8a83bbc9c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 2%
@@ -12,21 +12,23 @@ ht-degree: 2%
 
 # Überwachen der Speichernutzung{#monitoring-memory-usage}
 
+{{eol}}
+
 Informationen zur Bewertung und Überwachung der Adressraumlast.
 
 **Überwachen der Adressspeicherlast**
 
 **Empfohlene Häufigkeit:** Täglich
 
-Die Belastung des Adressenraums ist ein Maß für den Anteil des maximalen Adressenraums, den ein ordnungsgemäß konfiguriertes [!DNL Insight Server] verwendet. Selbst wenn die Konfigurationsparameter geändert werden, um die Speichernutzung zu reduzieren, wird dies in der Regel erst reduziert, wenn der [!DNL Insight Server]-Dienst neu gestartet wird.
+Die Belastung des Adressenraums ist ein Maß für den Anteil des maximalen Adressenraums, der von einer ordnungsgemäß konfigurierten [!DNL Insight Server] verwendet. Selbst wenn die Konfigurationsparameter geändert werden, um die Speichernutzung zu reduzieren, wird dies in der Regel nicht reduziert bis die [!DNL Insight Server] -Dienst neu gestartet wurde.
 
-Eine Sicherheitsmarge wird in die maximale Adressraum-Auslastung integriert, um unerwartete Erhöhungen der Adressenraumauslastung zu berücksichtigen. Sie sollten diese Sicherheitsmarge nie bewusst in die Hand nehmen. Sie ist in Notfällen verfügbar und nicht für die Unterstützung von Funktionen, die zu Ihrer Adobe App hinzugefügt wurden.
+In der maximalen Adressraum-Auslastung ist eine Sicherheitsmarge integriert, um unerwartete Erhöhungen der Adressenraumauslastung zu berücksichtigen. Sie sollten diese Sicherheitsmarge nie bewusst in die Hand nehmen. Sie ist in Notfällen verfügbar und nicht für die Unterstützung von Funktionen, die zu Ihrer Adobe App hinzugefügt wurden.
 
 >[!NOTE]
 >
 >Um mehr Adressenspeicher zur Verfügung zu stellen und Fehler bei der Speichererschöpfung zu vermeiden, stellen Sie sicher, dass auf Ihrem Betriebssystem der /3GB-Switch aktiviert ist und dass Low Fragmentation Heap in Betrieb ist.
 
-Fehler, die im Ereignisdatenprotokoll [!DNL Insight Server] protokolliert werden, können Hinweise darauf liefern, dass Probleme mit der Belastung des Adressenraums auftreten:
+Bei der [!DNL Insight Server] Das Ereignisdatenprotokoll kann einen Hinweis darauf enthalten, dass Probleme bei der Belastung des Adressenraums auftreten:
 
 * Fehler vom Typ &quot;Angeforderter X-Byte-Block ist zu groß&quot;weisen darauf hin, dass sich etwas übermäßig auf die Auslastung des Adressraums, die Leistung und die Netzwerkbandbreite auswirken kann. Solche großen Blöcke können erheblich zur Nutzung von Address Space beitragen, sowohl durch den Einsatz von viel Speicher als auch durch die Anforderung großer zusammenhängender Blöcke von Address Space.
 
@@ -39,12 +41,12 @@ Fehler, die im Ereignisdatenprotokoll [!DNL Insight Server] protokolliert werden
 
 **Bewertung der Adressenraumlast**
 
-Um die Auslastung des Adressenraums für Ihr System genau zu bewerten, empfiehlt Adobe, den Datensatz erneut zu verarbeiten, einige normale Abfragen durchzuführen, ohne [!DNL Insight Server] anschließend neu zu starten, und dann die gemessene Auslastung des Adressenraums anzuzeigen, indem Sie diese Schritte ausführen.
+Um die Auslastung des Adressenraums für Ihr System genau zu bewerten, empfiehlt Adobe, den Datensatz erneut zu verarbeiten und einige normale Abfragen durchzuführen, ohne anschließend neu zu starten [!DNL Insight Server]und dann die gemessene Adressspeicherlast anzeigen, indem Sie die folgenden Schritte ausführen.
 
-Wenn ein [!DNL Insight Server] seit dem letzten Neustart nicht signifikant neu verarbeitet und abgefragt wurde, sollten Sie keine Schlussfolgerungen aus der Adressenraumlast ziehen.
+Wenn eine [!DNL Insight Server] nicht neu verarbeitet und wesentlich abgefragt wurde, seit es zuletzt neu gestartet wurde, sollten Sie keine Schlussfolgerungen aus der Adressenraumlast ziehen.
 
-1. Klicken Sie in [!DNL Insight] auf der Registerkarte [!DNL Admin] > [!DNL Dataset and Profile] auf die Miniaturansicht **[!UICONTROL Servers Manager]** , um den Arbeitsbereich &quot;Server Manager&quot;zu öffnen.
-1. Klicken Sie mit der rechten Maustaste auf das Symbol des zu konfigurierenden [!DNL Insight Server] und klicken Sie auf **[!UICONTROL Detailed Status]**.
+1. In [!DNL Insight]auf [!DNL Admin] > [!DNL Dataset and Profile] klicken Sie auf die **[!UICONTROL Servers Manager]** Miniaturansicht, um den Arbeitsbereich &quot;Server Manager&quot;zu öffnen.
+1. Klicken Sie mit der rechten Maustaste auf das Symbol der [!DNL Insight Server] Sie möchten konfigurieren und klicken Sie auf **[!UICONTROL Detailed Status]**.
 1. Klicken Sie in der Oberfläche für den detaillierten Status auf **[!UICONTROL Memory Status]** , um den Inhalt anzuzeigen. Im Parameter &quot;Adressraum laden&quot;können Sie die Adressspeicherlast als Prozentsatz und eine in Klammern eingeschlossene Beschreibung sehen, die den Status angibt.
 
    Die folgende Tabelle zeigt Bereiche und Status für die Belastung des Adressenraums. Für jeden Bereich wird eine empfohlene Aktion aufgelistet.

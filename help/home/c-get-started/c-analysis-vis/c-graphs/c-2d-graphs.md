@@ -3,7 +3,7 @@ description: Zweidimensionale (2D-)Diagramme zeigen eine Metrik über zwei Dimen
 title: 2D-Diagramme
 uuid: f8860fff-4614-4b1a-b217-760bf4d48f20
 exl-id: 9767124b-8507-4b25-842b-8e2729e57461
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # 2D-Diagramme{#d-graphs}
+
+{{eol}}
 
 Zweidimensionale (2D-)Diagramme zeigen eine Metrik über zwei Dimensionen hinweg an.
 
@@ -29,6 +31,6 @@ Siehe folgendes Beispiel:
 **So skalieren Sie die vertikale Achse**
 
 1. Bewegen Sie die Maus über die vertikale Achse, um eine Ebene des Diagramms hervorzuheben.
-1. Klicken Sie bei hervorgehobener Ebene auf die Maus, ziehen Sie sie nach oben oder unten, um die vertikale Achse des Diagramms zu skalieren.
+1. Während die Ebene hervorgehoben ist, klicken Sie auf die Maus, ziehen Sie sie nach oben oder unten, um die vertikale Achse des Diagramms zu skalieren.
 
 Siehe [Zoomen in Visualisierungen](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).

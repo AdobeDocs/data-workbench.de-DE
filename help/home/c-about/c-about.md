@@ -3,14 +3,16 @@ description: Metriken, Dimensionen und Filter bieten ein Framework für die Durc
 title: Metriken, Dimensionen und Filter in Data Workbench
 uuid: 3c0300a0-ae19-4817-aab8-7294e0eabdd9
 exl-id: 687d9695-e70c-49ff-ac11-1537e6309e16
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
-source-wordcount: '827'
-ht-degree: 100%
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 87%
 
 ---
 
-# Metriken, Dimensionen und Filter in Data Workbench {#data-workbench-metrics-dimensions-and-filters}
+# Metriken, Dimensionen und Filter in Data Workbench{#data-workbench-metrics-dimensions-and-filters}
+
+{{eol}}
 
 Metriken, Dimensionen und Filter bieten ein Framework für die Durchführung von Berechnungen zu den in einem Data Workbench-Datensatz verarbeiteten Daten.
 
@@ -45,10 +47,10 @@ Im Allgemeinen liefert eine Metrik, die über eine Dimension berechnet wird, die
 Hierbei gilt zu beachten: Die Ermittlung einer Metrik über eine Dimension liefert für ein spezifisches Dimensionselement immer dasselbe numerische Ergebnis, unabhängig davon, ob Sie diese Metrik für die gesamte Dimension berechnen oder einen Filter für dieses spezifische Dimensionselement definieren. So würden im vorherigen Beispiel beide der folgenden Methoden für die Ermittlung des Durchschnittsalters der Menschen in Schweden dasselbe Ergebnisse liefern:
 
 * Berechnung der Metrik „Durchschnittsalter“ über die Dimension „Land“ und anschließende Anzeige der Zahl für das Dimensionselement „Schweden“.
-* Berechnung der Metrik „Durchschnittsalter“ mit einem Filter für „Personen in Schweden“ (ausgedrückt als [!DNL Average_Age[Country=&#39;Sweden&#39;]]).
+* Bewerten Sie die Metrik &quot;Durchschnittsalter&quot;mit einem Filter für &quot;Personen in Schweden&quot;(ausgedrückt als [!DNL Average_Age[Country='Sweden']]).
 
 Filter sind syntaktische Ausdrücke, die auf eine oder mehrere Dimensionen und Dimensionselemente verweisen. Wie im Beispiel oben gezeigt, lässt sich über den Ausdruck [!DNL [dimension=element]] auf einfache Weise ein Filter bestimmen.
 
-Ebenso einfach gestaltet sich die Anwendung eines solchen Filters, um eine neue Metrik unter Verwendung eines Ausdrucks wie [!DNL New_Metric=Metric[Filter]] zu definieren. Mit einem solchen Filter lässt sich eine neue Metrik auf Grundlage eines spezifischen Dimensionselements definieren. So definiert im Beispiel oben [!DNL Average_Age[Country=&#39;Sweden&#39;]] eine Metrik für das Durchschnittsalter der Menschen in Schweden. Würden wir diese Metrik mit einem Namen versehen, z. B. „Swedish_Average_Age“, könnten wir sie in anderen Berechnungen als Metrik verwenden. So würde etwa die Ermittlung von [!DNL Swedish_Average_Age/Average_Age] eine einzelne Zahl liefern, nämlich das Durchschnittsalter der Menschen in Schweden im Verhältnis zu dem der Menschen im Rest der Welt.
+Ebenso einfach ist es, einen solchen Filter anzuwenden, um eine neue Metrik mithilfe eines Ausdrucks wie [!DNL New_Metric=Metric[Filter]]. Mit einem solchen Filter lässt sich eine neue Metrik auf Grundlage eines spezifischen Dimensionselements definieren. So verwenden Sie das obige Beispiel: [!DNL Average_Age[Country='Sweden']]gibt eine Metrik für das Durchschnittsalter der Menschen in Schweden an. Würden wir diese Metrik mit einem Namen versehen, z. B. „Swedish_Average_Age“, könnten wir sie in anderen Berechnungen als Metrik verwenden. So würde etwa die Ermittlung von [!DNL Swedish_Average_Age/Average_Age] eine einzelne Zahl liefern, nämlich das Durchschnittsalter der Menschen in Schweden im Verhältnis zu dem der Menschen im Rest der Welt.
 
-Enthält der Datensatz mit Informationen über alle Menschen der Welt etwa auch die Dimension „Augenfarbe“, würde der Ausdruck [!DNL Swedish_Average_Age[Eye_Color=&#39;green&#39;]] das Durchschnittsalter der Schweden liefern, deren Augen grün sind. Dasselbe Ergebnis erhalten Sie auch ohne die Definition einer Zwischenmetrik, indem Sie einen anderen Filter anwenden: [!DNL Average_Age[Country=&#39;Sweden&#39; AND Eye_Color=&#39;green&#39;]]. Darin definiert der [!DNL AND]-Operator einen Filterausdruck, der zwei weitere einfache Filterausdrücke verwendet.
+Wenn der Datensatz mit Informationen über alle Menschen in der Welt auch eine Dimension &quot;Augenfarbe&quot;enthält, wird der Ausdruck [!DNL Swedish_Average_Age[Eye_Color='green']] das Durchschnittsalter der Schweden mit grünen Augen. Sie können dasselbe Ergebnis auch ohne die Verwendung einer Definition einer Zwischenmetrik erzielen, indem Sie einen anderen Filter anwenden: [!DNL Average_Age[Country='Sweden' AND Eye_Color='green']]. Darin definiert der [!DNL AND]-Operator einen Filterausdruck, der zwei weitere einfache Filterausdrücke verwendet.

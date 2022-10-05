@@ -3,7 +3,7 @@ description: Bevor Sie Berichte und Warnhinweise generieren können, müssen Sie
 title: Konfigurieren der Verbindung zu Insight Server
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
 exl-id: a398a665-fe09-448a-977c-b0f9de4add09
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # Konfigurieren der Verbindung zu Insight Server{#configuring-the-connection-to-the-insight-server}
+
+{{eol}}
 
 Bevor Sie Berichte und Warnhinweise generieren können, müssen Sie Report Server konfigurieren, um die Adresse des Insight-Servers anzugeben und die Profile zu identifizieren, für die der Bericht erstellt werden soll.
 
@@ -21,9 +23,9 @@ Bevor Sie Berichte und Warnhinweise generieren können, müssen Sie Report Serve
 **So konfigurieren Sie Report Server**
 
 1. Navigieren Sie mit Windows Explorer zu dem Ordner, in dem Sie Report Server installiert haben.
-1. Öffnen Sie die Datei [!DNL ReportServer.cfg] in Notepad und ändern Sie die Datei nach Bedarf.
+1. Öffnen Sie die [!DNL ReportServer.cfg] -Datei im Editor speichern und die Datei nach Bedarf ändern.
 
-   Das folgende Beispiel [!DNL Report Server.cfg] enthält standardmäßig nur die in der Datei [!DNL Report Server.cfg] enthaltenen Parameter (und hebt die erforderlichen Parametereinstellungen hervor). Wenn Sie den Adobe License Server über einen Proxyserver kontaktieren, müssen Sie den Lizenzvektor und dessen Parameter hinzufügen. Eine ausführliche Beschreibung finden Sie unter [Report Server.cfg-Parameter](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) .
+   Das folgende Beispiel [!DNL Report Server.cfg] enthält nur die Parameter, die im [!DNL Report Server.cfg] -Datei (und markiert die erforderlichen Parametereinstellungen). Wenn Sie den Adobe License Server über einen Proxyserver kontaktieren, müssen Sie den Lizenzvektor und dessen Parameter hinzufügen. Siehe [Parameter für Report Server.cfg](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) für eine ausführliche Beschreibung.
 
    ```
    Fonts = vector: 0 items

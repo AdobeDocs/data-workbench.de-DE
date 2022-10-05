@@ -3,7 +3,7 @@ description: Der Ressourcenmonitor-Vektor enthält den Memory Budget Monitor und
 title: Ressourcenüberwachungen für die Abfragewarteschlage
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
 exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Ressourcenüberwachungen für die Abfragewarteschlage{#query-queue-resource-monitors}
+
+{{eol}}
 
 Der Ressourcenmonitor-Vektor enthält den Memory Budget Monitor und die Anzahl der Queries Monitor.
 
@@ -38,7 +40,7 @@ In der folgenden Tabelle werden die für die Abfragewarteschlange verwendeten Fe
   <tr> 
    <td colname="col1"> <p>Geringer Schwellenwert </p> </td> 
    <td colname="col2"> <p>double </p> </td> 
-   <td colname="col3"> <p>Der niedrige Schwellenwert für die Speicherbelegung (Byte). Wenn der Wert <span class="wintitle"> Memory Budget Monitor</span> unter diesem Wert liegt, können neue Bundches geplant werden und geplante Bundches können erweitert werden. Beispielsweise werden Bundles erweitert, wenn ein Benutzer eine Visualisierung zu einem Arbeitsbereich hinzufügt. </p> </td> 
+   <td colname="col3"> <p>Der niedrige Schwellenwert für die Speicherbelegung (Byte). Wenn <span class="wintitle"> Memory Budget Monitor</span> unterhalb dieses Werts steht, können neue Bundches geplant werden und geplante Bundches können erweitert werden. Beispielsweise werden Bundles erweitert, wenn ein Benutzer eine Visualisierung zu einem Arbeitsbereich hinzufügt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Reaktionszeit </p> </td> 
@@ -53,12 +55,12 @@ In der folgenden Tabelle werden die für die Abfragewarteschlange verwendeten Fe
   <tr> 
    <td colname="col1"> <p>Hoher Schwellenwert </p> </td> 
    <td colname="col2"> </td> 
-   <td colname="col3"> <p>Der hohe Schwellenwert für die Speichernutzung (Byte). Wenn die Speicherbelegung über diesem Wert liegt, erfolgt keine Planung und die mit der niedrigsten Priorität geplanten Bundles werden jeweils für einen bestimmten Zeitraum ungeplant, bis die Speicherbelegung unter diesen Wert zurückgeführt wird. </p> </td> 
+   <td colname="col3"> <p>Der hohe Schwellenwert für die Speichernutzung (Byte). Wenn die Speicherbelegung über diesem Wert liegt, erfolgt keine Zeitplanung und die mit der niedrigsten Priorität geplanten Bundles werden über einen bestimmten Zeitraum ungeplant, bis die Speicherbelegung unter diesen Wert zurückgeführt wird. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Geringer Schwellenwert </p> </td> 
    <td colname="col2"> </td> 
-   <td colname="col3"> <p>Der niedrige Schwellenwert für die Speicherbelegung (Byte). Wenn der Wert <span class="wintitle"> Memory Budget Monitor</span> unter diesem Wert liegt, können neue Bundches geplant und geplante Bundches können größer werden. </p> </td> 
+   <td colname="col3"> <p>Der niedrige Schwellenwert für die Speicherbelegung (Byte). Wenn <span class="wintitle"> Memory Budget Monitor</span> unterhalb dieses Werts steht, können neue Bundches geplant und geplante Bundches können größer werden. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -3,7 +3,7 @@ description: Ein Diagramm kann eine oder mehrere Metriken über eine oder zwei D
 title: Diagramme
 uuid: 6029cd1a-4fe1-41fa-9594-2c5cee1f4882
 exl-id: 39fadfd8-646b-4959-b016-87ff201c66e7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Diagramme{#graphs}
+
+{{eol}}
 
 Ein Diagramm kann eine oder mehrere Metriken über eine oder zwei Datendimensionen anzeigen.
 
@@ -24,11 +26,11 @@ Im folgenden Beispiel sehen Sie ein Balkendiagramm, in dem die Anzahl der Sitzun
 
 **Verlaufsüberlagerung auf einem Diagramm**
 
-Sie können mit der rechten Maustaste klicken und eine **Verlaufsüberlagerung** aus dem Menü auswählen, um Diagrammelemente besser anzuzeigen.
+Sie können mit der rechten Maustaste klicken und eine **Verlaufsüberlagerung** aus dem Menü, um Diagrammelemente besser anzuzeigen.
 
 ![](assets/6_51_gradient_graph.png)
 
-* **Keine Verlaufsüberlagerung**  (Standard). Wählen Sie diese Option, um Balken ohne angewendete Verlaufsüberlagerung anzuzeigen.
+* **Keine Verlaufsüberlagerung** (Standard). Wählen Sie diese Option, um Balken ohne angewendete Verlaufsüberlagerung anzuzeigen.
 * **Hintergrund von links**. Wählen Sie diese Option, um die Farbabstufung in allen Balken von links nach rechts anzuzeigen.
 * **Hintergrund von rechts**. Wählen Sie diese Option, um die Farbabstufung in allen Balken von rechts nach links anzuzeigen.
 * **Zylinder**. Wählen Sie diese Option, um die Farbabstufung von der Mitte jedes Balkens bis zum Rand jedes Balkens anzuzeigen.
@@ -37,6 +39,6 @@ Sie können mit der rechten Maustaste klicken und eine **Verlaufsüberlagerung**
 
 Sie können auch Legenden zu linearen Diagrammen hinzufügen. Siehe [Hinzufügen von Legenden zu einem Arbeitsbereich](../../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0).
 
-Um Graph-Visualisierungen einen Callout hinzuzufügen, müssen Sie unten in der Visualisierung (die Basisachse) mit der rechten Maustaste klicken, um ein Menü zu öffnen und **Callout hinzufügen** auszuwählen.
+Um Graph-Visualisierungen einen Callout hinzuzufügen, müssen Sie mit der rechten Maustaste am unteren Rand der Visualisierung (die Basisachse) klicken, um ein Menü zu öffnen und die Option **Legende hinzufügen**.
 
 ![](assets/visualization_callout_linegraph.png)

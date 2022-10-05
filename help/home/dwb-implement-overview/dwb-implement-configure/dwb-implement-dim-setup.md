@@ -3,7 +3,7 @@ description: In diesem Abschnitt werden die verschiedenen Typen von Dimensionen 
 title: Einrichten von Dimensionen
 uuid: 5b40cb43-7790-4b87-a0bb-be395a420157
 exl-id: 04afd773-e938-49f7-83c9-1d706a6dc525
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Einrichten von Dimensionen{#dimension-setup}
+
+{{eol}}
 
 In diesem Abschnitt werden die verschiedenen Typen von Dimensionen und deren Einrichtung in DWB erläutert.
 
@@ -20,7 +22,7 @@ Auf der grundlegendsten Ebene sind Dimensionen Kategorien, in die die Daten im D
 
 Best Practice: Dimensionen im Datenschema können beliebig benannt werden. Die in diesem Kurs verwendeten und erklärten Dimensionen gelten als Best Practice. Dimensionen können unterschiedlich benannt werden. Wenn Sie Informationen zu anderen Datensätzen erhalten, werden Sie Unterschiede in Datensätzen erkennen. Es ist wichtig, den Zweck der Dimensionen und nicht ihren Namen zu verstehen. Ob es beispielsweise &quot;Besucher&quot;, &quot;Kunde&quot;, &quot;Person&quot;, &quot;Verbraucher&quot;oder &quot;Benutzer&quot;heißt, es ist wichtig zu verstehen, dass diese Begriffe häufig verwendet werden, um auf die zählbare Dimension der höchsten Ebene zu verweisen, mit der Informationen über eine bestimmte Person erfasst werden.
 
-Vollständige Informationen finden Sie im Handbuch [Datensatzkonfiguration](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html) .
+Vollständige Informationen finden Sie in der [Datensatzkonfiguration](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html) Handbuch.
 
 ## Typen von Dimensionen in DWB {#section-a4fbb7bf2bde44528ac0f94a96465862}
 
@@ -69,7 +71,7 @@ Viele-zu-viele-Dimensionen haben eine Viele-zu-viele-Beziehung mit einer überge
 **4) Numerische Dimensionen**
 
 Numerische Dimensionen sind ein Typ einer einfachen Dimension mit einem numerischen Wert. Numerische Dimensionen werden häufig erstellt, um in Metriken verwendet zu werden. Beispiele für numerische Dimensionen sind &quot;Umsatz&quot;, &quot;Bestellungen&quot;und &quot;Einheiten&quot;. Im obigen Beispiel ist die Dimension &quot;Kundenaufträge&quot;eine numerische Dimension.
-**5) Denormale** DimensionenDenormale Dimensionen sind Dimensionen, die eine Eins-zu-Eins-Beziehung mit einer übergeordneten zählbaren Dimension aufweisen. Denormale Dimensionen werden häufig mit Dimensionen mit hoher Kardinalität (viele eindeutige Elemente) wie Identifizierungsdaten verwendet. Beispielsweise kann ein Besucher nur eine Benutzer-ID und eine Benutzer-ID nur zu einem Besucher gehören. Dies ist also eine Eins-zu-Eins-Beziehung und kann eine denormale Dimension sein.
+**5) Denormale Dimensionen** Denormale Dimensionen sind Dimensionen, die eine Eins-zu-Eins-Beziehung mit einer übergeordneten zählbaren Dimension aufweisen. Denormale Dimensionen werden häufig mit Dimensionen mit hoher Kardinalität (viele eindeutige Elemente) wie Identifizierungsdaten verwendet. Beispielsweise kann ein Besucher nur eine Benutzer-ID und eine Benutzer-ID nur zu einem Besucher gehören. Dies ist also eine Eins-zu-Eins-Beziehung und kann eine denormale Dimension sein.
 
 Beispielsweise ist die Geometrixx Web User ID eine denormale Dimension auf Kundenebene. Da es sich um eine denormale Dimension handelt, besteht eine Eins-zu-Eins-Beziehung mit der übergeordneten Dimension, d. h. jede Web-Anwender-ID hat einen Kunden und jeder Kunde nur eine Web-Benutzer-ID. Daher kann die Metrik &quot;Kunden&quot;nur für jedes Element der Geometrixx Web-Benutzer-ID &quot;1&quot;lauten.
 
@@ -79,7 +81,7 @@ Mit Zeitdimensionen können Sie einen Satz periodischer oder absoluter lokaler Z
 
 >[!NOTE]
 >
->Die %-Escapes, die für die Anzeigeformatierung verwendet werden, sind identisch mit der standardmäßigen C-Bibliothek *strftime*.
+>Die für die Anzeigeformatierung verwendeten Escape-Zeichen in % entsprechen der standardmäßigen C-Bibliothek. *strftime*.
 
 ## Definieren erweiterter Dimensionen {#section-38ee124ec74b43fb95f13194a9582b97}
 
@@ -97,7 +99,7 @@ Schritte zum Definieren der erweiterten Dimension:
    * [Denormale Dimensionen](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-denormal-dim.html)
    * [Zeitdimensionen](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-time-dim.html)
 
-1. Für jede erweiterte Dimension, die Sie definieren, können Sie dem Kommentar-Parameter eine oder mehrere Kommentarzeilen hinzufügen, um die Dimension weiter zu beschreiben oder Anmerkungen zur Verwendung hinzuzufügen. Um einen Kommentar hinzuzufügen, klicken Sie mit der rechten Maustaste auf die Bezeichnung *Kommentare* und klicken Sie auf &quot;Neu hinzufügen&quot;> &quot;Kommentarzeile&quot;.
+1. Für jede erweiterte Dimension, die Sie definieren, können Sie dem Kommentar-Parameter eine oder mehrere Kommentarzeilen hinzufügen, um die Dimension weiter zu beschreiben oder Anmerkungen zur Verwendung hinzuzufügen. Um einen Kommentar hinzuzufügen, klicken Sie mit der rechten Maustaste auf die *Kommentare* und klicken Sie auf &quot;Neu hinzufügen&quot;> &quot;Kommentarzeile&quot;.
 
 1. Nachdem Sie Ihre erweiterte Dimension(en) in der Konfigurationsdatei definiert haben, speichern Sie die Datei lokal und speichern Sie sie in Ihrem Datensatzprofil auf dem DWB-Server.
 

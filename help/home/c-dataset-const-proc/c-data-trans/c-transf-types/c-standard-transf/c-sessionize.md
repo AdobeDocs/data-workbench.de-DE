@@ -3,7 +3,7 @@ description: Wenn Sie mit Daten arbeiten, die aus dem Website-Traffic erfasst wu
 title: Sessionize
 uuid: c6e2487a-80e5-4e00-b4d4-2ce013fac3ea
 exl-id: bb25cb4b-7185-4524-8ff5-740b672e1cd9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # Sessionize{#sessionize}
 
+{{eol}}
+
 Wenn Sie mit Daten arbeiten, die aus dem Website-Traffic erfasst wurden, können Sie mithilfe der Sessionize-Transformation bestimmen, wie Sitzungen definiert werden.
 
 Die Umwandlung nimmt als Eingabe einen Zeitstempel und eine Tracking-ID und gibt für jeden Protokolleintrag eine Sitzungsnummer aus. Die Sitzungsnummer ist &quot;1&quot;für die erste Sitzung mit einer angegebenen Tracking-ID, &quot;2&quot;für die zweite Sitzung mit derselben Tracking-ID usw. Die Ausgabe kann direkt als Sitzungsschlüssel verwendet werden, da sie für jede Sitzung einen eindeutigen Wert aufweist.
 
 >[!NOTE]
 >
->Für die Umwandlung von [!DNL Sessionize] ist es erforderlich, dass die Daten in der Zeit sortiert und nach der Tracking-ID in den Quelldaten gruppiert werden. Daher funktioniert [!DNL Sessionize] nur, wenn sie in der Datei [!DNL Transformation.cfg] oder in der Datei [!DNL Transformation Dataset Include] definiert ist.
+>Um zu arbeiten, wird die [!DNL Sessionize] Für die Transformation müssen die Daten in der Zeit geordnet und nach der Tracking-ID in den Quelldaten gruppiert werden. Daher [!DNL Sessionize] funktioniert nur, wenn im [!DNL Transformation.cfg] oder in einer [!DNL Transformation Dataset Include] -Datei.
 
 <table id="table_34984DF9340149C0A5016F08EABAD158"> 
  <thead> 
@@ -56,7 +58,7 @@ Die Umwandlung nimmt als Eingabe einen Zeitstempel und eine Tracking-ID und gibt
   </tr> 
   <tr> 
    <td colname="col1"> <p>Maximale Sitzungsdauer </p> </td> 
-   <td colname="col2">Die längste Sitzungsdauer vor dem Start einer neuen Sitzung. (Dadurch wird verhindert, dass Webseiten mit automatischer Inhaltsaktualisierung Sitzungen erstellen, die beliebig lang sind.) Wenn die <span class="wintitle"> Timeout-Bedingung</span> erfüllt ist und der Referrer eines Klicks auf einen der Einträge im Parameter "Interne Domänen"festgelegt ist, wird die maximale Sitzungsdauer verwendet, um das Ende einer Sitzung zu definieren. Keine Sitzung darf die angegebene maximale Sitzungsdauer überschreiten, unabhängig von der Anzahl der darin enthaltenen Klicks. Der empfohlene Wert beträgt 48 Stunden. Weitere Informationen zu den Parametern für die maximale Sitzungsdauer und interne Domänen finden Sie unter <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> Konfigurationseinstellungen für Webdaten</a>. </td> 
+   <td colname="col2">Die längste Sitzungsdauer vor dem Start einer neuen Sitzung. (Dadurch wird verhindert, dass Webseiten mit automatischer Inhaltsaktualisierung Sitzungen erstellen, die beliebig lang sind.) Wenn die Variable <span class="wintitle"> Timeout-Bedingung</span> zufrieden ist und der Referrer eines Klicks auf einen der Einträge im Parameter "Interne Domänen"festgelegt ist, wird die maximale Sitzungsdauer verwendet, um das Ende einer Sitzung zu definieren. Keine Sitzung darf die angegebene maximale Sitzungsdauer überschreiten, unabhängig von der Anzahl der darin enthaltenen Klicks. Der empfohlene Wert beträgt 48 Stunden. Weitere Informationen zu den Parametern für die maximale Sitzungsdauer und interne Domänen finden Sie unter <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> Konfigurationseinstellungen für Webdaten</a>. </td> 
    <td colname="col3"> 48 Stunden </td> 
   </tr> 
   <tr> 
@@ -85,10 +87,10 @@ Eine neue Sitzung beginnt, wenn eine der folgenden Situationen eintritt:
 
 >[!NOTE]
 >
->Wenn Sie die maximale Sitzungsdauer und die Sitzungszeitüberschreitung bereits als Parameter in der Datei [!DNL Session Parameters.cfg] definiert haben, geben Sie in der Konfiguration keine Werte für diese ein. Sie können auf die Parameter verweisen, indem Sie *$(Parametername)* eingeben, wie im folgenden Beispiel gezeigt. Weitere Informationen zu diesen Parametern finden Sie unter [Konfigurationseinstellungen für Webdaten](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
+>Wenn Sie die maximale Sitzungsdauer und das Sitzungs-Timeout bereits als Parameter in der [!DNL Session Parameters.cfg] -Datei, geben Sie in der Konfiguration keine Werte für sie ein. Sie können auf die Parameter verweisen, indem Sie *$(Parametername)* wie im folgenden Beispiel gezeigt. Weitere Informationen zu diesen Parametern finden Sie unter [Konfigurationseinstellungen für Webdaten](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
-Die Umwandlung von [!DNL Sessionize] in diesem Beispiel nimmt als Eingabe die Felder x-timestamp und x-trackingid an und zeichnet die Sitzungsnummer für jeden Protokolleintrag im Feld x-session-key auf. Der [!DNL Timeout Condition] der Transformation basiert auf einer [!DNL Neither] -Bedingung: Wenn das Feld cs(referrer-domain) für einen Protokolleintrag mit einem Mitglied des Parameters &quot;Interne Domänen&quot;übereinstimmt, wird die Bedingung als &quot;false&quot;ausgewertet. Beachten Sie die Verweise auf die Parameter &quot;Interne Domänen&quot;und &quot;Sitzungs-Timeout&quot;.
+Die [!DNL Sessionize] -Umwandlung in diesem Beispiel nimmt als Eingabe die x-timestamp- und x-trackingid-Felder und zeichnet die Sitzungsnummer für jeden Protokolleintrag im Feld x-session-key auf. Die Transformation [!DNL Timeout Condition] basiert auf einer [!DNL Neither] Bedingung: Wenn das Feld cs(referrer-domain) für einen Protokolleintrag mit einem Mitglied des Parameters &quot;Interne Domänen&quot;übereinstimmt, wird die Bedingung als &quot;false&quot;ausgewertet. Beachten Sie die Verweise auf die Parameter &quot;Interne Domänen&quot;und &quot;Sitzungs-Timeout&quot;.
 
-Weitere Informationen zu [!DNL NeitherCondition] finden Sie unter [Bedingungen](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md). Informationen zu den Parametern für interne Domänen und Sitzungs-Timeout finden Sie unter [Konfigurationseinstellungen für Webdaten](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
+Informationen zum [!DNL NeitherCondition], siehe [Bedingungen](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md). Informationen zu den Parametern für interne Domänen und Sitzungs-Timeout finden Sie unter [Konfigurationseinstellungen für Webdaten](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
 ![](assets/cfg_TransformationType_Sessionize.png)

@@ -3,7 +3,7 @@ description: Tabelle, die anzeigt, welche Konventionen beim Erstellen von Umwand
 title: Konventionen für die Zusammenstellung von Umwandlungen
 uuid: 91dddca6-4c17-4107-b78b-0f8b8870ef8d
 exl-id: c2552c52-c6d3-4c9f-8359-b5a58bf1a59f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Konventionen für die Zusammenstellung von Umwandlungen{#conventions-for-constructing-transformations}
+
+{{eol}}
 
 Tabelle, die anzeigt, welche Konventionen beim Erstellen von Umwandlungen gelten.
 
@@ -24,7 +26,7 @@ Tabelle, die anzeigt, welche Konventionen beim Erstellen von Umwandlungen gelten
  <tbody> 
   <tr> 
    <td colname="col1"> Sequenzielle Ausführung </td> 
-   <td colname="col2"> <p>Die Umwandlungen in einer Datensatzkonfigurationsdatei werden nacheinander auf die Protokolleinträge angewendet (d. h. in der Reihenfolge, in der sie in der Konfigurationsdatei aufgeführt sind). Daher müssen Transformationen in der Reihenfolge aufgelistet werden, in der ihre Ausgaben als Eingaben in andere Transformationen verwendet werden. Wenn die Ausgabe einer Transformation als Eingabe für eine andere Transformation verwendet wird, ist es insbesondere wichtig, dass diese erste Transformation vor der letzteren Transformation in den Datensatzkonfigurationsdateien aufgeführt wird. Andernfalls erzeugt der Data Workbench-Server einen Fehler. </p> <p> Verarbeitungsphasen bieten eine Möglichkeit, die Transformationen anzuordnen, die in mehreren Datensatzaufnahme-Dateien definiert sind. Für alle Datensatzaufnahme-Dateien, die mit einer bestimmten Verarbeitungsphase verknüpft sind, werden die Umwandlungen anhand ihrer Ein- und Ausgabedaten geordnet. Wenn infolge einer Umwandlung mehrere Datensätze Dateien in einem Staging-Ausgabedaten in dasselbe Feld enthalten, erzeugt der Data Workbench-Server einen Fehler. </p> <p> Weitere Informationen zu Bühnen finden Sie unter <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Konfigurationsdatei für die Protokollverarbeitung</a>, <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md"> Konfigurationsdatei für Umwandlungen</a> und <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"> Datensatzaufnahme-Dateien</a>. </p> <p>Eine <span class="wintitle"> Abhängigkeitskarte für Umwandlungen</span> kann anzeigen, wie ein Feld durch eine Reihe von Umwandlungen geändert wird. Siehe <a href="../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md"> Tools für die Datensatzkonfiguration</a>. </p> </td> 
+   <td colname="col2"> <p>Die Umwandlungen in einer Datensatzkonfigurationsdatei werden nacheinander auf die Protokolleinträge angewendet (d. h. in der Reihenfolge, in der sie in der Konfigurationsdatei aufgeführt sind). Daher müssen Transformationen in der Reihenfolge aufgelistet werden, in der ihre Ausgaben als Eingaben in andere Transformationen verwendet werden. Wenn die Ausgabe einer Transformation als Eingabe für eine andere Transformation verwendet wird, ist es insbesondere wichtig, dass diese erste Transformation vor der letzteren Transformation in den Datensatzkonfigurationsdateien aufgeführt wird. Andernfalls erzeugt der Data Workbench-Server einen Fehler. </p> <p> Verarbeitungsphasen bieten eine Möglichkeit, die Transformationen anzuordnen, die in mehreren Datensatzaufnahme-Dateien definiert sind. Für alle Datensatzaufnahme-Dateien, die mit einer bestimmten Verarbeitungsphase verknüpft sind, werden die Umwandlungen anhand ihrer Ein- und Ausgabedaten geordnet. Wenn infolge einer Umwandlung mehrere Datensätze Dateien in einem Staging-Ausgabedaten in dasselbe Feld enthalten, erzeugt der Data Workbench-Server einen Fehler. </p> <p> Weitere Informationen zu Bühnen finden Sie unter <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Konfigurationsdatei für die Protokollverarbeitung</a>, <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md"> Konfigurationsdatei für Umwandlungen</a>und <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"> Datensatzaufnahme-Dateien</a>. </p> <p>A <span class="wintitle"> Abhängigkeitskarte für Umwandlungen</span> kann anzeigen, wie ein Feld durch eine Reihe von Umwandlungen geändert wird. Siehe <a href="../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md"> Tools zur Datensatzkonfiguration</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Ausgabenamen </td> 

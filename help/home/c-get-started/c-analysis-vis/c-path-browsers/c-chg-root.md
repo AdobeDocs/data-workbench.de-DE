@@ -3,7 +3,7 @@ description: Sie können den Stamm eines Pfad-Browsers ändern, indem Sie entwed
 title: Ändern des Stamms des Pfad-Browsers
 uuid: 0bb9b004-9736-411b-bd22-cac04f4733a6
 exl-id: 09842b93-af26-42b9-9395-a02b86978b21
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Ändern des Stamms des Pfad-Browsers{#change-the-path-browser-s-root}
+
+{{eol}}
 
 Sie können den Stamm eines Pfad-Browsers ändern, indem Sie entweder ein angezeigtes Element als Stamm angeben oder ein neues Element zur Visualisierung hinzufügen.
 
@@ -38,4 +40,4 @@ Sie können den Stamm eines Pfad-Browsers ändern, indem Sie entweder ein angeze
 
    >[!NOTE]
    >
-   >Das Ziehen eines Elements in einen Pfad-Browser kann die mit dem Pfad-Browser verknüpfte Basisdimension ändern, die Ebenendimension, Gruppendimension oder Metrik wird jedoch nicht geändert. Daher müssen Sie bei der Auswahl einer Basisdimension vorsichtig sein, die bei Verwendung mit der Ebenendimension, Gruppendimension und Metrik des Pfadbrowsers sinnvoll ist. Um die Ebenendimension, Gruppendimension oder Metrik zu ändern, müssen Sie die [!DNL *.vw]-Datei des Pfadbrowsers in einem Texteditor wie Notepad bearbeiten. Siehe [Konfigurieren von Pfad-Browsern](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+   >Das Ziehen eines Elements in einen Pfad-Browser kann die mit dem Pfad-Browser verknüpfte Basisdimension ändern, die Ebenendimension, Gruppendimension oder Metrik wird jedoch nicht geändert. Daher müssen Sie bei der Auswahl einer Basisdimension vorsichtig sein, die bei Verwendung mit der Ebenendimension, Gruppendimension und Metrik des Pfadbrowsers sinnvoll ist. Um die Ebenendimension, Gruppendimension oder Metrik zu ändern, müssen Sie die [!DNL *.vw] in einem Texteditor wie Notepad. Siehe [Konfigurieren von Pfad-Browsern](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).

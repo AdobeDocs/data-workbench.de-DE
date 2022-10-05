@@ -4,7 +4,7 @@ solution: Analytics
 title: Was soll getestet werden?
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 ---
 
 # Was soll getestet werden?{#what-should-i-test}
+
+{{eol}}
 
 Die Testergebnisse müssen klar und aussagekräftig sein, damit Sie sich darauf verlassen können, auf der Grundlage dieser Ergebnisse große Dollarentscheidungen zu treffen.
 

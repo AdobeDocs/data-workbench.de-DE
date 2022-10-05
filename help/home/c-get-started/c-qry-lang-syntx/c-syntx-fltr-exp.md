@@ -3,7 +3,7 @@ description: Ein Filter ist ein Ausdruck, der eine Teilmenge der Daten in einem 
 title: Syntax für Ausdrücke zu Filtern
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
 exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # Syntax für Ausdrücke zu Filtern{#syntax-for-filter-expressions}
 
+{{eol}}
+
 Ein Filter ist ein Ausdruck, der eine Teilmenge der Daten in einem Datensatz definiert.
 
 Ein Filter lässt jedes Element jeder Dimension je nach den Beziehungen zwischen Dimensionen zu oder lehnt es ab.
 
-Filter können mit [!DNL Filter Editor] bearbeitet werden. Siehe [Filter Editors](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
+Filter können mit der [!DNL Filter Editor]. Siehe [Filter-Editoren](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-In der folgenden Tabelle enthält jede Syntaxbeschreibung ein Beispiel für einen Metrikausdruck, der diesen Filter verwendet. Beispielsweise ist Sessions[True] eine Metrik, die mithilfe des Filters &quot;True&quot;definiert wird. Die Metrik Sitzungen[True] ist mit der Metrik Sitzungen identisch, da der Filter Wahr jedes Element der Sitzungsdimension zulässt.
+In der folgenden Tabelle enthält jede Syntaxbeschreibung ein Beispiel für einen Metrikausdruck, der diesen Filter verwendet. Zum Beispiel Sitzungen[True] ist eine Metrik, die mithilfe des Filters &quot;True&quot;definiert wird. Die Sitzungen[True] ist mit der Metrik Sitzungen identisch, da der Filter Wahr jedes Element der Dimension Sitzung zulässt.
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 
@@ -47,7 +49,7 @@ In der folgenden Tabelle enthält jede Syntaxbeschreibung ein Beispiel für eine
    <td colname="col2"> <p>Fügt die Elemente der Dimension Dim hinzu, die durch Filter zugelassen werden. </p> <p>Beispiel: Sitzungen[ Seite="/home" by Visitor ] ist die Anzahl der Sitzungen eines Besuchers, der die Seite "/home"gesehen hat. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>ID </p> </td> 
+   <td colname="col1"> <p>Kennung </p> </td> 
    <td colname="col2"> <p>Referenzfilter, die im Profil anders definiert sind. </p> <p>Beispiel: Sitzungen[ Broken_Session_Filter ] ist die Anzahl der Sitzungen, die vom Filter "Beschädigte Sitzung"zugelassen wurden. </p> </td> 
   </tr> 
   <tr> 

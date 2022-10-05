@@ -3,7 +3,7 @@ description: Mit einem binären Filter in der Korrelationsmatrix können Sie Wer
 title: Binärfilter in der Korrelationsmatrix
 uuid: 61c3ca37-cfa2-49dc-87de-4e9a44647eca
 exl-id: e693fc72-5697-4c47-a498-e0d4d875c688
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 5%
@@ -12,24 +12,26 @@ ht-degree: 5%
 
 # Binärfilter in der Korrelationsmatrix{#binary-filter-in-the-correlation-matrix}
 
+{{eol}}
+
 Mit einem binären Filter in der Korrelationsmatrix können Sie Werte für eine oder beide korrelierte Metriken einschränken, um den Vergleich besser zu fokussieren.
 
 So legen Sie einen Binärfilter für eine Korrelationsmatrix fest:
 
 1. Klicken Sie in der Korrelationsmatrix mit der rechten Maustaste auf einen Metriknamen.
-1. Wählen Sie **Metrikdetails bearbeiten** aus.
+1. Auswählen **Metrikdetails bearbeiten**.
 
    ![](assets/correlation_matrix_binary_filter.png)
 
-   Das Fenster **[!UICONTROL Edit Correlation Metric Details]** wird geöffnet.
+   Die **[!UICONTROL Edit Correlation Metric Details]** wird geöffnet.
 
    ![](assets/correlation_matrix_metric_details.png)
 
 1. Richten Sie einen Binärfilter ein.
 
-   Klicken Sie zunächst auf die Einstellung **[!UICONTROL Inactive]** . Es wird umgeschaltet, den Filter auf **[!UICONTROL Active]** festzulegen und die Felder **Vergleich** und **Wert** anzuzeigen.
+   Klicken Sie zunächst auf die **[!UICONTROL Inactive]** -Einstellung. Dadurch wird der Filter umgeschaltet als **[!UICONTROL Active]** und zeigen Sie die **Vergleich** und **Wert** -Felder.
 
-   Wählen Sie dann einen **[!UICONTROL Comparison]** -Operator und legen Sie dessen **[!UICONTROL Value]** fest, um einen Filter für die ausgewählte Metrik einzurichten.
+   Wählen Sie anschließend eine **[!UICONTROL Comparison]** -Operator und legen Sie **[!UICONTROL Value]** , um einen Filter für die ausgewählte Metrik einzurichten.
 
 >[!IMPORTANT]
 >
@@ -41,4 +43,4 @@ Sie können auch ein Dimensionselement hinzufügen, um eine Metrik einzuschränk
 
 ![](assets/correlation_matrix_element.png)
 
-Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und wählen Sie **Tabelle** aus. Öffnen Sie eine Dimension mit ihren Elementen und ziehen Sie im Fenster Korrelationsmetrikdetails bearbeiten zur Einstellung **[!UICONTROL Element]** oder legen Sie eine Metrik in der Korrelationsmatrix ab.
+Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und wählen Sie **Verzeichnis**. Öffnen Sie eine Dimension mit ihren Elementen und ziehen Sie sie auf die **[!UICONTROL Element]** im Fenster Korrelationsmetrikdetails bearbeiten oder eine Metrik in der Korrelationsmatrix ablegen.

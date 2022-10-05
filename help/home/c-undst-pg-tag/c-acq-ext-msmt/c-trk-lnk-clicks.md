@@ -3,7 +3,7 @@ description: Schritte, die die Erfassung von Link-Klicks mithilfe des Referenzse
 title: Tracking von Link-Klicks
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
 exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 3%
@@ -12,13 +12,15 @@ ht-degree: 3%
 
 # Tracking von Link-Klicks{#tracking-link-clicks}
 
+{{eol}}
+
 Schritte, die die Erfassung von Link-Klicks mithilfe des Referenzseiten-Tags erleichtern.
 
-Durch die Implementierung von [!DNL Reference Page Tag] können Messdaten erfasst werden, die die Links (oder href-Werte) angeben, auf die Besucher beim Besuch bestimmter Seiten klicken. Normalerweise umfasst diese Sammlung nicht die Implementierung zusätzlicher Link-IDs in Ihre HTML-Seiten.
+Durch die Bereitstellung der [!DNL Reference Page Tag]können Messdaten gesammelt werden, die die Links (oder href-Werte) angeben, auf die Besucher beim Besuch bestimmter Seiten klicken. Normalerweise umfasst diese Sammlung nicht die Implementierung zusätzlicher Link-IDs in Ihre HTML-Seiten.
 
-Um die Erfassung von Link-Klicks mithilfe von [!DNL Reference Page Tag] zu erleichtern, führen Sie die folgenden Schritte aus:
+So erleichtern Sie die Erfassung von Link-Klicks durch Verwendung der [!DNL Reference Page Tag]führen Sie die folgenden Schritte aus:
 
-1. Kopieren Sie den folgenden Code in die vorhandene Datei [!DNL zig.js]:
+1. Kopieren Sie den folgenden Code in die vorhandene Datei mit dem Namen [!DNL zig.js]:
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG
@@ -77,12 +79,12 @@ Um die Erfassung von Link-Klicks mithilfe von [!DNL Reference Page Tag] zu erlei
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. Erstellen oder platzieren Sie die Bilddatei mit dem Namen [!DNL zag2.gif] 1 Pixel pro Pixel in einem Verzeichnis auf Ihrem Webserver.
-1. Ändern Sie die Variable [!DNL lc.src], um auf die entsprechende Domäne Ihrer Website zu verweisen, von der aus auf die Datei [!DNL zag2.gif]verwiesen wird.
+1. Erstellen oder platzieren Sie die Bilddatei mit dem Namen 1 Pixel pro 1 Pixel [!DNL zag2.gif] in ein Verzeichnis auf Ihrem Webserver.
+1. Ändern Sie die [!DNL lc.src] zur Referenzierung der entsprechenden Domäne Ihrer Website, von der aus die Variable [!DNL zag2.gif]-Datei referenziert wird.
 
-1. Stellen Sie sicher, dass geeignete Cache-Control-Header für die Dateien [!DNL zag.gif] und [!DNL zig.js] eingerichtet sind.
+1. Stellen Sie sicher, dass geeignete Cache-Control-Header für die [!DNL zag.gif] und [!DNL zig.js] Dateien.
 
-1. Innerhalb der HTML-Dateien, aus denen Sie Link-Klickwerte erfassen möchten, muss das [!DNL Reference Page Tag Execution Call] so geändert werden, dass es die [!DNL Page Tag Execution Script] informiert, dass Klicks auf Links für diese Seite erfasst werden. Ändern Sie dazu den Wert der vlc-Variablen in &quot;1&quot;, wie im folgenden Codebeispiel hervorgehoben:
+1. In den HTML-Dateien, aus denen Sie Link-Klickwerte erfassen möchten, muss die [!DNL Reference Page Tag Execution Call] muss geändert werden, um die [!DNL Page Tag Execution Script] , um Link-Klicks für diese Seite zu erfassen. Ändern Sie dazu den Wert der vlc-Variablen in &quot;1&quot;, wie im folgenden Codebeispiel hervorgehoben:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG-->

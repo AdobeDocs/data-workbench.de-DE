@@ -1,32 +1,36 @@
 ---
-description: Konfigurieren Sie die Zeitdimensionen so, dass sie für das Gebietsschema korrekt angezeigt werden.
+description: Konfigurieren Sie die Zeitdimensionen für die korrekte Anzeige des Gebietsschemas.
 title: Lokalisieren von Zeitdimensionen
 uuid: a2098522-bf05-4680-9b78-6fb284695a0a
-translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+exl-id: 950fe70b-a687-4b9c-b29f-555139740809
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 2%
 
 ---
 
-
 # Lokalisieren von Zeitdimensionen{#localizing-time-dimensions}
 
-Konfigurieren Sie die Zeitdimensionen so, dass sie für das Gebietsschema korrekt angezeigt werden.
+{{eol}}
 
-Sie können das angezeigte Format der Zeitdimensionen basierend auf dem Gebietsschema in der **[!DNL Standard Time Dimensions.cfg]** Datei konfigurieren (standardmäßig unter **[!DNL Server/Profiles/`<my profile>`/DataSet/Transformation/Time/Standard Time Dimensions.cfg]**).
+Konfigurieren Sie die Zeitdimensionen für die korrekte Anzeige des Gebietsschemas.
 
-In Nordamerika können Sie beispielsweise das Datum 3. Mai 2015 als 5/3/15 oder **`%m/%d/%y`**. In anderen Teilen der Welt könnte dies jedoch aufgrund einer Mehrdeutigkeit der Werte als `%d/%m/%y`- oder 5. März 2015 interpretiert werden. Um diese Situation zu vermeiden, sollte ein Administrator das angezeigte Format möglicherweise an die Erwartungen der Benutzer in einem Gebietsschema anpassen.
+Sie können das angezeigte Format der Zeitdimensionen basierend auf dem Gebietsschema in der **[!DNL Standard Time Dimensions.cfg]** Datei (standardmäßig unter **[!DNL Server/Profiles/`<my profile>`/dataset/transformation/time/standard time Dimension.cfg]**).
 
-## 1. Standardzeitdimensionen in Standardzeitdimensionen außer Kraft setzen.cfg {#section-7d0b24657bef4b15abb3cbea66cb617f}
+In Nordamerika können Sie beispielsweise das Datum vom 3. Mai 2015 als 03.05.15 angeben oder **`%m/%d/%y`**. In anderen Teilen der Welt könnte dies jedoch als `%d/%m/%y`, oder 5. März 2015 aufgrund einer Mehrdeutigkeit in den Werten. Um dies zu vermeiden, sollte ein Administrator das angezeigte Format ändern, um die Erwartungen der Benutzer in einem Gebietsschema zu erfüllen.
 
-Um diese Funktion zu aktivieren, muss der Administrator die Standardwerte außer Kraft setzen, indem er entweder die vorhandenen Zeitdimensionen bearbeitet oder neue Zeitdimensionen mit zusätzlichen Parametern erstellt.
+## 1. Außerkraftsetzen von Dimensionen der Standardzeit in Dimensionen der Standardzeit.cfg {#section-7d0b24657bef4b15abb3cbea66cb617f}
 
-Es folgt ein Beispiel für eine geänderte Zeitdimension.
+Um diese Funktion zu aktivieren, muss der Administrator die Standardeinstellungen außer Kraft setzen, indem er entweder die vorhandenen Zeitdimensionen bearbeitet oder neue Zeitdimensionen mit zusätzlichen Parametern erstellt.
 
-Die **Formatwerte** für Woche, Stunde, Tag, Monat und Stunde des Tages werden auf die Standardwerte im Beispiel festgelegt.
+Es folgt ein Beispiel einer modifizierten Zeitdimension.
+
+Die **Format** -Werte für Woche, Stunde, Tag, Monat und Stunde des Tages auf die Standardwerte im Beispiel gesetzt.
 
 >[!NOTE]
 >
->Wenn diese Zeilen weggelassen werden, ändert sich das Verhalten von Data Workbench nicht und die Dimension wird mit den Standardeinstellungen kompiliert.
+>Wenn diese Zeilen weggelassen werden, ändert sich das Verhalten der Data Workbench nicht und die Dimension wird mithilfe der Standardwerte kompiliert.
 
 ```
 Transformation Include = TransformationInclude:  
@@ -60,11 +64,11 @@ Transformation Include = TransformationInclude:
 
 ![](assets/6_4_time_format.png)
 
-## 2. Konfigurieren der Datei &quot;meta.cfg&quot; {#section-5e077d3298dd48fda7f7bb16af9ea00c}
+## 2. Konfigurieren Sie die Datei &quot;meta.cfg&quot;. {#section-5e077d3298dd48fda7f7bb16af9ea00c}
 
-Darüber hinaus muss der Paketadministrator diese Parameter und ihre Standardwerte der **[!DNL meta.cfg]** Profildatei hinzufügen. Dies ermöglicht die Bearbeitung von der Workstation aus.
+Darüber hinaus muss der Paketadministrator diese Parameter und ihre Standardeinstellungen dem Profil hinzufügen **[!DNL meta.cfg]** -Datei. Dies ermöglicht die Bearbeitung von der Workstation aus.
 
-Hier ist ein Auszug aus einer konfigurierten **[!DNL meta.cfg]** Datei.
+Hier ist ein Auszug aus einer konfigurierten **[!DNL meta.cfg]** -Datei.
 
 ```
 dimensions = vector: 6 items 
@@ -95,8 +99,8 @@ dimensions = vector: 6 items
         Month = string: Month
 ```
 
-Hier ein Beispiel für eine **[!DNL meta.cfg]** Datei auf der Workstation:
+Im Folgenden finden Sie ein Beispiel für eine **[!DNL meta.cfg]** -Datei auf der Workstation:
 
 ![](assets/dwb_time_format.png)
 
-Der Administrator kann dann in den **Dateimanager** wechseln, die Datei(en) öffnen, in der/denen die Zeitdimensionen konfiguriert sind (z. B. **[!DNL Standard Time Dimensions.cfg]**), und sie auf der Workstation bearbeiten.
+Der Administrator kann dann zum **Datei-Manager**, öffnen Sie die Dateien, in denen die Zeitdimensionen konfiguriert sind (z. B. **[!DNL Standard Time Dimensions.cfg]**) und bearbeiten Sie sie über in der Workstation.

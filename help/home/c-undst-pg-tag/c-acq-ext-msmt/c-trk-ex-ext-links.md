@@ -3,7 +3,7 @@ description: Erfassen von Aktivitäten über Website-Links von Drittanbietern, u
 title: Tracking von Ausstiegen zu externen Links
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
 exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 ---
 
 # Tracking von Ausstiegen zu externen Links{#tracking-exits-to-external-links}
+
+{{eol}}
 
 Erfassen von Aktivitäten über Website-Links von Drittanbietern, um die Target-Analyse für Ausstieg zu ermöglichen.
 
@@ -20,7 +22,7 @@ Webseiten können Links zu Websites von Drittanbietern enthalten und Aktivitäte
 <A HREF=”https://www.myserver.com/PageExit.htm?v_eurl=https://www.othersite.com”>
 ```
 
-Die referenzierte Datei [!DNL PageExit.htm] muss erstellt und so strukturiert sein, dass sie folgendes Skript enthält:
+Die referenzierte [!DNL PageExit.htm] -Datei muss erstellt werden und sollte so strukturiert sein, dass sie das folgende Skript enthält:
 
 ```
 <html>
@@ -51,7 +53,7 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-Durch die Anforderung für die Datei [!DNL PageExit.htm] wird der Wert v_eurl zu Analysezwecken erfasst. Wenn [!DNL PageExit.htm] geladen wird, wird sofort der angegebene v_eurl-Zielort umgeleitet.
+Indem Sie die Anfrage für die [!DNL PageExit.htm] -Datei, wird der Wert v_eurl zu Analysezwecken erfasst. Wenn [!DNL PageExit.htm] geladen wird, wird sofort zum angegebenen Zielspeicherort v_eurl umgeleitet.
 
 | Erfasste Daten | Erklärung | Beispiel |
 |---|---|---|

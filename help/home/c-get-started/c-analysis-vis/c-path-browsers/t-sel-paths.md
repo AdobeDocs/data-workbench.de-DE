@@ -3,7 +3,7 @@ description: Sie können einen Pfad in einem Pfad-Browser auswählen, um Filter 
 title: Auswählen von Pfaden
 uuid: 3131df2f-674f-44b8-9006-d8cb1ecf3874
 exl-id: c560dfd0-ccaf-4a60-88a1-29a33f8aa014
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Auswählen von Pfaden{#select-a-path}
+
+{{eol}}
 
 Sie können einen Pfad in einem Pfad-Browser auswählen, um Filter zu erstellen, die Daten enthalten, die mit den Elementen im Pfad verknüpft sind.
 

@@ -3,7 +3,7 @@ description: Zeigt an, wie Sie Titel, Profil, Dimension, Metrik, Filter, Anzeige
 title: Konfigurieren von Visualisierungen
 uuid: aca77188-8f28-4554-8913-412b252f688c
 exl-id: 153adf94-5689-4917-9d71-625caef49903
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Konfigurieren von Visualisierungen{#configuring-visualizations}
+
+{{eol}}
 
 Zeigt an, wie Sie Titel, Profil, Dimension, Metrik, Filter, Anzeige oben, Sortieren nach und Zeitraum konfigurieren.
 
@@ -22,7 +24,7 @@ Jede Visualisierung auf der Dashboard-Arbeitsfläche verfügt über eine eigene 
 
 ## Visualisierungstitel {#section-0414844283d745ae912e85f8ea14a51d}
 
-In diesem Feld können Sie den Titel anpassen, der oben in der Visualisierung angezeigt wird. Standardmäßig ist der Titel auf **[!UICONTROL Automatic Title]** gesetzt, wodurch automatisch ein Titel für das Visualisierungsfenster generiert wird. Durch Deaktivieren der Schaltfläche **[!UICONTROL Automatic Title]** können Sie einen beliebigen Titel in dieses Feld einfügen. (Dieses Feld gilt für alle Visualisierungen.)
+In diesem Feld können Sie den Titel anpassen, der oben in der Visualisierung angezeigt wird. Standardmäßig ist der Titel auf **[!UICONTROL Automatic Title]**, wodurch automatisch ein Titel für das Visualisierungsfenster generiert wird. Durch das Clearing der **[!UICONTROL Automatic Title]** -Schaltfläche, können Sie einen beliebigen Titel in dieses Feld einfügen. (Dieses Feld gilt für alle Visualisierungen.)
 
 ![](assets/title.png)
 
@@ -30,7 +32,7 @@ In diesem Feld können Sie den Titel anpassen, der oben in der Visualisierung an
 
 In diesem Feld können Sie auswählen, aus welchem Profil Sie Daten visualisieren möchten. Wenn Sie auf das Dropdown-Menü klicken, erhalten Sie eine Liste der Profile, auf die Sie Zugriff haben. (Dieses Feld gilt nicht für Rich-Text-Visualisierungen.)
 
-Profile sind in Data Workbench definierte Datensätze, die Daten über eine bestimmte Domäne sowie Dimensionen, Metriken und Filter enthalten, die die Daten begleiten. Ein Profil wird oft für einen bestimmten Zweck entwickelt (z. B. für Marketing- oder Website-Traffic).
+Profile sind in Data Workbench definierte Datensätze, die Daten über eine bestimmte Domäne sowie Dimensionen, Metriken und Filter enthalten, die die Daten begleiten. Ein Profil wird oft für einen bestimmten Zweck entwickelt (z. B. Marketing oder Website-Traffic).
 
 >[!NOTE]
 >
@@ -72,7 +74,7 @@ Wählen Sie die Filter aus, die Sie auf Ihre Visualisierung anwenden möchten. I
 
 ![](assets/filter.png)
 
-## Display Tops {#section-7ce71cb0fa6446998b710b427e68b133}
+## Anzeigetische {#section-7ce71cb0fa6446998b710b427e68b133}
 
 Visualisierungen im Dashboard dienen nicht zur Anzeige der Gesamtheit der Daten. Vielmehr können Sie damit die Anzahl der Dimensionselemente festlegen, die in der Visualisierung angezeigt werden sollen. Dadurch wird die höchste Anzahl von Dimensionen abhängig vom unten angegebenen Sortierwert angezeigt. (Dieses Feld gilt nicht für Tabellen, Metriklegenden und Rich-Text-Visualisierungen.)
 
@@ -94,9 +96,9 @@ Auf diese Weise können Sie festlegen, wie die Daten sortiert werden sollen, wen
 
 Mit dieser Visualisierung können Sie das gewünschte Start- und/oder Enddatum der Daten festlegen, die in der Visualisierung angezeigt werden sollen.
 
-Durch Auswahl von **[!UICONTROL All Dates]**wird der gesamte im Profil verfügbare Datumsbereich angezeigt.
+Auswählen **[!UICONTROL All Dates]**zeigt den gesamten Datumsbereich an, der im Profil verfügbar ist.
 
-Wenn Sie **[!UICONTROL Range]** auswählen, werden nur die Daten angezeigt, die innerhalb eines bestimmten Bereichs liegen. Zur Eingabe des Datumsbereichs können Sie das Start- und/oder Enddatum eingeben oder eine Kalendereingabe verwenden, indem Sie das Kalendersymbol auswählen.
+Auswählen **[!UICONTROL Range]** zeigt nur die Daten an, die innerhalb eines bestimmten Bereichs liegen. Zur Eingabe des Datumsbereichs können Sie das Start- und/oder Enddatum eingeben oder eine Kalendereingabe verwenden, indem Sie das Kalendersymbol auswählen.
 
 (Dieses Feld gilt nicht für Rich-Text-Visualisierungen.)
 

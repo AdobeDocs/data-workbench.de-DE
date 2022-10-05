@@ -3,7 +3,7 @@ description: Data Workbench unterstützt sowohl Längen- und Breitenprojektionen
 title: Festlegen von Projektionsinformationen für Topografiebilder
 uuid: cc1e1e35-6b23-4121-a9f5-489001cb2ef8
 exl-id: 2638c5d4-164d-411b-8464-0a3af81b6537
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 3%
@@ -12,21 +12,23 @@ ht-degree: 3%
 
 # Festlegen von Projektionsinformationen für Topografiebilder{#specify-projection-information-for-terrain-images}
 
+{{eol}}
+
 Data Workbench unterstützt sowohl Längen- und Breitenprojektionen als auch UTM-Projektionen (Universal Transverse Mercator) für alle Topografiebildequellen.
 
-Projektionsinformationen sind für nicht projizierte Raw-Bitmaps und allgemeine, nicht projizierte Bilder erforderlich. Sie können Projektionsinformationen für Bilder mit eingebetteten Projektionsinformationen angeben, dies ist jedoch normalerweise nicht erforderlich, da die Projektionsparameter automatisch aus den im Bild selbst eingebetteten geodätischen Daten bestimmt werden. In den folgenden Abschnitten finden Sie Details zum Festlegen dieser Projektionsformate in der Datei [!DNL Terrain Images.cfg] .
+Projektionsinformationen sind für nicht projizierte Raw-Bitmaps und allgemeine, nicht projizierte Bilder erforderlich. Sie können Projektionsinformationen für Bilder mit eingebetteten Projektionsinformationen angeben, dies ist jedoch normalerweise nicht erforderlich, da die Projektionsparameter automatisch aus den im Bild selbst eingebetteten geodätischen Daten bestimmt werden. Die folgenden Abschnitte enthalten Details zum Festlegen dieser Projektionsformate in der [!DNL Terrain Images.cfg] -Datei.
 
 ## Breitengrad-Längengrad-Projektionen {#section-6e335357ec28462ba39c565e0a5986c7}
 
-Das Projektionsformat &quot;latitude-longitude&quot;(LatLonProjection) in der Datei [!DNL Terrain Images.cfg] wird durch vier Parameter für Längen- und Breitengrad definiert.
+Das Projektionsformat des Breitengrads (LatLonProjection) im [!DNL Terrain Images.cfg] -Datei wird durch vier Parameter für Längen- und Breitengrad definiert.
 
-Um eine LatLonProjection für nicht projizierte Bilder (unprojizierte Raw- und allgemeine Bitmaps, nicht projiziert) anzugeben, können Sie die Einstellungen für LatLonProjection im Fenster [!DNL Terrain Images.cfg] der Data Workbench eingeben.
+Um eine LatLonProjection für nicht projizierte Bilder (nicht projizierte Raw-Bitmaps und allgemeine Bilder, nicht projiziert) anzugeben, können Sie Einstellungen für LatLonProjection innerhalb der [!DNL Terrain Images.cfg] in der Data Workbench.
 
-Um eine LatLonProjection für Bilder mit eingebetteten Projektionsinformationen anzugeben, müssen Sie die Datei [!DNL Terrain Images.cfg] in einem Texteditor wie Notepad öffnen, den Parameter Projektionsinformationen auf LatLonProjection setzen und Einstellungen für [!DNL LatLonProjection] hinzufügen.
+Um eine LatLonProjection für Bilder mit eingebetteten Projektionsinformationen anzugeben, müssen Sie die [!DNL Terrain Images.cfg] in einem Texteditor wie Notepad, setzen Sie den Parameter Projection Info auf LatLonProjection und fügen Sie Einstellungen für die [!DNL LatLonProjection].
 
 **So legen Sie eine LatLonProjection für nicht projizierte Bilder fest**
 
-1. Öffnen Sie die Datei [!DNL Terrain Images.cfg] in Data Workbench und fügen Sie eine Topografiebildequelle hinzu, wie unter [So definieren Sie eine Topografiebildeschicht](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f) beschrieben.
+1. Öffnen Sie die [!DNL Terrain Images.cfg] Datei in Data Workbench hinzufügen und eine Topografiebildeschicht-Quelle hinzufügen, wie hier beschrieben: [So definieren Sie eine Topografiebildebene](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f).
 1. Bearbeiten Sie die Parameter Projektionsinformationen mithilfe der folgenden Parametertabelle als Anleitung:
 
 <table id="table_32F6EADB2DA34592ABD6FFAC9E00BB27"> 
@@ -56,16 +58,16 @@ Um eine LatLonProjection für Bilder mit eingebetteten Projektionsinformationen 
  </tbody> 
 </table>
 
-1. Speichern Sie die Datei, indem Sie mit der rechten Maustaste auf **[!UICONTROL (modified)]** oben im Fenster klicken und **[!UICONTROL Save]** klicken.
-1. Um die lokal vorgenommenen Änderungen am Data Workbench-Servercomputer zu speichern, klicken Sie in der Spalte [!DNL Server Files Manager] mit der rechten Maustaste auf das Häkchen für [!DNL Terrain Images.cfg] in der Spalte [!DNL Temp] und klicken Sie dann auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]***.
+1. Speichern Sie die Datei durch Rechtsklick **[!UICONTROL (modified)]** oben im Fenster und klicken Sie auf **[!UICONTROL Save]**.
+1. Um die lokal vorgenommenen Änderungen am Data Workbench-Servercomputer zu speichern, verwenden Sie die [!DNL Server Files Manager]klicken Sie mit der rechten Maustaste auf das Häkchen für [!DNL Terrain Images.cfg] im [!DNL Temp] und klicken Sie auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
 
 **So legen Sie eine LatLonProjection für Bilder in eingebetteten Projektionsinformationen fest**
 
-Klicken Sie in [!DNL Server Files Manager] auf **[!UICONTROL Components]** , um den Inhalt anzuzeigen. Die Datei [!DNL Terrain Images.cfg] befindet sich in diesem Verzeichnis.
+Im [!DNL Server Files Manager]klicken **[!UICONTROL Components]** , um den Inhalt anzuzeigen. Die [!DNL Terrain Images.cfg] -Datei befindet sich in diesem Verzeichnis.
 
-Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte mit dem Servernamen für [!DNL Terrain Images.cfg] und klicken Sie dann auf **[!UICONTROL Make Local]**. In der Spalte [!DNL Temp] für [!DNL Terrain Images.cfg] wird ein Häkchen angezeigt.
+Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte &quot;Servername&quot;für [!DNL Terrain Images.cfg]Klicken Sie auf **[!UICONTROL Make Local]**. Ein Häkchen wird im [!DNL Temp] Spalte für [!DNL Terrain Images.cfg].
 
-Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen in der Spalte [!DNL Temp] und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Die Datei [!DNL Terrain Images.cfg] wird in einem Editor-Fenster angezeigt.
+Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen im [!DNL Temp] Spalte und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Die [!DNL Terrain Images.cfg] -Datei in einem Editor-Fenster angezeigt.
 
 Bearbeiten Sie die Parameter Projektionsinformationen mithilfe des folgenden Beispieldateifragments als Anleitung. Stellen Sie sicher, dass Sie den Projektionstyp wie unten hervorgehoben angeben. Beschreibungen der Parameter finden Sie in der Tabelle LatLonProjection Parameters im vorherigen Verfahren.
 
@@ -81,13 +83,13 @@ Projection Info = LatLonProjection:
 
 Die UTM-Projektion (Universal Transverse Mercator) wird durch acht Parameter definiert. Wenn Sie eine universelle Transversal-Mercatorprojektion für eine Topografiebildebene festlegen, müssen Ihre Topografiebildedateien mit false (projiziert) nördlich an die Bildspitze und false Eastern an die rechte Bildseite ausgerichtet werden.
 
-Um eine UTM-Projektion für eine beliebige Topografiebildquelle anzugeben, müssen Sie die Datei [!DNL Terrain Images.cfg] in einem Texteditor wie Notepad öffnen, den Parameter Projektionsinformationen auf &quot;TransverseMercatorProjection&quot;setzen und Einstellungen für die UTM-Projektion hinzufügen.
+Um eine UTM-Projektion für eine beliebige Topografiebildquelle anzugeben, müssen Sie die [!DNL Terrain Images.cfg] in einem Texteditor wie Notepad, setzen Sie den Parameter Projektionsinformationen auf &quot;TransverseMercatorProjection&quot;und fügen Sie Einstellungen für die UTM-Projektion hinzu.
 
 **So legen Sie eine universelle Transversal-Mercatorprojektion fest**
 
-1. Klicken Sie in [!DNL Server Files Manager] auf **[!UICONTROL Components]** , um den Inhalt anzuzeigen. Die Datei [!DNL Terrain Images.cfg] befindet sich in diesem Verzeichnis.
-1. Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte mit dem Servernamen für [!DNL Terrain Images.cfg] und klicken Sie dann auf **[!UICONTROL Make Local]**. Ein Häkchen wird in der Spalte [!DNL Temp] für [!DNL Terrain Images.cfg.] angezeigt.
-1. Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen in der Spalte [!DNL Temp] und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Die Datei [!DNL Terrain Images.cfg] wird in einem Editor-Fenster angezeigt.
+1. Im [!DNL Server Files Manager]klicken **[!UICONTROL Components]** , um den Inhalt anzuzeigen. Die [!DNL Terrain Images.cfg] -Datei befindet sich in diesem Verzeichnis.
+1. Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte &quot;Servername&quot;für [!DNL Terrain Images.cfg]Klicken Sie auf **[!UICONTROL Make Local]**. Ein Häkchen wird im [!DNL Temp] Spalte für [!DNL Terrain Images.cfg.]
+1. Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen im [!DNL Temp] Spalte und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Die [!DNL Terrain Images.cfg] -Datei in einem Editor-Fenster angezeigt.
 1. Bearbeiten Sie die Parameter Projektionsinformationen mithilfe des folgenden Beispieldateifragments und der Parametertabelle als Handbücher. Stellen Sie sicher, dass Sie den Projektionstyp wie unten hervorgehoben angeben.
 
    ```

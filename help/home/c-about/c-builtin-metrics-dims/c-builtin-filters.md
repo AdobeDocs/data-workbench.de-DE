@@ -3,7 +3,7 @@ description: Profilfilter beschränken den Umfang der Daten, die aus einem Daten
 title: Integrierte Profilfilter
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Integrierte Profilfilter{#built-in-profile-filters}
+
+{{eol}}
 
 Profilfilter beschränken den Umfang der Daten, die aus einem Datensatz verfügbar sind.
 
@@ -51,4 +53,4 @@ entity = derived_filter:
 
 In Arbeitsbereichen wird standardmäßig der Filter &quot;Beschädigte Sitzung&quot;sowohl auf ihre Auswahl als auch auf ihre Benchmarks angewendet. Er kann ein-/ausgeblendet werden, indem Sie mit der rechten Maustaste in den Arbeitsbereich klicken und auf &quot;Daten&quot;> &quot;Beschädigte Sitzungsfilter&quot;klicken.
 
-Der Filter &quot;Beschädigte Sitzung&quot;kann in Filterausdrücken als &quot;Broken_Session_Filter&quot;referenziert werden, auch wenn er für den aktuellen Arbeitsbereich nicht aktiviert ist. Weitere Informationen finden Sie unter [Filterausdrücke](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) .
+Der Filter &quot;Beschädigte Sitzung&quot;kann in Filterausdrücken als &quot;Broken_Session_Filter&quot;referenziert werden, auch wenn er für den aktuellen Arbeitsbereich nicht aktiviert ist. Siehe [Filterausdrücke](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) für weitere Informationen.

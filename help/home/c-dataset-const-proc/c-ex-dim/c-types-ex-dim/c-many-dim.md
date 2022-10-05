@@ -3,7 +3,7 @@ description: Eine Viele-zu-viele-Dimension hat eine Viele-zu-viele-Beziehung mit
 title: Viele-zu-viele-Dimensionen
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
 exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Viele-zu-viele-Dimensionen{#many-to-many-dimensions}
+
+{{eol}}
 
 Eine Viele-zu-viele-Dimension hat eine Viele-zu-viele-Beziehung mit ihrer übergeordneten zählbaren Dimension.
 
@@ -43,13 +45,13 @@ Viele-zu-viele-Dimensionen werden durch die folgenden Parameter definiert:
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Verborgen </td> 
+   <td colname="col1"> Ausgeblendet </td> 
    <td colname="col2"> Bestimmt, ob die Dimension in der Data Workbench-Benutzeroberfläche angezeigt wird. Standardmäßig ist dieser Parameter auf false gesetzt. Wenn die Dimension beispielsweise nur als Grundlage einer Metrik verwendet werden soll, können Sie diesen Parameter auf "true"setzen, um die Dimension aus der Data Workbench-Anzeige auszublenden. </td> 
    <td colname="col3"> false (falsch) </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Eingabe </td> 
-   <td colname="col2"> <p>Der Wert, der mit der übergeordneten Dimension (Übergeordnetes Element) verknüpft ist. Wenn dieses Feld ein Vektor von Zeichenfolgen ist, hat jedes Element des Vektors eine eigene Beziehung zum übergeordneten Element. </p> <p> <p>Hinweis:  Wenn der Eingabewert für jeden Protokolleintrag für ein Element der übergeordneten Dimension leer ist, bezieht sich kein Element der Viele-zu-viele-Dimension auf dieses Element der übergeordneten Dimension. </p> </p> </td> 
+   <td colname="col2"> <p>Der Wert, der mit der übergeordneten Dimension (Übergeordnetes Element) verknüpft ist. Wenn dieses Feld ein Vektor von Zeichenfolgen ist, hat jedes Element des Vektors eine eigene Beziehung zum übergeordneten Element. </p> <p> <p>Hinweis: Wenn der Eingabewert für jeden Protokolleintrag für ein Element der übergeordneten Dimension leer ist, bezieht sich kein Element der Viele-zu-viele-Dimension auf dieses Element der übergeordneten Dimension. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

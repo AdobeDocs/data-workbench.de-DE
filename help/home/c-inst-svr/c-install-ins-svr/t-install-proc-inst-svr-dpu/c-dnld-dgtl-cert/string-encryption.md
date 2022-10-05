@@ -1,35 +1,39 @@
 ---
-description: Verschlüsseln Sie Kennwörter und andere Zeichenfolgen bei der Kommunikation zwischen Client und Server.
+description: Verschlüsseln Sie bei der Kommunikation zwischen Client und Server Passwörter und andere Strings.
 title: Zeichenfolgenverschlüsselung
 uuid: b2ec6a10-136c-4694-a425-04dbb41d43d1
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 43696ff1-3153-4d85-b9a9-c2752dd2c29a
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
-
 # Zeichenfolgenverschlüsselung{#string-encryption}
 
-Verschlüsseln Sie Kennwörter und andere Zeichenfolgen bei der Kommunikation zwischen Client und Server.
+{{eol}}
 
-Bei der Kommunikation zwischen dem Data Workbench-Client (Workstation) und dem Server können Sie einen Value-Parameter (z. B. ein Kennwort) mit dem Typ *EncryptedString* speichern. Dadurch wird der Parameter ausgeblendet und die Zeichenfolge wird im *Windows Credential Store* auf dem Server mit dem entsprechenden Schlüssel zurückgegeben. Hierbei werden in erster Linie in Exporten verwendete Anmeldeinformationen gespeichert, können aber zum Verschlüsseln von Parametern verwendet werden.
+Verschlüsseln Sie bei der Kommunikation zwischen Client und Server Passwörter und andere Strings.
 
-* Unter Server\**EncryptStrings** wurde ein neuer Ordner hinzugefügt.
+Bei der Kommunikation zwischen dem Data Workbench-Client (Workstation) und dem Server können Sie einen Value-Parameter (z. B. ein Kennwort) mit dem Typ *EncryptedString*. Dadurch wird der Parameter ausgeblendet und der String im *Windows Credential Store* auf dem Server mit dem entsprechenden Schlüssel zurückgegeben. Dadurch werden hauptsächlich in Exporten verwendete Anmeldeinformationen gespeichert, können jedoch zum Verschlüsseln beliebiger Parameter verwendet werden.
 
-   Hier legen Sie die Konfigurationsdatei auf Verschlüsseln von Zeichenfolgen fest.
+* Unter Server\* wurde ein neuer Ordner hinzugefügt.*EncryptStrings**.
 
-* Eine neue Konfigurationsdatei wurde unter Server\Component\**EncryptedStrings.cfg** hinzugefügt.
+   Hier legen Sie die Konfigurationsdatei fest, um Zeichenfolgen zu verschlüsseln.
+
+* Eine neue Konfigurationsdatei wurde unter Server\Component\* hinzugefügt.*EncryptedStrings.cfg**.
 
    ```
    component = EncryptionComponent:
      Path = Path: EncryptStrings\\*.cfg
    ```
 
-   Diese Datei fragt den Ordner *Server*\*EncryptStrings* nach Verschlüsselungskonfigurationsdateien ab.
+   Diese Datei fragt die *Server* Ordner \*EncryptStrings* für Verschlüsselungskonfigurationsdateien.
 
-**So verschlüsseln Sie eine Zeichenfolge**:
+**Verschlüsseln einer Zeichenfolge**:
 
-1. Erstellen Sie eine **EncryptedStrings.cfg** -Konfigurationsdatei für eine Zeichenfolge mit den folgenden Feldern:
+1. Erstellen Sie eine **EncryptedStrings.cfg** Konfigurationsdatei für eine Zeichenfolge mit den folgenden Feldern:
 
    ```
    Names = vector: 1 items
@@ -39,20 +43,21 @@ Bei der Kommunikation zwischen dem Data Workbench-Client (Workstation) und dem S
      Value = string: // Value to be encrypted
    ```
 
-   * *Wert* : Dieses Feld enthält die Nur-Text-Zeichenfolge, die verschlüsselt werden muss.
+   * *Wert* - Dieses Feld enthält die Nur-Text-Zeichenfolge, die verschlüsselt werden muss.
 
-      Dies ist nur serverseitige Verschlüsselung. Die *Einstellung &quot;Wert* &quot;wird nur auf dem Servercomputer verschlüsselt.
+      Dies ist nur serverseitige Verschlüsselung. Die *Wert* -Einstellung ist nur auf dem Servercomputer verschlüsselt.
 
    * *Name* - Dieses Feld enthält einen Wert, der die verschlüsselte Zeichenfolge identifiziert.
-   * *EncryptValue* - Dieses Feld wird in der Eingabekonfigurationsdatei leer gelassen. Der verschlüsselte Wert wird in diesem Feld zurückgegeben.
-   Sie können mehrere **NameEncryptValuePair** -Werte für verschiedene Felder zur Verschlüsselung hinzufügen.
+   * *EncryptValue* - Dieses Feld wird in der Eingabekonfiguration leer gelassen. Der verschlüsselte Wert wird in diesem Feld zurückgegeben.
+
+   Sie können mehrere **NameEncryptValuePair** Werte für verschiedene Felder zur Verschlüsselung.
 
    >[!NOTE]
    >
-   >Alle leeren Wertefelder werden entfernt.
+   >Alle leeren Wertfelder werden entfernt.
 
-1. Speichern Sie die Datei **EncryptedStrings.cfg** im Ordner Server\**EncryptStrings**.
+1. Speichern Sie die **EncryptedStrings.cfg** Datei auf den Server\**EncryptStrings** Ordner.
 
 **Ausgabedatei**
 
-Eine Ausgabedatei wird mit demselben Namen wie die Eingabedatei mit einem &lt;*Dateiname*> generiert.*verschlüsselte* Erweiterung. Wenn die Eingabedatei beispielsweise den Namen *sample.cfg* hat, erhält die Ausgabedatei den Namen *sample.cfg.encrypted*.
+Eine Ausgabedatei wird mit demselben Namen wie die Eingabedatei mit einem &lt;*filename*>.*verschlüsselt* -Erweiterung. Wenn die Eingabedatei beispielsweise *sample.cfg* dann erhält die Ausgabedatei den Namen *sample.cfg.encrypted*.

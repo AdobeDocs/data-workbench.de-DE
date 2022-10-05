@@ -3,7 +3,7 @@ description: Werte, die in ein Formular auf einer Webseite eingegeben werden, k�
 title: Allgemeine Informationen
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
 exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # Allgemeine Informationen{#general-information}
+
+{{eol}}
 
 Werte, die in ein Formular auf einer Webseite eingegeben werden, können mithilfe von JavaScript erfasst und in die Abfragezeichenfolge der anschließend angeforderten Seite (bei Formularübermittlung) angehängt werden.
 
@@ -53,7 +55,7 @@ In diesem Beispiel werden die vom Browser-Benutzer in das Formular eingegebenen 
 https://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
-Zusätzlich zu den von [!DNL Sensor] erfassten Grundlinienmessungen würden mit dieser Anfrage die folgenden erweiterten Messungen erfasst:
+Zusätzlich zu den von [!DNL Sensor]:
 
 | Erfasste Daten | Erklärung | Beispiel |
 |---|---|---|

@@ -3,14 +3,16 @@ description: Die REMatch-Transformation ist eine pattern-Matching-Transformation
 title: REMatch
 uuid: 8ef80bfa-aea2-45a1-a7d9-38ad33043886
 exl-id: 571e6f1c-f557-49c3-9e7c-c31f06132ec7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
 # REMatch{#rematch}
+
+{{eol}}
 
 Die REMatch-Transformation ist eine pattern-Matching-Transformation, bei der reguläre Ausdrücke verwendet werden, um ein oder mehrere Muster anzugeben, nach denen gesucht und in der Eingabe erfasst werden soll.
 
@@ -18,9 +20,9 @@ Die Transformation erstellt ein Ausgabefeld für jedes erfasste Untermuster im r
 
 >[!NOTE]
 >
->Die Umwandlung von [!DNL REMatch] funktioniert ähnlich wie die Umwandlung von [!DNL RETransform] (siehe [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)), bei der reguläre Ausdrücke verwendet werden, um eine Zeichenfolge zu erfassen und diese Zeichenfolge in einem einzigen Ausgabefeld zu speichern.
+>Die [!DNL REMatch] Die Umwandlung funktioniert ähnlich wie die [!DNL RETransform] Transformation (siehe [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)), das reguläre Ausdrücke verwendet, um eine Zeichenfolge zu erfassen und diese Zeichenfolge in einem einzigen Ausgabefeld zu speichern.
 
-[!DNL REMatch] Analysiert eine Zeichenfolge effizienter als mehrere  [!DNL RETransform] Transformationen oder eine einzelne  [!DNL RETransform] Transformation, gefolgt von einer  [!DNL Flatten] Transformation. Siehe [Reduzieren](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
+[!DNL REMatch] Analysiert eine Zeichenfolge effizienter als mehrere [!DNL RETransform] Umwandlungen oder einzelne [!DNL RETransform] Umwandlung, gefolgt von [!DNL Flatten] Umwandlung. Siehe [Flatten](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
 
 <table id="table_7077578512B249E986BC79AE770CBD9A"> 
  <thead> 
@@ -38,7 +40,7 @@ Die Transformation erstellt ein Ausgabefeld für jedes erfasste Untermuster im r
   </tr> 
   <tr> 
    <td colname="col1"> Groß-/Kleinschreibung </td> 
-   <td colname="col2"> Wahr oder falsch. Gibt an, ob bei der Übereinstimmung zwischen Groß- und Kleinschreibung unterschieden wird. </td> 
+   <td colname="col2"> True oder false. Gibt an, ob bei der Übereinstimmung zwischen Groß- und Kleinschreibung unterschieden wird. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -73,6 +75,6 @@ Die Transformation erstellt ein Ausgabefeld für jedes erfasste Untermuster im r
 >
 >[!DNL REMatch] Transformationen können sehr langsam sein und einen Großteil der Datenverarbeitungszeit ausmachen.
 
-In diesem Beispiel analysiert eine [!DNL REMatch] -Umwandlung ein Datum im Format JJJJ-MM-TT in die Felder x-Jahr, x-Monat und x-Tag. Für das Datum 2007-01-02 würden die Werte für x-Jahr, x-Monat und x-Tag 2007, 01 bzw. 02 betragen.
+In diesem Beispiel wird eine [!DNL REMatch] Durch die Umwandlung wird ein Datum im Format JJJJ-MM-TT in die Felder x Jahr, x Monat und x-Tag gegliedert. Für das Datum 2007-01-02 würden die Werte für x-Jahr, x-Monat und x-Tag 2007, 01 bzw. 02 betragen.
 
 ![](assets/cfg_TransformationType_REMatch.png)

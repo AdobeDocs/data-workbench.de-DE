@@ -3,7 +3,7 @@ description: Dimension-Ausdrücke werden nie allein verwendet, können jedoch ü
 title: Syntax für Ausdrücke zu Dimensionen
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 0%
@@ -12,19 +12,21 @@ ht-degree: 0%
 
 # Syntax für Ausdrücke zu Dimensionen{#syntax-for-dimension-expressions}
 
+{{eol}}
+
 Dimension-Ausdrücke werden nie allein verwendet, können jedoch überall dort verwendet werden, wo eine Dimension in einer Metrik oder einem Filterausdruck benötigt wird.
 
 1. Unterstrichene Wörter sollten wörtlich in den Ausdruckstext eingegeben werden.
 1. Das Formular `{TEXT}?` stellt optionalen Text dar.
-1. Das Formular `{TEXT}*` stellt Text dar, der null oder öfter vorkommen kann.
+1. Das Formular `{TEXT}*` stellt Text dar, der null oder mehrmals vorkommen kann.
 1. Das Formular `{A | B | C |...}` stellt Text dar, der aus genau einer der angegebenen Optionen besteht, z. B. A, B oder C...
 1. Das Formular `[A,B)` stellt einen Zahlenbereich dar, von A bis B, jedoch nicht B.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>ID </p> </td> 
-   <td colname="col2"> <p>Eine Kennung verweist auf eine benannte Dimension. Die Regeln für rechtliche Kennungen finden Sie unter <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntax für Kennungen </a>. </p> <p>Beispiel: Sitzungen[ Sitzungsnummer = "1" ] ist die Anzahl der Sitzungen mit der Sitzungsnummer "1". Sitzungsnummer ist eine benannte Dimension, auf die durch die Kennung verwiesen wird. </p> </td> 
+   <td colname="col1"> <p>Kennung </p> </td> 
+   <td colname="col2"> <p>Eine Kennung verweist auf eine benannte Dimension. Die Vorschriften für die Kennungen von Rechtspersonen finden Sie unter <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntax für Kennungen </a>. </p> <p>Beispiel: Sitzungen[ Sitzungsnummer = "1" ] ist die Anzahl der Sitzungen mit der Sitzungsnummer "1". Sitzungsnummer ist eine benannte Dimension, auf die durch die Kennung verwiesen wird. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Dimension) </p> </td> 
@@ -48,7 +50,7 @@ Dimension-Ausdrücke werden nie allein verwendet, können jedoch überall dort v
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Größe}? }?) </p> </td> 
-   <td colname="col2"> <p>Definiert eine Dimension, deren Elemente Bereiche von Zahlen sind (mit fester Größe, z. B. [0-9], [10-19],...). Elemente der Ebene beziehen sich auf das Element des Behälterdiagramms, dessen Bereich den Wert der Metrik für dieses Element der Ebene enthält. Format ist die Zeichenfolge im Druckformat, die zum Formatieren der Elemente der Metrik verwendet wird. </p> <p>Beispiel: Wenn "Page_Duration_Minutes"eine Dimension auf Seitenansichtsebene ist, die die Anzahl der auf jeder Seite verbrachten Minuten darstellt, ist "bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) eine Dimension auf Sitzungsebene, die die Anzahl der in jeder Sitzung verbrachten Minuten darstellt. Ihre Elemente sind 5-minütige Intervalle <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start ist der Startwert des ersten Intervalls (Standard: 0) und Größe ist die Größe des Intervalls (Standard: 1). </p> </td> 
+   <td colname="col2"> <p>Definiert eine Dimension, deren Elemente Bereiche von Zahlen sind (mit fester Größe, z. B. [0-9], [10-19],...). Elemente der Ebene beziehen sich auf das Element des Behälterdiagramms, dessen Bereich den Wert der Metrik für dieses Element der Ebene enthält. Format ist die Zeichenfolge im Druckformat, die zum Formatieren der Elemente der Metrik verwendet wird. </p> <p>Beispiel: Wenn "Page_Duration_Minutes"eine Dimension auf Seitenansichtsebene ist, die die Anzahl der auf jeder Seite verbrachten Minuten darstellt, ist "bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) eine Dimension auf Sitzungsebene, die die Anzahl der in jeder Sitzung verbrachten Minuten darstellt. seine Elemente sind 5-minütige Intervalle <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start ist der Startwert des ersten Intervalls (Standard: 0) und Größe ist die Größe des Intervalls (Standard: 1). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}* )}* ) </p> </td> 
@@ -56,7 +58,7 @@ Dimension-Ausdrücke werden nie allein verwendet, können jedoch überall dort v
   </tr> 
   <tr> 
    <td colname="col1"> <p>latency(Level, Clip, Dim, Filter, MaxBefore, MaxAfter, FormatString) </p> </td> 
-   <td colname="col2"> <p>Siehe <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Erstellen von Dimensionen mit Latenzzeit </a>. </p> </td> 
+   <td colname="col2"> <p>Siehe <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Erstellen von Latenzzeiten-Dimensionen </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>cartesian_product(Separator {,Dim}*) </p> </td> 

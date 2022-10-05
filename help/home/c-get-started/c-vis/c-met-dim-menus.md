@@ -3,7 +3,7 @@ description: Die Menüs, auf die durch Rechtsklicken der Metrik oder des Dimensi
 title: Menüs für Metriken und Dimensionen
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
 exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 3%
@@ -12,11 +12,13 @@ ht-degree: 3%
 
 # Menüs für Metriken und Dimensionen{#metric-and-dimension-menus}
 
+{{eol}}
+
 Die Menüs, auf die durch Rechtsklicken der Metrik oder des Dimensionsbereichs in einer Visualisierung zugegriffen wird, bieten Zugriff auf Aktionen, die sich auf die Metrik oder Dimension in dieser Visualisierung beziehen.
 
-Weitere Informationen zur Verwendung dieser Menüoptionen mit einem bestimmten Visualisierungstyp finden Sie im entsprechenden Visualisierungsabschnitt unter [Analysevisualisierungen](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
+Weitere Informationen zur Verwendung dieser Menüoptionen mit einem bestimmten Visualisierungstyp finden Sie im Abschnitt zur entsprechenden Visualisierung unter [Visualisierungen von Analysen](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
 
-## Das Metrikmenü {#section-115db63a26f04b57ac954a69972c6291}
+## Menü &quot;Metrik&quot; {#section-115db63a26f04b57ac954a69972c6291}
 
 Sie greifen auf das Metrikmenü zu, indem Sie mit der rechten Maustaste auf einen beliebigen metrikbezogenen Bereich innerhalb einer Visualisierung klicken.
 
@@ -96,12 +98,12 @@ Dieses Menü bietet je nach Art der Visualisierung, in der Sie arbeiten, untersc
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Fügen Sie Callout </p> </td> 
+   <td colname="col1"> <p>Hinzufügen Callout </p> </td> 
    <td colname="col2"> <p>Fügt eine Berechnung für das ausgewählte Element hinzu, um die Aufmerksamkeit auf dieses Element zu lenken. Siehe <a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0"> Hinzufügen von Legenden zu einem Arbeitsbereich</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Element umbenennen </p> </td> 
-   <td colname="col2"> <p>Benennt das Element um. Klicken Sie auf <span class="uicontrol"> Revert</span> , um zum ursprünglichen Namen zurückzukehren. </p> </td> 
+   <td colname="col2"> <p>Benennt das Element um. Klicken <span class="uicontrol"> Wiederherstellen</span> , um zum ursprünglichen Namen zurückzukehren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Dimensionsname</i> </p> </td> 

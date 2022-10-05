@@ -3,7 +3,7 @@ description: Auf dem Data Workbench-Server stehen verschiedene Dimensionstypen z
 title: Typen von Dimensionen
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
 exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 68%
@@ -11,6 +11,8 @@ ht-degree: 68%
 ---
 
 # Typen von Dimensionen{#dimension-types}
+
+{{eol}}
 
 Auf dem Data Workbench-Server stehen verschiedene Dimensionstypen zur Verfügung. Daher ist es wichtig, den Dimensionstyp zu kennen, wenn Sie eine Dimension zum Erstellen von Metriken, Filtern oder abgeleiteten Dimensionen verwenden.
 
@@ -34,7 +36,7 @@ Insight Server kann die folgenden Dimensionstypen erstellen und verwalten:
   </tr> 
   <tr> 
    <td colname="col1"> Numerisch </td> 
-   <td colname="col2">Eine Dimension, die geordnete, numerische Werte und eine Eins-zu-viele-Beziehung mit einer übergeordneten zählbaren Dimension aufweist. Eine nummerische Dimension kann als Darstellung der nummerischen Eigenschaft von Elementen der übergeordneten Dimension betrachtet werden. Numerische Dimensionen werden häufig zur Definition von Summenmetriken verwendet. <p>Beispiel: Die nummerische Dimension „Sitzungsumsatz“ definiert den Umsatz jeder einzelnen Sitzung in Dollar. Jede Sitzung hat einen eigenen Umsatzbetrag, wobei einige Sitzungen jedoch den gleichen Umsatz aufweisen können, sodass der Sitzungsumsatz in einem Eins-zu-viele-Bezug zur Sitzung steht. Die Metrik "Umsatz"kann als <span class="filepath"> sum(Session_Revenue, Session)</span> definiert werden und die Gesamtumsätze für die ausgewählten Sitzungen angeben. </p></td> 
+   <td colname="col2">Eine Dimension, die geordnete, numerische Werte und eine Eins-zu-viele-Beziehung mit einer übergeordneten zählbaren Dimension aufweist. Eine nummerische Dimension kann als Darstellung der nummerischen Eigenschaft von Elementen der übergeordneten Dimension betrachtet werden. Numerische Dimensionen werden häufig zur Definition von Summenmetriken verwendet. <p>Beispiel: Die nummerische Dimension „Sitzungsumsatz“ definiert den Umsatz jeder einzelnen Sitzung in Dollar. Jede Sitzung hat einen eigenen Umsatzbetrag, wobei einige Sitzungen jedoch den gleichen Umsatz aufweisen können, sodass der Sitzungsumsatz in einem Eins-zu-viele-Bezug zur Sitzung steht. Die Metrik "Umsatz"kann als <span class="filepath"> sum(Session_Revenue, Session)</span>, der den Gesamtumsatz für die ausgewählten Sitzungen angibt. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Viele-zu-viele </td> 

@@ -3,7 +3,7 @@ description: Elemente innerhalb einer Dimension können als Reihe in einem Linie
 title: Ändern von Reihen
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
 exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Ändern von Reihen{#change-a-series}
+
+{{eol}}
 
 Elemente innerhalb einer Dimension können als Reihe in einem Liniendiagramm farbcodiert werden, sodass jedes Element einfacher über andere Visualisierungen im Arbeitsbereich hinweg verfolgt werden kann.
 
@@ -22,7 +24,7 @@ Wenn eine Reihe aktiv ist, werden die Daten für die verschiedenen Elemente der 
 
 **So aktivieren Sie eine Serie**
 
-* Klicken Sie mit der rechten Maustaste auf ein Element oder den Titel der Dimension und klicken Sie auf **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]***.
+* Klicken Sie mit der rechten Maustaste auf ein Element oder den Titel der Dimension und klicken Sie auf **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 **So deaktivieren Sie eine Serie**
 

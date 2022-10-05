@@ -3,7 +3,7 @@ description: Der Server Files Manager ermöglicht die Remote-Verwaltung und Verw
 title: Server-Datei-Manager
 uuid: 62625b9d-587f-4a78-8328-2270869909f8
 exl-id: 9ac7e95d-47e5-4862-a16e-bee0df1d3d15
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Server-Datei-Manager{#server-files-manager}
 
+{{eol}}
+
 Der Server Files Manager ermöglicht die Remote-Verwaltung und Verwaltung von Data Workbench Server-Computern von beliebigen autorisierten Data Workbenchs aus, indem er Zugriff auf alle Ordner und Dateien im Installationsverzeichnis des Produkts bietet, einschließlich Konfigurations- und Suchdateien.
 
-Sie können auf [!DNL Server Files Manager] über das Menü [!DNL Admin] zugreifen, indem Sie mit der rechten Maustaste auf den Data Workbench-Serverknoten im [!DNL Servers Manager] klicken und **[!UICONTROL Server Files]** auswählen.
+Sie können auf die [!DNL Server Files Manager] mithilfe der [!DNL Admin] sowie durch Rechtsklick auf den Knoten des Data Workbench-Servercomputers im [!DNL Servers Manager] und klicken **[!UICONTROL Server Files]**.
 
 ![](assets/vis_FileManager.png)
 
@@ -22,23 +24,23 @@ Sie können auf [!DNL Server Files Manager] über das Menü [!DNL Admin] zugreif
 >
 >Sie können neue Server-Dateimanager erstellen, die ausgewählte Verzeichnisse anzeigen. Siehe [Erstellen neuer Server-Dateimanager](../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md#concept-6e8f63273109443699a8f61b1a2ea816).
 
-In der linken Spalte von [!DNL Server Files Manager] werden Datei- und Ordnernamen aufgelistet. Die Häkchen in der Mitte und in der rechten Spalte zeigen an, wo sich diese Ordner und Dateien in der Dateistruktur befinden.
+Die linke Spalte von [!DNL Server Files Manager] listet Datei- und Ordnernamen auf. Die Häkchen in der Mitte und in der rechten Spalte zeigen an, wo sich diese Ordner und Dateien in der Dateistruktur befinden.
 
-Wenn sich eine Datei im Installationsverzeichnis des Produkts befindet, enthält die Spalte *Servername* (z. B. Data Workbench-Server) ein Häkchen. Wenn sich eine Datei auf dem Computer des Data Workbench-Benutzers im Ordner *Installationsordner der Data Workbench*\Temp befindet, enthält die Spalte [!DNL Temp] ein Häkchen. Die Farbe der Häkchen zeigt an, ob die Dateien, die sich an verschiedenen Speicherorten befinden, gleichzeitig geändert wurden.
+Wenn sich eine Datei im Installationsverzeichnis des Produkts befindet, wird die *Servername* (z. B. Data Workbench-Server) enthält ein Häkchen. Wenn sich eine Datei auf dem Computer des Data Workbench-Benutzers im *Installationsordner der Data Workbench*\Temp directory, the [!DNL Temp] enthält ein Häkchen. Die Farbe der Häkchen zeigt an, ob die Dateien, die sich an verschiedenen Speicherorten befinden, gleichzeitig geändert wurden.
 
 * Ein rotes Häkchen in der Spalte &quot;Servername&quot;zeigt an, dass sich der Ordner oder die Datei auf dem Data Workbench-Server-Computer befindet.
-* Ein rotes Häkchen in der Spalte [!DNL Temp] zeigt an, dass die lokale Kopie der Datei oder des Ordners dasselbe Änderungsdatum und dieselbe Uhrzeit hat wie die Datei oder der Ordner auf dem Data Workbench-Server-Computer.
-* Ein weißes Häkchen in der Spalte [!DNL Temp] zeigt an, dass die Datei bzw. der Ordner im Installationsordner *Data Workbench*\Temp einen anderen Ordner hat als die Datei bzw. der Ordner auf dem Data Workbench-Servercomputer.
+* Ein rotes Häkchen im [!DNL Temp] gibt an, dass die lokale Kopie der Datei oder des Ordners dasselbe Änderungsdatum und dieselbe Änderungszeit hat wie die Data Workbench oder den Ordner auf dem Dateiserver.
+* Ein weißes Häkchen im [!DNL Temp] gibt an, dass die Datei oder der Ordner im *Installationsordner der Data Workbench*\Temp -Ordner hat ein anderes Änderungsdatum und eine andere Uhrzeit als die Datei oder der Ordner auf dem Data Workbench-Server.
 
-Die folgende Grafik zeigt das [!DNL Server Files Manager] mit den Markierungen Rot und Weiß:
+Die folgende Grafik zeigt die [!DNL Server Files Manager] mit roten und weißen Häkchen:
 
 ![](assets/vis_FileManager_RedWhiteChecks.png)
 
 **So verwalten Sie Ordner und Dateien mit dem[!DNL Server Files Manager]**
 
-Sie können [!DNL Server Files Manager] verwenden, um Ordner und Dateien auf einem Data Workbench-Servercomputer zu bearbeiten.
+Sie können die [!DNL Server Files Manager] , um Ordner und Dateien auf einem Data Workbench Server-Computer zu bearbeiten.
 
-In der folgenden Tabelle sind die Aufgaben aufgeführt, die mit [!DNL Server Files Manager] ausgeführt werden können:
+In der folgenden Tabelle sind die Aufgaben aufgeführt, die mit dem [!DNL Server Files Manager]:
 
 <table id="table_D217AE5A878542EC8B604812A61819C3"> 
  <thead> 
@@ -58,7 +60,7 @@ In der folgenden Tabelle sind die Aufgaben aufgeführt, die mit [!DNL Server Fil
   </tr> 
   <tr> 
    <td colname="col1"> <p>So zeigen Sie Details zu einem Ordner an </p> </td> 
-   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf die Zelle neben dem Ordner in der Spalte "Servername"oder "<span class="wintitle"> Temp</span>". Sie sehen die folgenden Informationen: </p> 
+   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf die Zelle neben dem Ordner entweder im Servernamen oder <span class="wintitle"> Temp</span> Spalte. Sie sehen die folgenden Informationen: </p> 
     <ul id="ul_2DA5C8D0E95F4BCC8F7E25D05F00EB02"> 
      <li id="li_3FDECC14D62543B183C3509C338DF432">Path. Der Pfad des Ordners. </li> 
      <li id="li_9CF3989FD9E2427995F070E043FAD02C">Dir! Der Name des Ordners. </li> 
@@ -68,7 +70,7 @@ In der folgenden Tabelle sind die Aufgaben aufgeführt, die mit [!DNL Server Fil
   </tr> 
   <tr> 
    <td colname="col1"> <p>So zeigen Sie Details zu einer Datei an </p> </td> 
-   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen neben der Datei in der Spalte "Servername"oder "<span class="wintitle"> Temp</span>". Sie sehen die folgenden Informationen: </p> <p> 
+   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen neben der Datei im Servernamen oder <span class="wintitle"> Temp</span> Spalte. Sie sehen die folgenden Informationen: </p> <p> 
      <ul id="ul_C4E6CB86D1774D739B5ECF48AF8DB628"> 
       <li id="li_7A6D39CF8C064FDDAB87F8D4E50FA832">Pfad. Der Pfad der Datei. </li> 
       <li id="li_9C735B6F0A2541F1992B845359C3685A">Datei. Der Name der Datei. </li> 
@@ -79,39 +81,39 @@ In der folgenden Tabelle sind die Aufgaben aufgeführt, die mit [!DNL Server Fil
   </tr> 
   <tr> 
    <td colname="col1"> <p>So laden Sie einen Ordner auf Ihren lokalen Computer herunter </p> </td> 
-   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte <i>Servername</i> für diesen Ordner und klicken Sie auf <span class="uicontrol"> Verzeichnis lokalisieren</span>. Ein Häkchen für das Verzeichnis wird in der Spalte <span class="wintitle"> Temp</span> angezeigt. </p> </td> 
+   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen im <i>Servername</i> Spalte für diesen Ordner und klicken Sie auf <span class="uicontrol"> Verzeichnis lokal machen</span>. Ein Häkchen für den Ordner wird im <span class="wintitle"> Temp</span> Spalte. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>So laden Sie eine Datei auf Ihren lokalen Computer herunter </p> </td> 
-   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte <i>Servername</i> für diese Datei und klicken Sie auf <span class="uicontrol"> Make Local</span>. Ein Häkchen für die Datei wird in der Spalte <span class="wintitle"> Temp</span> angezeigt. </p> </td> 
+   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen im <i>Servername</i> Spalte für diese Datei und klicken Sie auf <span class="uicontrol"> Lokal machen</span>. Ein Häkchen für die Datei wird im <span class="wintitle"> Temp</span> Spalte. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>So laden Sie den letzten Teil einer Protokolldatei auf Ihren lokalen Computer herunter </p> </td> 
-   <td colname="col2"> <p>Um zu vermeiden, dass eine gesamte Protokolldatei heruntergeladen werden muss (insbesondere wenn Sie wissen, dass die Fehlermeldung nahe am Dateiende liegt), klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte mit dem Servernamen der Datei, klicken Sie auf <span class="uicontrol"> Tail</span> und wählen Sie die Größe des herunterzuladenden Teils aus. Ein Häkchen für die Datei wird in der Spalte <span class="wintitle"> Temp</span> angezeigt. Die lokale Datei enthält nur die von Ihnen angegebene Datenmenge, beginnend mit dem Ende der Datei. </p> </td> 
+   <td colname="col2"> <p>Um zu vermeiden, dass eine gesamte Protokolldatei heruntergeladen werden muss (insbesondere wenn Sie wissen, dass die Fehlermeldung nahe am Dateiende liegt), klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte mit dem Servernamen für die Datei und klicken Sie auf <span class="uicontrol"> Tail</span>und wählen Sie die Größe des Teils aus, den Sie herunterladen möchten. Ein Häkchen für die Datei wird im <span class="wintitle"> Temp</span> Spalte. Die lokale Datei enthält nur die von Ihnen angegebene Datenmenge, beginnend mit dem Ende der Datei. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Öffnen eines Ordners </p> </td> 
-   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für den Ordner in der Spalte <span class="wintitle"> Temp</span> und klicken Sie auf <span class="uicontrol"> Öffnen</span> &gt; <span class="uicontrol"> Ordner</span>. </p> </td> 
+   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für das Verzeichnis im <span class="wintitle"> Temp</span> Spalte und klicken Sie auf <span class="uicontrol"> Öffnen</span> &gt; <span class="uicontrol"> Ordner</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>So öffnen Sie eine Datei </p> </td> 
-   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für die Datei in der Spalte <span class="wintitle"> Temp</span>, klicken Sie auf <span class="uicontrol"> Öffnen</span> und dann auf <span class="uicontrol"> Data Workbench</span>, <span class="uicontrol"> in Notepad</span> oder <span class="uicontrol"> Ordner</span>. </p> </td> 
+   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für die Datei im <span class="wintitle"> Temp</span> Spalte, klicken Sie auf <span class="uicontrol"> Öffnen</span>und klicken Sie dann auf <span class="uicontrol"> Data Workbench</span>, <span class="uicontrol"> im Editor</span>oder <span class="uicontrol"> Ordner</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Lokale Kopie eines Ordners auf dem Data Workbench-Server speichern </p> </td> 
-   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für das Verzeichnis in der Spalte <span class="wintitle"> Temp</span> und klicken Sie auf <span class="uicontrol"> Verzeichnis speichern unter</span> &gt; <i>&lt;<span class="uicontrol"> Profilname</span></i>. </p> </td> 
+   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für das Verzeichnis im <span class="wintitle"> Temp</span> Spalte und klicken Sie auf <span class="uicontrol"> Verzeichnis speichern unter</span> &gt; <i>&lt;<span class="uicontrol"> Profilname</span>&gt;</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Speichern einer lokalen Dateikopie auf dem Data Workbench-Server </p> </td> 
-   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für die Datei in der Spalte <span class="wintitle"> Temp</span> und klicken Sie auf <span class="uicontrol"> Speichern unter</span> &gt; <i>&lt;<span class="uicontrol"> Profilname</span></i>. </p> </td> 
+   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für die Datei im <span class="wintitle"> Temp</span> Spalte und klicken Sie auf <span class="uicontrol"> Speichern unter</span> &gt; <i>&lt;<span class="uicontrol"> Profilname</span>&gt;</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Entfernen einer lokalen Kopie eines Ordners oder einer Datei </p> </td> 
-   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für das Verzeichnis oder die Datei in der Spalte <span class="wintitle"> Temp</span> und klicken Sie auf <span class="uicontrol"> Remove</span>. </p> </td> 
+   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für das Verzeichnis oder die Datei im <span class="wintitle"> Temp</span> Spalte und klicken Sie auf <span class="uicontrol"> Entfernen</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kopieren und Einfügen einer Datei als E-Mail-Anhang in Microsoft Outlook </p> </td> 
-   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für die Datei in der Spalte <span class="wintitle"> Temp</span> und klicken Sie auf <span class="uicontrol"> Copy</span>. Drücken Sie im Textkörper Ihrer E-Mail Strg+V, um die Datei anzuhängen. </p> </td> 
+   <td colname="col2"> <p>Klicken Sie mit der rechten Maustaste auf das Häkchen für die Datei im <span class="wintitle"> Temp</span> Spalte und klicken Sie auf <span class="uicontrol"> Kopieren</span>. Drücken Sie im Textkörper Ihrer E-Mail Strg+V, um die Datei anzuhängen. </p> </td> 
   </tr> 
  </tbody> 
 </table>

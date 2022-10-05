@@ -3,7 +3,7 @@ description: Beim Erstellen einer Elementpunktebene, die auf eine Lookup-Datei v
 title: Definieren von Elementpunktebenen mit Verweis auf Lookup-Dateien
 uuid: 32c8de7a-4316-4f91-9810-7f584bc7fb0b
 exl-id: 2275fa8e-82fe-49e4-ab3e-91ec6ecb6233
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Definieren von Elementpunktebenen mit Verweis auf Lookup-Dateien{#define-element-point-layers-referencing-lookup-files}
+
+{{eol}}
 
 Beim Erstellen einer Elementpunktebene, die auf eine Lookup-Datei verweist, um Längen- und Breitengraddaten zu erhalten, wird der Standort des Punkts durch Abrufen der einzelnen Elemente sowie der zugehörigen Längen- und Breitengrade aus der Lookup-Datei abgerufen.
 
@@ -20,29 +22,29 @@ Beim Erstellen einer Elementpunktebene, die auf eine Lookup-Datei verweist, um L
 
 Um eine Elementpunktebene zu definieren, die auf eine Lookup-Datei verweist, müssen Sie Folgendes erstellen oder bereits verfügbar sein:
 
-* **Eine in der** Datei  [!DNL Transformation.cfg file] oder einer  [!DNL transformation dataset include] Datei definierte Dimension. Informationen zu Konfigurationsdateien für Umwandlungen finden Sie im *Handbuch zur Datensatzkonfiguration*.
+* **Dimension** definiert im [!DNL Transformation.cfg file] oder [!DNL transformation dataset include] -Datei. Informationen zu Konfigurationsdateien für Umwandlungen finden Sie in der *Anleitung zur Datensatzkonfiguration*.
 
-* **Eine Lookup-Datei** mit den Daten, die für die Darstellung der einzelnen Datenpunkte verwendet werden. Diese Datei muss mindestens drei Datenspalten für jeden Datenpunkt enthalten: der Schlüssel, der Längengrad und der Breitengrad. Weitere Informationen zum erforderlichen Format der Lookup-Datei finden Sie unter [Element Point Layer File Format](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
+* **Eine Lookup-Datei** enthält die Daten, die zur Zeichnung jedes Datenpunkts verwendet werden. Diese Datei muss mindestens drei Datenspalten für jeden Datenpunkt enthalten: der Schlüssel, der Längengrad und der Breitengrad. Weitere Informationen zum erforderlichen Format der Lookup-Datei finden Sie unter [Format der Elementpunkt-Schichtdatei](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
-* **Eine Ebenendatei,** die den Speicherort der Lookup-Datei angibt und die zugehörige Dimension und Metrik sowie die Schlüssel-, Längen- und Breitenspaltennamen in der Lookup-Datei angibt. Weitere Informationen zum erforderlichen Format der Ebenendatei finden Sie unter [Element Point Layer File Format](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
+* **Ebenendatei** , der den Speicherort der Lookup-Datei angibt und die zugehörige Dimension und Metrik sowie die Schlüssel-, Längen- und Breitenspaltennamen in der Lookup-Datei identifiziert. Weitere Informationen zum erforderlichen Format der Ebenendatei finden Sie unter [Format der Elementpunkt-Schichtdatei](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
    >[!NOTE]
    >
-   >Die mit dem Profil [!DNL Geography] bereitgestellte Datei [!DNL Zip Points.layer] ist eine Elementpunktebene, die die [!DNL Zipcode.dim]-Datei, die [!DNL Sessions.metric]-Datei, die [!DNL Zip Points.txt]-Lookup-Datei sowie die Namen der Spalten Schlüssel, Längen- und Breitengrad sowie Name in der Lookup-Datei angibt.
+   >Die [!DNL Zip Points.layer] -Datei, die mit der [!DNL Geography] profile ist eine Elementpunktebene, die die [!DNL Zipcode.dim] -Datei, die [!DNL Sessions.metric] -Datei, die [!DNL Zip Points.txt] Lookup-Datei sowie die Namen der Schlüssel-, Längen-, Breiten- und Namensspalten in der Lookup-Datei.
 
 ## Format der Elementpunkt-Lookup-Datei {#section-0bc8c652c1bd40eb84078f2af71a5c06}
 
 Die Lookup-Datei der Elementpunktebene muss mindestens die folgenden drei Spalten enthalten:
 
-* **[!DNL Key]column:** Diese Spalte sollte gemeinsame Schlüsseldaten enthalten, die es dem Data Workbench-Server ermöglichen, die Daten in der Lookup-Datei mit denen im Datensatz zu verbinden. Die Spalte [!DNL key] muss die erste Spalte in der Lookup-Datei sein. Jede Zeile in dieser Spalte identifiziert ein Element der Dimension.
+* **[!DNL Key]column:** Diese Spalte sollte allgemeine Schlüsseldaten enthalten, die es dem Data Workbench-Server ermöglichen, die Daten in der Lookup-Datei mit denen im Datensatz zu verbinden. Die [!DNL key] -Spalte muss die erste Spalte in der Lookup-Datei sein. Jede Zeile in dieser Spalte identifiziert ein Element der Dimension.
 
-* **[!DNL Longitude]column:** Diese Spalte sollte den Längengrad für jeden Datenpunkt in der  [!DNL Key] Spalte enthalten.
+* **[!DNL Longitude]column:** Diese Spalte sollte den Längengrad für jeden Datenpunkt im [!DNL Key] Spalte.
 
-* **[!DNL Latitude]column:** Diese Spalte sollte den Breitengrad für jeden Datenpunkt in der  [!DNL Key] Spalte enthalten.
+* **[!DNL Latitude]column:** Diese Spalte sollte den Breitengrad für jeden Datenpunkt im [!DNL Key] Spalte.
 
-* **[!DNL Name]column (optional):** Wenn Sie für jeden Datenpunkt einen Namen angeben möchten, der auf der Zuordnung angezeigt werden soll, können Sie eine  [!DNL Name] Spalte in die Lookup-Datei einfügen.
+* **[!DNL Name]column (optional):** Wenn Sie einen Namen angeben möchten, der auf der Zuordnung für jeden Datenpunkt angezeigt werden soll, können Sie eine [!DNL Name] in der Lookup-Datei.
 
-Jede Zeile in der Lookup-Datei [!DNL Zip Points.txt] enthält in der ersten Spalte eine ZIP-Code-Zeile, gefolgt von Längen- und Breitengrad und dem zugehörigen Stadtnamen.
+Jede Zeile im [!DNL Zip Points.txt] Die Lookup-Datei enthält eine Postleitzahl in der ersten Spalte, gefolgt von Längen- und Breitengrad sowie dem zugehörigen Stadtnamen.
 
 ```
 tude, and associated city name.
@@ -52,9 +54,9 @@ ZIP_CODE LATITUDE LONGITUDE NAME
 ...
 ```
 
-## Dateiformat der Elementpunkteschicht {#section-52d7e92be8354d979af9e7a2210b76f2}
+## Dateiformat der Elementpunktebenen {#section-52d7e92be8354d979af9e7a2210b76f2}
 
-Jede Elementpunktebene [!DNL .layer], die auf eine Lookup-Datei verweist, muss mithilfe der folgenden Vorlage formatiert werden:
+Jede Elementpunktebene [!DNL .layer] -Datei, die auf eine Lookup-Datei verweist, muss mithilfe der folgenden Vorlage formatiert werden:
 
 ```
 Layer = ElementPointLayer:
@@ -97,11 +99,11 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Schlüsselspalte </td> 
-   <td colname="col2"> <p>Der Spaltenname in der Lookup-Datei, der die gemeinsamen Schlüsseldaten enthält. Dadurch kann der Data Workbench-Server die Daten in die Lookup-Datei in den Datensatz integrieren. Dies muss die erste Spalte in der Lookup-Datei sein. </p> <p>Jede Zeile in dieser Spalte ist ein Element einer Dimension. Diese Dimension muss in der Datei <span class="filepath"> Transformation.cfg</span> oder in einer Datei <span class="wintitle"> des Transformationsdatensatzes </span> definiert und im Dateiparameter "Dimension"dieser Datei angegeben werden. Weitere Informationen zu Konfigurationsdateien für Umwandlungen finden Sie im <i>Handbuch zur Datensatzkonfiguration</i>. </p> </td> 
+   <td colname="col2"> <p>Der Spaltenname in der Lookup-Datei, der die gemeinsamen Schlüsseldaten enthält. Dadurch kann der Data Workbench-Server die Daten in die Lookup-Datei in den Datensatz integrieren. Dies muss die erste Spalte in der Lookup-Datei sein. </p> <p>Jede Zeile in dieser Spalte ist ein Element einer Dimension. Diese Dimension muss im <span class="filepath"> Transformation.cfg</span> oder <span class="wintitle"> Zu den Transformationsdatensätzen gehören</span> und im Dateiparameter angegeben. Weitere Informationen zu Konfigurationsdateien für Umwandlungen finden Sie in der <i>Anleitung zur Datensatzkonfiguration</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">Der Name der Dimension (definiert in einer Umwandlungskonfigurationsdatei), die Elemente enthält, die den Datenzeilen in der Spalte <span class="wintitle"> Schlüssel</span> entsprechen. </td> 
+   <td colname="col2">Der Name der Dimension (definiert in einer Umwandlungskonfigurationsdatei), die Elemente enthält, die den Datenzeilen in der <span class="wintitle"> Schlüssel</span> Spalte. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Metrik </td> 
@@ -113,7 +115,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Farbe </td> 
-   <td colname="col2"> Optional. Der RGB-Farbvektor, der als (rot, grün, blau) angegeben wird. Für jede Farbe im Vektor können Sie einen Wert zwischen 0,0 und 1,0 eingeben. (1,0, 0,0, 0,0) ist beispielsweise hellrot und (0,5, 0,5, 0,5) grau. </td> 
+   <td colname="col2"> Optional. Der Farbvektor der RGB, der als (rot, grün, blau) angegeben wird. Für jede Farbe im Vektor können Sie einen Wert zwischen 0,0 und 1,0 eingeben. (1,0, 0,0, 0,0) ist beispielsweise hellrot und (0,5, 0,5, 0,5) grau. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Rendermodus </td> 
@@ -127,7 +129,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Die Datei [!DNL Zip Points.layer] ist wie folgt formatiert:
+Die [!DNL Zip Points.layer] -Datei wie folgt formatiert:
 
 ```
 Layer = ElementPointLayer:

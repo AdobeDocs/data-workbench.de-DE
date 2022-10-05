@@ -3,14 +3,16 @@ description: Grundlegende Informationen zu Arbeitsblattausdrücken und zur Verwe
 title: Ausdrücke in Arbeitsblättern
 uuid: be57d6bd-3e13-4c90-9034-8e0f2b8315aa
 exl-id: 1ff3ec24-0363-4b6c-8c91-31e49ed0f7c4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '539'
 ht-degree: 2%
 
 ---
 
 # Ausdrücke in Arbeitsblättern{#worksheet-expressions}
+
+{{eol}}
 
 Grundlegende Informationen zu Arbeitsblattausdrücken und zur Verwendung von Zellenverweisen.
 
@@ -45,19 +47,19 @@ Die folgende Tabelle enthält Beispielformeln für das Arbeitsblatt im vorherige
   </tr> 
   <tr> 
    <td colname="col1"> <p>B4 </p> <p>Referrer-Besucher von Referrer A, die die Seite "Jetzt beantragen"angezeigt haben </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp"  </span> </p> <p> UND <span class="filepath"> Referrer="Ref A"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp" </span> </p> <p> UND <span class="filepath"> referrer="Ref A"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C2 </p> <p>Besucher, die die Seite "Jetzt anwenden"und die Seite "Anwendungsassistent"angezeigt haben </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Visitors[Page="/applynow/default.asp"  </span> </p> <p> AND <span class="filepath"> Page="/applynow/appwizard.asp"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Visitors[Page="/applynow/default.asp" </span> </p> <p> UND <span class="filepath"> Page="/applynow/appwizard.asp"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C3 </p> <p>Referrer Besucher, die die Seite "Jetzt anwenden"und die Seite "Anwendungsassistent"angezeigt haben </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp"  </span> </p> <p> AND <span class="filepath"> Page="/applynow/appwizard.asp"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp" </span> </p> <p> UND <span class="filepath"> Page="/applynow/appwizard.asp"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C4 </p> <p>Referrer-Besucher von Referrer A, die die Seite "Jetzt anwenden"und die Seite "Anwendungsassistent"angezeigt haben </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp"</span> </p> <p> UND <span class="filepath"> Page="/applynow/appwizard.asp"</span> </p> <p> UND <span class="filepath"> Referrer="Ref A"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp"</span> </p> <p> UND <span class="filepath"> Page="/applynow/appwizard.asp"</span> </p> <p> UND <span class="filepath"> referrer="Ref A"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>D2 </p> <p>Prozentsatz der Besucher, die die Seite "Jetzt anwenden"und die Seite "Anwendungsassistent"angezeigt haben </p> </td> 
@@ -80,12 +82,12 @@ Im folgenden Webdatenbeispiel wurden in der Visualisierung Sitzungen nach Tag me
 
 ![](assets/client-exp.png)
 
-## Verwenden von Zellverweisen {#section-0004e315c9c94d359b1a8a39794ba555}
+## Verwenden von Zellreferenzen {#section-0004e315c9c94d359b1a8a39794ba555}
 
 Sie können jede beliebige Zeichenfolge, ob allein oder innerhalb eines anderen Ausdrucks im Arbeitsblatt, durch eine Zellenreferenz ersetzen.
 
-* **Einfache Zellreferenz:**  Zelle A2 enthält den Text &quot;Besucher&quot;, der als Überschrift verwendet wird. Zelle B2 enthält [!DNL eval(A1)], die zu [!DNL =Visitors] ausgewertet wird.
+* **Einfache Zellreferenz:** Zelle A2 enthält den Text Besucher , der als Überschrift verwendet wird. Zelle B2 enthält [!DNL eval(A1)], die als [!DNL =Visitors].
 
-* **Filterzellreferenz:** Zelle A5 enthält das gestrige Datum. Zelle B5 enthält [!DNL Visitors[ Day=A5 ]], was die Anzahl der Besucher gestern auswertet.
+* **Filterzellreferenz:** Zelle A5 enthält das gestrige Datum. Zelle B5 enthält [!DNL Visitors[ Day=A5 ]], was sich auf die Anzahl der Besucher gestern auswertet.
 
-* **Verkettete Zellreferenz:** Zelle A5 enthält das aktuelle Datum und Zelle A6 enthält den Zeitraum von einer Stunde zwischen 8:00 und 8:59 Uhr. Zelle B6 enthält [!DNL Visitors[ Hour=A5+&quot;&quot;+A6 ]], die die Anzahl der Besucher heute zwischen 8:00 und 9:00 Uhr auswertet.
+* **Verkettete Zellenreferenz:** Zelle A5 enthält das heutige Datum und Zelle A6 enthält den einstündigen Zeitraum zwischen 8:00 und 8:59 Uhr. Zelle B6 enthält [!DNL Visitors[ Hour=A5+” ”+A6 ]], was der Anzahl der Besucher von heute zwischen 8:00 und 9:00 Uhr entspricht.

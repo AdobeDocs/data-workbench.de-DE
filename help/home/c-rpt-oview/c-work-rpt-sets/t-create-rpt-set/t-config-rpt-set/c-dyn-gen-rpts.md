@@ -3,7 +3,7 @@ description: Sie können Berichte dynamisch für die Dimensionselemente generier
 title: Dynamische Erstellung von Berichten
 uuid: 87174fb5-e72f-4758-8e9d-1aaa784c1898
 exl-id: c14d93cd-212d-44a1-aff9-652e5c4fbda0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dynamische Erstellung von Berichten{#dynamically-generating-reports}
+
+{{eol}}
 
 Sie können Berichte dynamisch für die Dimensionselemente generieren, die Sie in einer Lookup-Datei angeben, oder für eine bestimmte Anzahl von Dimensionselementen, z. B. für Benutzer mit den 10 höchsten Bestellzahlen.
 
@@ -23,12 +25,12 @@ Sie können Berichte dynamisch für die Dimensionselemente generieren, die Sie i
 
 ## Berichte zu Dimensionen von Lookup-Dateien {#section-a5e8f38af06c42b4bfddec4bafbf03d6}
 
-Um einen Berichtssatz zum dynamischen Generieren und (optional) Verteilen von Berichten für die Elemente einer in einer Lookup-Datei angegebenen Dimension zu konfigurieren, geben Sie die folgenden Parameter in der Datei [!DNL Report.cfg] an:
+Um einen Berichtssatz zum dynamischen Generieren und (optional) Verteilen von Berichten für die Elemente einer in einer Lookup-Datei angegebenen Dimension zu konfigurieren, geben Sie die folgenden Parameter in der [!DNL Report.cfg] Datei:
 
 * [!DNL Dimension Name]
 * [!DNL Lookup File]
 
-Detaillierte Beschreibungen dieser Parameter finden Sie unter [Report.cfg-Parameter](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
+Eine ausführliche Beschreibung dieser Parameter finden Sie unter [Parameter &quot;Report.cfg&quot;](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
 
 **So erstellen Sie einen dynamischen Berichtssatz mithilfe einer Lookup-Datei**
 
@@ -46,15 +48,13 @@ Detaillierte Beschreibungen dieser Parameter finden Sie unter [Report.cfg-Parame
       >    * Diese Datei kann leere Zeilen enthalten.
 
 
-
-
-1. Optional. Um die E-Mail-Versendung von Berichten zu aktivieren, müssen Sie im Abschnitt [!DNL Mail Report] der [!DNL Report.cfg]-Datei für diesen Berichtssatz Folgendes tun:
+1. Optional. Um das Versenden von Berichten per E-Mail zu ermöglichen, müssen Sie im Abschnitt [!DNL Mail Report] Abschnitt [!DNL Report.cfg] -Datei für diesen Berichtssatz:
 
    * Geben Sie im Parameter SMTP Server den entsprechenden SMTP-Server an, der zum Verteilen von Berichten per E-Mail verwendet werden soll.
    * Geben Sie im Parameter Empfänger mindestens eine E-Mail-Adresse an, um die Verteilung der Berichte per E-Mail zu ermöglichen. Die Berichte werden nicht an die angegebene Adresse gesendet. Sie legen diesen Parameter nur fest, um die E-Mail-Versendung der Berichte zu ermöglichen. Dies kann eine falsche Adresse sein, muss jedoch in einem zulässigen Format vorliegen (z. B. [!DNL jsmith@company.com]).
 
 1. Speichern Sie die Lookup-Datei im Ordner des Berichtssatzes.
-1. Öffnen Sie die Datei [!DNL Report.cfg] für den Berichtssatz.
+1. Öffnen Sie die [!DNL Report.cfg] -Datei für den Berichtssatz.
 1. Geben Sie im Parameter &quot;Dimension Name&quot;den Namen der Dimension ein, für die Sie einen Bericht dynamisch generieren möchten.
 1. Geben Sie im Parameter Lookup File den Speicherort und den Namen der Lookup-Datei ein, die die Dimensionselemente enthält, die Sie im Bericht erhalten möchten, sowie die E-Mail-Adressen der Empfänger.
 1. Wiederholen Sie diese Schritte für weitere Berichtssätze.
@@ -65,21 +65,21 @@ Detaillierte Beschreibungen dieser Parameter finden Sie unter [Report.cfg-Parame
 
 ## Top-Dimensionen-Elementberichte {#section-d8d75a6dfadd407bb18d6f32d70ebf8f}
 
-Um einen Berichtssatz zum dynamischen Generieren von Berichten für die Top-Dimensionselemente zu konfigurieren, wobei die Zählung nach der angegebenen Metrik erfolgt, geben Sie die folgenden Parameter in der Datei [!DNL Report.cfg] an:
+Um einen Berichtssatz zum dynamischen Generieren von Berichten für die Top-Dimensionselemente zu konfigurieren, wobei die Zählung nach der angegebenen Metrik erfolgt, geben Sie die folgenden Parameter in der [!DNL Report.cfg] Datei:
 
 * Name der Dimension
 * Top N Metrik
 * Top N Wert
 * (Optional) Abfragefilter vorab laden
 
-Detaillierte Beschreibungen dieser Parameter finden Sie unter [Report.cfg-Parameter](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
+Eine ausführliche Beschreibung dieser Parameter finden Sie unter [Parameter &quot;Report.cfg&quot;](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
 
 **So erstellen Sie einen dynamischen Berichtssatz für die obersten Elemente**
 
-1. Öffnen Sie die Datei [!DNL Report.cfg] des Berichtssatzes.
+1. Öffnen Sie die [!DNL Report.cfg] -Datei.
 1. Geben Sie im Parameter &quot;Dimension Name&quot;den Namen der Dimension ein, für die Sie einen Berichtssatz dynamisch generieren möchten.
 1. Geben Sie im Parameter Top N Metrik den Namen der Metrik ein, nach der Sie die Dimension sortieren möchten.
 1. Geben Sie im Parameter Top N Value die Anzahl der Dimensionselemente ein, die Sie im Berichtssatz verwenden möchten.
 1. (Optional) Geben Sie im Parameter Preload Query Filter den Namen des gewünschten Filters ein.
 1. Wiederholen Sie diese Schritte für weitere Berichtssätze.
-1. Informationen zur Verwendung einer dynamischen Titelvisualisierung mit Ihrem Bericht finden Sie im *Data Workbench-Benutzerhandbuch*.
+1. Informationen zur Verwendung einer dynamischen Titelvisualisierung mit Ihrem Bericht finden Sie in der *Data Workbench-Benutzerhandbuch*.

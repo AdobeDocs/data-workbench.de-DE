@@ -3,7 +3,7 @@ description: Wählen Sie Eingabevariablen, die Anzahl der Cluster und eine Zielp
 title: Erstellen von Clustern
 uuid: f8462445-b7d2-48ae-aed7-2a3abc491cfb
 exl-id: 60bc75bf-2f89-455b-8be9-aa20bb837752
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -12,29 +12,31 @@ ht-degree: 1%
 
 # Erstellen von Clustern{#building-clusters}
 
+{{eol}}
+
 Wählen Sie Eingabevariablen, die Anzahl der Cluster und eine Zielpopulation (falls gewünscht) aus, um Cluster in Ihrem Datensatz zu definieren.
 
 **Erstellen von Clustern**
 
 1. Öffnen Sie den **[!UICONTROL Cluster Builder]**.
 
-   Klicken Sie auf **Visualisierung** > **Prädiktive Analyse** > **Clustering** > **Cluster-Builder**.
+   Klicken **Visualisierung** > **Predictive Analytics** > **Clustering** > **Cluster Builder**.
 
    ![](assets/cluster-builder-step1.png)
 
 1. Wählen Sie Eingabevariablen aus.
 
-   * Fügen Sie der Liste **[!UICONTROL Input Variables]** Metriken hinzu, indem Sie aus dem Menü **[!UICONTROL Metric]** in der Symbolleiste eine Auswahl treffen.
+   * Metriken zum **[!UICONTROL Input Variables]** Liste durch Auswahl aus **[!UICONTROL Metric]** in der Symbolleiste.
 
       ![](assets/cluster_metric_select.png)
 
-   * Fügen Sie Dimensionselemente zur Liste **[!UICONTROL Input Variables]** hinzu, indem Sie sie aus der Tabelle einer Dimension ziehen.
+   * Fügen Sie Dimensionselemente zu der **[!UICONTROL Input Variables]** aus, indem Sie sie aus der Tabelle einer Dimension ziehen.
 
-      Drücken Sie die Taste **[!UICONTROL Ctrl + Alt]** und ziehen Sie die ausgewählten Dimensionselemente in die Liste **[!UICONTROL Input Variables]** oder in das Feld **[!UICONTROL Element]** in der Symbolleiste.
+      Presse **[!UICONTROL Ctrl + Alt]** und ziehen Sie die ausgewählten Dimensionselemente in den **[!UICONTROL Input Variables]** oder **[!UICONTROL Element]** in der Symbolleiste.
 
       ![](assets/cluster_dim_select.png)
-   Standardmäßig wird das Clustering für den gesamten Datensatz durchgeführt. Sie können alle Eingabevariablen im linken Bereich **[!UICONTROL Preprocessing]** sehen.
-1. Wählen Sie im Menü **[!UICONTROL Options]** die gewünschte Anzahl von Clustern aus.
+   Standardmäßig wird das Clustering für den gesamten Datensatz durchgeführt. Alle Eingabevariablen werden links angezeigt **[!UICONTROL Preprocessing]** -Bereich.
+1. Verwenden Sie die **[!UICONTROL Options]** -Menü, um die gewünschte Anzahl von Clustern auszuwählen.
 
    ![](assets/build_cluster_2.png)
 
@@ -42,11 +44,11 @@ Wählen Sie Eingabevariablen, die Anzahl der Cluster und eine Zielpopulation (fa
 
    ![](assets/build_cluster_3.png)
 
-   Definieren Sie zunächst die gewünschte Teilmenge mithilfe von Auswahlen in Workspace oder mithilfe von **[!UICONTROL Filter Editor]**. Nachdem Sie die gewünschte Teilmenge ausgewählt haben, legen Sie die Zielpopulation im Menü **[!UICONTROL Options]** fest. Es wird empfohlen, der Zielgruppe einen Identifizierungsnamen zu geben.
+   Definieren Sie zunächst die gewünschte Teilmenge mithilfe der Auswahl in Ihrem Arbeitsbereich oder mithilfe der **[!UICONTROL Filter Editor]**. Nachdem Sie die gewünschte Teilmenge ausgewählt haben, legen Sie die Zielpopulation im **[!UICONTROL Options]** Menü. Es wird empfohlen, der Zielgruppe einen Identifizierungsnamen zu geben.
 
-   Das Menü **[!UICONTROL Options]** verfügt auch über Einstellungen, mit denen die maximale Anzahl von Durchgängen und der akzeptable Schwellenwert für mittlere Konvergenz gesteuert werden.
+   Die **[!UICONTROL Options]** -Menü verfügt auch über Einstellungen, um die maximale Anzahl der Pässe und den akzeptablen Schwellenwert für die mittlere Konvergenz zu steuern.
 
-1. Nachdem die Eingaben und Optionen konfiguriert wurden, klicken Sie auf die Schaltfläche **Go** , um das Clustering lokal auszuführen, oder drücken Sie **[!UICONTROL Submit]**, um die Aufgabe an den Predictive Analytics-Server zu senden. Durch Übermittlungen an den Server wird die resultierende Dimension im Datensatz gespeichert, wenn die Konvergenz abgeschlossen ist.
+1. Nachdem die Eingaben und Optionen konfiguriert wurden, klicken Sie auf das **Los** -Schaltfläche, um das Clustering lokal auszuführen, oder drücken Sie **[!UICONTROL Submit]** , um die Aufgabe an den Predictive Analytics-Server zu senden. Durch Übermittlungen an den Server wird die resultierende Dimension im Datensatz gespeichert, wenn die Konvergenz abgeschlossen ist.
 
    Wenn Sie lokal ausführen, sehen Sie, wie sich der Cluster Builder durch vier Baumkronen-Clustering-Phasen bewegt, da er intelligente Zentren basierend auf den Eingaben definiert.
 
@@ -62,7 +64,7 @@ Wählen Sie Eingabevariablen, die Anzahl der Cluster und eine Zielpopulation (fa
 
    >[!NOTE]
    >
-   >Wenn Sie Eingaben während der Konvergenz hinzufügen oder entfernen, wird der Prozess angehalten, bis Sie die Taste **Go** erneut drücken.
+   >Wenn Sie während der Konvergenz Eingaben hinzufügen oder entfernen, wird der Prozess angehalten, bis Sie die Taste drücken **Los** erneut.
 
    Nach dem Erstellen von Clustern können Sie die Farbauswahl öffnen, um Farben für unterschiedliche Verteilungsergebnisse zuzuweisen.
 
@@ -72,10 +74,10 @@ Wählen Sie Eingabevariablen, die Anzahl der Cluster und eine Zielpopulation (fa
 
    ![](assets/build_cluster_6.png)
 
-1. Wenn Sie diese Cluster-Dimension in anderen Visualisierungen verwenden möchten, können Sie sie lokal oder **[!UICONTROL Submit]** lokal für den Server verwenden.**[!UICONTROL Save]**
+1. Wenn Sie diese Clusterdimension in anderen Visualisierungen verwenden möchten, können Sie **[!UICONTROL Save]** lokal oder **[!UICONTROL Submit]** auf den Server.
 
 Wenn Sie die Konvergenz erneut ausführen oder die Relevanz der Eingaben sehen möchten, kann Cluster Builder auch vorhandene Cluster-Dimensionen laden.
 
 >[!TIP]
 >
->Wenn diese Option aktiviert ist, werden alle Eingabevariablen vollständig freigegeben und Sie erhalten eine leere Cluster-Builder-Visualisierung, um neue Cluster zu definieren.**[!UICONTROL Reset]**
+>Wenn ausgewählt, **[!UICONTROL Reset]** werden alle Eingabevariablen vollständig freigegeben und Sie erhalten eine leere Cluster-Builder-Visualisierung, um neue Cluster zu definieren.

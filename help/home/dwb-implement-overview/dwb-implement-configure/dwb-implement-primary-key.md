@@ -1,36 +1,39 @@
 ---
-description: In diesem Abschnitt wird das Erstellen von primären Schlüsseln (Tracking-ID) für Data Workbench-Datensätze für Schemadesign und -implementierung erläutert.
-title: Datenverarbeitung - Aufbau eines primären Schlüssels
+description: In diesem Abschnitt wird beschrieben, wie Sie Primäre Schlüssel (Tracking-ID) für Data Workbench-Datensätze für Schemadesign und -implementierung erstellen.
+title: Datenverarbeitung – Erstellen eines Primärschlüssels
 uuid: 7a12950e-6ac0-47d5-b4a8-0b50c48b04fa
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 9937038f-d011-4946-8a5b-cc724b611ae5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 2%
 
 ---
 
+# Datenverarbeitung – Erstellen eines Primärschlüssels{#data-processing-building-primary-key}
 
-# Datenverarbeitung - Aufbau eines primären Schlüssels{#data-processing-building-primary-key}
+{{eol}}
 
-In diesem Abschnitt wird das Erstellen von primären Schlüsseln (Tracking-ID) für Data Workbench-Datensätze für Schemadesign und -implementierung erläutert.
+In diesem Abschnitt wird beschrieben, wie Sie Primäre Schlüssel (Tracking-ID) für Data Workbench-Datensätze für Schemadesign und -implementierung erstellen.
 
-## Die Tracking-ID {#section-24683031044a4af49988655ccb9a45fd}
+## Tracking-ID verstehen {#section-24683031044a4af49988655ccb9a45fd}
 
-Nach dem Lesen und Dekodieren der Daten in DWB (mithilfe von Decodern) besteht der erste Schritt darin, die Verfolgungs-ID und den Zeitstempel zu definieren. Die Tracking-ID ist ein Bezeichner, der einen Kundendatensatz eindeutig identifiziert. Es kann sich um ein beliebiges Feld im Feed wie E-Mail-ID, Sozialversicherungsnummer, Cookie-ID usw. handeln. Das als Tracking-ID zu verwendende Feld wird vom Client während der Erkennungssitzung festgelegt. Tracking-ID und Zeitstempel sind obligatorische Felder und müssen für jeden Datensatz definiert werden.
+Nach dem Lesen und Dekodieren der Daten in DWB (mithilfe von Decodern) besteht der erste Schritt darin, die Tracking-ID und den Zeitstempel zu definieren. Die Tracking-ID ist eine Kennung, die einen Kundendatensatz eindeutig identifiziert. Dabei kann es sich um ein beliebiges Feld im Feed handeln, z. B. E-Mail-ID, Sozialversicherungsnummer, Cookie-ID usw. Das Feld, das als Tracking-ID verwendet werden soll, wird vom Client während der Erkennungssitzung festgelegt. Tracking-ID und Zeitstempel sind Pflichtfelder und müssen für jeden Datensatz definiert werden.
 
-Normalerweise wird für Online-Daten die Cookie-ID (Kombination aus *x-visid_high* und* x-visid_low*) als Standardmethode für die eindeutige Kundenidentifizierung verwendet. Dies kann jedoch entsprechend den Anforderungen des Kunden geändert werden. Das Datum und die Uhrzeit, zu der die Anforderung (oder das Ereignis) auftritt, sind *x-timestamp*. Alle Datensätze in DWB werden nach *trackingid* gruppiert und nach Zeitstempel sortiert. Die [!DNL Definitions.cfg] Datei &quot;Erforderliches Feld&quot;ist eine Datei mit dem Datenbestand zur Verarbeitung von Protokollen, in der die erforderlichen Felder definiert werden: *x-trackingid* und *x-timestamp*.
+Normalerweise wird für Online-Daten die Cookie-ID (Kombination aus *x-visid_high* und* x-visid_low*) als Standardmechanismus für die eindeutige Kundenidentifizierung verwendet wird. Dies kann jedoch gemäß den Anforderungen des Kunden geändert werden. Das Datum und die Uhrzeit, zu der die Anforderung (oder das Ereignis) auftritt, ist das *x-timestamp*. Alle Datensätze in DWB werden gruppiert nach *trackingid* und nach Zeitstempel sortiert. Das erforderliche Feld [!DNL Definitions.cfg] -Datei ist eine Datensatzaufnahme-Datei zur Protokollverarbeitung, die die erforderlichen Felder definiert: *x-trackingid* und *x-timestamp*.
 
-Hinweis: *x-trackingid *in DWB ist ein integriertes Feld und dieser Name sollte nicht für ein anderes Feld verwendet werden.
+Hinweis: *x-trackingid *in DWB ist ein integriertes Feld und dieser Name sollte für kein anderes Feld verwendet werden.
 
-**Beispiel 1**: Erstellen von *x-trackingid* mit Cookie-ID (wenn nur Onlinedaten verwendet werden)
+**Beispiel 1**: Erstellen *x-trackingid* Verwenden der Cookie-ID (wenn nur Online-Daten verwendet werden)
 
-Um das *x-trackingid *in DWB mithilfe der Cookie-ID zu erstellen, verwenden Sie die Hash-Funktion, um das *x-trackingid* in der [!DNL foundation.cfg] Datei zu erstellen (es empfiehlt sich, die Verfolgungs-ID in zu definieren, [!DNL foundation.cfg] aber es kann in jeder anderen Konfigurationsdatei im [!DNL Dataset > log processing] Ordner definiert werden), wie im Folgenden gezeigt:
+Um die *x-trackingid *in DWB mithilfe der Cookie-ID zu erstellen, verwenden Sie die Hash-Funktion , um die *x-trackingid* im [!DNL foundation.cfg] -Datei (dies ist eine Best Practice, die Tracking-ID in [!DNL foundation.cfg] Sie kann jedoch in jeder anderen Konfigurationsdatei unter [!DNL Dataset > log processing] Ordner) wie gezeigt:
 
 ![](assets/dwb_impl_primary_key1.png)
 
-**Beispiel 2**: Erstellen von *x-trackingid* mit E-Mail-ID (sofern Online- und Offlinedaten verfügbar sind)
+**Beispiel 2**: Erstellen *x-trackingid* Verwenden der E-Mail-ID (wenn sowohl Online- als auch Offline-Daten verfügbar sind)
 
-Es wird davon ausgegangen, dass Offline- und Online-Daten verfügbar sind (in diesem Beispiel) und die E-Mail-ID in beiden Datenquellen verfügbar ist. Da die E-Mail-ID einen Kunden eindeutig identifiziert, wird sie zum Erstellen der *x-trackingid* verwendet.
+Es wird angenommen, dass sowohl Offline- als auch Online-Daten verfügbar sind (in diesem Beispiel) und die E-Mail-ID in beiden Datenquellen verfügbar ist. Da die E-Mail-ID einen Kunden eindeutig identifiziert, wird sie zur Erstellung der *x-trackingid*.
 
-Verwenden Sie die Hash-Funktion, um die *trackingId* wie folgt zu erstellen:
+Verwenden Sie die Hash-Funktion, um die *trackingId* wie gezeigt:
 
 ![](assets/dwb_impl_primary_key2.png)
-

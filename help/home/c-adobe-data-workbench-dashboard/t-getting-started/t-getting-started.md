@@ -3,7 +3,7 @@ description: Gehen Sie wie folgt vor, um mit der Verwendung des Adobe Data Workb
 title: Erste Schritte
 uuid: 9e2ed5fd-29d7-4e06-ad55-c4a35a9043c8
 exl-id: acaa7563-d462-4838-b2b5-3c010382da34
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Erste Schritte{#getting-started}
+
+{{eol}}
 
 Gehen Sie wie folgt vor, um mit der Verwendung des Adobe Data Workbench-Dashboards zu beginnen.
 

@@ -3,7 +3,7 @@ description: Um eine Segmentdimension zu erstellen, wählen Sie zunächst eine A
 title: Erstellen von Segmentdimensionen
 uuid: 68dcf3bf-fbc9-4924-a0dd-d112cf366131
 exl-id: 393d544e-e821-49e3-8cfb-5a3496aa7380
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Erstellen von Segmentdimensionen{#create-a-segment-dimensions}
+
+{{eol}}
 
 Um eine Segmentdimension zu erstellen, wählen Sie zunächst eine Auswahl in einem Arbeitsbereich aus und fügen dann das Segment einer Visualisierung hinzu.
 
@@ -25,7 +27,7 @@ Um eine Segmentdimension zu erstellen, wählen Sie zunächst eine Auswahl in ein
 
    >[!NOTE]
    >
-   >Um ein neues erstes Segment zu erstellen, klicken Sie mit der rechten Maustaste auf die Bezeichnung **[!UICONTROL Segments]** und dann auf **[!UICONTROL Add Segment]**.
+   >Um ein neues erstes Segment zu erstellen, klicken Sie mit der rechten Maustaste auf die **[!UICONTROL Segments]** Beschriftung und klicken Sie auf **[!UICONTROL Add Segment]**.
 
    ![](assets/vis_SegmentNew.png)
 
@@ -36,12 +38,12 @@ Um eine Segmentdimension zu erstellen, wählen Sie zunächst eine Auswahl in ein
 
    >[!NOTE]
    >
-   >Wenn ein Metrikwert, z. B. ein bestimmter Besucher in [!DNL Site], die Kriterien mehrerer Segmente erfüllt, wird der Metrikwert nur in das erste aufgelistete Segment aufgenommen, mit dem er übereinstimmt.
+   >Wenn ein Metrikwert, z. B. ein bestimmter Besucher in [!DNL Site]erfüllt die Kriterien mehrerer Segmente, wird der Metrikwert nur in das erste aufgelistete Segment aufgenommen, mit dem er übereinstimmt.
 
 **So speichern Sie die Segmentdimension**
 
-1. Klicken Sie mit der rechten Maustaste auf den Titel Segmente und klicken Sie auf **[!UICONTROL Save Dimension]**. Das Fenster [!DNL Save Dimension As] wird angezeigt. Der standardmäßige Speicherort ist der Ordner &quot;User\*profile name*\Dimension&quot;.
-1. Geben Sie im Feld [!DNL File name] einen beschreibenden Namen für die Segmente ein, die Sie als Dimension speichern, und klicken Sie auf **[!UICONTROL Save]**.
+1. Klicken Sie mit der rechten Maustaste auf die Bezeichnung Segmente und klicken Sie auf **[!UICONTROL Save Dimension]**. Die [!DNL Save Dimension As] angezeigt. Der standardmäßige Speicherort ist der Ordner &quot;User\*profile name*\Dimension&quot;.
+1. Im [!DNL File name] ein, geben Sie einen beschreibenden Namen für die Segmente ein, die Sie als Dimension speichern, und klicken Sie auf **[!UICONTROL Save]**.
 
 Sie können auf die Segmentdimension zugreifen, sobald Sie mit einer Visualisierung arbeiten. Sie können auch Daten exportieren, die mit den Elementen in Ihrer gespeicherten Dimension verknüpft sind, indem Sie die Segmentexportfunktion verwenden.
 

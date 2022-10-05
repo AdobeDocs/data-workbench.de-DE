@@ -3,7 +3,7 @@ description: Standardmäßig werden bei Diagrammvisualisierungen Balken angezeig
 title: Ändern der Diagrammanzeige
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
 exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Ändern der Diagrammanzeige{#change-a-graph-display}
+
+{{eol}}
 
 Standardmäßig werden bei Diagrammvisualisierungen Balken angezeigt, aber Sie können die Balken einfach als Linien anzeigen und umgekehrt.
 
@@ -26,7 +28,7 @@ Klicken Sie mit der rechten Maustaste auf die Dimensionsbezeichnung unten im Dia
 
 **Verlaufsüberlagerung auf einem Diagramm**
 
-Sie können mit der rechten Maustaste klicken und eine **Verlaufsüberlagerung** aus dem Menü auswählen, um Diagrammelemente besser anzuzeigen.
+Sie können mit der rechten Maustaste klicken und eine **Verlaufsüberlagerung** aus dem Menü, um Diagrammelemente besser anzuzeigen.
 
 ![](assets/6_51_gradient_graph.png)
 

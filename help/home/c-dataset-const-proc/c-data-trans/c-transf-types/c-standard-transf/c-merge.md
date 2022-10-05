@@ -3,14 +3,16 @@ description: Bei der Umwandlung "Zusammenführen"werden die Werte aus dem Eingab
 title: Merge
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
 exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 4%
+source-wordcount: '253'
+ht-degree: 5%
 
 ---
 
 # Zusammenführen{#merge}
+
+{{eol}}
 
 Bei der Umwandlung &quot;Zusammenführen&quot;werden die Werte aus dem Eingabefeld (normalerweise ein Zeichenfolgenvektor) übernommen, zu einer durch das angegebene Trennzeichen getrennten Zeichenfolge kombiniert und die resultierende Zeichenfolge in das angegebene Ausgabefeld eingefügt.
 
@@ -45,7 +47,7 @@ Bei der Umwandlung &quot;Zusammenführen&quot;werden die Werte aus dem Eingabefe
   </tr> 
   <tr> 
    <td colname="col1"> Trennzeichen </td> 
-   <td colname="col2"> <p>Zeichenfolge, die verwendet wird, um die einzelnen Elemente des Eingabe-String-Vektors in der einzelnen Ausgabe-Zeichenfolge zu trennen. </p> <p> Wenn Sie die Strg-Taste gedrückt halten und mit der rechten Maustaste im Trennzeichen-Parameter klicken, wird das Menü <span class="wintitle"> Einfügen</span> angezeigt. Dieses Menü enthält eine Liste von Sonderzeichen, die häufig als Trennzeichen verwendet werden. </p> </td> 
+   <td colname="col2"> <p>Zeichenfolge, die verwendet wird, um die einzelnen Elemente des Eingabe-String-Vektors in der einzelnen Ausgabe-Zeichenfolge zu trennen. </p> <p> Wenn Sie die Strg-Taste gedrückt halten und mit der rechten Maustaste im Trennzeichen-Parameter klicken, wird ein <span class="wintitle"> Einfügen</span> angezeigt. Dieses Menü enthält eine Liste von Sonderzeichen, die häufig als Trennzeichen verwendet werden. </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 

@@ -3,7 +3,7 @@ description: Vorhandene Dashboards können jederzeit bearbeitet werden, entweder
 title: Bearbeiten oder Aktualisieren eines Dashboards
 uuid: 643f24f5-78ce-4876-8c01-889bfae5735e
 exl-id: 822c5544-f7e3-4297-b784-926c43f8bc4e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Bearbeiten oder Aktualisieren eines Dashboards{#editing-or-updating-a-dashboard}
+
+{{eol}}
 
 Vorhandene Dashboards können jederzeit bearbeitet werden, entweder zu temporären Ad-hoc-Zwecken oder um permanente Änderungen vorzunehmen, die auf dem Server gespeichert werden.
 
@@ -26,5 +28,5 @@ Vorhandene Dashboards können jederzeit bearbeitet werden, entweder zu temporär
 
 1. Öffnen Sie das Dashboard.
 1. Nachdem das Dashboard geladen wurde, wählen Sie **[!UICONTROL Save]** aus dem Dropdown-Menü des Dashboards aus.
-1. Wenn das Fenster **[!UICONTROL Update Existing Dashboard]** angezeigt wird, passen Sie die Optionen für den Dashboard-Titel, die Beschreibung, den Speicherort und die Freigabe nach Bedarf an.
-1. Klicken Sie auf **[!UICONTROL Update]** , um alle Updates auf dem Server zu speichern. Siehe [Speichern eines Dashboards](../../../home/c-adobe-data-workbench-dashboard/c-dashboards/t-saving-a-dashboard.md#task-4132cf487bc640149c91afd0b7b0701e).
+1. Wenn die **[!UICONTROL Update Existing Dashboard]** angezeigt wird, passen Sie den Dashboard-Titel, die Beschreibung, den Speicherort und die Freigabeoptionen nach Bedarf an.
+1. Klicken **[!UICONTROL Update]** , um alle Updates auf dem Server zu speichern. Siehe [Speichern eines Dashboards](../../../home/c-adobe-data-workbench-dashboard/c-dashboards/t-saving-a-dashboard.md#task-4132cf487bc640149c91afd0b7b0701e).

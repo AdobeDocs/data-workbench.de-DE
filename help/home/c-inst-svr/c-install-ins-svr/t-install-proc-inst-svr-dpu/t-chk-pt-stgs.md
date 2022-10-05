@@ -3,7 +3,7 @@ description: Standardmäßig überwacht Insight Server die Ports 80 (HTTP) und 4
 title: Überprüfen der Port-Einstellungen
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
 exl-id: 924860e3-5afa-4c0f-bb7a-d38d5c1355b7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 7%
@@ -12,17 +12,19 @@ ht-degree: 7%
 
 # Überprüfen der Port-Einstellungen{#checking-the-port-settings}
 
+{{eol}}
+
 Standardmäßig überwacht Insight Server die Ports 80 (HTTP) und 443 (HTTPS).
 
-Wenn diese Ports bereits von einem anderen Prozess auf dem Computer zugewiesen werden, auf dem Sie [!DNL Insight Server] installiert haben, ändern Sie die [!DNL Insight Server’s]-Anschlusszuweisungen wie folgt.
+Wenn diese Ports bereits von einem anderen Prozess auf dem Computer zugewiesen werden, auf dem Sie installiert haben [!DNL Insight Server]verwenden Sie die folgende Vorgehensweise, um [!DNL Insight Server’s] Portzuweisungen.
 
 **So ändern Sie die Portzuweisungen**
 
-1. Navigieren Sie zum Ordner [!DNL Components] im Ordner, in dem Sie [!DNL Insight Server] installiert haben.
+1. Navigieren Sie zum [!DNL Components] Ordner im Verzeichnis, in dem Sie installiert haben [!DNL Insight Server].
 
    Beispiel: [!DNL C:\Adobe\Server\Components]
 
-1. Öffnen Sie die Datei [!DNL Communications.cfg] in einem Texteditor wie Notepad.
+1. Öffnen Sie die [!DNL Communications.cfg] in einem Texteditor wie Notepad.
 1. Suchen Sie den Port und die SSL-Port-Einträge, wie unten dargestellt:
 
    ```
@@ -39,4 +41,4 @@ Wenn diese Ports bereits von einem anderen Prozess auf dem Computer zugewiesen w
      . . .
    ```
 
-1. Wenn es sich nicht um die Ports handelt, die [!DNL Insight Server] verwenden soll, ändern Sie die Portzuweisungen, speichern und schließen Sie die Datei.
+1. Wenn dies nicht die gewünschten Ports sind [!DNL Insight Server] zu verwenden, ändern Sie die Portzuweisungen, speichern und schließen Sie die Datei.

@@ -3,7 +3,7 @@ description: Informationen zum Anzeigen von Identifizierungsinformationen zu ein
 title: Anzeigen von Knotendetails
 uuid: 2016a650-b021-4295-8313-d6287578ed10
 exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Anzeigen von Knotendetails{#view-node-details}
+
+{{eol}}
 
 Informationen zum Anzeigen von Identifizierungsinformationen zu einer Profilkomponente.
 
@@ -36,7 +38,7 @@ Typ und Name der Umwandlung, Name der Datei, in der die Umwandlung definiert wir
 
 >[!NOTE]
 >
->Leistungsinformationen für die Transformation werden nur angezeigt, wenn die Option [!DNL Show Performance Data] für die Abhängigkeitszuordnung aktiviert ist. Weitere Informationen finden Sie unter [Anzeigen von Leistungsdaten](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>Leistungsinformationen für die Transformation werden nur angezeigt, wenn die Variable [!DNL Show Performance Data] für die Abhängigkeitszuordnung aktiviert ist. Weitere Informationen finden Sie unter [Anzeigen von Leistungsdaten](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Erweiterte Dimension**
 
@@ -46,7 +48,7 @@ Name und Typ der erweiterten Dimension, Name der Datei, in der die Dimension def
 
 >[!NOTE]
 >
->Leistungsinformationen für die erweiterte Dimension werden nur angezeigt, wenn die Option [!DNL Show Performance Data] für die Abhängigkeitszuordnung aktiviert ist. Weitere Informationen finden Sie unter [Anzeigen von Leistungsdaten](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>Leistungsinformationen für die erweiterte Dimension werden nur angezeigt, wenn die [!DNL Show Performance Data] für die Abhängigkeitszuordnung aktiviert ist. Weitere Informationen finden Sie unter [Anzeigen von Leistungsdaten](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Metrik**
 

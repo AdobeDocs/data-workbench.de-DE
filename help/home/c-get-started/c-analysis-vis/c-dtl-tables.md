@@ -3,7 +3,7 @@ description: Mithilfe von Detailtabellen können Sie zusätzliche Informationen 
 title: Detailtabelle
 uuid: 2becff5e-c78d-4ac7-8cda-814ad0193efd
 exl-id: d7f0b768-f341-41e8-904b-ec98a25f7aa9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Detailtabelle{#detail-table}
+
+{{eol}}
 
 Mithilfe von Detailtabellen können Sie zusätzliche Informationen zu einer Teilmenge von Daten anzeigen, die durch die Auswahlen definiert wird, die Sie in anderen Visualisierungen vornehmen.
 
@@ -55,36 +57,36 @@ Um die oben beschriebenen Details anzuzeigen, müssen Sie die folgenden Schritte
 
 1. Klicken Sie mit der rechten Maustaste in die Detailtabelle und klicken Sie auf **[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**.
 1. Klicken Sie mit der rechten Maustaste in die Detailtabelle und klicken Sie auf **[!UICONTROL Add Level]** > **[!UICONTROL Page View]**.
-1. Klicken Sie mit der rechten Maustaste auf die Überschrift **[!UICONTROL Visitors]** und klicken Sie auf **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
-1. Klicken Sie mit der rechten Maustaste in die Überschrift auf Besucherebene und klicken Sie auf **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**.
-1. Klicken Sie mit der rechten Maustaste in die Überschrift auf Besucherebene und klicken Sie auf **[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**.
-1. Klicken Sie mit der rechten Maustaste in die Überschrift Seitenansichten und klicken Sie auf **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
+1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL Visitors]** Ebenenüberschrift und -klick **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
+1. Klicken Sie mit der rechten Maustaste auf die Überschrift auf Besucherebene und klicken Sie auf **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**.
+1. Klicken Sie mit der rechten Maustaste auf die Überschrift auf Besucherebene und klicken Sie auf **[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**.
+1. Klicken Sie mit der rechten Maustaste auf die Überschrift auf Seitenansichten und klicken Sie auf **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
 
 Der folgende Beispielarbeitsbereich zeigt die zugehörigen Details für eine zufällige Auswahl von sechs Besuchern der Site während des von Ihnen festgelegten Zeitraums.
 
 ![](assets/client-tab1.png)
 
-## Ebene {#section-f948d3361fd84906ac4d9ebce520bfd0} hinzufügen
+## Ebene hinzufügen {#section-f948d3361fd84906ac4d9ebce520bfd0}
 
-* Klicken Sie mit der rechten Maustaste in die Detailtabelle und klicken Sie auf **[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]***.
+* Klicken Sie mit der rechten Maustaste in die Detailtabelle und klicken Sie auf **[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 ![](assets/mnu_DetailsTable_AddLevel.png)
 
 ## Entfernen einer Ebene {#section-a8c820e0b656451e98e5ea75373edefc}
 
-* Klicken Sie mit der rechten Maustaste auf die Überschrift der vorhandenen Ebene und klicken Sie auf **[!UICONTROL Remove Level]** > *&lt;**[!UICONTROL dimension name]***.
+* Klicken Sie mit der rechten Maustaste auf die Überschrift der vorhandenen Ebene und klicken Sie auf **[!UICONTROL Remove Level]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 ![](assets/mnu_DetailsTable_Level.png)
 
 ## Hinzufügen von Attributen und Metriken {#section-cdda2df3c9a448d5b9770686c8b8efb3}
 
-* Klicken Sie mit der rechten Maustaste auf ein Attribut oder eine Metrik-Überschrift und klicken Sie auf **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]*** oder **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]***.
+* Klicken Sie mit der rechten Maustaste auf eine Überschrift für ein Attribut oder eine Metrik und klicken Sie auf **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]**>* oder **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 
-## Attribute und Metriken entfernen {#section-4002ac957a2846678f9940270987d651}
+## Entfernen von Attributen und Metriken {#section-4002ac957a2846678f9940270987d651}
 
-* Klicken Sie mit der rechten Maustaste auf die Spalte, die Sie entfernen möchten, und klicken Sie auf **[!UICONTROL Remove Attribute]** > *&lt;**[!UICONTROL attribute name]*** oder **[!UICONTROL Remove Metric]** > *&lt;**[!UICONTROL metric name]***.
+* Klicken Sie mit der rechten Maustaste auf die Spalte, die Sie entfernen möchten, und klicken Sie auf **[!UICONTROL Remove Attribute]** > *&lt;**[!UICONTROL attribute name]**>* oder **[!UICONTROL Remove Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 

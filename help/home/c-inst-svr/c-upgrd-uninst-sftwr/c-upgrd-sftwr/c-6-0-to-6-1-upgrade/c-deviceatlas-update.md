@@ -3,7 +3,7 @@ description: Die JSON-Datei DeviceAtlas wird jetzt in einer Bundle-Datei (einer 
 title: DeviceAtlas-Distribution
 uuid: 1eb76c61-6696-4e6c-a3fd-61c00cc17b0a
 exl-id: e9671810-d32c-4ec4-a1cb-54b71c6f101c,333507bb-3e8b-4da1-8218-b35fcf8d5f80,aa811c7b-ef80-4f23-b395-0cbb7d2677a9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # DeviceAtlas-Distribution{#deviceatlas-distribution}
 
+{{eol}}
+
 Die JSON-Datei DeviceAtlas wird jetzt in einer Bundle-Datei (einer umbenannten .tar.gz-Datei) zusammen mit den Dateien DeviceAtlas.dll und DeviceAtlas64.dll bereitgestellt.
 
 Wenn der Administrator den Insight Server auf Version 6.0 aktualisiert, ist die Datei DeviceAtlas.bundle im Aktualisierungspaket im Profil Software und Dokumente (Softwareprofil) enthalten, das sich unter folgender Adresse befindet:
 
 [!DNL Server Packages > v6.00 > Server_6.00.zip]
 
-Die Datei DeviceAtlas.bundle wird nach [!DNL Server\Lookups\DeviceAtlas] extrahiert.
+Die Datei DeviceAtlas.bundle wird in extrahiert. [!DNL Server\Lookups\DeviceAtlas].
 
 Die Datei DeviceAtlas.bundle sollte sich in einem Ordner befinden, der mit den DPUs synchronisiert wird, und die Datei DeviceAtlas.cfg, die der neuen DeviceAtlasComponent entspricht, sollte im Ordner &quot;Components for Processing Servers&quot;auf dem Synchronisations-Übergeordnete abgelegt werden. Wenn die Datei DeviceAtlas.bundle geändert wird, erhält der nächste DeviceAtlas-Suchaufruf Ergebnisse basierend auf der aktualisierten API und/oder JSON-Datei.
 
@@ -56,9 +58,9 @@ Diese Beispiel-Datei Transformation.cfg zeigt das File-Argument, das gelöscht w
 User Agent = string: x-ua  
 ```
 
-## Ändern Sie die Datei DeviceAtlas.cfg {#section-10b43705a6c846fd9ec54ea6be249f88}
+## Datei &quot;DeviceAtlas.cfg&quot;ändern {#section-10b43705a6c846fd9ec54ea6be249f88}
 
-Dies ist ein Beispiel für das [!DNL component]-Argument, das in der Datei DeviceAtlas.cfg erforderlich ist.
+Dies ist ein Beispiel für die [!DNL component] -Argument erforderlich in der Datei DeviceAtlas.cfg .
 
 ```
 component = DeviceAtlasComponent: 
@@ -78,8 +80,8 @@ Eine ordnungsgemäße Konfiguration macht einen großen Unterschied in der für 
 
 Führen Sie die Umwandlungen zweimal aus.
 
-1. Suchen Sie nur das Feld [!DNL mobile id] und dann
-1. Erstellen Sie Bedingungen, um die [!DNL mobile id] zu ignorieren, und suchen Sie dann den Rest der Felder.
+1. Suchen Sie nur nach [!DNL mobile id] Feld, dann
+1. Erstellen Sie Bedingungen, um die [!DNL mobile id] und dann den Rest der Felder nachschlagen.
 
 **Bei Bereitstellung mit Transformation.cfg**:
 

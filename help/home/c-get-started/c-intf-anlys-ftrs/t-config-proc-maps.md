@@ -3,25 +3,27 @@ description: Prozesskarten können so konfiguriert werden, dass sie mit jeder Ko
 title: Konfigurieren von Prozesskarten
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
 exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Konfigurieren von Prozesskarten{#configure-a-process-map}
 
+{{eol}}
+
 Prozesskarten können so konfiguriert werden, dass sie mit jeder Kombination aus Basisdimension, Gruppendimension, Ebenendimension und Metrik verwendet werden, die für Ihre Anwendung und Ihren Datensatz sinnvoll ist.
 
-Nachdem Sie eine Prozesszuordnung konfiguriert haben, wird sie mit anderen Prozesskarten im [!DNL Add Visualization menu] aufgelistet.
+Nachdem Sie eine Prozesszuordnung konfiguriert haben, wird sie mit anderen Prozesskarten im [!DNL Add Visualization menu].
 
-1. Klicken Sie in [!DNL Profile Manager] auf **[!UICONTROL Menu]**, klicken Sie auf **[!UICONTROL Add Visualization]** und klicken Sie dann auf den Typ der Prozesszuordnung, die Sie konfigurieren möchten (2D-Metrikzuordnung, 2D-Prozesskarte oder 3D-Prozesskarte).
+1. Im [!DNL Profile Manager]klicken **[!UICONTROL Menu]** klicken **[!UICONTROL Add Visualization]** und klicken Sie dann auf den Typ des Prozesszuordnungstyps, den Sie konfigurieren möchten (2D-Metrikzuordnung, 2D-Prozesszuordnung oder 3D-Prozesszuordnung).
 
-   Mindestens eine [!DNL *.vw] -Datei befindet sich im Verzeichnis.
+   Mindestens ein [!DNL *.vw] -Datei im Verzeichnis gespeichert.
 
 1. Klicken Sie mit der rechten Maustaste auf das Häkchen für die gewünschte Datei und klicken Sie auf **[!UICONTROL Make Local]**.
-1. Klicken Sie mit der rechten Maustaste auf das Häkchen für die Datei in der Spalte [!DNL User] und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Klicken Sie mit der rechten Maustaste auf das Häkchen für die Datei im [!DNL User] Spalte und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Bearbeiten Sie die Parameter der Datei mithilfe der folgenden Beispieldatei und Tabelle als Handbücher:
 
    ```
@@ -56,7 +58,7 @@ Nachdem Sie eine Prozesszuordnung konfiguriert haben, wird sie mit anderen Proze
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><i>Name der Metrik</i> </p> </td> 
+   <td colname="col1"> <p><i>Metrikname</i> </p> </td> 
    <td colname="col2"> <p>Der Name der Metrik, deren Wert für einen bestimmten Knoten proportional zur Größe des Knotens ist. </p> </td> 
   </tr> 
   <tr> 
@@ -80,14 +82,14 @@ Nachdem Sie eine Prozesszuordnung konfiguriert haben, wird sie mit anderen Proze
 
 >[!NOTE]
 >
->Weitere Informationen zur Basisdimension, Gruppendimension, Ebenendimension und Metrik für eine Prozesskarte finden Sie unter [Prozesskarten](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
+>Weitere Informationen zur Basisdimension, Gruppendimension, Ebenendimension und Metrik für eine Prozesszuordnung finden Sie unter [Prozesskarten](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
 
-1. Klicken Sie im Editor auf **[!UICONTROL File]** > **[!UICONTROL Save As]** , um die Datei mit einem neuen Namen zu speichern, der auf der Basisdimension *Basisdimensionsname*.vw basiert.
+1. Klicken Sie im Editor auf **[!UICONTROL File]** > **[!UICONTROL Save As]** , um die Datei mit einem neuen Namen zu speichern, der auf der Basisdimension basiert, d. h. *Name der Basisdimension*.vw.
 
    (Wenn Sie eine 2D-Metrikzuordnung konfigurieren, sollten Sie die Datei mit einem Namen speichern, der auf dem Metriknamen für die Metrikzuordnung basiert, d. h. *Metrikname für Metrikzuordnung*.vw.) Achten Sie darauf, die Datei im entsprechenden Ordner der Prozesszuordnung zu speichern.
 
    >[!NOTE]
    >
-   >Um sicherzustellen, dass Ihre Prozesszuordnung als [!DNL *.vw]-Datei gespeichert wird, legen Sie im Fenster [!DNL Save As] &quot;Dateityp&quot;auf &quot;Alle Dateien&quot;fest.
+   >Um sicherzustellen, dass Ihre Prozesszuordnung als [!DNL *.vw] in der Datei [!DNL Save As] auf &quot;Alle Dateien&quot;setzen.
 
-1. (Optional) Um die Änderungen allen Benutzern des Arbeitsprofils zur Verfügung zu stellen, klicken Sie in der Spalte [!DNL Profile Manager] mit der rechten Maustaste auf das Häkchen für die Datei in der Spalte [!DNL User] und klicken Sie auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. (Optional) Um die Änderungen allen Benutzern des Arbeitsprofils zur Verfügung zu stellen, klicken Sie auf [!DNL Profile Manager]klicken Sie mit der rechten Maustaste auf das Häkchen für die Datei im [!DNL User] Spalte und klicken Sie auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

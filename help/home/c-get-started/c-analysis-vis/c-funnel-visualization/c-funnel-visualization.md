@@ -3,7 +3,7 @@ description: Mit der Trichtervisualisierung können Sie feststellen, wo Kunden e
 title: Trichtervisualisierung
 uuid: 7973a7a9-ed17-4d3d-be14-37b3c17fa371
 exl-id: 2fc261fa-7c93-4de1-af32-ae5b9cbcdc0e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Trichtervisualisierung{#funnel-visualization}
+
+{{eol}}
 
 Mit der Trichtervisualisierung können Sie feststellen, wo Kunden eine Marketing-Kampagne verlassen oder von einem definierten Konversionspfad abweichen, während sie mit Ihrer Website oder Ihrer kanalübergreifenden Kampagne interagieren.
 
@@ -30,7 +32,7 @@ Die Trichtervisualisierung bietet verschiedene Datenebenen:
 
 * **[!UICONTROL Funnel by Visit]**. Dieser Trichter basiert auf einer Interaktion &quot;pro Besuch&quot;.
 * **[!UICONTROL Funnel by Visitor]**. Dieser Trichter basiert auf einer Interaktion &quot;pro Besucher&quot;. Diese Ansicht zeigt die Daten basierend auf dem vom Besucher organisierten Besuch an.
-* Die Dimension **Clip** und die Dimension **Level** . Trichterdimensionen können geändert werden, indem Sie die Dimensionen Clickthrough, Hit, Produkt, Besuch oder Besucherebene auswählen.
+* Die **Clip** Dimension und **Ebene** Dimension. Trichterdimensionen können geändert werden, indem Sie die Dimensionen Clickthrough, Hit, Produkt, Besuch oder Besucherebene auswählen.
 
 * **Metriken**. Sie können die zugrunde liegenden Trichtermetriken von Besuchen, die zum Erstellen des Trichters verwendet werden, in eine beliebige Metrik in Ihrem Profil ändern. Mit der Trichtervisualisierung können Sie Ihre Daten detailliert untersuchen und die Besuchermuster mit mehreren Basismetriken analysieren.
 

@@ -3,7 +3,7 @@ description: Sie können in Prozesskarten Auswahlen vornehmen, um Filter zu erst
 title: Auswahl von Elementen aus Prozesskarten
 uuid: 7fd00090-c9ab-4bb6-8584-7de7b6f4b68c
 exl-id: 8ede395f-906a-49e0-8ff8-b43a326275e5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Auswahl von Elementen aus Prozesskarten{#make-a-selection-from-a-process-map}
+
+{{eol}}
 
 Sie können in Prozesskarten Auswahlen vornehmen, um Filter zu erstellen, die mit einem bestimmten Knoten verknüpfte Daten einschließen oder ausschließen.
 
@@ -30,9 +32,9 @@ Wenn Sie eine Auswahl basierend auf einem Knoten in einer Prozesszuordnung treff
 1. Klicken Sie mit der rechten Maustaste auf einen beliebigen Knoten in einer Prozesszuordnung.
 1. Klicken Sie auf eine der folgenden Optionen, um eine Auswahl basierend auf dem Knoten vorzunehmen:
 
-   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL through node name]**: Filtert die Daten, um alle Elemente der Gruppendimension einzuschließen, die über den Knoten weitergegeben wurden, indem alle Sitzungen herausgefiltert werden, die nicht über den Knoten weitergegeben wurden.
+   * **[!UICONTROL Select]*** **[!UICONTROL group dimension name +s]*** **[!UICONTROL through node name]**: Filtert die Daten, um alle Elemente der Gruppendimension einzuschließen, die über den Knoten weitergegeben wurden, indem alle Sitzungen herausgefiltert werden, die nicht über den Knoten weitergegeben wurden.
 
-   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL NOT through node name]**: Filtert die Daten, um alle Elemente der Gruppendimension einzuschließen, die nicht durch den Knoten weitergegeben wurden, indem alle Sitzungen herausgefiltert werden, die über den Knoten weitergeleitet wurden.
+   * **[!UICONTROL Select]*** **[!UICONTROL group dimension name +s]*** **[!UICONTROL NOT through node name]**: Filtert die Daten, um alle Elemente der Gruppendimension einzuschließen, die nicht durch den Knoten weitergegeben wurden, indem alle Sitzungen herausgefiltert werden, die über den Knoten weitergeleitet wurden.
 
 ![](assets/vis_2DProcessMap_Selections_Movie.png)
 

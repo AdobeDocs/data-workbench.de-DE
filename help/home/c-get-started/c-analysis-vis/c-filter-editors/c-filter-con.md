@@ -3,7 +3,7 @@ description: Informationen zum Arbeiten mit Filterbedingungen, einschließlich E
 title: Arbeiten mit Filterbedingungen
 uuid: a75fcb21-be5c-452a-8632-86cd78db15cb
 exl-id: 15745b0c-2754-4f8b-acfd-a6bd5886ecf8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Arbeiten mit Filterbedingungen{#working-with-filter-conditions}
 
+{{eol}}
+
 Informationen zum Arbeiten mit Filterbedingungen, einschließlich Erstellen eines neuen Filters und Hinzufügen einer Bedingung zu einem neuen Filter.
 
 ## Filter erstellen {#section-70ba51ae625e493fa3ca70b93ffba406}
 
-* Öffnen Sie einen Filter-Editor in Ihrem Arbeitsbereich, indem Sie mit der rechten Maustaste auf **[!UICONTROL Add Visualization]** > **[!UICONTROL Filter Editor]** klicken.
+* Öffnen Sie einen Filter-Editor in Ihrem Arbeitsbereich, indem Sie mit der rechten Maustaste auf **[!UICONTROL Add Visualization]** > **[!UICONTROL Filter Editor]**.
 
    -oder-
 
@@ -25,7 +27,7 @@ Informationen zum Arbeiten mit Filterbedingungen, einschließlich Erstellen eine
 ## Hinzufügen einer Bedingung zu einem neuen Filter {#section-50986db80f1148c489630a8a63fe9f28}
 
 1. Erstellen Sie einen neuen Filter. Stellen Sie sicher, dass der Designfilter hervorgehoben ist (im Gegensatz zu &quot;Filter anwenden&quot;), was angibt, dass Sie im Designfiltermodus arbeiten.
-1. Klicken Sie mit der rechten Maustaste in den Bereich, der mit **[!UICONTROL Right-click to build filter]** markiert ist, und wählen Sie eine der folgenden Optionen aus:
+1. Rechtsklick in den markierten Bereich **[!UICONTROL Right-click to build filter]** und wählen Sie eine der folgenden Optionen aus:
 
    * Um einen Einschlussfilter zu erstellen, klicken Sie auf **[!UICONTROL Include group with]**.
    * Um einen Ausschlussfilter zu erstellen, klicken Sie auf **[!UICONTROL Exclude group with]**.
@@ -48,7 +50,7 @@ Informationen zum Arbeiten mit Filterbedingungen, einschließlich Erstellen eine
   </tr> 
   <tr> 
    <td colname="col1"> <p>mindestens </p> </td> 
-   <td colname="col2">Definiert eine Filterbedingung, die auf dem Vorhandensein von mindestens einem Element (eines beliebigen Elements) einer von Ihnen gewählten Dimension basiert. Klicken Sie zum Bearbeiten der Bedingung mit der rechten Maustaste auf die Bedingung und klicken Sie auf <span class="uicontrol"> Bedingung ändern in . </span> Klicken Sie auf eine der verfügbaren Dimensionen. </td> 
+   <td colname="col2">Definiert eine Filterbedingung, die auf dem Vorhandensein von mindestens einem Element (eines beliebigen Elements) einer von Ihnen gewählten Dimension basiert. Klicken Sie zur Bearbeitung der Bedingung mit der rechten Maustaste auf die Bedingung und klicken Sie auf <span class="uicontrol"> Änderung</span> -Bedingung. Klicken Sie auf eine der verfügbaren Dimensionen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Formel </p> </td> 
@@ -58,27 +60,27 @@ Informationen zum Arbeiten mit Filterbedingungen, einschließlich Erstellen eine
    <td colname="col1"> <p>Metrikwert </p> </td> 
    <td colname="col2"> <p>Definiert eine Filterbedingung basierend auf einem von Ihnen angegebenen Metrikwert. </p> <p>Gehen Sie wie folgt vor, um die Bedingung zu definieren: 
      <ul id="ul_B69D31258A36460E94535709239CD165"> 
-      <li id="li_51317A681E654DD7A9D997DF9F2F22BA">Klicken Sie mit der rechten Maustaste auf <span class="uicontrol"> [Ebene auswählen]</span> &gt; <span class="uicontrol"> Ebene ändern</span> , um Ebene und Metrik aus einer Liste von Dimensionen in Ihrem Datensatz auszuwählen. </li> 
-      <li id="li_975E56C335824FDCB988344952DE2E9F">Klicken Sie mit der rechten Maustaste auf <span class="uicontrol"> [Metrik auswählen]</span> &gt; <span class="uicontrol"> Metrik ändern</span> , um die Metrik aus einer Liste von Metriken in Ihrem Datensatz auszuwählen. </li> 
-      <li id="li_D00B3AF3D8DE472C9D0E9EABBBCAAF61">Klicken Sie mit der rechten Maustaste auf "kleiner als"und klicken Sie auf <span class="uicontrol"> Vergleich ändern</span>, um eine der verfügbaren Vergleichsbedingungen auszuwählen (kleiner als, größer, genau, mindestens oder höchstens). </li> 
+      <li id="li_51317A681E654DD7A9D997DF9F2F22BA">Rechtsklick <span class="uicontrol"> [Ebene auswählen]</span> &gt; <span class="uicontrol"> Änderungsebene</span> , um die Ebene und Metrik aus einer Liste von Dimensionen in Ihrem Datensatz auszuwählen. </li> 
+      <li id="li_975E56C335824FDCB988344952DE2E9F">Rechtsklick <span class="uicontrol"> [Metrik auswählen]</span> &gt; <span class="uicontrol"> Metrik ändern</span> , um die Metrik aus einer Liste von Metriken in Ihrem Datensatz auszuwählen. </li> 
+      <li id="li_D00B3AF3D8DE472C9D0E9EABBBCAAF61">Klicken Sie mit der rechten Maustaste auf "kleiner als"und klicken Sie auf <span class="uicontrol"> Vergleich ändern</span> , um eine der verfügbaren Vergleichsbedingungen auszuwählen (kleiner, größer als, genau, mindestens oder höchstens). </li> 
       <li id="li_3334CE0A0950448590E5442AB243F46B">Geben Sie den gewünschten Wert für die Metrik ein. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>first/last </p> </td> 
-   <td colname="col2"> <p>Definiert einen Filter, mit dem Sie eine Ebene mit einer bestimmten Dimension ein- oder ausschließen können. Sie können beispielsweise einen ersten/letzten Filter angeben, der ein- oder ausgeschlossen werden soll: </p> <p>Sitzungen, deren letzte Seitenansicht eine Seite von <span class="filepath"> /hme/rts/our Rates</span> hat. </p> <p>So definieren Sie eine Erst-/Letzte Bedingung: 
+   <td colname="col2"> <p>Definiert einen Filter, mit dem Sie eine Ebene mit einer bestimmten Dimension ein- oder ausschließen können. Sie können beispielsweise einen ersten/letzten Filter angeben, der ein- oder ausgeschlossen werden soll: </p> <p>Sitzungen, deren letzte Seitenansicht eine Seite von <span class="filepath"> /hme/rts/our Rates</span>. </p> <p>So definieren Sie eine Erst-/Letzte Bedingung: 
      <ul id="ul_5AD916DA093844B8AC70127B1EB9BFC8"> 
-      <li id="li_AB9FF22ADC8843A79856FED60B9478FA">Wählen Sie <span class="uicontrol"> Gruppe mit</span> oder <span class="uicontrol"> Gruppe mit</span> ausschließen &gt; <span class="uicontrol"> first/last</span> als neue Bedingung im Filter-Editor aus. </li> 
-      <li id="li_92F536FCC2A74DDE97F66C6C45ACC3DC">Klicken Sie mit der rechten Maustaste auf <span class="uicontrol"> [Container auswählen]</span> &gt; <span class="uicontrol"> Container</span> ändern , um den Container auszuwählen. </li> 
-      <li id="li_1E5DBE04ABC74D84B7C0EF6886CDB5DC">Klicken Sie mit der rechten Maustaste auf <span class="uicontrol"> first</span> oder <span class="uicontrol"> last</span> , um die Ebene anzugeben. </li> 
+      <li id="li_AB9FF22ADC8843A79856FED60B9478FA">Auswählen <span class="uicontrol"> Gruppe einschließen mit</span> oder <span class="uicontrol"> Gruppe ausschließen mit</span> &gt; <span class="uicontrol"> first/last</span> als neue Bedingung im Filter-Editor. </li> 
+      <li id="li_92F536FCC2A74DDE97F66C6C45ACC3DC">Rechtsklick <span class="uicontrol"> [Container auswählen]</span> &gt; <span class="uicontrol"> Container ändern</span> , um den Container auszuwählen. </li> 
+      <li id="li_1E5DBE04ABC74D84B7C0EF6886CDB5DC">Rechtsklick <span class="uicontrol"> first</span> oder <span class="uicontrol"> last</span> um die Ebene anzugeben. </li> 
       <li id="li_8B73EBF5D06E4513B5F0376EB2805D1C">Klicken Sie mit der rechten Maustaste, um eine Dimension anzugeben, und geben Sie dann einen Wert in das verfügbare Feld ein. </li> 
-      <li id="li_A9E02EF6C6004DDF9B00EB853B6E54EE">Klicken Sie auf <span class="uicontrol">Übernehmen</span>. </li> 
+      <li id="li_A9E02EF6C6004DDF9B00EB853B6E54EE">Klicken Sie auf <span class="uicontrol">Anwenden</span>. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Der Filter in diesem Beispiel definiert einen ersten/letzten Filter für Benutzer, deren letzte Seitenansicht [!DNL /hme/rts/Our Rates] war:
+Der Filter in diesem Beispiel definiert einen ersten/letzten Filter für Benutzer, deren letzter Seitenaufruf [!DNL /hme/rts/Our Rates]:
 
 ![](assets/client-fil2.png)
 
@@ -91,17 +93,17 @@ Der Filter in diesem Beispiel definiert einen ersten/letzten Filter für Benutze
 Der Filter in diesem Beispiel definiert eine Teilmenge von Daten, die aus Filmanbietern (Anwendern) bestehen, die zwar viele Filme bewertet, aber keinem Film eine hohe Punktzahl gegeben haben (4 oder 5). Dieser Filter (entsprechend mit dem Namen Sehr schwer zu empfehlen) besteht aus zwei Bedingungen:
 
 * **Bedingung für einen Metrikwert:** Die Bedingung umfasst Benutzer, die mindestens 500 Filme bewertet haben.
-* **Eine Workspace-Auswahlbedingung:** Die Bedingung schließt Benutzer aus, die einem Film eine Punktzahl von 4 oder 5 gegeben haben. Die Berechnung zeigt an, dass 4 und 5 die aus der Score-Dimension ausgewählten Elemente waren.
+* **Eine Bedingung für die Arbeitsbereichsauswahl:** Die Bedingung schließt Benutzer aus, die einem Film eine Punktzahl von 4 oder 5 gegeben haben. Die Berechnung zeigt an, dass 4 und 5 die aus der Score-Dimension ausgewählten Elemente waren.
 
 ![](assets/vis_FilterEditor_ExampleMovies.png)
 
-## Filterbedingung {#section-3092e0d7ac624885b8fe24616279de13} löschen
+## Filterbedingung löschen {#section-3092e0d7ac624885b8fe24616279de13}
 
 >[!NOTE]
 >
 >Sie können Bedingungen nur löschen, wenn Sie im Designfiltermodus arbeiten. Wenn Sie einen Filter auf Ihren Arbeitsbereich angewendet haben, müssen Sie auf Design Filter klicken, um in den Designfiltermodus zurückzukehren, bevor Sie eine oder mehrere Filterbedingungen löschen können.
 
-* Klicken Sie auf **x** links neben der Bedingung, um sie zu löschen.
+* Klicken Sie auf **x** auf der linken Seite der Bedingung, um sie zu löschen.
 
 ## Bearbeiten einer Bedingungsbeschreibung {#section-5015fd2c88ed4b6a95be7f0d53be2db0}
 
@@ -113,7 +115,7 @@ Sie können allen Bedingungen, die Sie einem Filter hinzufügen, Beschreibungen 
 
 * Klicken Sie mit der rechten Maustaste auf die Bedingung und klicken Sie auf **[!UICONTROL Edit description]**.
 
-   * Um eine Beschreibung hinzuzufügen oder zu bearbeiten, geben Sie sie in das Feld [!DNL Edit condition description] ein. Die Beschreibung wird in Anführungszeichen oberhalb der Bedingung im Fenster des Filtereditors angezeigt.
+   * Um eine Beschreibung hinzuzufügen oder zu bearbeiten, geben Sie die Beschreibung in das [!DNL Edit condition description] -Feld. Die Beschreibung wird in Anführungszeichen oberhalb der Bedingung im Fenster des Filtereditors angezeigt.
 
       ![](assets/vis_FilterEditor_ConditionDescription.png)
 

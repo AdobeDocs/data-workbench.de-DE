@@ -3,7 +3,7 @@ description: Die Formatumwandlung benötigt eine Reihe von Eingaben und formatie
 title: Format
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
 exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Format{#format}
+
+{{eol}}
 
 Die Formatumwandlung benötigt eine Reihe von Eingaben und formatiert sie, um eine Ausgabe zu erstellen, die der angegebenen Struktur entspricht.
 
@@ -47,7 +49,7 @@ Die Transformation arbeitet entweder mit einfachen Zeichenfolgen oder Zeichenfol
   </tr> 
   <tr> 
    <td colname="col1"> Eingaben </td> 
-   <td colname="col2"> <p>Felder, die einfache Zeichenfolgen oder Zeichenfolgen-Vektoren enthalten. Bei Zeichenfolgenvektoren als Eingabe ist die Ausgabe auch ein Zeichenfolgenvektor, der aus der Anwendung des Parameters <span class="wintitle"> Format</span> auf jeden Satz von Eingabewerten resultiert. </p> <p> <p>Hinweis:  Die Nummerierung der Eingaben beginnt bei 0, aber die Nummerierung der Formatersetzungswerte beginnt bei %1 %. </p> </p> </td> 
+   <td colname="col2"> <p>Felder, die einfache Zeichenfolgen oder Zeichenfolgen-Vektoren enthalten. Bei Zeichenfolgenvektoren als Eingabe ist die Ausgabe auch ein Zeichenfolgenvektor, der aus der Anwendung der <span class="wintitle"> Format</span> auf jeden Satz von Eingabewerten fest. </p> <p> <p>Hinweis: Die Nummerierung der Eingaben beginnt bei 0, aber die Nummerierung der Formatersetzungswerte beginnt bei %1 %. </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 

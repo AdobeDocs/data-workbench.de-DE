@@ -3,7 +3,7 @@ description: Seitenüberlagerungen werden nur in der Site-Anwendung konfiguriert
 title: Konfigurieren von Seitenüberlagerungen
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
 exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Konfigurieren von Seitenüberlagerungen{#configure-a-page-overlay}
+
+{{eol}}
 
 Seitenüberlagerungen werden nur in der Site-Anwendung konfiguriert, können jedoch für andere Anwendungen konfiguriert werden.
 
@@ -26,13 +28,13 @@ Die Seitenüberlagerung zeigt nur Daten an, wenn Sie dem Arbeitsbereich, der die
 
 Seitenüberlagerungen weisen dem Benutzer naturgemäß das mentale Modell darauf hin, dass es anzeigt, &quot;wo die Benutzer klicken&quot;. Wenn die Daten, die die Visualisierung unterstützen, nicht mit diesem Modell übereinstimmen, ist das Verwirrungspotenzial hoch.
 
-In [!DNL Site] stellt ein Link normalerweise ein Element aus der Dimension &quot;Nächster URI&quot;oder &quot;Nächster Link&quot;dar. Sie können jedoch einen Link zu einer Dimension zuordnen, die für Ihre Analyse sinnvoll ist. Informationen zum Konfigurieren von Seitenüberlagerungen für andere Dimensionen erhalten Sie von Adobe Consulting Services.
+In [!DNL Site], stellt ein Link normalerweise ein Element aus der Dimension &quot;Nächster URI&quot;oder &quot;Nächster Link&quot;dar, Sie können jedoch einen Link zu einer Dimension zuordnen, die für Ihre Analyse sinnvoll ist. Informationen zum Konfigurieren von Seitenüberlagerungen für andere Dimensionen erhalten Sie von Adobe Consulting Services.
 
 >[!NOTE]
 >
 >Die Verwendung der Dimension Seite für Seitenüberlagerungen wird nicht empfohlen. Benutzer können die Elemente der Seitendimensionen umbenennen und dadurch die Linksyntax ändern, auf der die Seitenüberlagerungsfunktion basiert.
 
-Um die Seitenüberlagerung für [!DNL Site] zu konfigurieren, müssen Sie zwei Dateien bearbeiten:
+So konfigurieren Sie die Seitenüberlagerung für [!DNL Site]müssen Sie zwei Dateien bearbeiten:
 
 * **[!DNL Page Overlay.vw]:** Diese Datei ist eine Vorlagendatei zum Erstellen von Visualisierungen von Seitenüberlagerungen. Mindestens eine Vorlagendatei muss im Profil vorhanden sein, für das Sie die Seitenüberlagerung konfigurieren.
 * **[!DNL Page Overlay Link Templates.cfg]:** Wenn die Visualisierung der Seitenüberlagerung eine Seite lädt, identifiziert sie automatisch die Links auf der Seite und ihre Ziele. Um diese Relationen mit Elementen in den Daten zu verknüpfen, müssen Sie in dieser Datei einen Satz regulärer Ausdrücke definieren.
@@ -43,13 +45,13 @@ Um die Seitenüberlagerung für [!DNL Site] zu konfigurieren, müssen Sie zwei D
 
 1. I
 
-   Navigieren Sie in [!DNL Profile Manager] zu **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
+   n [!DNL Profile Manager], navigieren Sie zu **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
 
    >[!NOTE]
    >
    >Der Ordner &quot;Dimension Element&quot;enthält die Kontextmenüelemente, die angezeigt werden, wenn Sie mit der rechten Maustaste auf ein Dimensionselement klicken. Öffnen Sie beispielsweise eine URI-Tabelle und wählen Sie ein URI-Element aus. Klicken Sie mit der rechten Maustaste auf den URI und die Seitenüberlagerung wird angezeigt.
 
-1. Klicken Sie im URI-Ordner mit der rechten Maustaste auf das Häkchen neben der Datei [!DNL Page Overlay.vw] und klicken Sie auf **[!UICONTROL Make Local]**. Ein Häkchen für diese Datei wird in der Spalte [!DNL User] angezeigt.
+1. Klicken Sie im URI-Ordner mit der rechten Maustaste auf das Häkchen neben dem [!DNL Page Overlay.vw] Datei und klicken Sie auf **[!UICONTROL Make Local]**. Ein Häkchen für diese Datei wird im [!DNL User] Spalte.
 1. Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Geben Sie die Domäne (und ggf. die Browserhöhe) an.
 
@@ -74,18 +76,18 @@ Um die Seitenüberlagerung für [!DNL Site] zu konfigurieren, müssen Sie zwei D
    ```
 
 1. Speichern Sie die Datei.
-1. Um diese Änderung allen Benutzern des Arbeitsprofils zur Verfügung zu stellen, klicken Sie in der Spalte [!DNL Profile Manager] mit der rechten Maustaste auf das Häkchen für die Datei [!DNL .vw] in der Spalte [!DNL User] und klicken Sie auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. Um diese Änderung allen Benutzern des Arbeitsprofils zur Verfügung zu stellen, klicken Sie im [!DNL Profile Manager]klicken Sie mit der rechten Maustaste auf das Häkchen für die [!DNL .vw] in der Datei [!DNL User] Spalte und klicken Sie auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
    >[!NOTE]
    >
-   >Sie können zusätzliche Vorlagendateien für andere Sites oder Subdomänen erstellen. Jede von Ihnen erstellte Vorlage wird im [!DNL Page Overlay menu] angezeigt.
+   >Sie können zusätzliche Vorlagendateien für andere Sites oder Subdomänen erstellen. Jede von Ihnen erstellte Vorlage wird im [!DNL Page Overlay menu].
 
-1. Klicken Sie im Kontextordner von [!DNL Profile Manager] mit der rechten Maustaste auf das Häkchen neben der Datei [!DNL Page Overlay Link Templates.cfg] und klicken Sie auf **[!UICONTROL Make Local]**.
+1. Im Ordner Kontext des [!DNL Profile Manager]klicken Sie mit der rechten Maustaste auf das Häkchen neben dem [!DNL Page Overlay Link Templates.cfg] Datei und klicken Sie auf **[!UICONTROL Make Local]**.
 
-   Ein Häkchen für diese Datei wird in der Spalte [!DNL User] angezeigt.
+   Ein Häkchen für diese Datei wird im [!DNL User] Spalte.
 
 1. Klicken Sie mit der rechten Maustaste auf das neu erstellte Häkchen und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
-1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL Link Templates]** und klicken Sie auf **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
+1. Rechtsklick **[!UICONTROL Link Templates]** und klicken Sie auf **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
 1. Bearbeiten Sie die Parameter für den LinkRegex-Vektor nach Bedarf:
 
 <table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B">
@@ -102,7 +104,7 @@ Um die Seitenüberlagerung für [!DNL Site] zu konfigurieren, müssen Sie zwei D
   </tr>
   <tr>
    <td colname="col1"> <p>Ausdruck </p> </td>
-   <td colname="col2"> <p>Der reguläre Ausdruck, der verwendet wird, um den entsprechenden Teil des HTML-Links auszuwählen und das nächste Element aus der Dimension zu finden. Der reguläre Ausdruck muss eine exakte Übereinstimmung aufweisen, und das gewünschte Ausgabemuster ist in Klammern gruppiert. Weitere Informationen zu regulären Ausdrücken finden Sie im <i>Handbuch zur Datensatzkonfiguration</i>. </p> </td>
+   <td colname="col2"> <p>Der reguläre Ausdruck, der verwendet wird, um den entsprechenden Teil des HTML-Links auszuwählen und das nächste Element aus der Dimension zu finden. Der reguläre Ausdruck muss eine exakte Übereinstimmung aufweisen, und das gewünschte Ausgabemuster ist in Klammern gruppiert. Weitere Informationen zu regulären Ausdrücken finden Sie unter <i>Anleitung zur Datensatzkonfiguration</i>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Ausgabemuster </p> </td>
@@ -115,5 +117,5 @@ Die folgende Beispieldatei zeigt drei reguläre Ausdrücke:
 
 ![](assets/cfg_PageOverlayLinkTemplates_Example.png)
 
-1. Klicken Sie zum Speichern der Datei mit der rechten Maustaste auf **[!UICONTROL (modified)]** oben im Fenster und klicken Sie auf **[!UICONTROL Save]**.
-1. Um diese Änderung allen Benutzern des Arbeitsprofils zur Verfügung zu stellen, klicken Sie mit der rechten Maustaste auf das Häkchen für [!DNL Page Overlay Link Templates.cfg] in der Spalte [!DNL User] und klicken Sie auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. Um die Datei zu speichern, klicken Sie mit der rechten Maustaste auf **[!UICONTROL (modified)]** Klicken Sie oben im Fenster auf **[!UICONTROL Save]**.
+1. Um diese Änderung allen Benutzern des Arbeitsprofils zur Verfügung zu stellen, klicken Sie mit der rechten Maustaste auf das Häkchen für [!DNL Page Overlay Link Templates.cfg] im [!DNL User] Spalte und klicken Sie auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

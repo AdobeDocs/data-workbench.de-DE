@@ -4,7 +4,7 @@ solution: Analytics
 title: Ermöglichen gesteuerter Experimente
 uuid: 27d68fad-ae2d-4a2e-b449-fbaf88286cfa
 exl-id: 53c18524-6050-4708-af63-9e8ef8da389e
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 2%
@@ -12,6 +12,8 @@ ht-degree: 2%
 ---
 
 # Ermöglichen gesteuerter Experimente{#enabling-controlled-experimentation}
+
+{{eol}}
 
 Um eine kontrollierte Experimentierung zu aktivieren, muss jemand mit Administratorzugriff auf Ihre Web- oder Anwendungsserver den Parameter ExpFile in der Konfigurationsdatei Sensor ändern (gewöhnlich mit txlogd.conf benannt), der auf jedem Web- oder Anwendungsserver in Ihrem Webcluster, auf dem ein Sensor installiert ist, installiert ist.
 

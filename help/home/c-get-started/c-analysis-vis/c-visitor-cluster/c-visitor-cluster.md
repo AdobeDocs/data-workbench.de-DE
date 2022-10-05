@@ -3,7 +3,7 @@ description: Mit dem Besucher-Clustering können Sie Kundenmerkmale nutzen, um B
 title: Besucher-Clustering
 uuid: 0c16aaa0-1d86-43a6-a7e2-b43b3ea80dc5
 exl-id: 68c1845d-9c49-4ad9-adf3-c123d08cf758
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Besucher-Clustering{#visitor-clustering}
+
+{{eol}}
 
 Mit dem Besucher-Clustering können Sie Kundenmerkmale nutzen, um Besucher dynamisch zu kategorisieren und basierend auf ausgewählten Dateneingaben Cluster-Sets zu generieren, um Gruppen zu identifizieren, die ähnliche Interessen und Verhaltensweisen für die Kundenanalyse und das Targeting haben.
 
@@ -25,22 +27,22 @@ Der Clustering-Prozess erfordert, dass Sie Metriken und Dimensionselemente ident
 * Der Mittelwert jedes K-Clusters wird zum neuen Zentrum.
 * Der Algorithmus wird in den Schritten 2 und 3 wiederholt, bis die Konvergenz erreicht ist. Das kann mehrere Durchgänge dauern.
 
-Mit dem Menü **[!UICONTROL Maximum Iterations]** im Menü **[!UICONTROL Options]** können Analysten die maximale Anzahl von Iterationen angeben, die vom Clustering-Algorithmus ausgeführt werden sollen. Die Festlegung dieser Option kann zu einer schnelleren Fertigstellung des Clustering-Prozesses auf der Grundlage der maximalen Iterationsbegrenzung auf Kosten der exakten Konvergenz der Cluster-Zentren führen.
+Die **[!UICONTROL Maximum Iterations]** im **[!UICONTROL Options]** -Menü kann der Analyst die maximale Anzahl der Iterationen angeben, die vom Clustering-Algorithmus ausgeführt werden sollen. Die Festlegung dieser Option kann zu einer schnelleren Fertigstellung des Clustering-Prozesses auf der Grundlage der maximalen Iterationsbegrenzung auf Kosten der exakten Konvergenz der Cluster-Zentren führen.
 
 >[!NOTE]
 >
 >Sobald die Cluster definiert wurden, kann die Cluster-Dimension wie jede andere Dimension zur Verwendung gespeichert werden. Es kann auch in den Cluster Explorer geladen werden, um die Trennung von Cluster-Zentren zu untersuchen.
 
-Im Cluster Builder können Sie **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** auswählen, um beim Definieren von Clustern Algorithmen auszuwählen. Derzeit werden drei Algorithmen unterstützt:
+Im Cluster Builder können Sie **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** , um beim Definieren von Clustern Algorithmen auszuwählen. Derzeit werden drei Algorithmen unterstützt:
 
 * KMeans
-* Kmittel`++`
+* Kbedeutet`++`
 * Maximierung der Erwartungen
 
 Es gibt 2 Möglichkeiten, den Clustering-Prozess auszuführen:
 
-* Methode 1 - Klicken Sie im Fenster zur Clustervisualisierung auf **[!UICONTROL Go]** .
-* Methode 2 - Klicken Sie im Fenster zur Clustervisualisierung auf **[!UICONTROL Submit]**, wodurch der Clustering-Auftrag direkt an den Server gesendet wird. Sie können den Fortschritt über die Option &quot;Detaillierter Status für Abfrage&quot;verfolgen.
+* Methode 1 - Klicken **[!UICONTROL Go]** im Visualisierungsfenster des Clusters.
+* Methode 2 - Klicken **[!UICONTROL Submit]** im Fenster der Clustervisualisierung, das den Clustering-Auftrag direkt an den Server sendet. Sie können den Fortschritt über die Option &quot;Detaillierter Status für Abfrage&quot;verfolgen.
 
 ![](assets/dwb_visitorclustering.png)
 
@@ -51,7 +53,7 @@ Der Algorithmus weist die folgenden Einschränkungen auf:
 
 >[!NOTE]
 >
->In der Datei [!DNL DPU.cfg] ist der Wert für &quot;Abfrage, Speicherbegrenzung&quot;standardmäßig auf 500 MB festgelegt. Dieser Wert muss erhöht werden, während mehrere Clustering-Aufträge ausgeführt werden. Wenn Sie beispielsweise 5 Clustering-Aufträge parallel ausführen, erhöhen Sie diesen Wert auf 1 GB. Es gibt keine Möglichkeit, den Clustering-Auftrag abzubrechen, ohne den Server neu zu starten.
+>Im [!DNL DPU.cfg] -Datei, wird der Wert für &quot;Abfrage, Speicherbegrenzung&quot;standardmäßig auf 500 MB festgelegt. Dieser Wert muss erhöht werden, während mehrere Clustering-Aufträge ausgeführt werden. Wenn Sie beispielsweise 5 Clustering-Aufträge parallel ausführen, erhöhen Sie diesen Wert auf 1 GB. Es gibt keine Möglichkeit, den Clustering-Auftrag abzubrechen, ohne den Server neu zu starten.
 
 **Empfehlungen**
 

@@ -3,14 +3,16 @@ description: Das Data Workbench-Dashboard enthält eine Seitenleiste und eine Sy
 title: Dashboard-Benutzeroberfläche
 uuid: cfa6c553-e223-4b0e-8b4a-255afa85c999
 exl-id: f80da6c7-02cb-4916-b139-617703cf27b6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
 # Dashboard-Benutzeroberfläche{#dashboard-user-interface}
+
+{{eol}}
 
 Das Data Workbench-Dashboard enthält eine Seitenleiste und eine Symbolleiste mit Funktionsmenüs sowie eine Dashboard-Arbeitsfläche, auf der Sie Datenvisualisierungen anzeigen können.
 
@@ -43,6 +45,6 @@ Die obere Symbolleiste bietet Zugriff auf diese spezifischen Menüs. Außerdem w
 | Dashboard-Menü | Ein Dropdown-Menü zum Öffnen, Erstellen, Speichern und Exportieren von Dashboards. |
 | Visualisierungsmenü hinzufügen | Ein Dropdown-Menü zum Hinzufügen von Visualisierungen zum Dashboard. |
 | Dashboard-Titel | Zeigt den Titel des aktuellen Dashboards an. |
-| Menü aktualisieren | Durch Klicken auf den Indikator **[!UICONTROL Update]** wird das aktuelle Dashboard aktualisiert, wobei alle neuen Auswahlmöglichkeiten und/oder Konfigurationsänderungen berücksichtigt werden. Das Menü bietet die Möglichkeit, den Parameter **[!UICONTROL Query-to]** sowie einige erweiterte Funktionen für Administratoren anzupassen. |
+| Menü aktualisieren | Klicken Sie auf **[!UICONTROL Update]** wird das aktuelle Dashboard aktualisiert, wobei alle neuen Auswahlmöglichkeiten und/oder Konfigurationsänderungen berücksichtigt werden. Das Menü bietet die Möglichkeit, die **[!UICONTROL Query-to]** , zusammen mit einigen erweiterten Funktionen für Administratoren. |
 | Hilfemenü | Über dieses Dropdown-Menü gelangen Sie zum Abschnitt Benutzerhandbuch, FAQ und Info der Anwendung. |
 | Benutzermenü | Ein Dropdown-Menü für die Abmeldung, den Zugriff auf Kontoeinstellungen und den Zugriff auf den Administrationsbereich (nur für Administratoren). |

@@ -3,7 +3,7 @@ description: Hierarchieansichten sind nur bei Verwendung der Site- oder HBX-Anwe
 title: Anwenden von Hierarchieansichten
 uuid: 859a92af-4f7e-4bb5-9a98-917006894301
 exl-id: 27a69404-40d3-44ab-bf5c-b2a5d8d836c2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # Anwenden von Hierarchieansichten{#apply-hierarchy-views}
 
+{{eol}}
+
 Hierarchieansichten sind nur bei Verwendung der Site- oder HBX-Anwendung verfügbar.
 
 In der Hierarchieansicht werden die Seiten einer Website hierarchisch nach Dateinamen geordnet und alphabetisch sortiert. Die Hierarchieansicht ist zwar für die Analyse selbst nützlich, kann aber auch verwendet werden, um erweiterte Visualisierungen wie Prozesskarten einzurichten. Weitere Informationen zu Prozesskarten finden Sie unter [Prozesskarten](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
 
 >[!NOTE]
 >
->Wenn Ihr Datensatz für die Ausführung auf mehreren Servern in einem Cluster konfiguriert wurde und diese Funktion ordnungsgemäß ausgeführt werden soll, muss Ihr Systemadministrator angeben, welche Maschine als Central Normalization Server fungiert. Anweisungen dazu finden Sie im Kapitel Konfigurationsdatei für die Protokollverarbeitung im *Handbuch zur Datensatzkonfiguration*.
+>Wenn Ihr Datensatz für die Ausführung auf mehreren Servern in einem Cluster konfiguriert wurde und diese Funktion ordnungsgemäß ausgeführt werden soll, muss Ihr Systemadministrator angeben, welche Maschine als Central Normalization Server fungiert. Anweisungen hierzu finden Sie im Kapitel Konfigurationsdatei für die Protokollverarbeitung im Abschnitt *Anleitung zur Datensatzkonfiguration*.
 
 ![](assets/vis_Table_CompareHierarchy.png)
 
@@ -28,7 +30,7 @@ In der Hierarchieansicht werden die Seiten einer Website hierarchisch nach Datei
 
    ![](assets/mnu_Table_HierarchyView.png)
 
-   Neben der Option wird ein X angezeigt, wenn [!DNL hierarchy view] aktiv ist.
+   Neben der Option wird ein X angezeigt, wenn die [!DNL hierarchy view] ist aktiv.
 
    Die Hierarchie ist mithilfe einer Baumstruktur in Website-Abschnitte und Seiten unterteilt. Abschnitte (Knoten) können mit dem Symbol + oder - neben dem Abschnittsnamen erweitert oder gekürzt werden. Einzelne Seiten haben kein &quot;+&quot;- oder &quot;-&quot;-Symbol neben ihnen.
 
@@ -36,9 +38,9 @@ In der Hierarchieansicht werden die Seiten einer Website hierarchisch nach Datei
 
 ## Maskieren von Dimension-Elementen in einer Hierarchieansicht {#section-e477c469934846da8d807f92fc2f3ed1}
 
-Maskieren bezeichnet die Auswahl einer Teilmenge Ihrer Daten oder einer Teilmenge der Elemente in einer Dimension. Sie können Elemente, die nicht in die Analyse aufgenommen werden sollen, maskieren oder ausblenden. Mit den Menüoptionen [!DNL Mask] für Hierarchieansichten wählen Sie den Mindestprozentsatz einer Metrik aus, der für ein Element in der Visualisierung angezeigt werden muss.
+Maskieren bezeichnet die Auswahl einer Teilmenge Ihrer Daten oder einer Teilmenge der Elemente in einer Dimension. Sie können Elemente, die nicht in die Analyse aufgenommen werden sollen, maskieren oder ausblenden. Verwenden der [!DNL Mask] Menüoptionen für Hierarchieansichten auswählen, dass der Mindestanteil einer Metrik in der Visualisierung angezeigt werden muss.
 
-**So maskieren Sie Daten mithilfe der  [!DNL Mask] Menüoption**
+**So maskieren Sie Daten mithilfe der [!DNL Mask] Menüoption**
 
 1. Klicken Sie mit der rechten Maustaste auf ein Element oder den Titel der Dimension und klicken Sie auf **[!UICONTROL Mask]**.
 

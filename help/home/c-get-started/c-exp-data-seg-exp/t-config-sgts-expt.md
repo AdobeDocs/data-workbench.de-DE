@@ -3,7 +3,7 @@ description: Sie können ein Segment der Elemente einer beliebigen zählbaren Di
 title: Konfigurieren von Segmenten für den Export
 uuid: 651be834-ee41-4487-8c5a-30d94580f6a0
 exl-id: 4f53e02c-3f00-44b3-9f6d-a2f23903b3fa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '865'
 ht-degree: 6%
@@ -12,17 +12,19 @@ ht-degree: 6%
 
 # Konfigurieren von Segmenten für den Export{#configure-segments-for-export}
 
+{{eol}}
+
 Sie können ein Segment der Elemente einer beliebigen zählbaren Dimension erstellen und dann Daten für dieses Segment auf Batch- oder fortlaufender Echtzeitbasis in einer tabulatorgetrennten Datei ausgeben.
 
 Immer, wenn Sie ein Segment exportieren, geben Sie Metrik- oder Dimensionsdaten für alle im Segment mit eingeschlossenen Dimensionselemente aus. Sie können steuern, wie die Ausgabedaten formatiert werden, so dass die Daten problemlos von anderen Systemen geladen werden können.
 
 >[!NOTE]
 >
->Sie können keine Berichtsdimensionen exportieren, da sie eine [!DNL report time.metric]-Datei als Referenz verwenden. Wenn Sie als Problemumgehung ein hartcodiertes [!DNL report time.metric] im Profil platzieren, kann der Segmentexport es als Referenzpunkt für Berichtsdimensionen verwenden. Der [!DNL report time.metric] wird jedoch nicht automatisch basierend auf dem Ausführungszeitpunkt des Profils aktualisiert. Wenn Sie also den Verweis auf die Berichtsdimension ändern möchten, müssen Sie die hartcodierte [!DNL report time.metric]-Datei ändern.
+>Sie können keine Berichtsdimensionen exportieren, da sie eine [!DNL report time.metric] -Datei als Referenz. Wenn Sie als Problemumgehung eine hartcodierte [!DNL report time.metric] im Profil kann der Segmentexport ihn als Referenzpunkt für Berichtsdimensionen verwenden. Die Variable [!DNL report time.metric] wird nicht automatisch auf Grundlage des Ausführungszeitpunkts des Profils aktualisiert. Wenn Sie also den Verweis auf die Berichtsdimension ändern möchten, müssen Sie die hartcodierte [!DNL report time.metric] -Datei.
 
-Um ein Segment für den Export zu konfigurieren, müssen Sie eine [!DNL .export]-Datei öffnen und bearbeiten.
+Um ein Segment für den Export zu konfigurieren, müssen Sie eine [!DNL .export] -Datei.
 
-1. Klicken Sie im Verzeichnis [!DNL Profile Manager] in der Spalte [!DNL File] auf das Verzeichnis **[!UICONTROL Export]** , um dessen Inhalt anzuzeigen.
+1. Im [!DNL Profile Manager], klicken Sie auf die **[!UICONTROL Export]** im Verzeichnis [!DNL File] -Spalte, um ihren Inhalt anzuzeigen.
 
        Wenn das Exportverzeichnis nicht vorhanden ist, erstellen Sie es wie folgt:
    
@@ -30,16 +32,16 @@ Um ein Segment für den Export zu konfigurieren, müssen Sie eine [!DNL .export]
    1. Öffnen Sie das Verzeichnis für das Profil, mit dem Sie arbeiten.
    1. Erstellen Sie im Profilverzeichnis ein neues Verzeichnis mit dem Namen &quot;Export&quot;.
 
-1. Klicken Sie im Ordner [!DNL Profile Manager] mit der rechten Maustaste auf die leere Zelle in der Spalte [!DNL User] für das Exportverzeichnis und klicken Sie dann auf **[!UICONTROL Create]** > **[!UICONTROL New Segment Export]**.
+1. Im [!DNL Profile Manager]klicken Sie mit der rechten Maustaste auf die leere Zelle im [!DNL User] Spalte für das Exportverzeichnis und klicken Sie auf **[!UICONTROL Create]** > **[!UICONTROL New Segment Export]**.
 
-   Eine Datei mit dem Namen [!DNL New Segment Export.export] wird in der Spalte [!DNL File] für &quot;Export&quot;angezeigt.
+   Eine Datei mit dem Namen [!DNL New Segment Export.export] im [!DNL File] -Spalte für Export.
 
-1. Benennen Sie die neue Datei um, indem Sie mit der rechten Maustaste in die Spalte [!DNL User] der Datei klicken und den neuen Namen im Parameter Datei eingeben.
-1. Öffnen Sie die neue Datei, indem Sie mit der rechten Maustaste in die Spalte [!DNL User] der Datei klicken und **[!UICONTROL Open]** > **[!UICONTROL from the workbench]** auswählen.
+1. Benennen Sie die neue Datei um, indem Sie mit der rechten Maustaste auf die [!DNL User] -Spalte für die Datei und geben Sie den neuen Namen in den Dateiparameter ein.
+1. Öffnen Sie die neue Datei, indem Sie mit der rechten Maustaste auf die [!DNL User] Spalte für die Datei und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
 
-   Das Konfigurationsfenster für die Datei [!DNL .export] wird angezeigt.
+   Das Konfigurationsfenster für die [!DNL .export] angezeigt.
 
-1. Klicken Sie auf **[!UICONTROL Query]** und ändern Sie dann die Felder der Datei [!DNL .export] wie in der folgenden Tabelle beschrieben:
+1. Klicken **[!UICONTROL Query]**, ändern Sie dann die Felder der [!DNL .export] -Datei wie in der folgenden Tabelle beschrieben:
 
 <table id="table_C2EC8FCD3FA04DE78D2CADFA3F7FD8E3"> 
  <thead> 
@@ -51,7 +53,7 @@ Um ein Segment für den Export zu konfigurieren, müssen Sie eine [!DNL .export]
  <tbody> 
   <tr> 
    <td colname="col1"> Befehl </td> 
-   <td colname="col2"> <p>Optional. Ein Programm, das ausgeführt wird, nachdem die Ausgabedatei erstellt wurde. Dieses Feld muss auf eine ausführbare Datei (eine <span class="filepath"> .exe </span> -Datei) verweisen, nicht auf einen Shell-Befehl. </p> <p>Hinweis:  Der Segmentexport schlägt fehl, wenn im Befehlsparameter ein Leerzeichen vorhanden ist. </p> </td> 
+   <td colname="col2"> <p>Optional. Ein Programm, das ausgeführt wird, nachdem die Ausgabedatei erstellt wurde. Dieses Feld muss auf eine ausführbare Datei (eine <span class="filepath"> .exe </span> -Datei), kein Shell-Befehl. </p> <p>Hinweis: Der Segmentexport schlägt fehl, wenn im Befehlsparameter ein Leerzeichen vorhanden ist. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Filter </td> 
@@ -63,7 +65,7 @@ Um ein Segment für den Export zu konfigurieren, müssen Sie eine [!DNL .export]
   </tr> 
   <tr> 
    <td colname="col1"> Ausgabedatei </td> 
-   <td colname="col2"> <p>Pfad und Dateiname der exportierten Daten. Wenn das Profil auf einem Data Workbench-Server-Cluster ausgeführt wird, schreibt jeder Data Workbench-Server eine Ausgabedatei, die einen Teil der Daten enthält. </p> <p>Der Installationsordner des Data Workbench-Servers enthält einen Ordner "Exporte", in dem Sie die Ausgabedatei speichern können. Sie können beispielsweise <span class="filepath"> Exporte\Visitor Segment.txt </span> eingeben, wobei <span class="filepath"> Visitor Segment.txt </span> der Name der Datei ist, die die exportierten Daten enthält. </p> </td> 
+   <td colname="col2"> <p>Pfad und Dateiname der exportierten Daten. Wenn das Profil auf einem Data Workbench-Server-Cluster ausgeführt wird, schreibt jeder Data Workbench-Server eine Ausgabedatei, die einen Teil der Daten enthält. </p> <p>Der Installationsordner des Data Workbench-Servers enthält einen Ordner "Exporte", in dem Sie die Ausgabedatei speichern können. Sie können beispielsweise <span class="filepath"> Exports\Visitor Segment.txt </span>, wobei <span class="filepath"> Visitor Segment.txt </span> ist der Name der Datei, die die exportierten Daten enthält. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Ausgabeformat </td> 
@@ -71,7 +73,7 @@ Um ein Segment für den Export zu konfigurieren, müssen Sie eine [!DNL .export]
   </tr> 
   <tr> 
    <td colname="col1"> Endzeit planen </td> 
-   <td colname="col2"> <p>Optional. Enddatum und -zeit für den Zeitplan, einschließlich der Zeitzone. </p> <p>Format: JJJJ-MM-TT hh:mm Zeitzone </p> <p>Beispiel: 01.08.2013 12:01 EDT </p> <p>Geplante Exporte werden zu diesem Zeitpunkt eingestellt. Die Ausgabedatei wird jedoch bei jeder Änderung ihrer Definition erneut generiert. Dieses Feld ist ohne Definition von "Alle planen"ohne Bedeutung. Weitere Informationen zu Zeitzoneneinstellungen finden Sie im <i>Handbuch zur Datensatzkonfiguration</i>. </p> </td> 
+   <td colname="col2"> <p>Optional. Enddatum und -zeit für den Zeitplan, einschließlich der Zeitzone. </p> <p>Format: JJJJ-MM-TT hh:mm Zeitzone </p> <p>Beispiel: 01.08.2013 12:01 EDT </p> <p>Geplante Exporte werden zu diesem Zeitpunkt eingestellt. Die Ausgabedatei wird jedoch bei jeder Änderung ihrer Definition erneut generiert. Dieses Feld ist ohne Definition von "Alle planen"ohne Bedeutung. Weitere Informationen zu Zeitzoneneinstellungen finden Sie unter <i>Anleitung zur Datensatzkonfiguration</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Zeitplan </td> 
@@ -79,7 +81,7 @@ Um ein Segment für den Export zu konfigurieren, müssen Sie eine [!DNL .export]
   </tr> 
   <tr> 
    <td colname="col1"> Startzeit planen </td> 
-   <td colname="col2"> <p>Optional. Das Startdatum und die Startzeit für den Zeitplan, einschließlich der Zeitzone. </p> <p>Format: JJJJ-MM-TT hh:mm Zeitzone </p> <p>Beispiel: 01.08.2013 12:01 EDT </p> <p>Geplante Exporte beginnen zu diesem Zeitpunkt und der Zeitplan ist relativ zu diesem Zeitpunkt. Dieses Feld ist ohne Definition von <span class="wintitle"> "Alle </span> einplanen"bedeutungslos. Weitere Informationen zu Zeitzoneneinstellungen finden Sie im <i>Handbuch zur Datensatzkonfiguration</i>. </p> </td> 
+   <td colname="col2"> <p>Optional. Das Startdatum und die Startzeit für den Zeitplan, einschließlich der Zeitzone. </p> <p>Format: JJJJ-MM-TT hh:mm Zeitzone </p> <p>Beispiel: 01.08.2013 12:01 EDT </p> <p>Geplante Exporte beginnen zu diesem Zeitpunkt und der Zeitplan ist relativ zu diesem Zeitpunkt. Dieses Feld ist ohne Definition von Bedeutung <span class="wintitle"> Zeitplan </span>. Weitere Informationen zu Zeitzoneneinstellungen finden Sie unter <i>Anleitung zur Datensatzkonfiguration</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Zeitlimit (Sek.) </td> 
@@ -88,17 +90,17 @@ Um ein Segment für den Export zu konfigurieren, müssen Sie eine [!DNL .export]
  </tbody> 
 </table>
 
-1. Klicken Sie oben im Fenster mit der rechten Maustaste auf **[!UICONTROL (New)]** und klicken Sie dann auf **[!UICONTROL Save]**.
-1. Um diese Datei allen Benutzern des Arbeitsprofils zur Verfügung zu stellen, klicken Sie mit der rechten Maustaste auf das Häkchen für die erstellte Datei [!DNL .export] in der Spalte [!DNL User] und klicken Sie dann auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. Rechtsklick **[!UICONTROL (New)]** Klicken Sie oben im Fenster auf **[!UICONTROL Save]**.
+1. Um diese Datei allen Benutzern des Arbeitsprofils zur Verfügung zu stellen, klicken Sie mit der rechten Maustaste auf das Häkchen für die erstellte Datei [!DNL .export] in der Datei [!DNL User] und klicken Sie auf **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
    >[!NOTE]
    >
-   >Wenn Sie die Datei [!DNL .export] auf dem Data Workbench-Server speichern, wird der Export sofort ausgeführt, auch wenn die Option &quot;Planen der Startzeit&quot;auf ein Datum und eine Uhrzeit festgelegt ist.
+   >Speichern der [!DNL .export] -Datei auf den Data Workbench-Server zu laden, führt der Export einmal sofort durch, selbst wenn die Option &quot;Planen Sie die Startzeit&quot;auf ein zukünftiges Datum und eine zukünftige Uhrzeit festgelegt ist.
 
-   Im Folgenden finden Sie eine Beispieldatei [!DNL .export].
+   Im Folgenden finden Sie ein Beispiel [!DNL .export] -Datei.
 
    ![](assets/vis_Segment_Export_File.png)
 
    >[!NOTE]
    >
-   >Die im Beispiel angezeigte Datei [!DNL Visitor Segment.export] bezieht sich auf den Filter Besuchersegment . Durch die Änderung der Definition dieses Filters wird die Definition des Exports geändert.
+   >Die [!DNL Visitor Segment.export] -Datei, die im Beispiel angezeigt wird, bezieht sich auf den Filter Besuchersegment . Durch die Änderung der Definition dieses Filters wird die Definition des Exports geändert.

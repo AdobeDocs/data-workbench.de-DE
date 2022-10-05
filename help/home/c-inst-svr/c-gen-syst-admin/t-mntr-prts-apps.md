@@ -3,7 +3,7 @@ description: Um Ihre Implementierung gründlicher zu überwachen, können Sie al
 title: Überwachen von Ports und Programmen
 uuid: 63d92718-81df-49eb-adda-8b49bde57a9d
 exl-id: 418b2e5c-42ec-40f0-9cae-375194288143
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Überwachen von Ports und Programmen{#monitoring-ports-and-applications}
+
+{{eol}}
 
 Um Ihre Implementierung gründlicher zu überwachen, können Sie alle Ports auf Ihren Servercomputern sowie die Software-Produkte überwachen, die auf jedem dieser Ports ausgeführt werden.
 
@@ -21,7 +23,7 @@ Mithilfe einer Anwendung oder eines Skripts können Sie den TCP-Port überwachen
 **So fordern Sie die Seite mit dem Anwendungsstatus an**
 
 1. Ändern Sie auf dem Computer, den Sie überwachen möchten, die Zugriffssteuerung, sodass Ihre Überwachungsanwendung oder Ihr Skript auf den Computer zugreifen kann. Anweisungen finden Sie unter [Konfigurieren der Zugriffssteuerung](../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d).
-1. Stellen Sie eine Verbindung zu [!DNL https://IP Address/Status/] her, wobei IP-Adresse die IP-Adresse des Computers ist, für den Sie den Status erhalten möchten.
+1. Verbinden mit [!DNL https://IP Address/Status/], wobei IP-Adresse die IP-Adresse des Computers ist, für den Sie den Status erhalten möchten.
 
    Beispiel: [!DNL https://127.0.0.1/Status/]
 

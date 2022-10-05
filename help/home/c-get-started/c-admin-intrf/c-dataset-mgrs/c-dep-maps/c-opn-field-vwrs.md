@@ -3,7 +3,7 @@ description: Informationen zum Öffnen eines Feld-Viewers für eine Protokollque
 title: Öffnen einer Feld-Viewers
 uuid: fcc839cd-21dc-4eb0-9b8e-55fc92e6d400
 exl-id: 32a7418e-ca31-4d56-89a4-11416135f3e2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 5%
@@ -12,9 +12,11 @@ ht-degree: 5%
 
 # Öffnen einer Feld-Viewers{#open-a-field-viewer}
 
+{{eol}}
+
 Informationen zum Öffnen eines Feld-Viewers für eine Protokollquelle, Transformation oder erweiterte Dimension.
 
-* Klicken Sie mit der rechten Maustaste auf den entsprechenden Knoten und klicken Sie auf **[!UICONTROL View Fields]**. Klicken Sie für erweiterte Dimensionen auf **[!UICONTROL View Input Fields]**.
+* Klicken Sie mit der rechten Maustaste auf den entsprechenden Knoten und klicken Sie auf **[!UICONTROL View Fields]**. Für erweiterte Dimensionen klicken Sie auf **[!UICONTROL View Input Fields]**.
 
    Der angezeigte Callout enthält einen Feld-Viewer. Hierbei handelt es sich um eine Tabelle mit allen Feldern, die entweder Eingaben oder Ausgaben dieser Komponente sind. (Ein- und Ausgabedaten können Felder oder Dimensionen sein.) Bei einer Protokollquelle oder Transformation zeigt der Feld-Viewer die Eingaben und Ausgaben an. Für eine Dimension zeigt der Feld-Viewer die Eingaben an. Siehe [Feld-Viewer](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-fld-vwrs/c-fld-vwrs.md#concept-194cb94501564145ae059e53c0e4bec3).
 

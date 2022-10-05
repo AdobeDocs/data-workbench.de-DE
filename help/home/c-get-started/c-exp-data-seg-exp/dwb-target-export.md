@@ -1,33 +1,37 @@
 ---
-description: Exportieren Sie Data Workbench-Daten mit TargetBulkUpload.exe aus der Detailtabelle.
-title: Nach Adobe Target exportieren
+description: Exportieren Sie Data Workbench-Daten mithilfe von TargetBulkUpload.exe aus der Detailtabelle in Adobe Target.
+title: Exportieren in Adobe Target
 uuid: 0eb99e6f-f0b5-495e-a3b6-df30f61378a7
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 41e885bb-182a-4983-98e8-65eec1da9fe9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '329'
+ht-degree: 3%
 
 ---
 
+# Exportieren in Adobe Target{#export-to-adobe-target}
 
-# Nach Adobe Target exportieren{#export-to-adobe-target}
+{{eol}}
 
-Exportieren Sie Data Workbench-Daten mit TargetBulkUpload.exe aus der Detailtabelle.
+Exportieren Sie Data Workbench-Daten mithilfe von TargetBulkUpload.exe aus der Detailtabelle in Adobe Target.
 
-Mit Data Workbench können Sie Dateien exportieren, um sie als Teil einer integrierten Adobe Experience Cloud in Adobe Target zu integrieren.
+Mit Data Workbench können Sie Dateien exportieren, um sie im Rahmen einer integrierten Adobe Experience Cloud in Adobe Target zu integrieren.
 
-Die **[!DNL TargetBulkUpload]** Datei befindet sich im Ordner &quot; *Server\Scripts* &quot;in den Serverinstallationsdateien. Die ausführbare Datei verfügt über eine Logik zum erneuten Versuch sowie zusätzliche Logik zur Leistungsoptimierung.
+Die **[!DNL TargetBulkUpload]** finden Sie im Abschnitt *Server\Scripts* in den Server-Installationsdateien. Die ausführbare Datei verfügt über eine Wiederholungslogik sowie zusätzliche Logik zur Leistungsoptimierung.
 
-Sie können die `TargetBulkUpload.cfg` Datei ändern und in den Ordner *Server/Admin/Export* verschieben, bevor Sie das Upload-Skript ausführen. Sie können beispielsweise ein Max. Timeout-Intervall auf 720 Minuten festlegen (Standard), um den Upload nach dem angegebenen Zeitraum abzubrechen.
+Sie können die `TargetBulkUpload.cfg` Datei und verschieben Sie sie in *Server/Admin/Export* Ordner vor dem Ausführen des Upload-Skripts. Sie können beispielsweise ein Max. Timeout-Intervall auf 720 Minuten festlegen (Standard), um den Upload nach dem angegebenen Zeitraum zu einem Timeout zu führen.
 
-**Das funktioniert so**
+**Funktionsweise**
 
-Nachdem die Daten erfolgreich an Target gesendet wurden, wird der Status des Uploads kontinuierlich überwacht. Bei erfolgreichem Hochladen wird eine Erfolgsmeldung protokolliert. Wenn der Upload fehlschlägt oder noch aussteht, wird die Überwachung fortgesetzt. Sie können das Zeitüberschreitungsintervall in der `TargetBulkUpload.cfg` Datei konfigurieren. Wenn der Upload in Target blockiert wird, wird eine Meldung protokolliert und der Status kann weiterhin überwacht werden.
+Nachdem die Daten erfolgreich an Target gesendet wurden, wird der Status des Uploads kontinuierlich überwacht. Wenn der Upload erfolgreich war, wird eine Erfolgsmeldung protokolliert. Wenn der Upload fehlschlägt oder aussteht, wird die Überwachung fortgesetzt. Sie können das Timeout-Intervall im `TargetBulkUpload.cfg` -Datei. Wenn der Upload in Target blockiert wird, wird eine Nachricht protokolliert und der Status kann weiterhin überwacht werden.
 
-Es gibt zwei Protokolldateien, die in der Ablaufverfolgung für den ausgelösten Export generiert werden unter [!DNL /server/Trace/]:
+Es werden zwei Protokolldateien im Trace für den ausgelösten Export unter generiert [!DNL /server/Trace/]:
 
 * `targetbulkuploadexportname.log`
 * `targetbulkuploadexportname.log.completed`
 
-Die `targetbulkuploadexportname.log` Datei hat den detaillierten Status für alle Datensätze aus mehreren Stapeln, den Edge-Server, den sie verwenden, und den Status (erfolgreich, fehlgeschlagen, Profil nicht gefunden, Status unbekannt und blockiert). Wird festgestellt, dass ein Stapel feststeckt, wird der Stapel nicht weiter verarbeitet. Zur Statusverfolgung steht eine hängende Stapel-URL zur Verfügung. Siehe die folgenden Beispieldaten aus der `targetbulkuploadexportname.log.completed` Datei:
+Die `targetbulkuploadexportname.log` -Datei weist den detaillierten Status für alle Datensätze aus mehreren Batches, den Edge-Server, den sie verwenden werden, und den Status (erfolgreich, fehlgeschlagen, Profil nicht gefunden, Status unbekannt und hängengeblieben) auf. Wenn festgestellt wird, dass ein Batch hängengeblieben ist, wird der Batch nicht weiter verarbeitet. Eine hängende Batch-URL ist verfügbar, um den Status zu verfolgen. Siehe die folgenden Beispieldaten aus der `targetbulkuploadexportname.log.completed` Datei:
 
 ```
 1205057 total rows 
@@ -38,9 +42,8 @@ Die `targetbulkuploadexportname.log` Datei hat den detaillierten Status für all
 492339 stuck status
 ```
 
-Der Wert für den blockierten Status wird mit der Gesamtgröße des angehaltenen Stapels inkrementiert, unabhängig davon, wie viele Uploads erfolgreich oder fehlgeschlagen sind. Der Wert der Zeilen insgesamt wird auch um dieselbe Anzahl festsitzender Stapelgrößen erhöht.
+Der Wert für den hängenden Status wird mit der Gesamtgröße des angehaltenen Batches inkrementiert, unabhängig davon, wie viele Uploads erfolgreich sind oder fehlgeschlagen sind. Der Wert für die Zeilen insgesamt wird ebenfalls um dieselbe Anzahl festsitzender Batch-Größe erhöht.
 
 >[!NOTE]
 >
->Zuvor wurden DWB-Daten mit dem [!DNL ExportIntegration.exe]exportiert. Derzeit werden nur die Exporte MMP, CRS und S/FTP mit dieser ausführbaren Datei verwendet. Die Adobe Target-Integration verwendet jetzt die [!DNL TargetBulkUpload.exe] in Data Workbench.
-
+>Zuvor wurden DWB-Daten mit dem [!DNL ExportIntegration.exe]. Derzeit werden nur die MMP-, CRS- und S/FTP-Exporte mit dieser ausführbaren Datei verwendet. Die Adobe Target-Integration verwendet jetzt die [!DNL TargetBulkUpload.exe] in der Data Workbench.

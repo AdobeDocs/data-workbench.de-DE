@@ -3,7 +3,7 @@ description: Sie installieren die Datei "Terrain Images.cfg"nur, wenn Sie neue T
 title: Installieren der Datei "Terrain Images.cfg"(Globen)
 uuid: eba5eb17-2161-43a9-8df2-74058b9b636b
 exl-id: e73490ff-583a-4d50-9c3f-a289f1e7b209
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Installieren der Datei „Terrain Images.cfg“{#installing-the-terrain-images-cfg-file}
+
+{{eol}}
 
 Sie installieren die Datei &quot;Terrain Images.cfg&quot;nur, wenn Sie neue Topografiebildebenen erstellen möchten, die in der globalen Visualisierung angezeigt werden sollen.
 

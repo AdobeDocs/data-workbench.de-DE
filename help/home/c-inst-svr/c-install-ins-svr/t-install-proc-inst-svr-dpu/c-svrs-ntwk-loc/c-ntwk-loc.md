@@ -1,9 +1,9 @@
 ---
-description: Die Adressdatei erfüllt grundsätzlich denselben Zweck wie die Datei ETC&bsol;HOSTS auf einem vernetzten Computer.
+description: Grundsätzlich dient die Adressdatei demselben Zweck wie die Datei ETC&bsol;HOSTS auf einem vernetzten Computer.
 title: Netzwerkstandorte
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -12,13 +12,15 @@ ht-degree: 2%
 
 # Netzwerkstandorte{#network-locations}
 
-Die Adressdatei erfüllt grundsätzlich denselben Zweck wie die Datei ETC&amp;bsol;HOSTS auf einem vernetzten Computer.
+{{eol}}
+
+Grundsätzlich dient die Adressdatei demselben Zweck wie die Datei ETC&amp;bsol;HOSTS auf einem vernetzten Computer.
 
 Im Gegensatz zur HOSTS-Datei, die eine Sammlung von Namen beschreibt, enthält die Adressdatei jedoch mehrere Sammlungen von Namen, die als Netzwerkspeicherorte bezeichnet werden.
 
 Ein Netzwerkspeicherort ist eine benannte Sammlung von Adressendefinitionen. Jede Adressendefinition in der Kollektion ordnet einen gemeinsamen Namen einer IP-Adresse zu.
 
-In der Adressdatei wird ein Netzwerkspeicherort in einer Struktur definiert, die als NetworkLocation bezeichnet wird. Im folgenden Beispiel definiert NetworkLocation einen Netzwerkspeicherort namens &quot;MyCorporate Intranet&quot;. Es enthält eine Adressdefinition, die den allgemeinen Namen [!DNL VS01.myCompany.com] der IP-Adresse &quot;10.2.1.70&quot;zuordnet.
+In der Adressdatei wird ein Netzwerkspeicherort in einer Struktur definiert, die als NetworkLocation bezeichnet wird. Im folgenden Beispiel definiert NetworkLocation einen Netzwerkspeicherort namens &quot;MyCorporate Intranet&quot;. Es enthält eine Adressdefinition, die den allgemeinen Namen zuordnet [!DNL VS01.myCompany.com] an die IP-Adresse &quot;10.2.1.70&quot;.
 
 ```
 0 = NetworkLocation: 

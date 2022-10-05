@@ -3,7 +3,7 @@ description: Erläuterung der Tabellen in DataWorkbench (DWB) zur Erstellung und
 title: Schema-Aufbau von zählbaren Strukturen
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
 exl-id: 4f2a2f8a-7b42-42bb-8ba1-2675ffe6b2c2
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Schema-Aufbau von zählbaren Strukturen{#schema-design-countable-structures}
+
+{{eol}}
 
 Erläuterung der Tabellen in DataWorkbench (DWB) zur Erstellung und Implementierung des Schemas.
 
@@ -20,7 +22,7 @@ Auf der höchsten Ebene sind zählbare Dimensionen. Zählbare Dimensionen bieten
 
 * Wie viele Besucher haben Ihre Homepage besucht?
 
-* Wie viele Besuche kamen von Google.com?
+* Wie viele Besuche hat Google.com durchgeführt?
 
 `<discoiqbr>`Zählbare Dimensionen werden normalerweise verwendet, um Summenmetriken zu erstellen, die die Anzahl oder Summe aller Elemente der Dimension zurückgeben. Sie können zählbare Dimensionen definieren, um Instanzen wie Reservierungen oder Produktbestellungen zu zählen. Sie können beispielsweise die zählbaren Dimensionsbestellungen definieren, deren Elemente (Protokolleinträge, die den Bestellungen aus Ihrem Online-Store entsprechen) gezählt werden können. Wenn Sie innerhalb einer Visualisierung eine Anzahl von Bestellungen anzeigen möchten, definieren Sie die Metrik der Bestellsumme, die über eine Dimension ausgewertet werden kann oder auf die Filter angewendet werden sollen.
 
@@ -57,7 +59,7 @@ Zählbare Dimensionen werden durch die folgenden Parameter definiert:
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Verborgen </td> 
+   <td colname="col1"> Ausgeblendet </td> 
    <td colname="col2"> Bestimmt, ob die Dimension in der Data Workbench-Benutzeroberfläche angezeigt wird. Standardmäßig ist dieser Parameter auf false gesetzt. Wenn die Dimension beispielsweise nur als Grundlage einer Metrik verwendet werden soll, können Sie diesen Parameter auf "true"setzen, um die Dimension aus der Data Workbench-Anzeige auszublenden. </td> 
    <td colname="col3"> false (falsch) </td> 
   </tr> 
@@ -93,4 +95,4 @@ Führen Sie die folgenden Schritte aus, um die Tabelle in Data Workbench zu erst
 
    Wenn die Tabelle Zählung nicht die oberste Ebene ist, geben Sie im übergeordneten Feld den Namen der übergeordneten Tabelle an. Im folgenden Beispiel wird die Interaktionszählung erstellt und das übergeordnete Element für diese zählbare Tabelle ist &quot;Kunde&quot;. ![](assets/dwb_impl_arch_5.png)
 
-Weitere Informationen zur Data Workbench-Architektur für Schemadesign, zählbare Strukturen und Offline-Daten-Feed-Konfigurationen finden Sie in der [Datensatzschema-Schnittstelle](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).
+Weitere Informationen zur Data Workbench-Architektur für Schemadesign, zählbare Strukturen und Offline-Daten-Feed-Konfigurationen finden Sie in der [Oberfläche zum Datensatzschema](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).

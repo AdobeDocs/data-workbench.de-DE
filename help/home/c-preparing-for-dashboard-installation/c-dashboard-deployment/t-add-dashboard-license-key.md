@@ -3,7 +3,7 @@ description: Für das Dashboard-Produkt ist eine von Adobe ClientCare bereitgest
 title: Angeben des Dashboard-Lizenzschlüssels
 uuid: 51ec87a8-e9cc-4aa1-8d13-a79612a13d17
 exl-id: bf532fb0-9287-4c15-aa4c-07f7bd0fdba7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 12%
@@ -12,10 +12,12 @@ ht-degree: 12%
 
 # Angeben des Dashboard-Lizenzschlüssels{#add-dashboard-license-key}
 
+{{eol}}
+
 Für das Dashboard-Produkt ist eine von Adobe ClientCare bereitgestellte Lizenz erforderlich.
 
-1. Öffnen Sie **[!UICONTROL SQL Management Studio]** als Administrator.
+1. Öffnen **[!UICONTROL SQL Management Studio]** als Administrator.
 1. Öffnen Sie die vom Dashboard erstellte Datenbank (z. B. thinclientdb).
-1. Klicken Sie mit der rechten Maustaste auf die Tabelle **[!UICONTROL Configuration]** und klicken Sie auf **[!UICONTROL Edit Top 200 Rows]**.
-1. Suchen Sie das Feld **[!UICONTROL licenseKey]** und geben Sie den von Adobe ClientCare bereitgestellten Schlüssel in die Spalte **[!UICONTROL Value]** ein.
-1. Starten Sie **[!UICONTROL Application Pool]** im **[!UICONTROL IIS Manager Console]** neu.
+1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL Configuration]** Tabelle und klicken Sie auf **[!UICONTROL Edit Top 200 Rows]**.
+1. Suchen Sie die **[!UICONTROL licenseKey]** und geben Sie den von Adobe ClientCare bereitgestellten Schlüssel in das Feld **[!UICONTROL Value]** Spalte.
+1. Starten Sie den **[!UICONTROL Application Pool]** im **[!UICONTROL IIS Manager Console]**.

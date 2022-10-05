@@ -3,7 +3,7 @@ description: Data Workbench verwendet reguläre Ausdrücke (Regex) für Such- un
 title: Reguläre Ausdrücke
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 3%
@@ -12,9 +12,11 @@ ht-degree: 3%
 
 # Reguläre Ausdrücke{#regular-expressions}
 
+{{eol}}
+
 Data Workbench verwendet reguläre Ausdrücke (Regex) für Such- und Sortiervorgänge.
 
-Im Feld **[!UICONTROL Search]** können Sie eine Suche nach der Anweisung &quot;re:&quot; durchführen, indem Sie gebräuchliche Ausdrücke verwenden, z. B.:
+Innerhalb der **[!UICONTROL Search]** -Feld können Sie eine Suche nach der Anweisung &quot;re:&quot; durchführen, indem Sie gebräuchliche Ausdrücke verwenden, z. B.:
 
 ```
 <b>re: *.s</b>
@@ -38,11 +40,11 @@ Im Feld **[!UICONTROL Search]** können Sie eine Suche nach der Anweisung &quot;
   </tr> 
   <tr> 
    <td colname="col1"> <p>? (Platzhalter) </p> </td> 
-   <td colname="col2"> <p>Stimmt mit 0 oder 1 des vorherigen Ausdrucks überein, um eine minimale Übereinstimmung zu erzwingen, z. B.: <span class="filepath"> xy?z </span> entspricht "xy" und "xyz". </p> </td> 
+   <td colname="col2"> <p>Stimmt mit 0 oder 1 des vorherigen Ausdrucks überein, um eine minimale Übereinstimmung zu erzwingen, z. B.: <span class="filepath"> xy?z </span> entspricht "xy"und "xyz". </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 Zusätzliche häufige reguläre Ausdrücke können auch verwendet werden, um komplexere Suchzeichenfolgen zu erstellen. Reguläre Ausdrücke werden in allen Suchfeldern der Data Workbench verwendet, einschließlich der Bedienfelder der Abfrageentitäten.
 
-Detaillierte Informationen finden Sie unter [Reguläre Ausdrücke](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
+Detaillierte Informationen finden Sie unter [reguläre Ausdrücke](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).

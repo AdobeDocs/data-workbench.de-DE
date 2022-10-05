@@ -1,20 +1,24 @@
 ---
 description: Beispieldateien für die Konfigurationsdateien.
-title: Beispielkonfigurationsdateien
+title: Beispiele für Konfigurationsdateien
 uuid: 9bc5c0a9-e67a-4c63-952d-9a39d75e6975
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 8a9abadb-228b-4da6-bfe6-8e828bb6ace9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 8%
 
 ---
 
+# Beispiele für Konfigurationsdateien{#sample-configuration-files}
 
-# Beispielkonfigurationsdateien{#sample-configuration-files}
+{{eol}}
 
 Beispieldateien für die Konfigurationsdateien.
 
 ## Magnus.conf-Dateibeispiel {#section-aec81c734d0f483591c3ede1fe588b6a}
 
-Beispiel für eine vollständige Datei &quot;magnus.conf&quot;für die Webserverinstallation und -konfiguration von Netscape Enterprise Server, iPlanet, Sun ONE und Sun Java System.
+Beispiel einer vollständigen magnus.conf-Datei für Netscape Enterprise Server, iPlanet, Sun ONE und Sun Java System Webserver-Installation und -Konfiguration.
 
 ```
 #ServerRoot /usr/iplanet/servers/https-nova.visualsciences.net
@@ -42,9 +46,9 @@ Init fn="load-modules" shlib="/usr/iplanet/servers/visual_sciences/saf_visual_sc
 Init fn="vys-init" config-file="/etc/txlogd.conf"
 ```
 
-## Beispiel für eine OBJ.conf-Datei {#section-1acd3ae557074ee6a46492eb98f89805}
+## Beispiel für eine Datei &quot;Obj.conf&quot; {#section-1acd3ae557074ee6a46492eb98f89805}
 
-Beispiel einer vollständigen Datei &quot;obj.conf&quot;für Netscape Enterprise Server, iPlanet, Sun ONE und Sun Java System Webserver-Installation und -Konfiguration.
+Beispiel einer vollständigen obj.conf-Datei für Netscape Enterprise Server, iPlanet, Sun ONE und Sun Java System Webserver-Installation und -Konfiguration.
 
 ```
 <Object name=default>
@@ -94,4 +98,3 @@ Beispiel einer vollständigen Datei &quot;obj.conf&quot;für Netscape Enterprise
   PathCheck fn="check-acl" acl="es-internal"
 </Object>
 ```
-

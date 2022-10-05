@@ -3,7 +3,7 @@ description: Die Datensatzkonfiguration bezieht sich auf den Prozess der Bearbei
 title: Grundlagen zur Konfiguration von Datensätzen
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 7%
@@ -12,13 +12,15 @@ ht-degree: 7%
 
 # Grundlagen zur Konfiguration von Datensätzen{#understanding-dataset-configuration}
 
+{{eol}}
+
 Die Datensatzkonfiguration bezieht sich auf den Prozess der Bearbeitung der Konfigurationsdateien, deren Parameter die Regeln für die Erstellung von Datensätzen bereitstellen.
 
-Der erstellte Datensatz befindet sich physisch in der auf dem Data Workbench-Server-Computer gespeicherten Datei [!DNL temp.db], die Konfigurationsdateien für den Datensatz befinden sich jedoch in einem Verzeichnis für ein Profil. Ein Profil enthält eine Reihe von Konfigurationsdateien, die einen Datensatz (einschließlich erweiterter Dimensionen) für einen bestimmten Analysezweck erstellen. Darüber hinaus enthält ein Profil die Definitionen von Entitäten wie Metriken, abgeleitete Dimensionen, Arbeitsbereiche, Berichten und Visualisierungen, die es Analysten ermöglichen, mit dem Datensatz zu interagieren und Informationen aus ihm zu erhalten.
+Der erstellte Datensatz befindet sich physisch in der [!DNL temp.db] auf dem Data Workbench-Servercomputer gespeichert ist, sich die Konfigurationsdateien für den Datensatz jedoch in einem Ordner für ein Profil befinden. Ein Profil enthält eine Reihe von Konfigurationsdateien, die einen Datensatz (einschließlich erweiterter Dimensionen) für einen bestimmten Analysezweck erstellen. Darüber hinaus enthält ein Profil die Definitionen von Entitäten wie Metriken, abgeleitete Dimensionen, Arbeitsbereiche, Berichten und Visualisierungen, die es Analysten ermöglichen, mit dem Datensatz zu interagieren und Informationen aus ihm zu erhalten.
 
 Das Profil, dessen Datensatzkonfigurationsdateien Sie bearbeiten, wird als Datensatzprofil bezeichnet. Ein Datensatzprofil verweist auf mehrere geerbte Profile. Dabei kann es sich um beliebige Adobe-Profile handeln, die Sie erstellen und verwalten. So können Sie Ihre App so konfigurieren, dass sie Ihren Analyseanforderungen am besten entspricht. Ein Datensatzprofil kann auch auf interne Profile verweisen, die mit Ihrer Adobe App bereitgestellt werden, um die Grundlage für alle in Ihrer Anwendung verfügbaren Funktionen zu bilden.
 
-Weitere Informationen zu den verschiedenen Profiltypen, die in Adobe-Anwendungen verfügbar sind, finden Sie im *Data Workbench-Benutzerhandbuch*.
+Weitere Informationen zu den verschiedenen Profiltypen, die in Adobe Apps verfügbar sind, finden Sie in der *Data Workbench-Benutzerhandbuch*.
 
 <!--
 c_req_config_files.xml
@@ -28,17 +30,17 @@ Ein Datensatzprofil für eine Adobe-Anwendung muss die folgenden Konfigurationsd
 
 * **profile.cfg:** Listet die geerbten Profile und Verarbeitungsserver für das Profil auf. Verarbeitungsserver sind die Insight Server-DPUs, die die Daten für das Profil verarbeiten. Wenn Sie einen Insight Server-Cluster installiert haben, können Sie mehrere Insight Server-Computer angeben, um ein einzelnes Profil auszuführen.
 
-   Anweisungen zum Hinzufügen geerbter Profile zur [!DNL Profile.cfg]-Datei eines Datensatzprofils finden Sie im *Handbuch zur Installation und Verwaltung von Serverprodukten*. Informationen zum Installieren eines Insight Server-Clusters oder zum Konfigurieren eines Datensatzprofils für die Ausführung auf einem Insight Server-Cluster finden Sie im *Handbuch zur Installation und Verwaltung von Serverprodukten*.
+   Anweisungen zum Hinzufügen geerbter Profile zum Datensatzprofil [!DNL Profile.cfg] -Datei, siehe *Handbuch zur Installation und Verwaltung von Serverprodukten*. Informationen zum Installieren eines Insight Server-Clusters oder zum Konfigurieren eines Datensatzprofils für die Ausführung auf einem Insight Server-Cluster finden Sie in der *Handbuch zur Installation und Verwaltung von Serverprodukten*.
 
-* **Datensatz\Log Processing.cfg:**  Steuert die Protokollverarbeitungsphase des Datensatzerstellungsprozesses. Siehe [Protokollverarbeitung](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-8a63892878004dc389c7dad784fcb061). Weitere Informationen zur Datei [!DNL Log Processing.cfg] finden Sie unter [Konfigurationsdatei für die Protokollverarbeitung](../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md).
+* **Datensatz\Log Processing.cfg:** Steuert die Protokollverarbeitungsphase des Datensatzerstellungsprozesses. Siehe [Protokollverarbeitung](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-8a63892878004dc389c7dad784fcb061). Weitere Informationen zum [!DNL Log Processing.cfg] -Datei, siehe [Konfigurationsdatei für die Protokollverarbeitung](../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md).
 
-* **Datensatz\Transformation.cfg:**  Steuert die Umwandlungsphase des Datensatzerstellungsprozesses. Siehe [Transformation](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda). Die [!DNL Transformation.cfg]-Datei konfiguriert den Datensatz für die profilspezifische Analyse normalerweise. Weitere Informationen zur Datei [!DNL Transformation.cfg] finden Sie unter [Konfigurationsdatei für Umwandlungen](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md).
+* **Datensatz\Transformation.cfg:** Steuert die Umwandlungsphase des Datensatzerstellungsprozesses. Siehe [Umwandlung](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda). Die [!DNL Transformation.cfg] -Datei konfiguriert normalerweise den Datensatz für die profilspezifische Analyse. Weitere Informationen zum [!DNL Transformation.cfg] -Datei, siehe [Konfigurationsdatei für Umwandlungen](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md).
 
-* **Datensatzaufnahme-Dateien:** Eine  [!DNL dataset include] Datei enthält eine Untergruppe der Parameter, die in der -  [!DNL Log Processing.cfg] oder - [!DNL Transformation.cfg] Datei für das Datensatzprofil enthalten sind, aber in einem übernommenen Profil gespeichert und verwaltet werden. [!DNL Dataset include] -Dateien ergänzen die Hauptkonfigurationsdateien des Datensatzes. Weitere Informationen finden Sie unter [Datensatzaufnahme-Dateien](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md).
+* **Datensatzaufnahme-Dateien:** A [!DNL dataset include] enthält eine Untergruppe der im [!DNL Log Processing.cfg] oder [!DNL Transformation.cfg] -Datei für das Datensatzprofil, wird jedoch in einem geerbten Profil gespeichert und verwaltet. [!DNL Dataset include] -Dateien ergänzen die Hauptkonfigurationsdateien des Datensatzes. Weitere Informationen finden Sie unter [Datensatzaufnahme-Dateien](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md).
 
-Das Datensatzprofil, das Sie während der Implementierung Ihrer Adobe App erhalten haben, enthält eine Reihe von Datensatzkonfigurationsdateien, die Sie mit [!DNL Profile Manager] öffnen, bearbeiten und speichern können.
+Das Datensatzprofil, das Sie während der Implementierung Ihrer Adobe App erhalten haben, enthält eine Reihe von Datensatzkonfigurationsdateien, die Sie mit der [!DNL Profile Manager].
 
-Weitere Informationen zu [!DNL Profile Manager] finden Sie im *Insight-Benutzerhandbuch*.
+Informationen zum [!DNL Profile Manager], siehe *Insight-Benutzerhandbuch*.
 
 <!--
 c_addl_config_files.xml
@@ -46,11 +48,11 @@ c_addl_config_files.xml
 
 Obwohl dies nicht für alle Datensätze erforderlich ist, können Sie mit diesen Dateien andere Aspekte des Prozesses zur Datensatzerstellung steuern:
 
-* **Log Processing Mode.cfg:** Die  [!DNL Log Processing Mode.cfg] Datei ermöglicht es Ihnen, die Verarbeitung von Daten in einem Datensatz anzuhalten, Offline-Quellen anzugeben oder anzugeben, wie häufig der Data Workbench-Server seine Statusdateien speichert. Siehe [Zusätzliche Konfigurationsdateien](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
+* **Log Processing Mode.cfg:** Die [!DNL Log Processing Mode.cfg] -Datei können Sie die Datenverarbeitung in einem Datensatz anhalten, Offline-Quellen angeben oder angeben, wie oft der Data Workbench-Server seine Statusdateien speichert. Siehe [Zusätzliche Konfigurationsdateien](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **Server.cfg:** Die  [!DNL Server.cfg] Datei gibt die standardmäßige Datencache-Größe (in Bytes) für Data Workbench-Computer an, die eine Verbindung zum Data Workbench-Server herstellen. Siehe [Zusätzliche Konfigurationsdateien](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
+* **Server.cfg:** Die [!DNL Server.cfg] -Datei gibt die standardmäßige Datencache-Größe (in Byte) für Data Workbench-Computer an, die eine Verbindung zum Data Workbench-Server herstellen. Siehe [Zusätzliche Konfigurationsdateien](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **Transform.cfg und Transform Mode.cfg:** Diese Dateien sind nur verfügbar, wenn Sie die Datenumwandlungsfunktion lizenziert haben, die mit Ihrer Adobe App verwendet werden kann. Die Datei [!DNL Transform.cfg] enthält die Parameter, die die Protokollquellen und Datenumwandlungen für die Umwandlungsfunktion definieren. Die von Ihnen definierten Umwandlungen manipulieren die Quelldaten und geben sie in einem von Ihnen angegebenen Format aus. Die [!DNL Insight Transform Mode.cfg]-Datei ermöglicht es Ihnen, die Verarbeitung von Daten in einem Datensatz anzuhalten, Offline-Quellen anzugeben oder die Häufigkeit anzugeben, mit der die Umwandlungsfunktion von Insight Server, die die Umwandlungsfunktion ausführt, seine Statusdateien speichert. Siehe [Umwandlungsfunktion](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
+* **Transform.cfg und Transform Mode.cfg:** Diese Dateien sind nur verfügbar, wenn Sie die Datenumwandlungsfunktion für Ihre Adobe App lizenziert haben. Die [!DNL Transform.cfg] enthält die Parameter, die die Protokollquellen und Datenumwandlungen für die Umwandlungsfunktion definieren. Die von Ihnen definierten Umwandlungen manipulieren die Quelldaten und geben sie in einem von Ihnen angegebenen Format aus. Die [!DNL Insight Transform Mode.cfg] -Datei ermöglicht es Ihnen, die Verarbeitung von Daten in einem Datensatz anzuhalten, Offline-Quellen anzugeben oder anzugeben, wie häufig die Insight Server-Funktion, die die Umwandlung durchführt, seine Statusdateien speichert. Siehe [Umwandlungsfunktion](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
 
 <!--
 c_next_steps.xml
@@ -80,11 +82,11 @@ Informationen zu bestimmten Aufgaben zur Datensatzkonfiguration finden Sie in de
   </tr> 
   <tr> 
    <td colname="col1"> <p>Konfigurieren eines Insight Server für die Ausführung als Dateiservereinheit </p> </td> 
-   <td colname="col2"> <p><a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Konfigurieren einer Insight Server File Server Unit  </a> </p> </td> 
+   <td colname="col2"> <p><a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Konfigurieren einer Insight Server File Server Unit </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Konfigurieren eines Insight Server für die Ausführung als zentralisierten Normalisierungsserver </p> </td> 
-   <td colname="col2"> <p><a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Konfigurieren einer Insight Server File Server Unit  </a> </p> </td> 
+   <td colname="col2"> <p><a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Konfigurieren einer Insight Server File Server Unit </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Legen Sie die Zeitzone fest, die für die Erstellung von Zeitdimensionen und für die Durchführung von Zeitkonversionen verwendet werden soll. </p> </td> 

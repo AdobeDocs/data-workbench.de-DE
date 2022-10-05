@@ -3,7 +3,7 @@ description: Die Flatten-Transformation nimmt einen Zeichenfolgenvektor und ordn
 title: Flatten
 uuid: 00b06a5c-506b-45fe-9773-44d65b8ec233
 exl-id: 63f3e4bc-238f-4e15-8ae5-2f805bd080d3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Flatten{#flatten}
+
+{{eol}}
 
 Die Flatten-Transformation nimmt einen Zeichenfolgenvektor und ordnet jeden Wert einem eigenen Feld zu.
 
@@ -28,7 +30,7 @@ Die Flatten-Transformation nimmt einen Zeichenfolgenvektor und ordnet jeden Wert
 * Wenn der Eingabe-Vektor mehr Werte enthält als definierte Ausgabefelder vorhanden sind, werden die zusätzlichen Eingabewerte einfach abgelegt.
 * Wenn der Eingabevektor weniger Werte enthält als definierte Ausgabefelder, erhalten die zusätzlichen Ausgabefelder den Standardwert (sofern definiert) oder eine leere Zeichenfolge, wenn kein Standardwert definiert ist.
 
-Hier wird die Umwandlung [!DNL Flatten] verwendet, um einen Vektor von Produkten (x-products) zu nehmen und sie in vier Felder zu unterteilen (x-product1, ..., x-product4).
+Hier wird die [!DNL Flatten] wird verwendet, um einen Vektor von Produkten (x-products) zu nehmen und sie in vier Felder zu unterteilen (x-product1, ..., x-product4).
 
 ![](assets/cfg_TransformationType_Flatten.png)
 

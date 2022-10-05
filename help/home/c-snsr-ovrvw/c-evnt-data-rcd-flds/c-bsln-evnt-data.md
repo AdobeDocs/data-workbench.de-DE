@@ -3,14 +3,16 @@ description: Informationen zu den vom Sensor aufgezeichneten Grundlinien-Ereigni
 title: Standardfelder für Ereignisdatensätze
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 # Standardfelder für Ereignisdatensätze{#baseline-event-data-record-fields}
+
+{{eol}}
 
 Informationen zu den vom Sensor aufgezeichneten Grundlinien-Ereignisdatensatzfeldern.
 
@@ -76,9 +78,9 @@ Informationen zu den vom Sensor aufgezeichneten Grundlinien-Ereignisdatensatzfel
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>Der 64-Bit-Hexadezimalwert der eindeutigen Browser-Kennung, die in einem persistenten Cookie gefunden wird, wie von einem <span class="wintitle"> Sensor </span> festgelegt und vom Client mit einer Anfrage an einen Server bereitgestellt. </p> <p>Beispiel: 42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>Der 64-Bit-Hexadezimalwert der eindeutigen Browser-Kennung, die in einem persistenten Cookie gefunden wird, wie von einem <span class="wintitle"> Sensor </span> und vom Client mit einer Anfrage an einen Server bereitgestellt werden. </p> <p>Beispiel: 42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
 
-Der [!DNL data workbench server] kann eine Reihe von Variablen aus den Datensatzfeldern für das Basisereignis ableiten. Weitere Informationen finden Sie im *Handbuch zur Datensatzkonfiguration*.
+Die [!DNL data workbench server] kann eine Reihe von Variablen aus den Datensatzfeldern für die Basisereignisdaten ableiten. Weitere Informationen finden Sie unter *Anleitung zur Datensatzkonfiguration*.

@@ -3,7 +3,7 @@ description: Die folgenden Dimensionen können im Profil Profilstatus von Data W
 title: Dimensionen im Data Workbench-Profil zum Profilstatus
 uuid: bd84a3e5-d1ea-4768-9dac-62f5dfbad49a
 exl-id: 57b3ff16-26db-4292-819b-f6cd8e024c2a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Dimensionen im Data Workbench-Profil zum Profilstatus{#dimensions-in-the-data-workbench-profile-status-profile}
+
+{{eol}}
 
 Die folgenden Dimensionen können im Profil Profilstatus von Data Workbench verwendet werden.
 
@@ -30,15 +32,15 @@ Die folgenden Dimensionen können im Profil Profilstatus von Data Workbench verw
   </tr> 
   <tr> 
    <td colname="col1"> <b>Schneller Input MegaBytes pro Minute</b> </td> 
-   <td colname="col2"> Für diese Dimension wird der Wert cs-uri-query(bj) verwendet. Die letzte Zeile eines Blocks wird als Wert für die Dimension verwendet. Wenn der Datensatz in Schnelle Eingabe enthalten ist, zeigt der Wert dieser numerischen Dimension die MB pro Minute an, in die das System Daten eingibt. <p>Hinweis:  Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
+   <td colname="col2"> Für diese Dimension wird der Wert cs-uri-query(bj) verwendet. Die letzte Zeile eines Blocks wird als Wert für die Dimension verwendet. Wenn der Datensatz in Schnelle Eingabe enthalten ist, zeigt der Wert dieser numerischen Dimension die MB pro Minute an, in die das System Daten eingibt. <p>Hinweis: Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Schnelles Zusammenführen von MegaBytes pro Minute</b> </td> 
-   <td colname="col2">Für diese Dimension wird der Wert cs-uri-query(bk) verwendet. Die letzte Zeile für einen Block wird als Wert für die Dimension verwendet. Wenn sich der Datensatz in Schneller Zusammenführung befindet, zeigt dieser numerische Dimension-Wert die MB pro Minute an, in der das System zusammengeführt wird. <p>Hinweis:  Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
+   <td colname="col2">Für diese Dimension wird der Wert cs-uri-query(bk) verwendet. Die letzte Zeile für einen Block wird als Wert für die Dimension verwendet. Wenn sich der Datensatz in Schneller Zusammenführung befindet, zeigt dieser numerische Dimension-Wert die MB pro Minute an, in der das System zusammengeführt wird. <p>Hinweis: Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Field GigaBytes</b> </td> 
-   <td colname="col2"> Für diese Dimension wird der Wert cs-uri-query(bg) verwendet. Der Wert wird durch 1000 geteilt und auf die nächste Ganzzahl gerundet. Der Wert dieser numerischen Dimension zeigt den Speicherplatz an, den die Felder im Datensatz verwenden. <p>Hinweis:  Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
+   <td colname="col2"> Für diese Dimension wird der Wert cs-uri-query(bg) verwendet. Der Wert wird durch 1000 geteilt und auf die nächste Ganzzahl gerundet. Der Wert dieser numerischen Dimension zeigt den Speicherplatz an, den die Felder im Datensatz verwenden. <p>Hinweis: Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Host</b> </td> 
@@ -46,19 +48,19 @@ Die folgenden Dimensionen können im Profil Profilstatus von Data Workbench verw
   </tr> 
   <tr> 
    <td colname="col1"> <b>Letztes Ping</b> </td> 
-   <td colname="col2">x-last-ping ist x-unixtime dividiert durch 10 (um Größenbeschränkungen für numerische Dimensionen aufzunehmen). Letztes Ping ist die letzte Zeile für einen bestimmten Block und stellt das letzte Mal dar, dass der Überwachungsagent den Systemzustand protokolliert. <p>Hinweis:  Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
+   <td colname="col2">x-last-ping ist x-unixtime dividiert durch 10 (um Größenbeschränkungen für numerische Dimensionen aufzunehmen). Letztes Ping ist die letzte Zeile für einen bestimmten Block und stellt das letzte Mal dar, dass der Überwachungsagent den Systemzustand protokolliert. <p>Hinweis: Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Prozentsatz der Protokolllesung</b> </td> 
-   <td colname="col2">wird der Wert cs-uri-query(be) für diese numerische Dimension verwendet. Dies ist die letzte Zeile für einen bestimmten Block. Diese Dimension wird verwendet, um den Prozentsatz der zu lesenden Protokolle zu berechnen. <p>Hinweis:  Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
+   <td colname="col2">wird der Wert cs-uri-query(be) für diese numerische Dimension verwendet. Dies ist die letzte Zeile für einen bestimmten Block. Diese Dimension wird verwendet, um den Prozentsatz der zu lesenden Protokolle zu berechnen. <p>Hinweis: Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Verarbeitungsmodus-ID</b> </td> 
-   <td colname="col2"> Für diese einfache Dimension wird der Wert cs-uri-query(bb) verwendet. Dies ist die letzte Zeile für einen bestimmten Block. Mit der Verarbeitungsmodus-ID können Sie sehen, in welchem Verarbeitungsmodus sich das System befindet (schnelle Eingabe, schnelle Zusammenführung, Echtzeit). <p>Hinweis:  Diese Dimension wird ausgeblendet und dann im clientseitigen Dimensionsverarbeitungsmodus erneut mit benutzerfreundlichen Werten offen gelegt. </p></td> 
+   <td colname="col2"> Für diese einfache Dimension wird der Wert cs-uri-query(bb) verwendet. Dies ist die letzte Zeile für einen bestimmten Block. Mit der Verarbeitungsmodus-ID können Sie sehen, in welchem Verarbeitungsmodus sich das System befindet (schnelle Eingabe, schnelle Zusammenführung, Echtzeit). <p>Hinweis: Diese Dimension wird ausgeblendet und dann im clientseitigen Dimensionsverarbeitungsmodus erneut mit benutzerfreundlichen Werten offen gelegt. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Verarbeitung angehalten</b> </td> 
-   <td colname="col2"> Das Feld "x-processing-stalled"wird über verschiedene Bedingungen erstellt, um anzugeben, ob das Profil derzeit ausgeführt wird oder nicht. Es ist eine einfache Dimension. <p>Hinweis:  Diese Dimension funktioniert am besten, wenn eine große Anzahl von Eingabeprotokollen relativ zwischen den DPUs verteilt werden muss. Wenn beispielsweise nur eine große Datei pro Tag geladen wird, kann Data Workbench für mindestens eine Stunde "anhalten", was zu einer falsch positiven Anzeige dieser Dimension führt. </p></td> 
+   <td colname="col2"> Das Feld "x-processing-stalled"wird über verschiedene Bedingungen erstellt, um anzugeben, ob das Profil derzeit ausgeführt wird oder nicht. Es ist eine einfache Dimension. <p>Hinweis: Diese Dimension funktioniert am besten, wenn eine große Anzahl von Eingabeprotokollen relativ zwischen den DPUs verteilt werden muss. Wenn beispielsweise nur eine große Datei pro Tag geladen wird, kann Data Workbench für mindestens eine Stunde "anhalten", was zu einer falsch positiven Anzeige dieser Dimension führt. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Profil</b> </td> 
@@ -70,7 +72,7 @@ Die folgenden Dimensionen können im Profil Profilstatus von Data Workbench verw
   </tr> 
   <tr> 
    <td colname="col1"> <b>Prozentsatz der Umwandlungen</b> </td> 
-   <td colname="col2"> wird der Wert cs-uri-query(bf) für diese numerische Dimension verwendet. Dies ist die letzte Zeile für einen bestimmten Block. Diese Dimension wird verwendet, um den Prozentsatz der vollständigen Datenumwandlung zu berechnen. <p>Hinweis:  Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
+   <td colname="col2"> wird der Wert cs-uri-query(bf) für diese numerische Dimension verwendet. Dies ist die letzte Zeile für einen bestimmten Block. Diese Dimension wird verwendet, um den Prozentsatz der vollständigen Datenumwandlung zu berechnen. <p>Hinweis: Diese Dimension ist ausgeblendet, da sie nur nützlich ist, wenn sie in einer Metrik im Durchschnitt dargestellt wird. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Zeitdimensionen</b> </td> 

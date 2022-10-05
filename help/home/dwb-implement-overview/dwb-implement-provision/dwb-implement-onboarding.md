@@ -3,7 +3,7 @@ description: Führen Sie diese Schritte aus, um das Onboarding für die Adobe Da
 title: Grundlegende Onboarding-Anweisungen für DWB Managed Services
 uuid: ad44a4eb-00ea-49c7-8401-58976d8fe39e
 exl-id: 49fb6afe-b417-4554-9238-fd6381c00029
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Grundlegende Onboarding-Anweisungen für DWB Managed Services{#basic-onboarding-instructions-for-dwb-managed-services}
+
+{{eol}}
 
 Führen Sie diese Schritte aus, um das Onboarding für die Adobe Data Workbench (DWB), eine Komponente von Adobe Analytics Premium (AAP), zu starten.
 
@@ -55,14 +57,14 @@ Sie erhalten diese Setupdateien von der Adobe-Kundenunterstützung, um die DWB-W
    >
    >Ihr Browser fordert Sie an dieser Stelle möglicherweise auf, ein digitales Zertifikat vorzulegen. Wenn dies der Fall ist, klicken Sie auf Abbrechen , um das Dialogfeld zu schließen.
 
-1. Suchen Sie das für Ihre Instanz der Adobe-Data Workbench ausgestellte Zertifikat (`<PrimaryUser>`.pem) im Abschnitt Downloads und laden Sie es herunter.
+1. Suchen Sie das für Ihre Instanz der Adobe-Data Workbench ausgestellte Zertifikat (`<PrimaryUser>`.pem) im Abschnitt Downloads und laden Sie herunter.
 1. Suchen Sie im Abschnitt Downloads nach dem Standard-Client-Installationsprogramm , um den DWB-Einrichtungs-Assistenten (InsightSetup-x.xx.exe-Datei) herunterzuladen.
 1. Nachdem Sie Dateien von der Adobe-Kundenunterstützung erhalten und heruntergeladen haben, führen Sie den DWB-Einrichtungs-Assistenten aus, um die Workstation-Software auf Ihrem Clientcomputer zu installieren.
 
 >[!NOTE]
-Der DWB-Einrichtungs-Assistent führt Sie durch die Installation der DWB-Client-Workstation und hilft Ihnen, die Dateien Insight.cfg und `<PrimaryUser>`.pem zu finden, die in den erforderlichen Ordnern platziert werden sollen. Die Datei Insight.cfg befindet sich zusammen mit der Datei Insight.exe in Ihrer installierten Client-Workstation. Die Datei `<PrimaryUser>`.pem befindet sich im Ordner Zertifikate mit der Datei trust_ca_cert.pem . Damit DWB funktioniert, müssen alle Zertifikat- und Konfigurationsdateien vorhanden sein.
+Der DWB-Einrichtungs-Assistent führt Sie durch die Installation der DWB-Client-Workstation und hilft Ihnen bei der Suche nach Insight.cfg und `<PrimaryUser>`.pem-Dateien, die in den erforderlichen Ordnern platziert werden sollen. Die Datei Insight.cfg befindet sich zusammen mit der Datei Insight.exe in Ihrer installierten Client-Workstation. Die `<PrimaryUser>`.pem-Datei befindet sich im Ordner Zertifikate mit der Datei trust_ca_cert.pem . Damit DWB funktioniert, müssen alle Zertifikat- und Konfigurationsdateien vorhanden sein.
 
-Weitere Informationen finden Sie unter [DWB-Einrichtungs-Assistent](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
+Weitere Informationen finden Sie im Abschnitt [DWB-Einrichtungs-Assistent](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
 
 ## Verbindung zu Ihren DWB-Servern {#section-8e79c4e07c2a4342a5bb8af6ee7be3c9}
 
@@ -83,4 +85,4 @@ Im Arbeitsbereich Workstation-Konfiguration auf der DWB-Client-Workstation könn
 
 ・ Adobe TechOps konfiguriert den primären Produktionscluster so, dass er drei Monate rollierende Daten enthält, die monatlich zurückgesetzt und erneut verarbeitet werden. Aktualisierungen der Suche (Geografie, DeviceAtlas, Standardklassifizierungen) werden ebenfalls im Rahmen der Neuverarbeitungsaufgabe vorgenommen. Standardmäßig wird die Aufgabe am ersten Freitag eines jeden Monats ausgeführt. Bei Bedarf kann der Zeitplan von der Kundenunterstützung geändert werden.
 
-Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+Für weitere Informationen wenden Sie sich bitte an [Adobe-Kundenunterstützung](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).

@@ -3,7 +3,7 @@ description: Die Aufspaltung teilt eine Zeichenfolge basierend auf einem angegeb
 title: Split
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
 exl-id: ea85b095-1306-4938-906d-35d421db6c98
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Aufspaltung{#split}
+
+{{eol}}
 
 Die Aufspaltung teilt eine Zeichenfolge basierend auf einem angegebenen Trennzeichen in einen Vektor von Unterzeichenfolgen auf.
 
@@ -62,7 +64,7 @@ Stellen Sie sich eine Website vor, auf der die von einem Kunden gekauften Produk
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-Das Feld &quot;cs-uri-stamm&quot;wird verwendet, um zu bestimmen, ob die vom Protokolleintrag angeforderte Seite die Bestätigungsseite ist. Die Codes für die Produkte, die der Kunde gekauft hat, werden in der cs-uri-Abfrage als kommagetrennte Werte für den Namen prod_selected aufgeführt. Die Umwandlung [!DNL Split] kann verwendet werden, um diese Informationen zu extrahieren, indem die Produktcodes am Komma aufgeteilt werden, wenn der Wert von cs-uri-stämmen mit dem in der Bedingung [!DNL String Match] angegebenen Wert übereinstimmt. Siehe [String Match](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). Die folgende Transformation beschreibt die Lösung dieses Problems.
+Das Feld &quot;cs-uri-stamm&quot;wird verwendet, um zu bestimmen, ob die vom Protokolleintrag angeforderte Seite die Bestätigungsseite ist. Die Codes für die Produkte, die der Kunde gekauft hat, werden in der cs-uri-Abfrage als kommagetrennte Werte für den Namen prod_selected aufgeführt. Die [!DNL Split] Die Umwandlung kann verwendet werden, um diese Informationen zu extrahieren, indem die Produktcodes am Komma aufgeteilt werden, wenn der Wert von cs-uri-stämmen mit dem in der [!DNL String Match] Bedingung. Siehe [Zeichenfolgenübereinstimmung](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). Die folgende Transformation beschreibt die Lösung dieses Problems.
 
 ![](assets/cfg_TransformationType_Split.png)
 

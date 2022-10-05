@@ -3,7 +3,7 @@ description: Nachdem die HTML einer Seite von einem Browser angefordert wurde, f
 title: Erfassen eingebetteter Objektanfragen (Seiten-Tags)
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
 exl-id: 593e49bc-9619-4e85-8ce3-2e9d23d175c9
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 4%
@@ -12,15 +12,17 @@ ht-degree: 4%
 
 # Erfassen eingebetteter Objektanfragen (Seiten-Tags){#acquiring-embedded-object-requests-page-tags}
 
+{{eol}}
+
 Nachdem die HTML einer Seite von einem Browser angefordert wurde, fordert der Browser die eingebetteten Objekte, auf die in der HTML dieser Seite verwiesen wird, von einem Webserver an, um die vom Browser angezeigte Seite auszufüllen.
 
 Solche eingebetteten Objektanfragen sind in den meisten Fällen Anfragen für Bilddateien oder JavaScript-Dateien, obwohl heute Hunderte oder vielleicht Tausende von Arten von eingebetteten Objekten im Internet verwendet werden. Viele dieser eingebetteten Objektanforderungen sind im Allgemeinen nicht für die Analyse oder Berichterstellung zur Geschäftsaktivität einer Website nützlich. viele solcher Anfragen sind daher für den Erwerb nicht wünschenswert, es sei denn, sie haben einen bestimmten Geschäftszweck, z. B. die Präsentation einer Werbung oder eine andere Messung der Site-Aktivität.
 
-Beispielsweise kann es sich bei einem Bild um eine Anzeige handeln, und Sie möchten vielleicht wissen, dass die Anzeige für einen Besucher beeindruckt war. Ein JavaScript-Snippet kann verwendet werden, um eine Messung durchzuführen, dass der jeweilige Browser ein bestimmtes Merkmal aufweist, und ihn zur Akquise an [!DNL Sensor] zurückzugeben. Jede Seite einer Site kann 10 oder 100 eingebettete Objektanfragen enthalten. Wenn eine Site die Protokollinformationen für jede dieser Anforderungen speichert, wird die Menge an Datenspeicherung, die erforderlich ist, um die Protokolldaten für zukünftige Analysen verfügbar zu halten, mit der Anzahl der eingebetteten Objektanforderungen für jede angeforderte Seite multipliziert. Aus diesem Grund können Sie mit [!DNL Site] die für die Analyse wichtigen Anforderungen beibehalten und andere verwerfen, bevor unnötige Speicherkosten anfallen.
+Beispielsweise kann es sich bei einem Bild um eine Anzeige handeln, und Sie möchten vielleicht wissen, dass die Anzeige für einen Besucher beeindruckt war. Ein JavaScript-Snippet kann verwendet werden, um eine Messung durchzuführen, dass der jeweilige Browser ein bestimmtes Merkmal aufweist, und ihn an einen [!DNL Sensor] für die Akquise. Jede Seite einer Site kann 10 oder 100 eingebettete Objektanfragen enthalten. Wenn eine Site die Protokollinformationen für jede dieser Anforderungen speichert, wird die Menge an Datenspeicherung, die erforderlich ist, um die Protokolldaten für zukünftige Analysen verfügbar zu halten, mit der Anzahl der eingebetteten Objektanforderungen für jede angeforderte Seite multipliziert. Aus diesem Grund [!DNL Site] ermöglicht Ihnen, die für die Analyse wichtigen Anforderungen beizubehalten und andere zu verwerfen, bevor unnötige Speicherkosten entstehen.
 
-Mithilfe der Funktion zum Außerkraftsetzen, die in den Filterfunktionen für den Inhaltstyp von [!DNL Sensor] bereitgestellt wird (beim Anhängen von &quot;Log=1&quot;an die Abfragezeichenfolge einer eingebetteten Objekt-Anfrage-URL), können diese bestimmte eingebettete Objektanforderung und die zugehörigen Messdaten abgerufen werden, ohne dass der Site-Manager alle Anforderungen dieses Typs speichern muss (z. B. alle `<image>`-Anforderungen).
+Durch Verwendung der Funktion zum Außerkraftsetzen, die in den Filterfunktionen für den Inhaltstyp von [!DNL Sensor] (Anfügen von &quot;Log=1&quot;an die Abfragezeichenfolge einer eingebetteten Objekt-Anfrage-URL), kann diese bestimmte eingebettete Objektanforderung und die zugehörigen Messdaten erfasst werden, ohne dass der Site-Manager alle Anforderungen dieses Typs speichern muss (z. B. alle `<image>` -Anfragen).
 
-[!DNL Sensor] erfasst die Messdaten in der folgenden Tabelle für jede eingebettete Objektanfrage des Webservers, vorausgesetzt, dass nicht konfiguriert  [!DNL Sensor] ist, um sie herauszufiltern, oder der Filter überschrieben wurde. Die erfassten Informationen beziehen sich auf den Besucher, die Sitzung und nachfolgende Sitzungen über die Protokolleinträge x-trackingid oder cs(cookie) .
+[!DNL Sensor] erfasst die Messdaten in der folgenden Tabelle für jede eingebettete Objektanforderung vom Webserver, vorausgesetzt, dass [!DNL Sensor] nicht konfiguriert ist, um sie herauszufiltern, oder dass der Filter überschrieben wurde. Die erfassten Informationen beziehen sich auf den Besucher, die Sitzung und nachfolgende Sitzungen über die Protokolleinträge x-trackingid oder cs(cookie) .
 
 <table id="table_11BE08A798E743EC8E76F738F0CE5884">
  <thead>
@@ -35,7 +37,7 @@ Mithilfe der Funktion zum Außerkraftsetzen, die in den Filterfunktionen für de
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> Tracking-ID (Unique Visitor) </td>
-   <td colname="col3"> Kennung, die von einem Cookie gelesen wird, das im Browser des Benutzers durch <span class="wintitle"> Sensor </span> auf Anfrage platziert wurde </td>
+   <td colname="col3"> Kennung, die aus einem Cookie gelesen wird, das im Browser des Benutzers platziert wurde durch <span class="wintitle"> Sensor </span> auf Anfrage </td>
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
@@ -72,13 +74,13 @@ Mithilfe der Funktion zum Außerkraftsetzen, die in den Filterfunktionen für de
    <td colname="col1"> s-dns </td>
    <td colname="col2"> Server Domain Name </td>
    <td colname="col3"> Domänenname des Webservers, der die Anforderung verarbeitet </td>
-   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer) </td>
    <td colname="col2"> Verweisende URL </td>
    <td colname="col3"> Inhalt des vom Client gesendeten HTTP-Referrer-Felds </td>
-   <td colname="col4"> <span class="filepath"> https://www.referringsite.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> https://www.referringsite.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(user-agent) </td>

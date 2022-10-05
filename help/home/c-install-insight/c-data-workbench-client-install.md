@@ -3,7 +3,7 @@ description: Im Folgenden finden Sie Anforderungen und Empfehlungen für die Ins
 title: Workstation-Anforderungen
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 exl-id: 35e259e3-3d6d-45c8-a923-2f8de117489d
-source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Workstation-Anforderungen{#workstation-requirements}
 
+{{eol}}
+
 Im Folgenden finden Sie Anforderungen und Empfehlungen für die Installation der Workstation (Client) in Data Workbench.
 
-Weitere Informationen zu den Systemanforderungen für Data Workbenchs finden Sie unter [Serversystemanforderungen](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/c-msr-server.html?lang=en) .
+Siehe [Systemanforderungen des Servers](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/c-msr-server.html?lang=en) für zusätzliche Systemanforderungen der Data Workbench.
 
 >[!IMPORTANT]
 >
@@ -24,7 +26,7 @@ Weitere Informationen zu den Systemanforderungen für Data Workbenchs finden Sie
 
 Stellen Sie sicher, dass Sie diese Aufgaben abgeschlossen haben, bevor Sie die Data Workbench Workstation (Client) installieren:
 
-* **** ***Fügen Sie ausgeschlossene*** Prozesse für den  *MS System Center Endpoint Protection in Windows 2012* Server für die folgenden ausführbaren Dateien hinzu:
+* **Hinzufügen** ***Ausgeschlossene Prozesse*** für *MS System Center Endpoint Protection in Windows 2012-Servern* für die folgenden ausführbaren Dateien:
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
@@ -32,17 +34,17 @@ Stellen Sie sicher, dass Sie diese Aufgaben abgeschlossen haben, bevor Sie die D
 
    Dadurch werden die Berechtigungen der Zulassungsliste für diese miteinander verbundenen ausführbaren Dateien aktiviert.
 
-* **Installieren Sie Microsoft Excel, um Analysedaten zu exportieren.** Um Daten aus Arbeitsbereichen als Microsoft Excel-Dateien (  [!DNL .xls] oder  [!DNL .xlsx]) zu exportieren, muss Excel auf dem Computer installiert und registriert sein, auf dem Sie Data Workbench installieren. Wenn Excel nicht registriert wurde und Data Workbench zum ersten Mal darauf zugreifen möchte, zeigt Excel ein Registrierungsdialogfeld an. Wenn Sie nicht sicher sind, ob die Kopie registriert ist, starten Sie Excel manuell und führen Sie den Registrierungsprozess durch, wenn ein Registrierungsdialogfeld angezeigt wird.
+* **Installieren Sie Microsoft Excel, um Analysedaten zu exportieren.** So exportieren Sie Daten aus Arbeitsbereichen als Microsoft Excel ( [!DNL .xls] oder [!DNL .xlsx]), muss Excel auf dem Computer installiert und registriert sein, auf dem Sie Data Workbench installieren. Wenn Excel nicht registriert wurde und Data Workbench zum ersten Mal darauf zugreifen möchte, zeigt Excel ein Registrierungsdialogfeld an. Wenn Sie nicht sicher sind, ob die Kopie registriert ist, starten Sie Excel manuell und führen Sie den Registrierungsprozess durch, wenn ein Registrierungsdialogfeld angezeigt wird.
 
    >[!NOTE]
    >
    >Mit der Veröffentlichung von Data Workbench 6.4 wurde die Unterstützung für Excel 2007 eingestellt. Da die Data Workbench nur unter Microsoft Windows für die 64-Bit-Architektur ausgeführt wird, wird empfohlen, auch eine 64-Bit-Version von Microsoft Excel zu installieren.
 
-* **Installieren der Adobe  [!DNL Acrobat] zum Drucken skalierter Arbeitsbereiche in PDF.** Um skalierte Arbeitsbereiche im Adobe PDF-Format zu drucken, muss Adobe auf dem Computer  [!DNL Acrobat] installiert sein, auf dem die Data Workbench installiert ist.
+* **Installieren der Adobe [!DNL Acrobat] zum Drucken skalierter Arbeitsbereiche auf PDF.** Zum Drucken skalierter Arbeitsbereiche im Adobe PDF-Format muss der Computer, auf dem die Data Workbench installiert ist, über Adobe verfügen [!DNL Acrobat] installiert.
 
 * **Zugriff auf einen Drucker zum Drucken von Arbeitsbereichen.** Um Arbeitsbereiche von Data Workbench aus zu drucken, muss der Computer, auf dem Sie Data Workbench installieren, Zugriff auf einen Drucker haben. Data Workbench kann Arbeitsbereiche für Farb- oder Schwarzweißdrucker drucken und erfordert keine PostScript- oder anderen erweiterten Druckerfunktionen. Um optimale Ergebnisse zu erzielen, empfiehlt Adobe, Arbeitsbereiche farbig zu drucken.
 * **Durchführung von Sicherheitsmaßnahmen.** Sie sollten die normalen Unternehmenssicherheitsrichtlinien Ihres Unternehmens für Data Workbench-Computer befolgen. Um die Hauptaufgaben zu erfüllen, erfordert die Data Workbench nur die Möglichkeit, eine Verbindung zu einem Server (über die Ports 80 und 443) und zu allen Servern herzustellen, die Daten erfassen. Sie können die Data Workbench-Hardware für jeden anderen Zweck verwenden, solange Sie die Data Workbench-Software verwalten und mindestens 10 GB Speicherplatz für die Data Workbench bereitstellen.
-* Um Visualisierungen genau zu rendern, muss auf dem Computer, auf dem Sie die Workbench installieren, ein entsprechender **Grafikadapter** installiert sein (siehe Anforderungen an den Grafikadapter unten).
+* Um die Visualisierungen korrekt wiederzugeben, muss der Computer, auf dem Sie die Workbench installieren, über eine geeignete **Grafikkarte** installiert (siehe Anforderungen an den Grafikadapter unten).
 
 **Data Workbench-Kundenanforderungen**
 

@@ -3,7 +3,7 @@ description: Eine Wertlegende zeigt definierte Wertereignisse an.
 title: Wertlegenden
 uuid: 7779f442-2f45-4bf8-a62a-585aaceaeb3a
 exl-id: b28ba604-93ef-4081-ae55-937fb537c068
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 2%
@@ -12,11 +12,13 @@ ht-degree: 2%
 
 # Wertlegenden{#value-legends}
 
+{{eol}}
+
 Eine Wertlegende zeigt definierte Wertereignisse an.
 
-Die Wertlegende ist nur in den HBX und [!DNL Site] Anwendungen konfiguriert, kann aber für andere Anwendungen konfiguriert werden. Weitere Informationen erhalten Sie von Adobe Consulting Services.
+Die Wertlegende wird nur in der HBX konfiguriert und [!DNL Site] Anwendungen, aber sie können für andere Anwendungen konfiguriert werden. Weitere Informationen erhalten Sie von Adobe Consulting Services.
 
-In HBX und [!DNL Site] wird ein Wert-Ereignis als Sitzung definiert, die einen Geschäftswert generiert hat. Beispielsweise können die Ereignisdatensätze, die bestimmten Seitenansichten zugeordnet sind (z. B. eine Dankeseite für die Bestellung oder eine Seite zur Anwendungsfertigstellung), Wertereignisse für eine Geschäftsorganisation darstellen.
+HBX und [!DNL Site], wird ein Wertereignis als Sitzung definiert, die einen Geschäftswert generiert hat. Beispielsweise können die Ereignisdatensätze, die bestimmten Seitenansichten zugeordnet sind (z. B. eine Dankeseite für die Bestellung oder eine Seite zur Anwendungsfertigstellung), Wertereignisse für eine Geschäftsorganisation darstellen.
 
 Mit Wertereignissen können Sie die von der Website generierte Wertmenge messen und verfolgen. Sie können den Geschäftswert für jedes Ereignis in Dollar bewerten und Fragen wie z. B. folgende beantworten:
 
@@ -57,7 +59,7 @@ Wenn Sie ein Wertereignis erstellen, ziehen Sie Website-Seiten, die einen Wert d
 
 1. Weisen Sie in der Wertlegende jeder Sitzung, für die das Ereignis eintritt, einen Geschäftswert zu:
 
-   1. Klicken Sie in der Spalte [!DNL Value per Event] auf die Zelle, die der Seite entspricht, die Sie als Wertereignis hinzugefügt haben.
+   1. Im [!DNL Value per Event] klicken Sie auf die Zelle, die der Seite entspricht, die Sie als Wert-Ereignis hinzugefügt haben.
    1. Geben Sie den Dollarbetrag ein, der für den Wert dieses Ereignisses zugewiesen werden soll, und drücken Sie die Eingabetaste.
 
    ![](assets/lgd_ValueLegend_Value.png)
@@ -66,7 +68,7 @@ Wenn Sie ein Wertereignis erstellen, ziehen Sie Website-Seiten, die einen Wert d
 
 Nachdem Sie mindestens ein Wertereignis definiert haben, steht die Dimension Wertsegment zur Verwendung zur Verfügung. Diese Dimension stellt den Gesamtwert dar, den ein Besucher in allen Sitzungen generiert hat.
 
-## Wertereignisse {#section-25cd90a859384ca183c0fc0998f888cf} entfernen
+## Wertereignisse entfernen {#section-25cd90a859384ca183c0fc0998f888cf}
 
 * Klicken Sie mit der rechten Maustaste auf das gewünschte Ereignis und klicken Sie auf **[!UICONTROL Delete Event]**.
 
@@ -74,7 +76,7 @@ Nachdem Sie mindestens ein Wertereignis definiert haben, steht die Dimension Wer
 
 >[!NOTE]
 >
->Der Data Workbench-Server berechnet Metriken für den gesamten Datensatz, auf den das von Ihnen verwendete Profil zugreifen kann. Standardmäßig berechnet das [!DNL Data Workbench Server] Metriken wie Wert, Wertereignisse, Durchschnittswert und Konversion für alle Daten im Analysedatensatz, selbst wenn die Daten nicht aus derselben logischen Quelle stammen.
+>Der Data Workbench-Server berechnet Metriken für den gesamten Datensatz, auf den das von Ihnen verwendete Profil zugreifen kann. Standardmäßig wird die [!DNL Data Workbench Server] berechnet Metriken wie Werte-, Wertereignisse-, Durchschnittswert- und Konversionsmetriken für alle Daten im Analysedatensatz, selbst wenn die Daten nicht aus derselben logischen Quelle stammen.
 
 ## Exportieren in Microsoft Excel {#section-feaa7a8eb8124fafbc74169bebaed6d8}
 

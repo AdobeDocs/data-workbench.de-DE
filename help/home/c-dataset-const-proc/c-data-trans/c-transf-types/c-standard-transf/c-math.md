@@ -3,7 +3,7 @@ description: Die Mathematische Transformation ermöglicht die Verwendung von ari
 title: Math
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
 exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # Mathematisch{#math}
+
+{{eol}}
 
 Die Mathematische Transformation ermöglicht die Verwendung von arithmetischen Operationen für Felder in den Protokolleinträgen.
 
@@ -42,11 +44,11 @@ Die Vorgänge können Dezimalzahlen und Fließkommastenkonstanten enthalten.
   </tr> 
   <tr> 
    <td colname="col1"> Ausdruck </td> 
-   <td colname="col2"> <p>Ein arithmetischer Ausdruck, der die auszuführende Berechnung beschreibt. </p> <p> Sie können alle unten aufgeführten Vorgänge und Funktionen verwenden und Feldnamen in den Ausdruck integrieren: </p> <p> Betrieb 
+   <td colname="col2"> <p>Ein arithmetischer Ausdruck, der die auszuführende Berechnung beschreibt. </p> <p> Sie können alle unten aufgeführten Vorgänge und Funktionen verwenden und Feldnamen in den Ausdruck integrieren: </p> <p> Funktionsweise 
      <ul id="ul_DB5915FADA0A41A3B11F1F48615F40A9">
-      <li id="li_CA9EA97243F04760A81313C17EE057B3"> Addition (+) </li>
-      <li id="li_908A272EBA2340098C20F22AA8D9ED26"> Subtraktion (-) </li>
-      <li id="li_C62257FF3AAB436D9148BBEA441621D7"> Multiplikation (*) </li>
+      <li id="li_CA9EA97243F04760A81313C17EE057B3"> Addieren (+) </li>
+      <li id="li_908A272EBA2340098C20F22AA8D9ED26"> Subtrahieren (-) </li>
+      <li id="li_C62257FF3AAB436D9148BBEA441621D7"> Multiplizieren (*) </li>
       <li id="li_B5A9EAB3E49D4CB9A297172199F23542"> Division (/) </li>
       <li id="li_D2D2B51DB2C8412A9B6F9D5F3CC03F8A"> Rest (%) </li>
       <li id="li_07E7E368FFD2437A852B785E159848E5"> Potenzierung (^) </li>
@@ -74,4 +76,4 @@ In diesem Beispiel, das Felder von Daten verwendet, die aus dem Website-Traffic 
 
 ![](assets/cfg_TransformationType_Math.png)
 
-Weitere Informationen zur Bedingung [!DNL Not Empty] finden Sie unter [Bedingungen](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).
+Informationen zum [!DNL Not Empty] -Bedingung, siehe [Bedingungen](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).

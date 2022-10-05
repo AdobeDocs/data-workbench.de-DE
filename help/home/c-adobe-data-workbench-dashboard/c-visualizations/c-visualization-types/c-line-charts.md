@@ -3,7 +3,7 @@ description: Liniendiagramme
 title: Liniendiagramme
 uuid: 6f525c49-6679-4234-886b-52a3c7df98ff
 exl-id: 75532aff-15ff-4be8-8000-f503b2bf60a2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Liniendiagramme{#line-charts}
+
+{{eol}}
 
 Liniendiagramm-Visualisierungen ermöglichen Ihnen die Visualisierung von Metrik- und Dimensionsdaten mit jedem Datenelement, das als Punkt auf einer X-Y-Achse dargestellt wird, sowie mit Linien, die benachbarte Punkte verbinden. Liniendiagramme ermöglichen die gleichzeitige Anzeige von bis zu 200 eindeutigen Datenelementen in der Grafik. Die Dimensionswerte werden entlang der x-Achse beschriftet, während die Metrikinkremente entlang der y-Achse beschriftet werden. Wenn Sie den Mauszeiger über einen Punkt im Liniendiagramm platzieren, wird der genaue Metrikwert an diesem Punkt angezeigt.
 

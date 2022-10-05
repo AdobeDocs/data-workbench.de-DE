@@ -3,14 +3,16 @@ description: Zeigen Sie eine Liste der Aktionen und Tastaturbefehle der Data Wor
 title: Kurzübersicht
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
 exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 # Kurzübersicht{#quick-reference}
+
+{{eol}}
 
 Zeigen Sie eine Liste der Aktionen und Tastaturbefehle der Data Workbench-Client-Benutzeroberfläche an.
 
@@ -22,7 +24,7 @@ Verwenden Sie diese Aktionen bei der Ausführung von Aufgaben in der Client-Benu
 
 | Aktion | Ergebnis |
 |---|---|
-| Klicken Sie auf  ,  | Auswahl des Elements |
+| Klicken Sie auf , | Auswahl des Elements |
 | Klicken und ziehen | Auswahl des Bereichs |
 | Strg + Auswahl | Zur Auswahl hinzugefügt |
 | Umschalt + Auswahl | Aus Auswahl entfernen |
@@ -60,7 +62,7 @@ Verwenden Sie diese Aktionen bei der Ausführung von Aufgaben in der Client-Benu
 
 | Aktion | Ergebnis |
 |---|---|
-| Klicken Sie auf  ,  | Auswahl eines Elements |
+| Klicken Sie auf , | Auswahl eines Elements |
 | Klicken und ziehen | Auswahl eines Textbereichs |
 | Strg + Auswahl | Fügt Text zur Auswahl hinzu |
 | Umschalt + Auswahl | Entfernt Text aus Auswahl |
@@ -132,7 +134,7 @@ Verwenden Sie diese Tastaturbefehle für Arbeitsbereiche und Konfigurationsdatei
 | Strg + S | Speichert einen Arbeitsbereich. |
 | Strg + O | Öffnet eine Visualisierungsdatei. Dies entspricht der Auswahl von Hinzufügen > Öffnen im Menü &quot;Arbeitsbereich&quot;. |
 | Strg + E | Öffnen Sie eine Konfiguration (standardmäßig) oder andere Dateien. Dies entspricht der Auswahl von Hinzufügen > Bearbeiten im Menü des Arbeitsbereichs. Wählen Sie Alle aus, um andere Dateien zu öffnen. |
-| Menü für häufig verwendete Dateien | Klicken Sie in einem Arbeitsbereich auf **Hinzufügen > Öffnen** , um kürzlich geöffnete Dateien (speichert die letzten zehn) oder Dateien zu öffnen, die Sie in das neue Menü &quot;veröffentlichen&quot;. Sie können im Menü auf das Stiftsymbol in der Liste klicken, um die Visualisierung zu speichern. |
+| Menü für häufig verwendete Dateien | Klicken **Hinzufügen > Öffnen** von einem Arbeitsbereich aus, um kürzlich geöffnete Dateien (speichert die letzten zehn) oder Dateien, die Sie &quot;in das neue Menü&quot;. Sie können im Menü auf das Stiftsymbol in der Liste klicken, um die Visualisierung zu speichern. |
 
 <table id="table_99414A5999F94A2EAB2BBBA27EE487F5"> 
  <thead> 
@@ -143,12 +145,12 @@ Verwenden Sie diese Tastaturbefehle für Arbeitsbereiche und Konfigurationsdatei
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Klicken Sie mit der rechten Maustaste auf einen Knoten und klicken Sie auf <span class="uicontrol"> Paste</span> </p> </td> 
-   <td colname="col2"> <p>Fügt einen Knoten in eine <span class="filepath"> .cfg</span>-Datei ein </p> </td> 
+   <td colname="col1"> <p>Klicken Sie mit der rechten Maustaste auf einen Knoten und klicken Sie auf <span class="uicontrol"> Einfügen</span> </p> </td> 
+   <td colname="col2"> <p>Fügt einen Knoten in einen <span class="filepath"> .cfg</span> file </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1">Klicken Sie mit der rechten Maustaste auf den Vektor und klicken Sie auf <span class="uicontrol"> Als untergeordnetes Element einfügen</span> . </td> 
-   <td colname="col2">Fügt einen Vektor in eine <span class="filepath"> .cfg</span>-Datei auf Vektorebene ein </td> 
+   <td colname="col1">Klicken Sie mit der rechten Maustaste auf den Vektor und klicken Sie auf <span class="uicontrol"> Als untergeordnetes Element einfügen</span> </td> 
+   <td colname="col2">Fügt einen Vektor in ein <span class="filepath"> .cfg</span> Datei auf Vektorebene </td> 
   </tr> 
  </tbody> 
 </table>

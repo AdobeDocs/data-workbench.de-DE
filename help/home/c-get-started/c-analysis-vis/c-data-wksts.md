@@ -3,7 +3,7 @@ description: Text oder Ausdrücke können in beliebige Zellen eines Arbeitsblatt
 title: Arbeiten mit Daten in Arbeitsblättern
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 3%
@@ -12,11 +12,13 @@ ht-degree: 3%
 
 # Arbeiten mit Daten in Arbeitsblättern{#work-with-data-in-worksheets}
 
+{{eol}}
+
 Text oder Ausdrücke können in beliebige Zellen eines Arbeitsblatts eingegeben werden.
 
-Allen Ausdrücken in einem Arbeitsblatt vorangestellt wird ein Gleichheitszeichen (=), es sei denn, [!DNL eval( )] wird verwendet, wodurch der Text in der referenzierten Zelle als Ausdruck behandelt wird.
+Allen Ausdrücken in einem Arbeitsblatt vorangestellt wird ein Gleichheitszeichen (=), es sei denn, [!DNL eval( )], der den Text in der referenzierten Zelle als Ausdruck behandelt.
 
-Eine vollständige Liste der Syntax-Regeln für Metriken, Dimensionen und Filter finden Sie unter [Syntax für Abfragesprachen](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+Eine vollständige Liste der Metrik-, Dimension- und Filtersyntax-Regeln finden Sie unter [Syntax der Abfragesprache](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 **So geben Sie Daten in ein Arbeitsblatt ein**
 
@@ -77,23 +79,23 @@ Data Workbench aktualisiert automatisch die Verweise in der neuen Zelle, um auf 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Nummer </p> </td> 
-   <td colname="col2"> <p>Wendet das ausgewählte numerische Format auf Ihre Daten an, z. B. Uhrzeit, Datum, Prozentsatz oder Dezimalzahl. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Wendet das ausgewählte numerische Format auf Ihre Daten an, z. B. Uhrzeit, Datum, Prozentsatz oder Dezimalzahl. </p> <p>Klicken <span class="uicontrol"> Standard</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Blocksatz </p> </td> 
-   <td colname="col2"> <p>Richtet die Daten in der Zelle links, zentriert oder rechts aus. Die Standardausrichtung bleibt erhalten. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Richtet die Daten in der Zelle links, zentriert oder rechts aus. Die Standardausrichtung bleibt erhalten. </p> <p>Klicken <span class="uicontrol"> Standard</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Farbe </p> </td> 
-   <td colname="col2"> <p>Wendet die ausgewählte Schriftfarbe auf die Daten in der Zelle an. Die Standardschriftfarbe ist weiß. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Wendet die ausgewählte Schriftfarbe auf die Daten in der Zelle an. Die Standardschriftfarbe ist weiß. </p> <p>Klicken <span class="uicontrol"> Standard</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Indikator </p> </td> 
-   <td colname="col2"> <p>Erstellt mithilfe dieser Zelle eine Metrikanzeige. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Erstellen von Metrikindikatoren</a>. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Erstellt mithilfe dieser Zelle eine Metrikanzeige. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Erstellen von Metrikindikatoren</a>. </p> <p>Klicken <span class="uicontrol"> Standard</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Eingabezelle </p> </td> 
-   <td colname="col2"> <p>Macht die ausgewählte Zelle zu einer Eingabezelle. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Erstellen von Eingabezellen</a>. </p> <p>Klicken Sie auf <span class="uicontrol"> Default</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
+   <td colname="col2"> <p>Macht die ausgewählte Zelle zu einer Eingabezelle. Weitere Informationen finden Sie unter <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Erstellen von Eingabezellen</a>. </p> <p>Klicken <span class="uicontrol"> Standard</span> , um die ausgewählte Formatierung zu entfernen. </p> </td> 
   </tr> 
  </tbody> 
 </table>

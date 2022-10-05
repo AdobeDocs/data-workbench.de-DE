@@ -3,7 +3,7 @@ description: Nachdem Sie die Insight-Programmdateien installiert haben, müssen 
 title: Herunterladen und Installieren des digitalen Zertifikats (Insight)
 uuid: 93ab2222-a977-4279-9e1e-71038b1d1cfa
 exl-id: 0dff95ae-880b-45d5-96df-4eb6bea58891
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 39%
@@ -11,6 +11,8 @@ ht-degree: 39%
 ---
 
 # Herunterladen und Installieren des digitalen Zertifikats{#downloading-and-installing-the-digital-certificate}
+
+{{eol}}
 
 Nachdem Sie die Insight-Programmdateien installiert haben, müssen Sie das von Adobe bereitgestellte digitale Zertifikat herunterladen und installieren.
 
@@ -240,7 +242,7 @@ In den folgenden Anweisungen werden die Verfahren beschrieben, nach denen benutz
       ```
 
    1. Das Zertifikat umfasst die Felder CN, O, OU usw. wie für diesen Client in der [!DNL Access Control.cfg] -Datei.
-   1. Das Zeugnis wurde mit einem *Zweck *** von *client* (oder beides) *server* **und** *client*).
+   1. Das Zeugnis wurde mit einem *Zweck&#42;&#42;&#42;* von *client* (oder beides) *server* **und** *client*).
 
       Um zu überprüfen, ob ein Zertifikat über einen Zielcode des Servers und/oder Clients verfügt, können die folgenden Befehle verwendet werden:
 

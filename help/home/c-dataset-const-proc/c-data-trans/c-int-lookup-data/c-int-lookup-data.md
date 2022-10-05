@@ -3,7 +3,7 @@ description: Data Workbench bietet eine Reihe von Umwandlungen, mit denen der Da
 title: Integration von Lookup-Daten
 uuid: 35fd48f7-c0c4-4a83-919d-c15902f27495
 exl-id: 150d3aae-4431-488f-8f19-b522637ee935
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Integration von Lookup-Daten{#integrating-lookup-data}
+
+{{eol}}
 
 Data Workbench bietet eine Reihe von Umwandlungen, mit denen der Data Workbench-Server Suchdaten in den Datensatz integrieren kann.
 
@@ -22,7 +24,7 @@ Um Lookup-Daten zu integrieren, müssen Sie zunächst eine Lookup-Datei generier
 
 **So integrieren Sie Suchdaten in den Datensatz**
 
-1. Erstellen Sie Ihre Lookup-Datei. Siehe [Ausfüllen der Suchtabelle](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-pop-lookup-table.md#concept-dd761338731a40e0997c33dfdabdcdf8).
+1. Erstellen Sie Ihre Lookup-Datei. Siehe [Befüllen der Suchtabelle](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-pop-lookup-table.md#concept-dd761338731a40e0997c33dfdabdcdf8).
 1. Definieren Sie einen der folgenden Umwandlungstypen im Parameter &quot;Umwandlungen&quot;in der entsprechenden Datensatzkonfigurationsdatei:
 
    * [!DNL Categorize]
@@ -31,4 +33,4 @@ Um Lookup-Daten zu integrieren, müssen Sie zunächst eine Lookup-Datei generier
 
 >[!NOTE]
 >
->Beachten Sie, dass die Umwandlung von [!DNL ODBCLookup] nur funktioniert, wenn sie in der Datei [!DNL Transformation.cfg] oder in einer Datei [!DNL Transformation Dataset Include] definiert ist.
+>Beachten Sie Folgendes: [!DNL ODBCLookup] Die Umwandlung funktioniert nur, wenn sie in [!DNL Transformation.cfg] oder in einer [!DNL Transformation Dataset Include] -Datei.

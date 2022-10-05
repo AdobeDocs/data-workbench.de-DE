@@ -3,7 +3,7 @@ description: Beim Erstellen einer Elementpunktebene mit dynamischen Punkten werd
 title: Definieren von Elementpunktebenen anhand von dynamischen Punkten
 uuid: f4b41969-329a-4c33-a8db-8d85597fa577
 exl-id: 5f6e264c-5804-47fa-a3ca-8608a3f7e9d3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 5%
@@ -12,23 +12,25 @@ ht-degree: 5%
 
 # Definieren von Elementpunktebenen anhand von dynamischen Punkten{#define-element-point-layers-using-dynamic-points}
 
+{{eol}}
+
 Beim Erstellen einer Elementpunktebene mit dynamischen Punkten werden die Längen- und Breitengraddaten in jedes Element der Dimension eingebettet.
 
 Um eine Elementpunktebene mithilfe von dynamischen Punkten zu definieren, müssen Sie Folgendes erstellen oder bereits verfügbar sein:
 
-* Eine Dimension, die in der Datei [!DNL Transformation.cfg] oder in der Datei [!DNL transformation dataset include] definiert ist und in der jedes Element die Zeichenfolge &quot;latitude,longitude&quot;oder &quot;latitude,longitude,name&quot;enthält.
+* Eine Dimension, die in der Variablen [!DNL Transformation.cfg] oder [!DNL transformation dataset include] -Datei, in der jedes Element die Zeichenfolge &quot;latitude,longitude&quot;oder &quot;latitude,longitude,name&quot;enthält.
 
-   Anweisungen zum Erstellen einer Dimension finden Sie im *Handbuch zur Datensatzkonfiguration*.
+   Anweisungen zum Erstellen einer Dimension finden Sie unter *Anleitung zur Datensatzkonfiguration*.
 
 * Eine Ebenendatei, die die zugehörige Dimension angibt.
 
-Weitere Informationen zum erforderlichen Format der Ebenendatei finden Sie unter [Element Point Layer File Format](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#section-0645fbc761c14bb986f3d6f02df407a0).
+Weitere Informationen zum erforderlichen Format der Ebenendatei finden Sie unter [Format der Elementpunkt-Schichtdatei](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#section-0645fbc761c14bb986f3d6f02df407a0).
 
 >[!NOTE]
 >
->Bei Verwendung von [!DNL Dynamic Points] ist es wichtig sicherzustellen, dass die Kardinalität der in der Ebenendatei angegebenen Dimension angemessen ist. Wenn jede Zeile eines Datensatzes einen anderen Längen- und Breitengrad aufweist, füllt sich die Dimension schnell an und die meisten Zeilen werden in ein Element &quot;Kleinste Elemente&quot;umgewandelt. Da das Element &quot;Kleine Elemente&quot;keinen Längen- und Breitengrad aufweist, wird es nicht auf der Welt angezeigt.
+>Bei Verwendung von [!DNL Dynamic Points]muss unbedingt sichergestellt werden, dass die Kardinalität der in der Ebenendatei angegebenen Dimension angemessen ist. Wenn jede Zeile eines Datensatzes einen anderen Längen- und Breitengrad aufweist, füllt sich die Dimension schnell an und die meisten Zeilen werden in ein Element &quot;Kleinste Elemente&quot;umgewandelt. Da das Element &quot;Kleine Elemente&quot;keinen Längen- und Breitengrad aufweist, wird es nicht auf der Welt angezeigt.
 
-## Dateiformat der Elementpunkteschicht {#section-0645fbc761c14bb986f3d6f02df407a0}
+## Dateiformat der Elementpunktebenen {#section-0645fbc761c14bb986f3d6f02df407a0}
 
 Jede Elementpunktebenen-Datei, die dynamische Punkte verwendet, muss mithilfe der folgenden Vorlage formatiert werden:
 
@@ -72,7 +74,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Farbe </td> 
-   <td colname="col2"> Optional. Der RGB-Farbvektor, der als (rot, grün, blau) angegeben wird. Für jede Farbe im Vektor können Sie einen Wert zwischen 0,0 und 1,0 eingeben. (1,0, 0,0, 0,0) ist beispielsweise hellrot und (0,5, 0,5, 0,5) grau. </td> 
+   <td colname="col2"> Optional. Der Farbvektor der RGB, der als (rot, grün, blau) angegeben wird. Für jede Farbe im Vektor können Sie einen Wert zwischen 0,0 und 1,0 eingeben. (1,0, 0,0, 0,0) ist beispielsweise hellrot und (0,5, 0,5, 0,5) grau. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Rendermodus </td> 
@@ -86,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Die Datei [!DNL IP Coordinates.layer] ist wie folgt formatiert:
+Die [!DNL IP Coordinates.layer] -Datei wie folgt formatiert:
 
 ```
 Layer = ElementPointLayer:

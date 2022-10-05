@@ -3,7 +3,7 @@ description: Data Workbench ermöglicht Ihnen die Verwendung zusätzlicher mathe
 title: Syntax für mathematische Ausdrücke
 uuid: 63eee559-edfc-4efc-a6c8-66689d156701
 exl-id: a1433258-d3e8-4515-a1ae-00f9108e98c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 15%
@@ -11,6 +11,8 @@ ht-degree: 15%
 ---
 
 # Syntax für mathematische Ausdrücke{#syntax-for-math-expressions}
+
+{{eol}}
 
 Data Workbench ermöglicht Ihnen die Verwendung zusätzlicher mathematischer Berechnungen.
 

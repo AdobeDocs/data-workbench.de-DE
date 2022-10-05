@@ -3,7 +3,7 @@ description: Formatierungsinformationen über die Elementpunkteschichtdatei.
 title: Format der Elementpunkt-Schichtdatei
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
 exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 5%
@@ -12,9 +12,11 @@ ht-degree: 5%
 
 # Format der Elementpunkt-Schichtdatei{#element-point-layer-file-format}
 
+{{eol}}
+
 Formatierungsinformationen über die Elementpunkteschichtdatei.
 
-Jede Elementpunktebene [!DNL .layer], die auf eine Lookup-Datei verweist, muss mithilfe der folgenden Vorlage formatiert werden:
+Jede Elementpunktebene [!DNL .layer] -Datei, die auf eine Lookup-Datei verweist, muss mithilfe der folgenden Vorlage formatiert werden:
 
 ```
 Layer = ElementPointLayer:
@@ -57,11 +59,11 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Schlüsselspalte </td> 
-   <td colname="col2"> <p>Der Name der Spalte in der Lookup-Datei, die die gemeinsamen Schlüsseldaten enthält. Dadurch kann der Data Workbench-Server die Daten in die Lookup-Datei in den Datensatz integrieren. Dies muss die erste Spalte in der Lookup-Datei sein. </p> <p>Jede Zeile in dieser Spalte ist ein Element einer Dimension. Diese Dimension muss in der Datei <span class="filepath"> Transformation.cfg</span> oder in einer Konvertierungsdatei für einen Datensatz definiert und im Dateiparameter Dimension angegeben werden. Weitere Informationen zu Konfigurationsdateien für Umwandlungen finden Sie im <i>Handbuch zur Datensatzkonfiguration</i>. </p> </td> 
+   <td colname="col2"> <p>Der Name der Spalte in der Lookup-Datei, die die gemeinsamen Schlüsseldaten enthält. Dadurch kann der Data Workbench-Server die Daten in die Lookup-Datei in den Datensatz integrieren. Dies muss die erste Spalte in der Lookup-Datei sein. </p> <p>Jede Zeile in dieser Spalte ist ein Element einer Dimension. Diese Dimension muss im <span class="filepath"> Transformation.cfg</span> -Datei oder einem Transformationsdatensatz enthält eine -Datei und wird im Dateiparameter "Dimension"dieser Datei angegeben. Weitere Informationen zu Konfigurationsdateien für Umwandlungen finden Sie in der <i>Anleitung zur Datensatzkonfiguration</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">Der Name der Dimension (definiert in einer Umwandlungskonfigurationsdatei), die Elemente enthält, die den Datenzeilen in der Spalte <span class="wintitle"> Schlüssel</span> entsprechen. </td> 
+   <td colname="col2">Der Name der Dimension (definiert in einer Umwandlungskonfigurationsdatei), die Elemente enthält, die den Datenzeilen in der <span class="wintitle"> Schlüssel</span> Spalte. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Metrik </td> 
@@ -73,7 +75,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Farbe </td> 
-   <td colname="col2"> Optional. Der RGB-Farbvektor, der als (rot, grün, blau) angegeben wird. Für jede Farbe im Vektor können Sie einen Wert zwischen 0,0 und 1,0 eingeben. (1,0, 0,0, 0,0) ist beispielsweise hellrot und (0,5, 0,5, 0,5) grau. </td> 
+   <td colname="col2"> Optional. Der Farbvektor der RGB, der als (rot, grün, blau) angegeben wird. Für jede Farbe im Vektor können Sie einen Wert zwischen 0,0 und 1,0 eingeben. (1,0, 0,0, 0,0) ist beispielsweise hellrot und (0,5, 0,5, 0,5) grau. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Rendermodus </td> 
@@ -87,7 +89,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Die Datei [!DNL Zip Points.layer] ist wie folgt formatiert:
+Die [!DNL Zip Points.layer] -Datei wie folgt formatiert:
 
 ```
 Layer = ElementPointLayer:

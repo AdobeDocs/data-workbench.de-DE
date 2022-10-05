@@ -3,7 +3,7 @@ description: Mithilfe des JavaScript Document Object Model können zusätzliche 
 title: Erfassen von Dokumentenobjekten
 uuid: 7681c337-b147-4937-9d9c-0ff48d9bdd00
 exl-id: eae6609c-be86-44cf-a1a1-69ffb43231fa
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Erfassen von Dokumentenobjekten{#acquiring-document-objects}
+
+{{eol}}
 
 Mithilfe des JavaScript Document Object Model können zusätzliche Skriptmethoden verwendet werden, um die Anforderung für die Datei zig.js zu ergänzen.
 
@@ -37,6 +39,6 @@ v["_1"] = metacontent;
 
 | Erfasste Daten | Erklärung | Beispiel |
 |---|---|---|
-| v_1= | Wert, der mit der Abfragezeichenfolgenvariablen METAVALUE verknüpft ist. Dieser Wert stellt die Daten im META-Element des HTML-Dokuments dar. | v_1=Diese Seite stellt Inhalte bereit, die sich auf die Dankeseite für die Bestellung beziehen. |
+| v_1= | Wert, der der Abfragezeichenfolgenvariablen METAVALUE zugeordnet ist. Dieser Wert stellt die Daten im META-Element des HTML-Dokuments dar. | v_1=Diese Seite stellt Inhalte bereit, die sich auf die Dankeseite für die Bestellung beziehen. |
 
 Nachdem die Daten erfasst wurden, können Sie den Data Workbench-Server so konfigurieren, dass diese Messdaten zum Zwecke der Analyse und Berichterstellung verarbeitet werden.

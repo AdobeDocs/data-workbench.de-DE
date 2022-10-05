@@ -3,7 +3,7 @@ description: Installieren und konfigurieren Sie Sensor für Microsoft IIS 7.x od
 title: Microsoft IIS unter Windows Server 2008 oder höher
 uuid: 7fd8da68-1553-4395-b13e-b08a6ee1948e
 exl-id: cc909daa-60c0-4188-8e90-035c41bf3105
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1589'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Microsoft IIS unter Windows Server 2008 oder höher{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 Installieren und konfigurieren Sie Sensor für Microsoft IIS 7.x oder 8.x, der unter Microsoft Windows Server 2008 oder höher ausgeführt wird.
 
@@ -83,20 +85,20 @@ Die Datei txlogd.conf enthält die Konfigurationsparameter für Sensor.
 
 Sie müssen die Datei bearbeiten, um unter anderem die Größe der Festplattenwarteschlange, die Adresse des Insight Servers und die Kennung anzugeben, die an die von diesem Sensor erzeugten Daten angehängt werden soll. Die Konfigurationsdatei enthält die erforderlichen Parameter und optionalen Parameter.
 
-* **Erforderliche** Parameter sind Einstellungen, die Sie bei der Installation von Sensor angeben müssen. Ohne diese Einstellungen wird Sensor nicht erfolgreich ausgeführt.
-* **Optionale** Parameter sind Einstellungen, die standardmäßig vordefinierte Werte enthalten (die Sie ändern können) oder optionale Funktionen aktivieren.
+* **Erforderliche Parameter** sind Einstellungen, die Sie bei der Installation von Sensor angeben müssen. Ohne diese Einstellungen wird Sensor nicht erfolgreich ausgeführt.
+* **Optionale Parameter** sind Einstellungen, die standardmäßig vordefinierte Werte enthalten (die Sie ändern können) oder optionale Funktionen aktivieren.
 
 **Bearbeiten der Sensorkonfigurationsdatei**
 
-1. Öffnen Sie die Datei `<SensorDirectory>/txlogd.conf` in einem Texteditor und legen Sie die erforderlichen Parameter sowie die gewünschten optionalen Parameter fest.
+1. Öffnen Sie die `<SensorDirectory>/txlogd.conf` in einem Texteditor speichern und die erforderlichen Parameter sowie die gewünschten optionalen Parameter festlegen.
 
-   Beschreibungen der Parameter [!DNL txlogd.conf] finden Sie unter [Parameter für die Datei &quot;Sensor Txlogd.conf&quot;](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
+   Beschreibungen der [!DNL txlogd.conf] Parameter, siehe [Parameter der Datei &quot;Sensor Txlogd.conf&quot;](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
 
 1. Speichern und schließen Sie die Datei.
 
 ## Starten Sie den Transmitter und erstellen Sie die Festplattenwarteschlange. {#section-2b8dfd06996d4ab49998eeb99bd9f5f0}
 
-Nachdem Sie die Datei [!DNL txlogd.conf]konfiguriert haben, können Sie das Transmitter-Programm starten, es als Windows-Dienst registrieren und die Disk-Warteschlange erstellen.
+Nachdem Sie die [!DNL txlogd.conf]-Datei, können Sie das Transmitter-Programm starten, es als Windows-Dienst registrieren und die Festplattenwarteschlange erstellen.
 
 1. Wählen Sie unter Windows im Menü Start die Option Zubehör > Eingabeaufforderung aus.
 1. Navigieren Sie im Eingabeaufforderungsfenster zum Ordner, in dem Sie Sensor installiert haben, und führen Sie den folgenden Befehl aus:
@@ -147,15 +149,15 @@ Der Transmitter ist für eine kontinuierliche Ausführung ausgelegt. Wenn Sie de
 
 Bei IIS ist der Wächter ein ISAPI-Filter, den Sie Ihrem Webserver in IIS hinzufügen.
 
-1. Öffnen Sie den IIS-Manager mit **Start > Verwaltung > Internetinformationsdienste (IIS) Manager**.
-1. Erweitern Sie die Knoten **Lokaler Computer** und **Sites** .
-1. Wählen Sie die Website aus und doppelklicken Sie im rechten Bereich auf **ISAPI Filters**.
-1. Klicken Sie unter dem Bereich **Aktionen** auf **Hinzufügen**.
+1. Öffnen Sie den IIS-Manager mit **Start > Verwaltung > Internet Information Services (IIS) Manager**.
+1. Erweitern Sie die **Lokaler Computer** und **Sites** Knoten.
+1. Wählen Sie die Website aus und doppelklicken Sie im rechten Bereich auf **ISAPI-Filter**.
+1. Unter dem **Aktionen** Bereich, klicken Sie auf **Hinzufügen**.
 
-1. Geben Sie im Feld **Filtername** einen Anzeigenamen für den Filter ein. Der vorgeschlagene Filtername lautet &quot;Sensor&quot;.
-1. Klicken Sie auf **Browse**, wählen Sie die Datei &quot;qlog.dll&quot;(in dem Verzeichnis, in dem Sie Sensor installiert haben) und klicken Sie auf **OK**.
+1. Im **Filtername** ein, geben Sie einen Anzeigenamen für den Filter ein. Der vorgeschlagene Filtername lautet &quot;Sensor&quot;.
+1. Klicken **Durchsuchen**, wählen Sie die Datei &quot;qlog.dll&quot;aus (die sich in dem Ordner befindet, in dem Sie Sensor installiert haben) und klicken Sie auf **OK**.
 
-1. Klicken Sie auf **OK** , um den Filter hinzuzufügen.
+1. Klicken **OK** , um den Filter hinzuzufügen.
 
    Nach dem Hinzufügen des Filters ist der Kollektor sofort einsatzbereit und kann Daten erfassen.
 
@@ -167,9 +169,9 @@ Wenn der grüne Pfeil nach dem Traffic zum Kollektor nicht angezeigt wird, führ
    >
    >Diese Befehlssequenz variiert je nach verwendeter Windows-Version.
 
-1. Wählen Sie im linken Bereich des Fensters Event Viewer das Protokoll **Application** aus.
-1. Suchen Sie im rechten Bereich nach Ereignissen mit &quot;Adobe&quot;in der Spalte **Quelle** .
-1. Wenn ein Fehler auftritt, doppelklicken Sie auf den Fehler, um das Fenster **Ereigniseigenschaften** anzuzeigen.
+1. Wählen Sie im linken Bereich des Fensters Ereignis-Viewer die Option **Anwendung** log.
+1. Suchen Sie im rechten Bereich nach Ereignissen mit &quot;Adobe&quot;im **Quelle** Spalte.
+1. Wenn Sie einen Fehler finden, doppelklicken Sie auf den Fehler, um die **Ereigniseigenschaften** Fenster.
 
 ## Zusätzliche Daten erfassen {#section-98db9625efdc4b60bfd76f7adf4af74d}
 

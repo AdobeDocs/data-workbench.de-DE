@@ -3,7 +3,7 @@ description: Dies ist eine kurze Anleitung, in der Sie die erforderlichen Mindes
 title: Validierung interner und externer FTP-Server
 uuid: bc381c1d-df27-4009-920b-1a804b36c204
 exl-id: 8eecfda7-ffa0-458c-a518-434758344bfe
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 9%
@@ -11,6 +11,8 @@ ht-degree: 9%
 ---
 
 # Validierung interner und externer FTP-Server{#validation-of-internal-and-external-ftp-servers}
+
+{{eol}}
 
 Dies ist eine kurze Anleitung, in der Sie die erforderlichen Mindestschritte zur Validierung der internen und externen FTP-Einrichtung finden.
 
@@ -28,7 +30,7 @@ Weitere Informationen zum Einrichten von FTP-Servern finden Sie unter [File Tran
 
 [!DNL ftp> lcd C:\Users\andixit\Desktop]
 
-lokales Verzeichnis jetzt [!DNL C:\Users\andixit\Desktop].
+lokaler Ordner jetzt [!DNL C:\Users\andixit\Desktop].
 
 1. Kopieren Sie die Datei vom lokalen zum Remote-Speicherort. ![](assets/dwb_impl_ftp2.png)
 

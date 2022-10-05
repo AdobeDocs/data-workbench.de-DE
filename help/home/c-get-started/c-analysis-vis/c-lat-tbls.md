@@ -3,7 +3,7 @@ description: Latenztabellenvisualisierungen sind Tabellen, die eine Latenzdimens
 title: Latenztabellen
 uuid: 8081540c-f96c-424e-802d-05d1be5a728d
 exl-id: 22f6d52f-e1c2-430a-9e69-3440be0ecdea
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Latenztabellen{#latency-tables}
 
+{{eol}}
+
 Latenztabellenvisualisierungen sind Tabellen, die eine Latenzdimension enthalten. Hierbei handelt es sich um einen Typ abgeleiteter Dimension, die die seit dem Eintreten eines bestimmten Ereignisses verstrichene Zeit misst.
 
 Sie definieren das Ereignis, indem Sie Auswahlen in einer oder mehreren Visualisierungen treffen und diese Auswahlen mithilfe der Menüoption Ereignis-Kontext festlegen als Ereignis festlegen festlegen festlegen festlegen. Latenztabellen sind besonders nützlich für die Verfolgung von Aktivitäten im Zusammenhang mit einer Kampagne oder einer bestimmten Kundenbestellung, in der Sie nach einer Zeitkorrelation suchen.
 
-In [!DNL Site] bieten Latenztabellen Informationen zu den Besuchersitzungen, die bis zu sieben Tage vor oder nach dem Ereignis stattgefunden haben. Sie können jedoch Latenztabellen konfigurieren, um Informationen über verschiedene zählbare und zeitliche Dimensionen bereitzustellen. Siehe [Konfigurieren von Latenztabellen](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md#concept-7175c3defec64556994f0dfcccb7d15c).
+In [!DNL Site]enthalten Latenztabellen Informationen zu den Besuchersitzungen, die bis zu sieben Tage vor oder nach dem Ereignis stattgefunden haben. Sie können jedoch Latenztabellen konfigurieren, um Informationen zu verschiedenen zählbaren und zeitbezogenen Dimensionen bereitzustellen. Siehe [Konfigurieren von Latenztabellen](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md#concept-7175c3defec64556994f0dfcccb7d15c).
 
 Elemente der übergeordneten Dimension, z. B. eine Sitzung, die Teil des von Ihnen ausgewählten spezifischen Ereignisses sind, haben eine Latenz von null. Allen anderen Elementen werden Latenzen zugewiesen, die den Abstand (in der entsprechenden Zeitdimension) zum Ereignis widerspiegeln.
 
@@ -44,7 +46,7 @@ Um eine Latenztabelle zu erstellen, müssen Sie zunächst eine Auswahl treffen u
 
 1. Klicken Sie mit der rechten Maustaste in einen Arbeitsbereich und öffnen Sie die gewünschten Visualisierungen, die auf der zählbaren Dimension basieren müssen, die zum Konfigurieren Ihrer Latenztabelle verwendet wird.
 
-   Beispielsweise müssen die Visualisierungen in [!DNL Site] sitzungsbasiert sein.
+   Beispiel: in [!DNL Site] die Visualisierungen müssen sitzungsbasiert sein.
 
 1. Öffnen Sie eine leere Latenztabelle.
 1. Treffen Sie eine Auswahl in Ihrem Arbeitsbereich.
@@ -56,38 +58,38 @@ Um eine Latenztabelle zu erstellen, müssen Sie zunächst eine Auswahl treffen u
 >
 >Die von Ihnen ausgewählten Ereignisse bleiben nur bestehen, wenn Sie die Auswahlen als Latenzdimension speichern. Anweisungen finden Sie unter [Wiederverwenden einer Latenzzeit-Dimension](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46).
 
-## Latenztabelle {#section-05f741169d204213b6537dce553e4f73} wiederverwenden
+## Latenztabelle wiederverwenden {#section-05f741169d204213b6537dce553e4f73}
 
 Wenn Sie dieselbe Latenztabelle erneut verwenden möchten, können Sie die Latenztabelle lokal speichern oder wenn Sie über die entsprechenden Berechtigungen verfügen, können Sie sie auf dem Server speichern, damit alle Benutzer eines bestimmten Profils darauf zugreifen können.
 
 **So speichern Sie die Latenztabelle für die Verwendung in anderen Arbeitsbereichen**
 
-1. Klicken Sie mit der rechten Maustaste auf den oberen Rand der Visualisierung und klicken Sie auf **[!UICONTROL Save]**. Das Fenster [!DNL Save] wird angezeigt. Der standardmäßige Speicherort ist der Ordner &quot;Benutzer\*Profilname*\Arbeit&quot;.
-1. Geben Sie im Feld [!DNL File name] einen beschreibenden Namen für die Visualisierung ein und klicken Sie auf **[!UICONTROL Save]**.
+1. Klicken Sie mit der rechten Maustaste auf den oberen Rand der Visualisierung und klicken Sie auf **[!UICONTROL Save]**. Die [!DNL Save] angezeigt. Der standardmäßige Speicherort ist der Ordner &quot;Benutzer\*Profilname*\Arbeit&quot;.
+1. Im [!DNL File name] ein Feld, geben Sie einen beschreibenden Namen für die Visualisierung ein und klicken Sie auf **[!UICONTROL Save]**.
 
 **So rufen Sie die gespeicherte Latenztabelle ab**
 
-1. Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL File]**. Das Fenster [!DNL Open Visualization] wird angezeigt.
+1. Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL File]**. Die [!DNL Open Visualization] angezeigt.
 1. Navigieren Sie zur gespeicherten Latenztabelle.
-1. Wählen Sie die Visualisierungsdatei für die Latenztabelle ( [!DNL *.vw]) aus und klicken Sie auf **[!UICONTROL Open]**.
+1. Wählen Sie die Visualisierungsdatei für die Latenztabelle aus ( [!DNL *.vw]) und klicken Sie auf **[!UICONTROL Open]**.
 
-## Verwenden Sie die Latenzdimension {#section-29c6483bf9ba476fb1c24ad1df253f46} erneut.
+## Latenzdimension wiederverwenden {#section-29c6483bf9ba476fb1c24ad1df253f46}
 
 Wenn Sie dieselbe Latenzdimension erneut verwenden möchten, können Sie die Latenzdimension lokal speichern oder wenn Sie über die entsprechenden Berechtigungen verfügen, können Sie sie auf dem Server speichern, damit alle Benutzer eines bestimmten Profils darauf zugreifen können.
 
-Sämtliche von Ihnen erstellten Latenzdimensionen werden im Profilordner im Dimension-Verzeichnis gespeichert und sind in der Dropdown-Liste [!DNL Change Dimension] in Data Workbench verfügbar.
+Alle von Ihnen erstellten Latenzdimensionen werden im Verzeichnis Dimensionen des Profils gespeichert und sind im [!DNL Change Dimension] Dropdown-Liste in Data Workbench.
 
 **So speichern Sie die Latenzdimension für die Verwendung in anderen Arbeitsbereichen**
 
-1. Klicken Sie mit der rechten Maustaste auf die Spaltenbeschriftung [!DNL Latency] oder auf eines der Elemente und klicken Sie auf **[!UICONTROL Save Dimension]**. Das Fenster [!DNL Save Dimension As] wird angezeigt.
+1. Klicken Sie mit der rechten Maustaste auf die [!DNL Latency] Spaltenbezeichnung oder eines ihrer Elemente und klicken Sie auf **[!UICONTROL Save Dimension]**. Die [!DNL Save Dimension As] angezeigt.
 1. Wählen oder erstellen Sie das entsprechende Unterverzeichnis im Verzeichnis Dimensionen .
-1. Geben Sie im Feld [!DNL File name] einen beschreibenden Namen für die Dimension ein (z. B. [!DNL Latency for Campaign 11565.dim]) und klicken Sie auf **[!UICONTROL Save]**.
+1. Im [!DNL File name] -Feld einen beschreibenden Namen für die Dimension eingeben (z. B. [!DNL Latency for Campaign 11565.dim]) und klicken Sie auf **[!UICONTROL Save]**.
 
 **So rufen Sie die gespeicherte Latenzdimension ab**
 
-1. Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL File]**. Das Fenster [!DNL Open Visualization] wird angezeigt.
+1. Klicken Sie mit der rechten Maustaste in den Arbeitsbereich und klicken Sie auf **[!UICONTROL Open]** > **[!UICONTROL File]**. Die [!DNL Open Visualization] angezeigt.
 1. Navigieren Sie zur Latenzvisualisierung, die Sie im Ordner Benutzer\*Profilname*\Dimensionen gespeichert haben.
-1. Wählen Sie die Latenzdimensionsdatei ( [!DNL *.dim]) aus und klicken Sie auf **[!UICONTROL Open]**.
+1. Wählen Sie die Latenzdimensionsdatei ( [!DNL *.dim]) und klicken Sie auf **[!UICONTROL Open]**.
 
 ## Exportieren in Microsoft Excel {#section-3dffa5c3aab14cdaa40c78b81b08fe53}
 

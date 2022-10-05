@@ -3,7 +3,7 @@ description: Nachdem Sie Ihre Insight-Software und Ihr digitales Zertifikat inst
 title: Konfigurieren der Verbindung zu Insight Server
 uuid: 8ba13da6-8749-49fe-a29e-dac3906f71b8
 exl-id: 6a87e972-069a-435c-9bac-23b20f165ebb
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Konfigurieren der Verbindung zu Insight Server{#configuring-the-connection-to-insight-server}
+
+{{eol}}
 
 Nachdem Sie Ihre Insight-Software und Ihr digitales Zertifikat installiert haben, müssen Sie Insight starten und die Verbindung zu Insight Server konfigurieren.
 
@@ -22,20 +24,20 @@ Wenn Sie Insight zum ersten Mal starten, stellt es automatisch eine Verbindung z
 
 >[!NOTE]
 >
->Wenn Sie bereits ein vorgesperrtes Zertifikat angefordert, heruntergeladen und installiert haben, wie unter [Herunterladen und Installieren des digitalen Zertifikats](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#topic-fed3b44e472c4e4ca6dd5852af14cdb9) beschrieben, versucht Insight nicht, eine Verbindung zum Lizenzserver herzustellen, und Sie erhalten keinen Fehler.
+>Wenn Sie bereits ein vorgesperrtes Zertifikat angefordert, heruntergeladen und installiert haben, wie hier beschrieben: [Herunterladen und Installieren des digitalen Zertifikats](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#topic-fed3b44e472c4e4ca6dd5852af14cdb9), versucht Insight nicht, eine Verbindung zum Lizenzserver herzustellen, und Sie erhalten keinen Fehler.
 
 **So konfigurieren Sie die Verbindung zu Insight Server**
 
-Bei der Arbeit in einer Clusterumgebung sollte Insight so konfiguriert werden, dass auf den Übergeordnet Insight Server zugegriffen wird, um Synchronisierungsprobleme zu vermeiden. In Insight können Sie Informationen über die Verarbeitung von [!DNL Insight Servers] in Ihrem Cluster mithilfe des Menüelements [!DNL Related Servers] im [Server-Manager](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-svrs-mgr.html) anzeigen.
+Bei der Arbeit in einer Clusterumgebung sollte Insight so konfiguriert werden, dass auf den Übergeordnet Insight Server zugegriffen wird, um Synchronisierungsprobleme zu vermeiden. In Insight können Sie Informationen zur Verarbeitung anzeigen [!DNL Insight Servers] in Ihrem Cluster mithilfe der [!DNL Related Servers] Menüelement in [Server-Manager](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-svrs-mgr.html).
 
 1. Starten Sie Insight.
-1. Klicken Sie auf [!DNL Worktop] auf **[!UICONTROL Admin]** und dann auf **[!UICONTROL First Steps]**.
+1. Im [!DNL Worktop]klicken **[!UICONTROL Admin]**, dann **[!UICONTROL First Steps]**.
 
-1. Klicken Sie auf die Miniaturansicht von **[!UICONTROL Configure Connection to Servers]**.
+1. Klicken Sie auf **[!UICONTROL Configure Connection to Servers]** Miniaturansicht.
 
-   Die [!DNL Servers Manager], die [!DNL Insight.cfg]-Datei und Anweisungen zum Konfigurieren Ihrer [!DNL Insight.cfg]Datei werden angezeigt.
+   Die [!DNL Servers Manager], die [!DNL Insight.cfg] -Datei sowie Anweisungen zum Konfigurieren Ihrer [!DNL Insight.cfg]angezeigt.
 
-1. Klicken Sie im Fenster [!DNL Insight.cfg] mit der rechten Maustaste auf **[!UICONTROL Servers]** und klicken Sie auf **[!UICONTROL Add new child]** > **[!UICONTROL Server]**.
+1. Im [!DNL Insight.cfg] Fenster, Rechtsklick **[!UICONTROL Servers]** und klicken Sie auf **[!UICONTROL Add new child]** > **[!UICONTROL Server]**.
 
    ![](assets/cfg_Workstation_AddChild.png)
 
@@ -44,17 +46,17 @@ Bei der Arbeit in einer Clusterumgebung sollte Insight so konfiguriert werden, d
    ![](assets/cfg_Workstation_AddServer.png)
 
 1. Wiederholen Sie Schritt 4 und Schritt 5 für jeden Insight Server, zu dem Sie eine Verbindung konfigurieren möchten.
-1. Klicken Sie zum Speichern Ihrer Konfigurationsänderungen mit der rechten Maustaste auf **[!UICONTROL Insight.cfg (modified)]** oben im Fenster und klicken Sie auf **[!UICONTROL Save as Insight.cfg]**.
+1. Um Ihre Konfigurationsänderungen zu speichern, klicken Sie mit der rechten Maustaste auf **[!UICONTROL Insight.cfg (modified)]** Klicken Sie oben im Fenster auf **[!UICONTROL Save as Insight.cfg]**.
 
-   Insight versucht mithilfe der von Ihnen angegebenen Einstellungen, eine Verbindung zum [!DNL Insight Server(s)] herzustellen. Wenn eine Verbindung hergestellt wurde, erscheint in [!DNL Servers Manager] ein grüner Knoten, wie auf der folgenden Seite dargestellt.
+   Insight versucht, eine Verbindung zum [!DNL Insight Server(s)] unter Verwendung der von Ihnen angegebenen Einstellungen. Wenn eine Verbindung hergestellt wurde, wird ein grüner Knoten im [!DNL Servers Manager] wie auf der folgenden Seite gezeigt.
 
    ![](assets/vis_SysStat_RedGreenDots.png)
 
    * **Grün:** Gibt an, dass die Verbindung zum Insight Server aktiv ist.
-   * **Light Red:** Gibt ein potenzielles Problem mit dem Server an, z. B. einen Abfluss bei der Serververarbeitung, eine hohe Speicherbelegung oder wenig Festplattenspeicher.
+   * **Hellrot:** Gibt ein potenzielles Problem mit dem Server an, z. B. einen Abfluss bei der Serververarbeitung, eine hohe Speicherbelegung oder geringen Festplattenspeicher.
    * **Rot:** Gibt an, dass die Verbindung zum Insight Server nicht aktiv ist.
 
-   Wenn Insight keine Verbindung mit den angegebenen Einstellungen herstellen kann, wird ein roter Knoten in [!DNL Servers Manager] angezeigt. In diesem Fall finden Sie weitere Informationen unter [Fehlerbehebung bei Verbindungen](../../../home/c-install-insight/install-setup/t-conn-trbsh.md#task-034e588c5ce04c4a8f6d0097364d3b2b).
+   Wenn Insight mit den angegebenen Einstellungen keine Verbindung herstellen kann, wird ein roter Knoten im [!DNL Servers Manager]. In diesem Fall finden Sie weitere Informationen unter [Verbindungsproblem](../../../home/c-install-insight/install-setup/t-conn-trbsh.md#task-034e588c5ce04c4a8f6d0097364d3b2b).
 
 <!--
 c_dir_crt_setup.xml
@@ -66,9 +68,9 @@ Wenn Sie beispielsweise ein Profil mit dem Namen Vertrieb auswählen, wird in Ih
 
 Darüber hinaus erstellt Insight Server bei der erstmaligen Verbindung mit Insight Server die folgenden Ordner im Insight-Installationsordner.
 
-* **[!DNL Trace]directory:** Im  [!DNL Trace] Verzeichnis befindet sich die Insight-Protokolldatei (  [!DNL insight.log]). Wenn die Größe der Datei [!DNL Insight.log] 100 MB erreicht, wird die Datei in [!DNL insight-1.log] umbenannt. Wenn bereits eine Datei mit dem Namen [!DNL insight-1.log] vorhanden ist, wird [!DNL insight-1.log] in [!DNL insight-2.log] usw. umbenannt, mit einem Maximum von [!DNL insight-9.log]. Die Datei [!DNL insight.log] enthält immer die neuesten Protokollinformationen und [!DNL insight-max.log] enthält die ältesten.
+* **[!DNL Trace]directory:** Innerhalb der [!DNL Trace] directory ist die Insight-Protokolldatei ( [!DNL insight.log]). Wenn die Größe der [!DNL Insight.log] erreicht 100 MB, wird die Datei in [!DNL insight-1.log]. Wenn eine Datei des Namens [!DNL insight-1.log] bereits existiert, dann [!DNL insight-1.log] wird in [!DNL insight-2.log]usw. mit einem Maximum von [!DNL insight-9.log]. Die Datei [!DNL insight.log] enthält immer die neuesten Protokollinformationen und [!DNL insight-max.log] enthält den ältesten.
 
-* **[!DNL User]directory:** Im  [!DNL User] Ordner befinden sich Ordner, die den jeweiligen bis dato verwendeten Profilen entsprechen, und in jedem Profilordner befinden sich Ordner namens  [!DNL Work] und  [!DNL Workspaces]. Das Verzeichnis `User\*profile name*\Workspaces` ist der Standardspeicherort für Insight Workspace-Dateien. `User\*profile name*\Work` ist der Standardspeicherort, an dem Insight-Visualisierungen und andere benutzerdefinierte Aufgaben, die vom Insight-Benutzer ausgeführt werden, gespeichert werden.
+* **[!DNL User]directory:** Innerhalb der [!DNL User] Ordner sind Ordner, die jedem bisher verwendeten Profil entsprechen, und in jedem Profilordner befinden sich Ordner namens [!DNL Work] und [!DNL Workspaces]. Der Ordner `User\*profile name*\Workspaces` ist der Standardspeicherort, in dem Insight Workspace-Dateien gespeichert werden. `User\*profile name*\Work` ist der Standardspeicherort, an dem Insight-Visualisierungen und andere benutzerdefinierte Aufgaben, die vom Insight-Benutzer ausgeführt werden, gespeichert werden.
 
 In der folgenden Tabelle sind die Standardspeicherorte häufig aufgerufener Komponenten aufgeführt.
 
@@ -85,11 +87,11 @@ In der folgenden Tabelle sind die Standardspeicherorte häufig aufgerufener Komp
    <td colname="col2"> <p><i>Insight</i>\User\<i>Profilname</i>\Work\ </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Gespeicherte <span class="wintitle"> Arbeitsbereiche</span> </p> </td> 
-   <td colname="col2"> <p><i>Insight</i>\User\<i>Profilname</i>\Workspaces\<i>Registerkartenname</i>\ </p> </td> 
+   <td colname="col1"> <p>Gespeichert <span class="wintitle"> Arbeitsbereiche</span> </p> </td> 
+   <td colname="col2"> <p><i>Insight</i>\User\<i>Profilname</i>\Workspaces\<i>tab name</i>\ </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Gespeicherte<span class="filepath"> .png</span> -Dateien </p> </td> 
+   <td colname="col1"> <p>Gespeichert<span class="filepath"> .png</span> files </p> </td> 
    <td colname="col2"> <p><i>Insight</i>\User\<i>Profilname</i>\Work\ </p> </td> 
   </tr> 
   <tr> 
@@ -97,7 +99,7 @@ In der folgenden Tabelle sind die Standardspeicherorte häufig aufgerufener Komp
    <td colname="col2"> <p><i>Insight</i>\User\Cache.db </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="filepath"> Insight.</span> logfile </p> </td> 
+   <td colname="col1"> <p><span class="filepath"> Insight.log</span> file </p> </td> 
    <td colname="col2"> <p><i>Insight</i>\Trace\ </p> </td> 
   </tr> 
  </tbody> 
@@ -113,6 +115,6 @@ Sie können nach Schlüsselname, Schlüsseltyp oder Wert suchen, um einen Eintra
 
 Geben Sie einen Suchbegriff in dieses Feld ein, um die Daten zu suchen. Je nach Erfolg einer Übereinstimmung ändert sich die Farbe des Felds. Übereinstimmungen werden hervorgehoben und Nicht-Übereinstimmungen werden abgeblendet angezeigt. Wenn keine Treffer vorliegen, wird der Hintergrund des Suchfelds rot. Wenn Sie die Eingabetaste drücken, erweitert der Konfigurationsbaum jeden Ort, an dem eine Übereinstimmung vorliegt, und reduziert, wo keine Übereinstimmung vorliegt.
 
-Sie können auch reguläre Ausdrücke im Feld [!DNL Search] verwenden. Sie können beispielsweise Folgendes verwenden: [!DNL *zip.*] für jeden Eintrag, der das Wort &quot;zip&quot;enthält.
+Sie können auch reguläre Ausdrücke im [!DNL Search] -Feld. Sie können beispielsweise Folgendes verwenden: [!DNL *zip.*] für jeden Eintrag, der das Wort &quot;zip&quot;enthält.
 
-Um eine Suche zu löschen, drücken Sie **[!UICONTROL Escape]**.
+Um eine Suche zu löschen, drücken Sie die **[!UICONTROL Escape]**.

@@ -3,7 +3,7 @@ description: Metriken können mit dem Metrik-Editor bearbeitet und im Verzeichni
 title: Syntax für Ausdrücke zu Metriken
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Syntax für Ausdrücke zu Metriken{#syntax-for-metric-expressions}
+
+{{eol}}
 
 Metriken können mit dem Metrik-Editor bearbeitet und im Verzeichnis &quot;Metriken&quot;eines Profils gespeichert werden.
 
@@ -20,15 +22,15 @@ Hinweise:
 
 1. Unterstrichene Wörter sollten wörtlich in den Ausdruckstext eingegeben werden.
 1. Das Formular `{TEXT}?` stellt optionalen Text dar.
-1. Das Formular `{TEXT}*` stellt Text dar, der null oder öfter vorkommen kann.
+1. Das Formular `{TEXT}*` stellt Text dar, der null oder mehrmals vorkommen kann.
 1. Das Formular `{A | B | C |...}` stellt Text dar, der aus genau einer der angegebenen Optionen besteht, z. B. A, B oder C...
 1. Das Formular `[A,B)` stellt einen Zahlenbereich dar, von A bis B, jedoch nicht B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>ID </p> </td> 
-   <td colname="col2"> <p>Eine Kennung verweist auf eine benannte Metrik. Die Regeln für rechtliche Kennungen finden Sie unter <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntax für Kennungen </a>. </p> <p>Beispiel: Umsatz = Gesamtpreis </p> </td> 
+   <td colname="col1"> <p>Kennung </p> </td> 
+   <td colname="col2"> <p>Eine Kennung verweist auf eine benannte Metrik. Die Vorschriften für die Kennungen von Rechtspersonen finden Sie unter <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntax für Kennungen </a>. </p> <p>Beispiel: Umsatz = Gesamtpreis </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Metrik) </p> </td> 
@@ -56,7 +58,7 @@ Hinweise:
   </tr> 
   <tr> 
    <td colname="col1"> <p>confidence(metric) </p> </td> 
-   <td colname="col2"> <p>Eine Schätzung der Standardabweichung der Metrik. Dies wird mithilfe einer als Jackmesser bekannten Sampling-Technik berechnet. </p> <p>Diese Metrik ist speicherintensiv und sollte nicht in großen Tabellen verwendet werden. </p> <p>Um diese Syntax verwenden zu können, müssen Sie über eine Jackmesser-Dimension (namens "Jackmesser") mit den entsprechenden Eigenschaften verfügen. Weitere Informationen erhalten Sie von Adobe Consulting Services. </p> <p>Beispiel: confidence(Average_Score) </p> <p> <p>Hinweis:  Die Konfidenzmetriktypen, einschließlich Konfidenz(Metrik) und Konfidenz(Metrik, Jacknife), sind besonders bei der Verwendung der kontrollierten Experimentierungsfunktion von Adobe nützlich. Wenn eine Metrik während eines kontrollierten Experiments von 12 % auf 16 % sprunghaft war, können Sie mithilfe eines Konfidenzberechnens die Wahrscheinlichkeit berechnen, dass der Sprung auf zufällige Variationen zurückzuführen war. Dies kann Ihnen helfen, die falschen Schlüsse aus begrenzten Beweisen zu vermeiden und umgekehrt zu garantieren, dass eine fragwürdige Veränderung tatsächlich real ist. </p> </p> </td> 
+   <td colname="col2"> <p>Eine Schätzung der Standardabweichung der Metrik. Dies wird mithilfe einer als Jackmesser bekannten Sampling-Technik berechnet. </p> <p>Diese Metrik ist speicherintensiv und sollte nicht in großen Tabellen verwendet werden. </p> <p>Um diese Syntax verwenden zu können, müssen Sie über eine Jackmesser-Dimension (namens "Jackmesser") mit den entsprechenden Eigenschaften verfügen. Weitere Informationen erhalten Sie von Adobe Consulting Services. </p> <p>Beispiel: confidence(Average_Score) </p> <p> <p>Hinweis: Die Konfidenzmetriktypen, einschließlich Konfidenz(Metrik) und Konfidenz(Metrik, Jacknife), sind besonders bei der Verwendung der kontrollierten Experimentierungsfunktion von Adobe nützlich. Wenn eine Metrik während eines kontrollierten Experiments von 12 % auf 16 % sprunghaft war, können Sie mithilfe eines Konfidenzberechnens die Wahrscheinlichkeit berechnen, dass der Sprung auf zufällige Variationen zurückzuführen war. Dies kann Ihnen helfen, die falschen Schlüsse aus begrenzten Beweisen zu vermeiden und umgekehrt zu garantieren, dass eine fragwürdige Veränderung tatsächlich real ist. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>confidence(metric, jackmesser) </p> </td> 

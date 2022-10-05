@@ -3,7 +3,7 @@ description: Der Zugriff auf und die Berechtigungen in Ihrem Report Portal werde
 title: Bearbeiten der Datei „Email.asp“
 uuid: 18251170-0317-4a32-b9e1-4ebf2d7ad123
 exl-id: e984f12f-362a-4dee-9af3-6d7a38a178a4
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 2%
@@ -12,17 +12,19 @@ ht-degree: 2%
 
 # Bearbeiten der Datei „Email.asp“{#edit-the-email-asp-file}
 
+{{eol}}
+
 Der Zugriff auf und die Berechtigungen in Ihrem Report Portal werden über individuelle Benutzer- und Gruppenkonten gesteuert.
 
-Jedes Mal, wenn Sie ein neues Konto hinzufügen oder ein vorhandenes Konto bearbeiten, kann eine Bestätigungs-E-Mail an die E-Mail-Adresse gesendet werden, die Sie für dieses Konto angeben (siehe [Arbeiten mit Konten](../../../home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md#concept-c933a1940bda4a3489d61d8af315e45d)), und sie kann an die E-Mail-Adressen kopiert werden, die Sie in der Datei [!DNL email.asp] angegeben haben.
+Jedes Mal, wenn Sie ein neues Konto hinzufügen oder ein vorhandenes Konto bearbeiten, kann eine Bestätigungs-E-Mail an die E-Mail-Adresse gesendet werden, die Sie für dieses Konto angeben (siehe [Arbeiten mit Konten](../../../home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md#concept-c933a1940bda4a3489d61d8af315e45d)) und kopiert in die E-Mail-Adressen, die Sie in der [!DNL email.asp] -Datei.
 
 >[!NOTE]
 >
->Benachrichtigungs-E-Mails werden nur an Benutzer gesendet, die eine E-Mail-Adresse für das Konto angegeben und die Datei [!DNL email.asp] ordnungsgemäß konfiguriert haben. Wenn Sie keine Benachrichtigungs-E-Mails für ein Konto senden möchten, lassen Sie das E-Mail-Feld des Kontos leer.
+>Benachrichtigungs-E-Mails werden nur an Kontobenutzer gesendet, wenn Sie eine E-Mail-Adresse für das Konto angegeben und die [!DNL email.asp] -Datei. Wenn Sie keine Benachrichtigungs-E-Mails für ein Konto senden möchten, lassen Sie das E-Mail-Feld des Kontos leer.
 
-Diese Datei befindet sich im Ordner `\*PortalName*\PortalASP` .
+Diese Datei befindet sich im `\*PortalName*\PortalASP` Ordner.
 
-1. Öffnen Sie auf dem Computer, auf dem IIS ausgeführt wird, die Datei [!DNL email.asp] in einem Texteditor wie Notepad.
+1. Öffnen Sie auf dem Computer, auf dem IIS ausgeführt wird, den [!DNL email.asp] in einem Texteditor wie Notepad.
 1. Legen Sie die folgenden Variablen fest:
 
 <table id="table_44F52DA266364DF993C40678A28E0F0D">
@@ -47,12 +49,12 @@ Diese Datei befindet sich im Ordner `\*PortalName*\PortalASP` .
   </tr>
   <tr>
    <td colname="col1"> smtpconnectiontimeout </td>
-   <td colname="col2">Die Zeit, die <span class="wintitle"> Report</span> auf eine Antwort vom SMTP-Server warten soll, bevor die Verbindung unterbrochen wird. </td>
+   <td colname="col2">Die Zeitdauer, die <span class="wintitle"> Bericht</span> sollte auf eine Antwort vom SMTP-Server warten, bevor die Verbindung unterbrochen wird. </td>
   </tr>
  </tbody>
 </table>
 
-1. Legen Sie für die Funktionen [!DNL NewUserEmail()] und [!DNL UpdateUserEmail()] die folgenden Variablen fest:
+1. Für [!DNL NewUserEmail()] und [!DNL UpdateUserEmail()] -Funktionen festlegen, legen Sie die folgenden Variablen fest:
 
    <table id="table_91C5E36B84A94C4097EE5993592BE587">
    <thead>
@@ -64,11 +66,11 @@ Diese Datei befindet sich im Ordner `\*PortalName*\PortalASP` .
    <tbody>
    <tr>
       <td colname="col1"> Von </td>
-      <td colname="col2">Der Text, der in der Kopfzeile von Von in Ihren Bestätigungs-E-Mails angezeigt werden soll. Dieser Wert kann mit dem Wert <span class="wintitle"> CC</span> übereinstimmen. </td>
+      <td colname="col2">Der Text, der in der Kopfzeile von Von in Ihren Bestätigungs-E-Mails angezeigt werden soll. Dieser Wert kann mit dem Wert <span class="wintitle"> CC</span> -Wert. </td>
    </tr>
    <tr>
       <td colname="col1"> CC </td>
-      <td colname="col2"> <p>Optional. Die gültige E-Mail-Adresse der Person oder des Alias, die eine Kopie aller Nachrichten bezüglich neuer und geänderter Benutzerkonten erhalten soll. Sie können mehrere E-Mail-Adressen angeben, indem Sie die Adressen durch Kommas (ohne Leerzeichen) trennen. </p> <p>Beispiel: <span class="filepath"> admin@company.com,joemanager@company.com</span></p> <p> <p>Hinweis:  Die Empfänger erhalten Kopien von E-Mails, die Benutzerkennwörter enthalten. </p> </p> </td>
+      <td colname="col2"> <p>Optional. Die gültige E-Mail-Adresse der Person oder des Alias, die eine Kopie aller Nachrichten bezüglich neuer und geänderter Benutzerkonten erhalten soll. Sie können mehrere E-Mail-Adressen angeben, indem Sie die Adressen durch Kommas (ohne Leerzeichen) trennen. </p> <p>Beispiel: <span class="filepath"> admin@company.com,joemanager@company.com</span></p> <p> <p>Hinweis: Die Empfänger erhalten Kopien von E-Mails, die Benutzerkennwörter enthalten. </p> </p> </td>
    </tr>
    <tr>
       <td colname="col1"> Betreff </td>
@@ -85,7 +87,7 @@ Diese Datei befindet sich im Ordner `\*PortalName*\PortalASP` .
       <li id="li_7CBCC5CFF9E04776BBC893278785AEE7">Die Anmeldeinformationen für Ihr Webportal finden Sie unten: </li>
       <li id="li_5346F0AB3568444B88117C295D8E99C5"><p>UserName: Benutzername </p><p>Neues Kennwort: password </p></li>
       <li id="li_B0D1FAE818BA42CF8546796800A1AA08"><p>Sie können über die folgende URL auf das Portal zugreifen: </p><p><span class="filepath"> https://WebPath</span></p></li>
-      <li id="li_7CD71EBDFA1D418F960040569CD511EB">Nachdem Sie sich beim Portal angemeldet haben, können Sie Ihr Kennwort auf dem Tab <span class="wintitle"> Admin</span> ändern. </li>
+      <li id="li_7CD71EBDFA1D418F960040569CD511EB">Nachdem Sie sich beim Portal angemeldet haben, können Sie Ihr Kennwort im <span class="wintitle"> Admin</span> Registerkarte. </li>
       </ul></p> </td>
    </tr>
    </tbody>

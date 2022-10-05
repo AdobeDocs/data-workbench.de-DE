@@ -3,7 +3,7 @@ description: Administratoren können Workstationbenutzern die teilweise Verwaltu
 title: Benutzeradministration des Zugriffs von Gruppenmitgliedern
 uuid: c31128f9-1094-4337-9bf6-96401278df33
 exl-id: 6d2a0f19-a33c-49f6-a470-c95d2c1532c7
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 6%
@@ -12,38 +12,40 @@ ht-degree: 6%
 
 # Benutzeradministration des Zugriffs von Gruppenmitgliedern{#user-administration-of-group-member-access}
 
+{{eol}}
+
 Administratoren können Workstationbenutzern die teilweise Verwaltung der Zugangssteuerung für Benutzergruppen erteilen.
 
-**Die Selbstverwaltung des Gruppenmitglieds** verleiht Benutzern ohne Administratorrechte, Mitglieder einer benutzerspezifischen Gruppe hinzuzufügen und zu löschen. Der Administrator erstellt eine Datei **Benutzerliste** und richtet den Gruppenzugriff in der Datei [Zugriffssteuerung.cfg](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/admin-dwb-server/access-control/c-config-acs-ctrl.html) für die neuen Gruppenmitglieder ein.
+**Selbstverwaltung des Zugriffs auf Gruppenmitglieder** gibt Benutzern ohne Administratorrechte das Hinzufügen und Löschen von Mitgliedern in einer benutzerspezifischen Gruppe zu. Der Administrator erstellt eine **Benutzerliste** und richtet den Gruppenzugriff in der [Access Control.cfg](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/admin-dwb-server/access-control/c-config-acs-ctrl.html) -Datei für die neuen Gruppenmitglieder.
 
 **Zugriff auf den Server Manager**
 
-Die Einrichtung der Datei **[!DNL User List]** und die Synchronisation mit der Datei **[!DNL Communications.cfg]** erfolgt im Arbeitsbereich **Server Manager** .
+Einrichten der **[!DNL User List]** Datei und synchronisieren sie mit der **[!DNL Communications.cfg]** -Datei im **Server-Manager** Arbeitsbereich.
 
-1. Klicken Sie auf der Arbeitsfläche auf die Registerkarte **Admin** > **Datensatz und Profil** .
+1. Klicken Sie auf der Arbeitsfläche auf die **Admin** tab > **Datensatz und Profil** Registerkarte.
 
-1. Öffnen Sie den Arbeitsbereich **Server Manager** .
-1. Klicken Sie mit der rechten Maustaste auf >*Ihr Servername* im Diagramm und wählen Sie **Dateien** aus.
+1. Öffnen Sie die **Server-Manager** Arbeitsbereich.
+1. Rechtsklick >*Name Ihres Servers*> im Diagramm und wählen Sie **Dateien**.
 
-   Die Serverdateien werden in einer Tabelle mit den Spalten *Datei*, *`<server name>`* und *Temp* geöffnet.
+   Die Serverdateien werden in einer Tabelle mit Spalten geöffnet *Datei*, *`<server name>`* und *Temp*.
 
-1. **Machen Sie** Localby, indem Sie mit der rechten Maustaste in die Serverspalte einer Serverdatei klicken (für diese Funktion  **[!DNL Access Control]** und  **[!DNL Components/Communications.cfg)]**).
+1. **Lokal machen** durch Rechtsklick in die Serverspalte einer Serverdatei (für diese Funktion) **[!DNL Access Control]** und **[!DNL Components/Communications.cfg)]**.
 
-   In der Spalte **Temp** wird ein weißes Häkchen angezeigt. Sie können sie im Ordner &quot;Temp&quot;bearbeiten. Klicken Sie dann mit der rechten Maustaste auf das Häkchen und **Speichern unter** den Server. (Beim Synchronisieren mit dem Server wird die Farbe rot).
+   Ein weißes Häkchen wird im **Temp** Spalte. Sie können sie im Ordner &quot;Temp&quot;bearbeiten. Klicken Sie dann mit der rechten Maustaste auf das Häkchen und **Speichern unter** den Server. (Beim Synchronisieren mit dem Server wird die Farbe rot).
 
 ## Erstellen einer Datei &quot;User List.cfg&quot; {#section-c25bcaf34f4546e6b8b65f5e7f69ac09}
 
-Der Administrator muss eine **[!DNL User List.cfg]**-Datei im Ordner **[!DNL Access Control]** erstellen.
+Der Administrator muss eine **[!DNL User List.cfg]** in der Datei **[!DNL Access Control]** Ordner.
 
-1. Klicken Sie mit der rechten Maustaste in die Zeile **Temp** und wählen Sie **Öffnen** > **Ordner**. ![](assets/6_4_workstation_groups_3.png).
+1. Klicken Sie mit der rechten Maustaste auf die Zeile &quot;Zugriffssteuerung&quot;im **Temp** und wählen Sie **Öffnen** > **Ordner**. ![](assets/6_4_workstation_groups_3.png)
 
-   Der Ordner Zugriffskontrolle im Ordner **Temp** öffnet eine Liste mit einer einzelnen **[!DNL Access Control.cfg]**-Datei.
+   Der Ordner &quot;Zugriffssteuerung&quot;im **Temp** -Ordner wird geöffnet, in dem eine einzelne **[!DNL Access Control.cfg]** -Datei.
 
-1. Fügen Sie diesem Ordner eine weitere Textdatei hinzu und nennen Sie sie **[!DNL User List.cfg]** (neben **[!DNL Access Control.cfg]**).
+1. Fügen Sie diesem Ordner eine weitere Textdatei hinzu und benennen Sie sie. **[!DNL User List.cfg]** (neben dem **[!DNL Access Control.cfg]**).
 
-1. Fügen Sie der Datei **[!DNL User List.cfg]** die folgenden Parameter hinzu.
+1. Fügen Sie die folgenden Parameter zum **[!DNL User List.cfg]** -Datei.
 
-Die Datei &quot;Benutzerliste&quot;sollte einen Vektor von **AccessGroup** -Objekten enthalten. Jedes **AccessGroup** -Objekt sollte einen Namen und einen Vektor von Zeichenfolgen mit dem Namen **Mitglieder** enthalten.
+Die Datei &quot;Benutzerliste&quot;sollte einen Vektor von **AccessGroup** Objekte und **AccessGroup** -Objekt sollte einen Namen und einen Vektor von Zeichenfolgen haben, die **Mitglieder**.
 
 ```
 Access Control Groups = vector: 1 items 
@@ -53,11 +55,11 @@ Access Control Groups = vector: 1 items
       0 = string: CN:Joe User
 ```
 
-Sie können diese dann bearbeiten und Benutzer in der Workstation-Ansicht der Datei **[!DNL User List.cfg]**hinzufügen.
+Sie können diese dann bearbeiten und Benutzer in der Workstation-Ansicht des ** hinzufügen[!DNL User List.cfg]**Datei.
 
 ![](assets/6_4_workstation_groups_4.png)
 
-Im Folgenden finden Sie die grundlegendsten Parameter, die Sie der Datei **[!DNL User List.cfg]** hinzufügen können. Die Mitglieder können dann in der Workstation-Ansicht hinzugefügt werden.
+Im Folgenden finden Sie die grundlegendsten Parameter, die der **[!DNL User List.cfg]** -Datei. Die Mitglieder können dann in der Workstation-Ansicht hinzugefügt werden.
 
 ```
 Access Control Groups = vector: 1 items 
@@ -68,30 +70,31 @@ Access Control Groups = vector: 1 items
 
 >[!IMPORTANT]
 >
->Stellen Sie wie bei jeder **[!DNL .cfg]**-Datei, die Sie manuell bearbeiten, sicher, dass Sie Leerzeichen anstelle von Tabulatoren verwenden und dabei den Leerraum und die Syntax genau beachten. Ein Fehler in dieser Datei führt dazu, dass *Adobe Insight Server* die Benutzerlisten-Datei ignoriert.
+>Wie bei allen **[!DNL .cfg]** -Datei, die Sie manuell bearbeiten, stellen Sie sicher, dass Sie Leerzeichen anstelle von Registerkarten verwenden, und achten Sie dabei besonders auf Leerzeichen und Syntax. Ein Fehler in dieser Datei verursacht *Adobe Insight Server* , um die Datei &quot;Benutzerliste&quot;zu ignorieren.
 
-Das Feld **Name** in jedem **Zugriffsgruppe** wird in der Datei [!DNL Access Control.cfg] referenziert.
+Die **Name** in jedem **Zugriffsgruppe** wird innerhalb der [!DNL Access Control.cfg] -Datei.
 
 >[!NOTE]
 >
->Es werden nur gültige Mitglieder mit Verzeichnisdienstpräfixen wie **CN:** oder **OU:** akzeptiert, die keine Platzhalterzeichen (*) enthalten.
+>Nur gültige Mitglieder mit Ordnerdienst-Präfixen, z. B. **CN:** oder **OU:** akzeptiert werden, die keine Platzhalterzeichen (&#42;).
 
 ## Datei &quot;Communications.cfg&quot;einrichten {#section-9d6f05ba81c14f15be63e361533459e8}
 
-Ein Administrator aktiviert diese Funktion zuerst, indem er die Datei **[!DNL Components]>[!DNL Communications.cfg]** öffnet und einen neuen Schlüssel mit dem Namen **[!DNL Access Control User List File]** hinzufügt. Der Zeichenfolgenwert dieses Schlüssels ist der Pfad, in dem sich diese neue Datei befindet.
+Ein Administrator aktiviert diese Funktion zuerst, indem er **[!DNL Components]>[!DNL Communications.cfg]** und fügen Sie einen neuen Schlüssel mit dem Namen hinzu. **[!DNL Access Control User List File]**. Der Zeichenfolgenwert dieses Schlüssels ist der Pfad, in dem sich diese neue Datei befindet.
 
-1. Klicken Sie in den Serverdateien auf **Komponenten** und klicken Sie mit der rechten Maustaste auf das Häkchen in der Serverspalte. Klicken Sie auf **Make Local**.
+1. Klicken Sie in den Serverdateien auf **Komponenten** und klicken Sie mit der rechten Maustaste auf das Häkchen in der Serverspalte. Klicken **Lokal machen**.
 
-   In der Spalte **Temp** wird ein weißes Häkchen angezeigt.
+   Ein weißes Häkchen wird im **Temp** Spalte.
 
-1. Klicken Sie mit der rechten Maustaste auf das Häkchen in der Spalte **Temp** und wählen Sie **Öffnen** > **in Workstation** aus.
+1. Klicken Sie mit der rechten Maustaste auf das Häkchen im **Temp** und wählen Sie **Öffnen** > **in Workstation**.
 
-1. Klicken Sie in der Datei **Communication.cfg** mit der rechten Maustaste auf **component** und wählen Sie **Benutzerdefinierten Schlüssel hinzufügen.** ![](assets/6_4_workstation_groups.png)
+1. Im **Communication.cfg** Datei, Rechtsklick **component** und wählen Sie **Fügen Sie benutzerdefinierten Schlüssel hinzu.** ![](assets/6_4_workstation_groups.png)
 
-1. Geben Sie **Name** als *Zugriffssteuerungslisten-Datei* ein und setzen Sie **vom Typ** auf *String*.
+1. Geben Sie die **Name** as *Zugriffssteuerungslisten-Datei* und **des Typs** as *Zeichenfolge*.
 
    >[!NOTE]
-   Sie können die neue Listendatei nicht als Pfad erstellen. Um dies zu beheben, müssen Sie die Datei speichern, sie in einem Editor (Editor) öffnen und &quot;String&quot;in &quot;Path&quot;ändern:
+   >
+   >Sie können die neue Listendatei nicht als Pfad erstellen. Um dies zu beheben, müssen Sie die Datei speichern, sie in einem Editor (Editor) öffnen und &quot;String&quot;in &quot;Path&quot;ändern:
 
    Bevor:
 
@@ -111,15 +114,15 @@ Ein Administrator aktiviert diese Funktion zuerst, indem er die Datei **[!DNL Co
     <Path>: Access Control\\User List.cfg
    ```
 
-1. Speichern Sie die Datei **[!DNL Communications.cfg]** und speichern Sie sie (falls erforderlich) auf dem Server. Dadurch werden Komponenten auf dem Server neu gestartet, um sicherzustellen, dass Sie keine Fehler gemacht haben, die die Analyse der **[!DNL Communications.cfg]**-Datei verhindern könnten.
-1. Wenn Ihr System Verarbeitungsserver enthält, ändern Sie die Konfigurationsdatei in der Datei **[!DNL Components for Processing Servers.cfg]** .
-1. Klicken Sie mit der rechten Maustaste auf **[!DNL Communications.cfg]** und speichern Sie auf dem Server.
+1. Speichern Sie die **[!DNL Communications.cfg]** und speichern Sie sie (falls erforderlich) auf dem Server. Dadurch werden Komponenten auf dem Server neu gestartet, um sicherzustellen, dass Sie keine Fehler gemacht haben, die die **[!DNL Communications.cfg]** -Datei analysiert werden.
+1. Wenn Ihr System Verarbeitungsserver enthält, ändern Sie die Konfigurationsdatei im **[!DNL Components for Processing Servers.cfg]** -Datei.
+1. Rechtsklick **[!DNL Communications.cfg]** und auf dem Server speichern.
 
 Der Gruppenadministrator kann jetzt bestätigen, dass die vorgesehenen Data Workbenchs Zugriff auf die Benutzerlistendatei haben und den Benutzern die Gruppenverwaltung ermöglichen. Benutzer können die Datei &quot;Benutzerliste&quot;öffnen, sie bearbeiten und CN- oder OU-Mitglieder nach Bedarf hinzufügen und entfernen.
 
 ## Synchronisieren Sie die Datei Access Control.cfg . {#section-ca6da453dfb4432bb40b86ef15ede872}
 
-Der Administrator kann dann **[!DNL Access Control.cfg]** bearbeiten und Verweise auf die Gruppe(n) einfügen, die durch die Datei *Benutzerliste* definiert wurde.
+Der Administrator kann dann die **[!DNL Access Control.cfg]** und fügen Sie Verweise auf die Gruppe(n) ein, die durch die *Benutzerliste* -Datei.
 
 Die Verweise auf die Gruppe(n) sollten wie jedes andere Mitglied eingefügt werden, jedoch mit der folgenden Syntax:
 
@@ -129,4 +132,4 @@ $(Group Name)
 
 Dabei entspricht &quot;Gruppenname&quot;dem, was in der Benutzerlistendatei definiert ist, einschließlich Leerzeichen. ![](assets/6_4_workstation_groups_2.png)
 
-An dieser Stelle kann der Data Workbench-Administrator bestätigen, dass ausgewählte Gruppenbenutzer Zugriff auf die Benutzerlistendatei haben. Die ausgewählten Benutzer können dann die Datei **[!DNL User List.cfg]** öffnen, sie bearbeiten und CN- oder OU-Mitglieder nach Bedarf hinzufügen und entfernen.
+An dieser Stelle kann der Data Workbench-Administrator bestätigen, dass ausgewählte Gruppenbenutzer Zugriff auf die Benutzerlistendatei haben. Die ausgewählten Benutzer können dann die **[!DNL User List.cfg]** -Datei speichern, bearbeiten und fügen Sie bei Bedarf CN- oder OU-Mitglieder hinzu und entfernen Sie sie.

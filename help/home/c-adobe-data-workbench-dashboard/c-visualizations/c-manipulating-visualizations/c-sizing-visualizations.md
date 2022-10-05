@@ -3,7 +3,7 @@ description: Sie können eine Visualisierung nicht nur ein- und ausblenden, sond
 title: Anpassung der Größe von Visualisierungen
 uuid: ba8ceab2-61bc-4996-80cb-7a507e728efa
 exl-id: 23c86123-cdf2-43a8-a473-fd66fe202f8a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Anpassung der Größe von Visualisierungen{#sizing-visualizations}
+
+{{eol}}
 
 Sie können eine Visualisierung nicht nur ein- und ausblenden, sondern auch ihre Größe ändern.
 

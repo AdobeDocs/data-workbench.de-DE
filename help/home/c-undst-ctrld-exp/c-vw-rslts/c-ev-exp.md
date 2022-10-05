@@ -4,7 +4,7 @@ solution: Analytics
 title: Auswerten des Experiments
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 exl-id: 5add2168-f6bc-45c5-bf1d-1191a38c5bac
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 ---
 
 # Auswerten des Experiments{#evaluating-the-experiment}
+
+{{eol}}
 
 Nachdem Sie das Experiment durchgeführt haben, bis die erforderliche Mindestanzahl von Besuchern an dem Experiment teilgenommen hat, können Sie sich auf ausreichende statistische Genauigkeit verlassen, um die Ergebnisse Ihres Experiments zu bewerten.
 

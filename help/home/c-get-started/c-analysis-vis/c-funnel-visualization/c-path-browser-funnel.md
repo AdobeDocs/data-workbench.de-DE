@@ -3,7 +3,7 @@ description: Aus der Trichtervisualisierung können Sie einen Pfadbrowser öffne
 title: Hinzufügen eines Pfad-Browsers
 uuid: 6b6879bf-81e5-4c6f-a4a6-eecac1ab0a29
 exl-id: d9ecb982-3b9d-497f-9cae-5c4220a5204f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Hinzufügen eines Pfad-Browsers{#adding-a-path-browser}
+
+{{eol}}
 
 Aus der Trichtervisualisierung können Sie einen Pfadbrowser öffnen, um zusätzlichen detaillierten Besucherabbruch zu identifizieren und Pfade zu durchlaufen.
 
@@ -29,6 +31,6 @@ Sie können identifizieren, wo Besucher &quot;Fallout&quot;(der den Pfad verlass
    In der Visualisierung des Pfadbrowsers gibt die Breite der Zeilen, die in die ausgewählte Dimension eingehen und aus ihr ausgehen, das Traffic-Volumen an. Bevor Sie beispielsweise auf die Seite &quot;Männer&quot;tippen, kamen einige Besucher durch andere Routen herein, die meisten kamen jedoch über die Startseite herein. Beim Verlassen gingen die meisten auf die Seite &quot;Men Surfing&quot;.
 
 1. Öffnen Sie den Pfad-Browser für die Besucher, die &quot;Herbst&quot;machen. Klicken Sie mit der rechten Maustaste auf den Kegel im Trichter, um den Pfad für Besucher zu identifizieren, die durch den Trichter gefallen sind oder zum nächsten Schritt gewechselt sind.
-1. Klicken Sie unten in der Visualisierung des Pfadbrowsers auf die Schaltfläche **Mehr** , um eine Tabelle mit allen Besuchen zu öffnen, die in einer Tabellenansicht für die vorherigen und aktuellen Besuche aufgeführt sind.
+1. Klicken Sie auf **Mehr** -Schaltfläche unten in der Pfadbrowser-Visualisierung, um eine Tabelle mit allen Besuchen zu öffnen, die in einer Tabellenansicht für die vorherigen und aktuellen Besuche aufgeführt sind.
 
    ![](assets/path_browser_more.png)

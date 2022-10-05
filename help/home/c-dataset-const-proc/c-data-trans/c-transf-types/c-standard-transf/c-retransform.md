@@ -3,7 +3,7 @@ description: Die RETransform-Transformation (regulärer Ausdruck) ist eine patte
 title: RETransform
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
 exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -12,13 +12,15 @@ ht-degree: 3%
 
 # RETransform{#retransform}
 
+{{eol}}
+
 Die RETransform-Transformation (regulärer Ausdruck) ist eine pattern-Matching-Transformation, die mithilfe regulärer Ausdrücke ein Muster angibt, nach dem gesucht und erfasst werden soll, und die erfasste Zeichenfolge in einem dafür vorgesehenen Ausgabefeld speichert.
 
 Reguläre Ausdrücke werden mit der gesamten Eingabezeichenfolge ausgewertet. Wenn die Eingabe nicht dem im regulären Ausdruck angegebenen Muster entspricht, werden keine Daten erfasst. Eine kurze Anleitung zur Verwendung regulärer Ausdrücke finden Sie unter [Reguläre Ausdrücke](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->Die Umwandlung von [!DNL RETransform] funktioniert ähnlich wie die Umwandlung von [!DNL REMatch] (siehe [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), die ein Ausgabefeld für jedes erfasste Untermuster im regulären Ausdruck erstellt. [!DNL RETransform] können Sie sich [!DNL REMatch] als eine Kombination aus  und [!DNL Format] Transformationen vorstellen. Wenn der Aktionsparameter (siehe Aktion in der folgenden Tabelle) auf &quot;ERGEBNISSE&quot;festgelegt ist, funktioniert [!DNL RETransform] wie eine Kombination aus [!DNL REMatch] und [!DNL Union] Transformationen.
+>Die [!DNL RETransform] Die Umwandlung funktioniert ähnlich wie die [!DNL REMatch] Transformation (siehe [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), das ein Ausgabefeld für jedes erfasste Untermuster im regulären Ausdruck erstellt. Sie können [!DNL RETransform] als Kombination aus [!DNL REMatch] und [!DNL Format] Transformationen. Wenn der Aktionsparameter (siehe Aktion in der folgenden Tabelle) auf &quot;ERGEBNISSE&quot;festgelegt ist, dann [!DNL RETransform] funktioniert wie eine Kombination aus [!DNL REMatch] und [!DNL Union] Transformationen.
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 

@@ -3,7 +3,7 @@ description: Sie sollten Ihre Ereignisprotokolldateien regelmäßig überwachen,
 title: Überwachen administrativer Ereignisse (Insight Server)
 uuid: 92d71478-0857-4af8-909c-0cf800b081f4
 exl-id: e468a7d0-ed09-4367-88ce-b68964511e76
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Überwachen administrativer Ereignisse{#monitoring-administrative-events}
+
+{{eol}}
 
 Sie sollten Ihre Ereignisprotokolldateien regelmäßig überwachen, um Insight Server-Systemereignismeldungen zu verfolgen, die beim `<YYYYMMDD>-event.txt` Dateien, die sich standardmäßig im Ordner &quot;Events&quot;im Installationsordner von Insight Server befinden.
 

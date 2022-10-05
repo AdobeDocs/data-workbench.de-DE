@@ -3,7 +3,7 @@ description: Im Folgenden werden die Metriken aufgelistet, die im Data Workbench
 title: Dimensionen im Data Workbench-Profil zur Historie-Überwachung
 uuid: 47b874f7-8acb-4593-9ac9-5997d5279e52
 exl-id: 65f0f605-f128-45bb-8f6c-95284b2da740
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Dimensionen im Data Workbench-Profil zur Historie-Überwachung{#metrics-in-the-data-workbench-historical-monitoring-profile}
+
+{{eol}}
 
 Im Folgenden werden die Metriken aufgelistet, die im Data Workbench-Profil zur Historischen Überwachung enthalten sind, und wie sie abgeleitet werden.
 
@@ -49,6 +51,6 @@ Im Folgenden werden die Metriken aufgelistet, die im Data Workbench-Profil zur H
 | **Ausgabezeilen** | Die Summe der Dimension &quot;Ausgabezeilen&quot;für jeden Ping dividiert durch die Metrik &quot;Pings&quot;, multipliziert mit 10000. |
 | **Echtzeitmodus** | Die Anzahl der Pings, bei denen die Dimension &quot;Verarbeitungsmodus&quot;gleich &quot;Echtzeit&quot;ist, dividiert durch die Metrik Pings, alle multipliziert mit 100. |
 | **Neuverarbeitungsmodus** | 100 minus der Anzahl der Pings, bei denen der Verarbeitungsmodus &quot;Echtzeit&quot;entspricht, dividiert durch die Pings-Metrik, multipliziert mit 100. |
-| **Angehalten** | Die Summe der Dimension Verarbeitung angehalten im Profil Insight [Profilstatus](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64). |
+| **Angehalten** | Die Summe der Dimension &quot;Verarbeitung angehalten&quot;in Insight [Profilstatus](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64) Profil. |
 | **Temp DB** | Die Summe des Temp DB Space-Prozentsatzes für jedes Ping, geteilt durch die Pings-Metrik. |
 | **Umwandlung** | Die Summe des Transformationsprozentsatzes für jedes Ping dividiert durch die Pings-Metrik, die alle durch 10 dividiert wird. |

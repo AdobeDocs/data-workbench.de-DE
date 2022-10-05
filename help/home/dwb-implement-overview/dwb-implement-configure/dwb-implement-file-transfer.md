@@ -3,7 +3,7 @@ description: Eine kurze Anleitung für verschiedene Dateiübertragungsmethoden i
 title: Dateiübertragungs-Governance
 uuid: a3e19f8a-1cc4-437c-9661-408f675109c0
 exl-id: a0ecd8e1-6d6f-4811-9869-092837dc9e55
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dateiübertragungs-Governance{#file-transfer-governance}
+
+{{eol}}
 
 Eine kurze Anleitung für verschiedene Dateiübertragungsmethoden in DWB.
 
@@ -20,8 +22,8 @@ File Transfer Governance ist ein Standardprozess zum Übertragen von Dateien von
 
 1. AWS (Amazon Web Services)
 
-   1. Heben Sie ein Ticket auf, um die AWS-Befehlszeilenschnittstelle auf dem Server zu installieren, falls noch nicht installiert (siehe [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)).
-   1. Wie kann ich überprüfen? Versuchen Sie, die AWS mithilfe der Eingabeaufforderung zu konfigurieren (siehe [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)).
+   1. Ticket zur Installation der AWS-Befehlszeilenschnittstelle auf dem Server auslösen (siehe [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)).
+   1. Wie kann ich überprüfen? Versuchen Sie, den AWS mithilfe der Eingabeaufforderung zu konfigurieren (siehe [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)).
 
 1. Übertragen Sie Dateien vom FTP-Server in das NAS-Verzeichnis.
 
@@ -53,10 +55,10 @@ File Transfer Governance ist ein Standardprozess zum Übertragen von Dateien von
 
       >[!NOTE]
       >
-      >Wenn der Ordner Scripository nicht verfügbar ist, lesen Sie [Wöchentliche Neuverarbeitung](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) , um den Ordner herunterzuladen.
+      >Wenn der Ordner &quot;Scripository&quot;nicht verfügbar ist, lesen Sie [Wöchentliche Neuverarbeitung](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) , um den Ordner herunterzuladen.
 
    1. Planen Sie das Skript basierend auf der Dateiverfügbarkeit unter ftp_address.
-   1. Die Namenskonvention für die Datei sollte JJJMMTT-&lt;offline_feed_name>-00 lauten.*
+   1. Die Namenskonvention für die Datei sollte JJJMMTT- lauten.&lt;offline_feed_name>-00.&#42;
 
 1. Übertragen Sie Dateien vom NAS-Verzeichnis auf den FTP-Server.
 
@@ -228,12 +230,12 @@ File Transfer Governance ist ein Standardprozess zum Übertragen von Dateien von
       ```
 
    1. Planen Sie das Skript basierend auf der Dateiverfügbarkeit unter ftp_address.
-   1. Die Namenskonvention für die Datei sollte JJJMMTT-&lt;offline_feed_name>-00 lauten.*
+   1. Die Namenskonvention für die Datei sollte JJJMMTT- lauten.&lt;offline_feed_name>-00.&#42;
 
 1. Übertragen Sie Dateien von einem NAS-Ordner in einen anderen NAS-Ordner.
 
    1. Kopieren Sie die Datei und fügen Sie sie direkt aus einem anderen NAS-Verzeichnis ein. Gehen Sie wie folgt vor:)
 
-      Melden Sie sich beim Server an -> gehen Sie zu Ausführen -> \\server_name\E$ [Der neue Ordner wird geöffnet und kopiert oder verschiebt die Dateien]
+      Melden Sie sich beim Server an -> gehen Sie zu Ausführen -> \\server_name\E$ [Der neue Ordner wird geöffnet und kopiert oder verschiebt die Dateien direkt]
 
    1. Verwenden Sie das Skript &quot;copy_files.pl&quot;, um Dateien von einem Server auf einen anderen zu kopieren, oder &quot;move_files.pl&quot;, um Dateien von einem Server auf einen anderen zu verschieben. (Diese Dateien sind in E:\scripts\Scripository verfügbar.)

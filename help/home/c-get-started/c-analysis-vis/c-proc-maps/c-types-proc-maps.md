@@ -3,7 +3,7 @@ description: Informationen zu den verschiedenen Arten von Prozesskarten.
 title: Typen von Prozesskarten
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
 exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Typen von Prozesskarten{#types-of-process-maps}
+
+{{eol}}
 
 Informationen zu den verschiedenen Arten von Prozesskarten.
 
@@ -32,7 +34,7 @@ Die 2D-Prozesskarte im folgenden Beispiel zeigt Knoten, die den Namen von Filmen
 
 ![](assets/vis_2DProcessMap_MovieNodes.png)
 
-Im Beispiel sind die Größe jedes Knotens sowie die Stärke und Intensität jedes Pfeils proportional zur Metrik Bewertungen , was einer Zählung der Bewertungen entspricht, die ein Film erhalten hat. Daher hat ein Film mit einem großen Knoten wie *Independence Day* mehr Bewertungen als ein Film mit einem kleinen Knoten wie *Event Horizon*. Sie können auch sehen, dass mehr Film-Viewer *Independence Day* vor *Cold Mountain* bewertet haben als dieselben Filme in der umgekehrten Reihenfolge. Beachten Sie, dass die Pfeile nicht darauf hinweisen, dass die Betrachter *Independence Day* und dann *Cold Mountain* unmittelbar danach bewertet haben oder umgekehrt. Vielleicht haben die Zuschauer dazwischen andere Filme bewertet, aber diese Filme werden nicht auf dieser Karte angezeigt.
+Im Beispiel sind die Größe jedes Knotens sowie die Stärke und Intensität jedes Pfeils proportional zur Metrik Bewertungen , was einer Zählung der Bewertungen entspricht, die ein Film erhalten hat. Daher ist ein Film mit einem großen Knoten wie *Unabhängigkeitstag*, hat mehr Bewertungen als ein Film mit einem kleinen Knoten, wie *Ereignis-Horizont*. Sie können auch sehen, dass mehr Film-Viewer bewertet wurden *Unabhängigkeitstag* before *Cold Mountain* als die gleichen Filme in umgekehrter Reihenfolge bewertet hat. Beachten Sie, dass die Pfeile nicht angeben, dass die Viewer eine Bewertung vorgenommen haben *Unabhängigkeitstag* und anschließend *Cold Mountain* unmittelbar danach, oder umgekehrt. Vielleicht haben die Zuschauer dazwischen andere Filme bewertet, aber diese Filme werden nicht auf dieser Karte angezeigt.
 
 ## 2D-Metrikzuordnungen {#section-a9b846fc71224058918fbc378315effe}
 

@@ -3,7 +3,7 @@ description: Hinzufügen einer Profilverbindung
 title: Hinzufügen einer Profilverbindung
 uuid: 0a168236-8c15-456b-9ac8-ca572baa916a
 exl-id: c8dd2286-df88-4b23-a7de-cd90bfe76289
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 6%
@@ -12,7 +12,9 @@ ht-degree: 6%
 
 # Hinzufügen einer Profilverbindung{#adding-a-profile-connection}
 
-1. Klicken Sie auf **[!UICONTROL Add Profile Connection]** , um das Fenster **[!UICONTROL New Profile Connection]** aufzurufen.
+{{eol}}
+
+1. Klicken **[!UICONTROL Add Profile Connection]** um **[!UICONTROL New Profile Connection]** Fenster.
 1. Füllen Sie die erforderlichen Felder mithilfe des unten stehenden Formulars aus:
 
    ![](assets/new_profile_connection.png)

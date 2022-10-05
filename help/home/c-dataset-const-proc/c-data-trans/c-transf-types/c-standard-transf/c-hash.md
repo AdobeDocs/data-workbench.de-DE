@@ -3,14 +3,16 @@ description: Die Hash-Transformation erstellt eine fast eindeutige Zeichenfolge,
 title: Hash
 uuid: 13bc14e6-75e2-4711-8f98-50fd18802be5
 exl-id: 6912a1d2-9ae8-42ba-94bd-a7a28cbdfae6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 # Hash{#hash}
+
+{{eol}}
 
 Die Hash-Transformation erstellt eine fast eindeutige Zeichenfolge, die eine 64-Bit-Zahl aus den Eingabewerten darstellt.
 
@@ -18,7 +20,7 @@ Diese Umwandlung liefert denselben Hash-Wert, wenn dieselben Eingaben vorgenomme
 
 >[!NOTE]
 >
->Der resultierende Wert ist fast eindeutig, da die Transformation eine 64-Bit-Zahl als Platz für mögliche Hash-Werte verwendet. Für eine Million einmaliger Eingaben zur [!DNL hash]-Umwandlung besteht eine Chance von 1:38.000.000, einen doppelten Hash-Wert zu erhalten.
+>Der resultierende Wert ist fast eindeutig, da die Transformation eine 64-Bit-Zahl als Platz für mögliche Hash-Werte verwendet. Für eine Million einzigartige Eingaben in [!DNL hash] Transformation gibt es eine Chance von 1:38.000.000, einen doppelten Hash-Wert zu erhalten.
 
 | Parameter | Beschreibung | Standard |
 |---|---|---|

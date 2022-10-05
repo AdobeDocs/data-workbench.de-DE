@@ -3,7 +3,7 @@ description: Um System- und Anwendungsfehler so bald wie möglich zu erkennen un
 title: Überwachen von Ereignissen zum Ausmachen von Fehlern
 uuid: 09bb34db-e24d-4bc5-84d2-7fc37df60681
 exl-id: 88f48594-5c73-4ae3-8014-b8543e689426
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 ---
 
 # Überwachen von Ereignissen zum Ausmachen von Fehlern{#monitoring-events-for-errors}
+
+{{eol}}
 
 Um System- und Anwendungsfehler so bald wie möglich zu erkennen und zu beheben, bevor sie zu größeren Problemen oder Ausfällen führen, sollten Sie Ihre Ereignisprotokolle regelmäßig überwachen.
 

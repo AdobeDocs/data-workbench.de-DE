@@ -3,7 +3,7 @@ description: Das Referenzseiten-Tag besteht aus einem Seiten-Tag-Ausführungsskr
 title: Bearbeiten des Ausführungsskripts für Referenzseiten-Tags
 uuid: 0db00b89-e420-423d-9b88-8b724baa828f
 exl-id: bc922b59-716e-4e92-84b5-59a52620df03
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 7%
@@ -12,11 +12,13 @@ ht-degree: 7%
 
 # Bearbeiten des Ausführungsskripts für Referenzseiten-Tags{#editing-the-reference-page-tag-execution-script}
 
+{{eol}}
+
 Das Referenzseiten-Tag besteht aus einem Seiten-Tag-Ausführungsskript, das sich auf einem Webserver befindet und bei dem Aufruf dazu führt, dass alle clientseitigen Daten für die vom Site-Besucher angeforderte Seite erfasst werden.
 
-Sie können das [!DNL Reference Page Tag Execution Script] ändern, um zusätzliche Informationen zu sammeln, die bei Bedarf bei der Zusammenstellung von Sitzungen mit dem Adobe Consulting Services-Team identifiziert werden können. Der [!DNL Reference Page Tag Execution Script] ist relativ klein, um große Download-Ergänzungen Ihrer Webseiten zu vermeiden.
+Sie können die [!DNL Reference Page Tag Execution Script] zusätzliche Informationen zu sammeln, die bei Bedarf bei Zusammenkünften mit dem Adobe Consulting Services-Team ermittelt werden können. Die [!DNL Reference Page Tag Execution Script] ist relativ klein, um große Download-Ergänzungen Ihrer Webseiten zu vermeiden.
 
-Der folgende [!DNL Reference Page Tag Execution Script]-Code wird Ihnen in einer Datei mit dem Namen [!DNL zig.js] bereitgestellt:
+Folgendes [!DNL Reference Page Tag Execution Script] -Code wird Ihnen in einer Datei mit dem Namen [!DNL zig.js]:
 
 ```
 //REFERENCE PAGE TAG 
@@ -60,19 +62,19 @@ document.write(ct,cd,cu,vo,ce);
 //END REFERENCE PAGE TAG 
 ```
 
-Führen Sie die folgenden Schritte aus, um die Datenerfassung mithilfe von [!DNL Reference Page Tag] zu erleichtern:
+Erleichterung der Datenerhebung durch Verwendung der [!DNL Reference Page Tag]führen Sie die folgenden Schritte aus:
 
-1. Erstellen oder platzieren Sie die Bilddatei mit dem Namen [!DNL zag.gif] 1 Pixel pro Pixel in einem Verzeichnis auf Ihrem Webserver.
-1. Ändern Sie die cd-Variable so, dass sie auf die entsprechende Domäne Ihrer Website oder Adobe-Domain der verwalteten Dienste verweist, von der aus auf die [!DNL zag.gif]-Datei verwiesen wird. Der Verweis auf die Datei wird durch Ausführung der Dateifunktionen [!DNL zig.js] erstellt. Beispiel:
+1. Erstellen oder platzieren Sie die Bilddatei mit dem Namen 1 Pixel pro 1 Pixel [!DNL zag.gif] in ein Verzeichnis auf Ihrem Webserver.
+1. Ändern Sie die cd-Variable so, dass sie auf die entsprechende Domäne Ihrer Website oder der von Adobe verwalteten Dienstdomäne verweist, von der aus die Variable [!DNL zag.gif] -Datei referenziert wird. Der Verweis auf die Datei wird durch Ausführung der [!DNL zig.js] Dateifunktionen. Beispiel:
 
    ```
    //www.mysite.com
    ```
 
-1. Ändern Sie die cu-Variable so, dass sie auf den entsprechenden Pfad zum Speicherort der [!DNL zag.gif]-Datei verweist. Beispiel
+1. Ändern Sie die cu-Variable so, dass sie auf den entsprechenden Pfad zum Speicherort der [!DNL zag.gif] -Datei. Beispiel
 
    ```
    /scripts
    ```
 
-1. Stellen Sie sicher, dass geeignete Cache-Control-Header für die Dateien [!DNL zag.gif] und [!DNL zig.js] eingerichtet sind.
+1. Stellen Sie sicher, dass geeignete Cache-Control-Header für die [!DNL zag.gif] und [!DNL zig.js] Dateien.

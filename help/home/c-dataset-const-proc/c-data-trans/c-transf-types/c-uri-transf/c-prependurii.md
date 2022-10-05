@@ -3,7 +3,7 @@ description: Ähnlich wie bei der AppendURI-Transformation wirkt sich die Prepen
 title: PrependURI
 uuid: 3f2fb1a7-83f7-481e-b892-0937acd379f9
 exl-id: c39d9241-ed66-446e-b59d-fdb11942d0e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 6%
@@ -12,9 +12,11 @@ ht-degree: 6%
 
 # PrependURI{#prependuri}
 
+{{eol}}
+
 Ähnlich wie bei der AppendURI-Transformation wirkt sich die PrependURI-Transformation auf das interne Feld aus, das vom Data Workbench-Server zum Erstellen der URI-Dimension verwendet wird.
 
-Die Umwandlung von [!DNL PrependURI] erfolgt durch Hinzufügen des Werts im identifizierten Eingabefeld an der Vorderseite des Werts, der sich derzeit im URI befindet.
+Die [!DNL PrependURI] Die Umwandlung funktioniert, indem der Wert im Feld Identifizierte Eingabe an die Vorderseite des Werts eingefügt wird, der sich derzeit im URI befindet.
 
 | Parameter | Beschreibung | Standard |
 |---|---|---|

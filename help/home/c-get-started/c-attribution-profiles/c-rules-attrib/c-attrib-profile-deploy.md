@@ -1,38 +1,42 @@
 ---
-description: Das Zuordnungsprofil ist ein geerbtes, sofort einsetzbares Profil. In Kombination mit dem Adobe SC-Profil- und Analytics (SC/Insight)-Datenfeed kann das Profil bereitgestellt werden, um neue Zuordnungsmodelle schnell über digitale Kanäle verfügbar zu machen.
-title: Bereitstellen des Zuordnungsprofils
+description: Das Attributionsprofil ist ein geerbtes, einsatzbereites Profil. In Kombination mit dem Adobe SC-Profil und dem Analytics (SC/Insight)-Daten-Feed kann das Profil bereitgestellt werden, um schnell neue Attributionsmodelle über digitale Kanäle hinweg verfügbar zu machen.
+title: Implementieren des Attributionsprofils
 uuid: acc4e92a-2af1-4993-bae7-015ece3da26c
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 287e1710-7e74-4904-b258-7b811ad484b7
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 3%
 
 ---
 
+# Implementieren des Attributionsprofils{#deploying-the-attribution-profile}
 
-# Bereitstellen des Zuordnungsprofils{#deploying-the-attribution-profile}
+{{eol}}
 
-Das Zuordnungsprofil ist ein geerbtes, sofort einsetzbares Profil. In Kombination mit dem Adobe SC-Profil- und Analytics (SC/Insight)-Datenfeed kann das Profil bereitgestellt werden, um neue Zuordnungsmodelle schnell über digitale Kanäle verfügbar zu machen.
+Das Attributionsprofil ist ein geerbtes, einsatzbereites Profil. In Kombination mit dem Adobe SC-Profil und dem Analytics (SC/Insight)-Daten-Feed kann das Profil bereitgestellt werden, um schnell neue Attributionsmodelle über digitale Kanäle hinweg verfügbar zu machen.
 
-Nach dem Speichern des Zuordnungsprofils auf dem primären Server sind zwei weitere Schritte erforderlich, um es in das aktuelle Profil im [!DNL Profile] Ordner zu integrieren: (1) Richten Sie die Datei &quot;profile.cfg&quot;ein und (2) Deklarieren Sie die erforderlichen Felder.
+Nach dem Speichern des Attributionsprofils auf dem primären Server sind zwei weitere Schritte erforderlich, um es in das aktuelle Profil im [!DNL Profile] directory: (1) Richten Sie die Datei Profil.cfg ein und (2) deklarieren Sie die erforderlichen Felder.
 
-## Profil.cfg-Datei einrichten {#section-7531cb865d994207baba692a6fc842d7}
+## Datei &quot;profile.cfg&quot;einrichten {#section-7531cb865d994207baba692a6fc842d7}
 
-Wie alle Profile muss auch das Namenszuordnungsprofil der [!DNL profile.cfg] Datei hinzugefügt werden. Da das Zuordnungsprofil vom Adobe SC-Profil abhängt, muss das Adobe SC-Profil zuerst in der Konfigurationsdatei vor dem Zuordnungsprofil aufgeführt werden.
+Wie alle Profile muss das Attributionsprofil dem [!DNL profile.cfg] -Datei. Da das Attributionsprofil vom Adobe SC-Profil abhängt, muss das Adobe SC-Profil zuerst in der Konfigurationsdatei vor dem Attributionsprofil aufgelistet werden.
 
 >[!NOTE]
 >
->Diese Schritte erfordern eine Umgestaltung des Datensatzes.
+>Diese Schritte erfordern eine Neuumwandlung des Datensatzes.
 
-1. Öffnen Sie die [!DNL profile.cfg] Datei im benutzerdefinierten Profilordner. (Öffnen in [!DNL server\Profiles\(custom profile name)\profile.cfg].
+1. Öffnen Sie die [!DNL profile.cfg] in Ihrem benutzerdefinierten Profilordner. (Öffnen in [!DNL server\Profiles\(custom profile name)\profile.cfg].
 
-1. Wenn das Zuordnungsprofil nicht in der Konfigurationsdatei aufgeführt ist, fügen Sie es der Liste hinzu. ![](assets/new_profile_cfg.png)
+1. Wenn das Attributionsprofil nicht in der Konfigurationsdatei aufgeführt ist, fügen Sie es der Liste hinzu. ![](assets/new_profile_cfg.png)
 
-1. Vergewissern Sie sich, dass die **[!UICONTROL Attribution]** Zeichenfolge unter der **[!UICONTROL Adobe SC]** Profilzeichenfolge aufgeführt ist.
+1. Stellen Sie sicher, dass **[!UICONTROL Attribution]** -Zeichenfolge wird unter der **[!UICONTROL Adobe SC]** Profil-Zeichenfolge.
 
-1. Speichern Sie die aktualisierte [!DNL profile.cfg] Datei und speichern Sie sie dann im Profil-Manager auf dem Server.
+1. Speichern Sie die Aktualisierung [!DNL profile.cfg] und speichern Sie sie dann im Profil-Manager auf dem Server.
 
 ## Erforderliche Felder deklarieren {#section-23d4273af0c34b7a85ae3430e2c9350e}
 
-Das Zuordnungsprofil nimmt vordefinierte Felder und mit einer Reihe von Transformationen macht diese Felder auf neue und nützliche Weise durch erweiterte Dimensionen verfügbar. Um den schnellsten Wert bereitzustellen, hängt das Zuordnungsprofil von den Feldern ab, die im Adobe SC-Profil verfügbar sind.
+Das Attributionsprofil verwendet vordefinierte Felder und zeigt diese Felder mit einer Reihe von Umwandlungen auf neue und nützliche Weise durch erweiterte Dimensionen an. Um den schnellsten Wert bereitzustellen, hängt das Attributionsprofil von den Feldern ab, die im Adobe SC-Profil verfügbar sind.
 
 <table id="table_97751B73CCAA4B96BB162641A178A68A"> 
  <thead> 
@@ -56,7 +60,7 @@ Das Zuordnungsprofil nimmt vordefinierte Felder und mit einer Reihe von Transfor
   </tr> 
   <tr> 
    <td colname="col1"> Umsatz </td> 
-   <td colname="col2"> x-Umsatz, #205 </td> 
+   <td colname="col2"> x-revenue, #205 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Einheiten </td> 
@@ -65,20 +69,20 @@ Das Zuordnungsprofil nimmt vordefinierte Felder und mit einer Reihe von Transfor
  </tbody> 
 </table>
 
-1. Vergewissern Sie sich, dass diese Felder in der Decoder-Gruppe deklariert sind, die zum Definieren der Adobe Analytics-Datenquelle verwendet wird. Die standardmäßige Decoder-Gruppe wird unter [!DNL Dataset\Log Procesing\Decoding Instructions.cfg].
-1. Vergewissern Sie sich, dass diese Felder im **[!UICONTROL Fields]** Abschnitt der [!DNL SC Fields.cfg] Datei deklariert sind. Diese Datei befindet sich unter [!DNL Dataset\Log Processing\SC Fields.cfg].
+1. Stellen Sie sicher, dass diese Felder in der Decoder-Gruppe deklariert sind, die zum Definieren der Adobe Analytics-Datenquelle verwendet wird. Die standardmäßige Decoder-Gruppe wird unter [!DNL Dataset\Log Procesing\Decoding Instructions.cfg].
+1. Stellen Sie sicher, dass diese Felder im **[!UICONTROL Fields]** Abschnitt [!DNL SC Fields.cfg] -Datei. Diese Datei befindet sich unter [!DNL Dataset\Log Processing\SC Fields.cfg].
 
-## Zuordnungen und Fehlerbehebung {#section-168133a8a1a54e1281e532033878d246}
+## Attribution - Ergänzungen und Fehlerbehebung {#section-168133a8a1a54e1281e532033878d246}
 
-Das Zuordnungsprofil hat eine Konfigurationsdatei hinzugefügt, [!DNL 0a_Marketing Channels.cfg]die den Wert des Feldes in ein neues Feld namens [!DNL x-va_closer_detail] kopiert, wenn das [!DNL x-marketing-channel][!DNL x-va_instance_event] Feld mit &quot;1&quot;übereinstimmt. Sowohl [!DNL x-va_closer_detail] als auch [!DNL x-va_instant_event] werden standardmäßig dekodiert und aus der Dekodierung in den installierten Paketen übergeben, die beim Aktualisieren auf Version 6.2 verfügbar sind.
+Das Attributionsprofil hat eine Konfigurationsdatei hinzugefügt, [!DNL 0a_Marketing Channels.cfg], der den Wert der [!DNL x-va_closer_detail] in ein neues Feld namens [!DNL x-marketing-channel], wenn die [!DNL x-va_instance_event] -Feld entspricht &quot;1&quot;. Beide [!DNL x-va_closer_detail] und [!DNL x-va_instant_event] werden standardmäßig dekodiert und aus der Dekodierung in den installierten Packages übergeben, die beim Aktualisieren auf Version 6.2 verfügbar sind.
 
-Das [!DNL x-marketing-channel] Feld wird dann in der einfachen Dimension &quot;Marketingkanal&quot;verwendet.
+Die [!DNL x-marketing-channel] wird dann in der einfachen Dimension Marketing-Kanal verwendet.
 
 >[!IMPORTANT]
 >
->Wenn Sie Ihre Profile geändert haben, indem Sie zuvor nicht verwendete Felder, die jetzt verwendet werden, entfernen, möchten Sie überprüfen, ob die Felder [!DNL x-va_closer_detail] und [!DNL x-va_instance_event] Felder dekodiert und zur Verwendung weitergeleitet werden.
+>Wenn Sie Ihre Profile durch Entfernen zuvor nicht verwendeter Felder verändert haben, die jetzt verwendet werden, sollten Sie sicherstellen, dass die Variable [!DNL x-va_closer_detail] und [!DNL x-va_instance_event] -Felder werden dekodiert und zur Verwendung weitergegeben.
 
-Wenn Felder fehlen, erhalten Sie eine Meldung in Ihrem detaillierten Status:
+Wenn Felder fehlen, erhalten Sie eine Nachricht in Ihrem detaillierten Status:
 
 ```
 <b>x-va_closer_detail</b> is not available
@@ -89,4 +93,3 @@ oder
 ```
 <b>x-va_instance_event</b> is not available
 ```
-

@@ -3,7 +3,7 @@ description: Im Menü Steuerelemente für Fenster können Sie ein einzelnes Fens
 title: Menü für Steuerelemente in Fenstern
 uuid: 9a7c24a7-c591-4d73-94f5-bba79b2aa848
 exl-id: abbd6545-0b80-45a2-88d7-f0687249583d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Menü für Steuerelemente in Fenstern{#window-controls-menu}
+
+{{eol}}
 
 Im Menü Steuerelemente für Fenster können Sie ein einzelnes Fenster steuern.
 
@@ -29,12 +31,12 @@ Diese Menüoptionen variieren je nach Fenstertyp. Die folgende Tabelle enthält 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Close </td> 
+   <td colname="col1"> Schließen </td> 
    <td colname="col2"> Schließt das aktuelle Fenster. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Speichern </td> 
-   <td colname="col2">Speichert die Visualisierung (als Datei <span class="filepath"> .vw</span>) im aktuellen Status. Das daraufhin angezeigte Dialogfeld ermöglicht es Ihnen, die Visualisierung unter einem anderen Namen oder an einem anderen Ort zu speichern. Der Standardspeicherort ist der Ordner "User\<i>profile name</i>\Work"im Installationsordner der Data Workbench. </td> 
+   <td colname="col2">Speichert die Visualisierung (als <span class="filepath"> .vw</span> -Datei) in ihrem aktuellen Status. Das daraufhin angezeigte Dialogfeld ermöglicht es Ihnen, die Visualisierung unter einem anderen Namen oder an einem anderen Ort zu speichern. Der Standardspeicherort ist Benutzer\<i>Profilname</i>\Arbeitsordner im Installationsordner der Data Workbench. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Anzeigen als </td> 
@@ -59,7 +61,7 @@ Diese Menüoptionen variieren je nach Fenstertyp. Die folgende Tabelle enthält 
   </tr> 
   <tr> 
    <td colname="col1"> Kopieren </td> 
-   <td colname="col2">Kopiert einzelne Fenster in die Zwischenablage, um sie in Anwendungen von Drittanbietern zu verwenden. Nachdem Sie ein Fenster in die Zwischenablage kopiert haben, kann es in gängige Office-Anwendungen wie Microsoft Word, Microsoft PowerPoint oder eine Microsoft Outlook-E-Mail-Nachricht eingefügt werden. Um ein Fenster zu kopieren, klicken Sie mit der rechten Maustaste auf den oberen Rand, klicken Sie auf <span class="uicontrol"> Kopieren</span> und klicken Sie auf die entsprechende Option: 
+   <td colname="col2">Kopiert einzelne Fenster in die Zwischenablage, um sie in Anwendungen von Drittanbietern zu verwenden. Nachdem Sie ein Fenster in die Zwischenablage kopiert haben, kann es in gängige Office-Anwendungen wie Microsoft Word, Microsoft PowerPoint oder eine Microsoft Outlook-E-Mail-Nachricht eingefügt werden. Um ein Fenster zu kopieren, klicken Sie mit der rechten Maustaste auf den oberen Rand und dann auf <span class="uicontrol"> Kopieren</span>und klicken Sie auf die entsprechende Option: 
     <ul id="ul_ECCD6A70729E40998C64714E01504995"> 
      <li id="li_21D375DAE7BC4F449C8A3225296A6D26">Schwarzer Hintergrund kopiert den Arbeitsbereich wie angezeigt. </li> 
      <li id="li_1B08C688678F42948E0952EEE0BF2B30">Der weiße Hintergrund kopiert die Elemente des Arbeitsbereichs in Farbe und zeigt sie auf einem weißen Hintergrund an. </li> 

@@ -3,7 +3,7 @@ description: Schritte zum Installieren der Report Server-Programmdateien.
 title: Installieren der Report Server-Programmdateien
 uuid: 9c250783-7080-4c27-bd8c-add208b2b1bf
 exl-id: 8f871e5c-1267-4564-a168-398f9dc793a4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 10%
@@ -11,6 +11,8 @@ ht-degree: 10%
 ---
 
 # Installieren der Report Server-Programmdateien{#installing-the-report-program-files}
+
+{{eol}}
 
 Schritte zum Installieren der Report Server-Programmdateien.
 
@@ -30,5 +32,5 @@ Report Server ist ein Client des Data Workbench-Servers und ist für die Ausfüh
 1. Auswählen **[!UICONTROL Properties]**.
 1. Auswählen **[!UICONTROL Security]**.
 1. Klicken Sie auf **[!UICONTROL Edit]**.
-1. Fügen Sie **[!UICONTROL Everyone]**.
-1. Gewähren Sie vollständige Kontrolle für **[!UICONTROL Everyone]**.
+1. Hinzufügen **[!UICONTROL Everyone]**.
+1. Vollständige Kontrolle für **[!UICONTROL Everyone]**.

@@ -3,14 +3,16 @@ description: Mit einer Zeitdimension können Sie einen Satz periodischer oder ab
 title: Zeitdimensionen
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
 exl-id: f9534b24-3a16-4220-bac2-bc541e121005
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
 # Zeitdimensionen{#time-dimensions}
+
+{{eol}}
 
 Mit einer Zeitdimension können Sie einen Satz periodischer oder absoluter lokaler Zeitdimensionen erstellen (z. B. Tag, Wochentag, Stunde des Tages, Reservierungszeit usw.), die auf einem beliebigen Zeitstempelfeld basieren, das Sie für den Parameter Eingabezeit (Epoche 1970) angeben.
 
@@ -51,13 +53,13 @@ Zeitdimensionen werden durch die folgenden Parameter definiert:
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Verborgen </td> 
+   <td colname="col1"> Ausgeblendet </td> 
    <td colname="col2"> Bestimmt, ob die Dimension in der Data Workbench-Benutzeroberfläche angezeigt wird. Standardmäßig ist dieser Parameter auf false gesetzt. Wenn die Dimension beispielsweise nur als Grundlage einer Metrik verwendet werden soll, können Sie diesen Parameter auf "true"setzen, um die Dimension aus der Data Workbench-Anzeige auszublenden. </td> 
    <td colname="col3"> true (wahr) </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Eingabezeit (Epoche 1970) </td> 
-   <td colname="col2"> <p>Der Name des Zeitstempelfelds, das als Eingabe verwendet werden soll. </p> <p> <p>Hinweis:  Die Werte des Felds müssen die Anzahl der Sekunden seit dem 1. Januar 1970 um 00:00:01 Uhr darstellen. Wenn die Eingabezeit keine gültige Zeit ist (1970 bis 2037), schlägt der Transformationsprozess fehl und der Data Workbench-Server erzeugt einen Fehler. </p> </p> </td> 
+   <td colname="col2"> <p>Der Name des Zeitstempelfelds, das als Eingabe verwendet werden soll. </p> <p> <p>Hinweis: Die Werte des Felds müssen die Anzahl der Sekunden seit dem 1. Januar 1970 bei 00 entsprechen.:00:01. Wenn die Eingabezeit keine gültige Zeit ist (1970 bis 2037), schlägt der Transformationsprozess fehl und der Data Workbench-Server erzeugt einen Fehler. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

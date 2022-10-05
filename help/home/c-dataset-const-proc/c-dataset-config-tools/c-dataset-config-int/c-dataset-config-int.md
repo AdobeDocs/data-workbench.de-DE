@@ -3,7 +3,7 @@ description: Die Oberflächen für die Datensatzkonfiguration zeigen die Beziehu
 title: Arbeiten mit den Oberflächen für die Datensatzkonfiguration
 uuid: c29faccd-0402-4982-9e5b-7379e2590246
 exl-id: cc2b876f-8d65-4b36-920a-dde3928795bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 10%
@@ -11,6 +11,8 @@ ht-degree: 10%
 ---
 
 # Arbeiten mit den Oberflächen für die Datensatzkonfiguration{#working-with-dataset-configuration-interfaces}
+
+{{eol}}
 
 Die Oberflächen für die Datensatzkonfiguration zeigen die Beziehungen zwischen den Komponenten (Protokollquellen, Felder, Umwandlungen und Dimensionen) Ihres Datensatzes.
 
@@ -20,8 +22,8 @@ Einige Schnittstellen bieten Optionen zum Anzeigen von Informationen, Suchen inn
 
 Sie können die Schnittstellen für die Datensatzkonfiguration mit einer der folgenden Methoden öffnen:
 
-* **Admin-Menü:** Klicken Sie mit der rechten Maustaste in einen Arbeitsbereich, klicken Sie auf  **[!UICONTROL Admin]** und dann auf die gewünschte Menüoption.
+* **Admin-Menü:** Klicken Sie mit der rechten Maustaste in einen Arbeitsbereich und klicken Sie auf **[!UICONTROL Admin]** und klicken Sie dann auf die entsprechende Menüoption.
 
    -OR-
 
-* **Registerkarte &quot;Admin&quot;:** Klicken Sie auf , um die entsprechende Workspace-Miniaturansicht auf  **[!UICONTROL Admin]** >  **[!UICONTROL Dataset and Profile tab]** zu öffnen.
+* **Registerkarte &quot;Admin&quot;:** Klicken Sie auf , um die entsprechende Workspace-Miniaturansicht auf der **[!UICONTROL Admin]** > **[!UICONTROL Dataset and Profile tab]**.

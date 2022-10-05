@@ -3,7 +3,7 @@ description: Anleitung zum Konfigurieren von Administratorwarnungen für Insight
 title: Konfigurationseinstellungen für Administrator-Warnhinweise
 uuid: c2be2d1e-d81d-4d9f-ac94-4b642dad90b9
 exl-id: c75e442e-33e6-4fc8-8368-29482f09e1cc
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Konfigurationseinstellungen für Administrator-Warnhinweise{#administrative-alerts-configuration-settings}
+
+{{eol}}
 
 Anleitung zum Konfigurieren von Administratorwarnungen für Insight Server, Repeater oder Transform.
 
@@ -36,7 +38,7 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
   <tr> 
    <td colname="col1"> Datei mit Fehlerkategorisierung </td> 
-   <td colname="col2"> <p>Der Name der Datei, die Sie zur Kategorisierung der einzelnen Warnhinweise verwenden möchten. Sie erstellen diese Datei mit Notepad. Diese Datei sollte in jeder Zeile drei Spalten enthalten, die durch Tabs voneinander getrennt sind. Die erste Spalte ist eine Zeichenfolge, die bei Fehlern übereinstimmt. Ein ^ Zeichen entspricht dem Anfang und ein $ entspricht dem Ende der Zeichenfolge. Alle anderen Zeichen werden wörtlich abgeglichen. Die zweite Spalte ist eine Kategorie für übereinstimmende Fehler, die sich in Fehlerkategorien befindet. Die dritte ist eine alternative Nachricht, die der eigentlichen Fehlermeldung in gesendeten E-Mails vorangestellt wird. Wenn keine Datei angegeben ist, werden alle Fehler als Standard kategorisiert. </p> <p>Ein Beispiel für diese Datei finden Sie in der Datei <span class="filepath"> Fehlerkategorien.txt </span> im Suchverzeichnis. </p> </td> 
+   <td colname="col2"> <p>Der Name der Datei, die Sie zur Kategorisierung der einzelnen Warnhinweise verwenden möchten. Sie erstellen diese Datei mit Notepad. Diese Datei sollte in jeder Zeile drei Spalten enthalten, die durch Tabs voneinander getrennt sind. Die erste Spalte ist eine Zeichenfolge, die bei Fehlern übereinstimmt. Ein ^ Zeichen entspricht dem Anfang und ein $ entspricht dem Ende der Zeichenfolge. Alle anderen Zeichen werden wörtlich abgeglichen. Die zweite Spalte ist eine Kategorie für übereinstimmende Fehler, die sich in Fehlerkategorien befindet. Die dritte ist eine alternative Nachricht, die der eigentlichen Fehlermeldung in gesendeten E-Mails vorangestellt wird. Wenn keine Datei angegeben ist, werden alle Fehler als Standard kategorisiert. </p> <p>Ein Beispiel für diese Datei finden Sie unter <span class="filepath"> Fehlerkategorien.txt </span> -Datei im Suchverzeichnis. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Von </td> 
@@ -48,7 +50,7 @@ Füllen Sie die Parameter in der folgenden Datei aus:
   </tr> 
   <tr> 
    <td colname="col1"> Zeitüberschreitung für Sensor-Warnhinweis (Min.) </td> 
-   <td colname="col2"> <p>Der Server erzeugt einen E-Mail-Warnhinweis, wenn er innerhalb dieses Zeitfensters keine Daten von einem konfigurierten und zuvor verbundenen Sensor <span class="wintitle"> </span> empfangen hat. Der Standardwert lautet 15. </p> <p> <p>Hinweis:  <span class="wintitle"> Sensor </span> Alert Timeout funktioniert nur, wenn eine vorhandene Verbindung zu einem <span class="wintitle"> Sensor </span> abgebrochen wird. Wenn der Dienst des Servers angehalten und neu gestartet wird und die <span class="wintitle"> Sensoren </span> keine Verbindung herstellen, generiert der Server keine E-Mail-Warnungen. </p> </p> </td> 
+   <td colname="col2"> <p>Der Server erzeugt einen E-Mail-Warnhinweis, wenn er keine Daten von einer konfigurierten und zuvor verbundenen <span class="wintitle"> Sensor </span> innerhalb dieses Zeitfensters. Der Standardwert lautet 15. </p> <p> <p>Hinweis:  <span class="wintitle"> Sensor </span> Warnhinweis-Timeout funktioniert nur, wenn eine Verbindung zu einer <span class="wintitle"> Sensor </span> wird fallen gelassen. Wenn der Dienst des Servers angehalten und neu gestartet wird und die <span class="wintitle"> Sensoren </span> keine Verbindung herstellen, generiert der Server keine E-Mail-Warnungen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Server-Adresse </td> 
