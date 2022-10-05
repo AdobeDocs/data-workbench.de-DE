@@ -3,7 +3,7 @@ description: Das Traffic-Profil enthält die folgenden Metriken zur Identifizier
 title: Traffic-Profil-Metriken
 uuid: 7dfa18ef-d2cd-44ae-8c56-a0630a9d5cf2
 exl-id: 38f191e5-5b30-4fe0-a680-bcb33fe52eca
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Traffic-Profil-Metriken{#traffic-profile-metrics}
+
+{{eol}}
 
 Das Traffic-Profil enthält die folgenden Metriken zur Identifizierung des Besucher-Traffics.
 
@@ -40,7 +42,7 @@ Das Traffic-Profil enthält die folgenden Metriken zur Identifizierung des Besuc
   </tr> 
   <tr> 
    <td colname="col1"> LVCI 90 </td> 
-   <td colname="col2">Formel: <span class="filepath"> (raw(Visitors) - ((raw(Visitors) + .69)^0.5 * 1.281551 - 1.2269)*(Visitors/raw(Visitors))</span><p>Ebene: Besucher </p></td> 
+   <td colname="col2">Formel: <span class="filepath"> (raw(Visitors) - (raw(Visitors) + .69)^0.5 * 1.281551 - 1.2269)*(Visitors/raw(Visitors))</span><p>Ebene: Besucher </p></td> 
    <td colname="col3"> Ein Maß für die niedrigste Anzahl möglicher Besucher, wie von Insight gemeldet. Mathematisch wird die niedrigste Anzahl von Besuchern mit einer 90-%-Wahrscheinlichkeit angegeben. </td> 
   </tr> 
   <tr> 
@@ -65,12 +67,12 @@ Das Traffic-Profil enthält die folgenden Metriken zur Identifizierung des Besuc
   </tr> 
   <tr> 
    <td colname="col1"> Sitzungsprozentsatz </td> 
-   <td colname="col2">Formel: <span class="filepath"> Sitzungen/total(Sitzungen)</span><p>Ebene: Sitzung </p></td> 
+   <td colname="col2">Formel: <span class="filepath"> Sitzungen/insgesamt(Sitzungen)</span><p>Ebene: Sitzung </p></td> 
    <td colname="col3"> Der Prozentsatz der Sitzungen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besucheranteil </td> 
-   <td colname="col2">Formel: <span class="filepath"> Besucher/total(Visitors) </span><p>Ebene: Besucher </p></td> 
+   <td colname="col2">Formel: <span class="filepath"> Besucher/insgesamt(Besucher) </span><p>Ebene: Besucher </p></td> 
    <td colname="col3"> Der Prozentsatz der Besucher. </td> 
   </tr> 
   <tr> 
@@ -80,27 +82,27 @@ Das Traffic-Profil enthält die folgenden Metriken zur Identifizierung des Besuc
   </tr> 
   <tr> 
    <td colname="col1"> Referrersitzungen </td> 
-   <td colname="col2"> <p>Formel: <span class="filepath"> Sitzungen[Referrer&lt;&gt; 'None' und Referrer&lt;&gt;'bookmarks']</span></p> <p>Ebene: Sitzung </p> </td> 
+   <td colname="col2"> <p>Formel: <span class="filepath"> Sitzungen[Referrer&lt;&gt; "Keine"und Referrer&lt;&gt;"Lesezeichen"]</span></p> <p>Ebene: Sitzung </p> </td> 
    <td colname="col3"> Die Anzahl der Sitzungen, die von einer anderen Site auf diese Site verwiesen wurden. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Referrer-Besucher </td> 
-   <td colname="col2"> <p>Formel: <span class="filepath"> Besucher[Visitor_ Referrer&lt;&gt;'None' und Visitor_Referrer&lt;&gt;'book marks']</span></p> <p>Ebene: Besucher </p> </td> 
+   <td colname="col2"> <p>Formel: <span class="filepath"> Visitor[Visitor_Referrer&lt;&gt;'None' und Visitor_Referrer&lt;&gt;'book marks']</span></p> <p>Ebene: Besucher </p> </td> 
    <td colname="col3"> Die Anzahl der Besucher, die von einer anderen Site auf diese Site verwiesen wurden. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Treue </td> 
-   <td colname="col2"> <p>Formel: <span class="filepath"> Sitzungen[shift(None,Ses sion,Visitor,1) = ""] / Sitzungen</span></p> <p>Ebene: Sitzung </p> </td> 
+   <td colname="col2"> <p>Formel: <span class="filepath"> Sitzungen[shift(None,session,visitor,1) = ""]/Sitzungen</span></p> <p>Ebene: Sitzung </p> </td> 
    <td colname="col3"> Der Prozentsatz der Sitzungen, die nicht die Besucher der letzten Sitzungen sind. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sitzungsdauer </td> 
    <td colname="col2"> <p>Formel: <span class="filepath"> (Summe (Exact_Page_Duration, Sitzung)*.1/Sitzungen)[Sitzung_ Dauer &lt;= '01:00:00']</span></p> <p>Ebene: Sitzung </p> </td> 
-   <td colname="col3">Die durchschnittliche Dauer (MM:SS), die ein Besucher in einer Sitzung verbringt. <p><p>Hinweis: Sie können diese Metrik mit der Funktion <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> Segmentexport</a> verwenden. </p></p></td> 
+   <td colname="col3">Die durchschnittliche Dauer (MM:SS), die ein Besucher in einer Sitzung verbringt. <p><p>Hinweis: Sie können diese Metrik mit der <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> Segmentexport</a> Funktion. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sitzungen nach Seitenansicht </td> 
-   <td colname="col2"> <p>Formel: <span class="filepath"> Sitzungen nach Page_View</span></p> <p> Ebene: Sitzung </p> </td> 
+   <td colname="col2"> <p>Formel: <span class="filepath"> Sitzungen nach Seitenansicht</span></p> <p> Ebene: Sitzung </p> </td> 
    <td colname="col3"> Die Anzahl der Sitzungen mit Seitenansicht. </td> 
   </tr> 
   <tr> 
@@ -110,7 +112,7 @@ Das Traffic-Profil enthält die folgenden Metriken zur Identifizierung des Besuc
   </tr> 
   <tr> 
    <td colname="col1"> SCI80 </td> 
-   <td colname="col2"> <p>Formel: <span class="filepath"> confidence(sitzungen) * 1.281551 / sitzungen</span></p> <p>Ebene: Besucher </p> </td> 
+   <td colname="col2"> <p>Formel: <span class="filepath"> confidence(Sessions) * 1.281551/Sitzungen</span></p> <p>Ebene: Besucher </p> </td> 
    <td colname="col3"> Ein Maß für die Konfidenz der Sitzungsmetrik, wie von Data Workbench gemeldet. Mathematisch ist dies ein +/- Prozentsatz, der den Bereich angibt, in dem die tatsächliche Antwort 80 % der Zeit liegt. Als Faustregel gilt, dass die Verdoppelung des SCI80-Prozentsatzes einen Bereich ergibt, in dem die tatsächliche Antwort 99 % der Zeit beträgt. </td> 
   </tr> 
   <tr> 
@@ -120,7 +122,7 @@ Das Traffic-Profil enthält die folgenden Metriken zur Identifizierung des Besuc
   </tr> 
   <tr> 
    <td colname="col1"> VCI 80 </td> 
-   <td colname="col2">Formel: <span class="filepath"> (raw(Visitors) + .68)^0.5 * 1.281551 + 1.2269) / raw(Visitors)</span><p>Ebene: Besucher </p></td> 
+   <td colname="col2">Formel: <span class="filepath"> ((raw(Visitors) + .68)^0.5 * 1.281551 + 1.2269) / raw(Visitors)</span><p>Ebene: Besucher </p></td> 
    <td colname="col3"> Ein Maß für die Konfidenz der Besuchermetrik, wie in Insight angegeben. Mathematisch ist dies ein +/- Prozentsatz, der den Bereich angibt, in dem die tatsächliche Antwort 80 % der Zeit liegt. Als Faustregel gilt, dass die Verdoppelung des VCI80-Prozentsatzes einen Bereich ergibt, in dem die tatsächliche Antwort 99 % der Zeit beträgt. </td> 
   </tr> 
   <tr> 

@@ -3,7 +3,7 @@ description: Das Traffic-Profil enthält die folgenden Dimensionen, um Besuchera
 title: Traffic-Profil-Dimensionen
 uuid: 9c0dabfc-67c9-4772-99ac-4c503c06ea78
 exl-id: 1e7d2904-aa5d-4848-a398-5d4669953be9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 8%
@@ -12,9 +12,11 @@ ht-degree: 8%
 
 # Traffic-Profil-Dimensionen{#traffic-profile-dimensions}
 
+{{eol}}
+
 Das Traffic-Profil enthält die folgenden Dimensionen, um Besucheraktionen zu identifizieren.
 
-Die Dimensionen in der folgenden Tabelle werden im Transformationsdatensatz definiert und enthalten Dateien in der Datei Traffic\Dataset\Transformation directory.
+Die Dimensionen in der folgenden Tabelle werden im Transformationsdatensatz definiert und enthalten Dateien im Ordner &quot;Traffic\Datensatz\Transformation&quot;.
 
 | Name | Typ | Ebene | Beschreibung |
 |---|---|---|---|
@@ -26,7 +28,7 @@ Die Dimensionen in der folgenden Tabelle werden im Transformationsdatensatz defi
 | Monat | Einfach | Sitzung | Der Monat des ersten Protokolleintrags einer Sitzung. |
 | Seitenansicht | Zählbar | Sitzung | Ein Protokolleintrag oder &quot;Ereignisdatensatz&quot;, der die Seitenansichtsbedingung erfüllt. |
 | Referrer | Einfach | Sitzung | Die Domäne der zweiten Ebene des Referrers des ersten Protokolleintrags der Sitzung (oder Keine , wenn es sich um eine interne Referrer-Domäne handelt). |
-| Sitzung | Zählbar | Besucher. | Ein Zeitraum zusammenhängender fortlaufender Aktivitäten eines Besuchers. Trennzeichen sind ein Inaktivitätszeitraum von 30 Minuten und eine externe Referrer-Domäne oder eine maximale Sitzungsdauer von 48 Stunden. Sowohl diese Timeouts als auch der Satz der Domänen, die als intern gelten, können in der Datei [!DNL Transformation.cfg] konfiguriert werden. |
+| Sitzung | Zählbar | Besucher. | Ein Zeitraum zusammenhängender fortlaufender Aktivitäten eines Besuchers. Trennzeichen sind ein Inaktivitätszeitraum von 30 Minuten und eine externe Referrer-Domäne oder eine maximale Sitzungsdauer von 48 Stunden. Sowohl diese Timeouts als auch der Satz der Domänen, die als intern gelten, können im [!DNL Transformation.cfg] -Datei. |
 | URI | Einfach | Seitenansicht | Der URI-Stamm einer Seitenansicht. Die URI-Dimension kann mithilfe der Transformationen ReplaceURI, PrependURI und AppendURI neu definiert werden. |
 | Besucher. | Zählbar | Nicht angegeben | Ein eindeutiger Wert von x-trackingid. Normalerweise einem eindeutigen Browser entspricht, wenn persistente Cookies verwendet werden. Die x-trackingid kann anderweitig auf der IP-Nummer oder einer anderen eindeutigen Kennung wie x.509 Common Name basieren. |
 | Woche | Einfach | Sitzung | Die Woche des ersten Protokolleintrags einer Sitzung. |
