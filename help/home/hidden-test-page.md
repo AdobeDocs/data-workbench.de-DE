@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
+source-git-commit: c08189cf57f08fc5be4bc24ec06d9b9a865a53c8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 2%
 
 ---
 
@@ -113,17 +113,21 @@ Beispiel 2:
 ```
 Highlighting should start after this paragraph.
 
-<span class="preview">
+<div class="preview">
 
-**This is a test**
+Start of DIV.
 
->[!TIP]
+>[!NOTE]
 >
->Drink 6 cups of water a day.
+>This is a note.
+>
+>I have a request to highlight the note's background.
 
-Last highlighted paragraph
+![image](/help/quicksilver/administration-and-setup/add-users/create-and-manage-users/assets/add-admin-1.png)
 
-</span>
+Last highlighted item.
+
+</div>
 
 Not highlighted
 ```
@@ -132,17 +136,21 @@ Gerendert:
 
 Die Hervorhebung sollte nach diesem Absatz beginnen.
 
-<span class="preview">
+<div class="preview">
 
-**Dies ist ein Test**
+Beginn des DIV.
 
->[!TIP]
+>[!NOTE]
 >
->Trinken Sie 6 Tassen Wasser am Tag.
+>Das ist eine Notiz.
+>
+>Ich möchte den Hintergrund der Notiz hervorheben.
 
-Zuletzt hervorgehobener Absatz
+![Bild](/help/home/assets/analytics-icon-24.png)
 
-</span>
+Zuletzt hervorgehobenes Element.
+
+</div>
 
 Nicht hervorgehoben
 
