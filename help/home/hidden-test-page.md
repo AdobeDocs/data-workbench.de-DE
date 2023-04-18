@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 73c7ad435917ab17022494f6f73d2c626363dcc2
+source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -113,7 +113,7 @@ Beispiel 2:
 ```
 Highlighting should start after this paragraph.
 
-<div class="preview">
+<span class="preview">
 
 **This is a test**
 
@@ -123,14 +123,16 @@ Highlighting should start after this paragraph.
 
 Last highlighted paragraph
 
-</div>
+</span>
 
 Not highlighted
 ```
 
-Gerendert: Die Hervorhebung sollte nach diesem Absatz beginnen.
+Gerendert:
 
-<div class="preview">
+Die Hervorhebung sollte nach diesem Absatz beginnen.
+
+<span class="preview">
 
 **Dies ist ein Test**
 
@@ -140,11 +142,9 @@ Gerendert: Die Hervorhebung sollte nach diesem Absatz beginnen.
 
 Zuletzt hervorgehobener Absatz
 
-</div>
+</span>
 
 Nicht hervorgehoben
-
-Als allgemeine Regel verwenden Sie `<span class="preview">` , um einen Absatz oder Text in einem Absatz hervorzuheben, und verwenden Sie `<div class="preview">` für mehrere Absätze und Komponenten.
 
 ## Syntaxhervorhebung für Codeblöcke
 
