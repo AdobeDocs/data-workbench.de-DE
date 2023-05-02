@@ -5,14 +5,74 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 0cd0a201aa10e519fa9760a64ab95fa1a10a3799
+exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
+source-git-commit: 7f138d3a9372bc6662d1d54a2d026474a5eb8446
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 2%
+source-wordcount: '756'
+ht-degree: 4%
 
 ---
 
 # Ausgeblendete Testseite
+
+## Arten von Hinweisen
+
+
+Alle unterstützten Hinweistypen.
+
+>[!NOTE]
+>
+>This is a standard NOTE block.
+
+>[!TIP]
+>
+>This is a standard tip.
+
+>[!IMPORTANT]
+>
+>Das ist ein wichtiger Hinweis.
+
+>[!WARNING]
+>
+>Das ist eine Warnung.
+
+>[!CAUTION]
+>
+>Das ist eine Vorsicht.
+
+>[!ADMIN]
+>
+>Dies ist eine Administratornote. Nur EXL.
+
+>[!ADMINISTRATION]
+>
+>Dies ist ein Administratorbrief. Nur EXL.
+
+>[!AVAILABILITY]
+>
+>Dies ist ein Hinweis zur Verfügbarkeit. Nur EXL.
+
+>[!PREREQUISITES]
+>
+>Dies ist ein Hinweis zu den Voraussetzungen. Nur EXL.
+
+>[!INFO]
+>
+>Dies ist eine Info-Anmerkung. Nur EXL.
+
+>[!ERROR]
+>
+>Dies ist eine Fehlermeldung. Nur EXL.
+
+>[!SUCCESS]
+>
+>Dies ist eine Erfolgsmeldung. Nur EXL.
+
+>[!MORELIKETHIS]
+>
+>* Seite 1
+>* Seite 2
+
 
 ## Badges 
 
