@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench-Hilfe
 user-guide-description: Erfahren Sie mehr über die Mehrkanal-Funktionen der Data Workbench. Beinhaltet Leitfäden für den Data Workbench-Client, die Installation, die Datensatzkonfiguration usw.
-source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
+source-git-commit: 35cd94fdde735cc24f88083a16881a12bbc33f4f
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3504'
 ht-degree: 99%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 99%
    + Attributionsberichte {#attribution-reports}
       + [Verwenden von Attributionsberichten](c-get-started/c-attribution-profiles/c-attribution-profiles.md)
       + [Attributionsprofil – Übersicht](c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
-      + [Implementieren des Attributionsprofils](c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-profile-deploy.md)
+      + [Bereitstellen des Attributionsprofils](c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-profile-deploy.md)
       + [Attributionsmodelle](c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-models.md)
       + [Best Fit Attribution](c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md)
       + [Erstellen eines Best-Fit-Attributionsmodells](c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md)
@@ -666,7 +666,7 @@ ht-degree: 99%
       + [Formulieren einer Hypothese](c-undst-ctrld-exp/t-crt-ctrld-exp/c-frm-hyp.md)
       + [Bestimmen der erforderlichen Besucheranzahl](c-undst-ctrld-exp/t-crt-ctrld-exp/c-nmbr-vstrs-nd.md)
       + [Erstellen des Testinhalts](c-undst-ctrld-exp/t-crt-ctrld-exp/c-crt-test-cnt.md)
-      + [Konfigurieren und Implementieren des Experiments](c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md)
+      + [Konfigurieren und Bereitstellen des Experiments](c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md)
    + [Validieren des Experiments](c-undst-ctrld-exp/c-val-exp.md)
    + Einsehen der Ergebnisse {#view-results}
       + [Einsehen der Ergebnisse](c-undst-ctrld-exp/c-vw-rslts/c-vw-rslts.md)
@@ -903,9 +903,9 @@ ht-degree: 99%
       + [Kommunikation zwischen Dashboards und Data Workbench-Servern](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [Überprüfen der Abfrage-API-Aktivierung](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
       + [Konfigurieren der Dashboard-Zugriffssteuerung](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
-   + Dashboard-Implementierung {#dashboard-deployment}
-      + [Dashboard-Implementierung](c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
-      + [Implementieren des Dashboards](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
+   + Dashboard-Bereitstellung {#dashboard-deployment}
+      + [Dashboard-Bereitstellung](c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
+      + [Bereitstellen des Dashboards](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
       + [Konfigurieren des SQL-Servers](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-configuring-the-sql-server.md)
       + [Initialisieren des Dashboards](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-initializing-the-dashboard.md)
       + [Angeben des Dashboard-Lizenzschlüssels](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-add-dashboard-license-key.md)
@@ -964,3 +964,4 @@ ht-degree: 99%
 + [Zusammenarbeit zwischen Data Workbench und Adobe Target](dwb-adobe-target.md)
 + [Data Workbench-Glossar](dwb-glossary.md)
 + [Ausgeblendete Testseite](hidden-test-page.md)
++ [Übersicht über ausgeblendete Unterstützung](hidden-support-overview.md)
