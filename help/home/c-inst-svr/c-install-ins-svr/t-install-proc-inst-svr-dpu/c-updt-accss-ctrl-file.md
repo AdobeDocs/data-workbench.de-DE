@@ -3,9 +3,9 @@ description: Die Datei Access Control.cfg verwaltet den Zugriff auf bestimmte Fu
 title: Aktualisieren der Datei für die Zugangssteuerung
 uuid: f73651e5-6a8b-45fc-8f36-6751304dc53c
 exl-id: 551758c1-f24b-49e6-ab6e-09979511e4f4
-source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+source-git-commit: 5ce5b8f8b35d2d4f319076f54347e300e5f133df
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '472'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ Sie definiert Entitäten, die AccessGroups genannt werden. Eine AccessGroup gibt
 
 Bevor Sie eine Verbindung zu [!DNL Insight Server] mit [!DNL Insight]müssen Sie die AccessGroup der Administratoren so aktualisieren, dass eine der [!DNL Insight] -Lizenzen, die die Adobe Ihrer Organisation erteilt hat. Diese AccessGroup identifiziert Benutzer, die Administratorfunktionen über ausführen dürfen. [!DNL Insight].
 
-Im folgenden Verfahren wird beschrieben, wie Sie der AccessGroup der Administratoren eine Lizenz hinzufügen. Um diese Aufgabe abzuschließen, müssen Sie festlegen, welche [!DNL Insight] -Lizenz hat Administratorrechte für Ihr Unternehmen. (Für die Ersteinrichtung und -konfiguration reicht es aus, einer einzigen Lizenz Administratorrechte zu gewähren. Sie können zusätzlichen Lizenzen später Administratorrechte gewähren.) Sie müssen auch den dieser Lizenz zugewiesenen &quot;gemeinsamen Namen&quot;kennen. Um diesen Wert zu erhalten, können Sie die Lizenzzertifikate für Ihr Konto unter [https://aap.adobe.com](https://aap.adobe.com).
+Im folgenden Verfahren wird beschrieben, wie Sie der AccessGroup der Administratoren eine Lizenz hinzufügen. Um diese Aufgabe abzuschließen, müssen Sie festlegen, welche [!DNL Insight] -Lizenz hat Administratorrechte für Ihr Unternehmen. (Für die Ersteinrichtung und -konfiguration reicht es aus, einer einzigen Lizenz Administratorrechte zu gewähren. Sie können zusätzlichen Lizenzen später Administratorrechte gewähren.) Sie müssen auch den dieser Lizenz zugewiesenen &quot;gemeinsamen Namen&quot;kennen.
 
 Dieser Vorgang dient lediglich der Identifizierung einer lizenzierten Kopie von [!DNL Insight] Sie können verwenden, um zunächst [!DNL Insight Server]. Sobald Sie diese Lizenz identifiziert haben, können Sie alle nachfolgenden Serverkonfigurationen (einschließlich zusätzlicher AccessGroup-Konfigurationen) mit der lizenzierten Kopie von [!DNL Insight]. Weitere Informationen zum Steuern des Serverzugriffs mithilfe von AccessGroups finden Sie unter [Konfigurieren der Zugriffssteuerung](../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d).
 

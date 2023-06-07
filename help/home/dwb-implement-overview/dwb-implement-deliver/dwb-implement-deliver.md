@@ -3,9 +3,9 @@ description: Nach der Einrichtung von DWB können Sie diese Funktionen implement
 title: Implementierung von Funktionen in Data Workbench
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+source-git-commit: 5ce5b8f8b35d2d4f319076f54347e300e5f133df
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '258'
 ht-degree: 3%
 
 ---
@@ -39,5 +39,3 @@ Nach der Einrichtung von DWB können Sie diese Funktionen implementieren.
 * Zu implementieren **Predictive Intelligence mit Binomial Correlation**, siehe [Binomielle Korrelation](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html).
 
 * Zu implementieren **Predictive Intelligence mit Binomial Correlation**, siehe [Korrelationsmatrix](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html).
-
-* Um das DWB-Dashboard einzurichten und zu validieren, navigieren Sie zum [Adobe Data Workbench Licensing Portal](https://license.visualsciences.com/License/#documentation). Siehe auch [Grundlegende Onboarding-Anweisungen](../../../home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md#concept-e93aba41b26a410f959c5ca7f8e33355).
