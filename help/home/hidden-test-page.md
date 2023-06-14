@@ -6,9 +6,9 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
+source-git-commit: 62b03629815f33344189c2562bc486301878a146
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '753'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 # Ausgeblendete Testseite
 
 ## Arten von Hinweisen
-
 
 Alle unterstützten Hinweistypen.
 
@@ -42,7 +41,7 @@ Alle unterstützten Hinweistypen.
 
 >[!ADMIN]
 >
->Dies ist eine Administratornote. Nur EXL.
+>Dies ist eine Administratornote, die als ADMINISTRATION gerendert wird. Nur EXL.
 
 >[!AVAILABILITY]
 >
@@ -68,7 +67,6 @@ Alle unterstützten Hinweistypen.
 >
 >* Seite 1
 >* Seite 2
-
 
 ## Badges 
 
@@ -142,13 +140,13 @@ Syntaxbeispiele
 * Wenn mehrere Metadaten-Abzeichen angegeben sind, werden Abzeichen basierend auf dem Badge-Namen in alphabetischer Reihenfolge angezeigt, z. B. `badge1:` oder `badgeWeb`.
 * Wenn die URL in einer neuen Registerkarte geöffnet werden soll, verwenden Sie diese Syntax:
 
-   ```
-   [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
-   ```
+  ```
+  [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
+  ```
 
-   Gerendert:
+  Gerendert:
 
-   [!BADGE In neuer Registerkarte öffnen]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Öffnen Sie adobe.com auf der neuen Registerkarte"}
+  [!BADGE In neuer Registerkarte öffnen]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Öffnen Sie adobe.com auf der neuen Registerkarte"}
 
 ## Texthervorhebung
 
