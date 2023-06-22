@@ -7,9 +7,9 @@ feature: Data Workbench
 user-guide-title: Data Workbench-Hilfe
 user-guide-description: Erfahren Sie mehr über die Mehrkanal-Funktionen der Data Workbench. Beinhaltet Leitfäden für den Data Workbench-Client, die Installation, die Datensatzkonfiguration usw.
 source-git-commit: 0939146f59b86437027606aeaa824adf0c6b591c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3501'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -859,7 +859,7 @@ ht-degree: 99%
          + [Sperren und Entsperren von Visualisierungen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-locking-and-unlocking-visualizations.md)
          + [Reduzieren und Erweitern von Visualisierungen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-collapsing-and-expanding-visualizations.md)
          + [Exportieren von Visualisierungen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-exporting-visualizations.md)
-         + [Konfigurieren und Konfigurieren von Visualisierungen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
+         + [Konfigurieren und Rekonfigurieren von Visualisierungen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
          + [Entfernen von Visualisierungen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
          + [Anpassung der Größe von Visualisierungen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
          + [Verschieben von Visualisierungen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
@@ -902,7 +902,7 @@ ht-degree: 99%
    + Server-Kommunikation {#servers-communication}
       + [Kommunikation zwischen Dashboards und Data Workbench-Servern](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [Überprüfen der Abfrage-API-Aktivierung](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
-      + [Konfigurieren der Dashboard-Zugriffssteuerung](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
+      + [Konfigurieren der Dashboard-Zugangssteuerung](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + Dashboard-Bereitstellung {#dashboard-deployment}
       + [Dashboard-Bereitstellung](c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
       + [Bereitstellen des Dashboards](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
