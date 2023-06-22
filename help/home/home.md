@@ -5,19 +5,19 @@ feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 source-git-commit: 541751e1b8966a0816b7a42e117f4c69db1ed002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Data Workbench-Hilfe {#data-workbench-help}
+# Data Workbench-Hilfe{#data-workbench-help}
 
 ![Banner](/help/home/assets/doc_banner_workbench.png)
 
 {{eol}}
 
-[Data Workbench](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) ist eine Komponente von [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html), die hochgradig flexible Funktionen für die kanalübergreifende Erfassung, Verarbeitung, Analyse und Visualisierung von Daten aus Online- und Offline-Kundeninteraktionen bietet und beliebige Datentypen aus Web, CRM, POS und anderen Quellen unterstützt. Die interaktiven Berichte von Data Workbench liefern Ihnen geschäftlich relevante statistische Daten, durch deren Analyse Sie die Aktivitäten von Kunden nachvollziehen, Kundentrends voraussagen und auf diese reagieren können.
+[Data Workbench](http://www.adobe.com/de/solutions/digital-analytics/data-workbench.html) ist eine Komponente von [Adobe Analytics](http://www.adobe.com/de/solutions/digital-analytics.html), die hochgradig flexible Funktionen für die kanalübergreifende Erfassung, Verarbeitung, Analyse und Visualisierung von Daten aus Online- und Offline-Kundeninteraktionen bietet und beliebige Datentypen aus Web, CRM, POS und anderen Quellen unterstützt. Die interaktiven Berichte von Data Workbench liefern Ihnen geschäftlich relevante statistische Daten, durch deren Analyse Sie die Aktivitäten von Kunden nachvollziehen, Kundentrends voraussagen und auf diese reagieren können.
 
 * ![Analytics-Symbol](assets/analytics-icon-24.png) [Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics.html?lang=de)
 * ![PDF-Symbol](assets/pdf_icon.png) [Vollständige Data Workbench-Dokumentation als PDF herunterladen](/help/home/assets/data-workbench.pdf)
@@ -37,7 +37,7 @@ Data Workbench umfasst die folgenden Funktionen für Predictive Analytics, Daten
 
 ## Weitere Benutzerhandbücher für Analytics
 
-[Analytics-Benutzerhandbücher](https://experienceleague.adobe.com/docs/analytics.html)
+[Analytics-Benutzerhandbücher](https://experienceleague.adobe.com/docs/analytics.html?lang=de)
 
 ## Versionshinweise und neue Funktionen für Data Workbench
 
