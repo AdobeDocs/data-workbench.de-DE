@@ -3,17 +3,23 @@ title: Ausgeblendete Testseite
 description: Diese Seite wird aus der Suche und dem Inhaltsverzeichnis ausgeblendet.
 hide: true
 hidefromtoc: true
-badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
-badgeExam: label="Exam ADO-E903" type="neutral"
+badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Premium herunterladen"
+badgeExam: label="Prüfung ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 62b03629815f33344189c2562bc486301878a146
+source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '796'
 ht-degree: 4%
 
 ---
 
 # Ausgeblendete Testseite
+
+## Vorschaufunktion
+
+Der folgende Absatz wird in der VSC-Vorschau nicht ordnungsgemäß dargestellt. Ich bin mir nicht sicher, warum.
+
+Wenn Ihr Kennwort von [!DNL Adobe]können Sie [Passwort in Ihrem Adobe-Konto ändern](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 ## Arten von Hinweisen
 
