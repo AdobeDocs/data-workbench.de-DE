@@ -6,20 +6,22 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Premium herunterladen"
 badgeExam: label="Prüfung ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
+source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 4%
+source-wordcount: '797'
+ht-degree: 5%
 
 ---
 
 # Ausgeblendete Testseite
 
+Aktivieren?
+
 ## Vorschaufunktion
 
 Der folgende Absatz wird in der VSC-Vorschau nicht ordnungsgemäß dargestellt. Ich bin mir nicht sicher, warum.
 
-Wenn Ihr Kennwort von [!DNL Adobe]können Sie [Passwort in Ihrem Adobe-Konto ändern](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
+Wenn Ihr Kennwort von [!DNL Adobe], können Sie [Passwort in Ihrem Adobe-Konto ändern](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 ## Arten von Hinweisen
 
@@ -85,7 +87,7 @@ Es gibt zwei Arten von Badges mit jeweils unterschiedlicher Syntax:
 * **Metadaten** - Zeigt den Badge oben auf einer Seite an
 * **Inline** - Zeigt den Badge an, unter dem sich die Syntax befindet
 
-### Metadaten-Abzeichen
+### Metadatenzeichen
 
 Durch Hinzufügen der Badge-Syntax in Metadaten wird ein Badge über dem Seitentitel (H1) im Artikel platziert.
 
@@ -102,7 +104,7 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 
 * **badgeExam:** In diesem Beispiel wird ein dunkler Badge mit einer Prüfungs-ID-Nummer angezeigt.
 
-#### Inline-Zeichen
+#### Inline-Abzeichen
 
 Geben Sie die Badge-Informationen in einer eigenen Zeile oder in einer Überschrift, Tabelle oder einem anderen Seitenelement an.
 
@@ -117,7 +119,7 @@ Zeichen verwenden in Adobe Spectrum definierte Farben:
 | Typ | Badge |
 |---|---|
 | Informativ (Standard) | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
-| Positiv | [!BADGE Neue Funktion]{type=Positive url="https://www.example.com" tooltip="Gehen Sie zu beispiel.com"} |
+| Positiv | [!BADGE Neue Funktion]{type=Positive url="https://www.example.com" tooltip="Gehen Sie zu example.com"} |
 | Negativ | [!BADGE Abbruch]{type=negative tooltip="Diese Funktion ist jetzt eingestellt"} |
 | Neutral | [!BADGE Eventuell]{type=Neutral tooltip="Ein Reiter fiel vom Pferd..."} |
 | Vorsicht | [!BADGE Achtung]{type=Caution tooltip="Gelber Status"} |
@@ -137,11 +139,11 @@ Syntaxbeispiele
 ### Voraussetzungen für Badges
 
 * In Metadaten sind nur zwei Abzeichen zulässig. Diese Regel ist konfigurierbar. Teilen Sie uns also mit, ob Sie eine Ausnahme benötigen.
-* Nur die Badge-Bezeichnung ist erforderlich. Die `type`, `url`und `tooltip` -Parameter sind optional. Die `type` bestimmt die Farbe. Die `url` -Parameter können Benutzer auf das Zeichen klicken, um einen Artikel oder eine Seite zu öffnen. Die `tooltip` zeigt den QuickInfo-Text beim Bewegen des Mauszeigers an.
+* Nur die Badge-Bezeichnung ist erforderlich. Die `type`, `url`, und `tooltip` -Parameter sind optional. Die `type` bestimmt die Farbe. Die `url` -Parameter können Benutzer auf das Zeichen klicken, um einen Artikel oder eine Seite zu öffnen. Die `tooltip` zeigt den QuickInfo-Text beim Bewegen der Maus an.
 * Hinzufügen eines Abzeichens zum `TOC.md` -Datei zeigt den Badge in jedem Artikel des Handbuchs an. Wenn Sie eine URL für das Badge angeben, um zu einem Artikel zu springen, stellen Sie sicher, dass Sie einen Stammlink verwenden (z. B. `/help/guide/article.md`) keinen relativen Link (z. B. `article.md`), um Artikel in verschiedenen Ordnern zu berücksichtigen.
 * Badge hinzufügen zu `metadata-new.md` zeigt den Badge auf jedem Artikel in einem Repo an.
 * Stellen Sie bei Metadaten-Badges sicher, dass alle Werte in Anführungszeichen gesetzt sind. Stellen Sie bei Inline-Abzeichen sicher, dass `url` und `tooltip` in Anführungszeichen gesetzt werden.
-* Gültige Typwerte umfassen *Informativ* (Standard, blau), *Positiv* (grün), *Negativ* (rot), *Neutral* (dunkelgrau) und *Vorsicht* (gelb).
+* Gültige Typwerte umfassen *Informativ* (Standard, blau), *Positiv* (grün) *Negativ* (rot) *Neutral* (dunkelgrau) und *Vorsicht* (gelb).
 * Badge-Beschriftungen werden lokalisiert.
 * Wenn mehrere Metadaten-Abzeichen angegeben sind, werden Abzeichen basierend auf dem Badge-Namen in alphabetischer Reihenfolge angezeigt, z. B. `badge1:` oder `badgeWeb`.
 * Wenn die URL in einer neuen Registerkarte geöffnet werden soll, verwenden Sie diese Syntax:
@@ -152,7 +154,7 @@ Syntaxbeispiele
 
   Gerendert:
 
-  [!BADGE In neuer Registerkarte öffnen]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Öffnen Sie adobe.com auf der neuen Registerkarte"}
+  [!BADGE In neuer Registerkarte öffnen]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Öffnen Sie adobe.com in neuer Registerkarte"}
 
 ## Texthervorhebung
 
@@ -232,7 +234,7 @@ Beispiel mit Zeilennummern (&grave;&grave;&grave;`html {line-numbers="true"}`):
 
 Hinzufügen `start-number="n"` nach der Zeilennummersyntax , um die Nummerierung auf einer anderen Zahl als 1 zu beginnen.
 
-Beispiel mit neuer Start-Linie (&grave;&grave;&grave;&grave;`html {line-numbers="true" start-line="7"}`):
+Beispiel mit neuer Startlinie (&grave;&grave;&grave;&grave;`html {line-numbers="true" start-line="7"}`):
 
 ```html {line-numbers="true" start-line="7"}
 <!DOCTYPE html>
