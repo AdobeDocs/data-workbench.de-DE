@@ -5,17 +5,17 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Premium herunterladen"
 badgeExam: label="Prüfung ADO-E903" type="neutral"
-exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
+exl-id: 02245655-511e-4e89-8846-dac85681ea91
+source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 5%
+source-wordcount: '803'
+ht-degree: 4%
 
 ---
 
 # Ausgeblendete Testseite
 
-Aktivieren?
+Aktivieren? Hat diese Funktion wiederholt um 11:30 Uhr PT aktiviert?
 
 ## Vorschaufunktion
 
@@ -82,7 +82,7 @@ Ein Badge ist eine farbige Bezeichnung, die als Inhaltsanzeige verwendet wird. S
 
 [!BADGE Badge-Beispiel]
 
-Es gibt zwei Arten von Badges mit jeweils unterschiedlicher Syntax:
+Es gibt zwei Typen of Abzeichen mit unterschiedlicher Syntax:
 
 * **Metadaten** - Zeigt den Badge oben auf einer Seite an
 * **Inline** - Zeigt den Badge an, unter dem sich die Syntax befindet
@@ -114,7 +114,7 @@ Hier finden Sie die Syntax für ein Inline-Badge mit einer Beta-Beschriftung, bl
 
 ### Verfügbare Badge-Farben
 
-Zeichen verwenden in Adobe Spectrum definierte Farben:
+Abzeichen verwenden Farben, die in Adobe Spectrum definiert sind:
 
 | Typ | Badge |
 |---|---|
