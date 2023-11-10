@@ -6,16 +6,16 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Premium herunterladen"
 badgeExam: label="Prüfung ADO-E903" type="neutral"
 exl-id: 02245655-511e-4e89-8846-dac85681ea91
-source-git-commit: c71bf8c5b40b478c5b1901b79a29b3d1c3ca8fde
+source-git-commit: 6a10bc9a2ed41223070f3eba94b8ea7b4b1b77ab
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '806'
 ht-degree: 4%
 
 ---
 
 # Ausgeblendete Testseite
 
-Aktivieren? Um 15:00 Uhr übermitteln Sie erneut. Wird es um 3:30 Uhr leben?
+Aktivieren? Um 15:10 Uhr wieder einschicken. Wird es um 15:30 Uhr live gehen?
 
 ## Vorschaufunktion
 
