@@ -2,10 +2,10 @@
 title: Häufig gestellte Fragen zum Ende der Nutzungsdauer von Data Workbench
 description: Erfahren Sie mehr über die Mitteilung zum Ende der Nutzungsdauer von Data Workbench.
 exl-id: 0abb72f1-b68b-48cc-829c-cac7bd21a6de
-source-git-commit: 020a39b7f22d08b76e641e437c1ecaaf26f1b50a
-workflow-type: ht
-source-wordcount: '393'
-ht-degree: 100%
+source-git-commit: 9097a4ac8dc4339193d745c54c94129470a7c11f
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Diese Mitteilung betrifft alle Lösungen, die auf Data Workbench angewiesen sind
 
 ## Warum wird Data Workbench eingestellt?
 
-Mit der Veröffentlichung und kontinuierlichen Verbesserung von Adobe Experience Platform können Kundinnen und Kunden Daten kanalübergreifend kombinieren und in mehreren Adobe-Lösungen verwenden. Insbesondere ermöglicht Ihnen Customer Journey Analytics, kanalübergreifende Daten zu verwenden, um erweiterte Analysen zu diesen Daten durchzuführen.
+Mit der Veröffentlichung und kontinuierlichen Verbesserung von Adobe Experience Platform können Kundinnen und Kunden Daten kanalübergreifend kombinieren und in mehreren Adobe-Lösungen verwenden. Insbesondere gilt: [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=de) ermöglicht es Ihnen, kanalübergreifende Daten zu verwenden, um eine erweiterte Analyse dieser Daten durchzuführen.
 
 Die meisten Funktionen und Anwendungsfälle, die aktuell in Data Workbench verfügbar sind, sind derzeit auch in Adobe Experience Platform-Lösungen verfügbar. Es gibt jedoch Fälle, in denen Data Workbench-Funktionen nicht mit einer entsprechenden Adobe Experience Platform-Lösung repliziert werden. Wenden Sie sich an die Kundenbetreuerin bzw. den Kundenbetreuer von Adobe, um spezifische Funktionsbereiche oder die Kompatibilität eines Anwendungsfalls zu besprechen.
 
